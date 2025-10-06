@@ -1,12 +1,6 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 俄罗斯联邦-001
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.126.239.250
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 俄罗斯联邦-002
   password: 360e21d21977dc11
   port: 57456
   server: 45.139.24.24
@@ -18,6 +12,7 @@ proxies:
   port: '11052'
   server: 45.67.230.79
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 314185f7-931d-4656-922d-0857e7afd224
@@ -25,7 +20,7 @@ proxies:
   flow: xtls-rprx-vision
   fp: chrome
   grpc-opts: {}
-  name: 俄罗斯联邦-004
+  name: 俄罗斯联邦-003
   network: tcp
   pbk: nID_kfSoZPfWS1XZUT1dZnR2mwaoRtUROtBpmqCWEiQ
   port: 8081
@@ -45,7 +40,7 @@ proxies:
 - client-fingerprint: chrome
   fp: chrome
   grpc-opts: {}
-  name: 俄罗斯联邦-005
+  name: 俄罗斯联邦-004
   network: tcp
   pbk: pqVSxW8Vukd7XiPZUQTd9ADNT2XBrCGJ4q2-7n6kQXQ
   port: 27129
@@ -64,50 +59,81 @@ proxies:
   ws-opts: {}
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  fp: chrome
-  grpc-opts: {}
-  name: 俄罗斯联邦-006
-  network: tcp
-  pbk: -tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw
+  name: RU_speednode_0027
   port: 443
   reality-opts:
-    public-key: -tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw
-    short-id: '!!str 50'
-  security: reality
-  server: 195.62.48.191
-  servername: de.eu-ffast.com
-  sid: '50'
-  sni: de.eu-ffast.com
+    public-key: V6i1V9804ZfgT8nutUwDs5IDQdcY9pK5uO075SW4ml4
+    short-id: '!!str 2d46a79deebf50fd'
+  server: 94.198.218.41
+  servername: deepl.com
+  skip-cert-verify: false
   tls: true
   type: vless
-  udp: false
-  uuid: 8377aac9-f3b3-42df-a5ea-9254f37e7b34
-  ws-opts: {}
-- grpc-opts: {}
-  host: sni.aizrf.com
-  name: 俄罗斯联邦-007
+  udp: true
+  uuid: ed97e008-2b8d-4415-94c7-3da4919d361a
+- name: 俄罗斯联邦-006 |1.7MB/s
   network: ws
-  path: /snippets
   port: 2096
-  reality-opts: {}
-  security: tls
-  server: 185.221.160.54
-  servername: sni.aizrf.com
-  sni: sni.aizrf.com
+  server: 5.182.85.52
+  servername: saas.git.cloudns.org
   tls: true
   type: vless
-  udp: false
+  udp: true
   uuid: 12345678-1234-1234-1234-123456789123
   ws-opts:
     headers:
-      Host: sni.aizrf.com
+      Host: saas.git.cloudns.org
+    path: /snippets&freecodes@节点狂魔/?ed=2560
+- name: 俄罗斯联邦-007 |1.7MB/s
+  network: ws
+  port: 2096
+  server: 77.232.140.52
+  servername: saas.git.cloudns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 12345678-1234-1234-1234-123456789123
+  ws-opts:
+    headers:
+      Host: saas.git.cloudns.org
+    path: /snippets&freecodes@节点狂魔/?ed=2560
+- name: 俄罗斯联邦-008 |2.9MB/s
+  network: ws
+  port: 2096
+  server: 185.59.218.50
+  servername: saas.sosocn.abrdns.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 12345678-1234-1234-1234-123456789123
+  ws-opts:
+    headers:
+      Host: saas.sosocn.abrdns.com
     path: /snippets
-- cipher: chacha20-ietf-poly1305
-  name: 俄罗斯联邦-008
-  password: V23RaFkRzP8c88y0VzOj0F
-  port: 46024
-  server: 5.129.231.197
-  type: ss
+- name: 俄罗斯联邦-009 |3.5MB/s
+  network: ws
+  port: 2096
+  server: 45.8.211.52
+  servername: saas.git.cloudns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 12345678-1234-1234-1234-123456789123
+  ws-opts:
+    headers:
+      Host: saas.git.cloudns.org
+    path: /snippets&freecodes@节点狂魔/?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 俄罗斯联邦-010
+  network: ws
+  port: 20086
+  server: 62.60.187.28
+  tls: false
+  type: vmess
+  uuid: 570b4cfc-80d5-4277-8c97-8444ba0689b9
+  ws-opts:
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: RU_speednode_0025
@@ -136,20 +162,6 @@ proxies:
   type: vless
   udp: true
   uuid: d4e4c02a-d969-47a6-ba0f-3d433fdac206
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: RU_speednode_0027
-  port: 443
-  reality-opts:
-    public-key: V6i1V9804ZfgT8nutUwDs5IDQdcY9pK5uO075SW4ml4
-    short-id: '!!str 2d46a79deebf50fd'
-  server: 94.198.218.41
-  servername: deepl.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: ed97e008-2b8d-4415-94c7-3da4919d361a
 - client-fingerprint: chrome
   name: RU_speednode_0028
   port: 8080

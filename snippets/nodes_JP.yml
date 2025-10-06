@@ -12,19 +12,19 @@ proxies:
   ws-opts:
     path: /arki?ed=2048
 - cipher: aes-128-gcm
-  name: 日本-011 | ⬇️ 112.61 MB/s
+  name: 日本-011 | ⬇️ 199.20 MB/s
   password: shadowsocks
   port: 443
   server: 149.22.87.240
   type: ss
 - cipher: aes-128-gcm
-  name: 日本-012 | ⬇️ 129.53 MB/s
+  name: 日本-012 | ⬇️ 167.22 MB/s
   password: shadowsocks
   port: 443
   server: 149.22.87.204
   type: ss
 - cipher: aes-128-gcm
-  name: 日本-014
+  name: 日本-014 | ⬇️ 5.40 MB/s
   password: '!!str 10086'
   port: 10087
   server: 153.121.43.183
@@ -43,25 +43,41 @@ proxies:
       Host: serv00_vmess.sweetrx.eu.org
     path: /vmess
 - cipher: aes-128-gcm
-  name: 日本-016
+  name: 日本-016 | ⬇️ 5.16 MB/s
   password: '!!str 10086'
   port: 10087
   server: 160.16.123.124
   type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 🇯🇵 日本|@ripaojiedian
-  password: be0a39a72e
-  port: 28303
-  server: 670ead.gkzltp.xyz
-  tfo: false
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 日本-018 | ⬇️ 42.52 MB/s
+  network: ws
+  port: 46049
+  server: 47.74.10.111
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 728257b1-5158-47d9-a1a1-6ac29faab878
+  ws-opts:
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 日本-019
+  network: ws
+  port: 19887
+  server: 144.48.8.51
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 145178bc-c2f8-4125-a6de-11b47c2bf04e
+  ws-opts:
+    path: /arki?ed=2048
 - client-fingerprint: chrome
   name: 日本2|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 1331
-  server: 160.16.124.55
+  port: 3271
+  server: 36.156.102.88
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -69,8 +85,8 @@ proxies:
   name: 日本3|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 1924
-  server: 36.156.102.88
+  port: 1331
+  server: 160.16.144.208
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -78,12 +94,12 @@ proxies:
   cipher: auto
   name: 🇯🇵[openproxylist.com] vmess-JP
   network: ws
-  port: 34029
+  port: 34221
   server: 47.74.10.111
   servername: ''
   tls: false
   type: vmess
-  uuid: 2e80d0c8-16c8-420a-b86c-c2e7e2e4f764
+  uuid: 07a5f229-899d-43dd-beb0-f1412a2a85fd
   ws-opts:
     headers:
       Host: ''
