@@ -1163,7 +1163,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #13'
+  name: '🇩🇪[openproxylist.com] vmess-DE #9'
   network: ws
   port: '20086'
   server: 91.99.185.216
@@ -1232,7 +1232,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 🇷🇺[openproxylist.com] vmess-RU
+  name: '🇷🇺[openproxylist.com] vmess-RU #1'
   network: tcp
   port: '11052'
   server: 45.67.230.79
@@ -1731,7 +1731,7 @@ proxies:
   uuid: 81ed034f-4517-4c6c-977e-617e1e010519
 - alterId: 0
   cipher: auto
-  name: 🇹🇼[openproxylist.com] vmess-TW
+  name: '🇹🇼[openproxylist.com] vmess-TW #1'
   network: ws
   port: 20521
   server: 103.61.139.137
@@ -2039,15 +2039,17 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 台湾-006
+  name: 🇹🇼[openproxylist.com] vmess-TW
   network: ws
-  port: 6474
+  port: '6474'
   server: 140.235.38.89
   skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 96a69037-7bf8-43f8-bd62-4beb8f1f36e2
   ws-opts:
+    headers:
+      Host: ''
     path: /arki?ed=2048
 - cipher: chacha20-ietf-poly1305
   name: 阿根廷-002
@@ -2063,14 +2065,16 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 俄罗斯联邦-010
+  name: 🇷🇺[openproxylist.com] vmess-RU
   network: ws
-  port: 20086
+  port: '20086'
   server: 62.60.187.28
   tls: false
   type: vmess
   uuid: 570b4cfc-80d5-4277-8c97-8444ba0689b9
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -2459,7 +2463,20 @@ proxies:
   uuid: 55a374b6-3108-4b65-a987-a0926ddbfba6
 - alterId: 0
   cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #6'
+  name: 🇸🇬[openproxylist.com] vmess-SG
+  network: ws
+  port: 32061
+  server: 47.236.198.2
+  tls: false
+  type: vmess
+  uuid: 45eb28e8-f3b2-4836-91fb-18655e19b016
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '🇩🇪[openproxylist.com] vmess-DE #4'
   network: ws
   port: '443'
   server: yichueng.org
@@ -2513,9 +2530,22 @@ proxies:
     headers:
       Host: seribus.org
     path: linkvws
+- alpn:
+  - http/1.1
+  name: 🇳🇱[openproxylist.com] trojan-N...
+  network: ws
+  password: 02XtoczO7V
+  port: 443
+  server: creativecommons.org
+  sni: mooshali.arshiacomplus.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: mooshali.arshiacomplus.dpdns.org
+    path: '%2Fhishhhh123'
 - alterId: 1
   cipher: auto
-  name: '🇨🇦[openproxylist.com] vmess-CA #3'
+  name: '🇨🇦[openproxylist.com] vmess-CA #2'
   network: ws
   port: 443
   server: serkat.org
@@ -2527,9 +2557,23 @@ proxies:
     headers:
       Host: serkat.org
     path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 🇲🇾[openproxylist.com] vmess-MY
+  network: ws
+  port: 5547
+  server: 47.250.179.144
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 28251fb2-4f09-4ab9-bcd4-b04a3202a408
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
 - alterId: 1
   cipher: auto
-  name: 🇵🇱[openproxylist.com] vmess-PL
+  name: '🇺🇸[openproxylist.com] vmess-US #3'
   network: ws
   port: '443'
   server: kampong.org
@@ -2543,7 +2587,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #12'
+  name: '🇩🇪[openproxylist.com] vmess-DE #8'
   network: ws
   port: '443'
   server: fapeng.org
@@ -2571,45 +2615,18 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #1'
-  network: ws
-  port: 33611
-  server: 47.239.204.193
-  tls: false
-  type: vmess
-  uuid: 56608d2c-b7b4-4cde-a63b-33d6e0b6fd62
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #9'
   network: ws
-  port: '443'
+  port: 443
   server: v2ray.codefyinc.com
   servername: v2ray.codefyinc.com
-  tls: true
+  tls: false
   type: vmess
   uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
   ws-opts:
     headers:
       Host: v2ray.codefyinc.com
     path: /vmessws
-- alterId: 0
-  cipher: auto
-  name: '🏳[openproxylist.com] vmess- #2'
-  network: ws
-  port: '80'
-  server: 51.68.191.233
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f0eda072-9ae8-494c-a495-215fa5729467
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vmess/
 - alterId: 0
   cipher: auto
   name: '🇯🇵[openproxylist.com] vmess-JP #1'
@@ -2624,6 +2641,16 @@ proxies:
     headers:
       Host: ''
     path: /vmess/
+- name: 🇰🇿[openproxylist.com] trojan-K...
+  network: ws
+  password: vpn
+  port: 2025
+  server: 45.82.14.144
+  type: trojan
+  ws-opts:
+    headers:
+      Host: dns.google.com
+    path: '%2F'
 - alterId: 0
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #10'
@@ -2637,6 +2664,20 @@ proxies:
     headers:
       Host: foxpol.fovi.tk
     path: /eisasqa
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #12'
+  network: ws
+  port: '443'
+  server: ssssssssssssfffffffgh.2032.pp.ua
+  servername: ssssssssssssfffffffgh.2032.pp.ua
+  tls: true
+  type: vmess
+  uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
+  ws-opts:
+    headers:
+      Host: ssssssssssssfffffffgh.2032.pp.ua
+    path: /6We3U9Df1WGxgFnoFPw1
 - name: US_speednode_0037
   network: ws
   password: YwuvGJk36B
