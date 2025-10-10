@@ -1,6 +1,31 @@
 proxies:
+- cipher: aes-256-cfb
+  name: 韩国-001
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+  udp: true
 - client-fingerprint: chrome
-  name: 韩国-001 |3.1MB/s
+  encryption: none
+  name: 韩国-002 |3.1MB/s
+  network: ws
+  port: 39567
+  server: 132.145.84.148
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/46.0.2490.86 Safari/537.36
+    path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560
+  xudp: true
+- client-fingerprint: chrome
+  name: 韩国-003 |3.1MB/s
   network: ws
   port: 30067
   server: 112.156.154.95
@@ -19,20 +44,13 @@ proxies:
     path: /snippets/ip=proxyip.fxxk.dedyn.io:443
   xudp: true
 - auth: 60824dd4-77f6-413e-89da-8325e259219f
-  name: 韩国-002
+  name: 韩国-004
   password: 60824dd4-77f6-413e-89da-8325e259219f
   port: 34512
   server: 129.154.196.206
   skip-cert-verify: true
   sni: anycast.us.kg
   type: hysteria2
-  udp: true
-- cipher: aes-256-cfb
-  name: 韩国-003
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
@@ -42,7 +60,6 @@ proxies:
   server: 218.237.185.230
   tfo: false
   type: ss
-  udp: true
 - name: KR_speednode_0053
   password: test.+
   port: 30446
