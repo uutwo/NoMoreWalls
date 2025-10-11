@@ -1,52 +1,83 @@
 proxies:
-- name: 香港-001
-  password: wanghui1
-  port: 3000
-  server: 43.252.229.243
-  type: http
-  username: wanghui1
-- name: 香港-002
-  password: '!!str 123'
-  port: 10862
-  server: 47.76.175.67
-  type: http
-  username: '123'
 - alterId: 0
   cipher: auto
   http-opts:
     method: GET
     path:
     - /
-  name: 香港-003
-  network: http
+  name: 香港-001
+  network: tcp
   port: 31212
   server: 47.242.90.210
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
   uuid: 3a4271fb-2718-4489-da78-80a8e7701aa5
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  fp: chrome
-  grpc-opts: {}
+- name: 香港-002
+  password: 76nlxJLO35
+  port: 36855
+  server: 172.93.165.193
+  type: http
+  username: xZedCGy2A5
+- name: 香港-003
+  password: wanghui1
+  port: 3000
+  server: 43.252.229.243
+  type: http
+  username: wanghui1
+- alterId: 0
+  cipher: auto
   name: 香港-004
   network: tcp
-  pbk: Q0aLm5f1x8Sh0jWnBWneusXUWeKTw9d8AcP4oEIkgwc
-  port: 443
-  reality-opts:
-    public-key: Q0aLm5f1x8Sh0jWnBWneusXUWeKTw9d8AcP4oEIkgwc
-    short-id: '!!str 86'
-  security: reality
-  server: 143.14.189.181
-  servername: icloud.com
-  sid: '86'
-  sni: icloud.com
+  port: 53544
+  server: 47.83.10.70
+  skip-cert-verify: true
+  type: vmess
+  uuid: e7b88e16-7480-4ec1-e1f2-523b45462467
+- name: 香港-005
+  password: '!!str 123'
+  port: 10862
+  server: 47.76.175.67
+  type: http
+  username: '123'
+- name: HK_speednode_0044
+  network: ws
+  port: 2096
+  server: 45.192.223.44
+  servername: kejiland.freewarp.eu.org
+  skip-cert-verify: false
   tls: true
   type: vless
-  udp: false
-  uuid: 52aae58a-1d54-45a4-9d05-c36d16a6dd12
-  ws-opts: {}
+  udp: true
+  uuid: 12345678-1234-1234-1234-123456789123
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets
+- cipher: chacha20-ietf
+  name: 香港-007 |4.1MB/s|YT-HK|NF|D+|0%
+  password: asd123456
+  port: 8388
+  server: 103.149.183.154
+  type: ss
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: 香港|@ripaojiedian
+  network: ws
+  port: '30809'
+  server: v9.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 🇭🇰 香港2|@ripaojiedian
@@ -65,98 +96,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 香港-006
-  network: none
-  port: 11455
-  server: 47.243.245.143
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 06e10e0b-57ae-48db-a37a-f2fd207e3b11
-- alterId: 0
-  cipher: auto
-  name: 香港-007
-  network: http
-  port: 35436
-  server: 103.30.78.138
-  type: vmess
-  udp: true
-  uuid: 084928cf-ed55-42e8-b686-b8e271dfb0ce
-- cipher: chacha20-ietf
-  name: 香港-008 |4.1MB/s|YT-HK|NF|D+|0%
-  password: asd123456
-  port: 8388
-  server: 103.149.183.154
-  type: ss
-- cipher: chacha20-ietf
-  name: 香港-009 | ⬇️ 1.7MB/s
-  password: asd123456
-  port: 8388
-  server: 103.149.182.191
-  type: ss
-- auth: 60824dd4-77f6-413e-89da-8325e259219f
-  name: 香港-010
-  password: 60824dd4-77f6-413e-89da-8325e259219f
-  port: 34237
-  server: 156.226.173.59
-  skip-cert-verify: true
-  sni: anycast.us.kg
-  type: hysteria2
-  udp: true
-- name: 香港-011
-  password: 76nlxJLO35
-  port: 36855
-  server: 172.93.165.193
-  type: http
-  username: xZedCGy2A5
-- auth: 60824dd4-77f6-413e-89da-8325e259219f
-  name: 香港-012
-  password: 60824dd4-77f6-413e-89da-8325e259219f
-  port: 34237
-  server: 45.149.186.188
-  skip-cert-verify: true
-  sni: anycast.us.kg
-  type: hysteria2
-  udp: true
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 香港|@ripaojiedian
-  network: ws
-  port: '30809'
-  server: v9.heduian.link
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇭🇰 香港3|@ripaojiedian
-  port: 55238
-  server: 103.224.80.122
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: f6771d73-462f-488e-8419-a133f34d051a
-- client-fingerprint: chrome
-  name: 香港4|@ripaojiedian
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 60.84.23.102
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- alterId: 0
-  cipher: auto
   client-fingerprint: chrome
   name: 香港5|@ripaojiedian
   network: ws
@@ -173,21 +112,27 @@ proxies:
       Host: www.baidu.com
     path: /cbf7f6acabd0dde4bef067580c126fed77a00de7
 - client-fingerprint: chrome
-  name: 🏳[openproxylist.com] trojan-
+  name: 香港4|@ripaojiedian
   network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 203.198.123.190
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- client-fingerprint: chrome
+  name: 香港6|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 4400
+  server: 221.128.195.220
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 🇭🇰[openproxylist.com] trojan-H...
   password: 253bc477d4e43c209f2d427272968280
   port: 4400
   server: 221.128.195.219
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 香港3|@ripaojiedian
-  network: tcp
-  port: '55238'
-  server: 103.224.80.122
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f6771d73-462f-488e-8419-a133f34d051a
