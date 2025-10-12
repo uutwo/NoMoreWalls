@@ -313,21 +313,14 @@ proxies:
     headers:
       Host: seribus.org
     path: linkvws
-- name: '🇺🇸[openproxylist.com] vless-US #2'
-  network: grpc
-  port: 8880
-  server: 85.209.153.82
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - alterId: 0
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #1'
   network: ws
-  port: 443
+  port: '443'
   server: v2ray.codefyinc.com
   servername: v2ray.codefyinc.com
-  tls: false
+  tls: true
   type: vmess
   uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
   ws-opts:
@@ -336,7 +329,7 @@ proxies:
     path: /vmessws
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #3'
+  name: '🇺🇸[openproxylist.com] vless-US #4'
   network: tcp
   port: 443
   reality-opts:
@@ -349,7 +342,7 @@ proxies:
   uuid: a87bf8a2-17a4-3054-b51e-876b5f1d0f24
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #4'
+  name: '🏳[openproxylist.com] vless- #5'
   network: tcp
   port: 443
   reality-opts:
@@ -368,19 +361,6 @@ proxies:
   uuid: a6c4db3e-7785-429e-8bc5-9eaf7b1a79b1
   ws-opts:
     path: '%2Fvless%2F'
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #2'
-  network: ws
-  port: '443'
-  server: cf.fovi.tk
-  tls: true
-  type: vmess
-  uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
-  ws-opts:
-    headers:
-      Host: foxpol.fovi.tk
-    path: /eisasqa
 - alpn:
   - h3
   client-fingerprint: random
