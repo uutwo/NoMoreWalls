@@ -1,56 +1,50 @@
 proxies:
+- name: 加拿大-001 |3.1MB/s
+  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  port: 47262
+  server: 40.233.103.51
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- auth: 2429bee3-e0c1-47dd-b420-75e6512b184b
+  name: 加拿大-002 | CAN 9
+  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
+  port: 30300
+  server: 132.145.108.97
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  fp: chrome
-  name: 加拿大-001
+  name: CA_speednode_0002
   network: tcp
-  pbk: LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo
   port: 42557
   reality-opts:
     public-key: LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo
     short-id: '!!str f430927d'
-  security: reality
   server: 132.145.108.97
   servername: www.yahoo.com
-  sid: f430927d
   skip-cert-verify: false
-  sni: www.yahoo.com
   tfo: false
   tls: true
   type: vless
   udp: true
   uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 加拿大-002 |1.2MB/s
-  port: 26113
-  reality-opts:
-    public-key: GUcD8LK1DFNuVun5yhsqeEego_p3PF2yIdvE2KY2Nng
-    short-id: '!!str 1fbd20fd'
-  server: 150.230.28.100
-  servername: www.yahoo.com
-  skip-cert-verify: false
-  tls: true
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 加拿大-004 |2.7MB/s
+  network: grpc
+  port: 40853
+  server: 15.235.45.229
   type: vless
   udp: true
-  uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-- name: 加拿大-003 |1.2MB/s
-  network: ws
-  port: 2096
-  server: 74.49.215.32
-  servername: kejiland.freewarp.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets
+  uuid: b0ff01b1-04d3-4b01-8ba9-b1dc47416c07
+  xudp: true
 - alterId: 1
   cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #9'
+  name: 🇬🇧[openproxylist.com] vmess-GB
   network: ws
   port: 443
   server: pelang.org
@@ -61,20 +55,6 @@ proxies:
   ws-opts:
     headers:
       Host: pelang.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: '🇨🇦[openproxylist.com] vmess-CA #4'
-  network: ws
-  port: '443'
-  server: 148.113.176.192
-  servername: fapeng.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
     path: linkvws
 - name: 🇨🇦[openproxylist.com] vless-CA
   network: ws
@@ -87,31 +67,3 @@ proxies:
     headers:
       Host: '---%40External_Net---%40External_Net---%40External_Net---%40External_Net---%40External_Net'
     path: '%2Fvless%2F'
-- alterId: 0
-  cipher: auto
-  name: '🇨🇦[openproxylist.com] vmess-CA #5'
-  network: ws
-  port: 80
-  server: 51.79.102.253
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    headers:
-      Host: ''
-    path: /IOebhLMhl1CTbFHbL95myfRX2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: CA_speednode_0002
-  port: 42557
-  reality-opts:
-    public-key: LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo
-    short-id: '!!str f430927d'
-  server: 132.145.108.97
-  servername: www.yahoo.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
