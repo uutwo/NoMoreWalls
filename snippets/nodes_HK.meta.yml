@@ -1,36 +1,56 @@
 proxies:
-- name: 香港-001
+- cipher: chacha20-ietf
+  name: 香港-001 | ⬇️ 1.7MB/s
+  password: asd123456
+  port: 8388
+  server: 103.149.182.191
+  type: ss
+- name: 香港-002
   password: wanghui1
   port: 3000
   server: 43.252.229.243
   type: http
   username: wanghui1
-- name: 香港-002
-  password: 76nlxJLO35
-  port: 36855
-  server: 172.93.165.193
-  type: http
-  username: xZedCGy2A5
+- name: 香港-003
+  password: 1640ef52-2db0-44ab-b3f3-8690b762ebc9
+  port: 12000
+  server: 165.154.112.107
+  skip-cert-verify: true
+  type: trojan
 - client-fingerprint: chrome
-  name: 香港-003 |1.8MB/s
-  network: tcp
+  name: 香港-004
   port: 8080
   reality-opts:
     public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
     short-id: '!!str 27cfa05000c23cc4'
   server: 62.60.232.40
   servername: yandex.com
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
   uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37
-  xudp: true
-- name: 香港-004
-  password: 1640ef52-2db0-44ab-b3f3-8690b762ebc9
-  port: 12000
-  server: 165.154.112.107
+- alterId: 0
+  cipher: auto
+  name: 香港-005
+  network: tcp
+  port: 53544
+  server: 47.83.10.70
   skip-cert-verify: true
-  type: trojan
+  type: vmess
+  uuid: e7b88e16-7480-4ec1-e1f2-523b45462467
+- cipher: chacha20-ietf
+  name: 香港-006 |4.1MB/s|YT-HK|NF|D+|0%
+  password: asd123456
+  port: 8388
+  server: 103.149.183.154
+  type: ss
+- name: 香港-007
+  password: '!!str 123'
+  port: 10862
+  server: 47.76.175.67
+  type: http
+  username: '123'
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -68,28 +88,26 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   name: 🇭🇰 香港3|@ripaojiedian
-  port: 30485
-  server: 103.224.80.67
+  port: 41522
+  server: 43.247.135.17
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: a9ba904e-2d8b-401e-9226-b5114c049f05
+  uuid: ea897b9a-0894-4f17-ab5b-7e059678734d
 - client-fingerprint: chrome
-  name: 🏳[openproxylist.com] trojan-
-  network: tcp
+  name: 🇭🇰 香港4|@ripaojiedian
   password: 253bc477d4e43c209f2d427272968280
-  port: 4419
-  server: 221.128.195.221
+  port: 443
+  server: 126.66.52.118
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - client-fingerprint: chrome
-  name: 香港6|@ripaojiedian
-  network: tcp
+  name: 🇭🇰 香港6|@ripaojiedian
   password: 253bc477d4e43c209f2d427272968280
   port: 443
-  server: 126.47.92.160
+  server: 58.152.53.162
   skip-cert-verify: true
   sni: fe2.update.microsoft.com
   type: trojan
@@ -104,6 +122,22 @@ proxies:
   type: vmess
   uuid: a9ba904e-2d8b-401e-9226-b5114c049f05
 - name: 🇭🇰[openproxylist.com] trojan-H...
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 4419
+  server: 221.128.195.221
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 香港6|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 126.47.92.160
+  skip-cert-verify: true
+  sni: fe2.update.microsoft.com
+  type: trojan
+- name: '🇭🇰[openproxylist.com] trojan-H... #1'
   password: 253bc477d4e43c209f2d427272968280
   port: 4400
   server: 221.128.195.220

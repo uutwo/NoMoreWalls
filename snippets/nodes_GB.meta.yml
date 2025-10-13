@@ -1,17 +1,19 @@
 proxies:
-- grpc-opts:
-    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  mode: gun
+- client-fingerprint: chrome
   name: 英国-001
-  network: grpc
-  port: 40716
-  security: none
-  server: 51.89.137.87
-  serviceName: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  tls: false
+  network: ws
+  port: 2096
+  server: 164.38.155.61
+  servername: vless.hubp.de
+  skip-cert-verify: true
+  tfo: false
+  tls: true
   type: vless
-  udp: false
-  uuid: 0cd02a20-80c8-43c4-ae2f-b72488549ef9
+  uuid: 12345678-1234-1234-1234-123456789123
+  ws-opts:
+    headers:
+      Host: vless.hubp.de
+    path: /snippets
 - name: 英国-002 |1.2MB/s
   network: ws
   port: 443
@@ -27,36 +29,59 @@ proxies:
     headers:
       host: fei.634676.xyz
     path: /?ed=2560
-- name: 英国-003 | GBR 8
+- client-fingerprint: chrome
+  name: 英国-003
   network: ws
-  port: 2053
-  server: 91.199.32.132
-  servername: fei.634676.xyz
+  port: 2096
+  server: 94.247.142.61
+  servername: vless.hubp.de
   skip-cert-verify: true
   tfo: false
   tls: true
   type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  uuid: 12345678-1234-1234-1234-123456789123
   ws-opts:
     headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- name: 英国-004 | NLD 13
+      Host: vless.hubp.de
+    path: /snippets
+- name: 英国-004
+  network: ws
+  port: 2096
+  server: 185.193.31.253
+  servername: fast01.0860852.xyz
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2456f90c-5183-476d-b069-16ae74ce120f
+  ws-opts:
+    headers:
+      Host: fast01.0860852.xyz
+    path: /Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 英国-005
   network: ws
   port: 443
-  server: 178.32.58.147
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tfo: false
+  server: 104.128.190.65
+  servername: 01.91md.fun
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
   ws-opts:
     headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
+      Host: 01.91md.fun
+    path: /%2F%3Fed%3D2048
+- cipher: chacha20-ietf-poly1305
+  name: 英国-006
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 94.156.250.122
+  type: ss
+  udp: true
 - name: 🇬🇧[openproxylist.com] vless-GB
   network: grpc
   port: 8880

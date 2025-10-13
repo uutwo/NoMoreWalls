@@ -24,7 +24,7 @@ proxies:
   tls: false
   type: hysteria2
 - auth: 9772ecf2-6732-4bfb-a8b1-f48af577c76c
-  name: 美国-010 |5.8MB/s
+  name: 美国-004 |3.8MB/s
   password: 9772ecf2-6732-4bfb-a8b1-f48af577c76c
   port: 63979
   server: 113.192.61.19
@@ -33,59 +33,37 @@ proxies:
   tls: false
   type: hysteria2
   udp: true
-- name: 美国-001
-  password: gs4BXwT6SW
-  port: 10988
-  server: 154.26.192.123
-  type: http
-  username: fQ67Dpe5dU
 - alpn:
   - h3
   auth-str: dongtaiwang.com
   auth_str: dongtaiwang.com
-  down: 100
-  name: 美国-002 |4.5MB/s
+  down: 55 Mbps
+  name: 美国-001 |4.2MB/s
   port: 38845
-  protocol: udp
   server: 208.87.243.151
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria
-  udp: true
-  up: 100
+  up: 11 Mbps
 - alpn:
   - h3
   auth-str: dongtaiwang.com
   auth_str: dongtaiwang.com
   down: '100'
-  name: 美国-003 |4.6MB/s
+  name: 美国-002 |4.9MB/s
   port: 15823
   server: 208.87.243.187
   skip-cert-verify: true
   sni: apple.com
   type: hysteria
   up: '100'
-- name: 美国-004 |2.1MB/s
+- client-fingerprint: chrome
+  encryption: none
+  name: 美国-003 |597KB/s
   network: ws
   port: 443
   server: 166.1.190.51
   servername: fei.634676.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      host: fei.634676.xyz
-    path: /?ed=2560
-- name: 美国-006 | DEU 106
-  network: ws
-  port: 443
-  server: 45.38.145.87
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tfo: false
   tls: true
   type: vless
   udp: true
@@ -93,40 +71,74 @@ proxies:
   ws-opts:
     headers:
       Host: fei.634676.xyz
+      User-Agent: Mozilla/5.0 (Linux; Android 7.1; Mi A1 Build/N2G47H) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36
     path: /?ed=2560
-- name: 美国-007 | DEU 92
-  network: ws
-  port: 443
-  server: 45.38.145.233
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- name: 卢森堡-001 | USA 35
-  network: ws
-  port: 2096
-  server: 188.42.145.253
-  servername: gaosir.unfeeling.sbs
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  ws-opts:
-    headers:
-      Host: gaosir.unfeeling.sbs
-    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560fp=chrome
+  xudp: true
 - client-fingerprint: chrome
   encryption: none
-  name: 美国-009 |1.1MB/s
+  name: 美国-005 |528KB/s
+  network: ws
+  port: 443
+  server: 45.38.145.22
+  servername: fei.634676.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    headers:
+      Host: fei.634676.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 美国-007
+  network: tcp
+  port: 30227
+  reality-opts:
+    public-key: y0QO-mD8hrDE3rV7C8BX-gQiCANoasGKQlq2ReIVXkI
+  server: 216.133.149.235
+  servername: aws.amazon.com
+  tls: true
+  type: vless
+  uuid: 9a54bad8-538d-4744-b7bc-640629840490
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 美国-008 |3.1MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 9tpeVTkuJ5il6GaLG9YqMn99OK8AFlzgEFtoD1_MkyI
+    short-id: '!!str f8c64c7a'
+  server: 212.18.104.19
+  servername: nspk.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
+  xudp: true
+- name: 美国-009
+  network: ws
+  port: 443
+  server: 45.38.145.112
+  servername: fei.634676.xyz
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    headers:
+      Host: fei.634676.xyz
+    path: /?ed=2560
+- client-fingerprint: chrome
+  encryption: none
+  name: 美国-010 |1.1MB/s
   network: ws
   port: 443
   server: 45.38.145.78
@@ -142,51 +154,31 @@ proxies:
         Gecko) Chrome/35.0.1916.153 Safari/537.36
     path: /?ed=2560
   xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 美国-011 |3.1MB/s
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 9tpeVTkuJ5il6GaLG9YqMn99OK8AFlzgEFtoD1_MkyI
-    short-id: '!!str f8c64c7a'
-  server: 212.18.104.19
-  servername: nspk.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
-  xudp: true
-- name: 美国-012 | DEU 113
+- name: 美国-011
   network: ws
   port: 443
-  server: 45.38.145.232
+  server: 45.38.145.3
   servername: fei.634676.xyz
-  skip-cert-verify: true
-  tfo: false
   tls: true
   type: vless
   udp: true
   uuid: d2965257-0536-4811-a0d5-cdce54e90326
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
       Host: fei.634676.xyz
-    path: /?ed=2560
-- name: 美国-013
-  network: ws
-  password: iwangjie
-  port: 15805
-  server: 158.101.11.204
+    max-early-data: 2560
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 美国-012
+  network: tcp
+  port: 35500
+  server: 148.135.184.84
   skip-cert-verify: true
-  sni: nodes.830901.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: nodes.830901.xyz
-    path: /?ed=2560
-- name: 美国-014 |3.0MB/s
+  type: vmess
+  uuid: 744847f4-8549-4bab-a8e4-6b410d271c16
+- name: 美国-013 |3.0MB/s
   network: ws
   port: 443
   server: 129.146.46.164
@@ -200,23 +192,97 @@ proxies:
     headers:
       host: fei.634676.xyz
     path: /?ed=2560
-- client-fingerprint: chrome
-  encryption: none
-  name: 美国-015
+- name: 美国-014
   network: ws
-  port: 2096
-  server: 141.193.213.21
-  servername: ip.onhit.xyz
-  skip-cert-verify: false
+  port: 443
+  server: 107.175.158.215
+  servername: 01.91md.fun
+  skip-cert-verify: true
   tls: true
   type: vless
-  uuid: 76bfc324-e228-47e0-8871-f974fac80390
+  udp: true
+  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
   ws-opts:
     headers:
-      Host: ip.onhit.xyz
+      host: 01.91md.fun
+    path: /?ed=2048
+- name: 美国-015
+  network: ws
+  port: 443
+  server: 45.38.145.247
+  servername: fei.634676.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: fei.634676.xyz
+    max-early-data: 2560
     path: /
+- name: 美国-016
+  password: gs4BXwT6SW
+  port: 10988
+  server: 154.26.192.123
+  type: http
+  username: fQ67Dpe5dU
 - client-fingerprint: chrome
-  name: 美国-016
+  name: 美国-017
+  network: ws
+  port: 2096
+  server: 192.0.54.32
+  servername: kejiland.freewarp.eu.org
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/58.0.3029.110 Safari/537.36
+    path: /snippets
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 美国-018
+  network: ws
+  port: 929
+  server: 129.146.6.2
+  servername: 01.91md.fun
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06
+  ws-opts:
+    headers:
+      host: 01.91md.fun
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 美国-019
+  network: ws
+  port: 2096
+  server: 198.71.191.253
+  servername: fast01.0860852.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2456f90c-5183-476d-b069-16ae74ce120f
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: fast01.0860852.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/64.0.3282.186 Safari/537.36
+    max-early-data: 2560
+    path: /Telegram@WangCai2/
+  xudp: true
+- client-fingerprint: chrome
+  name: 美国-021
   network: ws
   port: 443
   server: 198.62.62.229
@@ -235,22 +301,19 @@ proxies:
     path: /wsv/6c11247b-6078-461a-93d5-22e4df284e6d
 - client-fingerprint: chrome
   encryption: none
-  name: 美国-017 |1.3MB/s
+  name: 美国-023
   network: ws
-  port: 443
-  server: 45.38.145.22
-  servername: fei.634676.xyz
+  port: 2096
+  server: 141.193.213.21
+  servername: ip.onhit.xyz
+  skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  uuid: 76bfc324-e228-47e0-8871-f974fac80390
   ws-opts:
     headers:
-      Host: fei.634676.xyz
-      User-Agent: Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X Build/N2G47H) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
-    path: /?ed=2560
-  xudp: true
+      Host: ip.onhit.xyz
+    path: /
 - client-fingerprint: chrome
   name: 美国|@ripaojiedian
   network: tcp
@@ -319,9 +382,23 @@ proxies:
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #2'
+  network: ws
+  port: 443
+  server: v2ray.codefyinc.com
+  servername: v2ray.codefyinc.com
+  tls: false
+  type: vmess
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  ws-opts:
+    headers:
+      Host: v2ray.codefyinc.com
+    path: /vmessws
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #4'
+  name: '🇺🇸[openproxylist.com] vless-US #5'
   network: tcp
   port: 443
   reality-opts:
@@ -332,7 +409,19 @@ proxies:
   tls: false
   type: vless
   uuid: a87bf8a2-17a4-3054-b51e-876b5f1d0f24
-- name: '🇺🇸[openproxylist.com] vless-US #5'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #4'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: YNGotlyAx3ELUmi4lxOUjiEDmibqf1pPUTE9o3YYT2Y
+  server: 5.181.171.2
+  servername: speed.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 8e6acce9-8b56-7190-d491-7d84f8189e26
+- name: '🇺🇸[openproxylist.com] vless-US #6'
   network: ws
   port: 80
   server: 45.8.146.207
@@ -343,7 +432,7 @@ proxies:
     path: '%2Fvless%2F'
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #2'
+  name: '🇺🇸[openproxylist.com] vmess-US #3'
   network: ws
   port: '443'
   server: cf.fovi.tk
@@ -356,7 +445,17 @@ proxies:
     path: /eisasqa
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #3'
+  name: '🇺🇸[openproxylist.com] vmess-US #4'
+  network: tcp
+  port: '15361'
+  server: 15.204.11.190
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5d7bf9e3-415c-40f3-c66d-a54ea0fd860e
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #5'
   network: ws
   port: '80'
   server: gggggggggggggg.222769.xyz
@@ -369,7 +468,7 @@ proxies:
     path: /f6taOMcOSZb9TPR
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #4'
+  name: '🇺🇸[openproxylist.com] vmess-US #6'
   network: ws
   port: '443'
   server: ssssssssssssfffffffgh.2032.pp.ua
@@ -382,7 +481,7 @@ proxies:
       Host: ssssssssssssfffffffgh.2032.pp.ua
     path: /6We3U9Df1WGxgFnoFPw1
 - client-fingerprint: chrome
-  name: '🇺🇸[openproxylist.com] vless-US #6'
+  name: '🇺🇸[openproxylist.com] vless-US #7'
   network: ws
   port: 443
   server: 104.21.90.226
@@ -394,27 +493,15 @@ proxies:
     headers:
       Host: 444rrrt5.7777155.xyz
     path: '%2F6OWLjRc26b0nHYr5hYXD'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #7'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: YNGotlyAx3ELUmi4lxOUjiEDmibqf1pPUTE9o3YYT2Y
-  server: 5.181.171.10
-  servername: speed.cloudflare.com
-  tls: false
-  type: vless
-  uuid: 49ed01ad-3bb4-204f-b0ff-a58f658fd618
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #5'
+  name: '🇺🇸[openproxylist.com] vmess-US #7'
   network: ws
-  port: '22123'
+  port: '23185'
   server: 212.192.15.176
   tls: false
   type: vmess
-  uuid: 14c91603-2d61-4062-95fe-a35c8d0c8737
+  uuid: 746c01a0-38cc-4dce-bdda-c8a6a77d0aef
   ws-opts:
     headers:
       Host: ''

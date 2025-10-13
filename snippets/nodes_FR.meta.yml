@@ -4,7 +4,7 @@ proxies:
   auth-str: dongtaiwang.com
   auth_str: dongtaiwang.com
   down: 55 Mbps
-  name: 法国-039 |1.8MB/s
+  name: 法国-021 |1.8MB/s
   port: 50011
   protocol: udp
   server: 62.210.127.217
@@ -13,10 +13,55 @@ proxies:
   type: hysteria
   udp: true
   up: 11 Mbps
-- name: 法国-001 |1.7MB/s
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: '100'
+  name: 法国-001 |3.1MB/s
+  port: 15010
+  server: 195.154.200.40
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: '100'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: random
+  name: 法国-002 |2.8MB/s
+  network: tcp
+  port: 443
+  server: 51.68.215.27
+  servername: uk-09.allhubb.info
+  tls: true
+  type: vless
+  udp: true
+  uuid: d00ba617-8d04-4f7b-a952-8fa031b39879
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 法国-003 |725KB/s
   network: ws
   port: 443
-  server: 51.91.252.213
+  server: 51.91.250.152
+  servername: fei.634676.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    headers:
+      Host: fei.634676.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/67.0.3396.99 Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- name: 法国-004
+  network: ws
+  port: 2096
+  server: 51.195.25.187
   servername: fei.634676.xyz
   skip-cert-verify: true
   tls: true
@@ -27,24 +72,7 @@ proxies:
     headers:
       host: fei.634676.xyz
     path: /?ed=2560
-- name: 法国-003 | FRA 87
-  network: ws
-  port: 2053
-  server: 141.94.222.188
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- client-fingerprint: chrome
-  encryption: none
-  name: 法国-004 |1.5MB/s
+- name: 法国-005
   network: ws
   port: 2053
   server: 141.94.205.161
@@ -54,60 +82,29 @@ proxies:
   udp: true
   uuid: d2965257-0536-4811-a0d5-cdce54e90326
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
       Host: fei.634676.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/58.0.3029.81 Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- name: 法国-005 | FRA 119
+    max-early-data: 2560
+    path: /
+- name: 法国-006
   network: ws
   port: 2053
-  server: 141.94.207.218
+  server: 51.91.100.173
   servername: fei.634676.xyz
-  skip-cert-verify: true
-  tfo: false
   tls: true
   type: vless
   udp: true
   uuid: d2965257-0536-4811-a0d5-cdce54e90326
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
       Host: fei.634676.xyz
-    path: /?ed=2560
-- name: 法国-006 | FRA 103
-  network: ws
-  port: 8443
-  server: 141.94.221.25
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- name: 法国-007 | FRA 104
-  network: ws
-  port: 443
-  server: 51.91.252.61
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
+    max-early-data: 2560
+    path: /
 - grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  name: 法国-008 |1.0MB/s
+  name: 法国-007 |1.0MB/s
   network: grpc
   port: 22808
   server: 51.178.253.133
@@ -115,10 +112,46 @@ proxies:
   udp: true
   uuid: 713f6b9e-6200-405d-9ca8-77bc45be625b
   xudp: true
-- name: 法国-009
+- client-fingerprint: chrome
+  encryption: none
+  name: 法国-008 |2.6MB/s
   network: ws
   port: 2053
-  server: 162.19.243.185
+  server: 141.94.221.2
+  servername: fei.634676.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    headers:
+      Host: fei.634676.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/39.0.2171.95 Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 法国-009 |2.3MB/s
+  network: ws
+  port: 8443
+  server: 141.94.68.157
+  servername: fei.634676.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    headers:
+      Host: fei.634676.xyz
+      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; WAS-LX3 Build/HUAWEIWAS-LX3)
+        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- name: 法国-010 |1.6MB/s
+  network: ws
+  port: 2053
+  server: 141.94.222.33
   servername: fei.634676.xyz
   skip-cert-verify: true
   tls: true
@@ -129,31 +162,12 @@ proxies:
     headers:
       host: fei.634676.xyz
     path: /?ed=2560
-- client-fingerprint: chrome
-  encryption: none
-  name: 法国-010 |1.1MB/s
+- name: 法国-011 |1.7MB/s
   network: ws
-  port: 2053
-  server: 51.195.117.254
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like
-        Gecko) Chrome/11.0.696.3 Safari/534.24
-    path: /?ed=2560
-  xudp: true
-- name: 法国-011 |1.4MB/s
-  network: ws
-  port: 2053
-  server: 51.195.42.9
+  port: 443
+  server: 51.91.252.213
   servername: fei.634676.xyz
   skip-cert-verify: true
-  tfo: false
   tls: true
   type: vless
   udp: true
@@ -177,10 +191,10 @@ proxies:
     headers:
       host: fei.634676.xyz
     path: /?ed=2560
-- name: 法国-013 |1.4MB/s
+- name: 法国-013
   network: ws
   port: 2053
-  server: 141.94.220.64
+  server: 162.19.253.47
   servername: fei.634676.xyz
   skip-cert-verify: true
   tls: true
@@ -191,194 +205,24 @@ proxies:
     headers:
       host: fei.634676.xyz
     path: /?ed=2560
-- name: 法国-016 | FRA 98
+- name: 法国-014
   network: ws
   port: 8443
-  server: 141.94.221.241
+  server: 141.94.222.188
   servername: fei.634676.xyz
-  skip-cert-verify: true
-  tfo: false
   tls: true
   type: vless
   udp: true
   uuid: d2965257-0536-4811-a0d5-cdce54e90326
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
       Host: fei.634676.xyz
-    path: /?ed=2560
-- name: 法国-017 | FRA 97
-  network: ws
-  port: 443
-  server: 51.91.249.223
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- name: 法国-019 |1.5MB/s
-  network: ws
-  port: 2053
-  server: 141.94.223.237
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      host: fei.634676.xyz
-    path: /?ed=2560
-- name: 法国-020
-  network: ws
-  port: 8443
-  server: 152.228.134.216
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      host: fei.634676.xyz
-    path: /?ed=2560
+    max-early-data: 2560
+    path: /
 - client-fingerprint: chrome
   encryption: none
-  name: 法国-021 |2.3MB/s
-  network: ws
-  port: 8443
-  server: 141.94.68.157
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; WAS-LX3 Build/HUAWEIWAS-LX3)
-        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- name: 法国-023 | FRA 117
-  network: ws
-  port: 8443
-  server: 141.94.207.153
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- name: 法国-024 | FRA 99
-  network: ws
-  port: 8443
-  server: 141.94.204.167
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- grpc-opts:
-    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  name: 法国-026 |3.7MB/s
-  network: grpc
-  port: 54983
-  server: 141.227.134.240
-  type: vless
-  udp: true
-  uuid: 6016845b-61d0-49c5-b20c-d61e860778d4
-  xudp: true
-- name: 法国-027 | FRA 113
-  network: ws
-  port: 443
-  server: 152.228.191.232
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- name: 法国-028
-  network: ws
-  password: iwangjie
-  port: 2053
-  server: 135.125.232.253
-  skip-cert-verify: true
-  sni: nodes.830901.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: nodes.830901.xyz
-    path: /?ed=2560
-- name: 法国-029 | FRA 118
-  network: ws
-  port: 2053
-  server: 146.59.159.111
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- client-fingerprint: chrome
-  fp: chrome
-  name: 法国-030
-  network: tcp
-  port: 443
-  security: tls
-  server: 51.68.215.27
-  servername: uk-09.allhubb.info
-  sni: uk-09.allhubb.info
-  tls: true
-  type: vless
-  udp: false
-  uuid: d00ba617-8d04-4f7b-a952-8fa031b39879
-- name: 法国-031
-  network: ws
-  password: iwangjie
-  port: 2053
-  server: 141.94.68.216
-  skip-cert-verify: true
-  sni: nodes.830901.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: nodes.830901.xyz
-    path: /?ed=2560
-- client-fingerprint: chrome
-  encryption: none
-  name: 法国-032 |1.6MB/s
+  name: 法国-015 |1.6MB/s
   network: ws
   port: 2053
   server: 162.19.65.172
@@ -394,95 +238,7 @@ proxies:
         like Gecko) Chrome/60.0.3112.90 Safari/537.36
     path: /?ed=2560
   xudp: true
-- name: 法国-033 | FRA 101
-  network: ws
-  port: 2053
-  server: 141.94.68.216
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- name: 法国-034 | FRA 85
-  network: ws
-  port: 8443
-  server: 141.94.206.222
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- name: 法国-035 | FRA 115
-  network: ws
-  port: 8443
-  server: 141.94.70.24
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 55
-  name: 法国-036 |1.6MB/s
-  port: 35511
-  protocol: udp
-  server: 62.210.127.217
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  udp: true
-  up: 11
-- name: 法国-038 | FRA 91
-  network: ws
-  port: 443
-  server: 51.91.248.61
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- name: 法国-040 |1.6MB/s
-  network: ws
-  port: 2053
-  server: 141.94.222.33
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      host: fei.634676.xyz
-    path: /?ed=2560
-- name: 法国-041 |1.1MB/s
+- name: 法国-016 |1.1MB/s
   network: ws
   port: 8443
   server: 51.91.249.29
@@ -497,10 +253,10 @@ proxies:
     headers:
       host: fei.634676.xyz
     path: /?ed=2560
-- name: 法国-043 | FRA 109
+- name: 法国-017 |2.8MB/s
   network: ws
   port: 8443
-  server: 51.91.254.189
+  server: 141.95.161.178
   servername: fei.634676.xyz
   skip-cert-verify: true
   tfo: false
@@ -510,14 +266,88 @@ proxies:
   uuid: d2965257-0536-4811-a0d5-cdce54e90326
   ws-opts:
     headers:
+      host: fei.634676.xyz
+    path: /?ed=2560
+- name: 法国-018
+  network: ws
+  port: 8443
+  server: 162.19.242.211
+  servername: fei.634676.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    headers:
+      host: fei.634676.xyz
+    path: /?ed=2560
+- name: 法国-019 |1.8MB/s
+  network: ws
+  port: 8443
+  server: 146.59.156.154
+  servername: fei.634676.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    headers:
+      host: fei.634676.xyz
+    path: /?ed=2560
+- name: 法国-020
+  network: ws
+  port: 443
+  server: 37.59.96.50
+  servername: fei.634676.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
       Host: fei.634676.xyz
+    max-early-data: 2560
+    path: /
+- name: 法国-022
+  network: ws
+  port: 443
+  server: 51.91.252.61
+  servername: fei.634676.xyz
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: fei.634676.xyz
+    max-early-data: 2560
+    path: /
+- name: 法国-023 |1.5MB/s
+  network: ws
+  port: 2053
+  server: 141.94.223.237
+  servername: fei.634676.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    headers:
+      host: fei.634676.xyz
     path: /?ed=2560
 - client-fingerprint: chrome
   encryption: none
-  name: 法国-044 |2.6MB/s
+  name: 法国-024 |1.0MB/s
   network: ws
-  port: 2053
-  server: 141.94.221.2
+  port: 443
+  server: 152.228.191.232
   servername: fei.634676.xyz
   tls: true
   type: vless
@@ -526,26 +356,57 @@ proxies:
   ws-opts:
     headers:
       Host: fei.634676.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/39.0.2171.95 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
     path: /?ed=2560
   xudp: true
 - alpn:
   - h3
   auth-str: dongtaiwang.com
   auth_str: dongtaiwang.com
-  down: '100'
-  name: 法国-045 |2.7MB/s
-  port: 15010
-  server: 195.154.200.40
+  down: 55
+  name: 法国-025 |1.6MB/s
+  port: 35511
+  protocol: udp
+  server: 62.210.127.217
   skip-cert-verify: true
   sni: apple.com
   type: hysteria
-  up: '100'
-- name: 法国-046 | FRA 116
+  udp: true
+  up: 11
+- name: 法国-026 |1.4MB/s
+  network: ws
+  port: 2053
+  server: 141.94.220.64
+  servername: fei.634676.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    headers:
+      host: fei.634676.xyz
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 法国-027
   network: ws
   port: 443
-  server: 37.59.96.25
+  server: 172.232.50.230
+  servername: glweidf.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      HOST: glweidf.sbs
+    path: /linkws
+- name: 法国-028 |1.4MB/s
+  network: ws
+  port: 2053
+  server: 51.195.42.9
   servername: fei.634676.xyz
   skip-cert-verify: true
   tfo: false
@@ -555,22 +416,146 @@ proxies:
   uuid: d2965257-0536-4811-a0d5-cdce54e90326
   ws-opts:
     headers:
-      Host: fei.634676.xyz
+      host: fei.634676.xyz
     path: /?ed=2560
-- grpc-opts:
-    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  name: 法国-047 |3.8MB/s|GPT|29%
-  network: grpc
-  port: 23279
-  server: 141.94.210.231
+- name: 法国-029
+  network: ws
+  port: 443
+  server: 51.91.249.241
+  servername: fei.634676.xyz
+  tls: true
   type: vless
   udp: true
-  uuid: 30198cba-c828-4b34-8165-25942bad201e
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: fei.634676.xyz
+    max-early-data: 2560
+    path: /
+- name: 法国-030
+  network: ws
+  port: 2053
+  server: 51.178.141.33
+  servername: fei.634676.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: fei.634676.xyz
+    max-early-data: 2560
+    path: /
+- name: 法国-031
+  network: ws
+  port: 8443
+  server: 51.91.251.144
+  servername: fei.634676.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: fei.634676.xyz
+    max-early-data: 2560
+    path: /
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 法国-032 |3.7MB/s
+  network: grpc
+  port: 54983
+  server: 141.227.134.240
+  type: vless
+  udp: true
+  uuid: 6016845b-61d0-49c5-b20c-d61e860778d4
   xudp: true
 - client-fingerprint: chrome
   encryption: none
+  name: 法国-033 |1.1MB/s
+  network: ws
+  port: 8443
+  server: 141.94.221.78
+  servername: fei.634676.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    headers:
+      Host: fei.634676.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 法国-034 |1.1MB/s
+  network: ws
+  port: 2053
+  server: 51.195.117.254
+  servername: fei.634676.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    headers:
+      Host: fei.634676.xyz
+      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like
+        Gecko) Chrome/11.0.696.3 Safari/534.24
+    path: /?ed=2560
+  xudp: true
+- name: 法国-035
+  network: ws
+  port: 2053
+  server: 141.95.159.211
+  servername: fei.634676.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: fei.634676.xyz
+    max-early-data: 2560
+    path: /
+- name: 法国-036 |1.1MB/s
+  network: ws
+  port: 8443
+  server: 141.94.204.206
+  servername: fei.634676.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    headers:
+      host: fei.634676.xyz
+    path: /?ed=2560
+- name: 法国-037
+  network: ws
+  port: 2087
+  server: 162.19.212.24
+  servername: fei.634676.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    headers:
+      host: fei.634676.xyz
+    path: /?ed=2560
+- client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
-  name: 法国-048 |1.3MB/s
+  name: 法国-038 |1.3MB/s
   network: tcp
   port: 443
   reality-opts:
@@ -583,75 +568,206 @@ proxies:
   udp: true
   uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
   xudp: true
-- name: 法国-049 | FRA 100
-  network: ws
-  port: 8443
-  server: 146.59.153.201
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- name: 法国-050 | FRA 106
-  network: ws
-  port: 8443
-  server: 51.91.248.215
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
 - grpc-opts:
-    grpc-service-name: ''
-  name: 🇫🇷[openproxylist.com] vless-FR
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 法国-039
   network: grpc
-  port: 8880
-  server: 195.42.233.92
-  tls: false
+  port: 59995
+  server: 141.227.162.18
   type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #1'
+  udp: true
+  uuid: 7467739e-fe86-43a4-93ae-1669886e80d5
+  xudp: true
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 法国-040 |2.4MB/s
+  network: grpc
+  port: 15297
+  server: 54.36.115.88
+  type: vless
+  udp: true
+  uuid: 0a209af5-bb98-4c8c-ad15-2ec26cf9e4d9
+  xudp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 法国-041
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 21MNt-O8tq9gP9o7yeT9iVQslHPdNVHtqI9Kg5p-lHo
+  server: 38.54.122.118
+  servername: dash.cloudflare.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9f4b9824-df02-49c3-a976-d4f9a31f81fe
+- name: 法国-043
+  network: ws
+  port: 2053
+  server: 54.36.98.82
+  servername: fei.634676.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: fei.634676.xyz
+    max-early-data: 2560
+    path: /
+- grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 法国-044
+  network: grpc
+  port: 11716
+  server: 141.227.136.11
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 98b988ba-fe55-402e-824a-6f7bb3436f22
+- name: 法国-045
+  network: ws
+  port: 2053
+  server: 152.228.135.204
+  servername: fei.634676.xyz
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: fei.634676.xyz
+    max-early-data: 2560
+    path: /
+- name: 法国-046
+  network: ws
+  port: 8443
+  server: 141.94.221.241
+  servername: fei.634676.xyz
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: fei.634676.xyz
+    max-early-data: 2560
+    path: /
+- name: 法国-047
+  network: ws
+  port: 2053
+  server: 141.94.220.157
+  servername: fei.634676.xyz
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: fei.634676.xyz
+    max-early-data: 2560
+    path: /
+- name: 法国-048
+  network: ws
+  port: 2053
+  server: 162.19.252.222
+  servername: fei.634676.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: fei.634676.xyz
+    max-early-data: 2560
+    path: /
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 法国-049
+  network: grpc
+  port: 23279
+  server: 141.94.210.231
+  type: vless
+  udp: true
+  uuid: 30198cba-c828-4b34-8165-25942bad201e
+  xudp: true
+- name: 法国-050
+  network: ws
+  port: 443
+  server: 51.91.251.16
+  servername: fei.634676.xyz
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: fei.634676.xyz
+    max-early-data: 2560
+    path: /
+- name: 🇫🇷[openproxylist.com] vless-FR
   network: grpc
   port: 8880
   server: 638944337658439808.dezful-prx-dnraacp.info
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #2'
+- name: '🇫🇷[openproxylist.com] vless-FR #1'
   network: grpc
   port: 8880
   server: 638946986851076125.hamedan-drc-tusabl.info
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #3'
+- name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: grpc
   port: 8880
   server: 638944900760751746.hamedan-prx-dnraacp.info
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: '🇫🇷[openproxylist.com] vless-FR #3'
+  network: grpc
+  port: 8880
+  server: 638942912656604786.malayer-prx-dnraacm.info
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: '🇫🇷[openproxylist.com] vless-FR #4'
+  network: grpc
+  port: 8880
+  server: 185.242.87.247
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - client-fingerprint: chrome
-  name: '🇫🇷[openproxylist.com] vless-FR #4'
+  name: '🇫🇷[openproxylist.com] vless-FR #5'
   network: grpc
   port: 8880
   server: 86.104.74.155
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #5'
+- name: '🇫🇷[openproxylist.com] vless-FR #6'
   network: grpc
   port: 8880
   server: 185.234.64.155
@@ -664,14 +780,14 @@ proxies:
   server: 23.162.152.30
   skip-cert-verify: true
   type: trojan
-- name: '🇫🇷[openproxylist.com] vless-FR #6'
+- name: '🇫🇷[openproxylist.com] vless-FR #7'
   network: grpc
   port: 8880
   server: 195.42.233.47
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #7'
+- name: '🇫🇷[openproxylist.com] vless-FR #8'
   network: ws
   port: 443
   server: 185.234.64.97
@@ -680,6 +796,34 @@ proxies:
   uuid: 0943cb18-a760-42c2-95e0-a8c75bfecbc2
   ws-opts:
     path: '%2Flmhdjfws'
+- name: '🇫🇷[openproxylist.com] vless-FR #9'
+  network: grpc
+  port: 8880
+  server: 185.242.87.154
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- alterId: 0
+  cipher: auto
+  name: '🇫🇷[openproxylist.com] vmess-FR #2'
+  network: ws
+  port: '443'
+  server: 141.94.155.228
+  servername: kampong.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kampong.org
+    path: linkvws
+- name: '🇫🇷[openproxylist.com] vless-FR #10'
+  network: grpc
+  port: 8880
+  server: 94.131.118.142
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - alterId: 0
   cipher: auto
   name: '🇫🇷[openproxylist.com] vmess-FR #3'
@@ -694,7 +838,7 @@ proxies:
     headers:
       Host: fapeng.org
     path: linkvws
-- name: '🇫🇷[openproxylist.com] vless-FR #8'
+- name: '🇫🇷[openproxylist.com] vless-FR #11'
   network: tcp
   port: 33801
   server: m36a.vip784.com
@@ -705,7 +849,7 @@ proxies:
     headers:
       Host: varzesh3.ir%2F%3Fed%3D2048%40HiByeVPNN--%40HiByeVPNN--%40HiByeVPNN--%40HiByeVPNN--%40HiByeVPNN--%40HiByeVPNN--%40HiByeVPNN--%40HiByeVPNN--%40HiByeVPNN--%40HiByeVPNN--%40HiByeVPNN--%40HiByeVPNN--%40HiByeVPNN
 - client-fingerprint: chrome
-  name: '🇫🇷[openproxylist.com] vless-FR #9'
+  name: '🇫🇷[openproxylist.com] vless-FR #12'
   network: ws
   port: 443
   server: 195.42.233.135
@@ -714,8 +858,26 @@ proxies:
   uuid: 60216396-9001-451a-aa7b-8e57bb4c6b50
   ws-opts:
     path: '%2Fpfrlouws'
+- name: '🇫🇷[openproxylist.com] vless-FR #13'
+  network: ws
+  port: 443
+  server: 185.242.87.140
+  tls: true
+  type: vless
+  uuid: 3a08182c-ef44-4137-afac-12d2f58994e6
+  ws-opts:
+    path: '%2Fhxwdnrws'
+- name: '🇫🇷[openproxylist.com] vless-FR #14'
+  network: ws
+  port: 443
+  server: 194.4.49.217
+  tls: true
+  type: vless
+  uuid: 2844ed48-493d-43ca-a13e-76df8e444de0
+  ws-opts:
+    path: '%2Ffqogayws'
 - client-fingerprint: chrome
-  name: '🇫🇷[openproxylist.com] vless-FR #10'
+  name: '🇫🇷[openproxylist.com] vless-FR #15'
   network: ws
   port: 443
   server: 194.4.49.229
@@ -724,37 +886,37 @@ proxies:
   uuid: 745ded22-6ae3-4c4d-b31e-c42db0ae74fa
   ws-opts:
     path: '%2Fteqalfws'
-- name: '🇫🇷[openproxylist.com] vless-FR #11'
+- name: '🇫🇷[openproxylist.com] vless-FR #16'
   network: ws
   port: 443
-  server: 95.164.6.214
+  server: 195.42.233.149
   tls: true
   type: vless
-  uuid: 03852aa6-db01-4137-972d-14ebfb202f09
+  uuid: e137be9d-ac3a-4d54-897d-6a706f34795f
   ws-opts:
-    path: '%2Fkcknkyws'
-- name: '🇫🇷[openproxylist.com] vless-FR #12'
+    path: /cdfighws
+- name: '🇫🇷[openproxylist.com] vless-FR #17'
   network: grpc
   port: 8880
   server: 185.231.205.181
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #13'
+- name: '🇫🇷[openproxylist.com] vless-FR #18'
   network: grpc
   port: 8880
   server: 185.231.205.246
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #14'
+- name: '🇫🇷[openproxylist.com] vless-FR #19'
   network: grpc
   port: 8880
   server: 185.231.205.253
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #15'
+- name: '🇫🇷[openproxylist.com] vless-FR #20'
   network: ws
   port: 80
   server: 51.38.232.101
