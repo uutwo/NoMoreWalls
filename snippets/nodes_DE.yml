@@ -1,29 +1,53 @@
 proxies:
-- name: 德国-001
-  network: ws
-  password: iwangjie
-  port: 2053
-  server: 194.76.173.98
+- name: 德国-001 |5.1MB/s|GPT|D+|8%
+  network: tcp
+  password: 15387474-c50e-4eab-ae51-47f60436fb46
+  port: 52312
+  server: 205.198.95.254
   skip-cert-verify: true
-  sni: nodes.830901.xyz
+  sni: 0.0.0.0
   type: trojan
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 德国-003 |4.3MB/s|GPT|5%
+  network: tcp
+  port: 80
+  server: 78.47.12.94
+  type: vmess
+  uuid: 00451b7a-e0a9-4e19-a6e9-7e38693e3f1f
+- name: 德国-004 |4.8MB/s|GPT|47%
+  network: tcp
+  password: 15387474-c50e-4eab-ae51-47f60436fb46
+  port: 52312
+  server: 139.162.180.57
+  skip-cert-verify: true
+  sni: 0.0.0.0
+  type: trojan
+- name: 德国-005 |4.8MB/s|GPT|47%
+  network: tcp
+  password: 15387474-c50e-4eab-ae51-47f60436fb46
+  port: 52312
+  server: 139.162.144.54
+  skip-cert-verify: true
+  sni: 0.0.0.0
+  type: trojan
+- alterId: 1
+  cipher: auto
+  name: '🇫🇷[openproxylist.com] vmess-FR #1'
+  network: ws
+  port: 443
+  server: pelang.org
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      host: nodes.830901.xyz
-    path: /?ed=2560
+      Host: pelang.org
+    path: linkvws
 - alterId: 0
   cipher: auto
-  name: 德国-006
-  network: tcp
-  port: 51409
-  server: 155.254.35.214
-  tls: false
-  type: vmess
-  uuid: d2b794b2-3bdc-49e2-827a-1bf9fcba4b1c
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪[openproxylist.com] vmess-DE
+  name: '🇩🇪[openproxylist.com] vmess-DE #1'
   network: ws
   port: '443'
   server: 57.129.64.157
@@ -35,12 +59,12 @@ proxies:
     headers:
       Host: lammaland.org
     path: linkvws
-- alterId: 1
+- alterId: 0
   cipher: auto
-  name: '🇨🇦[openproxylist.com] vmess-CA #3'
+  name: '🇩🇪[openproxylist.com] vmess-DE #3'
   network: ws
-  port: 443
-  server: serkat.org
+  port: '443'
+  server: 57.129.24.130
   servername: serkat.org
   tls: true
   type: vmess
@@ -51,7 +75,7 @@ proxies:
     path: linkvws
 - alterId: 1
   cipher: auto
-  name: 🇵🇱[openproxylist.com] vmess-PL
+  name: '🇨🇦[openproxylist.com] vmess-CA #3'
   network: ws
   port: '443'
   server: kampong.org
