@@ -14,7 +14,30 @@ proxies:
   skip-cert-verify: false
   tls: false
   type: hysteria2
-- name: 德国-001 |5.1MB/s|GPT|D+|8%
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 德国-001 |1.3MB/s
+  network: tcp
+  port: 9954
+  reality-opts:
+    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
+  server: 91.98.86.54
+  servername: store.steampowered.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: c2ec47f4-873f-573f-7d8d-d79d7ad452e6
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 德国-002 |4.3MB/s|GPT|5%
+  network: tcp
+  port: 80
+  server: 78.47.12.94
+  type: vmess
+  uuid: 00451b7a-e0a9-4e19-a6e9-7e38693e3f1f
+- name: 德国-003 |5.1MB/s|GPT|D+|8%
   network: tcp
   password: 15387474-c50e-4eab-ae51-47f60436fb46
   port: 52312
@@ -36,15 +59,21 @@ proxies:
   type: vless
   udp: true
   uuid: 0abf9050-c7be-464d-80af-24094c2b97de
-- alterId: 0
-  cipher: auto
-  name: 德国-003 |4.3MB/s|GPT|5%
+- client-fingerprint: chrome
+  name: 德国-005 | ⬇️ 1.7MB/s
   network: tcp
-  port: 80
-  server: 78.47.12.94
-  type: vmess
-  uuid: 00451b7a-e0a9-4e19-a6e9-7e38693e3f1f
-- name: 德国-004 |4.8MB/s|GPT|47%
+  port: 49330
+  reality-opts:
+    public-key: Dee9YE139lZpb4V3QytB8DvHY3nTCnEXzk2IjvMLHi8
+    short-id: '!!str b3'
+  server: 193.46.81.151
+  servername: miro.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: b5cb98c1-a6cd-440a-a326-2aaa1885d04b
+  xudp: true
+- name: 德国-006 |4.8MB/s|GPT|47%
   network: tcp
   password: 15387474-c50e-4eab-ae51-47f60436fb46
   port: 52312
@@ -52,7 +81,7 @@ proxies:
   skip-cert-verify: true
   sni: 0.0.0.0
   type: trojan
-- name: 德国-005 |4.8MB/s|GPT|47%
+- name: 德国-007 |4.8MB/s|GPT|47%
   network: tcp
   password: 15387474-c50e-4eab-ae51-47f60436fb46
   port: 52312
@@ -60,705 +89,6 @@ proxies:
   skip-cert-verify: true
   sni: 0.0.0.0
   type: trojan
-- encryption: none
-  name: 德国-006
-  network: ws
-  port: 2096
-  server: 185.158.133.43
-  servername: kejiland.freewarp.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: kejiland.freewarp.eu.org
-    max-early-data: 2560
-    path: /snippets&freecodes
-- client-fingerprint: chrome
-  encryption: none
-  name: 德国-007 |2.0MB/s|D+
-  network: ws
-  port: 443
-  server: 5.178.106.135
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/47.0.2526.106 Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- name: 德国-008 | ⬇️ 4.0MB/s
-  network: ws
-  port: 2083
-  server: 5.75.139.127
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 德国-009 |3.2MB/s
-  network: ws
-  port: 2096
-  server: 188.244.122.32
-  servername: kejiland.freewarp.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/42.0.2311.135 Safari/537.36
-    path: /snippets
-  xudp: true
-- name: 德国-010 |3.1MB/s
-  network: ws
-  port: 443
-  server: 91.107.190.144
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: fei.634676.xyz
-    max-early-data: 2560
-    path: /
-- name: 德国-011 |3.3MB/s|D+
-  network: ws
-  port: 443
-  server: 46.4.27.170
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: fei.634676.xyz
-    max-early-data: 2560
-    path: /
-- name: 德国-012 |3.7MB/s|D+
-  network: ws
-  port: 443
-  server: 91.107.167.242
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: fei.634676.xyz
-    max-early-data: 2560
-    path: /
-- client-fingerprint: chrome
-  encryption: none
-  name: 德国-013 |1.1MB/s
-  network: ws
-  port: 443
-  server: 188.245.187.74
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/63.0.3239.132 Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- client-fingerprint: chrome
-  name: 德国-014 |5.1MB/s|D+
-  network: ws
-  port: 2083
-  server: 188.245.92.220
-  servername: fei.634676.xyz
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- client-fingerprint: chrome
-  encryption: none
-  name: 德国-015 |3.8MB/s|D+
-  network: ws
-  port: 443
-  server: 49.12.66.71
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/64.0.3282.167 Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- name: 德国-016 |612KB/s|D+
-  network: ws
-  port: 2053
-  server: 91.107.187.248
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- name: 德国-017 |3.2MB/s|D+
-  network: ws
-  port: 443
-  server: 91.107.159.91
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: fei.634676.xyz
-    max-early-data: 2560
-    path: /
-- name: 德国-018 |3.6MB/s|D+
-  network: ws
-  port: 2087
-  server: 5.75.192.9
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- client-fingerprint: chrome
-  encryption: none
-  name: 德国-019 |852KB/s
-  network: ws
-  port: 443
-  server: 116.202.209.228
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/61.0.3163.79 Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- name: 德国-020 |1.4MB/s|D+
-  network: ws
-  port: 8443
-  server: 5.75.134.237
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- client-fingerprint: chrome
-  encryption: none
-  name: 德国-021 |1.2MB/s
-  network: ws
-  port: 443
-  server: 85.10.253.205
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/68.0.3440.106 Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- name: 德国-022 |4.6MB/s|D+
-  network: ws
-  port: 2053
-  server: 5.75.201.201
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- client-fingerprint: chrome
-  encryption: none
-  name: 德国-023 |2.4MB/s
-  network: ws
-  port: 8443
-  server: 91.107.191.42
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/61.0.3163.100 Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  name: 德国-024 | ⬇️ 1.5MB/s
-  network: ws
-  port: 2087
-  server: 91.107.129.100
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-  xudp: true
-- name: 德国-025 |2.1MB/s
-  network: ws
-  port: 2096
-  server: 77.37.33.43
-  servername: kejiland.freewarp.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: kejiland.freewarp.eu.org
-    max-early-data: 2560
-    path: /snippets&freecodes @节点狂魔 /
-- name: 德国-026 |1.3MB/s
-  network: ws
-  port: 443
-  server: 91.99.215.214
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      host: fei.634676.xyz
-    path: /?ed=2560
-- client-fingerprint: chrome
-  encryption: none
-  name: 德国-027 |6.7MB/s|D+
-  network: ws
-  port: 443
-  server: 91.107.189.217
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; SM-J111M Build/LMY47V) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- name: 德国-028 |2.1MB/s|D+
-  network: ws
-  port: 443
-  server: 162.55.92.198
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- name: 德国-029 |1.5MB/s
-  network: ws
-  port: 2096
-  server: 5.75.207.125
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      host: fei.634676.xyz
-    path: /?ed=2560
-- name: 德国-030 |3.1MB/s|D+
-  network: ws
-  port: 443
-  server: 91.107.251.232
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      host: fei.634676.xyz
-    path: /?ed=2560
-- client-fingerprint: chrome
-  encryption: none
-  name: 德国-031 | ⬇️ 1.1MB/s|Disney|You...
-  network: ws
-  port: 443
-  server: 88.198.82.155
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- name: 德国-032 |5.8MB/s
-  network: ws
-  port: 443
-  server: 91.107.179.48
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: fei.634676.xyz
-    max-early-data: 2560
-    path: /
-- name: 德国-033 |4.4MB/s|D+
-  network: ws
-  port: 443
-  server: 91.107.163.245
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- name: 德国-034 |3.4MB/s|D+
-  network: ws
-  port: 2096
-  server: 91.107.161.112
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      host: fei.634676.xyz
-    path: /?ed=2560
-- client-fingerprint: chrome
-  encryption: none
-  name: 德国-035 |2.0MB/s
-  network: ws
-  port: 2053
-  server: 91.107.172.37
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  name: 德国-036 |1.3MB/s
-  network: ws
-  port: 443
-  server: 91.99.71.148
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-      User-Agent: Mozilla/5.0 (X11; Datanyze; Linux x86_64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/65.0.3325.181 Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- name: 德国-037 |1.8MB/s
-  network: ws
-  port: 8443
-  server: 5.9.144.250
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      host: fei.634676.xyz
-    path: /?ed=2560
-- client-fingerprint: chrome
-  encryption: none
-  name: 德国-038 |3.9MB/s|D+
-  network: ws
-  port: 2053
-  server: 89.19.44.247
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/55.0.2883.87 Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- name: 德国-039 |3.4MB/s
-  network: ws
-  port: 8443
-  server: 128.140.121.191
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      host: fei.634676.xyz
-    path: /?ed=2560
-- name: 德国-040 |6.8MB/s|D+
-  network: ws
-  port: 2083
-  server: 91.107.182.33
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- client-fingerprint: chrome
-  encryption: none
-  name: 德国-041 |2.1MB/s|D+
-  network: ws
-  port: 443
-  server: 91.107.172.20
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-      User-Agent: Mozilla/5.0 (Linux; Android 4.4.2; de-de; SAMSUNG GT-I9195 Build/KOT49H)
-        AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile
-        Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- name: 德国-042 |6.7MB/s|D+
-  network: ws
-  port: 2096
-  server: 91.107.185.49
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- client-fingerprint: chrome
-  encryption: none
-  name: 德国-043 |7.6MB/s
-  network: ws
-  port: 443
-  server: 91.107.136.49
-  servername: fei.634676.xyz
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-  xudp: true
-- name: 德国-044 |1.1MB/s
-  network: ws
-  port: 443
-  server: 91.107.189.71
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      host: fei.634676.xyz
-    path: /?ed=2560
-- name: 德国-045 |4.4MB/s|D+
-  network: ws
-  port: 8443
-  server: 136.243.204.103
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- client-fingerprint: chrome
-  fp: chrome
-  name: 德国-046
-  network: tcp
-  pbk: V_ibNuL3PFXIAy0bV1PLlHqiYPMKT_QYC7wA5zqVRnQ
-  port: 2095
-  reality-opts:
-    public-key: V_ibNuL3PFXIAy0bV1PLlHqiYPMKT_QYC7wA5zqVRnQ
-  security: reality
-  server: 91.107.245.14
-  servername: refersion.com
-  sni: refersion.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: 4b47a944-9ea5-4f7a-fff9-4ca5f6cd55b6
-- name: 德国-048
-  network: ws
-  port: 443
-  server: 148.251.134.94
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: fei.634676.xyz
-    max-early-data: 2560
-    path: /
-- client-fingerprint: chrome
-  encryption: none
-  name: 德国-049 |5.0MB/s|D+
-  network: ws
-  port: 443
-  server: 91.107.136.150
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- client-fingerprint: chrome
-  name: 德国-050 |7.8MB/s|D+
-  network: ws
-  port: 443
-  server: 172.104.144.88
-  servername: fei.634676.xyz
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
 - alterId: 1
   cipher: auto
   name: '🇫🇷[openproxylist.com] vmess-FR #1'
@@ -775,7 +105,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #1'
+  name: '🇩🇪[openproxylist.com] vmess-DE #2'
   network: ws
   port: '443'
   server: 57.129.64.157
@@ -787,22 +117,25 @@ proxies:
     headers:
       Host: lammaland.org
     path: linkvws
-- name: 🇩🇪[openproxylist.com] vless-DE
+- client-fingerprint: chrome
+  name: 🇩🇪[openproxylist.com] vless-DE
   network: ws
   port: 443
-  server: net2026cd.zanddynastyofpersia.org
+  server: 188.114.96.3
   servername: net2026cd.zanddynastyofpersia.org
   tls: true
   type: vless
   uuid: 0ec8c120-33fa-4658-9bed-3a51cb04c55c
   ws-opts:
+    headers:
+      Host: net2026cd.zanddynastyofpersia.org
     path: '%2FeJsVXFVZ6iavNx1EFxOyH861WH'
-- alterId: 1
+- alterId: 0
   cipher: auto
-  name: '🇨🇦[openproxylist.com] vmess-CA #3'
+  name: '🇩🇪[openproxylist.com] vmess-DE #5'
   network: ws
-  port: 443
-  server: serkat.org
+  port: '443'
+  server: 57.129.24.130
   servername: serkat.org
   tls: true
   type: vmess
@@ -837,6 +170,34 @@ proxies:
     headers:
       Host: kampong.org
     path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '🇩🇪[openproxylist.com] vmess-DE #7'
+  network: ws
+  port: '443'
+  server: 57.129.59.195
+  servername: kampong.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kampong.org
+    path: linkvws
+- alterId: 1
+  cipher: auto
+  name: '🇩🇪[openproxylist.com] vmess-DE #8'
+  network: ws
+  port: '443'
+  server: 57.129.28.215
+  servername: serkat.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: serkat.org
+    path: linkvws
 - name: '🇩🇪[openproxylist.com] vless-DE #2'
   network: ws
   port: 443
@@ -851,7 +212,7 @@ proxies:
     path: '%2FIyq035lnud9R8ruNNrqGxZZ2'
 - alterId: 0
   cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #6'
+  name: '🇩🇪[openproxylist.com] vmess-DE #9'
   network: ws
   port: '443'
   server: 57.129.28.216
@@ -885,7 +246,7 @@ proxies:
     path: '%2Fpanika'
 - alterId: 0
   cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #7'
+  name: '🇩🇪[openproxylist.com] vmess-DE #10'
   network: ws
   port: '20086'
   server: 91.99.185.216
@@ -898,6 +259,18 @@ proxies:
       Host: ''
     path: /
 - name: '🇩🇪[openproxylist.com] vless-DE #6'
+  network: ws
+  port: 443
+  server: 198.62.62.229
+  servername: mirror.fullmargintraders.com
+  tls: true
+  type: vless
+  uuid: 6c11247b-6078-461a-93d5-22e4df284e6d
+  ws-opts:
+    headers:
+      Host: mirror.fullmargintraders.com
+    path: '%2Fwsv%2F6c11247b-6078-461a-93d5-22e4df284e6d'
+- name: '🇩🇪[openproxylist.com] vless-DE #7'
   network: ws
   port: 80
   server: sweet-combination.seotoolsforyou.co.uk

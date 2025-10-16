@@ -8,14 +8,14 @@ proxies:
   tls: false
   type: hysteria2
 - cipher: chacha20-ietf
-  name: 新加坡-001 |1.2MB/s
+  name: 新加坡-001 |13.0MB/s
   password: asd123456
   port: 8388
   server: 103.36.91.32
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 新加坡-002 |10.5MB/s|GPT⁺|YT-SG|2...
+  name: 新加坡-002 | ⬇️ 1.1MB/s|Netflix|Y...
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
@@ -28,7 +28,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 🇸🇬 新加坡3|@ripaojiedian
+  name: 新加坡-003 |10.2MB/s|YT-SG|22%
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
@@ -38,124 +38,35 @@ proxies:
   server: 5.44.249.43
   tfo: false
   type: ss
-- name: 新加坡-004 |4.3MB/s|GPT|YT-SG|D+
-  network: ws
-  port: 443
-  server: 172.104.180.5
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: fei.634676.xyz
-    max-early-data: 2560
-    path: /
-- client-fingerprint: chrome
-  encryption: none
-  name: 新加坡-005 |5.6MB/s|YT-SG|D+|GM
-  network: ws
-  port: 443
-  server: 172.104.188.124
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/49.0.2623.112 Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- name: 新加坡-006 |5.0MB/s|YT-SG|D+|GM
-  network: ws
-  port: 443
-  server: 172.237.73.24
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- name: 🇸🇬[openproxylist.com] trojan-S...
-  password: installshield
-  port: 8443
-  server: 38.180.106.124
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 新加坡-008
-  password: yunxi8848
-  port: 52871
-  server: 101.32.245.58
-  type: http
-  username: yunxi8848
-- name: 新加坡-009 |1.1MB/s
-  network: ws
-  port: 443
-  server: 172.104.188.73
-  servername: fei.634676.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- name: 新加坡-010
-  password: tXA14Qlh
-  port: 45235
-  server: 47.237.20.174
-  type: http
-  username: kZXMC3Z1
-- name: 新加坡-011 |4.0MB/s|YT-SG|D+|GM
-  network: ws
-  port: 443
-  server: 172.104.188.163
-  servername: fei.634676.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      host: fei.634676.xyz
-    path: /?ed=2560
-- name: 新加坡-012
-  password: 1nLWx0UVnJ
-  port: 52302
-  server: 164.152.167.94
-  type: http
-  username: 7waHp6NRjR
 - client-fingerprint: chrome
   name: 新加坡|@ripaojiedian
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 2283
-  server: 36.156.102.84
-  skip-cert-verify: false
-  sni: www.nintendogames.net
+  server: 160.16.144.208
+  skip-cert-verify: true
+  sni: www.baidu.com
   type: trojan
 - client-fingerprint: chrome
   name: 新加坡2|@ripaojiedian
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 1085
-  server: 36.156.102.84
-  skip-cert-verify: false
-  sni: www.nintendogames.net
+  port: 5041
+  server: 160.16.138.24
+  skip-cert-verify: true
+  sni: www.baidu.com
   type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 🇸🇬 新加坡3|@ripaojiedian
+  port: 22286
+  server: 47.245.106.193
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 8646218f-a600-4b73-8721-aa5d4567819e
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -169,6 +80,16 @@ proxies:
   uuid: bfcb103f-2133-4965-8684-6b4c8ef7a774
 - alterId: 0
   cipher: auto
+  name: 新加坡3|@ripaojiedian
+  network: tcp
+  port: '22286'
+  server: 47.245.106.193
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8646218f-a600-4b73-8721-aa5d4567819e
+- alterId: 0
+  cipher: auto
   name: 新加坡4|@ripaojiedian
   network: tcp
   port: '22433'
@@ -177,3 +98,9 @@ proxies:
   tls: false
   type: vmess
   uuid: bfcb103f-2133-4965-8684-6b4c8ef7a774
+- name: 🇸🇬[openproxylist.com] trojan-S...
+  password: installshield
+  port: 8443
+  server: 38.180.106.124
+  skip-cert-verify: true
+  type: trojan
