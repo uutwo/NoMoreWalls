@@ -312,28 +312,30 @@ proxies:
   sni: www.baidu.com
   type: trojan
 - name: 🇺🇸[openproxylist.com] vless-US
-  network: grpc
-  port: 8880
-  server: 103.35.189.146
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸[openproxylist.com] vmess-US
   network: ws
-  port: '27123'
-  server: 212.192.15.176
-  tls: false
-  type: vmess
-  uuid: 890b54b4-53bf-4758-9abc-5dd8c8ba529a
+  port: 443
+  server: 147.79.20.47
+  servername: swus.zyk.biz.id
+  tls: true
+  type: vless
+  uuid: 0de36d61-ac9e-4105-92cd-8fe97921b48b
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: swus.zyk.biz.id
+    path: '%2F'
+- alpn:
+  - h2
+  name: '🇺🇸[openproxylist.com] vless-US #1'
+  network: grpc
+  port: 443
+  server: all.tellmethetrue.shop
+  servername: pqh30v1.hiddendom.shop
+  tls: true
+  type: vless
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
 - alterId: 0
   cipher: auto
-  name: 🇨🇦[openproxylist.com] vmess-CA
+  name: '🇨🇦[openproxylist.com] vmess-CA #1'
   network: ws
   port: '443'
   server: seribus.org
@@ -347,7 +349,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #2'
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
   network: ws
   port: '443'
   server: 40.160.16.219
@@ -359,22 +361,23 @@ proxies:
     headers:
       Host: serkat.org
     path: linkvws
-- client-fingerprint: chrome
-  name: '🇺🇸[openproxylist.com] vless-US #1'
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #3'
   network: ws
-  port: 443
-  server: 209.126.84.189
+  port: '443'
+  server: v2ray.codefyinc.com
   servername: v2ray.codefyinc.com
   tls: true
-  type: vless
-  uuid: 0417be58-2ea8-49de-8083-9eff9b0137e5
+  type: vmess
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
   ws-opts:
     headers:
       Host: v2ray.codefyinc.com
-    path: '%2fvlessws'
+    path: /vmessws
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #4'
+  name: '🇺🇸[openproxylist.com] vless-US #2'
   network: tcp
   port: 443
   reality-opts:
@@ -387,7 +390,7 @@ proxies:
   uuid: a87bf8a2-17a4-3054-b51e-876b5f1d0f24
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #5'
+  name: '🇺🇸[openproxylist.com] vless-US #4'
   network: tcp
   port: 443
   reality-opts:
@@ -410,7 +413,7 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: '🇺🇸[openproxylist.com] vless-US #6'
+- name: '🇺🇸[openproxylist.com] vless-US #5'
   network: ws
   port: 80
   server: 45.8.146.207
@@ -434,7 +437,7 @@ proxies:
     path: /eisasqa
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #13'
+  name: '🇺🇸[openproxylist.com] vless-US #16'
   network: tcp
   port: 443
   reality-opts:
@@ -444,3 +447,43 @@ proxies:
   tls: false
   type: vless
   uuid: 49ed01ad-3bb4-204f-b0ff-a58f658fd618
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #6'
+  network: ws
+  port: '80'
+  server: gggggggggggggg.222769.xyz
+  tls: false
+  type: vmess
+  uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7
+  ws-opts:
+    headers:
+      Host: gggggggggggggg.222769.xyz
+    path: /f6taOMcOSZb9TPR
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #7'
+  network: ws
+  port: '443'
+  server: ssssssssssssfffffffgh.2032.pp.ua
+  servername: ssssssssssssfffffffgh.2032.pp.ua
+  tls: true
+  type: vmess
+  uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
+  ws-opts:
+    headers:
+      Host: ssssssssssssfffffffgh.2032.pp.ua
+    path: /6We3U9Df1WGxgFnoFPw1
+- client-fingerprint: chrome
+  name: '🇺🇸[openproxylist.com] vless-US #15'
+  network: ws
+  port: 443
+  server: 104.21.90.226
+  servername: 444RRrt5.7777155.xYZ
+  tls: true
+  type: vless
+  uuid: e4cbe8b8-37db-4aaa-8469-b84f34c51ebc
+  ws-opts:
+    headers:
+      Host: 444rrrt5.7777155.xyz
+    path: '%2F6OWLjRc26b0nHYr5hYXD'

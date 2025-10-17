@@ -55,6 +55,18 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵[openproxylist.com] vless-JP
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: ci7VwV3lQURNI2oRR3GDdkBbHXh0zbSeqciL7tiKO10
+  server: 109.123.229.205
+  servername: dash.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 2cf21f7f-9f29-44b0-893d-08a6e2e09704
 - alterId: 0
   cipher: auto
   name: 🇯🇵[openproxylist.com] vmess-JP
@@ -97,7 +109,7 @@ proxies:
     headers:
       Host: ''
     path: /arki?ed=2048
-- name: 🇯🇵[openproxylist.com] vless-JP
+- name: '🇯🇵[openproxylist.com] vless-JP #1'
   network: ws
   port: 80
   server: 5.253.41.223
@@ -106,7 +118,7 @@ proxies:
   uuid: a0a866bd-8c0c-464c-9b96-c6dafa154419
   ws-opts:
     path: /vless/?ed=2048
-- name: '🇯🇵[openproxylist.com] vless-JP #1'
+- name: '🇯🇵[openproxylist.com] vless-JP #2'
   network: ws
   port: 80
   server: 45.12.134.217
@@ -114,7 +126,9 @@ proxies:
   type: vless
   uuid: ed242313-b502-4a4a-97f4-336da621a837
   ws-opts:
-    path: /vless/?ed=2048@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn
+    headers:
+      Host: '---%40External_Net---%40External_Net---%40External_Net---%40External_Net---%40External_Net'
+    path: '%2Fvless%2F'
 - alterId: 0
   cipher: auto
   name: '🇯🇵[openproxylist.com] vmess-JP #3'
