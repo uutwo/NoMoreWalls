@@ -315,7 +315,7 @@ proxies:
   http-opts:
     path:
     - /
-  name: '🇯🇵[openproxylist.com] vless-JP #1'
+  name: '🇯🇵[openproxylist.com] vless-JP #3'
   network: tcp
   port: 443
   reality-opts:
@@ -358,10 +358,35 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: 🇯🇵[openproxylist.com] vless-JP
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 🇯🇵[openproxylist.com] vless-JP
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: ZoqSn1Q8q0F8oMw7BTMzCWXZP1gUzMZaEv-W8TihGgk
+    short-id: '!!str 02ea00bf94b5d20f'
+  server: 155.133.7.123
+  servername: www.google.com
+  tls: false
+  type: vless
+  uuid: 92590cf3-9dc4-4a68-abf8-6378293892a7
+- name: '🇯🇵[openproxylist.com] vless-JP #1'
   network: ws
   port: 2053
   server: 109.123.231.212
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2%2F%3Fed%3D2560
+- name: '🇯🇵[openproxylist.com] vless-JP #2'
+  network: ws
+  port: 57005
+  server: 152.69.192.40
   servername: gaosir.unfeeling.sbs
   tls: true
   type: vless
@@ -398,7 +423,16 @@ proxies:
     headers:
       Host: ''
     path: /telegram_@sswia
-- name: '🇯🇵[openproxylist.com] vless-JP #2'
+- name: '🇯🇵[openproxylist.com] vless-JP #4'
+  network: ws
+  port: 80
+  server: 5.253.41.223
+  tls: false
+  type: vless
+  uuid: a0a866bd-8c0c-464c-9b96-c6dafa154419
+  ws-opts:
+    path: /vless/?ed=2048
+- name: '🇯🇵[openproxylist.com] vless-JP #5'
   network: ws
   port: 80
   server: 45.12.134.217
@@ -406,9 +440,7 @@ proxies:
   type: vless
   uuid: ed242313-b502-4a4a-97f4-336da621a837
   ws-opts:
-    headers:
-      Host: '---%40External_Net---%40External_Net---%40External_Net---%40External_Net---%40External_Net'
-    path: '%2Fvless%2F'
+    path: /vless/?ed=2048@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn
 - alterId: 0
   cipher: auto
   name: '🇯🇵[openproxylist.com] vmess-JP #2'
@@ -423,15 +455,3 @@ proxies:
     headers:
       Host: ''
     path: /vmess/
-- name: '🇯🇵[openproxylist.com] vless-JP #3'
-  network: ws
-  port: 57005
-  server: 152.69.192.40
-  servername: gaosir.unfeeling.sbs
-  tls: true
-  type: vless
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  ws-opts:
-    headers:
-      Host: gaosir.unfeeling.sbs
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2%2F%3Fed%3D2560
