@@ -4,7 +4,7 @@ proxies:
   auth-str: dongtaiwang.com
   auth_str: dongtaiwang.com
   down: 55 Mbps
-  name: 法国-003 |2.1MB/s|GPT⁺|YT-FR|NF
+  name: 法国-004 |2.1MB/s|GPT⁺|YT-FR|NF
   port: 50011
   protocol: udp
   server: 62.210.127.217
@@ -13,31 +13,41 @@ proxies:
   type: hysteria
   udp: true
   up: 11 Mbps
-- cipher: aes-256-cfb
-  name: 法国-001 |1.2MB/s
-  password: amazonskr05
-  port: 443
-  server: 15.237.118.240
-  type: ss
+- name: 法国-001 |1.4MB/s
+  network: ws
+  port: 8880
+  server: 141.11.203.247
+  servername: ex.sue.x10.mx
+  type: vless
   udp: true
+  uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
+  ws-opts:
+    headers:
+      Host: ex.sue.x10.mx
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/48.0.2564.109 Safari/537.36
+    path: /Telegram
+  xudp: true
 - cipher: aes-256-cfb
-  name: 法国-002 |6.4MB/s
+  client-fingerprint: chrome
+  name: 法国-002 |4.4MB/s
   password: amazonskr05
   port: 443
-  server: 13.38.71.74
+  server: 13.39.112.103
+  tfo: false
   type: ss
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: '100'
-  name: 法国-004 |2.3MB/s|GPT⁺|YT-FR|NF
-  port: 15010
-  server: 195.154.200.40
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  up: '100'
+- name: 法国-003 |6.8MB/s|D+
+  network: ws
+  password: iwangjie
+  port: 2053
+  server: 141.94.68.216
+  sni: nodes.830901.xyz
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: nodes.830901.xyz
+    path: /?ed=2560
 - alpn:
   - h3
   auth-str: dongtaiwang.com
@@ -52,33 +62,25 @@ proxies:
   type: hysteria
   udp: true
   up: 11
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: '100'
+  name: 法国-006 |2.3MB/s|GPT⁺|YT-FR|NF
+  port: 15010
+  server: 195.154.200.40
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: '100'
 - cipher: aes-256-cfb
-  name: 法国-006 |6.1MB/s|GPT|4%
+  name: 法国-007 |6.1MB/s|GPT⁺|4%
   password: amazonskr05
   port: 443
-  server: 13.36.170.248
+  server: 15.237.118.240
   type: ss
-- cipher: aes-256-cfb
-  name: 法国-007 | ⬇️ 3.3MB/s
-  password: amazonskr05
-  port: 443
-  server: 52.47.120.33
-  type: ss
-- name: 法国-008 |1013KB/s|D+
-  network: ws
-  port: 8880
-  server: 141.11.203.247
-  servername: ex.sue.x10.mx
-  type: vless
   udp: true
-  uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
-  ws-opts:
-    headers:
-      Host: ex.sue.x10.mx
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; SM-J120M Build/LMY47X) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /Telegram
-  xudp: true
 - name: 🇫🇷[openproxylist.com] vless-FR
   network: grpc
   port: 8880
@@ -86,52 +88,22 @@ proxies:
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- flow: ''
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
-  network: grpc
-  port: 8880
-  server: 638933624655569356.dezful-drc-tusabx.info
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #2'
-  network: tcp
-  port: 37096
-  server: vpn-srv-2.circlevpn.net
-  servername: vpn-srv-2.circlevpn.net
-  tls: true
-  type: vless
-  uuid: c30ec165-fcb4-47af-8e68-70d88a3b2910
-- name: '🇫🇷[openproxylist.com] vless-FR #3'
+- name: '🇫🇷[openproxylist.com] vless-FR #1'
   network: grpc
   port: 8880
   server: 638950330462896164.neyshabur-prx-dnraacr.info
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #4'
-  network: grpc
-  port: 8880
-  server: 194.4.49.226
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - client-fingerprint: chrome
-  name: '🇫🇷[openproxylist.com] vless-FR #5'
+  name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: grpc
   port: 8880
   server: 185.242.87.195
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #6'
-  network: grpc
-  port: 8880
-  server: 638947302860438160.zagreb-prx-dnraacq.info
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #7'
+- name: '🇫🇷[openproxylist.com] vless-FR #3'
   network: grpc
   port: 8880
   server: 95.164.6.149
@@ -139,42 +111,42 @@ proxies:
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - client-fingerprint: chrome
-  name: '🇫🇷[openproxylist.com] vless-FR #8'
+  name: '🇫🇷[openproxylist.com] vless-FR #4'
   network: grpc
   port: 8880
   server: 195.42.233.91
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #9'
+- name: '🇫🇷[openproxylist.com] vless-FR #5'
   network: grpc
   port: 8880
   server: 638944337658439808.dezful-prx-dnraacp.info
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #10'
+- name: '🇫🇷[openproxylist.com] vless-FR #6'
   network: grpc
   port: 8880
   server: 638946986851076125.hamedan-drc-tusabl.info
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #11'
+- name: '🇫🇷[openproxylist.com] vless-FR #7'
   network: grpc
   port: 8880
   server: 638944900760751746.hamedan-prx-dnraacp.info
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #12'
+- name: '🇫🇷[openproxylist.com] vless-FR #8'
   network: grpc
   port: 8880
   server: 638942912656604786.malayer-prx-dnraacm.info
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #13'
+- name: '🇫🇷[openproxylist.com] vless-FR #9'
   network: grpc
   port: 8880
   server: 185.242.87.247
@@ -182,28 +154,28 @@ proxies:
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - client-fingerprint: chrome
-  name: '🇫🇷[openproxylist.com] vless-FR #14'
+  name: '🇫🇷[openproxylist.com] vless-FR #10'
   network: grpc
   port: 8880
   server: 86.104.74.155
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #15'
+- name: '🇫🇷[openproxylist.com] vless-FR #11'
+  network: grpc
+  port: 8880
+  server: 638943929060335589.warsaw-prx-dnraacp.info
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: '🇫🇷[openproxylist.com] vless-FR #12'
   network: grpc
   port: 8880
   server: 195.42.233.47
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #16'
-  network: grpc
-  port: 8880
-  server: 638937544595891094.madrid-prx-dnraacl.info
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #17'
+- name: '🇫🇷[openproxylist.com] vless-FR #13'
   network: grpc
   port: 8880
   server: 185.242.87.154
@@ -212,7 +184,21 @@ proxies:
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - alterId: 0
   cipher: auto
-  name: '🇫🇷[openproxylist.com] vmess-FR #3'
+  name: '🇫🇷[openproxylist.com] vmess-FR #4'
+  network: ws
+  port: '443'
+  server: 141.94.155.228
+  servername: kampong.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kampong.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '🇫🇷[openproxylist.com] vmess-FR #5'
   network: ws
   port: '443'
   server: 141.94.155.224
@@ -224,7 +210,7 @@ proxies:
     headers:
       Host: fapeng.org
     path: linkvws
-- name: '🇫🇷[openproxylist.com] vless-FR #18'
+- name: '🇫🇷[openproxylist.com] vless-FR #14'
   network: ws
   port: 443
   server: 194.4.49.217
@@ -233,7 +219,7 @@ proxies:
   uuid: 2844ed48-493d-43ca-a13e-76df8e444de0
   ws-opts:
     path: '%2Ffqogayws'
-- name: '🇫🇷[openproxylist.com] vless-FR #19'
+- name: '🇫🇷[openproxylist.com] vless-FR #15'
   network: ws
   port: 443
   server: 195.42.233.149
@@ -242,28 +228,40 @@ proxies:
   uuid: e137be9d-ac3a-4d54-897d-6a706f34795f
   ws-opts:
     path: /cdfighws
-- name: '🇫🇷[openproxylist.com] vless-FR #20'
+- name: '🇫🇷[openproxylist.com] vless-FR #16'
   network: grpc
   port: 8880
   server: 185.231.205.181
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #21'
+- name: '🇫🇷[openproxylist.com] vless-FR #17'
+  network: ws
+  port: 443
+  server: 104.21.36.57
+  servername: profit.fullmargintraders.com
+  tls: true
+  type: vless
+  uuid: 6f6e8f09-c1b3-48fd-ab00-18f921d875ef
+  ws-opts:
+    headers:
+      Host: profit.fullmargintraders.com
+    path: '%2Fwsv%2F6f6e8f09-c1b3-48fd-ab00-18f921d875ef'
+- name: '🇫🇷[openproxylist.com] vless-FR #18'
   network: grpc
   port: 8880
   server: 185.231.205.253
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #22'
+- name: '🇫🇷[openproxylist.com] vless-FR #19'
   network: grpc
   port: 8880
   server: 185.231.205.234
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #23'
+- name: '🇫🇷[openproxylist.com] vless-FR #20'
   network: ws
   port: 80
   server: 51.38.232.101

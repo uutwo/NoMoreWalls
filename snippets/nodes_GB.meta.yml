@@ -9,19 +9,65 @@ proxies:
   sni: kotlet.arshiacomplus.dpdns.org
   tls: false
   type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: 英国-001 |5.5MB/s
-  password: k1v5g9FefdoO
-  port: 8388
-  server: 57.129.140.88
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 英国-002 |5.6MB/s
-  password: D2E6lItiRXmYERCyvPdgHz
-  port: 8443
-  server: 192.121.113.60
-  type: ss
+- client-fingerprint: firefox
+  name: 英国-001 | ⬇️ 7.3MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: b-eNFWwd6a1LTKon3gGfRugiGC2CpIRdjn8Y557QWSY
+    short-id: '!!str fd'
+  server: 212.134.84.111
+  servername: pcmag.com
+  tls: true
+  type: vless
   udp: true
+  uuid: c77af948-3e74-435f-b5bf-2469cf60cfff
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  name: 英国-002 |1.6MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: b-eNFWwd6a1LTKon3gGfRugiGC2CpIRdjn8Y557QWSY
+    short-id: '!!str fd'
+  server: 212.134.84.109
+  servername: pcmag.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: c77af948-3e74-435f-b5bf-2469cf60cfff
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  name: 英国-003 | ⬇️ 4.2MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: b-eNFWwd6a1LTKon3gGfRugiGC2CpIRdjn8Y557QWSY
+    short-id: '!!str fd'
+  server: 212.134.84.108
+  servername: pcmag.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: c77af948-3e74-435f-b5bf-2469cf60cfff
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  name: 英国-004 |1.2MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: b-eNFWwd6a1LTKon3gGfRugiGC2CpIRdjn8Y557QWSY
+    short-id: '!!str fd'
+  server: 212.134.84.110
+  servername: pcmag.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: c77af948-3e74-435f-b5bf-2469cf60cfff
+  xudp: true
 - name: 🇬🇧[openproxylist.com] vless-GB
   network: grpc
   port: 8880
@@ -39,14 +85,15 @@ proxies:
   ws-opts:
     headers:
       Host: varzesh3.ir
-- name: '🇬🇧[openproxylist.com] vless-GB #2'
-  network: ws
-  port: 80
-  server: 57.129.132.223
+- client-fingerprint: chrome
+  name: '🇬🇧[openproxylist.com] vless-GB #2'
+  network: tcp
+  port: 49330
+  reality-opts:
+    public-key: Dee9YE139lZpb4V3QytB8DvHY3nTCnEXzk2IjvMLHi8
+    short-id: '!!str b3'
+  server: vfast7.hvitrin.ir
+  servername: miro.com
   tls: false
   type: vless
-  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
-  ws-opts:
-    headers:
-      Host: google.com
-    path: '%2Fvless%2F'
+  uuid: 7f5c3ff3-c113-4379-812b-c5733f47d4e1
