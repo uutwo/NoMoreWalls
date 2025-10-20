@@ -89,24 +89,35 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- name: 新加坡3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 44095
-  server: 36.156.102.115
-  skip-cert-verify: true
-  type: trojan
-- name: CN_speednode_0009
-  network: tcp
-  password: BxceQaOe
-  port: 811
-  server: 36.151.251.18
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 2
   cipher: auto
   name: 香港 电讯盈科有限公司
+  network: ws
+  port: 80
+  server: c9dc37fe-szi1s0-t0y0nd-1mmbp.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 607d365e-7ea1-11ee-95e9-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #1'
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: e534d120-d32f-11ef-bdb9-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #2'
   network: ws
   port: 80
   server: c92d9037-sunz40-suqjqq-1pr35.hk3.p5pv.com
@@ -115,8 +126,28 @@ proxies:
   uuid: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b
   ws-opts:
     headers:
-      Host: ''
-    path: ''
+      Host: c92d9037-sunz40-suqjqq-1pr35.hk3.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '香港 电讯盈科有限公司 #3'
+  network: ws
+  port: 30807
+  server: v10.heduian.link
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- name: 新加坡3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 44095
+  server: 36.156.102.115
+  skip-cert-verify: true
+  type: trojan
 - alterId: 0
   cipher: auto
   http-opts:
@@ -339,10 +370,11 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 🇨🇦 VMESS-加拿大-NF解锁加拿大地区非自制剧-Cha...
+  name: '🇨🇦[openproxylist.com] vmess-CA #2'
   network: ws
-  port: '80'
+  port: 80
   server: 51.79.102.253
+  servername: ''
   tls: false
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
@@ -495,9 +527,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 🇦🇺[openproxylist.com] vmess-AU
+  name: 🇺🇸 美国 CloudFlare节点
   network: ws
-  port: 443
+  port: '443'
   server: sy4.620720.xyz
   tls: true
   type: vmess
@@ -519,6 +551,14 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
+- name: CN_speednode_0009
+  network: tcp
+  password: BxceQaOe
+  port: 811
+  server: 36.151.251.18
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - alterId: 2
   cipher: auto
   name: '🇭🇰 香港 电讯盈科有限公司 #1'
@@ -690,20 +730,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #1'
-  network: ws
-  port: '20522'
-  server: 8.211.164.215
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 73193cce-7ca1-4b08-93ff-4ee8b0147374
-  ws-opts:
-    headers:
-      Host: ''
-    path: /telegram_@sswia
-- alterId: 0
-  cipher: auto
   name: 🇩🇪[openproxylist.com] vmess-DE
   network: ws
   port: '443'
@@ -718,7 +744,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #2'
+  name: '🇯🇵[openproxylist.com] vmess-JP #1'
   network: ws
   port: 34221
   server: 47.74.10.111
@@ -732,7 +758,7 @@ proxies:
     path: /arki?ed=2048
 - alterId: 1
   cipher: auto
-  name: '🇨🇦[openproxylist.com] vmess-CA #2'
+  name: 🇫🇷[openproxylist.com] vmess-FR
   network: ws
   port: 443
   server: serkat.org
@@ -758,20 +784,6 @@ proxies:
     headers:
       Host: serkat.org
     path: linkvws
-- alterId: 1
-  cipher: auto
-  name: 🇵🇱[openproxylist.com] vmess-PL
-  network: ws
-  port: '443'
-  server: kampong.org
-  servername: kampong.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kampong.org
-    path: linkvws
 - alterId: 0
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
@@ -785,6 +797,20 @@ proxies:
   ws-opts:
     headers:
       Host: serkat.org
+    path: linkvws
+- alterId: 1
+  cipher: auto
+  name: 🇨🇦[openproxylist.com] vmess-CA
+  network: ws
+  port: '443'
+  server: kampong.org
+  servername: kampong.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kampong.org
     path: linkvws
 - alterId: 0
   cipher: auto
@@ -802,7 +828,7 @@ proxies:
     path: linkvws
 - alterId: 1
   cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #8'
+  name: '🇩🇪[openproxylist.com] vmess-DE #6'
   network: ws
   port: '443'
   server: 57.129.28.215
@@ -816,21 +842,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #9'
-  network: ws
-  port: '443'
-  server: 57.129.28.216
-  servername: fapeng.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: fapeng.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: '🇨🇦[openproxylist.com] vmess-CA #3'
+  name: '🇨🇦[openproxylist.com] vmess-CA #1'
   network: ws
   port: '443'
   server: 148.113.176.192
@@ -868,6 +880,16 @@ proxies:
   uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
 - alterId: 0
   cipher: auto
+  name: '🇩🇪[openproxylist.com] vmess-DE #7'
+  network: tcp
+  port: '40878'
+  server: 85.195.101.122
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f3d4167e-b15e-4e46-82e9-9286ef93fda7
+- alterId: 0
+  cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #2'
   network: ws
   port: '443'
@@ -882,7 +904,7 @@ proxies:
     path: /vmessws
 - alterId: 0
   cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #10'
+  name: '🇩🇪[openproxylist.com] vmess-DE #8'
   network: ws
   port: '20086'
   server: 91.99.185.216
@@ -910,7 +932,7 @@ proxies:
     path: /vmess/
 - alterId: 0
   cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #3'
+  name: '🇯🇵[openproxylist.com] vmess-JP #2'
   network: ws
   port: '80'
   server: 172.111.146.64
@@ -964,7 +986,21 @@ proxies:
     path: /6We3U9Df1WGxgFnoFPw1
 - alterId: 0
   cipher: auto
-  name: 🇱🇰[openproxylist.com] vmess-LK
+  name: '🇩🇪[openproxylist.com] vmess-DE #9'
+  network: ws
+  port: '443'
+  server: jamekk.org
+  servername: jamekk.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: jamekk.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '🇱🇰[openproxylist.com] vmess-LK #1'
   network: ws
   port: '443'
   server: node4.rtxconfigz.com
