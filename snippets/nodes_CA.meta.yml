@@ -1,12 +1,4 @@
 proxies:
-- name: 🇨🇦@FreakConfig
-  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
-  port: 30300
-  server: 129.153.59.26
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
 - name: 🔐 @AblNet7 🇨🇦 机场推荐
   password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
   port: 45979
@@ -15,21 +7,6 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 加拿大-001 |1.4MB/s
-  network: ws
-  port: 8880
-  server: 74.49.215.247
-  servername: ex.sue.x10.mx
-  type: vless
-  udp: true
-  uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
-  ws-opts:
-    headers:
-      Host: ex.sue.x10.mx
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/56.0.2924.87 Safari/537.36
-    path: /Telegram🇨🇳
-  xudp: true
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
@@ -47,13 +24,21 @@ proxies:
   udp: true
   uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
   xudp: true
-- cipher: rc4-md5
-  name: 加拿大-003 |4.6MB/s
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 137.184.174.93
-  type: ss
+- name: 加拿大-002 |1.4MB/s
+  network: ws
+  port: 8880
+  server: 74.49.215.247
+  servername: ex.sue.x10.mx
+  type: vless
   udp: true
+  uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
+  ws-opts:
+    headers:
+      Host: ex.sue.x10.mx
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/56.0.2924.87 Safari/537.36
+    path: /Telegram🇨🇳
+  xudp: true
 - alpn:
   - h3
   disable-sni: false
@@ -68,23 +53,13 @@ proxies:
   type: tuic
   uuid: a13a6ce4-cafa-4b26-a710-a03aa91c5418
   version: 5
-- alpn:
-  - h3
-  auth: 2429bee3-e0c1-47dd-b420-75e6512b184b
-  name: 加拿大-005 | ⬇️ 2.5MB/s
-  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
-  port: 30300
-  server: 129.153.59.26
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
 - alterId: 0
   cipher: auto
   name: '🇨🇦[openproxylist.com] vmess-CA #2'
   network: ws
-  port: '80'
+  port: 80
   server: 51.79.102.253
+  servername: ''
   tls: false
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
