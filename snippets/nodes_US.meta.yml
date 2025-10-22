@@ -1,17 +1,30 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 美国 阿里云
+  name: 美国 CloudFlare节点
   network: ws
-  port: 17002
-  server: 47.239.81.113
-  tls: false
+  port: 8443
+  server: t1.620720.xyz
+  tls: true
   type: vmess
-  uuid: 97798ac2-80d4-4e7f-84cc-8221244ed741
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
   ws-opts:
     headers:
-      Host: ''
-    path: /arki?ed=2048
+      Host: t1.620720.xyz
+    path: /
+- name: 美国+CloudFlare节点
+  network: ws
+  port: 443
+  server: freeyx.cloudflare88.eu.org
+  servername: do-tor1.862400.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 81933241-8240-4826-8e93-734500a2d1ad
+  ws-opts:
+    headers:
+      Host: do-tor1.862400.xyz
+    path: /freev2.net?ed=2048fp=random
 - name: 🔐 @AblNet7 🇺🇸 机场推荐
   password: 8d80603a-d7d7-4bcd-ad88-aaf1cf70b8c6
   port: 3000
@@ -62,7 +75,7 @@ proxies:
     headers:
       Host: nodes.830901.xyz
     path: /?ed=2560
-- name: 美国-003 |1.1MB/s
+- name: US_speednode_0032
   network: ws
   port: 2096
   server: 195.13.45.253
@@ -313,6 +326,19 @@ proxies:
     headers:
       Host: orvps2.horsenma.net
     path: /horsen
+- alterId: 0
+  cipher: auto
+  name: 🇦🇺[openproxylist.com] vmess-AU
+  network: ws
+  port: 443
+  server: sy4.620720.xyz
+  tls: true
+  type: vmess
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  ws-opts:
+    headers:
+      Host: sy4.620720.xyz
+    path: /
 - client-fingerprint: chrome
   name: 🇺🇸[openproxylist.com] trojan-U...
   network: tcp
@@ -330,6 +356,14 @@ proxies:
   server: 160.16.81.84
   skip-cert-verify: false
   sni: www.nintendogames.net
+  type: trojan
+- client-fingerprint: chrome
+  name: 美国3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 26876
+  server: 36.156.102.115
+  skip-cert-verify: true
   type: trojan
 - alterId: 0
   cipher: auto
@@ -375,18 +409,6 @@ proxies:
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
 - name: '🇺🇸[openproxylist.com] vless-US #3'
   network: ws
-  port: 50001
-  server: 211.177.114.117
-  servername: gaosir.unfeeling.sbs
-  tls: true
-  type: vless
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  ws-opts:
-    headers:
-      Host: gaosir.unfeeling.sbs
-    path: X%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F%3Fed%3D2560
-- name: '🇺🇸[openproxylist.com] vless-US #4'
-  network: ws
   port: 443
   server: 147.79.20.47
   servername: swus.zyk.biz.id
@@ -397,29 +419,18 @@ proxies:
     headers:
       Host: swus.zyk.biz.id
     path: '%2F'
-- name: '🇺🇸[openproxylist.com] vless-US #5'
+- name: '🇺🇸[openproxylist.com] vless-US #4'
   network: grpc
   port: 8880
   server: 103.35.189.146
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇺🇸[openproxylist.com] vless-US #6'
-  network: ws
-  port: 80
-  server: 172.66.156.81
-  tls: false
-  type: vless
-  uuid: 1b6364ef-0345-4920-8454-b70792537465
-  ws-opts:
-    headers:
-      Host: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.vegaskala.com.
-    path: '%2F%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy'
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #5'
+  name: '🇺🇸[openproxylist.com] vmess-US #9'
   network: tcp
-  port: '443'
+  port: 443
   server: 165.140.216.141
   servername: ''
   tls: false
@@ -427,7 +438,7 @@ proxies:
   uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #6'
+  name: '🇺🇸[openproxylist.com] vmess-US #10'
   network: ws
   port: '443'
   server: v2ray.codefyinc.com
@@ -439,7 +450,7 @@ proxies:
     headers:
       Host: v2ray.codefyinc.com
     path: /vmessws
-- name: '🇺🇸[openproxylist.com] vless-US #7'
+- name: '🇺🇸[openproxylist.com] vless-US #5'
   network: ws
   port: 80
   server: 45.8.146.207
@@ -450,7 +461,7 @@ proxies:
     path: '%2Fvless%2F'
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #7'
+  name: '🇺🇸[openproxylist.com] vmess-US #11'
   network: ws
   port: '443'
   server: cf.fovi.tk
@@ -463,7 +474,7 @@ proxies:
     path: /eisasqa
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #8'
+  name: '🇺🇸[openproxylist.com] vmess-US #12'
   network: ws
   port: '80'
   server: gggggggggggggg.222769.xyz
@@ -476,7 +487,7 @@ proxies:
     path: /f6taOMcOSZb9TPR
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #9'
+  name: '🇺🇸[openproxylist.com] vmess-US #13'
   network: ws
   port: '443'
   server: ssssssssssssfffffffgh.2032.pp.ua
@@ -489,7 +500,7 @@ proxies:
       Host: ssssssssssssfffffffgh.2032.pp.ua
     path: /6We3U9Df1WGxgFnoFPw1
 - client-fingerprint: chrome
-  name: '🇺🇸[openproxylist.com] vless-US #8'
+  name: '🇺🇸[openproxylist.com] vless-US #6'
   network: ws
   port: 443
   server: 104.21.90.226
@@ -501,7 +512,7 @@ proxies:
     headers:
       Host: 444rrrt5.7777155.xyz
     path: '%2F6OWLjRc26b0nHYr5hYXD'
-- name: '🇺🇸[openproxylist.com] vless-US #9'
+- name: '🇺🇸[openproxylist.com] vless-US #7'
   network: ws
   port: 2053
   server: 31.192.238.71
@@ -514,7 +525,7 @@ proxies:
       Host: gaosir.unfeeling.sbs
     path: Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2%2F%3Fed%3D2560
 - client-fingerprint: chrome
-  name: '🇺🇸[openproxylist.com] vless-US #10'
+  name: '🇺🇸[openproxylist.com] vless-US #8'
   network: ws
   port: 443
   server: 104.17.210.171
@@ -526,9 +537,9 @@ proxies:
     headers:
       Host: vless10-9sc.pages.dev
     path: '%2F'
-- name: '🇺🇸[openproxylist.com] vless-US #11'
+- name: '🇺🇸[openproxylist.com] vless-US #9'
   network: ws
-  port: 8443
+  port: 2053
   server: 31.192.238.71
   servername: gaosir.unfeeling.sbs
   tls: true
@@ -537,20 +548,8 @@ proxies:
   ws-opts:
     headers:
       Host: gaosir.unfeeling.sbs
-    path: X%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F%3Fed%3D2560
-- name: '🇺🇸[openproxylist.com] vless-US #12'
-  network: ws
-  port: 2096
-  server: 188.42.145.253
-  servername: gaosir.unfeeling.sbs
-  tls: true
-  type: vless
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  ws-opts:
-    headers:
-      Host: gaosir.unfeeling.sbs
-    path: '%2FXU0001F1E8U0001F1F3%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F%3Fed%3D2560fp%3Dchrome'
-- name: '🇺🇸[openproxylist.com] vless-US #13'
+    path: '%2FTelegram%40freecodes%2F%3Fed%3D2560'
+- name: '🇺🇸[openproxylist.com] vless-US #10'
   network: ws
   port: 443
   server: 172.67.160.44
@@ -562,3 +561,32 @@ proxies:
     headers:
       Host: cb93136c-7ed8-136d-45b5-5254c891e290.huangshang.site
     path: '%2F0SCvfqSaeeB74kgXZ'
+- client-fingerprint: chrome
+  name: US_speednode_0029
+  network: ws
+  port: 8443
+  server: 104.20.2.221
+  servername: bycf.lzjnb.shop
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6c7a6a6a-6a6a-4000-8000-000000000002
+  ws-opts:
+    headers:
+      Host: bycf.lzjnb.shop
+    path: /?ed=2560
+- name: US_speednode_0031
+  network: ws
+  port: 2096
+  server: 195.13.45.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /x @节点狂魔security=tls
