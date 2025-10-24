@@ -95,25 +95,19 @@ proxies:
   server: 37.202.200.11
   sni: wjp04.weyaf9sdoh2h.space
   type: trojan
+- name: 香港5|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 194
+  server: 36.156.102.69
+  skip-cert-verify: true
+  type: trojan
 - name: '伊朗+V2CROSS.COM #1'
   password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
   port: 15013
   server: 37.202.200.19
   sni: jp02.weyaf9sdoh2h.space
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 美国 科罗拉多州NTT(美国)通信公司
-  network: ws
-  port: 45979
-  server: 216.167.34.251
-  tls: false
-  type: vmess
-  uuid: 23bdf6df-c482-46d0-c0f4-5a98d534ea11
-  ws-opts:
-    headers:
-      Host: ''
-    path: /test
 - alterId: 0
   cipher: auto
   http-opts:
@@ -455,13 +449,6 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
-- name: 香港5|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 194
-  server: 36.156.102.69
-  skip-cert-verify: true
-  type: trojan
 - name: 日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -811,12 +798,14 @@ proxies:
   server: 103.186.154.212
   tfo: false
   type: ss
-- name: '🇭🇰[openproxylist.com] trojan-H... #1'
-  password: ea39fa94f1ee00999337ea1fd3318e69
-  port: 443
-  server: 203.198.122.144
-  skip-cert-verify: false
-  sni: www.nintendogames.net
+- alpn:
+  - http/1.1
+  name: 🏳[openproxylist.com] trojan-
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.39.36.94
+  sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
   cipher: auto
@@ -848,19 +837,6 @@ proxies:
     path: /telegram_@sswia
 - alterId: 0
   cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #1'
-  network: ws
-  port: 57858
-  server: 8.217.127.167
-  tls: false
-  type: vmess
-  uuid: d1226e33-e569-4f9b-a25d-a53da9e7deb6
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
   name: 🇦🇺[openproxylist.com] vmess-AU
   network: ws
   port: 443
@@ -872,6 +848,30 @@ proxies:
     headers:
       Host: sy4.620720.xyz
     path: /
+- alterId: 0
+  cipher: auto
+  name: '🇦🇺[openproxylist.com] vmess-AU #1'
+  network: tcp
+  port: '550'
+  server: 51.161.130.101
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b592cf1a-d92f-4dbd-9c1d-b76936a1609e
+- alterId: 0
+  cipher: auto
+  name: '🇯🇵[openproxylist.com] vmess-JP #1'
+  network: ws
+  port: 45028
+  server: 43.246.198.134
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c410fb8a-5cc4-4c4f-a475-d091dfdf6bd3
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
 - alterId: 0
   cipher: auto
   name: 🇩🇪[openproxylist.com] vmess-DE
@@ -886,23 +886,9 @@ proxies:
     headers:
       Host: lammaland.org
     path: linkvws
-- alterId: 1
-  cipher: auto
-  name: '🇨🇦[openproxylist.com] vmess-CA #2'
-  network: ws
-  port: 443
-  server: serkat.org
-  servername: serkat.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: serkat.org
-    path: linkvws
 - alterId: 0
   cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #4'
+  name: '🇩🇪[openproxylist.com] vmess-DE #1'
   network: ws
   port: '443'
   server: 57.129.24.132
@@ -914,23 +900,9 @@ proxies:
     headers:
       Host: serkat.org
     path: linkvws
-- alterId: 1
-  cipher: auto
-  name: 🇵🇱[openproxylist.com] vmess-PL
-  network: ws
-  port: '443'
-  server: kampong.org
-  servername: kampong.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kampong.org
-    path: linkvws
 - alterId: 0
   cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #6'
+  name: '🇩🇪[openproxylist.com] vmess-DE #2'
   network: ws
   port: '443'
   server: 57.129.59.195
@@ -958,7 +930,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '🇫🇷[openproxylist.com] vmess-FR #2'
+  name: 🇫🇷[openproxylist.com] vmess-FR
   network: ws
   port: '443'
   server: 141.94.155.228
@@ -972,7 +944,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #9'
+  name: '🇩🇪[openproxylist.com] vmess-DE #3'
   network: ws
   port: '443'
   server: 57.129.28.216
@@ -986,7 +958,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '🇨🇦[openproxylist.com] vmess-CA #3'
+  name: 🇨🇦[openproxylist.com] vmess-CA
   network: ws
   port: '443'
   server: 148.113.176.192
@@ -1000,7 +972,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '🇫🇷[openproxylist.com] vmess-FR #3'
+  name: '🇫🇷[openproxylist.com] vmess-FR #1'
   network: ws
   port: '443'
   server: 141.94.155.224
@@ -1024,21 +996,12 @@ proxies:
   uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #2'
-  network: tcp
-  port: 443
-  server: 165.140.216.141
-  tls: false
-  type: vmess
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #3'
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
   network: ws
-  port: 443
+  port: '443'
   server: v2ray.codefyinc.com
   servername: v2ray.codefyinc.com
-  tls: false
+  tls: true
   type: vmess
   uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
   ws-opts:
@@ -1047,21 +1010,7 @@ proxies:
     path: /vmessws
 - alterId: 0
   cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #10'
-  network: ws
-  port: '20086'
-  server: 91.99.185.216
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7bd6a1ea-a220-4f1c-afed-6cfb8ab96ad9
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #1'
+  name: '🇯🇵[openproxylist.com] vmess-JP #2'
   network: ws
   port: '80'
   server: 172.111.146.64
@@ -1075,20 +1024,7 @@ proxies:
     path: /vmess/
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #4'
-  network: ws
-  port: '443'
-  server: cf.fovi.tk
-  tls: true
-  type: vmess
-  uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
-  ws-opts:
-    headers:
-      Host: foxpol.fovi.tk
-    path: /eisasqa
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #5'
+  name: '🇺🇸[openproxylist.com] vmess-US #2'
   network: ws
   port: '80'
   server: gggggggggggggg.222769.xyz
@@ -1101,7 +1037,7 @@ proxies:
     path: /f6taOMcOSZb9TPR
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #6'
+  name: '🇺🇸[openproxylist.com] vmess-US #3'
   network: ws
   port: '443'
   server: ssssssssssssfffffffgh.2032.pp.ua
@@ -1113,6 +1049,31 @@ proxies:
     headers:
       Host: ssssssssssssfffffffgh.2032.pp.ua
     path: /6We3U9Df1WGxgFnoFPw1
+- alterId: 0
+  cipher: auto
+  name: '🇩🇪[openproxylist.com] vmess-DE #4'
+  network: ws
+  port: '443'
+  server: jamekk.org
+  servername: jamekk.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: jamekk.org
+    path: linkvws
+- name: 🇺🇸[openproxylist.com] trojan-U...
+  network: ws
+  password: 9a7b890c-0881-4a6a-ab91-580bc19acafc
+  port: 443
+  server: 104.21.70.241
+  sni: joss.gpj2.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: joss.gpj2.dpdns.org
+    path: '%2FFree-VPN-CF-Geo-Project%2FDE3'
 - name: 'US_speednode_0031 #1'
   network: ws
   password: T@_WvT8Ho@LW%w_,
