@@ -89,24 +89,39 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- name: 伊朗+V2CROSS.COM
+- alterId: 2
+  cipher: auto
+  name: 香港 电讯盈科有限公司
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 4fb15f9c-f078-11ed-814b-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
+- name: 🇮🇷 伊朗 V2CROSS.COM
   password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
   port: 12412
   server: 37.202.200.11
+  skip-cert-verify: false
   sni: wjp04.weyaf9sdoh2h.space
-  type: trojan
-- name: 香港5|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 194
-  server: 36.156.102.69
-  skip-cert-verify: true
-  type: trojan
-- name: '伊朗+V2CROSS.COM #1'
-  password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
-  port: 15013
-  server: 37.202.200.19
-  sni: jp02.weyaf9sdoh2h.space
   type: trojan
 - alterId: 0
   cipher: auto
@@ -258,10 +273,11 @@ proxies:
     path: /aejynik
 - alterId: 0
   cipher: auto
-  name: 🇨🇦 VMESS-加拿大-NF解锁加拿大地区非自制剧-Cha...
+  name: '🇨🇦[openproxylist.com] vmess-CA #1'
   network: ws
-  port: '80'
+  port: 80
   server: 51.79.102.253
+  servername: ''
   tls: false
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
@@ -436,19 +452,13 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: '🇭🇰 香港 电讯盈科有限公司 #1'
-  network: ws
-  port: '30807'
-  server: v10.heduian.link
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
+- name: 香港5|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 194
+  server: 36.156.102.69
+  skip-cert-verify: true
+  type: trojan
 - name: 日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -540,20 +550,6 @@ proxies:
   tls: false
   type: vmess
   uuid: bfcb103f-2133-4965-8684-6b4c8ef7a774
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
 - alterId: 0
   cipher: auto
   name: 🇨🇦 _CA_加拿大
@@ -809,20 +805,6 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 🇭🇰[openproxylist.com] vmess-HK
-  network: ws
-  port: '9754'
-  server: 8.218.175.64
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5b9575c3-c404-4c93-98f8-63581e88ffdf
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
   name: 🇯🇵[openproxylist.com] vmess-JP
   network: ws
   port: 20522
@@ -848,16 +830,6 @@ proxies:
     headers:
       Host: sy4.620720.xyz
     path: /
-- alterId: 0
-  cipher: auto
-  name: '🇦🇺[openproxylist.com] vmess-AU #1'
-  network: tcp
-  port: '550'
-  server: 51.161.130.101
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b592cf1a-d92f-4dbd-9c1d-b76936a1609e
 - alterId: 0
   cipher: auto
   name: '🇯🇵[openproxylist.com] vmess-JP #1'
@@ -1010,14 +982,14 @@ proxies:
     path: /vmessws
 - alterId: 0
   cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #2'
+  name: 🏳[openproxylist.com] vmess-
   network: ws
   port: '80'
-  server: 172.111.146.64
+  server: 51.68.191.233
   servername: ''
   tls: false
   type: vmess
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  uuid: f0eda072-9ae8-494c-a495-215fa5729467
   ws-opts:
     headers:
       Host: ''
@@ -1074,7 +1046,27 @@ proxies:
     headers:
       Host: joss.gpj2.dpdns.org
     path: '%2FFree-VPN-CF-Geo-Project%2FDE3'
-- name: 'US_speednode_0031 #1'
+- alterId: 0
+  cipher: auto
+  name: 🇨🇳[openproxylist.com] vmess-CN
+  network: tcp
+  port: '59003'
+  server: 183.236.51.36
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '🇨🇳[openproxylist.com] vmess-CN #1'
+  network: tcp
+  port: '50002'
+  server: 112.132.215.12
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: US_speednode_0028
   network: ws
   password: T@_WvT8Ho@LW%w_,
   port: 2053
