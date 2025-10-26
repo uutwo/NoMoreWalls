@@ -309,14 +309,6 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- client-fingerprint: chrome
-  name: 美国3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 26373
-  server: 36.150.215.241
-  skip-cert-verify: true
-  type: trojan
 - name: 美国4|@ripaojiedian
   network: tcp
   password: 596de3c8-c1c4-4fe1-a7aa-7046b0f2af8a
@@ -561,25 +553,39 @@ proxies:
 - name: 🇺🇸[openproxylist.com] vless-US
   network: grpc
   port: 80
-  server: 185.236.232.100
+  server: 185.236.232.82
   tls: false
   type: vless
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
 - name: '🇺🇸[openproxylist.com] vless-US #1'
+  network: grpc
+  port: 8880
+  server: 88.218.93.159
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: '🇺🇸[openproxylist.com] vless-US #2'
+  network: grpc
+  port: 80
+  server: 185.236.232.100
+  tls: false
+  type: vless
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+- name: '🇺🇸[openproxylist.com] vless-US #3'
   network: grpc
   port: 80
   server: 185.236.232.98
   tls: false
   type: vless
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: '🇺🇸[openproxylist.com] vless-US #2'
+- name: '🇺🇸[openproxylist.com] vless-US #4'
   network: grpc
   port: 8880
   server: 85.209.195.133
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇺🇸[openproxylist.com] vless-US #3'
+- name: '🇺🇸[openproxylist.com] vless-US #5'
   network: grpc
   port: 8880
   server: 103.35.189.146
@@ -600,7 +606,21 @@ proxies:
     headers:
       Host: serkat.org
     path: linkvws
-- name: '🇺🇸[openproxylist.com] vless-US #4'
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
+  network: ws
+  port: 443
+  server: v2ray.codefyinc.com
+  servername: v2ray.codefyinc.com
+  tls: false
+  type: vmess
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  ws-opts:
+    headers:
+      Host: v2ray.codefyinc.com
+    path: /vmessws
+- name: '🇺🇸[openproxylist.com] vless-US #6'
   network: ws
   port: 80
   server: 45.8.146.207
@@ -611,7 +631,7 @@ proxies:
     path: '%2Fvless%2F'
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #1'
+  name: '🇺🇸[openproxylist.com] vmess-US #2'
   network: ws
   port: '443'
   server: cf.fovi.tk
@@ -624,7 +644,7 @@ proxies:
     path: /eisasqa
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #2'
+  name: '🇺🇸[openproxylist.com] vmess-US #3'
   network: ws
   port: '80'
   server: gggggggggggggg.222769.xyz
@@ -637,7 +657,7 @@ proxies:
     path: /f6taOMcOSZb9TPR
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #3'
+  name: '🇺🇸[openproxylist.com] vmess-US #4'
   network: ws
   port: '443'
   server: ssssssssssssfffffffgh.2032.pp.ua
@@ -649,21 +669,19 @@ proxies:
     headers:
       Host: ssssssssssssfffffffgh.2032.pp.ua
     path: /6We3U9Df1WGxgFnoFPw1
-- name: US_speednode_0043
+- name: '🇺🇸[openproxylist.com] vless-US #7'
   network: ws
-  port: 2096
-  server: 195.13.45.253
+  port: 2053
+  server: 31.192.238.71
   servername: gaosir.unfeeling.sbs
-  skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
   uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
   ws-opts:
     headers:
       Host: gaosir.unfeeling.sbs
-    path: /x @节点狂魔security=tls
-- name: '🇺🇸[openproxylist.com] vless-US #6'
+    path: '%2FX%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F%3Fed%3D2560'
+- name: '🇺🇸[openproxylist.com] vless-US #8'
   network: ws
   port: 443
   server: 172.67.160.44
@@ -675,7 +693,7 @@ proxies:
     headers:
       Host: cb93136c-7ed8-136d-45b5-5254c891e290.huangshang.site
     path: '%2F0SCvfqSaeeB74kgXZ'
-- name: '🇺🇸[openproxylist.com] vless-US #7'
+- name: '🇺🇸[openproxylist.com] vless-US #9'
   network: ws
   port: 2096
   server: 188.42.145.253
@@ -699,18 +717,6 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: '%2FX%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F'
-- name: '🇺🇸[openproxylist.com] vless-US #9'
-  network: ws
-  port: 443
-  server: 202.85.53.74
-  servername: gaosir.unfeeling.sbs
-  tls: true
-  type: vless
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  ws-opts:
-    headers:
-      Host: gaosir.unfeeling.sbs
-    path: '%2FX%40freecodes%2F%3Fed%3D2560'
 - name: US_speednode_0039
   network: ws
   port: 2096
@@ -738,6 +744,20 @@ proxies:
     headers:
       Host: NOp-55q.pAgEs.dEv
     path: /trGPZDfetEwuO25SAs
+- name: US_speednode_0043
+  network: ws
+  port: 2096
+  server: 195.13.45.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /x @节点狂魔security=tls
 - client-fingerprint: firefox
   name: US_speednode_0044
   port: 14333
