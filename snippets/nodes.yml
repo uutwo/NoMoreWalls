@@ -89,6 +89,21 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
+- name: CN_speednode_0001
+  network: tcp
+  password: BxceQaOe
+  port: 24392
+  server: 36.151.251.35
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: CN_speednode_0002
+  password: BxceQaOe
+  port: 4451
+  server: 36.151.251.23
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - alterId: 2
   cipher: auto
   name: 香港|@ripaojiedian
@@ -105,21 +120,6 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
-- name: 香港4|@ripaojiedian
-  network: tcp
-  password: ea39fa94f1ee00999337ea1fd3318e69
-  port: 443
-  server: 58.152.53.136
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: CN_speednode_0002
-  password: BxceQaOe
-  port: 4451
-  server: 36.151.251.23
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   http-opts:
@@ -412,6 +412,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 2906e19e-c99f-456e-bcb3-c5472fd594e5
+- name: 香港4|@ripaojiedian
+  network: tcp
+  password: ea39fa94f1ee00999337ea1fd3318e69
+  port: 443
+  server: 58.152.53.136
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
 - name: 香港5|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -465,14 +473,6 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: CN_speednode_0001
-  network: tcp
-  password: BxceQaOe
-  port: 24392
-  server: 36.151.251.35
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - name: 美国|@ripaojiedian
   network: tcp
   password: ea39fa94f1ee00999337ea1fd3318e69
@@ -818,25 +818,15 @@ proxies:
   name: 🇩🇪[openproxylist.com] vmess-DE
   network: ws
   port: '443'
-  server: 57.129.64.157
-  servername: lammaland.org
+  server: 57.129.59.195
+  servername: kampong.org
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: lammaland.org
+      Host: kampong.org
     path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬[openproxylist.com] vmess-SG
-  network: tcp
-  port: '550'
-  server: 62.146.235.12
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 48b986d8-7da2-47a2-85de-2306c9259953
 - alterId: 0
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
@@ -850,20 +840,6 @@ proxies:
   ws-opts:
     headers:
       Host: serkat.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 🇫🇷[openproxylist.com] vmess-FR
-  network: ws
-  port: '443'
-  server: 141.94.155.228
-  servername: kampong.org
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kampong.org
     path: linkvws
 - alterId: 0
   cipher: auto
@@ -895,7 +871,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '🇫🇷[openproxylist.com] vmess-FR #1'
+  name: 🇫🇷[openproxylist.com] vmess-FR
   network: ws
   port: '443'
   server: 141.94.155.224
@@ -911,16 +887,25 @@ proxies:
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #1'
   network: ws
-  port: 443
+  port: '443'
   server: v2ray.codefyinc.com
   servername: v2ray.codefyinc.com
-  tls: false
+  tls: true
   type: vmess
   uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
   ws-opts:
     headers:
       Host: v2ray.codefyinc.com
     path: /vmessws
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬[openproxylist.com] vmess-SG
+  network: tcp
+  port: 28011
+  server: 62.146.235.193
+  tls: false
+  type: vmess
+  uuid: cfc5a87f-3c13-4e25-b556-176cdd6b5c6a
 - alterId: 0
   cipher: auto
   name: 🏳[openproxylist.com] vmess-
@@ -993,9 +978,9 @@ proxies:
   cipher: auto
   name: 🇨🇳[openproxylist.com] vmess-CN
   network: tcp
-  port: '59003'
-  server: 183.236.51.36
-  servername: ''
+  port: '50007'
+  server: 112.132.215.34
+  servername: 112.132.215.34
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
