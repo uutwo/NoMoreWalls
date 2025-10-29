@@ -1,4 +1,13 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 日本 东京Amazon数据中心
+  network: tcp
+  port: '22211'
+  server: tls.10.node-for-bigairport.win
+  tls: false
+  type: vmess
+  uuid: c69374da-2208-4cbd-b81e-cdf88b5e7f53
 - cipher: aes-256-gcm
   name: 日本-001 |7.7MB/s|GPT⁺|D+|0%
   password: 8808e9f11454
@@ -12,6 +21,14 @@ proxies:
   server: 137.220.142.139
   type: ss
   udp: true
+- client-fingerprint: chrome
+  name: 日本|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 401
+  server: 36.150.215.236
+  skip-cert-verify: true
+  type: trojan
 - client-fingerprint: chrome
   name: 日本2|@ripaojiedian
   network: tcp
@@ -30,31 +47,3 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵[openproxylist.com] vmess-JP
-  network: ws
-  port: '20522'
-  server: 8.211.164.215
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 73193cce-7ca1-4b08-93ff-4ee8b0147374
-  ws-opts:
-    headers:
-      Host: ''
-    path: /telegram_@sswia
-- alterId: 0
-  cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #1'
-  network: ws
-  port: 8443
-  server: t1.620720.xyz
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-  ws-opts:
-    headers:
-      Host: t1.620720.xyz
-    path: /
