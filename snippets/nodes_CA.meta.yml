@@ -1,12 +1,4 @@
 proxies:
-- name: 🔐 @AblNet7 🇨🇦 机场推荐
-  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  port: 45979
-  server: 150.230.28.100
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
@@ -95,11 +87,6 @@ proxies:
   skip-cert-verify: true
   sni: cloudflare.com
   type: trojan
-- name: '🇨🇦[openproxylist.com] trojan-C... #1'
-  password: D3OJA7xY5U
-  port: 10785
-  server: 209.200.246.53
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇨🇦[openproxylist.com] vmess-CA
@@ -110,11 +97,17 @@ proxies:
   tls: false
   type: vmess
   uuid: b0ae82de-bd54-46dd-ba60-3c4081ab4fcc
-- name: 🇨🇦[openproxylist.com] vless-CA
+- client-fingerprint: chrome
+  name: 🇨🇦[openproxylist.com] vless-CA
+  network: ws
   port: 443
-  server: cdnjs.com
-  tls: false
+  server: zula.ir
+  servername: rAyAn-cOnFiG-ca-1.pArIsA.DpDnS.OrG
+  skip-cert-verify: true
+  tls: true
   type: vless
   uuid: a7e3db08-6fb7-4ffd-9415-59d1b5c6eeb6
   ws-opts:
-    path: '%2Fws'
+    headers:
+      Host: rAyAn-cOnFiG-ca-1.pArIsA.DpDnS.OrG
+    path: /ws
