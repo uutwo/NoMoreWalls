@@ -303,6 +303,15 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
+- client-fingerprint: chrome
+  name: CN_speednode_0003
+  network: tcp
+  password: BxceQaOe
+  port: 43567
+  server: 36.156.102.74
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - name: '🇺🇸 US #2'
   password: T@_WvT8Ho@LW%w_,
   port: 2053
@@ -519,6 +528,15 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
+  name: 🇻🇳[openproxylist.com] vmess-VN
+  network: tcp
+  port: '35218'
+  server: 165.154.197.225
+  tls: false
+  type: vmess
+  uuid: 1a237dd2-851c-47e1-cf7e-e447a363830a
+- alterId: 0
+  cipher: auto
   name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #10'
   network: tcp
   port: '36302'
@@ -535,7 +553,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 🇭🇰[openproxylist.com] vmess-HK
+  name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #20'
   network: tcp
   port: '8080'
   server: 103.243.26.209
@@ -738,22 +756,17 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 🇺🇸[openproxylist.com] vless-US
-  port: 59483
-  server: 192.241.189.73
-  tls: false
-  type: vless
-  uuid: 47d7d5eb-55e6-4085-a155-bdf3fcc428f6
 - alterId: 0
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
   network: tcp
-  port: 443
+  port: '443'
   server: 165.140.216.141
+  servername: ''
   tls: false
   type: vmess
   uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-- name: '🇺🇸[openproxylist.com] vless-US #1'
+- name: 🇺🇸[openproxylist.com] vless-US
   port: 8880
   server: 638971077544307610.oslo-blkaft-aaav.info
   tls: false
@@ -761,7 +774,7 @@ proxies:
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #2'
+  name: '🇺🇸[openproxylist.com] vless-US #1'
   network: tcp
   port: 443
   reality-opts:
@@ -771,13 +784,16 @@ proxies:
   tls: false
   type: vless
   uuid: da640c05-1831-4c6f-a2c8-ff8ff9c18b0c
-- name: '🇺🇸[openproxylist.com] vless-US #3'
+- grpc-opts:
+    grpc-service-name: ''
+  name: '🇺🇸[openproxylist.com] vless-US #2'
+  network: grpc
   port: 8880
   server: 638966456596320896.malayer-blkaft-aaag.info
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇺🇸[openproxylist.com] vless-US #4'
+- name: '🇺🇸[openproxylist.com] vless-US #3'
   port: 42545
   server: 185.68.244.86
   tls: false
@@ -785,7 +801,7 @@ proxies:
   uuid: 7c8cf438-8d5a-4ce9-bc1c-88345a545f2f
 - alpn:
   - ''
-  name: '🇺🇸[openproxylist.com] vless-US #5'
+  name: '🇺🇸[openproxylist.com] vless-US #4'
   network: grpc
   port: 8880
   server: 638969418613537376.brussels-blkaft-aaaw.info
@@ -799,7 +815,7 @@ proxies:
     path: ''
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #6'
+  name: '🇺🇸[openproxylist.com] vless-US #5'
   network: tcp
   port: 443
   reality-opts:
@@ -810,85 +826,83 @@ proxies:
   tls: false
   type: vless
   uuid: 4456abe1-63dd-472b-8565-8a9ce14e19dd
-- name: '🇺🇸[openproxylist.com] vless-US #7'
+- name: '🇺🇸[openproxylist.com] vless-US #6'
   network: grpc
   port: 80
   server: 185.236.232.118
   tls: false
   type: vless
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: '🇺🇸[openproxylist.com] vless-US #8'
+- name: '🇺🇸[openproxylist.com] vless-US #7'
   network: grpc
   port: 80
   server: 185.236.232.101
   tls: false
   type: vless
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: '🇺🇸[openproxylist.com] vless-US #9'
+- name: '🇺🇸[openproxylist.com] vless-US #8'
   network: grpc
   port: 80
   server: 185.236.232.159
   tls: false
   type: vless
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: '🇺🇸[openproxylist.com] vless-US #10'
+- name: '🇺🇸[openproxylist.com] vless-US #9'
   network: grpc
   port: 80
   server: 185.236.232.248
   tls: false
   type: vless
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: '🇺🇸[openproxylist.com] vless-US #11'
+- name: '🇺🇸[openproxylist.com] vless-US #10'
   network: grpc
   port: 80
   server: 185.236.232.205
   tls: false
   type: vless
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: '🇺🇸[openproxylist.com] vless-US #12'
+- name: '🇺🇸[openproxylist.com] vless-US #11'
   network: grpc
   port: 80
   server: 185.236.232.175
   tls: false
   type: vless
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: '🇺🇸[openproxylist.com] vless-US #13'
+- name: '🇺🇸[openproxylist.com] vless-US #12'
   network: grpc
   port: 80
   server: 185.236.232.217
   tls: false
   type: vless
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: '🇺🇸[openproxylist.com] vless-US #14'
-  network: grpc
+- name: '🇺🇸[openproxylist.com] vless-US #13'
   port: 80
   server: 185.236.232.171
   tls: false
   type: vless
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: '🇺🇸[openproxylist.com] vless-US #15'
+- name: '🇺🇸[openproxylist.com] vless-US #14'
   network: grpc
   port: 80
   server: 185.236.232.125
   tls: false
   type: vless
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: '🇺🇸[openproxylist.com] vless-US #16'
+- name: '🇺🇸[openproxylist.com] vless-US #15'
   network: grpc
   port: 80
   server: 185.236.232.251
   tls: false
   type: vless
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: '🇺🇸[openproxylist.com] vless-US #17'
+- name: '🇺🇸[openproxylist.com] vless-US #16'
   network: grpc
   port: 80
   server: 185.236.232.77
   tls: false
   type: vless
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: '🇺🇸[openproxylist.com] vless-US #18'
-  network: grpc
+- name: '🇺🇸[openproxylist.com] vless-US #17'
   port: 80
   server: 185.236.232.99
   tls: false
@@ -906,7 +920,7 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: '%2FX%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F'
-- name: '🇺🇸[openproxylist.com] vless-US #21'
+- name: '🇺🇸[openproxylist.com] vless-US #19'
   network: ws
   port: 443
   server: 153.121.45.101
@@ -931,15 +945,29 @@ proxies:
   tls: false
   type: vless
   uuid: f31f5fe0-0a42-436a-be94-437330801388
-- name: '🇺🇸[openproxylist.com] vless-US #24'
+- alpn:
+  - ''
+  name: '🇺🇸[openproxylist.com] vless-US #24'
+  network: grpc
   port: 8880
-  server: 638948510378510543.mashhad-drc-tusacaf.info
+  server: 638946804017448326.kerman-drc-tusacaf.info
+  servername: ''
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
 - name: '🇺🇸[openproxylist.com] vless-US #25'
   port: 8880
   server: 638971077544307182.oslo-blkaft-aaav.info
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: '🇺🇸[openproxylist.com] vless-US #26'
+  port: 8880
+  server: 103.35.189.250
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012

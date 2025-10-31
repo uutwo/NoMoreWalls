@@ -22,14 +22,15 @@ proxies:
   name: '🇬🇧[openproxylist.com] vless-GB #1'
   network: ws
   port: 443
-  server: 104.18.15.201
-  servername: rAyAn-cOnFiG-uk-1.pArIsA.DpDnS.OrG
+  server: bitpay.com
+  servername: rAyAn-cOnFiG-uk-1.pArSa.dPdNs.oRg
+  skip-cert-verify: true
   tls: true
   type: vless
   uuid: 5915f034-a53b-4b63-b0e7-b29194de3fe9
   ws-opts:
     headers:
-      Host: rAyAn-cOnFiG-uk-1.pArIsA.DpDnS.OrG
+      Host: rAyAn-cOnFiG-uk-1.pArSa.dPdNs.oRg
     path: /ws
 - name: '🇬🇧[openproxylist.com] vless-GB #2'
   network: grpc
@@ -54,30 +55,26 @@ proxies:
   tls: false
   type: vless
   uuid: ad069756-c14b-4443-87af-4a503c5c08f5
-- alpn:
-  - ''
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: efce1169cc85fc1018b45ca2
   name: '🇬🇧[openproxylist.com] vless-GB #4'
   network: grpc
-  port: 8880
-  server: 638939927968108687.dublin-drc-tusaas.info
-  servername: ''
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- name: '🇬🇧[openproxylist.com] vless-GB #5'
   port: 443
+  reality-opts:
+    public-key: 5E9AH_PNHRyr9XeNkAtLVw2lAoA12xpSFo_hUCOl70g
+    short-id: '!!str 02fcb31b6303187f'
   server: 38.114.120.141
+  servername: www.google.co.uk
   tls: false
   type: vless
   uuid: 5cb192ed-1017-4d1b-9c6c-96de72e1ab24
-- name: '🇬🇧[openproxylist.com] vless-GB #6'
+- name: '🇬🇧[openproxylist.com] vless-GB #5'
   network: ws
   port: 8880
   server: 138.68.147.150
   tls: false
   type: vless
   uuid: 2f27d301-2947-4655-b4a2-75fe8bbda77f
+  ws-opts:
+    path: /
