@@ -1,4 +1,18 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-46.226.163.225-031
+  password: c40641c1f89e7acb
+  port: 57456
+  server: 46.226.163.225
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 'tg频道:@ripaojiedian #1'
+  password: amazonskr05
+  port: 443
+  server: 3.9.17.198
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...
@@ -12,19 +26,6 @@ proxies:
     headers:
       Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
     path: /azumase.ren
-- alterId: 0
-  cipher: auto
-  name: 🇬🇧 英国 伦敦DigitalOcean数据中心
-  network: ws
-  port: '443'
-  server: cg1c12.waimaojd.com
-  tls: true
-  type: vmess
-  uuid: 6fc84fd2-0442-405f-baa7-6daf66b81a10
-  ws-opts:
-    headers:
-      Host: cg1c12.waimaojd.com
-    path: /api/v1/graphql
 - name: 🇬🇧[openproxylist.com] vless-GB
   port: 8880
   server: 638974363192994984.budapest-blkaft-aaav.info
@@ -45,22 +46,9 @@ proxies:
   tls: false
   type: vless
   uuid: 549da73c-e0c5-4590-a31e-1fc23d222a19
-- client-fingerprint: chrome
-  name: '🇬🇧[openproxylist.com] vless-GB #2'
-  network: ws
-  port: 443
-  server: 104.18.15.201
-  servername: rAyAn-cOnFiG-uk-1.pArIsA.DpDnS.OrG
-  tls: true
-  type: vless
-  uuid: 5915f034-a53b-4b63-b0e7-b29194de3fe9
-  ws-opts:
-    headers:
-      Host: rAyAn-cOnFiG-uk-1.pArIsA.DpDnS.OrG
-    path: /ws
 - alpn:
   - ''
-  name: '🇬🇧[openproxylist.com] vless-GB #3'
+  name: '🇬🇧[openproxylist.com] vless-GB #2'
   network: grpc
   port: 8880
   server: 638961293929376530.rasht-drc-tusaas.info
@@ -82,3 +70,17 @@ proxies:
   tls: false
   type: vmess
   uuid: ffae7ffe-c13a-4ef1-aab4-e3e001dccf27
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: GB_speednode_0014
+  port: 40061
+  reality-opts:
+    public-key: WB_B1SPamVRkLeEJkKhq9YEukZpqQPgoNnwetlNBdF8
+    short-id: '!!str c5bc3357'
+  server: cdn.413918.xyz
+  servername: itunes.apple.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 11db0644-edeb-442c-bd42-e5ea58ea7395
