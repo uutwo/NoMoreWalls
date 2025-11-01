@@ -1,17 +1,4 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 日本 东京Choopa数据中心
-  network: ws
-  port: '443'
-  server: cg1c11.waimaojd.com
-  tls: true
-  type: vmess
-  uuid: 6fc84fd2-0442-405f-baa7-6daf66b81a10
-  ws-opts:
-    headers:
-      Host: cg1c11.waimaojd.com
-    path: /api/v1/graphql
 - cipher: aes-256-gcm
   name: 日本-001 |7.7MB/s|GPT⁺|D+|0%
   password: 8808e9f11454
@@ -60,6 +47,19 @@ proxies:
       Host: gaosir.unfeeling.sbs
     max-early-data: 2560
     path: /Telegram🇨🇳@WangCai2/
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 日本 东京Choopa数据中心
+  network: ws
+  port: '443'
+  server: cg1c11.waimaojd.com
+  tls: true
+  type: vmess
+  uuid: 6fc84fd2-0442-405f-baa7-6daf66b81a10
+  ws-opts:
+    headers:
+      Host: cg1c11.waimaojd.com
+    path: /api/v1/graphql
 - client-fingerprint: chrome
   name: 日本|@ripaojiedian
   network: tcp
@@ -68,18 +68,14 @@ proxies:
   server: 36.150.215.236
   skip-cert-verify: true
   type: trojan
-- client-fingerprint: chrome
-  name: 日本2|@ripaojiedian
-  network: tcp
+- name: 🇯🇵 日本2|@stairnode
   password: bca467b8c15211d189008a93c7519d3b
   port: 1332
   server: 160.16.214.6
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- client-fingerprint: chrome
-  name: 日本3|@ripaojiedian
-  network: tcp
+- name: 🇯🇵 日本3|@stairnode
   password: bca467b8c15211d189008a93c7519d3b
   port: 3161
   server: 160.16.214.6
@@ -92,6 +88,24 @@ proxies:
   server: oss-cn-shanghai.letssepub.com
   skip-cert-verify: false
   sni: dingding-doc.com
+  type: trojan
+- client-fingerprint: chrome
+  name: 日本2|@ripaojiedian
+  network: tcp
+  password: bca467b8c15211d189008a93c7519d3b
+  port: 4452
+  server: 160.16.236.32
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- client-fingerprint: chrome
+  name: 日本3|@ripaojiedian
+  network: tcp
+  password: bca467b8c15211d189008a93c7519d3b
+  port: 3161
+  server: 160.16.236.32
+  skip-cert-verify: true
+  sni: www.baidu.com
   type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
