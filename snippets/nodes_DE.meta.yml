@@ -45,9 +45,16 @@ proxies:
     headers:
       Host: ''
     path: /
+- name: 🇩🇪[openproxylist.com] vless-DE
+  network: grpc
+  port: 443
+  server: 142.93.109.68
+  tls: false
+  type: vless
+  uuid: 23076191-ac7c-45f7-e6f1-285fbec2ce96
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: US_speednode_0025
+  name: US_speednode_0048
   network: tcp
   port: 443
   reality-opts:
@@ -62,7 +69,7 @@ proxies:
   uuid: 706fae5e-3fc6-41a4-8eb7-3b3df7bad72b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #1'
+  name: '🇩🇪[openproxylist.com] vless-DE #2'
   network: tcp
   port: 443
   reality-opts:
@@ -73,36 +80,36 @@ proxies:
   tls: false
   type: vless
   uuid: 078534af-d6e0-453a-80e0-c61de7e98b81
-- name: '🇩🇪[openproxylist.com] vless-DE #2'
+- client-fingerprint: chrome
+  name: '🇩🇪[openproxylist.com] vless-DE #3'
+  network: ws
   port: 2053
   server: 104.26.6.89
-  tls: false
+  servername: om4.omidsuccess.uk
+  tls: true
   type: vless
   uuid: e188a23f-f17a-4a61-8a48-aa83b3653f5d
   ws-opts:
-    path: '%2Fcontainers%2Fde'
-- name: '🇩🇪[openproxylist.com] vless-DE #3'
+    headers:
+      Host: om4.omidsuccess.uk
+    path: /containers/de
+- name: '🇩🇪[openproxylist.com] vless-DE #4'
   port: 443
   server: 188.40.96.166
   tls: false
   type: vless
   uuid: e5134544-ac17-4fa0-afd1-c5e9a9ef673d
-- alpn:
-  - ''
-  name: '🇩🇪[openproxylist.com] vless-DE #4'
+- grpc-opts:
+    grpc-service-name: ''
+  name: '🇩🇪[openproxylist.com] vless-DE #5'
   network: grpc
   port: 8880
   server: 638971077544306321.oslo-blkaft-aaav.info
-  servername: ''
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
 - client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #5'
+  name: '🇩🇪[openproxylist.com] vless-DE #6'
   network: ws
   port: 443
   server: www.visaeurope.ch
@@ -115,13 +122,20 @@ proxies:
     headers:
       Host: rAyAn-cOnFiG-de-1.pArSa.dPdNs.oRg
     path: /ws
-- name: '🇩🇪[openproxylist.com] vless-DE #6'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #7'
+  network: tcp
   port: 8443
+  reality-opts:
+    public-key: pUD3mOlIKBEtDyFWK0LsGkY7j__7vblFPXnEVoY9oVQ
+    short-id: '!!str 22f040ed1037da8f'
   server: 178.17.50.141
+  servername: google.com
   tls: false
   type: vless
   uuid: 1901d9da-a3ca-44b2-9033-752aa449cc50
-- name: '🇩🇪[openproxylist.com] vless-DE #7'
+- name: '🇩🇪[openproxylist.com] vless-DE #8'
   network: ws
   port: 443
   server: 91.99.177.36
@@ -136,8 +150,9 @@ proxies:
   cipher: auto
   name: 🇩🇪[openproxylist.com] vmess-DE
   network: ws
-  port: '80'
+  port: 80
   server: 104.18.240.238
+  servername: ''
   tls: false
   type: vmess
   uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
@@ -146,42 +161,14 @@ proxies:
       Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
     path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
       TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
-- alterId: 0
-  cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #1'
-  network: ws
-  port: '80'
-  server: 185.146.173.25
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ed1b5743-389b-48a2-8d60-3790eded7ca6
-  ws-opts:
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.torob.Mci.zarashop0.ir.
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #2'
-  network: tcp
-  port: '550'
-  server: 57.129.78.147
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4b9654bd-a4e8-41e0-8425-ef4604cc1166
-- client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #8'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: d4nrz5jZn6OcMGmRr4H-2v6hKexlwe4hKaDMgMqSV3A
-    short-id: '!!str 305b25f707eb'
-  server: de.vip-get.ru
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: 89bf7903-b90d-4c8a-aad7-bea7a276654c
+- name: DE_speednode_0010
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.78.19.159
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
 - client-fingerprint: chrome
   name: DE_speednode_0011
   port: 6666
@@ -195,16 +182,25 @@ proxies:
   type: vless
   udp: true
   uuid: 0abf9050-c7be-464d-80af-24094c2b97de
+- name: DE_speednode_0012
+  port: 17287
+  server: 79.132.136.80
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0ce5451d-d771-4c7d-887e-1e51aef6fd2b
 - client-fingerprint: chrome
-  name: DE_speednode_0012
-  port: 34704
+  flow: xtls-rprx-vision
+  name: DE_speednode_0013
+  port: 444
   reality-opts:
-    public-key: Yl_Un-j1bd9icfC153HCUY_uRKWdj4D_PxHTQ59q5m4
-    short-id: '!!str 11c996b441cf6c'
-  server: 5.189.190.60
-  servername: ava.game.naver.com.lsvly.qzz.io
+    public-key: FOSoac3DIrSrCUcBtQA-BdHMxCtqe2CYCpdvGxKMiUw
+    short-id: '!!str 82b9ca5d8d39ba72'
+  server: 151.236.15.72
+  servername: opensuse.org
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 69394f3f-e84c-44b3-96ae-46000130cf2b
+  uuid: faaaf16e-188e-42f2-bcc1-17feadc84fad
