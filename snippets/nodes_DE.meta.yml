@@ -1,12 +1,4 @@
 proxies:
-- name: DE_speednode_0011
-  port: 17287
-  server: 79.132.136.80
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0ce5451d-d771-4c7d-887e-1e51aef6fd2b
 - name: DE-telegram-@ISVvpn  🌐 لوکیشن:...
   password: 70197404-7b40-45e4-bb9c-8bc8995012ae
   port: 24568
@@ -136,15 +128,20 @@ proxies:
   tls: false
   type: vless
   uuid: e5134544-ac17-4fa0-afd1-c5e9a9ef673d
-- grpc-opts:
-    grpc-service-name: ''
+- alpn:
+  - ''
   name: '🇩🇪[openproxylist.com] vless-DE #5'
   network: grpc
   port: 8880
   server: 638971077544306321.oslo-blkaft-aaav.info
+  servername: ''
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
 - client-fingerprint: chrome
   name: '🇩🇪[openproxylist.com] vless-DE #6'
   network: ws
@@ -232,6 +229,14 @@ proxies:
   type: vless
   udp: true
   uuid: 0abf9050-c7be-464d-80af-24094c2b97de
+- name: DE_speednode_0011
+  port: 17287
+  server: 79.132.136.80
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0ce5451d-d771-4c7d-887e-1e51aef6fd2b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: DE_speednode_0012
