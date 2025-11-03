@@ -37,12 +37,14 @@ proxies:
       Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
     path: /azumase.ren
 - name: 🇬🇧[openproxylist.com] vless-GB
+  network: grpc
   port: 8880
   server: 45.140.167.209
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: '🇬🇧[openproxylist.com] vless-GB #1'
+  network: grpc
   port: 8880
   server: 185.138.164.67
   tls: false
@@ -72,20 +74,14 @@ proxies:
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #6'
-  network: tcp
+- name: '🇬🇧[openproxylist.com] vless-GB #6'
   port: 443
-  reality-opts:
-    public-key: ypGN6MzbIpHm_fdhVIIUS-vLCXlNkOZrxZ4VNMxcxWw
-    short-id: '!!str 7286'
   server: uk29.clearorbitllc.com
-  servername: uk29.clearorbitllc.com
   tls: false
   type: vless
   uuid: 4f8b80d1-667e-4ab5-9285-0fbd0e3dcab2
 - name: '🇬🇧[openproxylist.com] vless-GB #7'
+  network: grpc
   port: 8880
   server: 638974363192994984.budapest-blkaft-aaav.info
   tls: false
@@ -119,10 +115,17 @@ proxies:
     headers:
       Host: rAyAn-cOnFiG-uk-1.pArIsA.DpDnS.OrG
     path: /ws
-- name: '🇬🇧[openproxylist.com] vless-GB #10'
+- alpn:
+  - ''
+  name: '🇬🇧[openproxylist.com] vless-GB #10'
   network: grpc
   port: 8880
-  server: 185.138.164.2
+  server: 638961293929376530.rasht-drc-tusaas.info
+  servername: ''
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
