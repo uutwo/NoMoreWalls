@@ -98,83 +98,94 @@ proxies:
       Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
     path: /azumase.ren
 - name: 🇫🇷[openproxylist.com] vless-FR
+  network: grpc
+  port: 8880
+  server: 95.164.6.169
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: '🇫🇷[openproxylist.com] vless-FR #1'
   port: 8880
   server: 185.234.64.66
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: '🇫🇷[openproxylist.com] vless-FR #2'
-  port: 443
-  server: rack4.biseda2.eu
-  tls: false
-  type: vless
-  uuid: 3fc4876d-9b5a-4c78-9504-33d054c49e3f
-- alpn:
-  - http/1.1
-  name: 🇫🇷[openproxylist.com] trojan-F...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
+  network: ws
+  port: 22224
   server: 51.44.233.53
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: '🇫🇷[openproxylist.com] trojan-F... #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.181.85.159
-  type: trojan
+  servername: trojan.burgerip.co.uk
+  tls: true
+  type: vless
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    path: '%2Ftelegram-channel-vlessconfig'
 - name: '🇫🇷[openproxylist.com] vless-FR #3'
+  network: ws
+  port: 22224
+  server: 35.181.85.159
+  servername: trojan.burgerip.co.uk
+  tls: true
+  type: vless
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    path: '%2Ftelegram-channel-vlessconfig'
+- name: '🇫🇷[openproxylist.com] vless-FR #4'
   port: 8880
   server: 638955951255903364.oslo-prx-dnraacu.info
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #4'
-  port: 8880
-  server: 638931272656134408.malayer-drc-tusabu.info
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: '🇫🇷[openproxylist.com] vless-FR #5'
+  network: grpc
   port: 8880
-  server: 195.42.233.27
+  server: 194.4.49.4
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: '🇫🇷[openproxylist.com] vless-FR #6'
   network: grpc
   port: 8880
-  server: 638930975314214829.dublin-drc-tusabu.info
+  server: 195.42.233.27
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #7'
+- client-fingerprint: chrome
+  name: '🇫🇷[openproxylist.com] vless-FR #7'
+  network: grpc
   port: 8880
-  server: 638955951255889101.oslo-prx-dnraacu.info
+  server: 195.42.233.89
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: '🇫🇷[openproxylist.com] vless-FR #8'
   network: grpc
   port: 8880
-  server: 185.234.64.41
+  server: 638955951255889101.oslo-prx-dnraacu.info
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: '🇫🇷[openproxylist.com] vless-FR #9'
   network: grpc
   port: 8880
-  server: 86.104.74.73
+  server: 185.234.64.41
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: '🇫🇷[openproxylist.com] vless-FR #10'
+  network: grpc
+  port: 8880
+  server: 86.104.74.73
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: '🇫🇷[openproxylist.com] vless-FR #11'
   port: 8880
   server: 638977742804260590.berlin-drcn-aaaaf.info
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #11'
+- name: '🇫🇷[openproxylist.com] vless-FR #12'
   port: 8880
   server: 638977742804263666.berlin-drcn-aaaaf.info
   tls: false
@@ -182,7 +193,7 @@ proxies:
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #12'
+  name: '🇫🇷[openproxylist.com] vless-FR #13'
   network: tcp
   port: 443
   reality-opts:
@@ -193,71 +204,64 @@ proxies:
   tls: false
   type: vless
   uuid: 39e5cc2f-1294-4a42-bb58-306a8be785e1
-- name: '🇫🇷[openproxylist.com] vless-FR #13'
+- name: '🇫🇷[openproxylist.com] vless-FR #14'
   port: 8880
   server: 638977742804265294.berlin-drcn-aaaaf.info
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #14'
+- name: '🇫🇷[openproxylist.com] vless-FR #15'
   network: grpc
   port: 8880
   server: 86.104.74.76
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #15'
+- name: '🇫🇷[openproxylist.com] vless-FR #16'
   port: 8880
   server: 45.12.133.212
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #16'
-  network: grpc
-  port: 8880
-  server: 185.234.64.43
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: '🇫🇷[openproxylist.com] vless-FR #17'
   network: grpc
   port: 8880
-  server: 185.231.205.233
+  server: 185.234.64.43
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: '🇫🇷[openproxylist.com] vless-FR #18'
   network: grpc
   port: 8880
-  server: 185.231.205.232
+  server: 185.231.205.233
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: '🇫🇷[openproxylist.com] vless-FR #19'
   network: grpc
   port: 8880
-  server: 185.234.64.5
+  server: 185.231.205.232
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: '🇫🇷[openproxylist.com] vless-FR #20'
   network: grpc
   port: 8880
-  server: 185.234.64.63
+  server: 185.234.64.5
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: '🇫🇷[openproxylist.com] vless-FR #21'
   network: grpc
   port: 8880
-  server: 86.104.74.62
+  server: 185.234.64.63
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: '🇫🇷[openproxylist.com] vless-FR #22'
   network: grpc
   port: 8880
-  server: 217.69.11.74
+  server: 86.104.74.62
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
@@ -268,34 +272,21 @@ proxies:
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #24'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: oV1AkWgsWXKrDF1KLj1-qdzn87iamZq754qI_CoDrgs
-    short-id: '!!str 6724d5c47a'
-  server: france18.clearorbitllc.com
-  servername: france18.clearorbitllc.com
-  tls: false
-  type: vless
-  uuid: f6ab4c87-990f-49a2-9a86-ddd8b012cb1c
-- name: '🇫🇷[openproxylist.com] vless-FR #25'
+- name: '🇫🇷[openproxylist.com] vless-FR #24'
   network: grpc
   port: 8880
   server: 185.234.64.49
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #26'
+- name: '🇫🇷[openproxylist.com] vless-FR #25'
   port: 8880
   server: 638975946113348099.berlin-drcn-aaaae.info
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - client-fingerprint: chrome
-  name: '🇫🇷[openproxylist.com] vless-FR #27'
+  name: '🇫🇷[openproxylist.com] vless-FR #26'
   network: tcp
   port: 34704
   reality-opts:
@@ -306,116 +297,123 @@ proxies:
   tls: false
   type: vless
   uuid: 69394f3f-e84c-44b3-96ae-46000130cf2b
-- name: '🇫🇷[openproxylist.com] vless-FR #28'
-  network: grpc
+- name: '🇫🇷[openproxylist.com] vless-FR #27'
   port: 8880
   server: 95.164.45.27
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: '🇫🇷[openproxylist.com] vless-FR #28'
+  port: 8880
+  server: 94.232.247.235
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: '🇫🇷[openproxylist.com] vless-FR #29'
   network: grpc
   port: 8880
-  server: 94.232.247.235
+  server: 95.164.45.62
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: '🇫🇷[openproxylist.com] vless-FR #30'
   network: grpc
   port: 8880
-  server: 638974563192163059.stockholm-drcn-aaaad.info
+  server: 94.232.247.206
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: '🇫🇷[openproxylist.com] vless-FR #31'
   network: grpc
   port: 8880
-  server: 95.164.45.62
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- client-fingerprint: chrome
-  name: '🇫🇷[openproxylist.com] vless-FR #32'
-  network: grpc
-  port: 8880
-  server: 94.232.247.206
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #33'
-  network: grpc
-  port: 8880
   server: 94.232.247.177
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #34'
+- name: '🇫🇷[openproxylist.com] vless-FR #32'
   network: grpc
   port: 8880
   server: 95.164.6.7
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #35'
+- name: '🇫🇷[openproxylist.com] vless-FR #33'
   network: grpc
   port: 8880
   server: 95.164.6.22
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #36'
+  ws-opts:
+    path: /@V2ray_confing33/
+- name: '🇫🇷[openproxylist.com] vless-FR #34'
   network: grpc
   port: 8880
   server: 95.164.6.211
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #37'
-  network: grpc
-  port: 8880
-  server: 95.164.6.183
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #38'
+- name: '🇫🇷[openproxylist.com] vless-FR #35'
   network: grpc
   port: 8880
   server: 95.164.45.119
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #39'
+- name: '🇫🇷[openproxylist.com] vless-FR #36'
   network: grpc
   port: 8880
   server: 95.164.6.82
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #40'
+- name: '🇫🇷[openproxylist.com] vless-FR #37'
   network: grpc
   port: 8880
   server: 95.164.6.244
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #41'
+- name: '🇫🇷[openproxylist.com] vless-FR #38'
   network: grpc
   port: 8880
   server: 94.232.247.186
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #42'
+- name: '🇫🇷[openproxylist.com] vless-FR #39'
   network: grpc
   port: 8880
   server: 95.164.6.15
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- client-fingerprint: chrome
+  name: '🇫🇷[openproxylist.com] vless-FR #40'
+  network: grpc
+  port: 8880
+  server: 185.153.183.150
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: '🇫🇷[openproxylist.com] vless-FR #41'
+  network: grpc
+  port: 8880
+  server: 95.164.45.25
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: '🇫🇷[openproxylist.com] vless-FR #42'
+  network: grpc
+  port: 8880
+  server: 95.164.6.97
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: '🇫🇷[openproxylist.com] vless-FR #43'
   network: grpc
   port: 8880
-  server: 638974021050130973.kish-blkaft-aaba.info
+  server: 185.153.183.22
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
@@ -423,21 +421,7 @@ proxies:
   name: '🇫🇷[openproxylist.com] vless-FR #44'
   network: grpc
   port: 8880
-  server: 95.164.45.25
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #45'
-  network: grpc
-  port: 8880
-  server: 95.164.6.97
-  tls: false
-  type: vless
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇫🇷[openproxylist.com] vless-FR #46'
-  network: grpc
-  port: 8880
-  server: 638973401251721246.esfahan-blkaft-aaba.info
+  server: 185.153.183.125
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
