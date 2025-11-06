@@ -23,6 +23,7 @@ proxies:
       Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
     path: /azumase.ren
 - name: 🇬🇧[openproxylist.com] vless-GB
+  network: grpc
   port: 8880
   server: 185.138.164.186
   tls: false
@@ -34,46 +35,64 @@ proxies:
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇬🇧[openproxylist.com] vless-GB #2'
+- alpn:
+  - ''
+  name: '🇬🇧[openproxylist.com] vless-GB #2'
+  network: grpc
   port: 8880
   server: 638977742221951961.warsaw-blkaft-aaav.info
+  servername: ''
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇬🇧[openproxylist.com] vless-GB #3'
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alpn:
+  - ''
+  name: '🇬🇧[openproxylist.com] vless-GB #3'
+  network: grpc
   port: 8880
   server: 638977742221953375.warsaw-blkaft-aaav.info
+  servername: ''
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
 - name: '🇬🇧[openproxylist.com] vless-GB #4'
-  port: 20532
-  server: 94.182.137.12
-  tls: false
-  type: vless
-  uuid: 8496c102-4094-4dd3-ad63-7bb7a35cbaee
-- client-fingerprint: chrome
-  name: '🇬🇧[openproxylist.com] vless-GB #5'
-  network: ws
   port: 443
   server: 104.26.6.89
-  servername: gb-021.shenzogmbh.com
-  tls: true
+  tls: false
   type: vless
   uuid: 5ec3a039-ea63-4bf9-a848-a65c9bfa66f5
   ws-opts:
-    headers:
-      Host: gb-021.shenzogmbh.com
-    path: /api/v1
-- name: '🇬🇧[openproxylist.com] vless-GB #6'
+    path: '%2Fapi%2Fv1'
+- name: '🇬🇧[openproxylist.com] vless-GB #5'
   port: 8880
   server: 638977742221947111.warsaw-blkaft-aaav.info
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇬🇧[openproxylist.com] vless-GB #7'
+- name: '🇬🇧[openproxylist.com] vless-GB #6'
+  port: 8880
+  server: 45.140.167.172
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇬🇧[openproxylist.com] vless-GB #7'
+  network: grpc
   port: 8880
   server: 45.140.167.213
+  servername: '---@AZARBAYKAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1'
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
@@ -91,7 +110,6 @@ proxies:
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: '🇬🇧[openproxylist.com] vless-GB #10'
-  network: grpc
   port: 8880
   server: 185.138.164.67
   tls: false
