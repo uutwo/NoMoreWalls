@@ -1,14 +1,4 @@
 proxies:
-- name: '🇬🇧 - GB - @freeOnlineVPN #1'
-  obfs: salamander
-  obfs-password: khameniiko@smad@ret
-  password: YwuvGJk36B
-  port: 2083
-  server: 81.168.83.89
-  skip-cert-verify: true
-  sni: kotlet.arshiacomplus.dpdns.org
-  tls: false
-  type: hysteria2
 - alterId: 0
   cipher: auto
   name: 🇬🇧 VMESS-未知>英国-NF解锁波兰地区非自制剧-Ch...
@@ -23,6 +13,7 @@ proxies:
       Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
     path: /azumase.ren
 - name: 🇬🇧[openproxylist.com] vless-GB
+  network: grpc
   port: 8880
   server: 185.138.164.186
   tls: false
@@ -34,18 +25,34 @@ proxies:
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇬🇧[openproxylist.com] vless-GB #2'
+- alpn:
+  - ''
+  name: '🇬🇧[openproxylist.com] vless-GB #2'
+  network: grpc
   port: 8880
   server: 638977742221951961.warsaw-blkaft-aaav.info
+  servername: ''
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇬🇧[openproxylist.com] vless-GB #3'
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alpn:
+  - ''
+  name: '🇬🇧[openproxylist.com] vless-GB #3'
+  network: grpc
   port: 8880
   server: 638977742221953375.warsaw-blkaft-aaav.info
+  servername: ''
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
 - name: '🇬🇧[openproxylist.com] vless-GB #4'
   port: 20532
   server: 94.182.137.12
@@ -61,26 +68,47 @@ proxies:
   ws-opts:
     path: '%2Fapi%2Fv1'
 - name: '🇬🇧[openproxylist.com] vless-GB #6'
+  network: grpc
   port: 8880
   server: 638977742221947111.warsaw-blkaft-aaav.info
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇬🇧[openproxylist.com] vless-GB #7'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇬🇧[openproxylist.com] vless-GB #7'
+  network: grpc
   port: 8880
   server: 45.140.167.172
+  servername: '---@AZARBAYKAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1'
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇬🇧[openproxylist.com] vless-GB #8'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇬🇧[openproxylist.com] vless-GB #8'
+  network: grpc
   port: 8880
   server: 45.140.167.213
+  servername: '---@AZARBAYKAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1'
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇬🇧[openproxylist.com] vless-GB #9'
+- client-fingerprint: chrome
+  name: '🇬🇧[openproxylist.com] vless-GB #9'
+  network: tcp
   port: 443
+  reality-opts:
+    public-key: -rFZDbTY311FfuSHKsKENvN0gjaGdJBK_iTK50WL3mk
+    short-id: '!!str 96016aaff14b'
   server: 212.134.84.115
+  servername: pcmag.com
   tls: false
   type: vless
   uuid: b21a057a-e474-4dc8-a9fe-8579ed386501
