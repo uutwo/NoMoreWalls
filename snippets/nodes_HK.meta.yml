@@ -1,15 +1,25 @@
 proxies:
-- name: 香港+电讯盈科有限公司
+- name: HK_speednode_0013
   password: BxceQaOe
   port: 443
   server: 58.152.46.98
+  skip-cert-verify: true
+  sni: 58.152.46.98
   type: trojan
-- name: '香港+电讯盈科有限公司 #1'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.30.26
-  sni: t.me%252Fripaojiedian
-  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 香港 Cloudie数据中心
+  network: tcp
+  port: '10086'
+  server: 103.243.26.209
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c5ec2e3f-c058-46a8-a148-1831824bb94b
+  ws-headers:
+    Host: 103.243.26.209
+  ws-path: /
 - alterId: 0
   cipher: auto
   http-opts:
@@ -90,19 +100,6 @@ proxies:
   port: 50829
   server: nl1.web3sp.com
   type: ss
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #6'
-  network: tcp
-  port: '10086'
-  server: 103.243.26.209
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c5ec2e3f-c058-46a8-a148-1831824bb94b
-  ws-headers:
-    Host: 103.243.26.209
-  ws-path: /
 - cipher: aes-128-gcm
   name: 🇭🇰HK-141.11.76.77-052
   password: 57bc0c04-8184-48f5-906b-897d095ed445
@@ -194,20 +191,6 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '🇭🇰[openproxylist.com] vmess-HK #1'
-  network: ws
-  port: 8849
-  server: 47.239.252.30
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4244267d-52b3-4ae2-9926-da2b07de889b
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #2'
   network: tcp
   port: '15160'
   server: 8.218.120.209
@@ -217,21 +200,21 @@ proxies:
   uuid: 540a9fd9-9dc8-434f-c971-a10e9befd7fa
 - alterId: 0
   cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #3'
+  name: '🇭🇰[openproxylist.com] vmess-HK #2'
   network: ws
-  port: 25608
+  port: 8535
   server: 47.238.247.69
   servername: ''
   tls: false
   type: vmess
-  uuid: 575ac013-bfe8-4b24-8e9f-cc29a6bc8151
+  uuid: aca68896-1d4e-41fc-b1ed-e9295c8a5f5e
   ws-opts:
     headers:
       Host: ''
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #4'
+  name: '🇭🇰[openproxylist.com] vmess-HK #3'
   network: ws
   port: 26998
   server: 8.217.21.237
@@ -252,7 +235,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #5'
+  name: '🇭🇰[openproxylist.com] vmess-HK #4'
   network: ws
   port: 54100
   server: 8.218.113.19
@@ -273,21 +256,16 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #7'
-  network: ws
-  port: '20522'
-  server: 47.243.39.173
-  servername: ''
+  name: '🇭🇰[openproxylist.com] vmess-HK #5'
+  network: tcp
+  port: '8080'
+  server: 103.243.26.209
   tls: false
   type: vmess
-  uuid: 8993ea91-d437-4899-a6d9-1dcc0aa17820
-  ws-opts:
-    headers:
-      Host: ''
-    path: /telegram_@sswia
+  uuid: bc7e6840-ab83-4570-eaae-d9aff1e2da09
 - alterId: 0
   cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #8'
+  name: '🇭🇰[openproxylist.com] vmess-HK #6'
   network: ws
   port: 57714
   server: 8.218.71.140
@@ -299,39 +277,3 @@ proxies:
     headers:
       Host: ''
     path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #9'
-  network: ws
-  port: '35642'
-  server: 47.243.172.177
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 534f6704-e467-40da-9c77-19b5007ba594
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #10'
-  network: ws
-  port: '50059'
-  server: 47.243.168.211
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 017a9e5a-0fe4-41fb-925a-fc240dae809c
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- name: HK_speednode_0013
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.98
-  skip-cert-verify: true
-  sni: 58.152.46.98
-  type: trojan
-  udp: true
