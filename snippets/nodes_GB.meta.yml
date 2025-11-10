@@ -28,16 +28,9 @@ proxies:
   tls: false
   type: vless
   uuid: 160a7b5d-fd67-4e83-8d8e-73dcfb6d91c2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #1'
-  network: tcp
+- name: '🇬🇧[openproxylist.com] vless-GB #1'
   port: 443
-  reality-opts:
-    public-key: e8R6bqFhE4LBJeH-V9y8As5nu7KvUnIEOh2tDhm4mRE
-    short-id: '!!str a2820e7a894f37'
   server: finland4.clear-vpn.org
-  servername: google.com
   tls: false
   type: vless
   uuid: c07c396a-6206-4d1a-9605-2952af00f2fc
@@ -75,15 +68,20 @@ proxies:
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇬🇧[openproxylist.com] vless-GB #7'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇬🇧[openproxylist.com] vless-GB #7'
   network: grpc
   port: 8880
   server: 45.140.167.172
+  servername: '%F0%9F%94%92%20%5BBy%20EbraSha%5D%20vless-GB'
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: '🇬🇧[openproxylist.com] vless-GB #8'
-  network: grpc
   port: 8880
   server: 45.140.167.213
   tls: false
