@@ -89,29 +89,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- name: 香港+电讯盈科有限公司
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.98
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 🇷🇺 俄罗斯 V2CROSS.COM
+  name: 香港 特别行政区
   network: tcp
-  port: '2083'
-  server: nl-v2ray.freevmess.com
-  skip-cert-verify: true
-  tls: true
+  port: 13231
+  server: cdn3.ttcdn.top
+  tls: false
   type: vmess
-  uuid: c3d066bc-4170-4006-a95c-0012367e8f13
-  ws-headers:
-    Host: nl-v2ray.freevmess.com
-  ws-path: /
+  uuid: e14c2114-e492-4be9-b51e-3f2f0fd5c48d
 - alterId: 0
   cipher: auto
-  name: 英国 V2CROSS.COM
+  name: '英国 V2CROSS.COM #1'
   network: ws
-  port: 16648
+  port: 16622
   server: t.cnmjcn.cyou
   tls: false
   type: vmess
@@ -120,12 +111,33 @@ proxies:
     headers:
       Host: 481e9db24fc371b854d98245ce8ffb64.mobgslb.tbcache.com
     path: /
-- name: '香港+电讯盈科有限公司 #1'
+- name: 香港+电讯盈科有限公司
   password: BxceQaOe
   port: 443
-  server: 58.152.30.26
-  sni: t.me%25252Fripaojiedian
+  server: 58.152.46.98
   type: trojan
+- name: '🇭🇰[openproxylist.com] trojan-H... #1'
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 58.152.53.186
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇳🇱[openproxylist.com] vmess-NL
+  network: tcp
+  port: '2083'
+  server: nl-v2ray.freevmess.com
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c3d066bc-4170-4006-a95c-0012367e8f13
+  ws-headers:
+    Host: nl-v2ray.freevmess.com
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 香港6|@ripaojiedian
@@ -140,20 +152,6 @@ proxies:
   ws-headers:
     Host: 175.29.22.101
   ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国 CloudFlare节点
-  network: ws
-  port: '80'
-  server: 104.18.240.238
-  tls: false
-  type: vmess
-  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-  ws-opts:
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
-      TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
 - alterId: 0
   cipher: auto
   http-opts:
@@ -699,14 +697,6 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '🇭🇰[openproxylist.com] trojan-H... #1'
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 58.152.53.186
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
 - name: 日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -1142,6 +1132,20 @@ proxies:
   network: ws
   port: '80'
   server: 185.146.173.117
+  tls: false
+  type: vmess
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-opts:
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+      TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国 CloudFlare节点
+  network: ws
+  port: '80'
+  server: 104.18.240.238
   tls: false
   type: vmess
   uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
@@ -1662,6 +1666,15 @@ proxies:
   tls: false
   type: vmess
   uuid: d2540325-9ad6-33d7-be86-259b5bba4ef8
+- alpn:
+  - http/1.1
+  name: 🇩🇪[openproxylist.com] trojan-D...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 63.178.130.192
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇯🇵[openproxylist.com] vmess-JP
@@ -1819,13 +1832,6 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 🇺🇸[openproxylist.com] trojan-U...
-  password: 1b57001bd214304027025a740b6cf1ac
-  port: 1328
-  server: 153.121.44.99
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇸🇬[openproxylist.com] vmess-SG
@@ -1850,9 +1856,8 @@ proxies:
   cipher: auto
   name: 🇹🇼[openproxylist.com] vmess-TW
   network: ws
-  port: 8080
+  port: '8080'
   server: 83.147.13.228
-  servername: ''
   tls: false
   type: vmess
   uuid: 26d77d7a-d4ea-40cd-8da5-54a9c84e7362
@@ -1888,12 +1893,12 @@ proxies:
   cipher: auto
   name: '🇭🇰[openproxylist.com] vmess-HK #2'
   network: ws
-  port: 26998
-  server: 8.217.21.237
+  port: 25608
+  server: 47.238.247.69
   servername: ''
   tls: false
   type: vmess
-  uuid: 248b7151-e940-4a68-b734-e206b0fa1d9a
+  uuid: 575ac013-bfe8-4b24-8e9f-cc29a6bc8151
   ws-opts:
     headers:
       Host: ''
