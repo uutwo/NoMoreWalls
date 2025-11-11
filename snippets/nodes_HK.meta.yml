@@ -1,10 +1,18 @@
 proxies:
-- name: 🇭🇰 香港 电讯盈科有限公司
+- name: '_CN_中国 #7'
   password: BxceQaOe
   port: 443
   server: 58.152.30.26
-  skip-cert-verify: false
-  sni: t.me%252Fripaojiedian
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 香港5|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 58.152.53.186
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
   type: trojan
 - alterId: 0
   cipher: auto
@@ -61,6 +69,13 @@ proxies:
   server: 47.76.175.67
   type: http
   username: '123'
+- name: 🇭🇰 香港 电讯盈科有限公司
+  password: BxceQaOe
+  port: 443
+  server: 58.152.30.26
+  skip-cert-verify: false
+  sni: t.me%252Fripaojiedian
+  type: trojan
 - alterId: 2
   cipher: auto
   name: 香港|@ripaojiedian
@@ -163,9 +178,8 @@ proxies:
   cipher: auto
   name: '🇭🇰[openproxylist.com] vmess-HK #1'
   network: ws
-  port: 5361
+  port: '5361'
   server: 47.239.102.115
-  servername: ''
   tls: false
   type: vmess
   uuid: a053682e-9373-4fe7-8277-1de3f8d1eacd
