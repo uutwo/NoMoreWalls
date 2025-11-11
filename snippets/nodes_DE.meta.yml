@@ -16,16 +16,6 @@ proxies:
   sni: jnir.pichondan.com
   tls: false
   type: hysteria2
-- name: '🇳🇱 - NL - @freeOnlineVPN #9'
-  obfs: salamander
-  obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
-  password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
-  port: 35000
-  server: dir.cybsecguru.com
-  skip-cert-verify: true
-  sni: jnir.pichondan.com
-  tls: false
-  type: hysteria2
 - alterId: 0
   cipher: auto
   name: 🇩🇪 VMESS-未知>德国-NF解锁德国地区非自制剧-Ch...
@@ -65,10 +55,28 @@ proxies:
     headers:
       Host: ''
     path: /
+- name: 🇩🇪[openproxylist.com] vless-DE
+  network: ws
+  port: 22224
+  server: 52.57.73.220
+  servername: trojan.burgerip.co.uk
+  tls: true
+  type: vless
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    path: '%2Ftelegram-channel-vlessconfig'
+- alpn:
+  - http/1.1
+  name: 🇩🇪[openproxylist.com] trojan-D...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.199.28.235
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: GB_speednode_0021
-  network: tcp
   port: 46490
   reality-opts:
     public-key: mNnK0d5tF-8FazWFmDLsp9YPAf1PL2k9S1bvKV8p_Uk
@@ -80,7 +88,7 @@ proxies:
   type: vless
   udp: true
   uuid: 28e8d9d8-3442-46e8-8697-0280c2917242
-- name: '🇩🇪[openproxylist.com] vless-DE #1'
+- name: '🇩🇪[openproxylist.com] vless-DE #2'
   port: 443
   server: 91.132.160.165
   tls: false
@@ -88,7 +96,7 @@ proxies:
   uuid: b59a95d8-4f76-458f-b014-84610f7159f5
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #2'
+  name: '🇩🇪[openproxylist.com] vless-DE #3'
   network: tcp
   port: 36659
   reality-opts:
@@ -99,25 +107,25 @@ proxies:
   tls: false
   type: vless
   uuid: 3e7140c5-cbc5-4aff-b232-60efa91ebe1b
-- name: '🇩🇪[openproxylist.com] vless-DE #3'
+- name: '🇩🇪[openproxylist.com] vless-DE #4'
   port: 47072
   server: huskar.fonixapp.org
   tls: false
   type: vless
   uuid: 6e6cc44d-2ced-49a2-a7f1-e879847c1c57
-- name: '🇩🇪[openproxylist.com] vless-DE #4'
+- name: '🇩🇪[openproxylist.com] vless-DE #5'
   port: 36200
   server: clinkz.fonixapp.org
   tls: false
   type: vless
   uuid: 0442e0ca-6c0e-4cc3-a195-91796b40dfd7
-- name: '🇩🇪[openproxylist.com] vless-DE #5'
+- name: '🇩🇪[openproxylist.com] vless-DE #6'
   port: 20579
   server: dl.darkterror.fonixapp.org
   tls: false
   type: vless
   uuid: 93cd7e0f-8a81-4076-be8b-6d3bf3f8f810
-- name: '🇩🇪[openproxylist.com] vless-DE #6'
+- name: '🇩🇪[openproxylist.com] vless-DE #7'
   port: 36659
   server: invoker.fonixapp.org
   tls: false
@@ -138,21 +146,6 @@ proxies:
   type: vless
   udp: true
   uuid: 5926e98a-f6af-4676-8c73-3f3d0146357d
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: DE_speednode_0013
-  network: tcp
-  port: 39352
-  reality-opts:
-    public-key: bqBZxwknIQGVNxvW6agjANLI6jdKG8jgIJ6cLKBbjns
-    short-id: '!!str 8f'
-  server: traxex.fonixapp.org
-  servername: lowes.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 84ac6559-30a8-4c3e-bbcb-894edd4de743
 - name: '🇩🇪[openproxylist.com] vless-DE #9'
   port: 8443
   server: 157.90.131.220
@@ -182,6 +175,7 @@ proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: AT_speednode_0005
+  network: tcp
   port: 22925
   reality-opts:
     public-key: Pzsb-3zlxbYLJwRE0ACSqzTL7h3ubqREGMEs17q_1z4
@@ -238,16 +232,9 @@ proxies:
   tls: false
   type: vless
   uuid: 29397c5b-be3b-41d9-8a49-21575668e915
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #17'
-  network: tcp
+- name: '🇩🇪[openproxylist.com] vless-DE #17'
   port: 43326
-  reality-opts:
-    public-key: e4jsuyfW6xyjfYOVsFI4AKnJihGp4MMqtRv5TaVurlw
-    short-id: '!!str c3'
   server: earthshaker.fonixapp.org
-  servername: stackoverflow.com
   tls: false
   type: vless
   uuid: 7b6df8d0-100c-48e1-beec-30effe41c04e
@@ -259,21 +246,11 @@ proxies:
   reality-opts:
     public-key: KIJ-Gb61R1Ng1kMvD01v51SwtrrYh3npN5cSkxb-MH0
     short-id: '!!str 3b'
-  server: 37.120.191.120
+  server: tidehunter.fonixapp.org
   servername: deepl.com
   tls: false
   type: vless
   uuid: 140ae345-e7b8-49f5-8920-85f82085344e
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪[openproxylist.com] vmess-DE
-  network: tcp
-  port: '3201'
-  server: 185.213.240.86
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 03a2c20e-6bb2-4574-9660-8c4ef9ece756
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇩🇪[openproxylist.com] vless-DE #19'
@@ -299,22 +276,22 @@ proxies:
   tls: false
   type: vless
   uuid: 840ae376-483b-48d5-bc49-22b0769b5860
-- name: '🇩🇪[openproxylist.com] vless-DE #22'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #22'
+  network: tcp
   port: 37743
-  server: elementalss.fonixapp.org
+  reality-opts:
+    public-key: HQJisdc7ad3hvl6z7gQexSmTUmTQdVHelo8ZtSz0hSk
+    short-id: '!!str 52'
+  server: 152.53.143.63
+  servername: deepl.com
   tls: false
   type: vless
   uuid: 6f7562ec-5858-42e4-9934-46d96d94b15b
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #23'
-  network: tcp
+- name: '🇩🇪[openproxylist.com] vless-DE #23'
   port: 54226
-  reality-opts:
-    public-key: Mhw0szMuy7R0U89Vm0bf-hF0DQ5pEWYdgdPF6UWLRXY
-    short-id: '!!str 49eb'
   server: dwarvensniper.fonixapp.org
-  servername: yelp.com
   tls: false
   type: vless
   uuid: 2c649958-a029-431a-920b-94e87ccbc715
@@ -334,7 +311,6 @@ proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: AT_speednode_0004
-  network: tcp
   port: 26143
   reality-opts:
     public-key: ng3D2eUM-UM3ariA2eCDibCNo_peaKijOWUZJJKiIUI
@@ -363,20 +339,23 @@ proxies:
   uuid: 31d35cbe-92d1-44cd-9991-e58d00499fb2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #27'
+  name: DE_speednode_0014
   network: tcp
   port: 49406
   reality-opts:
     public-key: UsAOmf7X1yYkjF73ChFECcZb2PFNuhqqvOUxcybV-20
     short-id: '!!str a7'
-  server: 89.58.55.196
+  server: beast-masters.fonixapp.org
   servername: ilovepdf.com
-  tls: false
+  skip-cert-verify: false
+  tls: true
   type: vless
+  udp: true
   uuid: 49d74535-837e-4132-90c7-4e06de7db303
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: AT_speednode_0001
+  network: tcp
   port: 56765
   reality-opts:
     public-key: DHIEcMf3BTEwQ_XEFx1j02jzn0KkKKeyPWH7wnWwuG8
@@ -397,6 +376,7 @@ proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: AT_speednode_0006
+  network: tcp
   port: 20220
   reality-opts:
     public-key: KSW4e1R98qljwxyP6YaRrwGF4Rp_8hfXQaaShYUXwSc
@@ -429,15 +409,15 @@ proxies:
   uuid: ee16b7cb-1c0a-421c-9083-3649cb0fe00e
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: DE_speednode_0014
-  port: 49406
+  name: DE_speednode_0013
+  port: 39352
   reality-opts:
-    public-key: UsAOmf7X1yYkjF73ChFECcZb2PFNuhqqvOUxcybV-20
-    short-id: '!!str a7'
-  server: beast-masters.fonixapp.org
-  servername: ilovepdf.com
+    public-key: bqBZxwknIQGVNxvW6agjANLI6jdKG8jgIJ6cLKBbjns
+    short-id: '!!str 8f'
+  server: traxex.fonixapp.org
+  servername: lowes.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 49d74535-837e-4132-90c7-4e06de7db303
+  uuid: 84ac6559-30a8-4c3e-bbcb-894edd4de743
