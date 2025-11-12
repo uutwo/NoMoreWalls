@@ -1,4 +1,17 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬 新加坡 Amazon数据中心
+  network: tcp
+  port: '24321'
+  server: cgroup.node3.v.nodelist-airport.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
+  ws-headers:
+    Host: cgroup.node3.v.nodelist-airport.com
+  ws-path: /
 - client-fingerprint: chrome
   encryption: none
   name: 新加坡-001 |1.4MB/s
@@ -31,22 +44,6 @@ proxies:
     headers:
       host: gaosir.unfeeling.sbs
     path: telegram@freecodes/?ed=2560
-- name: 新加坡|@ripaojiedian
-  network: tcp
-  password: 1b57001bd214304027025a740b6cf1ac
-  port: 2760
-  server: 160.16.106.144
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 新加坡2|@ripaojiedian
-  network: tcp
-  password: 1b57001bd214304027025a740b6cf1ac
-  port: 127
-  server: 160.16.106.144
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇸🇬[openproxylist.com] vmess-SG
@@ -70,21 +67,22 @@ proxies:
     headers:
       Host: ovhwuxian.pai50288.uk
     path: /57ba2ab1
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: randomized
-  name: '🇸🇬[openproxylist.com] vless-SG #1'
-  network: xhttp
-  port: 443
-  server: 104.21.62.144
-  servername: sauron.melkore.ir
-  skip-cert-verify: true
-  tls: true
+- name: '🇸🇬[openproxylist.com] vless-SG #1'
+  port: 8880
+  server: 103.231.75.74
+  tls: false
   type: vless
-  uuid: 62793d13-24bc-4a0b-9b35-f565ed659773
-  ws-opts:
-    headers:
-      Host: ''
-    path: '%2FSauron%2F'
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇸🇬[openproxylist.com] vless-SG #2'
+  network: tcp
+  port: 31064
+  reality-opts:
+    public-key: zwgm4-BssFEzGy7VSQmcd3LhJZzT36XNlNVrnQqDLBM
+    short-id: '!!str d3875950'
+  server: aws-linksg64.eovay.com
+  servername: www.lamer.com.sg
+  tls: false
+  type: vless
+  uuid: 6c0472bc-82df-449e-90bd-2f91c6a46402
