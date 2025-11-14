@@ -237,10 +237,11 @@ proxies:
     headers:
       Host: orvps2.horsenma.net
     path: /horsen
-- name: 🇺🇸 美国|@stairnode
+- name: 美国|@ripaojiedian
+  network: tcp
   password: 2274c52572e721086f8bd8f88984643c
-  port: 2890
-  server: 160.16.68.250
+  port: 4211
+  server: 160.16.107.37
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -252,38 +253,39 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 🇺🇸 美国3|@stairnode
+- name: 美国3|@ripaojiedian
+  network: tcp
   password: BxceQaOe
-  port: 19220
-  server: 36.150.215.243
+  port: 4094
+  server: 116.49.237.130
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 🇺🇸_US_美国
+- name: 🇺🇸 _US_美国
   password: trojan
   port: 8443
   server: ip.sb
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: fofang.pages.dev
   type: trojan
-- name: '🇺🇸_US_美国 #1'
+- name: '🇺🇸 _US_美国 #1'
   password: d0298536-d670-4045-bbb1-ddd5ea68683e
   port: 2087
   server: 104.25.254.4
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: azadnet-bdr.pages.dev
   type: trojan
-- name: '🇺🇸_US_美国 #2'
+- name: '🇺🇸 _US_美国 #2'
   password: er668
   port: 443
   server: kfjdi.pages.dev
-  skip-cert-verify: true
+  skip-cert-verify: false
   type: trojan
-- name: '🇺🇸_US_美国 #3'
+- name: '🇺🇸 _US_美国 #3'
   password: 7d82af32-915f-4619-aa9c-7d3b612d33ff
   port: 2053
   server: 65.109.227.138
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: joss.dus.biz.id
   type: trojan
 - name: '🇬🇧 GB英国(mibei77.com 米贝节点分享) #5'
@@ -544,30 +546,41 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 美国|@ripaojiedian
-  network: tcp
-  password: 2274c52572e721086f8bd8f88984643c
-  port: 4211
-  server: 160.16.107.37
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 4094
-  server: 116.49.237.130
+- name: 🇪🇸[openproxylist.com] trojan-E...
+  network: ws
+  password: 19f8e29a-3f0b-448c-92e8-ae035ea5f9ba
+  port: 81
+  server: 45.159.251.8
   skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
+  sni: joss.dus.biz.id
   type: trojan
-- name: 🇺🇸[openproxylist.com] trojan-U...
+  ws-opts:
+    headers:
+      Host: joss.dus.biz.id
+    path: /Free-VPN-CF-Geo-Project/45.159.251.8=81
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: US_speednode_0055
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: MNTWCLyV7EquFn-J0a6KRlQZ0dt6QY5mmu7Dq8uDkxw
+    short-id: '!!str c2a0b2d60a7fc300'
+  server: fis.jykvpn.com
+  servername: cdnjs.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1
+- name: '🇺🇸[openproxylist.com] trojan-U... #1'
   network: raw
   password: vp0GmFj.yIw1RZrd
   port: 19313
   server: 155.138.228.41
   sni: raincoat.bluetigeraa.click
   type: trojan
-- name: 🇺🇸[openproxylist.com] vless-US
+- name: '🇺🇸[openproxylist.com] vless-US #1'
   network: ws
   port: 2053
   server: 104.18.27.90
@@ -580,7 +593,7 @@ proxies:
     headers:
       Host: port.api-music-fa.com
     path: '%2FJ5aLQOY1R9ONWYCM'
-- name: '🇺🇸[openproxylist.com] vless-US #1'
+- name: '🇺🇸[openproxylist.com] vless-US #2'
   network: ws
   port: 8443
   server: 172.67.185.98
@@ -607,18 +620,7 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: '🇺🇸[openproxylist.com] trojan-U... #2'
-  network: ws
-  password: 8221436f-1b7e-4517-9698-0da2a53443e3
-  port: 81
-  server: 45.159.251.8
-  sni: joss.dus.biz.id
-  type: trojan
-  ws-opts:
-    headers:
-      Host: joss.dus.biz.id
-    path: /Free-VPN-CF-Geo-Project/45.159.251.8=81
-- name: '🇺🇸[openproxylist.com] vless-US #2'
+- name: '🇺🇸[openproxylist.com] vless-US #3'
   port: 8443
   server: 104.21.3.219
   tls: false
@@ -626,7 +628,7 @@ proxies:
   uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
   ws-opts:
     path: '%2F57ba2ab1'
-- name: '🇺🇸[openproxylist.com] vless-US #3'
+- name: '🇺🇸[openproxylist.com] vless-US #4'
   network: grpc
   port: 80
   server: pqh30v6.ipforvetra.shop
@@ -634,21 +636,21 @@ proxies:
   tls: false
   type: vless
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: '🇺🇸[openproxylist.com] vless-US #4'
+- name: '🇺🇸[openproxylist.com] vless-US #5'
   port: 443
   server: 216.106.189.107
   tls: false
   type: vless
   uuid: 750d4705-1af0-4365-ab22-9b7e84a24395
-- name: '🇺🇸[openproxylist.com] vless-US #5'
+- name: '🇺🇸[openproxylist.com] vless-US #6'
   network: grpc
   port: 80
-  server: 45.82.251.250
+  server: pqh29v7.ipforvetra.shop
   servername: pqh29v7.ipforvetra.shop
   tls: false
   type: vless
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: '🇺🇸[openproxylist.com] vless-US #13'
+- name: '🇺🇸[openproxylist.com] vless-US #10'
   port: 443
   server: all.tellmethetrue.shop
   tls: false
@@ -656,7 +658,7 @@ proxies:
   uuid: e4824193-4f54-453b-d037-88368e85ef0e
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #7'
+  name: '🇺🇸[openproxylist.com] vless-US #8'
   network: tcp
   port: 23581
   reality-opts:
@@ -666,63 +668,28 @@ proxies:
   tls: false
   type: vless
   uuid: b5471668-94dc-4ea5-ae97-3bb9dabcd2a9
-- name: '🇺🇸[openproxylist.com] vless-US #8'
+- name: '🇺🇸[openproxylist.com] vless-US #9'
   port: 80
   server: 45.82.251.23
   tls: false
   type: vless
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: '🇺🇸[openproxylist.com] vless-US #10'
+- name: '🇺🇸[openproxylist.com] vless-US #11'
   network: grpc
   port: 8880
   server: 103.35.189.45
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇺🇸[openproxylist.com] vless-US #11'
-  network: grpc
+- name: '🇺🇸[openproxylist.com] vless-US #12'
   port: 80
   server: 45.82.251.249
   tls: false
   type: vless
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: '🇺🇸[openproxylist.com] vless-US #12'
+- name: '🇺🇸[openproxylist.com] vless-US #13'
   port: 80
   server: pqh30v7.ipforvetra.shop
   tls: false
   type: vless
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: '🇺🇸[openproxylist.com] vless-US #14'
-  port: 80
-  server: pqh29v8.ipforvetra.shop
-  tls: false
-  type: vless
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: US_speednode_0050
-  port: 443
-  reality-opts:
-    public-key: MNTWCLyV7EquFn-J0a6KRlQZ0dt6QY5mmu7Dq8uDkxw
-    short-id: '!!str 4c02bbbfa833b3b6'
-  server: autos.jykvpn.com
-  servername: cdnjs.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: US_speednode_0055
-  port: 443
-  reality-opts:
-    public-key: MNTWCLyV7EquFn-J0a6KRlQZ0dt6QY5mmu7Dq8uDkxw
-    short-id: '!!str c2a0b2d60a7fc300'
-  server: fis.jykvpn.com
-  servername: cdnjs.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1
