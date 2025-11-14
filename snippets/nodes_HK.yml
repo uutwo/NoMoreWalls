@@ -1,15 +1,31 @@
 proxies:
+- name: '🇭🇰[openproxylist.com] trojan-H... #2'
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 203.198.122.97
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: '香港+电讯盈科有限公司 #1'
+  password: BxceQaOe
+  port: 4094
+  server: 116.49.237.130
+  sni: t.me%252Fripaojiedian
+  type: trojan
 - name: 🇭🇰 香港 电讯盈科有限公司
   password: BxceQaOe
   port: 443
   server: 58.152.46.98
   skip-cert-verify: false
   type: trojan
-- name: '香港+电讯盈科有限公司 #1'
+- name: '🇭🇰[openproxylist.com] trojan-H... #1'
+  network: tcp
   password: BxceQaOe
-  port: 4569
-  server: 116.49.237.130
-  sni: t.me%25252Fripaojiedian
+  port: 443
+  server: 219.77.239.35
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
   type: trojan
 - alterId: 0
   cipher: auto
@@ -48,22 +64,6 @@ proxies:
   server: 58.152.110.9
   skip-cert-verify: false
   sni: www.nintendogames.net
-  type: trojan
-- name: '🇭🇰[openproxylist.com] trojan-H... #2'
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 203.198.122.97
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: '🇭🇰[openproxylist.com] trojan-H... #1'
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 219.77.239.35
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
   type: trojan
 - name: 🇭🇰 香港6|@stairnode
   password: 50a99183-2543-40bd-98a2-12bbc6ecf882
@@ -123,19 +123,22 @@ proxies:
   uuid: 69749298-6821-3358-b6d3-1d18d8642cba
 - alterId: 0
   cipher: auto
-  name: 香港7|@ripaojiedian
-  network: tcp
-  port: '25007'
-  server: onecat-jp.03ezhg0qsa.download
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 69749298-6821-3358-b6d3-1d18d8642cba
-- alterId: 0
-  cipher: auto
   name: 🇭🇰[openproxylist.com] vmess-HK
   network: ws
-  port: '24792'
+  port: '443'
+  server: n1744453320.lie5d.cyou
+  tls: true
+  type: vmess
+  uuid: 8889a08a-09f8-4c97-bed2-df31b62fcf23
+  ws-opts:
+    headers:
+      Host: n1744453320.lie5d.cyou
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰[openproxylist.com] vmess-HK #1'
+  network: ws
+  port: 24792
   server: 47.239.252.30
   servername: ''
   tls: false
@@ -147,7 +150,7 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #1'
+  name: '🇭🇰[openproxylist.com] vmess-HK #2'
   network: tcp
   port: '15160'
   server: 8.218.120.209
@@ -155,31 +158,11 @@ proxies:
   tls: false
   type: vmess
   uuid: 540a9fd9-9dc8-434f-c971-a10e9befd7fa
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #2'
-  network: ws
-  port: 46433
-  server: 8.218.152.97
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4648e017-a18f-48b6-a570-1bfe61fc3825
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #3'
-  network: ws
-  port: 8535
-  server: 47.238.247.69
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: aca68896-1d4e-41fc-b1ed-e9295c8a5f5e
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
+- name: HK_speednode_0019
+  password: BxceQaOe
+  port: 443
+  server: 203.198.122.97
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  type: trojan
+  udp: true
