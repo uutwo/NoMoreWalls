@@ -1,4 +1,13 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 日本 东京rackip.com
+  network: none
+  port: 20297
+  server: 137.220.150.40
+  tls: false
+  type: vmess
+  uuid: 692c1141-f196-4ac4-8af6-7a3b67304b90
 - cipher: aes-256-gcm
   name: 日本-001 |7.7MB/s|GPT⁺|D+|0%
   password: 8808e9f11454
@@ -12,24 +21,21 @@ proxies:
   server: 137.220.142.139
   type: ss
   udp: true
-- name: 日本2|@ripaojiedian
-  network: tcp
+- name: 🇯🇵 日本2|@stairnode
   password: 2274c52572e721086f8bd8f88984643c
   port: 1334
   server: 160.16.132.158
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 日本3|@ripaojiedian
-  network: tcp
+- name: 🇯🇵 日本3|@stairnode
   password: 2274c52572e721086f8bd8f88984643c
   port: 3169
   server: 160.16.196.59
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 新加坡|@ripaojiedian
-  network: tcp
+- name: 🇸🇬 新加坡|@stairnode
   password: 2274c52572e721086f8bd8f88984643c
   port: 2760
   server: 160.16.81.84
@@ -37,27 +43,50 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - name: 🇸🇬[openproxylist.com] trojan-S...
-  network: tcp
   password: 2274c52572e721086f8bd8f88984643c
   port: 5553
   server: 160.16.124.55
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 美国|@ripaojiedian
-  network: tcp
+- name: 🇺🇸 美国|@stairnode
   password: 2274c52572e721086f8bd8f88984643c
   port: 4211
   server: 160.16.107.37
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇯🇵 日本4|@ripaojiedian #2'
-  port: 47083
-  server: 114.98.183.61
+- name: 日本|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 1924
+  server: 160.16.227.93
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 日本2|@ripaojiedian
+  network: tcp
+  password: 2274c52572e721086f8bd8f88984643c
+  port: 1334
+  server: 160.16.57.238
   skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b3fa070f-5511-48be-934b-f632f6b8a7c7
+  sni: www.nintendogames.net
+  type: trojan
+- name: 日本3|@ripaojiedian
+  network: tcp
+  password: 2274c52572e721086f8bd8f88984643c
+  port: 3169
+  server: 202.181.103.235
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: '🇯🇵 日本4|@ripaojiedian #2'
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: e221b75:110505
+    mode: tls
+  port: 2377
+  server: 172.105.217.136
+  type: ss
