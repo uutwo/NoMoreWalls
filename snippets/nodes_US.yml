@@ -1,13 +1,17 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 美国 V2CROSS.COM
-  network: tcp
-  port: 45263
-  server: 216.227.168.157
-  tls: false
+  name: 🇺🇸 美国 V2CROSS.COM
+  network: ws
+  port: '443'
+  server: 172.82.67.156.sslip.io
+  tls: true
   type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  uuid: 55821780-6970-49df-8a23-800c2c9b7d3a
+  ws-opts:
+    headers:
+      Host: 172.82.67.156.sslip.io
+    path: /SGBvMNdpPtNtvgyaVXm
 - name: 美国-002 |2.3MB/s
   network: ws
   password: iwangjie
@@ -346,19 +350,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国 V2CROSS.COM
-  network: ws
-  port: '443'
-  server: 172.82.67.156.sslip.io
-  tls: true
-  type: vmess
-  uuid: 55821780-6970-49df-8a23-800c2c9b7d3a
-  ws-opts:
-    headers:
-      Host: 172.82.67.156.sslip.io
-    path: /SGBvMNdpPtNtvgyaVXm
 - name: '🇺🇸[openproxylist.com] trojan-U... #2'
   password: 2274c52572e721086f8bd8f88984643c
   port: 2890
@@ -383,7 +374,8 @@ proxies:
 - name: '🇺🇸[openproxylist.com] trojan-U... #3'
   password: 2274c52572e721086f8bd8f88984643c
   port: 4211
-  server: 160.16.57.238
+  server: 160.16.151.196
+  skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - alterId: 0
@@ -400,3 +392,21 @@ proxies:
     headers:
       Host: ''
     path: /
+- name: '🇺🇸[openproxylist.com] trojan-U... #4'
+  password: BxceQaOe
+  port: 2173
+  server: 18.163.122.76
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: '🇺🇸[openproxylist.com] trojan-U... #5'
+  network: ws
+  password: fa115af5-0647-4549-acd9-5166695ea2de
+  port: 2053
+  server: 185.114.72.31
+  sni: joss.gpj.web.id
+  type: trojan
+  ws-opts:
+    headers:
+      Host: joss.gpj.web.id
+    path: /Free-VPN-CF-Geo-Project/185.114.72.31=2053
