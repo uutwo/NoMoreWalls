@@ -66,19 +66,6 @@ proxies:
         Gecko) Chrome/48.0.2564.109 Safari/537.36
     path: /Telegram
   xudp: true
-- alterId: 0
-  cipher: auto
-  name: 🇫🇷 VMESS-未知>法国-ChatGPT-1a2d514...
-  network: ws
-  port: '443'
-  server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-  tls: true
-  type: vmess
-  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
-  ws-opts:
-    headers:
-      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-    path: /azumase.ren
 - alpn:
   - http/1.1
   name: 🇫🇷[openproxylist.com] trojan-F...
@@ -98,25 +85,20 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
 - name: 🇫🇷[openproxylist.com] vless-FR
+  port: 8880
+  server: 45.12.133.176
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- grpc-opts:
+    grpc-service-name: ''
+  name: '🇫🇷[openproxylist.com] vless-FR #1'
   network: grpc
   port: 8880
-  server: 94.232.247.117
+  server: 185.153.183.183
   tls: false
   type: vless
-  uuid: 15d114ee-c814-47c7-bd12-fab0c7a0128e
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
-  network: tcp
-  port: 16607
-  reality-opts:
-    public-key: MIDSDaDAnyD3LPtHE8oLcGJjQP2Qj1RVJR853N1T924
-    short-id: '!!str 78'
-  server: paris.fonixapp.org
-  servername: expedia.com
-  tls: false
-  type: vless
-  uuid: f7140d34-dcc0-440c-bb51-bbd8ed7d8b11
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: ws
   port: 443
