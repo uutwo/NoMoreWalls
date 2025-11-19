@@ -1,12 +1,4 @@
 proxies:
-- name: CH_speednode_0001
-  password: 019a8c1f-3d28-74e8-8a8e-40045d7ec77f
-  port: 443
-  server: 194.87.18.124
-  skip-cert-verify: true
-  sni: www.bilibili.com
-  type: trojan
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇷🇺[openproxylist.com] vless-RU
@@ -20,9 +12,15 @@ proxies:
   tls: false
   type: vless
   uuid: eef1da44-f494-4eac-baa6-5fcdff4ed8f1
+- name: '🇷🇺[openproxylist.com] vless-RU #1'
+  port: 443
+  server: 37.18.14.103
+  tls: true
+  type: vless
+  uuid: 4feab863-0b04-444d-87e5-4375adca92cf
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇷🇺[openproxylist.com] vless-RU #1'
+  name: '🇷🇺[openproxylist.com] vless-RU #2'
   network: tcp
   port: 31203
   reality-opts:
@@ -33,7 +31,7 @@ proxies:
   tls: false
   type: vless
   uuid: 87d1f4b2-83e7-4125-8d62-5d376871fd41
-- name: '🇷🇺[openproxylist.com] vless-RU #2'
+- name: '🇷🇺[openproxylist.com] vless-RU #3'
   port: 443
   server: 37.18.14.192
   tls: false
@@ -41,7 +39,21 @@ proxies:
   uuid: c33cbceb-4a2a-4a22-b02a-e0de3e4795be
   ws-opts:
     path: '%2F'
-- name: RU_speednode_0012
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: RU_speednode_0015
+  port: 51224
+  reality-opts:
+    public-key: DvKMFkm82Jkp6Jk_7pXYb0fMXq1MsLMNxDeQfcCSbEA
+    short-id: '!!str ab12cd34'
+  server: ru-msk.shvurgceo.online
+  servername: download.max.ru
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 14305246-dc93-4b3c-9f6c-d0b29fa7e4fa
+- name: RU_speednode_0016
   network: ws
   port: 1443
   server: 81.161.98.228
