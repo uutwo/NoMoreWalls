@@ -84,14 +84,19 @@ proxies:
   tls: false
   type: vless
   uuid: 8496c102-4094-4dd3-ad63-7bb7a35cbaee
-- name: '🇬🇧[openproxylist.com] vless-GB #5'
+- client-fingerprint: chrome
+  name: '🇬🇧[openproxylist.com] vless-GB #5'
+  network: ws
   port: 443
   server: 104.26.6.89
-  tls: false
+  servername: gb-021.shenzogmbh.com
+  tls: true
   type: vless
   uuid: 5ec3a039-ea63-4bf9-a848-a65c9bfa66f5
   ws-opts:
-    path: '%2Fapi%2Fv1'
+    headers:
+      Host: gb-021.shenzogmbh.com
+    path: /api/v1
 - alpn:
   - h3
   - h2
@@ -105,24 +110,30 @@ proxies:
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: '🇬🇧[openproxylist.com] vless-GB #7'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇬🇧[openproxylist.com] vless-GB #7'
+  network: grpc
+  port: 8880
+  server: 45.140.167.213
+  servername: '---@AZARBAYKAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1'
+  tls: false
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: '🇬🇧[openproxylist.com] vless-GB #8'
   network: grpc
   port: 8880
   server: 45.140.167.209
   tls: false
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: GB_speednode_0006
-  port: 443
-  reality-opts:
-    public-key: Mn0DIMKW6zu0_D3E1qKO7xMlIVZvB-rqO_-f7Le2vAs
-    short-id: '!!str 428ef87fd47a3a32'
-  server: nl.nodes.rocketnetwork.ru
-  servername: nl.nodes.rocketnetwork.ru
-  skip-cert-verify: false
-  tls: true
+- name: '🇬🇧[openproxylist.com] vless-GB #9'
+  network: grpc
+  port: 8880
+  server: 45.140.167.173
+  tls: false
   type: vless
-  udp: true
-  uuid: bccbecc9-c1d2-45d1-b3fa-771a19b9831c
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
