@@ -1,17 +1,37 @@
 proxies:
-- name: 🇷🇺[openproxylist.com] vless-RU
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇷🇺[openproxylist.com] vless-RU
+  network: tcp
   port: 443
+  reality-opts:
+    public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+    short-id: '!!str f85b0cdd7d20c84c'
+  server: 176.108.243.254
+  servername: www.vkvideo.ru
+  tls: false
+  type: vless
+  uuid: c7a2dbb0-f57f-4393-925b-7f93bc5fe418
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: RnIvbd50ZLR_blaue_KkJua5_z6pNgpO3RPiqAN3swg
+    short-id: '!!str a20d3ed244c76426'
   server: 84.201.138.55
+  servername: io.ozone.ru
   tls: false
   type: vless
   uuid: cf97c9a9-441e-43e1-9bd2-f66a198cd87b
-- name: '🇷🇺[openproxylist.com] vless-RU #1'
+- name: '🇷🇺[openproxylist.com] vless-RU #2'
   port: 443
   server: 37.18.14.103
   tls: true
   type: vless
   uuid: 4feab863-0b04-444d-87e5-4375adca92cf
-- name: '🇷🇺[openproxylist.com] vless-RU #2'
+- name: '🇷🇺[openproxylist.com] vless-RU #3'
   port: 443
   server: 37.18.14.192
   tls: false
@@ -19,21 +39,7 @@ proxies:
   uuid: c33cbceb-4a2a-4a22-b02a-e0de3e4795be
   ws-opts:
     path: '%2F'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: RU_speednode_0015
-  port: 51224
-  reality-opts:
-    public-key: DvKMFkm82Jkp6Jk_7pXYb0fMXq1MsLMNxDeQfcCSbEA
-    short-id: '!!str ab12cd34'
-  server: ru-msk.shvurgceo.online
-  servername: download.max.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 14305246-dc93-4b3c-9f6c-d0b29fa7e4fa
-- name: RU_speednode_0016
+- name: RU_speednode_0024
   network: ws
   port: 1443
   server: 81.161.98.228
@@ -47,3 +53,17 @@ proxies:
     headers:
       Host: cdn.filterai.ru
     path: /websocketpl
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: RU_speednode_0025
+  port: 51224
+  reality-opts:
+    public-key: DvKMFkm82Jkp6Jk_7pXYb0fMXq1MsLMNxDeQfcCSbEA
+    short-id: '!!str ab12cd34'
+  server: ru-msk.shvurgceo.online
+  servername: download.max.ru
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 14305246-dc93-4b3c-9f6c-d0b29fa7e4fa
