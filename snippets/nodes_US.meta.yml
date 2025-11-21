@@ -565,7 +565,7 @@ proxies:
 - name: 🇺🇸[openproxylist.com] vless-US
   network: ws
   port: 8080
-  server: 40.160.4.211
+  server: 92.118.232.161
   tls: false
   type: vless
   uuid: 9dc11620-987c-4344-9088-f46fdfae4054
@@ -574,28 +574,24 @@ proxies:
 - name: '🇺🇸[openproxylist.com] vless-US #1'
   network: ws
   port: 8080
+  server: 40.160.4.211
+  tls: false
+  type: vless
+  uuid: 9dc11620-987c-4344-9088-f46fdfae4054
+  ws-opts:
+    path: /?ed
+- name: '🇺🇸[openproxylist.com] vless-US #2'
+  network: ws
+  port: 8080
   server: 40.160.4.106
   tls: false
   type: vless
   uuid: 9dc11620-987c-4344-9088-f46fdfae4054
   ws-opts:
     path: /?ed
-- name: EE_speednode_0007
-  network: ws
-  password: 3208e968-b862-4e2e-ad90-2b49e7ce7afb
-  port: 443
-  server: 37.252.5.75
-  skip-cert-verify: false
-  sni: joss.gpj1.web.id
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: joss.gpj1.web.id
-    path: /Free-VPN-CF-Geo-Project/37.252.5.75=443
 - alpn:
   - ''
-  name: '🇺🇸[openproxylist.com] vless-US #2'
+  name: '🇺🇸[openproxylist.com] vless-US #3'
   network: ws
   port: 443
   server: speedtest.org
@@ -607,17 +603,19 @@ proxies:
     headers:
       Host: scwkh.olivia-moosh.com
     path: /harman
-- name: '🇺🇸[openproxylist.com] vless-US #3'
+- grpc-opts:
+    grpc-service-name: ''
+  name: '🇺🇸[openproxylist.com] vless-US #4'
   network: grpc
   port: 8880
   server: cone-snail.unity4world.ir
   tls: false
   type: vless
   uuid: cfe554a3-4cd5-4fe1-9951-e6b65fc52a74
-- name: '🇺🇸[openproxylist.com] vless-US #4'
+- name: '🇺🇸[openproxylist.com] vless-US #5'
   port: 34886
   server: 162.217.248.62
-  tls: true
+  tls: false
   type: vless
   uuid: 04886592-934b-4914-a044-e65135940520
 - client-fingerprint: chrome
@@ -650,7 +648,7 @@ proxies:
   tls: false
   type: vless
   uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
-- name: '🇺🇸[openproxylist.com] trojan-U... #1'
+- name: 🇺🇸[openproxylist.com] trojan-U...
   password: dd2f25b4c70689de8bc0f7fa9d6591cb
   port: 4054
   server: 153.121.76.9
@@ -674,13 +672,6 @@ proxies:
   tls: false
   type: vless
   uuid: b4f3041b-e939-4c1a-8f1d-70e8369b25eb
-- name: '🇺🇸[openproxylist.com] trojan-U... #2'
-  password: dd2f25b4c70689de8bc0f7fa9d6591cb
-  port: 2890
-  server: 160.16.138.24
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
 - client-fingerprint: chrome
   name: '🇺🇸[openproxylist.com] vless-US #15'
   network: ws
@@ -707,22 +698,23 @@ proxies:
     headers:
       Host: BAt.zuLAir.siTe.
     path: '%2F'
-- name: ES_speednode_0008
-  network: ws
-  password: 1e1a7efa-a4f1-4936-a470-a001e0c3c85b
-  port: 8443
-  server: 212.227.144.37
-  skip-cert-verify: false
-  sni: joss.gpj1.web.id
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: joss.gpj1.web.id
-    path: /Free-VPN-CF-Geo-Project/212.227.144.37=8443
 - alterId: 0
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
+  network: ws
+  port: '20521'
+  server: 66.253.7.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d24c499b-3b25-441e-9c6e-b12421a91041
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
   network: ws
   port: 11814
   server: 107.172.82.41
@@ -734,19 +726,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: PT_speednode_0023
-  network: ws
-  password: 6ead60c4-4321-45d5-81a9-ba4835f7c692
-  port: 81
-  server: 45.159.251.8
-  skip-cert-verify: false
-  sni: joss.gpj1.web.id
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: joss.gpj1.web.id
-    path: /Free-VPN-CF-Geo-Project/45.159.251.8=81
 - client-fingerprint: chrome
   name: '🇺🇸[openproxylist.com] vless-US #17'
   network: ws
@@ -760,43 +739,23 @@ proxies:
     headers:
       Host: ovhwuxian.pai50288.uk
     path: '%2F57ba2ab1'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #18'
-  network: tcp
+- name: '🇺🇸[openproxylist.com] vless-US #18'
   port: 23581
-  reality-opts:
-    public-key: EOYTqph-go2SazIPcSDl5pJGNyOnrR0mWaL8Tc_paEM
   server: 216.133.149.139
-  servername: www.cloudflare.com
   tls: false
   type: vless
   uuid: b5471668-94dc-4ea5-ae97-3bb9dabcd2a9
-- name: US_speednode_0029
+- name: US_speednode_0121
   network: ws
-  port: 80
+  port: 2082
   server: www.speedtest.net
-  servername: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.digitalcity5.xyz.
+  servername: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
   skip-cert-verify: false
   tls: false
   type: vless
   udp: true
-  uuid: e1f6bc5b-cbc2-49bb-8f26-1bf8bb85d18a
+  uuid: d52ecc10-1c89-4d95-d12a-61bc48c4024c
   ws-opts:
     headers:
-      Host: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.digitalcity5.xyz.
-    path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy
-- name: US_speednode_0030
-  network: ws
-  port: 80
-  server: 172.66.156.81
-  servername: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.digitalcity5.xyz.
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e1f6bc5b-cbc2-49bb-8f26-1bf8bb85d18a
-  ws-opts:
-    headers:
-      Host: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.digitalcity5.xyz.
-    path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy
+      Host: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
+    path: /@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn?ed=2082
