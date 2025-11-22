@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 🇺🇸[openproxylist.com] vmess-US
+  name: 美国4|@ripaojiedian
   network: tcp
   port: '180'
   server: 82.198.246.97
@@ -57,10 +57,11 @@ proxies:
   skip-cert-verify: false
   sni: joss.gpj1.web.id
   type: trojan
-- name: 🇬🇧[openproxylist.com] vless-GB
+- client-fingerprint: chrome
+  name: 🇬🇧[openproxylist.com] vless-GB
   network: ws
   port: 2096
-  server: ip.mirzabox.info
+  server: 104.17.148.22
   servername: GRouND-sloth.zulair.SIte.
   tls: true
   type: vless
@@ -68,7 +69,7 @@ proxies:
   ws-opts:
     headers:
       Host: GRouND-sloth.zulair.SIte.
-    path: /
+    path: '%2F'
 - client-fingerprint: chrome
   name: '🇬🇧[openproxylist.com] vless-GB #1'
   network: ws
@@ -79,3 +80,17 @@ proxies:
   uuid: ca72617f-337c-4b0e-84f0-d3c29f82d2b7
   ws-opts:
     path: '%2F'
+- client-fingerprint: safari
+  grpc-opts:
+    grpc-service-name: 7e41eb32ea906cebaf077110
+  name: '🇬🇧[openproxylist.com] vless-GB #2'
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: DTfizB6SKAjSe4gQVreWTIMpDT7HsDcqfR0_Y2xo7Gw
+    short-id: '!!str 7daa515f56d7db89'
+  server: 158.220.88.63
+  servername: www.microsoft.com
+  tls: false
+  type: vless
+  uuid: 7c9d302f-1438-4f37-a6e0-0591dc4a4614
