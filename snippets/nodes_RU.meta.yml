@@ -13,12 +13,22 @@ proxies:
   skip-cert-verify: false
   sni: joss.gpj1.web.id
   type: trojan
-- name: 🇷🇺[openproxylist.com] vless-RU
-  port: 27121
-  server: wolfy.ufavpn.ru
-  tls: false
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇷🇺[openproxylist.com] vless-RU
+  network: ws
+  port: 8443
+  server: zcreat.ethervpn.fun
+  servername: zcreat.ethervpn.fun
+  tls: true
   type: vless
-  uuid: cbf1ec03-2cff-4b1f-9eb5-5929c13fc20c
+  uuid: a47595a8-1add-401a-8189-e6799f8d8628
+  ws-opts:
+    headers:
+      Host: zcreat.ethervpn.fun
+    path: /websocketpl?ed=2047
 - name: '🇷🇺[openproxylist.com] vless-RU #1'
   port: 443
   server: 37.18.14.103
@@ -28,11 +38,9 @@ proxies:
 - name: '🇷🇺[openproxylist.com] vless-RU #2'
   port: 443
   server: 37.18.14.192
-  tls: false
+  tls: true
   type: vless
   uuid: c33cbceb-4a2a-4a22-b02a-e0de3e4795be
-  ws-opts:
-    path: '%2F'
 - name: RU_speednode_0042
   network: ws
   port: 2053
