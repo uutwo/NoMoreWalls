@@ -1,19 +1,4 @@
 proxies:
-- name: '🇭🇰[openproxylist.com] trojan-H... #1'
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 58.152.53.22
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: '_CN_中国 #8'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.25.241
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
 - alterId: 0
   cipher: auto
   http-opts:
@@ -108,6 +93,21 @@ proxies:
     headers:
       Host: hkt.gotochinatown.net
     path: /
+- name: '🇭🇰[openproxylist.com] trojan-H... #1'
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 58.152.53.22
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: '_CN_中国 #8'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.25.241
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - alterId: 2
   cipher: auto
   name: 香港|@ripaojiedian
@@ -124,7 +124,6 @@ proxies:
       Host: baidu.com
     path: /oooo
 - name: HK_speednode_0019
-  network: tcp
   password: dd2f25b4c70689de8bc0f7fa9d6591cb
   port: 443
   server: 58.152.110.92
@@ -154,7 +153,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 🇭🇰 HK²_3|2.0MB/s|YT|NF|X
+  name: 🇭🇰[openproxylist.com] vmess-HK
   network: ws
   port: '443'
   server: n1747969945.xlxzzx.com
@@ -192,19 +191,26 @@ proxies:
   port: 443
   server: 103.103.245.158
   type: ss
-- cipher: aes-256-gcm
-  name: '🇭🇰 香港6|@ripaojiedian #1'
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 188.116.22.96
-  type: ss
-- name: 🇭🇰[openproxylist.com] vless-HK
+- name: 香港3|@ripaojiedian
+  network: tcp
+  password: 2cf6d686799e6fa95316394064f26c0a
+  port: 443
+  server: 58.152.110.92
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- client-fingerprint: chrome
+  name: 🇭🇰[openproxylist.com] vless-HK
+  network: ws
   port: 443
   server: 104.26.1.221
-  tls: false
+  servername: dabaius2.sylu.net
+  tls: true
   type: vless
   uuid: 3f9c8463-8610-3ed8-86c8-a26713067825
   ws-opts:
+    headers:
+      Host: dabaius2.sylu.net
     path: '%2Fdb10240eb751d6ab'
 - name: '🇭🇰[openproxylist.com] trojan-H... #2'
   password: BxceQaOe
@@ -215,7 +221,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 🇭🇰[openproxylist.com] vmess-HK
+  name: '🇭🇰[openproxylist.com] vmess-HK #1'
   network: ws
   port: 443
   server: n1744453319.lie5d.cyou
@@ -229,28 +235,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #1'
-  network: ws
-  port: 3721
-  server: 8.217.176.108
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7836c516-70be-4cde-a4bd-7e225989241a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
   name: '🇭🇰[openproxylist.com] vmess-HK #2'
   network: ws
-  port: 4728
+  port: 3721
   server: 8.218.17.136
   servername: ''
   tls: false
   type: vmess
-  uuid: a0e050ca-6d37-452f-bf5c-3e4e475ef36b
+  uuid: 33755eb3-5c12-4ca7-b86e-6f1aa6e7ce27
   ws-opts:
     headers:
       Host: ''
@@ -269,3 +261,17 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰[openproxylist.com] vmess-HK #4'
+  network: ws
+  port: '3721'
+  server: 47.238.71.166
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0b3da6e0-2a41-49e4-8bee-cfa705d448fc
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
