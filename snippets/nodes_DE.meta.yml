@@ -299,10 +299,11 @@ proxies:
   network: ws
   port: 80
   server: 185.97.119.25
-  skip-cert-verify: false
   tls: false
   type: vless
   uuid: 34155f4a-b42f-4961-9268-df5069fca1ff
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
   name: 🇩🇪[openproxylist.com] vmess-DE
@@ -358,16 +359,9 @@ proxies:
   tls: false
   type: vless
   uuid: 6967a7f2-e8a7-497e-f72e-c989e9f896d7
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #10'
-  network: tcp
+- name: '🇩🇪[openproxylist.com] vless-DE #10'
   port: 14357
-  reality-opts:
-    public-key: DvKMFkm82Jkp6Jk_7pXYb0fMXq1MsLMNxDeQfcCSbEA
-    short-id: '!!str ab12cd34'
   server: de.shvurgceo.online
-  servername: vk.com
   tls: false
   type: vless
   uuid: 006f752c-42fe-41dd-a224-e2f7c48b72a9
@@ -433,13 +427,13 @@ proxies:
   type: vless
   uuid: cfe554a3-4cd5-4fe1-9951-e6b65fc52a74
 - name: '🇩🇪[openproxylist.com] vless-DE #17'
-  network: grpc
   port: 443
   server: 91.98.155.220
   tls: false
   type: vless
   uuid: 6967a7f2-e8a7-497e-f72e-c989e9f896d7
 - name: '🇩🇪[openproxylist.com] vless-DE #18'
+  network: tcp
   port: 443
   server: 78.47.80.152
   tls: false
