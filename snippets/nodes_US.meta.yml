@@ -1,15 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 美国 华盛顿Cogent通信公司
-  network: none
-  port: 36104
-  server: 38.180.16.86
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
   name: 美国 CloudFlare节点
   network: ws
   port: 443
@@ -20,7 +11,7 @@ proxies:
   ws-opts:
     headers:
       Host: 00yin6.keeoomboom.de
-    path: /
+    path: ''
 - name: All-@V2rayAlpha--46
   password: 6286105c-fb6d-11ef-be96-f23c93136cb3
   port: 1743
@@ -708,7 +699,21 @@ proxies:
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - client-fingerprint: chrome
-  name: '🇺🇸[openproxylist.com] vless-US #17'
+  flow: xtls-rprx-vision
+  name: US_speednode_0039
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+  server: usa29.unlockmatrix.org
+  servername: www.bing.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9b0c1d6e-7f6e-4b06-96ba-b8a397a69166
+- client-fingerprint: chrome
+  name: '🇺🇸[openproxylist.com] vless-US #1'
   network: ws
   port: 443
   server: 160.16.203.210
@@ -720,26 +725,13 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: '%2F%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F%3Fed%3D2560'
-- client-fingerprint: chrome
-  name: '🇺🇸[openproxylist.com] vless-US #1'
-  network: ws
-  port: 19999
-  server: 202.84.53.85
-  servername: gaosir.unfeeling.sbs
-  tls: true
-  type: vless
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  ws-opts:
-    headers:
-      Host: gaosir.unfeeling.sbs
-    path: x%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F%3Fed%3D2560
 - name: '🇺🇸[openproxylist.com] vless-US #2'
   port: 443
   server: 138.197.111.186
   tls: false
   type: vless
   uuid: cc46b32a-8d3b-4b2f-a94a-9c06ce1d7a26
-- name: '🇺🇸[openproxylist.com] trojan-U... #3'
+- name: '🇺🇸[openproxylist.com] trojan-U... #2'
   network: ws
   password: 94a81dc7-e8e6-46e5-838d-84ca142b88b2
   port: 443
@@ -750,17 +742,6 @@ proxies:
     headers:
       Host: joss.gpj1.web.id
     path: /Free-VPN-CF-Geo-Project/94.131.123.74=443
-- name: '🇺🇸[openproxylist.com] trojan-U... #1'
-  network: ws
-  password: abb96ae5-8337-4719-b300-fc3b2efbd14d
-  port: 21575
-  server: 47.89.150.45
-  sni: joss.gpj1.web.id
-  type: trojan
-  ws-opts:
-    headers:
-      Host: joss.gpj1.web.id
-    path: /Free-VPN-CF-Geo-Project/47.89.150.45=21575
 - name: '🇺🇸[openproxylist.com] vless-US #4'
   network: ws
   port: 8080
@@ -788,6 +769,8 @@ proxies:
   type: vless
   uuid: 9dc11620-987c-4344-9088-f46fdfae4054
   ws-opts:
+    headers:
+      Host: Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET
     path: /?ed
 - name: '🇺🇸[openproxylist.com] vless-US #7'
   network: ws
@@ -797,6 +780,8 @@ proxies:
   type: vless
   uuid: 9dc11620-987c-4344-9088-f46fdfae4054
   ws-opts:
+    headers:
+      Host: Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET
     path: /?ed
 - name: '🇺🇸[openproxylist.com] vless-US #8'
   network: tcp
@@ -815,16 +800,25 @@ proxies:
   uuid: 9dc11620-987c-4344-9088-f46fdfae4054
   ws-opts:
     path: /?ed
-- name: '🇺🇸[openproxylist.com] vless-US #10'
+- flow: ''
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇺🇸[openproxylist.com] vless-US #10'
   network: grpc
   port: 8880
   server: cone-snail.unity4world.ir
   tls: false
   type: vless
   uuid: cfe554a3-4cd5-4fe1-9951-e6b65fc52a74
-- name: '🇺🇸[openproxylist.com] vless-US #11'
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #11'
+  network: tcp
   port: 8080
+  reality-opts:
+    public-key: synxygq0ozctiW0jNF1mmvAI9PainW0rBfqe11LkeAM
   server: 104.234.4.120
+  servername: swdist.apple.com
   tls: false
   type: vless
   uuid: 1e503e46-5ab8-4f79-8cd1-73bac4bcd102
@@ -855,7 +849,7 @@ proxies:
   type: vless
   uuid: 9dc11620-987c-4344-9088-f46fdfae4054
   ws-opts:
-    path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
+    path: /?ed
 - name: '🇺🇸[openproxylist.com] vless-US #15'
   network: ws
   port: 8080
@@ -864,10 +858,8 @@ proxies:
   type: vless
   uuid: 9dc11620-987c-4344-9088-f46fdfae4054
   ws-opts:
-    headers:
-      Host: --Arshiavpn12--Arshiavpn12--Arshiavpn12--Arshiavpn12--Arshiavpn12--Arshiavpn12--Arshiavpn12--Arshiavpn12--Arshiavpn12--Arshiavpn12--Arshiavpn12--Arshiavpn12--Arshiavpn12--Arshiavpn12--Arshiavpn12--Arshiavpn12--Arshiavpn12--Arshiavpn12--Arshiavpn12--Arshiavpn12
     path: /?ed
-- name: '🇺🇸[openproxylist.com] trojan-U... #4'
+- name: '🇺🇸[openproxylist.com] trojan-U... #3'
   network: ws
   password: d69e725c-7c7e-4c75-9786-4859b4e0bbc6
   port: 443
@@ -899,6 +891,19 @@ proxies:
     headers:
       Host: joss.gpj1.web.id
     path: /Free-VPN-CF-Geo-Project/37.252.5.75=443
+- client-fingerprint: chrome
+  name: '🇺🇸[openproxylist.com] vless-US #17'
+  network: ws
+  port: 19999
+  server: 202.84.53.85
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: x%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F%3Fed%3D2560
 - name: NL_speednode_0025
   network: ws
   password: e683d757-b855-44c3-b0b6-22586444914a
@@ -951,19 +956,6 @@ proxies:
   type: vless
   udp: true
   uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: US_speednode_0039
-  port: 443
-  reality-opts:
-    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
-  server: usa29.unlockmatrix.org
-  servername: www.bing.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9b0c1d6e-7f6e-4b06-96ba-b8a397a69166
 - client-fingerprint: chrome
   name: US_speednode_0040
   port: 443
