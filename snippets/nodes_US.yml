@@ -1,13 +1,23 @@
 proxies:
+- name: 美国+华盛顿Cogent通信公司
+  password: installshield
+  port: 8443
+  server: 38.180.249.177
+  sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 美国 阿里云
-  network: none
-  port: 13502
-  server: 47.238.71.166
-  tls: false
+  name: 美国 CloudFlare节点
+  network: ws
+  port: 8443
+  server: t1.620720.xyz
+  tls: true
   type: vmess
-  uuid: 7ecfb350-e87b-4c3b-b90a-de4884ad2838
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  ws-opts:
+    headers:
+      Host: t1.620720.xyz
+    path: /
 - name: 美国-002 |2.3MB/s
   network: ws
   password: iwangjie
@@ -459,7 +469,7 @@ proxies:
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: 🇺🇸[openproxylist.com] trojan-U...
+- name: '🇺🇸[openproxylist.com] trojan-U... #1'
   network: ws
   password: abb96ae5-8337-4719-b300-fc3b2efbd14d
   port: 21575
@@ -483,7 +493,7 @@ proxies:
     headers:
       Host: n1749032902.xlxzzx.com
     path: /
-- name: '🇺🇸[openproxylist.com] trojan-U... #5'
+- name: '🇺🇸[openproxylist.com] trojan-U... #4'
   network: ws
   password: 94a81dc7-e8e6-46e5-838d-84ca142b88b2
   port: 443
@@ -504,6 +514,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: '🇺🇸[openproxylist.com] trojan-U... #5'
+  network: ws
+  password: d69e725c-7c7e-4c75-9786-4859b4e0bbc6
+  port: 443
+  server: 109.169.76.23
+  sni: joss.gpj1.web.id
+  type: trojan
+  ws-opts:
+    headers:
+      Host: joss.gpj1.web.id
+    path: /Free-VPN-CF-Geo-Project/109.169.76.23=443
 - name: EE_speednode_0010
   network: ws
   password: 3208e968-b862-4e2e-ad90-2b49e7ce7afb
@@ -517,6 +538,19 @@ proxies:
     headers:
       Host: joss.gpj1.web.id
     path: /Free-VPN-CF-Geo-Project/37.252.5.75=443
+- name: NL_speednode_0025
+  network: ws
+  password: e683d757-b855-44c3-b0b6-22586444914a
+  port: 443
+  server: 86.107.197.239
+  skip-cert-verify: false
+  sni: joss.gpj1.web.id
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: joss.gpj1.web.id
+    path: /Free-VPN-CF-Geo-Project/86.107.197.239=443
 - alterId: 0
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #3'
