@@ -1,17 +1,4 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 美国 CloudFlare节点
-  network: ws
-  port: 443
-  server: 00yin6.keeoomboom.de
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 00yin6.keeoomboom.de
-    path: ''
 - name: 美国-002 |2.3MB/s
   network: ws
   password: iwangjie
@@ -24,27 +11,64 @@ proxies:
     headers:
       Host: nodes.830901.xyz
     path: /?ed=2560
-- name: 🇺🇸 _US_美国
-  password: 94a81dc7-e8e6-46e5-838d-84ca142b88b2
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US-146.19.49.251-015
+  password: ODfxioK0VkKxTdpVQJ4rv8HglAu0vzv6
   port: 443
-  server: 94.131.123.74
+  server: 146.19.49.251
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US-23.95.75.146-018
+  password: NDRySIABARbErNIVsCNVkyYAHiBzhveT
+  port: 443
+  server: 23.95.75.146
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US-172.233.128.126-023
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 172.233.128.126
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US-104.167.197.25-045
+  password: 360e21d21977dc11
+  port: 57456
+  server: 104.167.197.25
+  type: ss
+- name: '🇺🇸 _US_美国 #5'
+  password: abb96ae5-8337-4719-b300-fc3b2efbd14d
+  port: 21575
+  server: 47.89.150.45
   skip-cert-verify: false
   sni: joss.gpj1.web.id
   type: trojan
-- name: '🇺🇸 _US_美国 #1'
-  password: c2de1269-17cb-41f6-ab97-f8c11a6f0f4f
-  port: 8443
-  server: 158.178.206.197
-  skip-cert-verify: false
-  sni: joss.gpj1.web.id
-  type: trojan
-- name: '🇺🇸 _US_美国 #2'
-  password: telegram-id-directvpn
-  port: 22223
-  server: 3.76.168.69
+  ws-path: h=%2FFree-VPN-CF-Geo-Project%2F47.89.150.45%3D21575
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸US-108.181.10.17-102
+  network: ws
+  port: 80
+  server: 108.181.10.17
   skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
+  tls: false
+  type: vmess
+  uuid: 474e8680-701f-11ee-b436-205c6d5f5d78
+  ws-headers:
+    Host: 108.181.10.17
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸US-206.168.190.219-116
+  network: ws
+  port: 2082
+  server: 206.168.190.219
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e31ca750-71f7-11ee-b920-1239d0255272
+  ws-headers:
+    Host: 206.168.190.219
+  ws-path: /vmws
 - alterId: 0
   cipher: auto
   name: 🇺🇸 VMESS-未知>美国-NF解锁德国地区非自制剧-Ch...
@@ -99,164 +123,7 @@ proxies:
     path: /horsen
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 美国 科罗拉多州NTT(美国)通信公司
-  network: none
-  port: '44805'
-  server: 216.167.107.61
-  tls: false
-  type: vmess
-  uuid: f7d62526-9e06-455e-82bd-241d368002e8
-- name: 美国|@ripaojiedian
-  network: tcp
-  password: 2cf6d686799e6fa95316394064f26c0a
-  port: 702
-  server: 160.16.131.243
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国2|@ripaojiedian
-  network: tcp
-  password: 2cf6d686799e6fa95316394064f26c0a
-  port: 2890
-  server: 160.16.63.16
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 4569
-  server: 13.114.168.160
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #36'
-  password: 6e6191a3-9a93-4617-859a-8d0ea0fce937
-  port: 443
-  server: joss.gpj1.web.id
-  skip-cert-verify: false
-  sni: joss.gpj1.web.id
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #15'
-  password: abb96ae5-8337-4719-b300-fc3b2efbd14d
-  port: 21575
-  server: 47.89.150.45
-  skip-cert-verify: false
-  sni: joss.gpj1.web.id
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #3'
-  password: 0311306e-56d4-4aa1-bde5-8cede7fcd3e4
-  port: 443
-  server: 138.124.30.8
-  skip-cert-verify: false
-  sni: joss.gpj1.web.id
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #5'
-  password: e04af4a8-ce76-4026-8480-82d0e35dd239
-  port: 8443
-  server: 94.177.199.119
-  skip-cert-verify: false
-  sni: joss.gpj1.web.id
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #12'
-  password: e6f0e8b0-3dc5-4d53-a23a-86c02d5ba098
-  port: 443
-  server: 51.15.210.1
-  skip-cert-verify: false
-  sni: joss.gpj1.web.id
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #8'
-  password: 8001fbf7-4b59-4415-a4bd-8bfded02c9c6
-  port: 443
-  server: 69.28.82.253
-  skip-cert-verify: false
-  sni: joss.gpj1.web.id
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #16'
-  password: Q9gofGxinwLv0TfDfdKmdttdPGxrhKQS
-  port: 5223
-  server: kr3.t.sgateway.link
-  skip-cert-verify: false
-  sni: pod-kr-z1.psusercontent.com
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #32'
-  password: d69e725c-7c7e-4c75-9786-4859b4e0bbc6
-  port: 443
-  server: 109.169.76.23
-  skip-cert-verify: false
-  sni: joss.gpj1.web.id
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #45'
-  network: ws
-  port: '443'
-  server: 154.21.201.83
-  tls: true
-  type: vmess
-  uuid: 4bf075f5-4d5e-4d39-f5ab-b32a86250f0e
-  ws-opts:
-    headers:
-      Host: hk.nbee.pp.ua
-    path: /aa
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #25'
-  password: 0a477acf-1f95-47cb-b4a5-a627b4c57de3
-  port: 443
-  server: 34.22.190.30
-  skip-cert-verify: false
-  sni: joss.gpj1.web.id
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #28'
-  password: fea8b7a7-cc83-4a78-a3fc-bbce9cc89ddb
-  port: 443
-  server: 34.22.190.30
-  skip-cert-verify: false
-  sni: joss.gpj1.web.id
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #34'
-  password: a69221dc-069f-4526-b137-de487c746ec9
-  port: 2053
-  server: 65.109.211.85
-  skip-cert-verify: false
-  sni: joss.gpj1.web.id
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #41'
-  password: 3208e968-b862-4e2e-ad90-2b49e7ce7afb
-  port: 443
-  server: 37.252.5.75
-  skip-cert-verify: false
-  sni: joss.gpj1.web.id
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇮🇳[openproxylist.com] vmess-IN
-  network: ws
-  port: '8443'
-  server: ebc.zoom.us
-  tls: true
-  type: vmess
-  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
-  ws-opts:
-    headers:
-      Host: node4.rtxconfigz.com
-    path: /@Malinda6104
-- name: '🇺🇸 _US_美国 #6'
-  password: 12345678-1234-1234-1234-123456789123
-  port: 2096
-  server: wangcai.cf.877774.xyz
-  skip-cert-verify: false
-  sni: joss.gpj1.web.id
-  type: trojan
-- name: '🇺🇸 _US_美国 #7'
-  password: '!!str 0'
-  port: 443
-  server: 162.159.42.58
-  skip-cert-verify: true
-  sni: c03237cb.ba73fe85.netlib.re
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US²_5|4.5MB/s|57%|GPT⁺|GM|Y...
+  name: '🇺🇸 美国 CloudFlare节点 #1'
   network: ws
   port: '443'
   server: okl5i3.zeeoomboom.de
@@ -477,6 +344,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 🇺🇸 美国 CloudFlare节点
+  network: ws
+  port: '443'
+  server: 00yin6.keeoomboom.de
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 00yin6.keeoomboom.de
+    path: /
+- alterId: 0
+  cipher: auto
   name: '🇺🇸 美国4|@ripaojiedian #1'
   port: 180
   server: 82.198.246.97
@@ -484,20 +364,36 @@ proxies:
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: '🇺🇸[openproxylist.com] trojan-U... #2'
-  network: ws
-  password: 94a81dc7-e8e6-46e5-838d-84ca142b88b2
-  port: 443
-  server: 94.131.123.74
-  sni: joss.gpj1.web.id
-  type: trojan
-  ws-opts:
-    headers:
-      Host: joss.gpj1.web.id
-    path: /Free-VPN-CF-Geo-Project/94.131.123.74=443
-- alterId: 64
+- alterId: 0
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
+  network: ws
+  port: '443'
+  server: www.speedtest.net
+  servername: node-us-1.v2sv.top
+  tls: true
+  type: vmess
+  uuid: 1e0c95f0-8c76-4d72-951d-4852869552fa
+  ws-opts:
+    headers:
+      Host: node-us-1.v2sv.top
+    path: /ws
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
+  network: ws
+  port: '26995'
+  server: 62.192.173.86
+  tls: false
+  type: vmess
+  uuid: 7582b522-9028-4365-9ade-9798745a5d38
+  ws-opts:
+    headers:
+      Host: ''
+    path: /0fagapx
+- alterId: 64
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #2'
   network: tcp
   port: '30002'
   server: 38.12.83.217
@@ -505,56 +401,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '🇺🇸[openproxylist.com] trojan-U... #3'
-  network: ws
-  password: d69e725c-7c7e-4c75-9786-4859b4e0bbc6
-  port: 443
-  server: 109.169.76.23
-  sni: joss.gpj1.web.id
-  type: trojan
-  ws-opts:
-    headers:
-      Host: joss.gpj1.web.id
-    path: /Free-VPN-CF-Geo-Project/109.169.76.23=443
-- name: EE_speednode_0010
-  network: ws
-  password: 3208e968-b862-4e2e-ad90-2b49e7ce7afb
-  port: 443
-  server: 37.252.5.75
-  skip-cert-verify: false
-  sni: joss.gpj1.web.id
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: joss.gpj1.web.id
-    path: /Free-VPN-CF-Geo-Project/37.252.5.75=443
-- name: NL_speednode_0025
-  network: ws
-  password: e683d757-b855-44c3-b0b6-22586444914a
-  port: 443
-  server: 86.107.197.239
-  skip-cert-verify: false
-  sni: joss.gpj1.web.id
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: joss.gpj1.web.id
-    path: /Free-VPN-CF-Geo-Project/86.107.197.239=443
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #2'
-  network: ws
-  port: '443'
-  server: cf.fovi.tk
-  tls: true
+  name: '🇺🇸[openproxylist.com] vmess-US #4'
+  network: tcp
+  port: '46100'
+  server: 156.238.226.207
+  servername: ''
+  tls: false
   type: vmess
-  uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
-  ws-opts:
-    headers:
-      Host: foxpol.fovi.tk
-    path: /eisasqa
+  uuid: 71dbcca9-1116-4bb0-c641-12f50b9ce41e
 - name: US_speednode_0043
   password: telegram-id-privatevpns
   port: 22222
