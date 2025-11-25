@@ -27,24 +27,31 @@ proxies:
   sni: m.vk.com
   type: trojan
   udp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: RU_speednode_0035
-  network: ws
-  port: 8443
-  server: zcreat.ethervpn.fun
-  servername: zcreat.ethervpn.fun
-  skip-cert-verify: false
-  tls: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇷🇺[openproxylist.com] vless-RU
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: g0EvKBte8zYrEc8oF0VNhxvIqqUvNXCp54UWYekc60k
+    short-id: '!!str e4'
+  server: 212.233.75.107
+  servername: bit-site.ru
+  tls: false
   type: vless
-  udp: true
-  uuid: a47595a8-1add-401a-8189-e6799f8d8628
-  ws-opts:
-    headers:
-      Host: zcreat.ethervpn.fun
-    path: /websocketpl?ed=2047
+  uuid: bca5cfe1-3d2a-45dc-b66a-96298e0051f5
+- client-fingerprint: chrome
+  name: '🇷🇺[openproxylist.com] vless-RU #1'
+  network: tcp
+  port: 27121
+  reality-opts:
+    public-key: QNLEBa5tV9JCrubA4hlAWhho06ddr2dtsT8LKZsGTgA
+    short-id: '!!str fdc8125ea6f61323'
+  server: wolfy.ufavpn.ru
+  servername: www.ok.ru
+  tls: false
+  type: vless
+  uuid: cbf1ec03-2cff-4b1f-9eb5-5929c13fc20c
 - name: RU_speednode_0031
   network: ws
   port: 2053
@@ -101,3 +108,21 @@ proxies:
     headers:
       Host: kuangbao.xiejiang.dpdns.org
     path: /?ed=2560
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: RU_speednode_0035
+  network: ws
+  port: 8443
+  server: zcreat.ethervpn.fun
+  servername: zcreat.ethervpn.fun
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: a47595a8-1add-401a-8189-e6799f8d8628
+  ws-opts:
+    headers:
+      Host: zcreat.ethervpn.fun
+    path: /websocketpl?ed=2047
