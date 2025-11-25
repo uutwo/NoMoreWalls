@@ -1,4 +1,26 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 俄罗斯 V2CROSS.COM
+  network: none
+  port: 28831
+  server: 62.192.173.86
+  tls: false
+  type: vmess
+  uuid: ee86541f-0fa5-4dc7-d573-671d80764cb3
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯 V2CROSS.COM
+  network: ws
+  port: '26995'
+  server: 62.192.173.86
+  tls: false
+  type: vmess
+  uuid: 7582b522-9028-4365-9ade-9798745a5d38
+  ws-opts:
+    headers:
+      Host: ''
+    path: /0fagapx
 - name: 🇷🇺 _RU_俄罗斯
   password: d78d48df-b788-4a95-9e9f-77c9b2f69822
   port: 8443
@@ -14,13 +36,6 @@ proxies:
   sni: m.vk.com
   type: trojan
   udp: true
-- name: '🇩🇪 DE德国(mibei77.com 米贝节点分享) #1'
-  password: 35f8e682-54bd-42c7-b537-94a8e4c84bcd
-  port: 443
-  server: 89.110.120.197
-  skip-cert-verify: false
-  sni: joss.gpj1.web.id
-  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇷🇺[openproxylist.com] vless-RU
@@ -34,18 +49,24 @@ proxies:
   tls: false
   type: vless
   uuid: bca5cfe1-3d2a-45dc-b66a-96298e0051f5
-- client-fingerprint: chrome
-  name: '🇷🇺[openproxylist.com] vless-RU #1'
-  network: tcp
-  port: 27121
-  reality-opts:
-    public-key: QNLEBa5tV9JCrubA4hlAWhho06ddr2dtsT8LKZsGTgA
-    short-id: '!!str fdc8125ea6f61323'
-  server: wolfy.ufavpn.ru
-  servername: www.ok.ru
-  tls: false
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: RU_speednode_0035
+  network: ws
+  port: 8443
+  server: zcreat.ethervpn.fun
+  servername: zcreat.ethervpn.fun
+  skip-cert-verify: false
+  tls: true
   type: vless
-  uuid: cbf1ec03-2cff-4b1f-9eb5-5929c13fc20c
+  udp: true
+  uuid: a47595a8-1add-401a-8189-e6799f8d8628
+  ws-opts:
+    headers:
+      Host: zcreat.ethervpn.fun
+    path: /websocketpl?ed=2047
 - name: RU_speednode_0031
   network: ws
   port: 2053
@@ -102,21 +123,3 @@ proxies:
     headers:
       Host: kuangbao.xiejiang.dpdns.org
     path: /?ed=2560
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: RU_speednode_0035
-  network: ws
-  port: 8443
-  server: zcreat.ethervpn.fun
-  servername: zcreat.ethervpn.fun
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: a47595a8-1add-401a-8189-e6799f8d8628
-  ws-opts:
-    headers:
-      Host: zcreat.ethervpn.fun
-    path: /websocketpl?ed=2047
