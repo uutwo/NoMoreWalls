@@ -272,27 +272,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 🇩🇪 DE德国(mibei77.com 米贝节点分享)
-  password: 0e0c9c2a-6166-4337-bdfc-675602365807
-  port: 2053
-  server: 141.94.204.212
-  skip-cert-verify: false
-  sni: joss.gpj1.web.id
-  type: trojan
-- name: '🇩🇪 DE德国(mibei77.com 米贝节点分享) #1'
-  password: 35f8e682-54bd-42c7-b537-94a8e4c84bcd
-  port: 443
-  server: 89.110.120.197
-  skip-cert-verify: false
-  sni: joss.gpj1.web.id
-  type: trojan
-- name: '🇩🇪 DE德国(mibei77.com 米贝节点分享) #2'
-  password: ee339912-0c35-4fac-8d85-180b65bcd49c
-  port: 443
-  server: 81.22.132.183
-  skip-cert-verify: false
-  sni: joss.gpj1.web.id
-  type: trojan
 - alterId: 2
   cipher: auto
   name: 🇩🇪 德国 24
@@ -358,13 +337,21 @@ proxies:
   tls: false
   type: vless
   uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-- name: '🇩🇪[openproxylist.com] vless-DE #7'
+- alpn:
+  - ''
+  name: '🇩🇪[openproxylist.com] vless-DE #7'
+  network: ws
   port: 443
-  server: west.ns.cloudflare.com
-  tls: false
+  server: speedtest.org
+  servername: ioygd.oliver-manhatan.rest
+  tls: true
   type: vless
   uuid: c7158ca6-7c6c-4701-bf7d-df0f98a9ca33
-- name: '🇺🇸[openproxylist.com] vless-US #9'
+  ws-opts:
+    headers:
+      Host: ioygd.oliver-manhatan.rest
+    path: /harman
+- name: '🇺🇸[openproxylist.com] vless-US #11'
   port: 443
   server: speedtest.org
   tls: true
@@ -405,7 +392,7 @@ proxies:
   tls: false
   type: vless
   uuid: cfe554a3-4cd5-4fe1-9951-e6b65fc52a74
-- name: '🇩🇪[openproxylist.com] vless-DE #20'
+- name: '🇩🇪[openproxylist.com] vless-DE #19'
   port: 443
   server: www.speedtest.net
   tls: false
@@ -414,12 +401,6 @@ proxies:
   ws-opts:
     path: '%2F'
 - name: '🇩🇪[openproxylist.com] vless-DE #14'
-  port: 14357
-  server: de.shvurgceo.online
-  tls: false
-  type: vless
-  uuid: 006f752c-42fe-41dd-a224-e2f7c48b72a9
-- name: '🇩🇪[openproxylist.com] vless-DE #15'
   network: grpc
   port: 2087
   server: ziro1.zarashop0.ir
@@ -430,7 +411,7 @@ proxies:
   cipher: auto
   name: '🇩🇪[openproxylist.com] vmess-DE #1'
   network: ws
-  port: 3721
+  port: '3721'
   server: 5.231.56.98
   servername: ''
   tls: false
@@ -439,20 +420,21 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-    path: /
-- name: '🇩🇪[openproxylist.com] vless-DE #17'
+    path: ''
+- name: '🇩🇪[openproxylist.com] vless-DE #16'
+  network: grpc
   port: 8880
   server: 91.107.139.110
   tls: false
   type: vless
   uuid: cfe554a3-4cd5-4fe1-9951-e6b65fc52a74
-- name: '🇩🇪[openproxylist.com] vless-DE #18'
+- name: '🇩🇪[openproxylist.com] vless-DE #17'
   port: 443
   server: 78.47.80.152
   tls: false
   type: vless
   uuid: 88888888-8888-8888-8888-888888888888
-- name: '🇩🇪[openproxylist.com] vless-DE #19'
+- name: '🇩🇪[openproxylist.com] vless-DE #18'
   network: ws
   port: 443
   server: www.speedtest.net
@@ -464,14 +446,14 @@ proxies:
     headers:
       Host: holo.mrconfigur.site
     path: /
-- name: '🇩🇪[openproxylist.com] vless-DE #21'
+- name: '🇩🇪[openproxylist.com] vless-DE #20'
   network: grpc
   port: 443
   server: 91.98.33.242
   tls: false
   type: vless
   uuid: 95b1344a-2b59-419f-ab7d-2ff7e5c6aa34
-- name: '🇩🇪[openproxylist.com] vless-DE #22'
+- name: '🇩🇪[openproxylist.com] vless-DE #21'
   port: 8443
   server: 185.140.14.166
   tls: false
