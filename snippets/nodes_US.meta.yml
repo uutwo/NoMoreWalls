@@ -1,13 +1,27 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '美国 V2CROSS.COM #1'
+  name: 美国 V2CROSS.COM
   network: none
   port: 40433
   server: 208.76.223.218
   tls: false
   type: vmess
   uuid: d8fd8955-78db-49ba-d86f-3e4729f6ac4d
+- alterId: 0
+  cipher: auto
+  name: 美国 CloudFlare节点
+  network: ws
+  port: 443
+  server: cf.fovi.tk
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
+  ws-opts:
+    headers:
+      Host: foxlux.fovi.tk
+    path: /eisasqa
 - name: All-@V2rayAlpha--46
   password: 6286105c-fb6d-11ef-be96-f23c93136cb3
   port: 1743
@@ -346,10 +360,11 @@ proxies:
     path: /horsen
 - alterId: 0
   cipher: auto
-  name: '🇺🇸 美国 CloudFlare节点 #1'
+  name: 🇺🇸[openproxylist.com] vmess-US
   network: ws
-  port: '443'
+  port: 443
   server: okl5i3.zeeoomboom.de
+  servername: okl5i3.zeeoomboom.de
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -602,27 +617,6 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 美国4|@ripaojiedian #1'
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: '🇺🇸[openproxylist.com] vless-US #2'
-  network: ws
-  port: 443
-  server: 167.179.27.92
-  servername: gaosir.unfeeling.sbs
-  tls: true
-  type: vless
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  ws-opts:
-    headers:
-      Host: gaosir.unfeeling.sbs
-    path: telegram%F0%9F%87%A8%F0%9F%87%B3%40wangcai2%2F%3Fed%3D2560
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: US_speednode_0039
@@ -637,35 +631,20 @@ proxies:
   type: vless
   udp: true
   uuid: 9b0c1d6e-7f6e-4b06-96ba-b8a397a69166
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸[openproxylist.com] vmess-US
+- name: '🇺🇸[openproxylist.com] vless-US #3'
   network: ws
-  port: '443'
-  server: www.speedtest.net
-  servername: node-us-1.v2sv.top
+  port: 443
+  server: 167.179.27.92
+  servername: gaosir.unfeeling.sbs
   tls: true
-  type: vmess
-  uuid: 1e0c95f0-8c76-4d72-951d-4852869552fa
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
   ws-opts:
     headers:
-      Host: node-us-1.v2sv.top
-    path: /ws
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #1'
-  network: ws
-  port: '26995'
-  server: 62.192.173.86
-  tls: false
-  type: vmess
-  uuid: 7582b522-9028-4365-9ade-9798745a5d38
-  ws-opts:
-    headers:
-      Host: ''
-    path: /0fagapx
+      Host: gaosir.unfeeling.sbs
+    path: telegram%F0%9F%87%A8%F0%9F%87%B3%40wangcai2%2F%3Fed%3D2560
 - client-fingerprint: chrome
-  name: '🇺🇸[openproxylist.com] vless-US #6'
+  name: '🇺🇸[openproxylist.com] vless-US #21'
   network: ws
   port: 19999
   server: 202.84.53.85
@@ -678,7 +657,7 @@ proxies:
       Host: gaosir.unfeeling.sbs
     path: x%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F%3Fed%3D2560
 - client-fingerprint: chrome
-  name: '🇺🇸[openproxylist.com] vless-US #7'
+  name: '🇺🇸[openproxylist.com] vless-US #6'
   network: tcp
   port: 443
   reality-opts:
@@ -689,6 +668,19 @@ proxies:
   tls: false
   type: vless
   uuid: cc46b32a-8d3b-4b2f-a94a-9c06ce1d7a26
+- client-fingerprint: chrome
+  name: '🇺🇸[openproxylist.com] vless-US #22'
+  network: ws
+  port: 443
+  server: 160.16.203.210
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: '%2F%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F%3Fed%3D2560'
 - name: '🇺🇸[openproxylist.com] vless-US #10'
   port: 443
   server: speedtest.org
@@ -704,16 +696,6 @@ proxies:
   uuid: 9dc11620-987c-4344-9088-f46fdfae4054
   ws-opts:
     path: /?ed
-- alterId: 64
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #2'
-  network: tcp
-  port: '30002'
-  server: 38.12.83.217
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: '🇺🇸[openproxylist.com] vless-US #11'
   network: ws
   port: 8080
@@ -722,6 +704,8 @@ proxies:
   type: vless
   uuid: 9dc11620-987c-4344-9088-f46fdfae4054
   ws-opts:
+    headers:
+      Host: Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET
     path: /?ed
 - name: '🇺🇸[openproxylist.com] vless-US #12'
   network: ws
@@ -733,11 +717,8 @@ proxies:
   ws-opts:
     path: /?ed
 - name: '🇺🇸[openproxylist.com] vless-US #13'
-  network: tcp
   port: 443
   server: zorox-net.senu-zer.online
-  servername: zorox-net.senu-zer.online
-  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 224629c2-342b-4e54-bb75-b56cb7dabf30
@@ -751,15 +732,20 @@ proxies:
   ws-opts:
     path: /?ed
 - name: '🇺🇸[openproxylist.com] vless-US #15'
-  network: grpc
   port: 8880
   server: cone-snail.unity4world.ir
   tls: false
   type: vless
   uuid: cfe554a3-4cd5-4fe1-9951-e6b65fc52a74
-- name: '🇺🇸[openproxylist.com] vless-US #16'
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #16'
+  network: tcp
   port: 8080
+  reality-opts:
+    public-key: synxygq0ozctiW0jNF1mmvAI9PainW0rBfqe11LkeAM
   server: 104.234.4.120
+  servername: swdist.apple.com
   tls: false
   type: vless
   uuid: 1e503e46-5ab8-4f79-8cd1-73bac4bcd102
@@ -790,8 +776,6 @@ proxies:
   type: vless
   uuid: 9dc11620-987c-4344-9088-f46fdfae4054
   ws-opts:
-    headers:
-      Host: telegram-@mainv2ray,telegram-@mainv2ray,telegram-@mainv2ray,telegram-@mainv2ray,telegram-@mainv2ray,telegram-@mainv2ray,telegram-@mainv2ray,telegram-@mainv2ray,telegram-@mainv2ray,telegram-@mainv2ray,telegram-@mainv2ray,telegram-@mainv2ray,telegram-@mainv2ray,telegram-@mainv2ray,telegram-@mainv2ray,telegram-@mainv2ray,telegram-@mainv2ray,telegram-@mainv2ray,telegram-@mainv2ray,telegram-@mainv2ray,telegram-@mainv2ray
     path: /?ed
 - name: '🇺🇸[openproxylist.com] vless-US #20'
   network: ws
@@ -801,10 +785,12 @@ proxies:
   type: vless
   uuid: 9dc11620-987c-4344-9088-f46fdfae4054
   ws-opts:
+    headers:
+      Host: telegram----v_ngfree----telegram----v_ngfree----telegram----v_ngfree----telegram----v_ngfree----telegram----v_ngfree----telegram----v_ngfree----telegram----v_ngfree----telegram----v_ngfree----telegram----v_ngfree----
     path: /?ed
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #4'
+  name: '🇺🇸[openproxylist.com] vmess-US #2'
   network: ws
   port: '443'
   server: cf.fovi.tk
@@ -815,12 +801,25 @@ proxies:
     headers:
       Host: foxpol.fovi.tk
     path: /eisasqa
-- name: '🇺🇸[openproxylist.com] vless-US #21'
+- name: '🇺🇸[openproxylist.com] vless-US #23'
   port: 443
   server: 47.253.226.114
   tls: false
   type: vless
   uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: US_speednode_0042
+  port: 28190
+  reality-opts:
+    public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
+  server: 159.89.87.21
+  servername: aws.amazon.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: US_speednode_0037
@@ -872,19 +871,6 @@ proxies:
   type: vless
   udp: true
   uuid: 593d1652-6022-4893-b756-0c9b86885dad
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: US_speednode_0042
-  port: 28190
-  reality-opts:
-    public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
-  server: 159.89.87.21
-  servername: aws.amazon.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
 - name: US_speednode_0043
   password: telegram-id-privatevpns
   port: 22222
