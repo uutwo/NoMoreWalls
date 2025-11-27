@@ -71,9 +71,15 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 🇨🇦[openproxylist.com] vless-CA
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇨🇦[openproxylist.com] vless-CA
+  network: tcp
   port: 7070
   server: 86.107.168.100
+  servername: src.smnsoft.com
   tls: true
   type: vless
   uuid: be32c9ad-92e1-485b-dc74-2a65e9dae480
@@ -89,7 +95,6 @@ proxies:
   password: 6pRjKQJ0CWyFtG.9
   port: 12990
   server: 198.57.27.27
-  skip-cert-verify: true
   sni: diningtable.electricbanana.click
   type: trojan
 - name: CA_speednode_0003
