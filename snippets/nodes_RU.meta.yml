@@ -1,4 +1,12 @@
 proxies:
+- name: RU_speednode_0030
+  password: Qzy7tgpRhu
+  port: 443
+  server: 37.18.14.33
+  skip-cert-verify: true
+  sni: m.vk.com
+  type: trojan
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: NL_speednode_0024
@@ -33,27 +41,6 @@ proxies:
   network: tcp
   port: 443
   reality-opts:
-    public-key: bKTT2iUUThS1Hqxmo48vUCkLYdmTQw_mnrtFg69ZJlg
-    short-id: '!!str 25'
-  server: 147.45.159.152
-  servername: google.com
-  tls: false
-  type: vless
-  uuid: b127d2d2-277a-491e-bf80-2e8688fa85e2
-- name: RU_speednode_0030
-  password: Qzy7tgpRhu
-  port: 443
-  server: 37.18.14.33
-  skip-cert-verify: true
-  sni: m.vk.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇷🇺[openproxylist.com] vless-RU #3'
-  network: tcp
-  port: 443
-  reality-opts:
     public-key: g0EvKBte8zYrEc8oF0VNhxvIqqUvNXCp54UWYekc60k
     short-id: '!!str e4'
   server: 212.233.75.107
@@ -61,12 +48,14 @@ proxies:
   tls: false
   type: vless
   uuid: bca5cfe1-3d2a-45dc-b66a-96298e0051f5
-- name: '🇷🇺[openproxylist.com] vless-RU #4'
-  port: 27121
-  server: wolfy.ufavpn.ru
+- name: '🇷🇺[openproxylist.com] vless-RU #3'
+  port: 443
+  server: 37.18.14.192
   tls: false
   type: vless
-  uuid: cbf1ec03-2cff-4b1f-9eb5-5929c13fc20c
+  uuid: c33cbceb-4a2a-4a22-b02a-e0de3e4795be
+  ws-opts:
+    path: '%2F'
 - name: RU_speednode_0031
   network: ws
   port: 2053
