@@ -1,17 +1,4 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 美国 CloudFlare节点
-  network: ws
-  port: 443
-  server: sy4.620720.xyz
-  tls: true
-  type: vmess
-  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-  ws-opts:
-    headers:
-      Host: sy4.620720.xyz
-    path: /
 - name: 🇺🇸a@oneclickvpnkeys
   password: 14FD150A-579E-42A1-8212-9D2F6510A70C
   port: 443
@@ -590,13 +577,51 @@ proxies:
     path: /
 - name: 🇺🇸[openproxylist.com] vless-US
   port: 443
+  server: 45.32.65.89
+  tls: false
+  type: vless
+  uuid: 6033ee9d-7c2a-4f37-a055-0c0d2d8487f0
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  flow: ''
+  name: '🇺🇸[openproxylist.com] vless-US #1'
+  network: ws
+  port: 443
+  server: diana.ns.cloudflare.com
+  servername: all1azar.darolmajanin.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 289f0d70-5985-46e9-b05a-9f66f821f47d
+  ws-opts:
+    headers:
+      Host: all1azar.darolmajanin.com
+    path: /assets?ed%3D512
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇺🇸[openproxylist.com] vless-US #2'
+  network: ws
+  port: 443
+  server: diana.ns.cloudflare.com
+  servername: all1azar.darolmajanin.com
+  tls: true
+  type: vless
+  uuid: 289f0d70-5985-46e9-b05a-9f66f821f47d
+  ws-opts:
+    headers:
+      Host: all1azar.darolmajanin.com
+    path: /assets?ed=512
+- name: '🇺🇸[openproxylist.com] vless-US #3'
+  port: 443
   server: 154.31.113.124
   tls: false
   type: vless
   uuid: b964cfbe-5f8a-47ae-9f14-4a6e36bfed2b
 - alterId: 0
   cipher: auto
-  name: 🇺🇸[openproxylist.com] vmess-US
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
   network: tcp
   port: '43966'
   server: 209.54.104.219
@@ -607,6 +632,7 @@ proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: US_speednode_0039
+  network: tcp
   port: 443
   reality-opts:
     public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
@@ -617,29 +643,7 @@ proxies:
   type: vless
   udp: true
   uuid: 9b0c1d6e-7f6e-4b06-96ba-b8a397a69166
-- name: '🇺🇸[openproxylist.com] vless-US #7'
-  network: ws
-  port: 443
-  server: 167.179.27.92
-  servername: gaosir.unfeeling.sbs
-  tls: true
-  type: vless
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  ws-opts:
-    headers:
-      Host: gaosir.unfeeling.sbs
-    path: telegram🇨🇳@wangcai2/?ed=2560
-- alterId: 64
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #1'
-  network: tcp
-  port: '30002'
-  server: 38.12.83.217
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '🇺🇸[openproxylist.com] vless-US #12'
+- name: '🇺🇸[openproxylist.com] vless-US #13'
   network: tcp
   port: 443
   server: zorox-net.senu-zer.online
@@ -648,7 +652,7 @@ proxies:
   tls: true
   type: vless
   uuid: 224629c2-342b-4e54-bb75-b56cb7dabf30
-- name: '🇺🇸[openproxylist.com] vless-US #13'
+- name: '🇺🇸[openproxylist.com] vless-US #14'
   port: 8080
   server: 104.234.4.120
   tls: false
@@ -658,40 +662,15 @@ proxies:
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #3'
   network: ws
-  port: 443
+  port: '443'
   server: cf.fovi.tk
   tls: true
   type: vmess
   uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
   ws-opts:
     headers:
-      Host: foxpol.fovi.tk
+      Host: foxlux.fovi.tk
     path: /eisasqa
-- name: '🇺🇸[openproxylist.com] vless-US #15'
-  port: 443
-  server: 18.205.1.138
-  tls: false
-  type: vless
-  uuid: 4be2d287-4212-44f2-9388-8f31de5b6437
-- name: '🇺🇸[openproxylist.com] vless-US #16'
-  port: 443
-  server: 47.253.226.114
-  tls: false
-  type: vless
-  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: US_speednode_0042
-  port: 28190
-  reality-opts:
-    public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
-  server: 159.89.87.21
-  servername: aws.amazon.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: US_speednode_0037
@@ -743,6 +722,19 @@ proxies:
   type: vless
   udp: true
   uuid: 593d1652-6022-4893-b756-0c9b86885dad
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: US_speednode_0042
+  port: 28190
+  reality-opts:
+    public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
+  server: 159.89.87.21
+  servername: aws.amazon.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
 - name: US_speednode_0043
   password: telegram-id-privatevpns
   port: 22222
