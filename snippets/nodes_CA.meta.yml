@@ -1,10 +1,4 @@
 proxies:
-- name: 🇨🇦 加拿大多伦多 V2CROSS.COM
-  password: 6pRjKQJ0CWyFtG.9
-  port: 12990
-  server: 198.57.27.27
-  skip-cert-verify: false
-  type: trojan
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
@@ -70,6 +64,12 @@ proxies:
   ws-headers:
     Host: 51.79.102.253
   ws-path: /IOebhLMhl1CTbFHbL95myfRX2
+- name: 🇨🇦 加拿大多伦多 V2CROSS.COM
+  password: 6pRjKQJ0CWyFtG.9
+  port: 12990
+  server: 198.57.27.27
+  skip-cert-verify: false
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇨🇦 VMESS-加拿大-NF解锁加拿大地区非自制剧-Cha...
@@ -108,9 +108,15 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: telegram%F0%9F%87%A8%F0%9F%87%B3%40wangcai2%2F%3Fed%3D2560
-- name: '🇨🇦[openproxylist.com] vless-CA #2'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇨🇦[openproxylist.com] vless-CA #2'
+  network: tcp
   port: 7070
   server: 86.107.168.100
+  servername: src.smnsoft.com
   tls: true
   type: vless
   uuid: be32c9ad-92e1-485b-dc74-2a65e9dae480
@@ -149,6 +155,19 @@ proxies:
   uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
   ws-opts:
     path: x%40%E8%8A%82%E7%82%B9%E7%8B%82%E9%AD%94%2F%3Fed%3D2560
+- client-fingerprint: chrome
+  name: '🇨🇦[openproxylist.com] vless-CA #5'
+  network: ws
+  port: 443
+  server: 45.83.21.13
+  servername: rAyAn-007.pArViN.DpDnS.OrG
+  tls: true
+  type: vless
+  uuid: 1679af35-6dd6-4c09-ae3b-18f239217f3e
+  ws-opts:
+    headers:
+      Host: rayan-007.parvin.dpdns.org
+    path: /Telegram:@AZARBAYJAB1?ed=2560
 - name: CA_speednode_0003
   network: ws
   password: 8001fbf7-4b59-4415-a4bd-8bfded02c9c6
