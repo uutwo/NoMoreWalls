@@ -267,6 +267,7 @@ proxies:
       Host: us1.candyfans.win
     path: '%2Fcgunws'
 - name: '🇩🇪[openproxylist.com] vless-DE #4'
+  network: grpc
   port: 443
   server: 91.98.38.116
   tls: false
@@ -297,7 +298,10 @@ proxies:
   tls: false
   type: vless
   uuid: 3a69f9d8-45f6-4ab3-a96b-b5f6b17f6b07
-- name: '🇩🇪[openproxylist.com] vless-DE #8'
+- flow: ''
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇩🇪[openproxylist.com] vless-DE #8'
   network: grpc
   port: 443
   server: 91.98.168.173
@@ -367,7 +371,7 @@ proxies:
   cipher: auto
   name: '🇩🇪[openproxylist.com] vmess-DE #1'
   network: ws
-  port: '3721'
+  port: 3721
   server: 5.231.56.98
   servername: ''
   tls: false
@@ -376,19 +380,15 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-    path: ''
-- name: '🇩🇪[openproxylist.com] vless-DE #15'
-  network: ws
+    path: /
+- name: '🇩🇪[openproxylist.com] vless-DE #17'
   port: 443
   server: www.speedtest.net
-  servername: kahoo.mrconfigur.site
-  tls: true
+  tls: false
   type: vless
   uuid: 88538870-5626-4cd7-9cda-1e0b6253c9ce
   ws-opts:
-    headers:
-      Host: kahoo.mrconfigur.site
-    path: /
+    path: '%2F'
 - name: '🇩🇪[openproxylist.com] vless-DE #16'
   network: ws
   port: 443
@@ -401,6 +401,13 @@ proxies:
     headers:
       Host: holo.mrconfigur.site
     path: /
+- name: '🇩🇪[openproxylist.com] vless-DE #18'
+  network: grpc
+  port: 443
+  server: 91.98.33.242
+  tls: false
+  type: vless
+  uuid: 95b1344a-2b59-419f-ab7d-2ff7e5c6aa34
 - name: DE_speednode_0008
   network: ws
   port: 2053
