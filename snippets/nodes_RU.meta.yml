@@ -1,19 +1,4 @@
 proxies:
-- name: RU_speednode_0030
-  password: Qzy7tgpRhu
-  port: 443
-  server: 37.18.14.33
-  skip-cert-verify: true
-  sni: m.vk.com
-  type: trojan
-  udp: true
-- name: 🇷🇺 RU俄罗斯(mibei77.com 米贝节点分享)
-  password: 3b38715b-f08a-46dd-9904-7531ca4bb6e8
-  port: 2053
-  server: 95.182.120.208
-  skip-cert-verify: false
-  sni: joss.gpj.web.id
-  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇷🇺[openproxylist.com] vless-RU
@@ -46,15 +31,18 @@ proxies:
   tls: false
   type: vless
   uuid: 3b4d1c7f-4fd7-45bb-9251-79cd53a3e006
-- name: '🇷🇺[openproxylist.com] vless-RU #3'
-  port: 443
-  server: 51.250.106.64
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺[openproxylist.com] vmess-RU
+  network: tcp
+  port: '49934'
+  server: 45.136.244.201
   tls: false
-  type: vless
-  uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
+  type: vmess
+  uuid: 90afa47d-341a-497d-ae25-1d81258804d5
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇷🇺[openproxylist.com] vless-RU #4'
+  name: '🇷🇺[openproxylist.com] vless-RU #3'
   network: tcp
   port: 443
   reality-opts:
@@ -68,7 +56,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: xyz
-  name: '🇷🇺[openproxylist.com] vless-RU #5'
+  name: '🇷🇺[openproxylist.com] vless-RU #4'
   network: grpc
   port: 443
   reality-opts:
@@ -79,15 +67,29 @@ proxies:
   tls: false
   type: vless
   uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
-- name: '🇷🇺[openproxylist.com] vless-RU #6'
+- name: RU_speednode_0030
+  password: Qzy7tgpRhu
+  port: 443
+  server: 37.18.14.33
+  skip-cert-verify: true
+  sni: m.vk.com
+  type: trojan
+  udp: true
+- name: '🇷🇺[openproxylist.com] vless-RU #5'
   port: 443
   server: 212.233.75.107
   tls: false
   type: vless
   uuid: bca5cfe1-3d2a-45dc-b66a-96298e0051f5
-- name: '🇷🇺[openproxylist.com] vless-RU #7'
+- client-fingerprint: chrome
+  name: '🇷🇺[openproxylist.com] vless-RU #6'
+  network: tcp
   port: 27121
+  reality-opts:
+    public-key: QNLEBa5tV9JCrubA4hlAWhho06ddr2dtsT8LKZsGTgA
+    short-id: '!!str fdc8125ea6f61323'
   server: wolfy.ufavpn.ru
+  servername: www.ok.ru
   tls: false
   type: vless
   uuid: cbf1ec03-2cff-4b1f-9eb5-5929c13fc20c
