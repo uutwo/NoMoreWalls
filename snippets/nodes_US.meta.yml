@@ -339,7 +339,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 美国 CloudFlare节点
+  name: 🇺🇸[openproxylist.com] vmess-US
   network: ws
   port: '2083'
   server: hgtrojan.zabc.net
@@ -572,22 +572,15 @@ proxies:
     headers:
       Host: ''
     path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇺🇸[openproxylist.com] vless-US
-  network: tcp
+- name: 🇺🇸[openproxylist.com] vless-US
   port: 443
-  reality-opts:
-    public-key: vNWTKraW-w1e5fUKLJhjDpslQX7OFnRbavF2VHowNhk
-    short-id: '!!str cb37b04594'
   server: 154.31.113.124
-  servername: tesla.com
   tls: false
   type: vless
   uuid: b964cfbe-5f8a-47ae-9f14-4a6e36bfed2b
 - alterId: 0
   cipher: auto
-  name: 🇺🇸[openproxylist.com] vmess-US
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
   network: tcp
   port: '59807'
   server: 38.14.99.179
@@ -618,15 +611,35 @@ proxies:
   tls: true
   type: vless
   uuid: 224629c2-342b-4e54-bb75-b56cb7dabf30
-- name: '🇺🇸[openproxylist.com] vless-US #7'
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #2'
+  network: ws
+  port: 37934
+  server: 74.117.196.232
+  servername: imafake.locker
+  tls: true
+  type: vmess
+  uuid: e1cc26b3-df0b-477b-afb0-53659a25e978
+  ws-opts:
+    headers:
+      Host: imafake.locker
+    path: /speedtest
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #7'
+  network: tcp
   port: 8080
+  reality-opts:
+    public-key: synxygq0ozctiW0jNF1mmvAI9PainW0rBfqe11LkeAM
   server: 104.234.4.120
+  servername: swdist.apple.com
   tls: false
   type: vless
   uuid: 1e503e46-5ab8-4f79-8cd1-73bac4bcd102
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #2'
+  name: '🇺🇸[openproxylist.com] vmess-US #4'
   network: ws
   port: '443'
   server: cf.fovi.tk
@@ -643,19 +656,6 @@ proxies:
   tls: false
   type: vless
   uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: US_speednode_0042
-  port: 28190
-  reality-opts:
-    public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
-  server: 159.89.87.21
-  servername: aws.amazon.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: US_speednode_0037
@@ -707,6 +707,19 @@ proxies:
   type: vless
   udp: true
   uuid: 593d1652-6022-4893-b756-0c9b86885dad
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: US_speednode_0042
+  port: 28190
+  reality-opts:
+    public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
+  server: 159.89.87.21
+  servername: aws.amazon.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
 - name: US_speednode_0043
   password: telegram-id-privatevpns
   port: 22222
