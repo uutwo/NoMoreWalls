@@ -54,22 +54,23 @@ proxies:
   tls: false
   type: vless
   uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇷🇺[openproxylist.com] vless-RU #4'
-  network: tcp
+- name: '🇷🇺[openproxylist.com] vless-RU #4'
   port: 443
-  reality-opts:
-    public-key: CjKYVV5NW3khAVulNH5bF9RhLhmGbzd6aZ-UvyEAhWo
-    short-id: '!!str e55b38ddb0b77c'
   server: s6.psnreality.ru
-  servername: sun6-21.userapi.com
   tls: false
   type: vless
   uuid: a899129b-57f8-4141-92c9-a8b62ef71e45
-- name: '🇷🇺[openproxylist.com] vless-RU #5'
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: xyz
+  name: '🇷🇺[openproxylist.com] vless-RU #5'
+  network: grpc
   port: 443
+  reality-opts:
+    public-key: FCg2XiFJrpH-2XlELSSSyEC7zkeW29HOgp4rfrqXEAI
+    short-id: '!!str 123abc'
   server: 51.250.28.39
+  servername: cloudflare.com
   tls: false
   type: vless
   uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
@@ -86,18 +87,20 @@ proxies:
   tls: false
   type: vless
   uuid: bca5cfe1-3d2a-45dc-b66a-96298e0051f5
-- client-fingerprint: chrome
-  name: '🇷🇺[openproxylist.com] vless-RU #7'
-  network: tcp
+- name: '🇷🇺[openproxylist.com] vless-RU #7'
   port: 27121
-  reality-opts:
-    public-key: QNLEBa5tV9JCrubA4hlAWhho06ddr2dtsT8LKZsGTgA
-    short-id: '!!str fdc8125ea6f61323'
   server: wolfy.ufavpn.ru
-  servername: www.ok.ru
   tls: false
   type: vless
   uuid: cbf1ec03-2cff-4b1f-9eb5-5929c13fc20c
+- name: '🇷🇺[openproxylist.com] vless-RU #8'
+  port: 443
+  server: 37.18.14.192
+  tls: false
+  type: vless
+  uuid: c33cbceb-4a2a-4a22-b02a-e0de3e4795be
+  ws-opts:
+    path: '%2F'
 - name: RU_speednode_0031
   network: ws
   port: 2053
