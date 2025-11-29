@@ -1,11 +1,4 @@
 proxies:
-- name: 🇷🇺[openproxylist.com] trojan-R...
-  password: Qzy7tgpRhu
-  port: 443
-  server: 37.18.14.33
-  skip-cert-verify: true
-  sni: m.vk.com
-  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: LB_speednode_0006
@@ -34,9 +27,16 @@ proxies:
   tls: false
   type: vless
   uuid: 88888888-8888-8888-8888-888888888888
-- name: '🇷🇺[openproxylist.com] vless-RU #2'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #2'
+  network: tcp
   port: 8443
-  server: ru01-ss01.tcp-reset-club.net
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: '!!str 31'
+  server: 185.234.59.74
+  servername: stats.vk-portal.net
   tls: false
   type: vless
   uuid: 3b4d1c7f-4fd7-45bb-9251-79cd53a3e006
@@ -49,9 +49,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 90afa47d-341a-497d-ae25-1d81258804d5
-- name: '🇷🇺[openproxylist.com] vless-RU #3'
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: xyz
+  name: '🇷🇺[openproxylist.com] vless-RU #3'
+  network: grpc
   port: 443
+  reality-opts:
+    public-key: FCg2XiFJrpH-2XlELSSSyEC7zkeW29HOgp4rfrqXEAI
+    short-id: '!!str 123abc'
   server: 51.250.106.64
+  servername: cloudflare.com
   tls: false
   type: vless
   uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
@@ -82,6 +90,13 @@ proxies:
   tls: false
   type: vless
   uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
+- name: 🇷🇺[openproxylist.com] trojan-R...
+  password: Qzy7tgpRhu
+  port: 443
+  server: 37.18.14.33
+  skip-cert-verify: true
+  sni: m.vk.com
+  type: trojan
 - client-fingerprint: chrome
   name: '🇷🇺[openproxylist.com] vless-RU #6'
   network: tcp
@@ -94,6 +109,14 @@ proxies:
   tls: false
   type: vless
   uuid: cbf1ec03-2cff-4b1f-9eb5-5929c13fc20c
+- name: '🇷🇺[openproxylist.com] vless-RU #7'
+  port: 443
+  server: 37.18.14.192
+  tls: false
+  type: vless
+  uuid: c33cbceb-4a2a-4a22-b02a-e0de3e4795be
+  ws-opts:
+    path: '%2F'
 - name: RU_speednode_0012
   network: ws
   port: 2053
