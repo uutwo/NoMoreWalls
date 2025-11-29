@@ -1,4 +1,9 @@
 proxies:
+- name: 香港+电讯盈科有限公司
+  password: BxceQaOe
+  port: 443
+  server: 112.120.31.179
+  type: trojan
 - alterId: 0
   cipher: auto
   http-opts:
@@ -151,9 +156,16 @@ proxies:
   port: 8388
   server: 103.149.182.86
   type: ss
-- name: 🇭🇰[openproxylist.com] vless-HK
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇭🇰[openproxylist.com] vless-HK
+  network: tcp
   port: 55558
+  reality-opts:
+    public-key: LPatmFrK3hRMrtAybjzB7DBfqCaKnKQ6s95kmXrrFxg
+    short-id: '!!str b2defcc6'
   server: 192.238.204.48
+  servername: apple.com
   tls: false
   type: vless
   uuid: 1eb58333-3051-47c2-a2eb-44e5b64233c8
@@ -191,8 +203,7 @@ proxies:
   password: BxceQaOe
   port: 443
   server: 58.152.18.95
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
+  skip-cert-verify: false
   type: trojan
 - alterId: 0
   cipher: auto
@@ -226,7 +237,7 @@ proxies:
   cipher: auto
   name: '🇭🇰[openproxylist.com] vmess-HK #3'
   network: ws
-  port: 3721
+  port: '3721'
   server: 8.210.134.183
   servername: ''
   tls: false
