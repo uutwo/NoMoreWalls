@@ -1,4 +1,10 @@
 proxies:
+- name: 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+  password: BxceQaOe
+  port: 5156
+  server: 52.195.176.26
+  sni: t.me%252Fripaojiedian
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇺🇸 美国 科罗拉多州NTT(美国)通信公司
@@ -800,12 +806,17 @@ proxies:
   type: vless
   udp: true
   uuid: 4df10efe-824a-4579-ab85-50f088f456d4
-- name: '🇺🇸[openproxylist.com] vless-US #2'
+- client-fingerprint: chrome
+  name: '🇺🇸[openproxylist.com] vless-US #2'
+  network: ws
   port: 443
   server: us-003.shopping-1688.com
-  tls: false
+  servername: us-003.shopping-1688.com
+  tls: true
   type: vless
   uuid: 60510065-6006-44df-a6e0-6c75968d739c
+  ws-opts:
+    path: '%2Fdetailsws'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇺🇸[openproxylist.com] vless-US #3'
@@ -862,7 +873,7 @@ proxies:
   uuid: 0e3606ae-321a-4d0b-85ec-5f4352f4bc24
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #9'
+  name: '🇺🇸[openproxylist.com] vless-US #10'
   network: tcp
   port: 443
   reality-opts:
@@ -882,6 +893,20 @@ proxies:
   type: vless
   udp: true
   uuid: 224629c2-342b-4e54-bb75-b56cb7dabf30
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #5'
+  network: ws
+  port: 37934
+  server: 74.117.196.232
+  servername: imafake.locker
+  tls: true
+  type: vmess
+  uuid: 4ec66d81-9565-4d8e-ae58-2bacfde95f48
+  ws-opts:
+    headers:
+      Host: imafake.locker
+    path: /speedtest
 - name: US_speednode_0077
   network: ws
   port: 2096
