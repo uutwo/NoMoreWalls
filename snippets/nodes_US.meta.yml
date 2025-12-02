@@ -1,26 +1,30 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 美国 CloudFlare节点
+  name: 美国 V2CROSS.COM
   network: ws
-  port: 8443
-  server: t1.620720.xyz
+  port: 37934
+  server: 74.117.196.232
   tls: true
   type: vmess
-  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  uuid: 254551f6-ec28-4938-ad0e-0aa4aa1965ec
   ws-opts:
     headers:
       Host: ''
-    path: /
+    path: /speedtest
 - alterId: 0
   cipher: auto
-  name: 美国 华盛顿Cogent通信公司
-  network: none
-  port: 53487
-  server: 38.84.201.21
-  tls: false
+  name: '美国 V2CROSS.COM #2'
+  network: ws
+  port: 37934
+  server: 74.117.196.232
+  tls: true
   type: vmess
-  uuid: c3c1ec05-df2c-4975-9b42-e9b007564eb1
+  uuid: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
+  ws-opts:
+    headers:
+      Host: ''
+    path: /speedtest
 - name: All-@V2rayAlpha--46
   password: 6286105c-fb6d-11ef-be96-f23c93136cb3
   port: 1743
@@ -601,9 +605,29 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 🇺🇸[openproxylist.com] vless-US
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇺🇸[openproxylist.com] vless-US
+  network: tcp
+  port: 33873
+  reality-opts:
+    public-key: RV6FhlbDmMyc_qCuuTbUZt3QMUsKZU7EjyjGkYxHS34
+    short-id: '!!str de550428'
+  server: 139.144.199.41
+  servername: www.nokia.com
+  tls: false
+  type: vless
+  uuid: ffb5a850-edbc-4831-ad0b-e29483949ea8
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #1'
+  network: tcp
   port: 443
+  reality-opts:
+    public-key: vNWTKraW-w1e5fUKLJhjDpslQX7OFnRbavF2VHowNhk
+    short-id: '!!str cb37b04594'
   server: 154.31.113.124
+  servername: tesla.com
   tls: false
   type: vless
   uuid: b964cfbe-5f8a-47ae-9f14-4a6e36bfed2b
@@ -621,15 +645,6 @@ proxies:
     headers:
       Host: lammaland.org
     path: linkvws
-- name: US_speednode_0076
-  port: 3002
-  server: lovetea.dastur-amuzesh.ir
-  servername: Zula.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 4df10efe-824a-4579-ab85-50f088f456d4
 - client-fingerprint: chrome
   name: '🇺🇸[openproxylist.com] vless-US #2'
   network: ws
@@ -640,7 +655,9 @@ proxies:
   type: vless
   uuid: 60510065-6006-44df-a6e0-6c75968d739c
   ws-opts:
-    path: '%2Fdetailsws'
+    headers:
+      Host: us-003.shopping-1688.com
+    path: /detailsws
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇺🇸[openproxylist.com] vless-US #3'
@@ -653,9 +670,15 @@ proxies:
   tls: false
   type: vless
   uuid: f61d9aee-63b8-439e-bebf-afaa53c015fd
-- name: '🇺🇸[openproxylist.com] vless-US #4'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #4'
+  network: tcp
   port: 443
+  reality-opts:
+    public-key: H56cOJhw0xw76lDEpt7IuJJmVGemK6_CK34KtHwDMX8
   server: 47.251.25.74
+  servername: www.amazon.com
   tls: false
   type: vless
   uuid: 18805ff3-b420-45de-af18-93be14024ae8
@@ -681,7 +704,7 @@ proxies:
   uuid: 0e3606ae-321a-4d0b-85ec-5f4352f4bc24
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #10'
+  name: '🇺🇸[openproxylist.com] vless-US #9'
   network: tcp
   port: 443
   reality-opts:
@@ -717,16 +740,26 @@ proxies:
     path: /speedtest
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #12'
+  name: '🇺🇸[openproxylist.com] vless-US #11'
   network: tcp
   port: 8080
   reality-opts:
     public-key: synxygq0ozctiW0jNF1mmvAI9PainW0rBfqe11LkeAM
   server: 104.234.4.120
   servername: swdist.apple.com
+  skip-cert-verify: true
   tls: false
   type: vless
   uuid: 1e503e46-5ab8-4f79-8cd1-73bac4bcd102
+- name: US_speednode_0076
+  port: 3002
+  server: lovetea.dastur-amuzesh.ir
+  servername: Zula.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 4df10efe-824a-4579-ab85-50f088f456d4
 - name: US_speednode_0077
   network: ws
   port: 2096
