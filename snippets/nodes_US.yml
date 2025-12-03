@@ -1,13 +1,30 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 美国 V2CROSS.COM
-  network: none
-  port: 57283
-  server: 216.238.89.53
-  tls: false
+  name: 美国 CloudFlare节点
+  network: ws
+  port: 8443
+  server: t1.620720.xyz
+  tls: true
   type: vmess
-  uuid: 1a5aafc0-6482-451d-fe76-6875b7818579
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 VMESS-美国>日本-NF解锁日本地区非自制剧-Ch...
+  network: ws
+  port: '8443'
+  server: t1.620720.xyz
+  tls: true
+  type: vmess
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  ws-opts:
+    headers:
+      Host: t1.620720.xyz
+    path: /
 - name: 美国-002 |2.3MB/s
   network: ws
   password: iwangjie
@@ -150,26 +167,6 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 美国 V2CROSS.COM #2'
-  network: ws
-  port: '37934'
-  server: 74.117.196.232
-  tls: true
-  type: vmess
-  uuid: c6e0562f-7ad1-40fb-a255-26194b2de84a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /speedtest
-- name: 🇺🇸 美国 惠普HP
-  password: BxceQaOe
-  port: 2752
-  server: 16.163.138.120
-  skip-cert-verify: false
-  sni: t.me%252Fripaojiedian
-  type: trojan
 - name: 美国|@ripaojiedian
   network: tcp
   password: 79314e99f0a473fe86efc7827942ad00
@@ -391,17 +388,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '🇺🇸 美国 V2CROSS.COM #1'
-  network: ws
-  port: '37934'
-  server: 74.117.196.232
-  tls: true
+  name: 🇺🇸 美国 V2CROSS.COM
+  network: none
+  port: '57283'
+  server: 216.238.89.53
+  tls: false
   type: vmess
-  uuid: e1cc26b3-df0b-477b-afb0-53659a25e978
-  ws-opts:
-    headers:
-      Host: ''
-    path: /speedtest
+  uuid: 1a5aafc0-6482-451d-fe76-6875b7818579
+- name: 🇺🇸[openproxylist.com] trojan-U...
+  network: grpc
+  password: FodSUXysuS
+  port: 23274
+  server: 180.131.145.161
+  skip-cert-verify: true
+  sni: cloudflare.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
@@ -426,16 +427,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 442a3923-eca1-4af0-b3ff-24a7ce0af68f
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #3'
-  network: tcp
-  port: '59807'
-  server: 38.14.99.179
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: US_speednode_0023
   network: ws
   password: 034299f4-a5d4-4bdd-a6b0-a2a308ffe6be
