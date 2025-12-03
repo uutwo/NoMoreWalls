@@ -1,21 +1,24 @@
 proxies:
-- name: HK_speednode_0009
+- name: '🇭🇰[openproxylist.com] trojan-H... #1'
   network: tcp
   password: BxceQaOe
   port: 443
-  server: 58.152.30.175
+  server: 58.152.25.20
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-  udp: true
-- name: HK_speednode_0008
+- name: '香港+电讯盈科有限公司 #1'
   password: BxceQaOe
   port: 443
-  server: 112.118.116.66
+  server: 58.152.18.95
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-  udp: true
+- name: '香港+电讯盈科有限公司 #2'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.53.8
+  type: trojan
 - alterId: 0
   cipher: auto
   http-opts:
@@ -396,6 +399,23 @@ proxies:
   ws-headers:
     Host: broadcastlv.chat.bilibili.com
   ws-path: /
+- name: HK_speednode_0009
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 58.152.30.175
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+  udp: true
+- name: HK_speednode_0008
+  password: BxceQaOe
+  port: 443
+  server: 112.118.116.66
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+  udp: true
 - alterId: 2
   cipher: auto
   name: 香港|@ripaojiedian
@@ -424,14 +444,6 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '🇭🇰[openproxylist.com] trojan-H... #1'
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 58.152.25.20
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 香港6|@ripaojiedian
@@ -459,8 +471,7 @@ proxies:
   ws-headers:
     Host: broadcastlv.chat.bilibili.com
   ws-path: /
-- name: 美国3|@ripaojiedian
-  network: tcp
+- name: 🇺🇸 美国3|@stairnode
   password: BxceQaOe
   port: 1112
   server: 116.49.237.130
@@ -930,9 +941,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 🇭🇰 香港 阿里云
+  name: 🇭🇰[openproxylist.com] vmess-HK
   network: ws
-  port: '47843'
+  port: 47843
   server: 47.242.238.231
   tls: false
   type: vmess
@@ -973,16 +984,29 @@ proxies:
   tls: false
   type: vmess
   uuid: 22550b74-3ebf-49b5-ea36-3078b5d47ed9
-- name: 🇭🇰[openproxylist.com] vless-HK
-  port: 10001
-  server: 156.224.78.8
+- client-fingerprint: chrome
+  name: 🇭🇰[openproxylist.com] vless-HK
+  network: ws
+  port: 443
+  server: n1761184282.74qxv.top
+  servername: n1761184282.74qxv.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 824dc1b1-e35b-4121-ad73-9acaf13d6410
+  ws-opts:
+    headers:
+      Host: n1761184282.74qxv.top
+    path: '%2F824dc1b1-e35b-4121-ad73-9acaf13d6410'
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: '🇭🇰[openproxylist.com] vless-HK #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: FscaEWx0paNBzL7GWHj4Fll7Xc-KxdhKgTthBAnByWI
+  server: 62.60.232.108
+  servername: pingless.com
   tls: false
   type: vless
-  uuid: 9c79aceb-4649-44ea-9698-b5e9ecf6d6da
-- name: '🇭🇰[openproxylist.com] trojan-H... #3'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.53.8
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
+  uuid: 669be00c-67b4-4b87-b08f-311c45abced2
