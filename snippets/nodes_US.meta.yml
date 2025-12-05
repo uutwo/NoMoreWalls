@@ -1,19 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '美国 V2CROSS.COM #1'
-  network: ws
-  port: 37934
-  server: 74.117.196.232
-  tls: true
-  type: vmess
-  uuid: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
-  ws-opts:
-    headers:
-      Host: ''
-    path: /speedtest
-- alterId: 0
-  cipher: auto
   name: 美国 CloudFlare节点
   network: ws
   port: 443
@@ -24,21 +11,15 @@ proxies:
   uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
   ws-opts:
     headers:
-      Host: foxpol.fovi.tk
+      Host: foxlux.fovi.tk
     path: /eisasqa
-- alterId: 0
-  cipher: auto
-  name: '美国 V2CROSS.COM #2'
-  network: ws
-  port: 37934
-  server: 74.117.196.232
-  tls: true
-  type: vmess
-  uuid: c6e0562f-7ad1-40fb-a255-26194b2de84a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /speedtest
+- name: 🇨🇦[openproxylist.com] trojan-C...
+  network: tcp
+  password: .ie4rghJuMkcf0oF
+  port: 18509
+  server: 38.96.254.102
+  sni: shoppingmall.electricbanana.click
+  type: trojan
 - name: All-@V2rayAlpha--46
   password: 6286105c-fb6d-11ef-be96-f23c93136cb3
   port: 1743
@@ -395,36 +376,56 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
-- name: 🇺🇸 美国|@stairnode
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 CloudFlare节点 #1'
+  network: ws
+  port: '443'
+  server: cf.fovi.tk
+  tls: true
+  type: vmess
+  uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
+  ws-opts:
+    headers:
+      Host: foxpol.fovi.tk
+    path: /eisasqa
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国 V2CROSS.COM
+  network: ws
+  port: '37934'
+  server: 74.117.196.232
+  tls: true
+  type: vmess
+  uuid: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
+  ws-opts:
+    headers:
+      Host: ''
+    path: /speedtest
+- name: 美国|@ripaojiedian
+  network: tcp
   password: 79314e99f0a473fe86efc7827942ad00
-  port: 4054
-  server: 16.163.0.29
+  port: 2890
+  server: 160.16.151.196
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 🇺🇸 美国2|@stairnode
+- name: 美国2|@ripaojiedian
+  network: tcp
   password: 79314e99f0a473fe86efc7827942ad00
-  port: 4054
-  server: 160.16.57.238
-  skip-cert-verify: false
+  port: 2890
+  server: 160.16.131.243
+  skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 🇺🇸 美国3|@stairnode
+- name: 美国3|@ripaojiedian
+  network: tcp
   password: BxceQaOe
-  port: 1221
-  server: 43.207.204.238
+  port: 1112
+  server: 54.46.125.108
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国4|@stairnode
-  network: tcp
-  port: '11133'
-  server: 198.181.34.22
-  tls: false
-  type: vmess
-  uuid: 29b25bdf-9a83-4dde-90c7-77c51cd23724
 - alterId: 2
   cipher: auto
   name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #11'
@@ -616,30 +617,19 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 美国|@ripaojiedian
-  network: tcp
-  password: 79314e99f0a473fe86efc7827942ad00
-  port: 2890
-  server: 160.16.151.196
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国2|@ripaojiedian
-  network: tcp
-  password: 79314e99f0a473fe86efc7827942ad00
-  port: 2890
-  server: 160.16.131.243
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 1112
-  server: 54.46.125.108
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 V2CROSS.COM #1'
+  network: ws
+  port: '37934'
+  server: 74.117.196.232
+  tls: true
+  type: vmess
+  uuid: c6e0562f-7ad1-40fb-a255-26194b2de84a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /speedtest
 - cipher: aes-256-gcm
   name: '🇺🇸 美国4|@ripaojiedian #1'
   password: 57dtozbdQRZT9MaL
@@ -696,8 +686,21 @@ proxies:
   type: vless
   uuid: ffb5a850-edbc-4831-ad0b-e29483949ea8
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
   name: '🇺🇸[openproxylist.com] vless-US #7'
+  network: ws
+  port: 443
+  server: us-003.shopping-1688.com
+  servername: us-003.shopping-1688.com
+  tls: true
+  type: vless
+  uuid: 60510065-6006-44df-a6e0-6c75968d739c
+  ws-opts:
+    headers:
+      Host: us-003.shopping-1688.com
+    path: /detailsws
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #8'
   network: tcp
   port: 28899
   reality-opts:
@@ -709,7 +712,7 @@ proxies:
   uuid: f61d9aee-63b8-439e-bebf-afaa53c015fd
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #8'
+  name: '🇺🇸[openproxylist.com] vless-US #9'
   network: tcp
   port: 443
   reality-opts:
