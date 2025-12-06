@@ -21,17 +21,26 @@ proxies:
     headers:
       Host: terazhedi.info
     path: '%2Fsghiyws'
-- name: '🇬🇧[openproxylist.com] vless-GB #4'
+- name: '🇬🇧[openproxylist.com] vless-GB #3'
   network: ws
   port: 443
   server: cosmin.ns.cloudflare.com
   servername: picassoo.info
+  skip-cert-verify: true
   tls: true
   type: vless
   uuid: 7270612b-49f6-4b04-999c-34d8263da767
   ws-opts:
     headers:
       Host: picassoo.info
+    path: '%2Faymdlws'
+- name: '🇬🇧[openproxylist.com] vless-GB #4'
+  port: 443
+  server: cosmin.ns.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 7270612b-49f6-4b04-999c-34d8263da767
+  ws-opts:
     path: '%2Faymdlws'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -51,9 +60,17 @@ proxies:
   tls: false
   type: vless
   uuid: e64c5bbb-a4b8-498e-b374-4462d961c8a2
-- name: '🇬🇧[openproxylist.com] vless-GB #7'
-  port: 2080
-  server: 194.46.59.171
-  tls: false
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: GB_speednode_0012
+  port: 443
+  reality-opts:
+    public-key: _dsOu_vxEU7pY3sIeGJxIpR0Ac2KoqIyBor2Bx0CwGA
+    short-id: '!!str d923'
+  server: 140.238.101.212
+  servername: www.bp.com
+  skip-cert-verify: false
+  tls: true
   type: vless
-  uuid: 684ead3d-43b1-4707-904a-24e3e9e91fb1
+  udp: true
+  uuid: 49bfe308-0c0f-4770-bd81-bb2ff8efa03a
