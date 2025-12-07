@@ -1,26 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 美国 CloudFlare节点
-  network: ws
-  port: 443
-  server: cf.fovi.tk
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
-  ws-opts:
-    headers:
-      Host: foxpol.fovi.tk
-    path: /eisasqa
-- name: 美国+华盛顿Cogent通信公司
-  password: .ie4rghJuMkcf0oF
-  port: 18509
-  server: 38.96.254.102
-  sni: shoppingmall.electricbanana.click
-  type: trojan
-- alterId: 0
-  cipher: auto
   name: 🇺🇸 VMESS-美国-NF解锁自制剧-ChatGPT-Ti...
   network: ws
   port: '45979'
@@ -165,16 +145,6 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 美国4|@ripaojiedian
-  network: tcp
-  port: '180'
-  server: 82.198.246.97
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #3'
   password: 3c4e10af98c30972
   port: 443
@@ -384,32 +354,34 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: '🇺🇸[openproxylist.com] vless-US #1'
+- flow: xtls-rprx-vision
+  name: 🇺🇸[openproxylist.com] vless-US
   port: 443
+  server: 138.197.111.120
+  tls: false
+  type: vless
+  uuid: a7e04b44-855e-4fe7-8fa0-31894e928bce
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: vNWTKraW-w1e5fUKLJhjDpslQX7OFnRbavF2VHowNhk
+    short-id: '!!str cb37b04594'
   server: 154.31.113.124
+  servername: tesla.com
   tls: false
   type: vless
   uuid: b964cfbe-5f8a-47ae-9f14-4a6e36bfed2b
-- client-fingerprint: chrome
-  name: '🇺🇸[openproxylist.com] vless-US #2'
-  network: ws
-  port: 8443
-  server: ovhwuxian.pai50288.uk
-  servername: ovhwuxian.pai50288.uk
-  tls: true
-  type: vless
-  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
-  ws-opts:
-    headers:
-      Host: ovhwuxian.pai50288.uk
-    path: '%2F57ba2ab1'
 - name: 🇺🇸[openproxylist.com] trojan-U...
   password: 79314e99f0a473fe86efc7827942ad00
   port: 2890
-  server: 160.16.131.243
+  server: 160.16.116.227
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- client-fingerprint: safari
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇺🇸[openproxylist.com] vless-US #3'
   network: tcp
@@ -435,26 +407,10 @@ proxies:
   type: vless
   uuid: 1c3019a8-7bf1-498a-b7d4-f15677f06e88
 - name: '🇺🇸[openproxylist.com] vless-US #6'
-  network: ws
   port: 443
   server: delilah.ns.cloudflare.com
-  servername: 639002592262919469.sentra-amsir.info
-  tls: true
+  tls: false
   type: vless
   uuid: 5b687f17-0176-495e-84a1-0835f8feec91
   ws-opts:
-    headers:
-      Host: 639002592262919469.sentra-amsir.info
-    path: /egakxows
-- name: '🇺🇸[openproxylist.com] vless-US #7'
-  port: 34045
-  server: 172.236.109.230
-  tls: false
-  type: vless
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-- name: '🇺🇸[openproxylist.com] vless-US #8'
-  port: 36925
-  server: 137.184.218.169
-  tls: false
-  type: vless
-  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
+    path: '%2Fegakxows'

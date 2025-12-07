@@ -6,6 +6,19 @@ proxies:
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
+- client-fingerprint: chrome
+  name: 🇫🇷[openproxylist.com] vless-FR
+  network: ws
+  port: 443
+  server: betty.ns.cloudflare.com
+  servername: 639005752550369717.accord-lmnxa.info
+  tls: true
+  type: vless
+  uuid: 988cc86a-18f0-4420-a716-357c7d78aac4
+  ws-opts:
+    headers:
+      Host: 639005752550369717.accord-lmnxa.info
+    path: '%2Fzajenxws'
 - alpn:
   - http/1.1
   name: 🇫🇷[openproxylist.com] trojan-F...
@@ -24,9 +37,16 @@ proxies:
   server: 15.236.214.251
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 🇫🇷[openproxylist.com] vless-FR
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇫🇷[openproxylist.com] vless-FR #1'
+  network: tcp
   port: 6013
+  reality-opts:
+    public-key: PA5o3z2JEgSZQNKifILMs6kxPlihWXFFkw4KtlQ6WXM
+    short-id: '!!str 16562e6057229b7a'
   server: hitrafa.top
+  servername: dropbox.com
   tls: false
   type: vless
   uuid: c1a46bb0-029b-4a4e-bdc0-26ee9993f750
