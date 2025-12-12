@@ -6,9 +6,30 @@ proxies:
   skip-cert-verify: true
   sni: 46.29.161.237
   type: trojan
-- name: 🇷🇺[openproxylist.com] vless-RU
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺[openproxylist.com] vmess-RU
+  network: ws
+  port: 44749
+  server: 95.81.114.252
+  servername: imafake.locker
+  tls: true
+  type: vmess
+  uuid: 54a0bf6d-f2b5-4b2a-942c-798fb129527e
+  ws-opts:
+    headers:
+      Host: imafake.locker
+    path: /speedtest
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇷🇺[openproxylist.com] vless-RU
+  network: tcp
   port: 443
+  reality-opts:
+    public-key: bYPDMM7Z7s3brAUozWIqspE24dQwgHyI60lDRZvscVo
+    short-id: '!!str a20d3ed244c76426'
   server: 51.250.20.121
+  servername: ads.x5.ru
   tls: false
   type: vless
   uuid: 20cf5921-f7fa-47c5-81ae-947fbef83a4d
