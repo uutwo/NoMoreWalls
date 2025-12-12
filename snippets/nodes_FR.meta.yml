@@ -1,4 +1,20 @@
 proxies:
+- name: 法兰克福
+  password: 16461a78-363c-457a-92f9-83b0a68edc37
+  port: 2056
+  server: de.eyucdn.xyz
+  skip-cert-verify: true
+  sni: de.eyucdn.xyz
+  tls: false
+  type: hysteria2
+- name: FR
+  password: 45b46edb-679b-4ea5-befd-88c05bb94f80
+  port: 2056
+  server: de.eyucdn.xyz
+  skip-cert-verify: true
+  sni: de.eyucdn.xyz
+  tls: false
+  type: hysteria2
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: 7034vless
@@ -13,38 +29,7 @@ proxies:
   tls: false
   type: vless
   uuid: e056e792-aaf6-2ecb-af3f-5b3d8989955d
-- alpn:
-  - http/1.1
-  name: 🇫🇷[openproxylist.com] trojan-F...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.181.161.100
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '🇫🇷[openproxylist.com] trojan-F... #1'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.180.72.13
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - name: '🇫🇷[openproxylist.com] vless-FR #1'
-  network: ws
-  port: 443
-  server: norman.ns.cloudflare.com
-  servername: 639008791615856318.golf-amsix.info
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 53f0bca8-f170-4ef7-8031-c7d441189dbf
-  ws-opts:
-    headers:
-      Host: 639008791615856318.golf-amsix.info
-    path: '%2Fcahttingws'
-- name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: ws
   port: 443
   server: norman.ns.cloudflare.com
@@ -55,4 +40,17 @@ proxies:
   ws-opts:
     headers:
       Host: 639004957474582477.tiguan-amsit.info
+    path: '%2Fcahttingws'
+- name: '🇫🇷[openproxylist.com] vless-FR #2'
+  network: ws
+  port: 443
+  server: norman.ns.cloudflare.com
+  servername: 639008791615847491.golf-amsix.info
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 53f0bca8-f170-4ef7-8031-c7d441189dbf
+  ws-opts:
+    headers:
+      Host: 639008791615847491.golf-amsix.info
     path: '%2Fcahttingws'
