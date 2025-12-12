@@ -6,7 +6,21 @@ proxies:
   skip-cert-verify: true
   sni: 46.29.161.237
   type: trojan
-- name: 🇷🇺[openproxylist.com] vless-RU
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: 7034vless
+  name: 🇷🇺[openproxylist.com] vless-RU
+  network: grpc
+  port: 7033
+  reality-opts:
+    public-key: iLik9C9our-5dRYuvFtrYOzd1NedgTsqUKew2ogLdgE
+    short-id: '!!str 16b6cda7ab793526'
+  server: rusdokyav.vtuix.ir
+  servername: telewebion.com
+  tls: false
+  type: vless
+  uuid: 2652fbc5-e1b1-691f-c9c7-11ad83e828a6
+- name: '🇷🇺[openproxylist.com] vless-RU #1'
   port: 443
   server: 51.250.20.121
   tls: false
@@ -14,7 +28,7 @@ proxies:
   uuid: 20cf5921-f7fa-47c5-81ae-947fbef83a4d
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇷🇺[openproxylist.com] vless-RU #1'
+  name: '🇷🇺[openproxylist.com] vless-RU #2'
   network: tcp
   port: 4443
   reality-opts:
@@ -25,16 +39,9 @@ proxies:
   tls: false
   type: vless
   uuid: 281d153a-2fae-4725-84ed-602fb3627ca6
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇷🇺[openproxylist.com] vless-RU #2'
-  network: tcp
+- name: '🇷🇺[openproxylist.com] vless-RU #3'
   port: 443
-  reality-opts:
-    public-key: 8OsJx6xuHcpL_5e1w0U4bMBa-icevDgvvzNwPwZbORQ
-    short-id: '!!str 5540e44a53c3d01c'
   server: 217.16.24.170
-  servername: api-maps.yandex.ru
   tls: false
   type: vless
   uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
