@@ -1,5 +1,34 @@
 proxies:
+- name: 法兰克福
+  password: 16461a78-363c-457a-92f9-83b0a68edc37
+  port: 2056
+  server: de.eyucdn.xyz
+  skip-cert-verify: true
+  sni: de.eyucdn.xyz
+  tls: false
+  type: hysteria2
+- name: FR
+  password: 45b46edb-679b-4ea5-befd-88c05bb94f80
+  port: 2056
+  server: de.eyucdn.xyz
+  skip-cert-verify: true
+  sni: de.eyucdn.xyz
+  tls: false
+  type: hysteria2
 - name: 🇫🇷[openproxylist.com] vless-FR
+  network: ws
+  port: 443
+  server: clyde.ns.cloudflare.com
+  servername: 639008791615851231.golf-amsix.info
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 53f0bca8-f170-4ef7-8031-c7d441189dbf
+  ws-opts:
+    headers:
+      Host: 639008791615851231.golf-amsix.info
+    path: /cahttingws
+- name: '🇫🇷[openproxylist.com] vless-FR #1'
   network: ws
   port: 443
   server: brenna.ns.cloudflare.com
@@ -51,34 +80,9 @@ proxies:
   tls: false
   type: vless
   uuid: 817e76f9-0107-42bb-9552-979ddde5ff77
-- client-fingerprint: firefox
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
-  network: tcp
-  port: 250
-  reality-opts:
-    public-key: ZOyMDA__RlDV75g7zASfK4YqrFQsqPz7SAw6QuE-gAM
-    short-id: '!!str 11e272502d739a32'
-  server: france.torprospeed.ir
-  servername: www.zhaket.com
-  tls: false
-  type: vless
-  uuid: 03dd6d92-054f-409c-88c0-fad544234d6e
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇫🇷[openproxylist.com] vless-FR #2'
-  network: tcp
-  port: 8080
-  reality-opts:
-    public-key: D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw
-    short-id: '!!str b7b70c104ad267b8'
-  server: max14.musicdoon.ir
-  servername: chatgpt.com
-  tls: false
-  type: vless
-  uuid: 817e76f9-0107-42bb-9552-979ddde5ff77
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR... #3'
   network: tcp
   port: 8080
   reality-opts:
@@ -107,7 +111,7 @@ proxies:
   port: 443
   server: norman.ns.cloudflare.com
   servername: 639008791615856318.golf-amsix.info
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 53f0bca8-f170-4ef7-8031-c7d441189dbf
@@ -120,14 +124,13 @@ proxies:
   port: 443
   server: norman.ns.cloudflare.com
   servername: 639004957474582477.tiguan-amsit.info
-  skip-cert-verify: true
   tls: true
   type: vless
   uuid: 53f0bca8-f170-4ef7-8031-c7d441189dbf
   ws-opts:
     headers:
       Host: 639004957474582477.tiguan-amsit.info
-    path: /cahttingws
+    path: '%2Fcahttingws'
 - name: '🇫🇷[openproxylist.com] vless-FR #6'
   network: ws
   port: 443
