@@ -1,6 +1,19 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: 🇺🇸 VMESS-未知>美国-NF解锁自制剧-ChatGPT...
+  network: ws
+  port: '2083'
+  server: hgtrojan.zabc.net
+  tls: true
+  type: vmess
+  uuid: e6395c20-4571-4b34-d6b1-55a5d36e49ea
+  ws-opts:
+    headers:
+      Host: hgtrojan.zabc.net
+    path: /e6395c20
+- alterId: 0
+  cipher: auto
   name: 🇺🇸 VMESS-美国-NF解锁自制剧-ChatGPT-Ti...
   network: ws
   port: '45979'
@@ -77,19 +90,6 @@ proxies:
     headers:
       Host: 209.126.84.189
     path: /vmessws
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 VMESS-未知>美国-NF解锁自制剧-ChatGPT...
-  network: ws
-  port: '2083'
-  server: hgtrojan.zabc.net
-  tls: true
-  type: vmess
-  uuid: e6395c20-4571-4b34-d6b1-55a5d36e49ea
-  ws-opts:
-    headers:
-      Host: hgtrojan.zabc.net
-    path: /e6395c20
 - alterId: 0
   cipher: auto
   name: '🇺🇸 VMESS-美国-NF解锁自制剧-ChatGPT-Ti... #5'
@@ -382,22 +382,32 @@ proxies:
   tls: false
   type: vless
   uuid: 2ca07504-c06a-41a4-b26b-99807a7d24cf
-- name: '🇺🇸[openproxylist.com] vless-US #1'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #1'
+  network: tcp
   port: 8443
+  reality-opts:
+    public-key: hXfPCZOhQK8nVigmFqtGT6G-6sXjSWfP2sAdUB_LGDU
+    short-id: '!!str b5c94e61f0d429'
   server: 5.181.3.26
+  servername: stackoverflow.com
   tls: false
   type: vless
   uuid: 31b05a69-6495-4626-af65-744ee0528fc5
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸[openproxylist.com] vmess-US
-  network: tcp
-  port: '12056'
-  server: 47.253.197.26
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: dd7be7f1-38ff-45e6-f1e5-b20c2190f527
+- client-fingerprint: random
+  name: '🇺🇸[openproxylist.com] vless-US #2'
+  network: ws
+  port: 8443
+  server: ovhwuxian.pai50288.uk
+  servername: ovhwuxian.pai50288.uk
+  tls: true
+  type: vless
+  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
+  ws-opts:
+    headers:
+      Host: ovhwuxian.pai50288.uk
+    path: '%2F57ba2ab1'
 - name: 🇺🇸[openproxylist.com] trojan-U...
   password: 76d630f2af6619c4a5de0ef953df3c6a
   port: 2890
@@ -406,7 +416,7 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #2'
+  name: '🇺🇸[openproxylist.com] vless-US #3'
   network: tcp
   port: 8443
   reality-opts:
