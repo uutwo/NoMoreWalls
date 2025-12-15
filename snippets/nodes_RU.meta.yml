@@ -1,4 +1,17 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯 03
+  network: ws
+  port: '2052'
+  server: yx1.xn--11x.org
+  tls: false
+  type: vmess
+  uuid: 705a4b47-c2d7-4c0e-8963-e52a18a4070b
+  ws-opts:
+    headers:
+      Host: 2112136940.online.video.downloader.0123456789ru.xn--11x.org
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇷🇺[openproxylist.com] vless-RU
@@ -26,9 +39,16 @@ proxies:
   tls: false
   type: vless
   uuid: 2652fbc5-e1b1-691f-c9c7-11ad83e828a6
-- name: '🇷🇺[openproxylist.com] vless-RU #2'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #2'
+  network: tcp
   port: 443
+  reality-opts:
+    public-key: 8OsJx6xuHcpL_5e1w0U4bMBa-icevDgvvzNwPwZbORQ
+    short-id: '!!str 5540e44a53c3d01c'
   server: 217.16.24.170
+  servername: api-maps.yandex.ru
   tls: false
   type: vless
   uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
