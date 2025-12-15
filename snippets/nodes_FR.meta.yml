@@ -6,16 +6,22 @@ proxies:
   skip-cert-verify: true
   sni: ads.x5.ru
   type: trojan
-- name: 🇫🇷[openproxylist.com] vless-FR
+- client-fingerprint: chrome
+  name: 🇫🇷[openproxylist.com] vless-FR
+  network: ws
   port: 2053
   server: fr.api-music-fa.com
-  tls: false
+  servername: fr.api-music-fa.com
+  skip-cert-verify: false
+  tls: true
   type: vless
   uuid: e3c95719-d6ff-4bd6-87ba-80c1d0c975a9
   ws-opts:
+    headers:
+      Host: fr.api-music-fa.com
     path: '%2FJ5aLQOY1R9ONWYCM'
 - client-fingerprint: firefox
-  name: 🇫🇷[openproxylist.com] vless-FR...
+  name: '🇫🇷[openproxylist.com] vless-FR #1'
   network: tcp
   port: 5678
   reality-opts:
