@@ -1,4 +1,20 @@
 proxies:
+- name: UK
+  password: 3C8h8X6kimbOX68joVe3kTERw
+  port: 7197
+  server: 206.189.20.193
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: UK家宽
+  password: 7GEEGxAfgQaVPQX0PGk7lIuj3I
+  port: 10820
+  server: 158.41.110.234
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
 - alterId: 0
   cipher: auto
   name: '🇬🇧 英国 V2CROSS.COM #2'
@@ -28,13 +44,11 @@ proxies:
   port: 19872
   server: 172.236.2.42
   type: trojan
-- client-fingerprint: chrome
-  name: '🇬🇧[openproxylist.com] vless-GB #1'
+- name: '🇬🇧[openproxylist.com] vless-GB #1'
   network: ws
   port: 443
   server: cosmin.ns.cloudflare.com
   servername: 639013098070588901.macan-amsjd.info
-  skip-cert-verify: false
   tls: true
   type: vless
   uuid: b5605766-6abe-4f5f-85e1-0f6f447eae66
@@ -63,10 +77,24 @@ proxies:
   ws-opts:
     path: '%2Fsghiyws'
 - name: '🇬🇧[openproxylist.com] vless-GB #4'
+  network: ws
   port: 443
-  server: 108.162.193.217
-  tls: false
+  server: norman.ns.cloudflare.com
+  servername: azizoarjmand.info
+  skip-cert-verify: false
+  tls: true
   type: vless
   uuid: ee122f13-9b54-49b6-abc5-aa47b464fdb3
   ws-opts:
-    path: '%2Fyhowcws'
+    headers:
+      Host: azizoarjmand.info
+    path: /yhowcws
+- name: '🇬🇧[openproxylist.com] vless-GB #6'
+  network: ws
+  port: 8080
+  server: 51.68.198.51
+  tls: false
+  type: vless
+  uuid: ebe6918f-ff88-4da5-8181-fbb7a161927a
+  ws-opts:
+    path: '%2FYUYETrenyklxeoyemeWFCrneerV'
