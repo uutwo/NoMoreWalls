@@ -89,28 +89,11 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: 🇨🇳 中国 阿里云
-  network: none
-  port: '32228'
-  server: 8.218.116.26
-  tls: false
-  type: vmess
-  uuid: e4767e9f-ed00-4f31-a984-a918bdd9b09c
-- alterId: 0
-  cipher: auto
-  name: '🇬🇧 英国 V2CROSS.COM #1'
-  network: tcp
-  port: '180'
-  server: 82.198.246.97
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: 加拿大多伦多+V2CROSS.COM
-  password: 6pRjKQJ0CWyFtG.9
-  port: 12990
-  server: 198.57.27.27
+- name: 美国+华盛顿Cogent通信公司
+  password: .ie4rghJuMkcf0oF
+  port: 18509
+  server: 38.96.254.102
+  sni: shoppingmall.electricbanana.click
   type: trojan
 - alterId: 0
   cipher: auto
@@ -121,17 +104,46 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 美国+华盛顿Cogent通信公司
-  password: .ie4rghJuMkcf0oF
-  port: 18509
-  server: 38.96.254.102
-  sni: shoppingmall.electricbanana.click
-  type: trojan
 - name: 香港4|@ripaojiedian
   network: tcp
   password: BxceQaOe
   port: 443
   server: 219.79.214.159
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯 03
+  network: ws
+  port: '2052'
+  server: yx1.xn--11x.org
+  tls: false
+  type: vmess
+  uuid: 705a4b47-c2d7-4c0e-8963-e52a18a4070b
+  ws-opts:
+    headers:
+      Host: 2112136940.online.video.downloader.0123456789ru.xn--11x.org
+    path: /
+- name: 加拿大多伦多+V2CROSS.COM
+  password: 6pRjKQJ0CWyFtG.9
+  port: 12990
+  server: 198.57.27.27
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '🇬🇧 英国 V2CROSS.COM #1'
+  network: tcp
+  port: '180'
+  server: 82.198.246.97
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- name: 香港5|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 58.152.30.31
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -422,7 +434,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '🇭🇰[openproxylist.com] trojan-H... #1'
+- name: 🇭🇰[openproxylist.com] trojan-H...
   network: tcp
   password: e2722c0fb503f8a592436c12bce0509a
   port: 443
@@ -486,11 +498,11 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 🇺🇸[openproxylist.com] trojan-U...
+- name: 🇺🇸 美国2|@stairnode
   password: e2722c0fb503f8a592436c12bce0509a
   port: 2890
   server: 160.16.136.130
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 🇺🇸 美国3|@stairnode
@@ -520,19 +532,6 @@ proxies:
   skip-cert-verify: false
   sni: store.timimi.dpdns.org
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺 俄罗斯 03
-  network: ws
-  port: '2052'
-  server: yx1.xn--11x.org
-  tls: false
-  type: vmess
-  uuid: 705a4b47-c2d7-4c0e-8963-e52a18a4070b
-  ws-opts:
-    headers:
-      Host: 2112136940.online.video.downloader.0123456789ru.xn--11x.org
-    path: /
 - alterId: 0
   cipher: auto
   name: 【机场推荐：https://a0a.xyz/】_5
@@ -774,6 +773,15 @@ proxies:
     path: /tg@hkaa0
 - alterId: 0
   cipher: auto
+  name: 🇨🇳 中国 阿里云
+  network: none
+  port: '32228'
+  server: 8.218.116.26
+  tls: false
+  type: vmess
+  uuid: e4767e9f-ed00-4f31-a984-a918bdd9b09c
+- alterId: 0
+  cipher: auto
   name: 🇺🇸 _US_美国->🇩🇪_DE_德国
   network: ws
   port: '80'
@@ -954,14 +962,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 香港5|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 58.152.30.31
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
 - name: 日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -1056,22 +1056,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 6cfa6103-5d06-40cb-f452-b563db578288
-- alpn:
-  - http/1.1
-  name: 🇩🇪[openproxylist.com] trojan-D...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 63.176.39.44
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 🇭🇰[openproxylist.com] trojan-H...
-  password: BxceQaOe
-  port: 443
-  server: 58.152.25.89
-  sni: t.me%25252Fripaojiedian
-  type: trojan
-- name: '🇭🇰[openproxylist.com] trojan-H... #2'
+- name: '🇭🇰[openproxylist.com] trojan-H... #1'
   password: BxceQaOe
   port: 443
   server: 219.79.214.159
@@ -1129,7 +1114,7 @@ proxies:
   cipher: auto
   name: 🇰🇷[openproxylist.com] vmess-KR
   network: ws
-  port: 443
+  port: '443'
   server: seoul03.zgjok.com
   servername: seoul03.zgjok.com
   tls: true
@@ -1153,6 +1138,12 @@ proxies:
     headers:
       Host: yichueng.org
     path: linkvws
+- name: 🇺🇸[openproxylist.com] trojan-U...
+  password: e2722c0fb503f8a592436c12bce0509a
+  port: 2890
+  server: 160.16.204.136
+  sni: www.nintendogames.net
+  type: trojan
 - name: '🇸🇬[openproxylist.com] trojan-S... #1'
   password: e2722c0fb503f8a592436c12bce0509a
   port: 3145
