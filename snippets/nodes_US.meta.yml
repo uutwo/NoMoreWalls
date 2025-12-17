@@ -1,23 +1,147 @@
 proxies:
-- name: 美国+华盛顿Cogent通信公司
-  password: .ie4rghJuMkcf0oF
-  port: 18509
-  server: 38.96.254.102
-  sni: shoppingmall.electricbanana.click
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺 俄罗斯 03
-  network: ws
-  port: '2052'
-  server: yx1.xn--11x.org
+- name: 美国
+  password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
+  port: 2056
+  server: lsj3.mangshe.xyz
+  skip-cert-verify: true
+  sni: lsj3.mangshe.xyz
   tls: false
-  type: vmess
-  uuid: 705a4b47-c2d7-4c0e-8963-e52a18a4070b
+  type: hysteria2
+- name: '美国 #1'
+  password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
+  port: 2056
+  server: mg1.mangshe.xyz
+  skip-cert-verify: true
+  sni: mg1.mangshe.xyz
+  tls: false
+  type: hysteria2
+- name: 美国2
+  password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
+  port: 2056
+  server: mg2.mangshe.xyz
+  skip-cert-verify: true
+  sni: mg2.mangshe.xyz
+  tls: false
+  type: hysteria2
+- name: US
+  password: peEduuHzbExjK7UQHzazXwqgA
+  port: 27704
+  server: 166.88.164.9
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: 美国-001
+  password: gs4BXwT6SW
+  port: 10988
+  server: 154.26.192.123
+  type: http
+  username: fQ67Dpe5dU
+- cipher: chacha20-ietf-poly1305
+  name: 美国-002 |11.1MB/s|TK-US|YT-US|G...
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: feb7fa9:154948
+    mode: tls
+    tls: false
+  port: 2377
+  server: 88.210.36.107
+  type: ss
+  udp: true
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-service-name: www.bing.com
+  name: 美国-003 |605KB/s
+  network: grpc
+  port: 32252
+  server: 3.143.235.221
+  servername: 3.143.235.221
+  tls: true
+  type: vless
+  udp: true
+  uuid: f0a44f8f-c01f-490c-a6eb-29106a2509a4
+  xudp: true
+- client-fingerprint: chrome
+  mptcp: true
+  name: 美国-004
+  network: ws
+  packet-encoding: xudp
+  port: 8443
+  server: 104.194.69.254
+  servername: sg.alice.cloudns.pro
+  skip-cert-verify: false
+  smux:
+    enabled: true
+    max-streams: 10
+    padding: true
+    protocol: h2mux
+  tfo: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: df3afb84-b065-4223-ae9a-53345dc29c0d
   ws-opts:
     headers:
-      Host: 2112136940.online.video.downloader.0123456789ru.xn--11x.org
-    path: /
+      Host: sg.alice.cloudns.pro
+    path: /huiasdgyhuigyhuisefgyhisedfgbyhisdefbyhui
+    v2ray-http-upgrade: true
+    v2ray-http-upgrade-fast-open: true
+- client-fingerprint: chrome
+  mptcp: true
+  name: 美国-005
+  network: ws
+  packet-encoding: xudp
+  port: 25222
+  server: 104.194.68.16
+  servername: sg.alice.cloudns.pro
+  skip-cert-verify: false
+  smux:
+    enabled: true
+    max-streams: 10
+    padding: true
+    protocol: h2mux
+  tfo: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: df3afb84-b065-4223-ae9a-53345dc29c0d
+  ws-opts:
+    headers:
+      Host: sg.alice.cloudns.pro
+    path: /huiasdgyhuigyhuisefgyhisedfgbyhisdefbyhui
+    v2ray-http-upgrade: true
+    v2ray-http-upgrade-fast-open: true
+- name: 美国-006
+  network: ws
+  password: trojan
+  port: 443
+  server: 159.203.150.39
+  skip-cert-verify: true
+  sni: tianjiu.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tianjiu.pages.dev
+    path: /?ed=2560
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 55 Mbps
+  name: 美国-007 |3.7MB/s|GPT⁺|YT-CN|NF
+  port: 38845
+  protocol: udp
+  server: 208.87.243.151
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria
+  udp: true
+  up: 11 Mbps
 - name: 🇺🇸 _US_美国
   password: iwangjie
   port: 15805
@@ -27,7 +151,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: '🇺🇸 US²_5|6.9MB/s|51%|GPT⁺|GM|Y... #1'
+  name: 🇺🇸 US²_5|6.9MB/s|51%|GPT⁺|GM|Y...
   network: tcp
   port: '30808'
   server: v8.hdacd.com
@@ -164,36 +288,30 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
-- name: 🇺🇸 美国|@stairnode
-  password: e2722c0fb503f8a592436c12bce0509a
-  port: 4054
-  server: 202.181.103.246
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 🇺🇸 美国2|@stairnode
+- name: 美国|@ripaojiedian
+  network: tcp
   password: e2722c0fb503f8a592436c12bce0509a
   port: 2890
-  server: 160.16.136.130
+  server: 160.16.89.176
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 🇺🇸 美国3|@stairnode
+- name: 美国2|@ripaojiedian
+  network: tcp
+  password: e2722c0fb503f8a592436c12bce0509a
+  port: 4054
+  server: 160.16.138.24
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 美国3|@ripaojiedian
+  network: tcp
   password: BxceQaOe
-  port: 2173
-  server: 16.163.143.132
+  port: 4569
+  server: 43.199.204.139
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: '🇺🇸 机场推荐:dafei.de 美国 05 #1'
-  network: tcp
-  port: '30829'
-  server: v29.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #7'
   password: iwangjie
   port: 2053
@@ -227,6 +345,15 @@ proxies:
     headers:
       Host: 4bb6-b667-f88608D19fd5.664.qzZ.Io
     path: /pyyY4ZVTyJV3vr9noOhn
+- alterId: 2
+  cipher: auto
+  name: 🇺🇸 US²_3|0.9MB/s|52%|GPT⁺|TK|N...
+  network: tcp
+  port: '30829'
+  server: v29.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
   name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #20'
@@ -273,6 +400,15 @@ proxies:
     headers:
       Host: img14.360buyimg.com
     path: /obj
+- alterId: 0
+  cipher: auto
+  name: '🇨🇳 中国 V2CROSS.COM #1'
+  network: tcp
+  port: '30830'
+  server: v30.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #31'
   password: '!!str 123456'
   port: 2053
@@ -280,15 +416,6 @@ proxies:
   skip-cert-verify: false
   sni: bpBG.anGusWen.TOp
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #37'
-  network: tcp
-  port: '30833'
-  server: v33.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
   name: 🇺🇸 _US_美国->🇩🇪_DE_德国
@@ -471,29 +598,19 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 美国|@ripaojiedian
-  network: tcp
-  password: e2722c0fb503f8a592436c12bce0509a
-  port: 2890
-  server: 160.16.89.176
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国2|@ripaojiedian
-  network: tcp
-  password: e2722c0fb503f8a592436c12bce0509a
-  port: 4054
-  server: 160.16.138.24
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 4569
-  server: 43.199.204.139
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国 CloudFlare节点
+  network: ws
+  port: '2052'
+  server: yx1.xn--11x.org
+  tls: false
+  type: vmess
+  uuid: 705a4b47-c2d7-4c0e-8963-e52a18a4070b
+  ws-opts:
+    headers:
+      Host: 2112136940.online.video.downloader.0123456789ru.xn--11x.org
+    path: /
 - name: 🇺🇸[openproxylist.com] vless-US
   port: 443
   server: 85.209.154.10
@@ -515,27 +632,16 @@ proxies:
   tls: false
   type: vless
   uuid: 9c79aceb-4649-44ea-9698-b5e9ecf6d6da
-- name: 🇺🇸[openproxylist.com] trojan-U...
-  password: e2722c0fb503f8a592436c12bce0509a
-  port: 2890
-  server: 160.16.204.136
-  sni: www.nintendogames.net
-  type: trojan
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
   name: '🇺🇸[openproxylist.com] vless-US #2'
-  network: tcp
+  network: ws
   port: 8443
-  reality-opts:
-    public-key: NR1UvDvyRqeRmYG1MRf-Ie78a97cmYvI_MAVpmzsexk
-    short-id: '!!str 1c588428648ffc71'
-  server: 216.106.176.106
-  servername: www.microsoft.com
-  tls: false
+  server: ovhwuxian.pai50288.uk
+  servername: ovhwuxian.pai50288.uk
+  tls: true
   type: vless
-  uuid: f7af49ea-f51f-4c71-9e12-0c2f3085f3b8
-- name: '🇺🇸[openproxylist.com] trojan-U... #1'
-  password: FodSUXysuS
-  port: 23274
-  server: 180.131.145.161
-  type: trojan
+  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
+  ws-opts:
+    headers:
+      Host: ovhwuxian.pai50288.uk
+    path: '%2F57ba2ab1'
