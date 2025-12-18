@@ -1,4 +1,36 @@
 proxies:
+- name: 美国
+  password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
+  port: 2056
+  server: lsj3.mangshe.xyz
+  skip-cert-verify: true
+  sni: lsj3.mangshe.xyz
+  tls: false
+  type: hysteria2
+- name: '美国 #1'
+  password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
+  port: 2056
+  server: mg1.mangshe.xyz
+  skip-cert-verify: true
+  sni: mg1.mangshe.xyz
+  tls: false
+  type: hysteria2
+- name: 美国2
+  password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
+  port: 2056
+  server: mg2.mangshe.xyz
+  skip-cert-verify: true
+  sni: mg2.mangshe.xyz
+  tls: false
+  type: hysteria2
+- name: US
+  password: peEduuHzbExjK7UQHzazXwqgA
+  port: 27704
+  server: 166.88.164.9
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
 - name: 🇺🇸 _US_美国
   password: iwangjie
   port: 15805
@@ -386,12 +418,33 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 🇺🇸[openproxylist.com] vless-US
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇺🇸[openproxylist.com] vless-US
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: lH-huUA9Ek_XYglIopgfGL3lJ-qn8rXK8iG1tlXrxls
+    short-id: '!!str 1c'
+  server: 64.188.115.219
+  servername: web.max.ru
+  tls: false
+  type: vless
+  uuid: 0ea84d1f-2687-467d-97dd-ed8d5e8f3f42
+- name: '🇺🇸[openproxylist.com] vless-US #1'
   network: ws
+  port: 2053
+  server: root.api-music-fa.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: db162b74-0da8-4c69-8b17-2d89defabc24
+  ws-opts:
+    path: '%2FJ5aLQOY1R9ONWYCM'
+- name: '🇺🇸[openproxylist.com] vless-US #2'
   port: 443
   server: 92.118.231.167
-  servername: fuck.rkn
-  tls: true
+  tls: false
   type: vless
   uuid: e615a5ba-fce3-4ffa-9c86-b0327a8a107a
   ws-opts:
@@ -405,19 +458,9 @@ proxies:
   type: trojan
   ws-opts:
     path: /gXKGj8a1tp1nNbZEcRugowKV
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸[openproxylist.com] vmess-US
-  network: tcp
-  port: '59807'
-  server: 38.14.99.163
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #1'
+  name: '🇺🇸[openproxylist.com] vless-US #3'
   network: tcp
   port: 10001
   reality-opts:
@@ -428,8 +471,13 @@ proxies:
   tls: false
   type: vless
   uuid: 9c79aceb-4649-44ea-9698-b5e9ecf6d6da
-- name: '🇺🇸[openproxylist.com] trojan-U... #1'
-  password: FodSUXysuS
-  port: 23274
-  server: 180.131.145.161
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸[openproxylist.com] vmess-US
+  network: tcp
+  port: '443'
+  server: 165.140.216.141
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
