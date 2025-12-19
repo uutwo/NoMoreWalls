@@ -9,16 +9,16 @@ proxies:
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: '🇬🇧 _GB_英国 #2'
-  password: t1k169n5zmvvwn96r9ft
-  port: 57452
-  server: 146.70.90.195
-  skip-cert-verify: true
-  sni: api-yandex.maps.ru
-  type: trojan
-- name: 🇬🇧[openproxylist.com] vless-GB
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇬🇧[openproxylist.com] vless-GB
+  network: tcp
   port: 48778
+  reality-opts:
+    public-key: W8s0O7u6tZqZcYjy53w-_O2PZyO_HjUNIJTKFNMkyQM
+    short-id: '!!str cc82826f'
   server: 212.134.174.249
+  servername: apple.com
   tls: false
   type: vless
   uuid: 92d12a33-19c1-487c-b7e0-122014793fce
@@ -42,9 +42,11 @@ proxies:
   ws-opts:
     path: '%2Fulptgqws'
 - name: '🇬🇧[openproxylist.com] vless-GB #3'
+  network: ws
   port: 443
   server: 209.97.183.92
-  tls: false
+  servername: fuck.rkn
+  tls: true
   type: vless
   uuid: 9e5646ba-c661-41cd-8321-a164139b12cf
   ws-opts:
@@ -318,6 +320,7 @@ proxies:
   ws-opts:
     path: '%2Ftoeiblws'
 - name: '🇬🇧[openproxylist.com] vless-GB #37'
+  network: tcp
   port: 17166
   server: 194.150.166.134
   tls: false
