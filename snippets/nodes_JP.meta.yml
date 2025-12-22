@@ -25,14 +25,34 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 🇯🇵 _www.panlongid.com_JP_日本_6
+  name: 🇯🇵 JP日本(mibei77.com 米贝节点分享)
+  network: tcp
+  port: '20004'
+  server: 46.3.47.250
+  tls: false
+  type: vmess
+  uuid: e5ce425e-0b84-435c-aee5-9f9ecbe2cb16
+- alterId: 0
+  cipher: auto
+  name: '🇯🇵 JP日本(mibei77.com 米贝节点分享) #1'
   network: tcp
   port: '20002'
   server: 46.3.47.250
   tls: false
   type: vmess
   uuid: e5ce425e-0b84-435c-aee5-9f9ecbe2cb16
-- name: 🇯🇵[openproxylist.com] vless-JP
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: violet
+  name: 🇯🇵[openproxylist.com] vless-JP
+  network: grpc
+  port: 443
+  server: jpjua.osaip.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: b9d9aa23-b153-4c19-adb8-993613ce373b
+- name: '🇯🇵[openproxylist.com] vless-JP #1'
   port: 56482
   server: 178.239.124.30
   tls: false
