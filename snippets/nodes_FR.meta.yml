@@ -67,13 +67,17 @@ proxies:
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 15.188.100.75
+  server: 13.37.208.102
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: '🇫🇷[openproxylist.com] trojan-F... #1'
+- alpn:
+  - http/1.1
+  name: '🇫🇷[openproxylist.com] trojan-F... #1'
+  network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 15.224.12.64
+  server: 51.44.54.110
+  sni: trojan.burgerip.co.uk
   type: trojan
 - name: 🇫🇷[openproxylist.com] vless-FR
   port: 8442
@@ -81,15 +85,9 @@ proxies:
   tls: false
   type: vless
   uuid: 01b5f5f2-f82a-42e0-9593-5b1b8869b9ca
-- name: '🇫🇷[openproxylist.com] vless-FR #1'
-  port: 8443
-  server: 45.12.133.61
-  tls: false
-  type: vless
-  uuid: 309fa273-6579-4cb2-9143-7cad50401eba
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #2'
+  name: '🇫🇷[openproxylist.com] vless-FR #1'
   network: tcp
   port: 23576
   reality-opts:
