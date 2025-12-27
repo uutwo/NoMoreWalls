@@ -169,6 +169,16 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 美国4|@ripaojiedian
+  network: tcp
+  port: '180'
+  server: 82.198.246.97
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #23'
   password: 5a2c16f9
   port: 443
@@ -828,19 +838,26 @@ proxies:
   tls: false
   type: vmess
   uuid: 90be214d-048c-4ea2-a602-b8e4d4e51e36
-- name: 🇺🇸[openproxylist.com] vless-US
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇺🇸[openproxylist.com] vless-US
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: aBSA9rhtxuHy3h-KgP3XRj-qz8G5yfI4_uee3LWNlks
+    short-id: '!!str 239b4d329aa68487'
+  server: 144.31.125.83
+  servername: google.com
+  tls: false
+  type: vless
+  uuid: 3ee58d3a-7469-4557-b2f9-0d1d85c3a6fa
+- name: '🇺🇸[openproxylist.com] vless-US #1'
   network: tcp
   port: 54661
   server: 99.88.80.195
   tls: false
   type: vless
   uuid: aa3e6633-40ff-4d90-fb85-a3a73c0ee4c3
-- name: '🇺🇸[openproxylist.com] vless-US #1'
-  port: 443
-  server: 144.31.125.86
-  tls: false
-  type: vless
-  uuid: 3ee58d3a-7469-4557-b2f9-0d1d85c3a6fa
 - name: '🇺🇸[openproxylist.com] vless-US #2'
   port: 443
   server: 92.118.231.181
@@ -850,40 +867,23 @@ proxies:
   ws-opts:
     path: '%2Fhormoz'
 - name: '🇺🇸[openproxylist.com] vless-US #3'
+  network: ws
   port: 443
   server: 85.209.195.105
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vless
   uuid: e615a5ba-fce3-4ffa-9c86-b0327a8a107a
   ws-opts:
     path: '%2Fhormoz'
 - name: '🇺🇸[openproxylist.com] vless-US #4'
+  network: grpc
   port: 8880
   server: 45.82.251.95
   tls: false
   type: vless
   uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸[openproxylist.com] vmess-US
-  network: ws
-  port: 2086
-  server: 172.64.167.35
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ip2.1457230.xyz
-    path: github.com/Alvin9999
-- name: 🇺🇸[openproxylist.com] trojan-U...
-  password: 3d7d3041-275b-4238-a7ed-faa24700c204
-  port: 31103
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: '🇺🇸[openproxylist.com] vless-US #5'
+- name: '🇩🇪[openproxylist.com] vless-DE #13'
   port: 443
   server: 94.131.120.177
   tls: false
@@ -906,7 +906,7 @@ proxies:
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #1'
+  name: 🇺🇸[openproxylist.com] vmess-US
   network: tcp
   port: '14102'
   server: 172.233.229.91
@@ -1039,7 +1039,7 @@ proxies:
   uuid: e615a5ba-fce3-4ffa-9c86-b0327a8a107a
   ws-opts:
     path: '%2Fhormoz'
-- name: '🇺🇸[openproxylist.com] trojan-U... #1'
+- name: 🇺🇸[openproxylist.com] trojan-U...
   network: ws
   password: bb824a22-b7ce-427b-9ed6-1adf0751da02
   port: 443
