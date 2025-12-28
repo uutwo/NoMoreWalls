@@ -1,4 +1,27 @@
 proxies:
+- name: 香港5|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 203.198.84.221
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: '香港+电讯盈科有限公司 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.60
+  sni: t.me%25252Fripaojiedian
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬[openproxylist.com] vmess-SG
+  network: tcp
+  port: '30812'
+  server: v12.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
   name: 香港|@ripaojiedian
@@ -25,14 +48,6 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 🇭🇰[openproxylist.com] trojan-H...
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 203.198.84.221
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇭🇰[openproxylist.com] vmess-HK
@@ -47,6 +62,14 @@ proxies:
     headers:
       Host: n1761214915.mv7wh.tech
     path: /
+- name: HK_speednode_0002
+  password: BxceQaOe
+  port: 443
+  server: 203.198.84.221
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  type: trojan
+  udp: true
 - name: 🇭🇰[openproxylist.com] vless-HK
   port: 443
   server: n1761184278.74qxv.top
@@ -106,14 +129,16 @@ proxies:
   type: vless
   uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
 - client-fingerprint: chrome
-  name: '🇭🇰[openproxylist.com] vless-HK #2'
-  network: tcp
-  port: 443
+  flow: xtls-rprx-vision
+  name: HK_speednode_0003
+  port: 10122
   reality-opts:
-    public-key: DNdTBHyztOVJOBJQX91YXEhNkWbSAntqUoTFBHc6Clw
-    short-id: '!!str 6ba85179e30d4fc2'
-  server: 8.217.36.203
-  servername: j.6sc.co
-  tls: false
+    public-key: TU2OTQBiMyK-mKCI3G6fENadfG-fdNlWJF7Qv9ywkFY
+    short-id: '!!str 8a6394aa28d6'
+  server: 1.36.189.217
+  servername: music.apple.com
+  skip-cert-verify: false
+  tls: true
   type: vless
-  uuid: 5c183802-747d-4d2f-a6f1-aff2d5d78401
+  udp: true
+  uuid: 7f60f6e7-8419-4cff-9e1b-14179f677a5e
