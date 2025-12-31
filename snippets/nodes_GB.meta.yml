@@ -1,19 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 英国 V2CROSS.COM
-  network: ws
-  port: 16617
-  server: t.cnmjcn.cyou
-  tls: false
-  type: vmess
-  uuid: 4d734227-b47d-4690-ae15-c3126ae5d940
-  ws-opts:
-    headers:
-      Host: 0fd7bb41908af5aee15097d5f58e1c65.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
   name: 【机场推荐：https://a0a.xyz/】17
   network: tcp
   port: '180'
@@ -21,19 +8,6 @@ proxies:
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: '英国 V2CROSS.COM #2'
-  network: ws
-  port: 16645
-  server: t.cnmjcn.cyou
-  tls: false
-  type: vmess
-  uuid: 4d734227-b47d-4690-ae15-c3126ae5d940
-  ws-opts:
-    headers:
-      Host: 0fd7bb41908af5aee15097d5f58e1c65.mobgslb.tbcache.com
-    path: /
 - alterId: 2
   cipher: auto
   name: 🇬🇧 英国 - Slough - DigitalOcean,...
@@ -74,10 +48,12 @@ proxies:
   uuid: e615a5ba-fce3-4ffa-9c86-b0327a8a107a
   ws-opts:
     path: '%2Fhormoz'
-- name: '🇬🇧[openproxylist.com] vless-GB #3'
+- client-fingerprint: chrome
+  name: '🇬🇧[openproxylist.com] vless-GB #3'
+  network: ws
   port: 443
   server: 146.19.230.222
-  tls: false
+  tls: true
   type: vless
   uuid: e615a5ba-fce3-4ffa-9c86-b0327a8a107a
   ws-opts:
@@ -116,17 +92,19 @@ proxies:
   ws-opts:
     path: '%2Fhormoz'
 - client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: ''
   name: '🇬🇧[openproxylist.com] vless-GB #8'
-  network: tcp
-  port: 28877
+  network: grpc
+  port: 10871
   reality-opts:
-    public-key: gTs2q8MpndOITjoLsH38EJw7qij9uwY9ofHl0LtycQE
-    short-id: '!!str d68d'
+    public-key: XjXJ5LFff_KhumRd_oSXzGbAdKIH4rdYUXo3hGiSfF4
+    short-id: '!!str d2fc48'
   server: 142.93.33.103
   servername: google.com
   tls: false
   type: vless
-  uuid: 217b0ac4-8e13-4291-a531-0ffc66dfe1d9
+  uuid: ed4d4a81-b7e3-4a91-92af-e44248ff432b
 - name: '🇬🇧[openproxylist.com] vless-GB #9'
   port: 443
   server: 167.71.128.209
@@ -236,9 +214,7 @@ proxies:
     path: '%2Flcuaolws'
 - name: '🇬🇧[openproxylist.com] vless-GB #22'
   port: 443
-  server: delilah.ns.cloudflare.com
+  server: 172.64.34.99
   tls: false
   type: vless
   uuid: 39a192ed-7e78-42f4-b956-2f0ea17f677f
-  ws-opts:
-    path: '%2Frbjisuws'
