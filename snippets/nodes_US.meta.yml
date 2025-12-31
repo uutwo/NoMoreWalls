@@ -1,28 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 美国 V2CROSS.COM
-  network: raw
-  port: 45273
-  server: 216.227.168.157
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  name: 美国 CloudFlare节点
-  network: ws
-  port: 8443
-  server: c7.620720.xyz
-  tls: true
-  type: vmess
-  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-  ws-opts:
-    headers:
-      Host: c7.620720.xyz
-    path: /
-- alterId: 0
-  cipher: auto
   name: US_188
   network: none
   port: '27502'
@@ -323,19 +301,32 @@ proxies:
   tls: false
   type: vless
   uuid: a4a941bd-fe1f-4e2e-81ad-2244e73da639
-- name: '🇺🇸[openproxylist.com] vless-US #5'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #5'
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: henSnE5bp7VH5HLvQGA8aepmLrngfZc9yV-xhQK5gik
+    short-id: '!!str c4920b7b39'
+  server: 2.56.178.73
+  servername: www.microsoft.com
+  tls: false
+  type: vless
+  uuid: 97e10d36-c8fc-429a-b3d7-dcc67b718d0f
+- name: '🇺🇸[openproxylist.com] vless-US #6'
   port: 443
   server: 45.159.79.174
   tls: false
   type: vless
   uuid: 60ce56ac-bdba-11f0-94db-525400ca5ed1
-- name: '🇺🇸[openproxylist.com] vless-US #6'
+- name: '🇺🇸[openproxylist.com] vless-US #7'
   port: 443
   server: 5.180.30.83
   tls: false
   type: vless
   uuid: e615a5ba-fce3-4ffa-9c86-b0327a8a107a
-- name: '🇺🇸[openproxylist.com] vless-US #7'
+- name: '🇺🇸[openproxylist.com] vless-US #8'
   network: grpc
   port: 8880
   server: 40.160.6.133
@@ -344,52 +335,41 @@ proxies:
   uuid: 6251f84e-9c02-4140-921c-6b47d394fb96
 - name: 🇺🇸[openproxylist.com] trojan-U...
   password: f36f4495b4b26cc2fe346cfa23e05b1b
-  port: 1281
-  server: 160.16.233.76
+  port: 443
+  server: 38.180.137.196
   sni: www.nintendogames.net
   type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #8'
-  network: tcp
+- name: '🇺🇸[openproxylist.com] vless-US #9'
   port: 443
-  reality-opts:
-    public-key: aBSA9rhtxuHy3h-KgP3XRj-qz8G5yfI4_uee3LWNlks
-    short-id: '!!str 239b4d329aa68487'
   server: 144.31.125.83
-  servername: google.com
-  tls: false
-  type: vless
-  uuid: 3ee58d3a-7469-4557-b2f9-0d1d85c3a6fa
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #9'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: wBrGfTI9PaFf966aN6KaCY0cL6QRLlop4nzNa6bJsiQ
-    short-id: '!!str 9f35da6c9412b832'
-  server: 144.31.125.86
-  servername: google.com
   tls: false
   type: vless
   uuid: 3ee58d3a-7469-4557-b2f9-0d1d85c3a6fa
 - name: '🇺🇸[openproxylist.com] vless-US #10'
+  port: 443
+  server: 144.31.125.86
+  tls: false
+  type: vless
+  uuid: 3ee58d3a-7469-4557-b2f9-0d1d85c3a6fa
+- name: '🇺🇸[openproxylist.com] vless-US #11'
   network: tcp
   port: 4655
   server: 209.94.61.155
   tls: false
   type: vless
   uuid: 125ea501-6bbe-453a-ab42-352789be8154
-- name: '🇺🇸[openproxylist.com] vless-US #11'
+- client-fingerprint: chrome
+  name: '🇺🇸[openproxylist.com] vless-US #12'
+  network: ws
   port: 443
   server: 92.118.231.181
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vless
   uuid: e615a5ba-fce3-4ffa-9c86-b0327a8a107a
   ws-opts:
     path: '%2Fhormoz'
-- name: '🇺🇸[openproxylist.com] vless-US #12'
+- name: '🇺🇸[openproxylist.com] vless-US #13'
   port: 443
   server: 85.209.195.105
   tls: false
@@ -397,7 +377,7 @@ proxies:
   uuid: e615a5ba-fce3-4ffa-9c86-b0327a8a107a
   ws-opts:
     path: '%2Fhormoz'
-- name: '🇺🇸[openproxylist.com] vless-US #13'
+- name: '🇺🇸[openproxylist.com] vless-US #14'
   port: 8880
   server: 45.82.251.95
   tls: false
