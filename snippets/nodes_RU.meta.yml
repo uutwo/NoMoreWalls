@@ -6,7 +6,7 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇷🇺[openproxylist.com] vless-RU
+  name: RU_speednode_0009
   network: tcp
   port: 4248
   reality-opts:
@@ -14,8 +14,10 @@ proxies:
     short-id: '!!str 6ba85179e30d4fc2'
   server: 51.250.25.172
   servername: ads.x5.ru
-  tls: false
+  skip-cert-verify: false
+  tls: true
   type: vless
+  udp: true
   uuid: 5ba2e48a-d36c-40a5-a4a1-2819ed6efce5
 - alpn:
   - h2
@@ -51,9 +53,16 @@ proxies:
   tls: false
   type: vless
   uuid: 5ba2e48a-d36c-40a5-a4a1-2819ed6efce5
-- name: '🇷🇺[openproxylist.com] vless-RU #3'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #3'
+  network: tcp
   port: 443
+  reality-opts:
+    public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
+    short-id: '!!str 1ed136481e0ede74'
   server: 109.248.222.151
+  servername: nsk.geodema.network
   tls: false
   type: vless
   uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
@@ -82,3 +91,30 @@ proxies:
   tls: false
   type: vless
   uuid: 89f99086-e244-41dc-ab20-c1d8763399d0
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: RU_speednode_0010
+  port: 443
+  reality-opts:
+    public-key: dFORJuMEa7izUStNjvhLFvJ2Hudr4v07VQhQS-Wbyh8
+    short-id: '!!str fd'
+  server: 89.169.182.230
+  servername: vk.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: ac2c8871-d4eb-40a6-8487-fd1b31c3bc22
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: RU_speednode_0011
+  port: 1488
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: 51.250.25.11
+  servername: ads.x5.ru
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5ba2e48a-d36c-40a5-a4a1-2819ed6efce5
