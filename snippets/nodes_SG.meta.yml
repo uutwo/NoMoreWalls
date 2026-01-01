@@ -38,20 +38,24 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇸🇬[openproxylist.com] vless-SG
-  port: 443
-  server: free-server.techsonic.cloud
+- client-fingerprint: chrome
+  name: 🇸🇬[openproxylist.com] vless-SG
+  network: ws
+  port: 2096
+  server: 141.193.213.21
+  servername: free-server.techsonic.cloud
   tls: true
   type: vless
-  uuid: a4cb890e-8251-488e-9439-3403c9a58e55
+  uuid: 7ec108c5-5c08-4a9f-ad1b-bf60328792d4
+  ws-opts:
+    headers:
+      Host: free-server.techsonic.cloud
+    path: /free-server.techsonic.cloud
 - name: '🇸🇬[openproxylist.com] vless-SG #1'
-  network: ws
   port: 23675
   server: 152.42.185.230
   tls: false
   type: vless
   uuid: bfb7355f-da10-470c-99d2-16c5061c403a
   ws-opts:
-    headers:
-      Host: m.zoom.us
     path: '%2FFREE%20By%20Tharuwa%20%280767597317%29'
