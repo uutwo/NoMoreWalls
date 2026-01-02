@@ -1,4 +1,11 @@
 proxies:
+- name: 🇷🇺[openproxylist.com] trojan-R...
+  password: af4b064a9c39472fb34ad8b113acdc6b
+  port: 443
+  server: 156.244.6.115
+  skip-cert-verify: true
+  sni: 156.244.6.115
+  type: trojan
 - name: 🇷🇺[openproxylist.com] vless-RU
   port: 4241
   server: 51.250.100.89
@@ -8,7 +15,7 @@ proxies:
 - alpn:
   - h2
   - http/1.1
-  name: 🇷🇺[openproxylist.com] trojan-R...
+  name: '🇷🇺[openproxylist.com] trojan-R... #1'
   network: tcp
   password: yUHNMwWvenoHBaN5CtqKPwt1CTzXgW
   port: 443
@@ -78,9 +85,16 @@ proxies:
   tls: false
   type: vless
   uuid: 309fa273-6579-4cb2-9143-7cad50401eba
-- name: '🇷🇺[openproxylist.com] vless-RU #7'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #7'
+  network: tcp
   port: 443
+  reality-opts:
+    public-key: gZGVp5PUdafgsmi1gawa1yLuha_XhXRc_W9SvPiGmTY
+    short-id: '!!str 7cad5040'
   server: 185.130.114.219
+  servername: www.cloudflare.com
   tls: false
   type: vless
   uuid: 309fa273-6579-4cb2-9143-7cad50401eba
