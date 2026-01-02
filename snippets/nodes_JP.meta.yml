@@ -1,13 +1,27 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 尼日利亚 V2CROSS.COM
-  network: none
-  port: 36334
-  server: 160.119.196.92
-  tls: false
-  type: vmess
-  uuid: 575ac7a3-0127-4420-a9ea-5ff3f6c02ac7
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 日本-001 |0.8MB/s|0%|GPT⁺|GM|YT|...
+  password: a8d37bf8-ff5b-4de8-8796-2de9c4072b41
+  port: 30001
+  server: 154.85.18.158
+  skip-cert-verify: true
+  type: anytls
+  udp: true
+- alpn:
+  - h3
+  congestion-controller: bbr
+  name: 日本-002 |794KB/s
+  password: d9812081-7f61-456d-9340-a1fb8dfd603b
+  port: 57277
+  server: 150.230.4.133
+  sni: db1.nezhasu.com
+  type: tuic
+  udp: true
+  udp-relay-mode: native
+  uuid: d9812081-7f61-456d-9340-a1fb8dfd603b
 - name: 🇯🇵[openproxylist.com] trojan-J...
   network: tcp
   password: BxceQaOe
@@ -32,23 +46,57 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- name: 新加坡|@ripaojiedian
+  network: tcp
+  password: f36f4495b4b26cc2fe346cfa23e05b1b
+  port: 3901
+  server: 52.198.241.226
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 新加坡2|@ripaojiedian
+  network: tcp
+  password: f36f4495b4b26cc2fe346cfa23e05b1b
+  port: 3901
+  server: 153.121.44.99
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 新加坡3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 804
+  server: 52.198.241.226
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 美国|@ripaojiedian
+  network: tcp
+  password: f36f4495b4b26cc2fe346cfa23e05b1b
+  port: 1281
+  server: 52.198.241.226
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 美国2|@ripaojiedian
+  network: tcp
+  password: f36f4495b4b26cc2fe346cfa23e05b1b
+  port: 1281
+  server: 153.121.44.99
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 美国3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 1221
+  server: 3.113.31.15
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇯🇵[openproxylist.com] vmess-JP
-  network: ws
-  port: 443
-  server: n1753598451.74qxv.top
-  servername: n1753598451.74qxv.top
-  tls: true
-  type: vmess
-  uuid: 9798678f-5b8c-4ff1-bbdd-b9b5c1539de0
-  ws-opts:
-    headers:
-      Host: n1753598451.74qxv.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #1'
   network: ws
   port: 443
   server: n1753598448.74qxv.top
@@ -74,7 +122,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #2'
+  name: '🇯🇵[openproxylist.com] vmess-JP #1'
   network: ws
   port: '443'
   server: n1753598452.wpg27.xyz
@@ -89,11 +137,11 @@ proxies:
   flow: xtls-rprx-vision
   name: 🇯🇵[openproxylist.com] vless-JP
   network: tcp
-  port: 56482
+  port: 27724
   reality-opts:
-    public-key: W9BjX6YmCIVsjhKMlz233Yoe0xcf0SVHfvPKqbf3vCg
-  server: 178.239.124.30
-  servername: cloudcircus.jp
+    public-key: rYH4wPTVzSwtpXgI3U7YxppIP6oudD-425vT7pyhj1w
+  server: 116.80.44.144
+  servername: www.yahoo.co.jp
   tls: false
   type: vless
-  uuid: 2c487d9d-25a1-4b79-aed1-086b8c3082ca
+  uuid: ebd8539d-e249-4a39-8f90-e8585e8cc35e
