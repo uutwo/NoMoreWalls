@@ -1,4 +1,12 @@
 proxies:
+- name: 日本|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 3760
+  server: 57.180.10.245
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
 - name: 法兰克福
   password: 16461a78-363c-457a-92f9-83b0a68edc37
   port: 2056
@@ -15,62 +23,6 @@ proxies:
   sni: de.eyucdn.xyz
   tls: false
   type: hysteria2
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  client-fingerprint: chrome
-  down: 55 Mbps
-  name: 法国-001 |950KB/s
-  port: 50011
-  protocol: udp
-  server: 62.210.10.186
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  udp: true
-  up: 11 Mbps
-- alpn:
-  - h3
-  congestion-controller: bbr
-  name: 法国-002 |677KB/s
-  password: d9812081-7f61-456d-9340-a1fb8dfd603b
-  port: 61823
-  server: 129.151.255.22
-  sni: marseille-1.nezhasu.com
-  type: tuic
-  udp: true
-  udp-relay-mode: native
-  uuid: d9812081-7f61-456d-9340-a1fb8dfd603b
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: '55'
-  name: 法国-003 |1.3MB/s
-  port: 35511
-  protocol: udp
-  server: 62.210.10.186
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  udp: true
-  up: '11'
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  client-fingerprint: chrome
-  down: 55 Mbps
-  name: 法国-004 |3.4MB/s|TK-FR|YT-FR|GP...
-  port: 26691
-  protocol: udp
-  server: 62.210.196.68
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  udp: true
-  up: 11 Mbps
 - alterId: 2
   cipher: auto
   name: '🇫🇷 法国 09 #2'
@@ -80,9 +32,22 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇫🇷[openproxylist.com] vless-FR
+  network: tcp
+  port: 8080
+  reality-opts:
+    public-key: D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw
+    short-id: '!!str b7b70c104ad267b8'
+  server: maxb20.musicdoon.ir
+  servername: chatgpt.com
+  tls: false
+  type: vless
+  uuid: d5ac3a03-713f-4f03-aa3a-6d8b2f286414
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇫🇷[openproxylist.com] vless-FR...
+  name: '🇫🇷[openproxylist.com] vless-FR #1'
   network: tcp
   port: 4241
   reality-opts:
@@ -95,7 +60,7 @@ proxies:
   uuid: 8619e4c1-0984-4dce-83e3-419e2d7f5079
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
+  name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: tcp
   port: 8080
   reality-opts:

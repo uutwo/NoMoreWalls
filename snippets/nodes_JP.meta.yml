@@ -1,13 +1,10 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: '尼日利亚 V2CROSS.COM #1'
-  network: none
-  port: 36334
-  server: 160.119.196.92
-  tls: false
-  type: vmess
-  uuid: 575ac7a3-0127-4420-a9ea-5ff3f6c02ac7
+- name: 日本+东京Amazon数据中心
+  password: BxceQaOe
+  port: 1221
+  server: 13.231.188.173
+  sni: t.me%25252Fripaojiedian
+  type: trojan
 - name: 东京
   password: 16461a78-363c-457a-92f9-83b0a68edc37
   port: 2056
@@ -56,29 +53,6 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 日本-001 |0.8MB/s|0%|GPT⁺|GM|YT|...
-  password: a8d37bf8-ff5b-4de8-8796-2de9c4072b41
-  port: 30001
-  server: 154.85.18.158
-  skip-cert-verify: true
-  type: anytls
-  udp: true
-- alpn:
-  - h3
-  congestion-controller: bbr
-  name: 日本-002 |794KB/s
-  password: d9812081-7f61-456d-9340-a1fb8dfd603b
-  port: 57277
-  server: 150.230.4.133
-  sni: db1.nezhasu.com
-  type: tuic
-  udp: true
-  udp-relay-mode: native
-  uuid: d9812081-7f61-456d-9340-a1fb8dfd603b
 - name: 🇯🇵 日本|@stairnode
   password: BxceQaOe
   port: 26378
@@ -100,14 +74,6 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 日本|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 3760
-  server: 57.180.10.245
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
 - name: 日本2|@ripaojiedian
   network: tcp
   password: 381f2e86233720eacda26d50e9aa26da
@@ -122,6 +88,33 @@ proxies:
   server: 13.231.188.173
   sni: www.nintendogames.net
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵[openproxylist.com] vmess-JP
+  network: ws
+  port: '443'
+  server: n1753598451.74qxv.top
+  servername: n1753598451.74qxv.top
+  tls: true
+  type: vmess
+  uuid: 9798678f-5b8c-4ff1-bbdd-b9b5c1539de0
+  ws-opts:
+    headers:
+      Host: n1753598451.74qxv.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '🇯🇵[openproxylist.com] vmess-JP #1'
+  network: ws
+  port: '443'
+  server: n1753598452.wpg27.xyz
+  tls: true
+  type: vmess
+  uuid: 4f23eb7c-ef2f-43b0-90dd-f2b8a75954a5
+  ws-opts:
+    headers:
+      Host: n1753598452.wpg27.xyz
+    path: /
 - name: 🇯🇵[openproxylist.com] vless-JP
   port: 4443
   server: 195.78.49.158
