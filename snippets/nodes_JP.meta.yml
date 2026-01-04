@@ -47,29 +47,6 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 日本-001 |0.8MB/s|0%|GPT⁺|GM|YT|...
-  password: a8d37bf8-ff5b-4de8-8796-2de9c4072b41
-  port: 30001
-  server: 154.85.18.158
-  skip-cert-verify: true
-  type: anytls
-  udp: true
-- alpn:
-  - h3
-  congestion-controller: bbr
-  name: 日本-002 |794KB/s
-  password: d9812081-7f61-456d-9340-a1fb8dfd603b
-  port: 57277
-  server: 150.230.4.133
-  sni: db1.nezhasu.com
-  type: tuic
-  udp: true
-  udp-relay-mode: native
-  uuid: d9812081-7f61-456d-9340-a1fb8dfd603b
 - name: 日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -93,46 +70,6 @@ proxies:
   server: 13.231.188.173
   skip-cert-verify: false
   sni: www.nintendogames.net
-  type: trojan
-- name: 新加坡|@ripaojiedian
-  network: tcp
-  password: 381f2e86233720eacda26d50e9aa26da
-  port: 3901
-  server: 13.231.188.173
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 新加坡2|@ripaojiedian
-  network: tcp
-  password: 381f2e86233720eacda26d50e9aa26da
-  port: 3901
-  server: 54.199.47.127
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国|@ripaojiedian
-  network: tcp
-  password: 381f2e86233720eacda26d50e9aa26da
-  port: 1281
-  server: 13.231.188.173
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国2|@ripaojiedian
-  network: tcp
-  password: 381f2e86233720eacda26d50e9aa26da
-  port: 1281
-  server: 153.121.44.99
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 1221
-  server: 13.231.188.173
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
   type: trojan
 - alterId: 0
   cipher: auto
@@ -176,15 +113,9 @@ proxies:
     headers:
       Host: n1753598452.wpg27.xyz
     path: /
-- name: 🇯🇵[openproxylist.com] vless-JP
-  port: 4443
-  server: 195.78.49.158
-  tls: false
-  type: vless
-  uuid: ecc65f46-4bb6-47b5-860c-837b3ae4f3ab
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #1'
+  name: 🇯🇵[openproxylist.com] vless-JP
   network: tcp
   port: 56482
   reality-opts:
@@ -194,3 +125,15 @@ proxies:
   tls: false
   type: vless
   uuid: 2c487d9d-25a1-4b79-aed1-086b8c3082ca
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇯🇵[openproxylist.com] vless-JP #1'
+  network: tcp
+  port: 27724
+  reality-opts:
+    public-key: rYH4wPTVzSwtpXgI3U7YxppIP6oudD-425vT7pyhj1w
+  server: 116.80.44.144
+  servername: www.yahoo.co.jp
+  tls: false
+  type: vless
+  uuid: ebd8539d-e249-4a39-8f90-e8585e8cc35e
