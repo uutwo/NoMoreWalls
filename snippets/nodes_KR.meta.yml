@@ -1,4 +1,45 @@
 proxies:
+- name: KR
+  password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
+  port: 2056
+  server: cc1.mangshe.xyz
+  skip-cert-verify: true
+  sni: cc1.mangshe.xyz
+  tls: false
+  type: hysteria2
+- alpn:
+  - h3
+  congestion-controller: bbr
+  name: 韩国-001 |1.4MB/s
+  password: d9812081-7f61-456d-9340-a1fb8dfd603b
+  port: 64413
+  server: 158.180.79.168
+  sni: chuncheon-2.nezhasu.com
+  type: tuic
+  udp: true
+  udp-relay-mode: native
+  uuid: d9812081-7f61-456d-9340-a1fb8dfd603b
+- alpn:
+  - h3
+  congestion-controller: bbr
+  disable-sni: false
+  name: 韩国-002 |6.6MB/s|11%|GPT⁺|YT|TK...
+  password: d9812081-7f61-456d-9340-a1fb8dfd603b
+  port: 52706
+  reduce-rtt: false
+  request-timeout: 0
+  server: 130.162.157.157
+  sni: shouer.nezhasu.com
+  type: tuic
+  udp: true
+  udp-relay-mode: native
+  uuid: d9812081-7f61-456d-9340-a1fb8dfd603b
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-125.141.31.75-69
+  password: qwerREWQ@@
+  port: 22376
+  server: 125.141.31.75
+  type: ss
 - client-fingerprint: chrome
   name: 🇰🇷[openproxylist.com] vless-KR
   network: grpc
@@ -11,3 +52,17 @@ proxies:
   tls: false
   type: vless
   uuid: 5d42cfef-0556-4f0c-bfb7-161aef500ab5
+- name: KR_speednode_0008
+  network: ws
+  port: 8443
+  server: 59.3.3.161
+  servername: x.kkii.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3afad5df-e056-4301-846d-665b4ef51968
+  ws-opts:
+    headers:
+      Host: x.kkii.eu.org
+    path: /59.3.3.161:8443
