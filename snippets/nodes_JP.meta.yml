@@ -1,10 +1,4 @@
 proxies:
-- name: 日本+东京Amazon数据中心
-  password: BxceQaOe
-  port: 1221
-  server: 13.231.188.173
-  sni: t.me%25252Fripaojiedian
-  type: trojan
 - name: 东京
   password: 16461a78-363c-457a-92f9-83b0a68edc37
   port: 2056
@@ -53,32 +47,12 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- name: 🇯🇵 日本|@stairnode
-  password: BxceQaOe
-  port: 26378
-  server: 54.199.47.127
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: 🇯🇵 日本2|@stairnode
-  password: 381f2e86233720eacda26d50e9aa26da
-  port: 4006
-  server: 54.199.47.127
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 🇯🇵 日本3|@stairnode
-  password: 381f2e86233720eacda26d50e9aa26da
-  port: 1933
-  server: 54.199.47.127
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
 - name: 日本2|@ripaojiedian
   network: tcp
   password: 381f2e86233720eacda26d50e9aa26da
   port: 4006
   server: 13.231.188.173
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 日本3|@ripaojiedian
@@ -86,6 +60,7 @@ proxies:
   password: 381f2e86233720eacda26d50e9aa26da
   port: 1933
   server: 13.231.188.173
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - alterId: 0
@@ -115,9 +90,16 @@ proxies:
     headers:
       Host: n1753598452.wpg27.xyz
     path: /
-- name: 🇯🇵[openproxylist.com] vless-JP
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵[openproxylist.com] vless-JP
+  network: tcp
   port: 4443
+  reality-opts:
+    public-key: 5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE
+    short-id: '!!str aa7e96542880027a'
   server: 195.78.49.158
+  servername: github.com
   tls: false
   type: vless
   uuid: ecc65f46-4bb6-47b5-860c-837b3ae4f3ab
