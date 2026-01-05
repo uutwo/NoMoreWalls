@@ -45,6 +45,54 @@ proxies:
   server: 20.89.130.227
   sni: fscus.fscloud123456789.com
   type: trojan
+- name: 东京
+  password: 16461a78-363c-457a-92f9-83b0a68edc37
+  port: 2056
+  server: zp1.eyucdn.xyz
+  skip-cert-verify: true
+  sni: zp1.eyujichang.xyz
+  tls: false
+  type: hysteria2
+- name: 🇯🇵日本
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: 89a62b16-a3c3-4ad7-be18-6f0266f7a2c5
+  port: 443
+  server: jpjp.gzcloud.shop
+  skip-cert-verify: true
+  sni: jpjp.gzcloud.shop
+  tls: false
+  type: hysteria2
+- name: 'JP #1'
+  password: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61
+  port: 13778
+  server: jp7.dexlos.com
+  skip-cert-verify: true
+  tls: false
+  type: hysteria2
+- name: 'JP #2'
+  password: 97f8e11a-683a-493d-839a-3340a7bc63fb
+  port: 37771
+  server: dg1.xiaohuolongjc.top
+  sni: dg1.xiaohuolongjc.top
+  tls: false
+  type: hysteria2
+- name: 'JP #3'
+  password: qq4Wc9UakExypzw4Jd00fWqrDTY
+  port: 22712
+  server: 8.209.223.212
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: 'JP #4'
+  password: yD0mxkCA18WgPD1uVGd3Eu1dc
+  port: 27789
+  server: 47.245.0.72
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
 - name: 日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -69,16 +117,36 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 🇯🇵 JP日本(mibei77.com 米贝节点分享)
-  password: 5a2c16f9
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵[openproxylist.com] vless-JP
+  network: tcp
   port: 443
-  server: 172.64.229.86
-  skip-cert-verify: false
-  sni: snippets.kkii.eu.org
-  type: trojan
+  reality-opts:
+    public-key: 2Q0J_OPL73qhEIYf3YBLCuY4RIBurgz5QDVchQ8e9ks
+    short-id: '!!str b52815d3a6ac45b4'
+  server: 109.61.109.135
+  servername: jp.cdn.stun.su
+  tls: false
+  type: vless
+  uuid: 4371ad14-b981-4699-bedf-83fb79bde3e6
 - alterId: 0
   cipher: auto
   name: 🇯🇵[openproxylist.com] vmess-JP
+  network: ws
+  port: 443
+  server: n1753598451.74qxv.top
+  servername: n1753598451.74qxv.top
+  tls: true
+  type: vmess
+  uuid: 9798678f-5b8c-4ff1-bbdd-b9b5c1539de0
+  ws-opts:
+    headers:
+      Host: n1753598451.74qxv.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '🇯🇵[openproxylist.com] vmess-JP #1'
   network: ws
   port: 443
   server: n1753598448.74qxv.top
@@ -89,18 +157,4 @@ proxies:
   ws-opts:
     headers:
       Host: n1753598448.74qxv.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #1'
-  network: ws
-  port: 443
-  server: n1753598452.wpg27.xyz
-  servername: n1753598452.wpg27.xyz
-  tls: true
-  type: vmess
-  uuid: 4f23eb7c-ef2f-43b0-90dd-f2b8a75954a5
-  ws-opts:
-    headers:
-      Host: n1753598452.wpg27.xyz
     path: /

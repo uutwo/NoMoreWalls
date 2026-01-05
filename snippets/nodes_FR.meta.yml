@@ -45,13 +45,22 @@ proxies:
   skip-cert-verify: true
   sni: fr.test3.net
   type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #11'
-  password: 5a2c16f9
-  port: 443
-  server: cf.130519.xyz
-  skip-cert-verify: false
-  sni: snippets.kkii.eu.org
-  type: trojan
+- name: 法兰克福
+  password: 16461a78-363c-457a-92f9-83b0a68edc37
+  port: 2056
+  server: de.eyucdn.xyz
+  skip-cert-verify: true
+  sni: de.eyucdn.xyz
+  tls: false
+  type: hysteria2
+- name: FR
+  password: 45b46edb-679b-4ea5-befd-88c05bb94f80
+  port: 2056
+  server: de.eyucdn.xyz
+  skip-cert-verify: true
+  sni: de.eyucdn.xyz
+  tls: false
+  type: hysteria2
 - name: '🇫🇷 FR法国(mibei77.com 米贝节点分享) #3'
   password: 5a2c16f9
   port: 2096
@@ -59,6 +68,26 @@ proxies:
   skip-cert-verify: false
   sni: snippets.kkii.eu.org
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇫🇷[openproxylist.com] vmess-FR
+  network: tcp
+  port: '2087'
+  server: n10.anisert.ir
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e52ab129-9f7f-4e35-8083-26dd83f3b261
+- alterId: 0
+  cipher: auto
+  name: '🇫🇷[openproxylist.com] vmess-FR #1'
+  network: tcp
+  port: '2087'
+  server: n9.cheporano.ir
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e52ab129-9f7f-4e35-8083-26dd83f3b261
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: 🇫🇷[openproxylist.com] vless-FR
@@ -77,22 +106,16 @@ proxies:
   password: humanity
   port: 443
   server: www.calmlunch.com
+  skip-cert-verify: false
   sni: www.calmlunch.com
   type: trojan
   ws-opts:
     headers:
       Host: www.calmlunch.com
-    path: /assignment
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
-  network: tcp
+    path: '%2Fassignment'
+- name: '🇫🇷[openproxylist.com] vless-FR #1'
   port: 8080
-  reality-opts:
-    public-key: D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw
-    short-id: '!!str b7b70c104ad267b8'
   server: maxb17.musicdoon.ir
-  servername: chatgpt.com
   tls: false
   type: vless
   uuid: 2c7a2b04-ad16-484b-b0e4-739cd06b650f
