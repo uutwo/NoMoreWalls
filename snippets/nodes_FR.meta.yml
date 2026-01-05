@@ -1,4 +1,59 @@
 proxies:
+- name: 法兰克福
+  password: 16461a78-363c-457a-92f9-83b0a68edc37
+  port: 2056
+  server: de.eyucdn.xyz
+  skip-cert-verify: true
+  sni: de.eyucdn.xyz
+  tls: false
+  type: hysteria2
+- name: FR
+  password: 45b46edb-679b-4ea5-befd-88c05bb94f80
+  port: 2056
+  server: de.eyucdn.xyz
+  skip-cert-verify: true
+  sni: de.eyucdn.xyz
+  tls: false
+  type: hysteria2
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  client-fingerprint: chrome
+  down: 55 Mbps
+  name: 法国-001 |1.6MB/s
+  port: 26691
+  protocol: udp
+  server: 62.210.196.68
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  udp: true
+  up: 11 Mbps
+- cipher: chacha20-ietf-poly1305
+  name: 法国-002 |1.8MB/s
+  password: 27e645dcf11ded1f
+  port: 47000
+  server: 57.128.190.144
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 法国-003 |2.0MB/s
+  network: grpc
+  port: 43529
+  reality-opts:
+    public-key: SOqL8NC53BMPU7P0XHYtKyxwk8So11osWZUT27cqlV8
+    short-id: '!!str 80a70b'
+  server: 152.228.231.200
+  servername: sourceforge.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 13a28931-8818-4004-8cc4-0e8a315464de
+  xudp: true
 - alterId: 2
   cipher: auto
   name: '🇫🇷 法国 09 #1'
@@ -9,11 +64,16 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: 🇫🇷[openproxylist.com] trojan-F...
+  network: ws
   password: humanity
   port: 443
   server: www.calmlunch.com
+  skip-cert-verify: true
+  sni: www.calmlunch.com
   type: trojan
   ws-opts:
+    headers:
+      Host: www.calmlunch.com
     path: '%2Fassignment'
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
