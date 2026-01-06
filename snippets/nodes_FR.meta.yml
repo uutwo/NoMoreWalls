@@ -45,16 +45,25 @@ proxies:
   skip-cert-verify: true
   sni: fr.test3.net
   type: trojan
-- name: '🇫🇷 FR法国(mibei77.com 米贝节点分享) #2'
+- name: 'FR法国(mibei77.com 米贝节点分享)\r #2'
   password: 5a2c16f9
   port: 2096
   server: 94.140.0.238
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: snippets.kkii.eu.org
   type: trojan
 - alterId: 0
   cipher: auto
   name: 🇫🇷[openproxylist.com] vmess-FR
+  network: tcp
+  port: 443
+  server: 217.69.5.32
+  tls: false
+  type: vmess
+  uuid: ec4c349c-b3c6-4cff-be63-01eaad1dc098
+- alterId: 0
+  cipher: auto
+  name: '🇫🇷[openproxylist.com] vmess-FR #1'
   network: tcp
   port: '45653'
   server: 94.232.247.165
@@ -62,10 +71,27 @@ proxies:
   tls: false
   type: vmess
   uuid: 9e91d19a-c73f-4276-adbc-b337c374259c
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇫🇷[openproxylist.com] vless-FR
+  network: tcp
+  port: 4241
+  reality-opts:
+    public-key: -8Dc8Dm5YzxVvllu8W5Uc7N9rq27_A3McxYXArNyJQs
+    short-id: '!!str 0a381e1fa219'
+  server: fr.sbrf-cdn342.ru
+  servername: dropbox.com
+  tls: false
+  type: vless
+  uuid: 8619e4c1-0984-4dce-83e3-419e2d7f5079
 - name: 🇫🇷[openproxylist.com] trojan-F...
+  network: ws
   password: humanity
   port: 443
   server: www.calmlunch.com
+  sni: www.calmlunch.com
   type: trojan
   ws-opts:
-    path: '%2Fassignment'
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
