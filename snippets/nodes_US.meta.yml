@@ -181,28 +181,6 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '🇺🇸 北美地区 V2CROSS.COM #1'
-  network: none
-  port: '42507'
-  server: 23.138.148.47
-  tls: false
-  type: vmess
-  uuid: 4db07b13-6524-49d2-b432-1f312c0e9c7c
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国 CloudFlare节点
-  network: ws
-  port: '443'
-  server: cf.fovi.tk
-  tls: true
-  type: vmess
-  uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
-  ws-opts:
-    headers:
-      Host: foxpol.fovi.tk
-    path: /eisasqa
-- alterId: 0
-  cipher: auto
   name: 🇺🇸 美国 华盛顿Cogent通信公司
   network: none
   port: '443'
@@ -212,17 +190,13 @@ proxies:
   uuid: c63aa0a7-589b-4bc7-c10f-72cfda242fff
 - alterId: 0
   cipher: auto
-  name: '🇺🇸 美国 CloudFlare节点 #1'
-  network: ws
-  port: '8443'
-  server: t1.620720.xyz
-  tls: true
+  name: '🇺🇸 北美地区 V2CROSS.COM #1'
+  network: none
+  port: '42507'
+  server: 23.138.148.47
+  tls: false
   type: vmess
-  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-  ws-opts:
-    headers:
-      Host: t1.620720.xyz
-    path: /
+  uuid: 4db07b13-6524-49d2-b432-1f312c0e9c7c
 - name: 美国
   password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
   port: 2056
@@ -394,16 +368,27 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
-- name: 美国2|@ripaojiedian
-  network: tcp
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国 CloudFlare节点
+  network: ws
+  port: '443'
+  server: cf.fovi.tk
+  tls: true
+  type: vmess
+  uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
+  ws-opts:
+    headers:
+      Host: foxpol.fovi.tk
+    path: /eisasqa
+- name: 🇺🇸 美国2|@stairnode
   password: 381f2e86233720eacda26d50e9aa26da
   port: 1281
   server: 202.181.103.246
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 美国3|@ripaojiedian
-  network: tcp
+- name: 🇺🇸 美国3|@stairnode
   password: BxceQaOe
   port: 1112
   server: 18.177.146.37
@@ -568,17 +553,30 @@ proxies:
   skip-cert-verify: false
   sni: epge.muarua.filegear-sg.me
   type: trojan
-- name: 🇺🇸[openproxylist.com] vless-US
-  network: ws
-  port: 2095
-  server: 5.78.50.111
-  tls: false
-  type: vless
-  uuid: 7b71f04e-984f-4c59-8875-790ba512c56a
-  ws-opts:
-    path: '%2FthqUaEuuyteRBTrgg%40noforcedheaven'
+- name: 美国|@ripaojiedian
+  network: tcp
+  password: 381f2e86233720eacda26d50e9aa26da
+  port: 1281
+  server: 160.16.196.59
+  sni: www.nintendogames.net
+  type: trojan
+- name: 美国2|@ripaojiedian
+  network: tcp
+  password: 381f2e86233720eacda26d50e9aa26da
+  port: 1281
+  server: 160.16.63.16
+  sni: www.nintendogames.net
+  type: trojan
+- name: 美国3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 2173
+  server: 16.163.98.169
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - client-fingerprint: chrome
-  name: '🇺🇸[openproxylist.com] vless-US #1'
+  name: 🇺🇸[openproxylist.com] vless-US
   network: grpc
   port: 443
   server: all.tellmethetrue.shop
@@ -588,7 +586,7 @@ proxies:
   type: vless
   uuid: e4824193-4f54-453b-d037-88368e85ef0e
 - client-fingerprint: firefox
-  name: '🇺🇸[openproxylist.com] vless-US #2'
+  name: '🇺🇸[openproxylist.com] vless-US #1'
   network: tcp
   port: 443
   reality-opts:
@@ -599,7 +597,7 @@ proxies:
   tls: false
   type: vless
   uuid: aa497581-d3ac-4602-8512-7747ca016eac
-- name: '🇺🇸[openproxylist.com] vless-US #3'
+- name: '🇺🇸[openproxylist.com] vless-US #2'
   network: grpc
   port: 8880
   server: pqh29v3.globalfymain.com
@@ -616,17 +614,56 @@ proxies:
   tls: false
   type: vmess
   uuid: a6b99c05-8e0a-4f7e-bf7b-e4b9febb9589
-- name: '🇺🇸[openproxylist.com] vless-US #4'
+- name: '🇺🇸[openproxylist.com] vless-US #3'
   network: grpc
   port: 8880
   server: 40.160.4.20
   tls: false
   type: vless
   uuid: 6251f84e-9c02-4140-921c-6b47d394fb96
-- name: '🇺🇸[openproxylist.com] vless-US #5'
+- name: '🇺🇸[openproxylist.com] vless-US #4'
   network: grpc
   port: 8880
   server: 40.160.14.104
   tls: false
   type: vless
   uuid: 6251f84e-9c02-4140-921c-6b47d394fb96
+- name: US_speednode_0015
+  network: ws
+  password: ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0
+  port: 443
+  server: 64.181.227.82
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /Telegram🇨🇳WangCai2
+- name: US_speednode_0016
+  network: ws
+  password: 5a2c16f9
+  port: 2096
+  server: 135.84.73.238
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /TelegramU0001F1E8U0001F1F3WangCai2
+- name: US_speednode_0017
+  network: ws
+  password: 5a2c16f9
+  port: 2096
+  server: 135.84.73.238
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /Telegram🇨🇳WangCai2
