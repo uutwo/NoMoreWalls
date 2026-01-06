@@ -179,47 +179,26 @@ proxies:
   server: 108.165.216.155
   sni: bpb.my79801.com
   type: trojan
+- name: 🇺🇸 美国 华盛顿Cogent通信公司
+  password: .ie4rghJuMkcf0oF
+  port: 18509
+  server: 38.96.254.102
+  skip-cert-verify: false
+  sni: shoppingmall.electricbanana.click
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 美国 阿里云
-  network: none
-  port: 12056
-  server: 47.253.197.26
-  tls: false
+  name: 美国 CloudFlare节点
+  network: ws
+  port: 8443
+  server: t1.620720.xyz
+  tls: true
   type: vmess
-  uuid: dd7be7f1-38ff-45e6-f1e5-b20c2190f527
-- name: 美国
-  password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
-  port: 2056
-  server: lsj3.mangshe.xyz
-  skip-cert-verify: true
-  sni: lsj3.mangshe.xyz
-  tls: false
-  type: hysteria2
-- name: '美国 #1'
-  password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
-  port: 2056
-  server: mg1.mangshe.xyz
-  skip-cert-verify: true
-  sni: mg1.mangshe.xyz
-  tls: false
-  type: hysteria2
-- name: 美国2
-  password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
-  port: 2056
-  server: mg2.mangshe.xyz
-  skip-cert-verify: true
-  sni: mg2.mangshe.xyz
-  tls: false
-  type: hysteria2
-- name: US
-  password: peEduuHzbExjK7UQHzazXwqgA
-  port: 27704
-  server: 166.88.164.9
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: US_188
@@ -359,13 +338,6 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
-- name: 🇺🇸 美国 华盛顿Cogent通信公司
-  password: .ie4rghJuMkcf0oF
-  port: 18509
-  server: 38.96.254.102
-  skip-cert-verify: false
-  sni: shoppingmall.electricbanana.click
-  type: trojan
 - name: 美国|@ripaojiedian
   network: tcp
   password: 381f2e86233720eacda26d50e9aa26da
@@ -517,7 +489,7 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #3'
+  name: '🇺🇸[openproxylist.com] vless-US #1'
   network: tcp
   port: 8443
   reality-opts:
@@ -528,33 +500,36 @@ proxies:
   tls: false
   type: vless
   uuid: f28e6dc2-3d8b-000a-9de1-b7d32ee653c7
-- name: '🏳[openproxylist.com] vless- #2'
-  port: 8443
-  server: 87.242.100.82
-  tls: false
-  type: vless
-  uuid: f28e6dc2-3d8b-000a-9de1-b7d32ee653c7
-- name: '🏳[openproxylist.com] vless- #3'
-  port: 8443
-  server: 95.174.93.121
-  tls: false
-  type: vless
-  uuid: f28e6dc2-3d8b-000a-9de1-b7d32ee653c7
-- name: '🇺🇸[openproxylist.com] vless-US #4'
-  network: tcp
-  port: 4655
-  server: 138.197.234.185
-  tls: false
-  type: vless
-  uuid: 1602a406-a38e-4211-bbdc-3f75c890303d
-- name: '🇺🇸[openproxylist.com] vless-US #5'
+- name: '🇺🇸[openproxylist.com] vless-US #2'
   port: 1121
   server: us.sepshoping.de
   tls: false
   type: vless
   uuid: f90b7a19-0b71-44b6-b95b-baab85af4d51
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #3'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: WvNaAxI0W__qfUKbtysH4IwF155YENlv3PG6crCmPkA
+  server: vk.ookcdn.ru
+  servername: vk.ookcdn.ru
+  tls: false
+  type: vless
+  uuid: eb162ab1-a006-4931-b1b3-8fc88a22b10e
+- client-fingerprint: chrome
+  name: '🇺🇸[openproxylist.com] vless-US #4'
+  network: grpc
+  port: 443
+  server: all.tellmethetrue.shop
+  servername: pqh41v3.carwashipdir.shop
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
 - client-fingerprint: firefox
-  name: '🇺🇸[openproxylist.com] vless-US #6'
+  name: '🇺🇸[openproxylist.com] vless-US #5'
   network: tcp
   port: 443
   reality-opts:
@@ -565,7 +540,7 @@ proxies:
   tls: false
   type: vless
   uuid: aa497581-d3ac-4602-8512-7747ca016eac
-- name: '🇺🇸[openproxylist.com] vless-US #7'
+- name: '🇺🇸[openproxylist.com] vless-US #6'
   network: grpc
   port: 8880
   server: pqh29v3.globalfymain.com
