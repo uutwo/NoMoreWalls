@@ -181,6 +181,26 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
+  name: 美国 CloudFlare节点
+  network: ws
+  port: 8443
+  server: c7.620720.xyz
+  tls: true
+  type: vmess
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  ws-opts:
+    headers:
+      Host: c7.620720.xyz
+    path: /
+- name: 🇺🇸 美国 华盛顿Cogent通信公司
+  password: .ie4rghJuMkcf0oF
+  port: 18509
+  server: 38.96.254.102
+  skip-cert-verify: false
+  sni: shoppingmall.electricbanana.click
+  type: trojan
+- alterId: 0
+  cipher: auto
   name: US_188
   network: none
   port: '27502'
@@ -318,15 +338,6 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 北美地区 V2CROSS.COM
-  network: none
-  port: '42507'
-  server: 23.138.148.47
-  tls: false
-  type: vmess
-  uuid: 4db07b13-6524-49d2-b432-1f312c0e9c7c
 - name: 美国|@ripaojiedian
   network: tcp
   password: 381f2e86233720eacda26d50e9aa26da
@@ -342,6 +353,14 @@ proxies:
   server: 160.16.116.227
   skip-cert-verify: false
   sni: www.nintendogames.net
+  type: trojan
+- name: 美国3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 3127
+  server: 43.199.160.78
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
   type: trojan
 - name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #16'
   password: 5a2c16f9
@@ -405,45 +424,64 @@ proxies:
   skip-cert-verify: false
   sni: snippets.kkii.eu.org
   type: trojan
-- name: 🇺🇸[openproxylist.com] vless-US
+- client-fingerprint: chrome
+  name: 🇺🇸[openproxylist.com] vless-US
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: '!!str 868419504747f6de'
+  server: us2.krasivogame.ru
+  servername: us2.krasivogame.ru
+  tls: false
+  type: vless
+  uuid: 854eea7a-c834-4f62-9e17-ae63d1086f36
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: '!!str 31'
+  server: us01-gmn-vlr01.tcp-reset-club.net
+  servername: hls-svod.itunes.apple.com
+  tls: false
+  type: vless
+  uuid: 98895157-4ded-4eeb-a22c-058ed62bdac3
+- name: '🇺🇸[openproxylist.com] vless-US #2'
   network: grpc
   port: 2095
   server: 5.78.48.77
   tls: false
   type: vless
   uuid: b2ce47d7-f8dc-4fcf-8d51-de4c235a7c40
-- name: '🇺🇸[openproxylist.com] vless-US #1'
+- name: '🇺🇸[openproxylist.com] vless-US #3'
+  network: tcp
+  port: 4655
+  server: 138.197.234.185
+  tls: false
+  type: vless
+  uuid: 1602a406-a38e-4211-bbdc-3f75c890303d
+- name: '🇺🇸[openproxylist.com] vless-US #4'
+  network: tcp
   port: 1121
   server: us.sepshoping.de
   tls: false
   type: vless
   uuid: f90b7a19-0b71-44b6-b95b-baab85af4d51
+  ws-opts:
+    headers:
+      Host: skyroom.online%2Cgharar.ir%2Cigap.net
 - client-fingerprint: chrome
-  name: '🇺🇸[openproxylist.com] vless-US #2'
-  network: grpc
-  port: 443
-  server: all.tellmethetrue.shop
-  servername: pqh41v3.carwashipdir.shop
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- client-fingerprint: firefox
-  name: '🇺🇸[openproxylist.com] vless-US #3'
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #5'
   network: tcp
   port: 443
   reality-opts:
-    public-key: 1_viA0ySJICqaFUpADZ4ZTBfntNMYvRJIVHCWVNdNCA
-    short-id: '!!str 4969fd2d5085d535'
-  server: 62.60.176.189
-  servername: tgju.org
+    public-key: WvNaAxI0W__qfUKbtysH4IwF155YENlv3PG6crCmPkA
+  server: vk.ookcdn.ru
+  servername: vk.ookcdn.ru
   tls: false
   type: vless
-  uuid: aa497581-d3ac-4602-8512-7747ca016eac
-- name: '🇺🇸[openproxylist.com] vless-US #4'
-  network: grpc
-  port: 8880
-  server: pqh29v3.globalfymain.com
-  tls: false
-  type: vless
-  uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
+  uuid: eb162ab1-a006-4931-b1b3-8fc88a22b10e
