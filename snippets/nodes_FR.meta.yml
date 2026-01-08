@@ -45,8 +45,16 @@ proxies:
   skip-cert-verify: true
   sni: fr.test3.net
   type: trojan
+- name: 🇫🇷[openproxylist.com] vless-FR
+  port: 2087
+  server: 188.114.98.224
+  tls: false
+  type: vless
+  uuid: 8443822d-6b68-4af2-d096-c03207ed880d
+  ws-opts:
+    path: '%2Frahh'
 - client-fingerprint: chrome
-  name: 🇫🇷[openproxylist.com] vless-FR
+  name: '🇫🇷[openproxylist.com] vless-FR #1'
   network: tcp
   port: 18785
   reality-opts:
@@ -77,27 +85,11 @@ proxies:
   tls: false
   type: vmess
   uuid: 9e91d19a-c73f-4276-adbc-b337c374259c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
-  network: tcp
-  port: 4443
-  reality-opts:
-    public-key: 5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE
-    short-id: '!!str aa7e96542880027a'
-  server: 94.131.118.117
-  servername: github.com
+- name: '🇫🇷[openproxylist.com] vless-FR #2'
+  port: 80
+  server: france-paris.hostinger.kcartik-vps.com
   tls: false
   type: vless
-  uuid: 146ea0d5-f02d-4f72-9665-04be2df345d1
-- name: 🇫🇷[openproxylist.com] trojan-F...
-  network: ws
-  password: humanity
-  port: 443
-  server: www.calmlunch.com
-  sni: www.calmlunch.com
-  type: trojan
+  uuid: b5920b52-504c-4835-978c-fbc4110d5840
   ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
+    path: '%2Fvless'
