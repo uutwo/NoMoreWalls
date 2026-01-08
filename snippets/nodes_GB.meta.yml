@@ -25,31 +25,14 @@ proxies:
   port: 443
   server: 140.238.88.47
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇬🇧 英国 V2CROSS.COM #1'
-  network: tcp
-  port: '180'
-  server: 82.198.246.97
-  servername: 4120-BE04-13ef56096989.457.PP.ua
-  skip-cert-verify: false
+- name: 🇬🇧[openproxylist.com] vless-GB
+  network: ws
+  port: 80
+  server: 151.101.194.219
   tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  xudp: true
-- alpn:
-  - h3
-  congestion-controller: bbr
-  disable-sni: false
-  name: 英国-001 |783KB/s|GPT
-  password: d9812081-7f61-456d-9340-a1fb8dfd603b
-  port: 55024
-  reduce-rtt: false
-  request-timeout: 0
-  server: 132.145.68.142
-  sni: lundun2.nezhasu.com
-  type: tuic
-  udp: true
-  udp-relay-mode: native
-  uuid: d9812081-7f61-456d-9340-a1fb8dfd603b
+  type: vless
+  uuid: 08c7f096-d057-4d53-82fd-c739d372887b
+  ws-opts:
+    headers:
+      Host: switf.global.ssl.fastly.net
+    path: /?ed=1024
