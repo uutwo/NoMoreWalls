@@ -45,6 +45,30 @@ proxies:
   skip-cert-verify: true
   sni: fr.test3.net
   type: trojan
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  client-fingerprint: chrome
+  down: 55 Mbps
+  name: 法国-001 |1.0MB/s
+  port: 26691
+  protocol: udp
+  server: 62.210.196.68
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  udp: true
+  up: 11 Mbps
+- name: 法国-002 |5.3MB/s|GPT⁺|YT-FR|NF|...
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.47.106.22
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
 - name: 🇫🇷[openproxylist.com] vless-FR
   port: 2087
   server: 188.114.98.224
@@ -66,36 +90,13 @@ proxies:
   tls: false
   type: vless
   uuid: f2d993db-9079-4741-7888-4b2a1b7c82c4
-- client-fingerprint: chrome
-  name: '🇫🇷[openproxylist.com] vless-FR #2'
-  network: tcp
-  port: 18785
-  reality-opts:
-    public-key: EXkoU7Bd75su8Eev14mgg_s2lRu9HIifqNhho48aJRo
-    short-id: '!!str 090cdf82fdab'
-  server: 37.59.217.227
-  servername: fonts.googleapis.com
-  tls: false
-  type: vless
-  uuid: 33f7e344-fd50-4b65-a035-d339e58055f3
-- name: '🇫🇷[openproxylist.com] vless-FR #3'
+- name: 🇫🇷[openproxylist.com] vless-FR...
   network: tcp
   port: 4881
   server: 2k.taptop.shop
   tls: false
   type: vless
   uuid: a9171965-cda0-461f-a6f2-a57069c875a3
-- name: '🇫🇷[openproxylist.com] vless-FR #4'
-  network: ws
-  port: 80
-  server: france.streamvault-premium.site
-  tls: false
-  type: vless
-  uuid: 0a49a5cb-526c-471d-b08e-1a52d52ee635
-  ws-opts:
-    headers:
-      Host: france.streamvault-premium.site
-    path: /vless
 - alterId: 0
   cipher: auto
   name: 🇫🇷[openproxylist.com] vmess-FR
