@@ -1894,18 +1894,45 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 美国 科罗拉多州NTT(美国)通信公司
-  network: none
-  port: '34128'
-  server: 216.167.26.220
-  tls: false
+  name: 🇺🇸 美国 CloudFlare节点
+  network: ws
+  port: '443'
+  server: sy4.620720.xyz
+  tls: true
   type: vmess
-  uuid: 4145ec2a-bc61-4d72-bfd5-f9ffbdf66c28
-- name: 香港+电讯盈科有限公司
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  ws-opts:
+    headers:
+      Host: sy4.620720.xyz
+    path: /
+- name: 🇭🇰[openproxylist.com] trojan-H...
+  network: tcp
   password: BxceQaOe
   port: 443
-  server: 58.152.46.60
-  sni: t.me%25252Fripaojiedian
+  server: 58.152.30.149
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵[openproxylist.com] vmess-JP
+  network: ws
+  port: '443'
+  server: tokyo01.zgjok.com
+  servername: tokyo01.zgjok.com
+  tls: true
+  type: vmess
+  uuid: e6d5d668-2091-41d9-9bff-df0a1c5107ec
+  ws-opts:
+    headers:
+      Host: tokyo01.zgjok.com
+    path: /
+- name: 台湾省台中市+中华电信
+  password: 843bcd0b-f2ab-482f-8262-6d09cf97f4b8
+  port: 31102
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
   type: trojan
 - name: 🇺🇸 _US_美国_2
   password: er668
@@ -2071,19 +2098,6 @@ proxies:
     path: /vmessws
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 美国 CloudFlare节点
-  network: ws
-  port: '443'
-  server: sy4.620720.xyz
-  tls: true
-  type: vmess
-  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-  ws-opts:
-    headers:
-      Host: sy4.620720.xyz
-    path: /
-- alterId: 0
-  cipher: auto
   name: 🇺🇸 VMESS-未知>美国-NF解锁自制剧-ChatGPT...
   network: ws
   port: '2083'
@@ -2143,6 +2157,15 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
+  name: 🇺🇸 美国 科罗拉多州NTT(美国)通信公司
+  network: none
+  port: '34128'
+  server: 216.167.26.220
+  tls: false
+  type: vmess
+  uuid: 4145ec2a-bc61-4d72-bfd5-f9ffbdf66c28
+- alterId: 0
+  cipher: auto
   name: '@𝑽2_𝑴𝑶𝑫_𝑺𝑯𝑶𝑷 - 🇨🇦 ⚡ | #1'
   network: ws
   port: '8080'
@@ -2161,14 +2184,6 @@ proxies:
   server: 112.118.116.123
   skip-cert-verify: false
   sni: www.nintendogames.net
-  type: trojan
-- name: 🇭🇰[openproxylist.com] trojan-H...
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 58.152.30.149
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
   type: trojan
 - name: 日本|@ripaojiedian
   network: tcp
@@ -2207,7 +2222,7 @@ proxies:
   password: 61d8077bfb174e171b8283f155a555ad
   port: 3076
   server: 160.16.72.33
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡3|@ripaojiedian
@@ -2297,11 +2312,6 @@ proxies:
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: 🇫🇷[openproxylist.com] trojan-F...
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.39.131.176
-  type: trojan
 - name: 🇳🇿[openproxylist.com] trojan-N...
   network: tcp
   password: tSk5LQoJr7F.WnRsUM4hT
@@ -2311,7 +2321,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 🏳[openproxylist.com] vmess-
+  name: 🇺🇸[openproxylist.com] vmess-US
   network: tcp
   port: '42899'
   server: 47.251.91.241
@@ -2319,20 +2329,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 0925b355-2bcd-4eae-9720-d2709e4f7e36
-- alterId: 0
-  cipher: auto
-  name: 🇧🇬[openproxylist.com] vmess-BG
-  network: ws
-  port: '8080'
-  server: zula.ir
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: nasnet-146198086.iranpress.co
-    path: /nasnet/cdn
 - alterId: 0
   cipher: auto
   name: 🇭🇰[openproxylist.com] vmess-HK
