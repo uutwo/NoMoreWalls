@@ -157,12 +157,19 @@ proxies:
   server: 108.165.216.155
   sni: bpb.my79801.com
   type: trojan
-- name: 美国+华盛顿Cogent通信公司
-  password: .ie4rghJuMkcf0oF
-  port: 18509
-  server: 38.96.254.102
-  sni: shoppingmall.electricbanana.click
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 美国 CloudFlare节点
+  network: ws
+  port: '8080'
+  server: zula.ir
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: nasnet-511952424.mcitel.co
+    path: /nasnet/cdn?ed=2560
 - name: 🇺🇸 _US_美国_2
   password: er668
   port: 443
@@ -299,23 +306,11 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国 CloudFlare节点
-  network: ws
-  port: '8080'
-  server: zula.ir
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: nasnet-511952424.mcitel.co
-    path: /nasnet/cdn?ed=2560
-- name: 🇺🇸 美国|@stairnode
+- name: 美国|@ripaojiedian
+  network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
-  port: 1281
-  server: 160.16.87.174
+  port: 5076
+  server: 160.16.57.238
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -327,10 +322,11 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 🇺🇸 美国3|@stairnode
+- name: 美国3|@ripaojiedian
+  network: tcp
   password: BxceQaOe
   port: 4569
-  server: 43.198.110.101
+  server: 43.199.60.168
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -348,13 +344,6 @@ proxies:
   skip-cert-verify: false
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #5'
-  password: f272b771-49f1-48f0-8ac4-ab7cd1a5c343
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  type: trojan
 - name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #7'
   password: 843bcd0b-f2ab-482f-8262-6d09cf97f4b8
   port: 31102
@@ -365,6 +354,13 @@ proxies:
 - name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #10'
   password: 91dd6cb4-3f5a-4bb0-8968-b398607fc487
   port: 35502
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #11'
+  password: db86510f-8f0e-4e0e-9534-746dd8e4d07e
+  port: 31102
   server: green2.cdntencentmusic.com
   skip-cert-verify: false
   sni: green2.cdntencentmusic.com
@@ -460,33 +456,9 @@ proxies:
   skip-cert-verify: false
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: 美国|@ripaojiedian
-  network: tcp
-  password: 61d8077bfb174e171b8283f155a555ad
-  port: 5076
-  server: 160.16.57.238
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 4569
-  server: 43.199.60.168
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
-  network: tcp
-  port: '34128'
-  server: 216.167.26.220
-  tls: false
-  type: vmess
-  uuid: 4145ec2a-bc61-4d72-bfd5-f9ffbdf66c28
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #1'
   network: tcp
   port: '42899'
   server: 47.251.91.241
