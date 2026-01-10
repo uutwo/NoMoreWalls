@@ -5,6 +5,41 @@ proxies:
   port: 443
   server: 184.168.127.50
   type: trojan
+- name: 新加坡-001 |2.3MB/s
+  port: 10808
+  server: 213.35.126.34
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 新加坡-002 |9.4MB/s|GPT⁺|YT-SG|NF...
+  network: tcp
+  port: 25863
+  reality-opts:
+    public-key: LLou1BsPSrrNXOJOb7-YZ159F_MAdrTSmP8loWG6GhE
+  server: 146.190.89.69
+  servername: aws.amazon.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 58f206da-752d-4750-a2ac-b72d0cab8032
+  xudp: true
+- cipher: rc4-md5
+  name: 新加坡-003 |3.0MB/s|GPT⁺|NF
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.227.45
+  type: ss
+- auth: d82321fd-df52-42e9-98a9-7b379310c361
+  name: 新加坡-004
+  password: d82321fd-df52-42e9-98a9-7b379310c361
+  port: 8080
+  server: 103.190.179.55
+  skip-cert-verify: false
+  sni: sg12.352343.cc
+  type: hysteria2
+  udp: true
 - name: 新加坡|@ripaojiedian
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
@@ -33,20 +68,5 @@ proxies:
   password: 61d8077bfb174e171b8283f155a555ad
   port: 3076
   server: 160.16.72.33
-  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬[openproxylist.com] vmess-SG
-  network: ws
-  port: '80'
-  server: 150.109.11.193
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b7118dcc-a234-4784-e487-4064c2920808
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
