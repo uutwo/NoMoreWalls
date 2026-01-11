@@ -181,7 +181,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 美国加利福尼亚州洛杉矶 FREEBEST数据中心
+  name: '美国加利福尼亚州洛杉矶 FREEBEST数据中心 #2'
   network: none
   port: 24004
   server: 156.233.232.192
@@ -190,17 +190,22 @@ proxies:
   uuid: 582fcb35-20a0-452c-e179-4c759c62c494
 - alterId: 0
   cipher: auto
-  name: 美国 CloudFlare节点
-  network: ws
-  port: 443
-  server: sy4.620720.xyz
-  tls: true
+  name: '美国加利福尼亚州洛杉矶 FREEBEST数据中心 #1'
+  network: none
+  port: 44329
+  server: 156.233.232.192
+  tls: false
   type: vmess
-  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  uuid: 1ba1fb56-e235-419e-c193-1c291adad4a7
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国加利福尼亚州洛杉矶 FREEBEST数据中心 #2'
+  network: none
+  port: '44329'
+  server: 156.233.232.177
+  tls: false
+  type: vmess
+  uuid: 1ba1fb56-e235-419e-c193-1c291adad4a7
 - name: 🇺🇸 _US_美国_2
   password: er668
   port: 443
@@ -337,13 +342,15 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
-- name: 🇺🇸 美国 华盛顿Cogent通信公司
-  password: .ie4rghJuMkcf0oF
-  port: 18509
-  server: 38.96.254.102
-  skip-cert-verify: false
-  sni: shoppingmall.electricbanana.click
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国加利福尼亚州洛杉矶 FREEBEST数据中心
+  network: none
+  port: '24004'
+  server: 156.233.232.177
+  tls: false
+  type: vmess
+  uuid: 582fcb35-20a0-452c-e179-4c759c62c494
 - name: 美国|@ripaojiedian
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
@@ -368,53 +375,10 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #5'
-  password: fe6eae40-94da-4c80-9f23-5e3d4402d52b
-  port: 31101
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #7'
-  network: tcp
-  port: '30833'
-  server: v33.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #10'
-  password: f272b771-49f1-48f0-8ac4-ab7cd1a5c343
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green2.cdntencentmusic.com
-  type: trojan
-- name: '🇪🇸 西班牙(mibei77.com 米贝节点分享) #3'
-  password: trojan
-  port: 2087
-  server: 109.234.211.66
-  skip-cert-verify: false
-  sni: store.timimi.dpdns.org
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #47'
-  network: ws
-  port: '443'
-  server: aio.unlimited.biz.id
-  tls: true
-  type: vmess
-  uuid: f282b878-8711-45a1-8c69-5564172123c1
-  ws-opts:
-    headers:
-      Host: aio.unlimited.biz.id
-    path: /aioproxybot/129.150.49.58-18650
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: grpc
-  name: '🇺🇸[openproxylist.com] vless-US #5'
+  name: '🇺🇸[openproxylist.com] vless-US #7'
   network: grpc
   port: 22955
   reality-opts:
@@ -425,8 +389,47 @@ proxies:
   tls: false
   type: vless
   uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: _TIQSjojgpdSBoSVXuQjFSqIdPeXjQIQkM5cFSv6Gnc
+    short-id: '!!str 9613864900a8f12d'
+  server: us2.miyazono-kaori.com
+  servername: download-porter.hoyoverse.com
+  tls: false
+  type: vless
+  uuid: 582f44d4-4511-402c-a0b7-b5771a2a5c9d
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 9mkPUmY5M-N81bSDf3lP9X3JnH25l4SfeUTnlwV04Eo
+    short-id: '!!str d77c4204'
+  server: us1.miyazono-kaori.com
+  servername: download-porter.hoyoverse.com
+  tls: false
+  type: vless
+  uuid: 582f44d4-4511-402c-a0b7-b5771a2a5c9d
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #3'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: WC40e9QWe66kR6Zb1qkk9OeJBDQivKzqBczp9natHjk
+    short-id: '!!str 8b0b8e33a9ae3e'
+  server: us11.miyazono-kaori.com
+  servername: download-porter.hoyoverse.com
+  tls: false
+  type: vless
+  uuid: 582f44d4-4511-402c-a0b7-b5771a2a5c9d
 - client-fingerprint: chrome
-  name: '🇺🇸[openproxylist.com] vless-US #6'
+  name: '🇺🇸[openproxylist.com] vless-US #8'
   network: grpc
   port: 8880
   server: 45.82.251.98
@@ -434,13 +437,3 @@ proxies:
   tls: false
   type: vless
   uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸[openproxylist.com] vmess-US
-  network: tcp
-  port: '42899'
-  server: 47.251.91.241
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0925b355-2bcd-4eae-9720-d2709e4f7e36
