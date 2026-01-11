@@ -45,28 +45,63 @@ proxies:
   server: 20.89.130.227
   sni: fscus.fscloud123456789.com
   type: trojan
-- name: 日本|@ripaojiedian
-  network: tcp
+- client-fingerprint: chrome
+  encryption: none
+  name: 日本-001 |3.2MB/s
+  network: ws
+  port: 42841
+  server: 43.165.190.11
+  servername: mot.luyuju.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 00000000-0000-4000-8000-000000000000
+  ws-opts:
+    headers:
+      Host: mot.luyuju.dpdns.org
+    path: /@Marisa_kristi
+  xudp: true
+- name: 🇯🇵 日本|@stairnode
   password: BxceQaOe
   port: 2762
   server: 3.112.71.26
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 日本2|@ripaojiedian
-  network: tcp
+- name: 🇯🇵 日本2|@stairnode
   password: 61d8077bfb174e171b8283f155a555ad
   port: 4006
   server: 153.121.51.29
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 日本3|@ripaojiedian
-  network: tcp
+- name: 🇯🇵 日本3|@stairnode
   password: 61d8077bfb174e171b8283f155a555ad
   port: 1933
   server: 153.121.51.29
   skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 日本|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 2053
+  server: 43.207.232.58
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 日本2|@ripaojiedian
+  network: tcp
+  password: 61d8077bfb174e171b8283f155a555ad
+  port: 1933
+  server: 153.121.38.213
+  sni: www.nintendogames.net
+  type: trojan
+- name: 日本3|@ripaojiedian
+  network: tcp
+  password: 61d8077bfb174e171b8283f155a555ad
+  port: 1933
+  server: 160.16.130.66
   sni: www.nintendogames.net
   type: trojan
 - client-fingerprint: chrome
@@ -93,9 +128,16 @@ proxies:
   tls: false
   type: vless
   uuid: 7a30b7fc-4868-4d1d-84b8-16a3d3df0139
-- name: '🇯🇵[openproxylist.com] vless-JP #2'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇯🇵[openproxylist.com] vless-JP #2'
+  network: tcp
   port: 443
+  reality-opts:
+    public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
+    short-id: '!!str 1ed136481e0ede74'
   server: japan.geodema.network
+  servername: japan.geodema.network
   tls: false
   type: vless
   uuid: a11ab9c5-4155-430b-9efc-7a7122531382
