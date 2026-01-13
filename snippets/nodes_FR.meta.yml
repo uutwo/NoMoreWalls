@@ -46,13 +46,17 @@ proxies:
   sni: fr.test3.net
   type: trojan
 - name: 🇫🇷[openproxylist.com] vless-FR
-  port: 2087
+  network: ws
+  port: 8443
   server: 188.114.98.224
-  tls: false
+  servername: vds.rahedarro.com
+  tls: true
   type: vless
-  uuid: 8443822d-6b68-4af2-d096-c03207ed880d
+  uuid: 25aa9915-8061-4a5d-8fd8-b26c222d5b4c
   ws-opts:
-    path: '%2Frahh'
+    headers:
+      Host: vds.rahedarro.com
+    path: '%2Fblock'
 - alterId: 0
   cipher: auto
   name: 🇫🇷[openproxylist.com] vmess-FR
