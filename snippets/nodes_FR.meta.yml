@@ -45,7 +45,21 @@ proxies:
   skip-cert-verify: true
   sni: fr.test3.net
   type: trojan
-- name: 🇫🇷[openproxylist.com] vless-FR
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: UpdateService
+  name: 🇫🇷[openproxylist.com] vless-FR
+  network: grpc
+  port: 2083
+  reality-opts:
+    public-key: J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ
+    short-id: '!!str 6da16b1335651b38'
+  server: 213.176.73.206
+  servername: apple.com
+  tls: false
+  type: vless
+  uuid: 95abaefc-7861-417a-81b7-166cb788ce1a
+- name: '🇫🇷[openproxylist.com] vless-FR #1'
   port: 2087
   server: 188.114.98.224
   tls: false
@@ -63,3 +77,13 @@ proxies:
   tls: false
   type: vmess
   uuid: ec4c349c-b3c6-4cff-be63-01eaad1dc098
+- alterId: 0
+  cipher: auto
+  name: '🇫🇷[openproxylist.com] vmess-FR #1'
+  network: tcp
+  port: '45653'
+  server: 94.232.247.165
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9e91d19a-c73f-4276-adbc-b337c374259c
