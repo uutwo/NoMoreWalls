@@ -21,32 +21,12 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- name: 🇸🇬 新加坡|@stairnode
-  password: 4843e94d205f3893f588255a591abe94
-  port: 3901
-  server: 160.16.150.76
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 🇸🇬[openproxylist.com] trojan-S...
-  password: 4843e94d205f3893f588255a591abe94
-  port: 544
-  server: 160.16.150.76
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 🇸🇬 新加坡3|@stairnode
-  password: BxceQaOe
-  port: 804
-  server: 52.196.143.203
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
 - name: 新加坡|@ripaojiedian
   network: tcp
   password: 4843e94d205f3893f588255a591abe94
   port: 3901
   server: 153.121.38.213
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡2|@ripaojiedian
@@ -65,20 +45,34 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 🇸🇬[openproxylist.com] vless-SG
+- alterId: 32
+  cipher: auto
+  name: 🇸🇬 新加坡(mibei77.com 米贝节点分享)
   network: ws
-  port: 11441
-  server: 167.172.83.42
-  tls: false
-  type: vless
-  uuid: d7a84b8a-66c3-4b9c-b1b7-d576058c489f
+  port: '443'
+  server: vc.fly.dev
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
   ws-opts:
     headers:
-      Host: zoom.us
-    path: '%2FFREE%20By%20Tharuwa%20%280767597317%29'
+      Host: vc.fly.dev
+    path: /vc
+- name: 🇸🇬[openproxylist.com] trojan-S...
+  password: 4843e94d205f3893f588255a591abe94
+  port: 544
+  server: 160.16.132.38
+  sni: www.nintendogames.net
+  type: trojan
 - name: '🇸🇬[openproxylist.com] trojan-S... #1'
   password: 4843e94d205f3893f588255a591abe94
+  port: 3076
+  server: 160.16.87.174
+  sni: www.nintendogames.net
+  type: trojan
+- name: '🇸🇬[openproxylist.com] trojan-S... #2'
+  password: 4843e94d205f3893f588255a591abe94
   port: 3901
-  server: 160.16.124.17
+  server: 160.16.150.76
   sni: www.nintendogames.net
   type: trojan
