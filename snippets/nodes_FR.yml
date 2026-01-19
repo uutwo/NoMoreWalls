@@ -45,6 +45,15 @@ proxies:
   skip-cert-verify: true
   sni: fr.test3.net
   type: trojan
+- alpn:
+  - http/1.1
+  name: 🇫🇷[openproxylist.com] trojan-F...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.37.5.99
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇫🇷[openproxylist.com] vmess-FR
@@ -65,3 +74,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 9e91d19a-c73f-4276-adbc-b337c374259c
+- name: '🇫🇷[openproxylist.com] trojan-F... #1'
+  network: ws
+  password: humanity
+  port: 443
+  server: www.calmlunch.com
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
