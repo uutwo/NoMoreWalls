@@ -1,69 +1,34 @@
 proxies:
-- name: 🇫🇷FR(AzadNet.t.me) (1)
-  network: tcp
-  password: 364d3aa0-58fc-11ed-b738-225401db9d57
-  port: 443
-  server: 54.36.191.211
-  skip-cert-verify: true
-  sni: ebank.bmi.ir
-  type: trojan
-- name: 🇫🇷FR(AzadNet.t.me) (2)
-  network: tcp
-  password: 94cf288d-f764-4ce9-a547-a7228144f056
-  port: 2053
-  server: 162.19.212.24
-  sni: gerxyz.bm04.xyz
-  type: trojan
-- name: 🇫🇷FR(AzadNet.t.me) (3)
-  network: tcp
-  password: 973ed2e0-c4d8-4737-a093-71629148086d
-  port: 443
-  server: 51.77.213.197
-  skip-cert-verify: true
-  sni: frt2.sshocean.net
-  type: trojan
-- name: 🇫🇷FR(AzadNet.t.me) (4)
-  network: tcp
-  password: b8808043-6566-4923-9195-e66bfb553d57
-  port: 443
-  server: 51.38.99.96
-  skip-cert-verify: true
-  sni: ba24.ir
-  type: trojan
-- name: 🇫🇷FR(AzadNet.t.me) (5)
-  network: tcp
-  password: e4f288433b
-  port: 443
-  server: 54.36.173.159
-  sni: pol1.connecton.surf
-  type: trojan
-- name: 🇫🇷FR(AzadNet.t.me) (6)
-  network: tcp
-  password: e30dbfd0-f15a-11ed-9080-1239d0255272
-  port: 443
-  server: 51.159.59.186
-  skip-cert-verify: true
-  sni: fr.test3.net
-  type: trojan
 - alpn:
   - http/1.1
   name: 🇫🇷[openproxylist.com] trojan-F...
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 13.37.5.99
+  server: 13.36.202.63
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 🇫🇷[openproxylist.com] vless-FR
+- alterId: 0
+  cipher: auto
+  name: 🇫🇷[openproxylist.com] vmess-FR
   network: ws
-  port: 22224
-  server: 13.39.44.23
-  servername: trojan.burgerip.co.uk
+  port: '2087'
+  server: chatgpt.com
+  servername: vip.amirlajani.top
   tls: true
-  type: vless
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  type: vmess
+  uuid: ef3173ab-1fef-4d01-be92-4f6afdd4e0d3
   ws-opts:
-    path: '%2Ftelegram-channel-vlessconfig'
+    headers:
+      Host: vip.amirlajani.top
+    path: /
+- name: 🇫🇷[openproxylist.com] vless-FR
+  network: tcp
+  port: 2024
+  server: 85.133.204.131
+  tls: false
+  type: vless
+  uuid: efdd92c0-c32d-4039-a564-374abaa5d8ce
 - name: '🇫🇷[openproxylist.com] vless-FR #1'
   port: 2087
   server: 188.114.98.224
@@ -74,7 +39,7 @@ proxies:
     path: '%2Frahh'
 - alterId: 0
   cipher: auto
-  name: 🇫🇷[openproxylist.com] vmess-FR
+  name: '🇫🇷[openproxylist.com] vmess-FR #1'
   network: tcp
   port: '443'
   server: 217.69.5.32
@@ -82,16 +47,14 @@ proxies:
   tls: false
   type: vmess
   uuid: ec4c349c-b3c6-4cff-be63-01eaad1dc098
-- alterId: 0
-  cipher: auto
-  name: '🇫🇷[openproxylist.com] vmess-FR #1'
-  network: tcp
-  port: '45653'
-  server: 94.232.247.165
-  servername: ''
+- name: '🇫🇷[openproxylist.com] vless-FR #2'
+  port: 80
+  server: france-paris.hostinger.kcartik-vps.com
   tls: false
-  type: vmess
-  uuid: 9e91d19a-c73f-4276-adbc-b337c374259c
+  type: vless
+  uuid: b5920b52-504c-4835-978c-fbc4110d5840
+  ws-opts:
+    path: '%2Fvless'
 - name: '🇫🇷[openproxylist.com] trojan-F... #1'
   network: ws
   password: humanity
@@ -103,3 +66,36 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: /assignment
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇫🇷[openproxylist.com] vless-FR #3'
+  network: tcp
+  port: 4443
+  reality-opts:
+    public-key: 5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE
+    short-id: '!!str aa7e96542880027a'
+  server: 86.104.74.158
+  servername: github.com
+  tls: false
+  type: vless
+  uuid: 3f688b2a-373a-4be1-846d-b159404b73b2
+- name: '🇫🇷[openproxylist.com] vless-FR #4'
+  network: ws
+  port: 2053
+  server: platform.wise.com
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F'
+- name: '🇫🇷[openproxylist.com] vless-FR #5'
+  port: 2053
+  server: platform.wise.com
+  tls: false
+  type: vless
+  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
+  ws-opts:
+    path: '%2F'
