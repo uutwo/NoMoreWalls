@@ -45,17 +45,23 @@ proxies:
   skip-cert-verify: true
   sni: fr.test3.net
   type: trojan
-- name: 🇫🇷[openproxylist.com] vless-FR
-  network: ws
-  port: 22224
+- alpn:
+  - http/1.1
+  name: 🇫🇷[openproxylist.com] trojan-F...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
   server: 13.36.202.63
-  servername: trojan.burgerip.co.uk
-  tls: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 🇫🇷[openproxylist.com] vless-FR
+  network: tcp
+  port: 2024
+  server: 85.133.204.131
+  tls: false
   type: vless
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    path: '%2Ftelegram-channel-vlessconfig'
-- name: '🇫🇷[openproxylist.com] vless-FR #2'
+  uuid: efdd92c0-c32d-4039-a564-374abaa5d8ce
+- name: '🇫🇷[openproxylist.com] vless-FR #1'
   port: 2087
   server: 188.114.98.224
   tls: false
