@@ -45,34 +45,48 @@ proxies:
   skip-cert-verify: true
   sni: fr.test3.net
   type: trojan
+- name: 🇫🇷[openproxylist.com] vless-FR
+  network: ws
+  port: 22224
+  server: 13.36.35.251
+  servername: trojan.burgerip.co.uk
+  tls: true
+  type: vless
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    path: '%2Ftelegram-channel-vlessconfig'
+- name: '🇫🇷[openproxylist.com] vless-FR #1'
+  network: ws
+  port: 443
+  server: chatgpt.com
+  servername: zitel.digikala-aparat-zula.com
+  tls: true
+  type: vless
+  uuid: ff188c84-49a9-4cc6-b3f7-4f8bdc7571ec
+  ws-opts:
+    headers:
+      Host: zitel.digikala-aparat-zula.com
+    path: '%2Fadmin'
 - name: 🇫🇷[openproxylist.com] trojan-F...
   network: ws
   password: humanity
   port: 443
-  server: chatgpt.com
+  server: 104.18.32.47
+  skip-cert-verify: false
   sni: www.gossipglove.com
   type: trojan
   ws-opts:
     headers:
       Host: www.gossipglove.com
     path: '%2Fassignment'
-- alpn:
-  - http/1.1
-  name: '🇫🇷[openproxylist.com] trojan-F... #1'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.37.174.80
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 🇫🇷[openproxylist.com] vless-FR
+- name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: tcp
   port: 2024
   server: 85.133.204.131
   tls: false
   type: vless
   uuid: efdd92c0-c32d-4039-a564-374abaa5d8ce
-- name: '🇫🇷[openproxylist.com] vless-FR #1'
+- name: '🇫🇷[openproxylist.com] vless-FR #3'
   port: 2087
   server: 188.114.98.224
   tls: false
@@ -100,10 +114,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 9e91d19a-c73f-4276-adbc-b337c374259c
-- name: '🇫🇷[openproxylist.com] trojan-F... #2'
-  password: humanity
-  port: 443
-  server: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    path: /assignment
