@@ -118,16 +118,31 @@ proxies:
   network: ws
   port: 8443
   server: chatgpt.com
+  servername: gptch.mangose.blog
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 0373320f-1f74-4fb2-88a7-19efde6b2e43
+  ws-opts:
+    headers:
+      Host: gptch.mangose.blog
+    path: '%2FIpV'
+- client-fingerprint: chrome
+  name: '🇩🇪[openproxylist.com] vless-DE #1'
+  network: ws
+  port: 8443
+  server: chatgpt.com
   servername: masoud.hellorobber2.ir
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: c8c00765-8a0e-4d83-8a78-44a973ff53b0
   ws-opts:
     headers:
       Host: masoud.hellorobber2.ir
-    path: /masoud
+    path: '%2Fmasoud'
 - client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #1'
+  name: '🇩🇪[openproxylist.com] vless-DE #2'
   network: ws
   port: 443
   server: chatgpt.com
@@ -139,7 +154,7 @@ proxies:
     headers:
       Host: kosmos.darkmod.sbs
     path: '%2F'
-- name: '🇩🇪[openproxylist.com] vless-DE #2'
+- name: '🇩🇪[openproxylist.com] vless-DE #3'
   port: 443
   server: 104.18.32.47
   tls: true
@@ -149,7 +164,7 @@ proxies:
   - http/1.1
   client-fingerprint: chrome
   flow: ''
-  name: '🇩🇪[openproxylist.com] vless-DE #3'
+  name: '🇩🇪[openproxylist.com] vless-DE #4'
   network: ws
   port: 443
   server: chatgpt.com
@@ -162,21 +177,6 @@ proxies:
     headers:
       Host: dns10.tehranpastor.ir
     path: /ObXDTpNArb71SzIL
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #4'
-  network: ws
-  port: 443
-  server: 104.18.32.47
-  servername: CDN.vites.ir
-  tls: true
-  type: vless
-  uuid: 2e3acaf8-dcc6-4ead-c758-9c7794721295
-  ws-opts:
-    headers:
-      Host: CDN.vites.ir
-    path: '%2FeyJqdW5rIjoidDZLaDRBMWhpIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ'
 - name: '🇩🇪[openproxylist.com] vless-DE #5'
   network: ws
   port: 443
@@ -193,29 +193,6 @@ proxies:
   name: '🇩🇪[openproxylist.com] vless-DE #6'
   network: ws
   port: 443
-  server: chatgpt.com
-  servername: x1.x-smm.com
-  tls: true
-  type: vless
-  uuid: ce136796-8369-4afc-da15-d3577f3bdc55
-  ws-opts:
-    headers:
-      Host: x1.x-smm.com
-    path: '%2Fapi%2Fv1%2Fchat'
-- name: '🇩🇪[openproxylist.com] vless-DE #7'
-  network: ws
-  port: 22224
-  server: 63.179.77.17
-  servername: trojan.burgerip.co.uk
-  tls: true
-  type: vless
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    path: '%2Ftelegram-channel-vlessconfig'
-- client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #8'
-  network: ws
-  port: 443
   server: 104.18.32.47
   servername: a.uaesweden.dpdns.org
   skip-cert-verify: true
@@ -226,23 +203,20 @@ proxies:
     headers:
       Host: a.uaesweden.dpdns.org
     path: /?ed=2560
+- name: '🇩🇪[openproxylist.com] vless-DE #7'
+  network: ws
+  port: 8080
+  server: operator.chatgpt.com
+  tls: false
+  type: vless
+  uuid: e3e47430-46f4-40ea-b754-5fc30cc997af
+  ws-opts:
+    headers:
+      Host: mx5.mmd8563.ir
+    path: /
 - alterId: 0
   cipher: auto
   name: 🇩🇪[openproxylist.com] vmess-DE
-  network: ws
-  port: '443'
-  server: 104.18.32.47
-  servername: dump.nootkasound7.com
-  tls: true
-  type: vmess
-  uuid: 52c7f779-2cbc-4ec9-d4eb-7f62964e4a4e
-  ws-opts:
-    headers:
-      Host: dump.nootkasound7.com
-    path: /ABC
-- alterId: 0
-  cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #1'
   network: ws
   port: '443'
   server: chatgpt.com
@@ -255,22 +229,19 @@ proxies:
       Host: dl3.hupcloud.com
     path: ?ed=2048
 - alpn:
+  - h2
   - http/1.1
   client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #9'
-  network: ws
+  name: '🇩🇪[openproxylist.com] vless-DE #8'
+  network: grpc
   port: 443
-  server: chatgpt.com
-  servername: dgf.addressprovider.lat
+  server: 104.18.32.47
+  servername: www.operatorstcp.com
   tls: true
   type: vless
-  uuid: 27bbde38-b656-439c-8f26-7868189bf0ec
-  ws-opts:
-    headers:
-      Host: dgf.addressprovider.lat
-    path: '%2F'
+  uuid: cd8afba9-d3c1-4907-bfcc-c7ebf61d7750
 - client-fingerprint: firefox
-  name: '🇩🇪[openproxylist.com] vless-DE #10'
+  name: '🇩🇪[openproxylist.com] vless-DE #9'
   network: ws
   port: 8443
   server: ip-range.coin.name.ng
@@ -282,6 +253,36 @@ proxies:
     headers:
       Host: hzr27.sepiol.name.NG
     path: '%2F'
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇩🇪[openproxylist.com] vless-DE #10'
+  network: ws
+  port: 443
+  server: 104.18.32.47
+  servername: de.mrtech.com.tr
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: a4b96207-61fd-4ab3-aa1d-1e26fb02dc3b
+  ws-opts:
+    headers:
+      Host: de.mrtech.com.tr
+    path: '%2F'
+- alterId: 0
+  cipher: auto
+  name: '🇩🇪[openproxylist.com] vmess-DE #1'
+  network: ws
+  port: '443'
+  server: chatgpt.com
+  servername: de3-cdn.nigtgemshopnew.org
+  tls: true
+  type: vmess
+  uuid: 3721724d-4140-4551-bd47-307ce3ea837e
+  ws-opts:
+    headers:
+      Host: de3-cdn.nigtgemshopnew.org
+    path: /eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
 - client-fingerprint: chrome
   name: '🇩🇪[openproxylist.com] vless-DE #11'
   network: ws
@@ -304,21 +305,11 @@ proxies:
   uuid: 038a50c3-229c-41ef-a7ef-7abb504e4f33
 - name: '🇩🇪[openproxylist.com] vless-DE #13'
   network: tcp
-  port: 47014
-  server: 84.252.138.149
+  port: 2584
+  server: 94.141.161.83
   tls: false
   type: vless
-  uuid: 95abaefc-7861-417a-81b7-166cb788ce1a
-- name: '🇩🇪[openproxylist.com] vless-DE #14'
-  network: tcp
-  port: 7945
-  server: de23.ariyanln.com
-  tls: false
-  type: vless
-  uuid: 7d12bf9a-63d6-4989-a27b-c9ddb2d6c0b6
-  ws-opts:
-    headers:
-      Host: mmg.whatsapp.net
+  uuid: 038a50c3-229c-41ef-a7ef-7abb504e4f33
 - alterId: 0
   cipher: auto
   name: '🇩🇪[openproxylist.com] vmess-DE #2'
@@ -335,7 +326,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: grpc
-  name: '🇩🇪[openproxylist.com] vless-DE #20'
+  name: '🇩🇪[openproxylist.com] vless-DE #18'
   network: grpc
   port: 22955
   reality-opts:
@@ -349,7 +340,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: grpc
-  name: '🇩🇪[openproxylist.com] vless-DE #21'
+  name: 🇦🇹[openproxylist.com] vless-AT
   network: grpc
   port: 22955
   reality-opts:
@@ -360,34 +351,37 @@ proxies:
   tls: false
   type: vless
   uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-- name: '🇩🇪[openproxylist.com] vless-DE #22'
+- name: '🇩🇪[openproxylist.com] vless-DE #20'
+  network: tcp
   port: 8443
   server: ab.fxgoldensignals.com
   tls: false
   type: vless
   uuid: 636728f4-c7b1-47a3-91b0-243b258f997e
-- name: '🇩🇪[openproxylist.com] vless-DE #23'
-  network: grpc
+  ws-opts:
+    headers:
+      Host: alibaba.com
+- name: '🇩🇪[openproxylist.com] vless-DE #21'
   port: 443
   server: 91.107.148.79
   tls: false
   type: vless
   uuid: 7b148add-4438-426e-a583-50f11e7bd0e4
-- name: '🇩🇪[openproxylist.com] vless-DE #24'
+- name: '🇩🇪[openproxylist.com] vless-DE #22'
   network: tcp
   port: 50904
   server: doprax.fxgoldensignals.com
   tls: false
   type: vless
   uuid: d4795cd9-cd7b-4cea-edfb-20cdcca5837b
-- name: '🇩🇪[openproxylist.com] vless-DE #25'
+- name: '🇩🇪[openproxylist.com] vless-DE #23'
   network: grpc
   port: 41647
   server: 91.107.173.252
   tls: false
   type: vless
   uuid: e50fa46f-20c6-4c0d-fa0e-d9ffd92df36f
-- name: '🇩🇪[openproxylist.com] vless-DE #26'
+- name: '🇩🇪[openproxylist.com] vless-DE #24'
   port: 443
   server: 188.114.98.224
   tls: false
@@ -398,7 +392,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #27'
+  name: '🇩🇪[openproxylist.com] vless-DE #25'
   network: ws
   port: 8443
   server: 104.18.32.47
