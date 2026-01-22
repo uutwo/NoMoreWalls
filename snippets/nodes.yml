@@ -1892,56 +1892,26 @@ proxies:
   server: 104.18.23.136
   sni: de1.test3.net
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 香港 电讯盈科有限公司
-  network: tcp
-  port: '30812'
-  server: v12.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: '🇬🇧 GB英国(mibei77.com 米贝节点分享) #23'
-  network: tcp
-  port: '180'
-  server: 82.198.246.97
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: '香港 电讯盈科有限公司 #1'
-  network: ''
-  port: 30812
-  server: v12.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇨🇦 加拿大 V2CROSS.COM
-  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-  port: 10889
-  server: 167.17.185.172
-  skip-cert-verify: false
-  sni: web.max.ru
-  type: trojan
 - name: 🇳🇴[openproxylist.com] trojan-N...
   network: tcp
   password: wp9IsiY82uQhcmgNC1eoBM
   port: 12420
   server: 80.173.231.254
+  skip-cert-verify: true
   sni: www.semanticstaplegun.click
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '英国 V2CROSS.COM #1'
-  network: ''
-  port: 180
-  server: 82.198.246.97
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- name: 香港+电讯盈科有限公司
+  password: BxceQaOe
+  port: 443
+  server: 58.152.53.219
+  skip-cert-verify: false
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: '西班牙+V2CROSS.COM #1'
+  password: a5inYFE=JGV89+hjxIqgDp1tcWBd6
+  port: 26279
+  server: 80.173.230.196
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇩🇪 VMESS-未知>德国-NF解锁印度地区非自制剧-Ch...
@@ -2124,12 +2094,37 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 香港 电讯盈科有限公司
+  network: tcp
+  port: '30812'
+  server: v12.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: '🇩🇪[openproxylist.com] trojan-D... #1'
   password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
   port: 20994
   server: 45.32.158.138
   skip-cert-verify: false
   sni: ads.x5.ru
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '🇬🇧 GB英国(mibei77.com 米贝节点分享) #23'
+  network: tcp
+  port: '180'
+  server: 82.198.246.97
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- name: 🇨🇦 加拿大 V2CROSS.COM
+  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+  port: 10889
+  server: 167.17.185.172
+  skip-cert-verify: false
+  sni: web.max.ru
   type: trojan
 - alterId: 0
   cipher: auto
@@ -2302,6 +2297,20 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
+  name: 🇫🇷[openproxylist.com] vmess-FR
+  network: ws
+  port: '443'
+  server: 162.159.152.4
+  servername: amirzaplus.alsahoarvi.cfd
+  tls: true
+  type: vmess
+  uuid: e510d718-26b8-4b0e-e768-600dd8db7321
+  ws-opts:
+    headers:
+      Host: amirzaplus.alsahoarvi.cfd
+    path: /
+- alterId: 0
+  cipher: auto
   name: 🇭🇰[openproxylist.com] vmess-HK
   network: tcp
   port: '43425'
@@ -2311,19 +2320,10 @@ proxies:
   uuid: aa10afb0-f913-4343-9c69-bc797fcba2db
 - alpn:
   - http/1.1
-  name: 🇫🇷[openproxylist.com] trojan-F...
+  name: 🇩🇪[openproxylist.com] trojan-D...
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 51.44.124.96
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 🇩🇪[openproxylist.com] trojan-D...
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22223
   server: 18.196.155.223
   sni: trojan.burgerip.co.uk
   type: trojan
@@ -2357,20 +2357,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 🇳🇱[openproxylist.com] vmess-NL
-  network: ws
-  port: '2096'
-  server: chatgpt.com
-  servername: cdd.farcadezero.ir
-  tls: true
-  type: vmess
-  uuid: ed51d4c9-d0bd-43f4-a019-f8ae6c03a9cc
-  ws-opts:
-    headers:
-      Host: cdd.farcadezero.ir
-    path: ''
-- alterId: 0
-  cipher: auto
   name: '🇩🇪[openproxylist.com] vmess-DE #1'
   network: ws
   port: '443'
@@ -2383,17 +2369,18 @@ proxies:
     headers:
       Host: dump.nootkasound7.com
     path: /ABC
-- name: '🇫🇷[openproxylist.com] trojan-F... #1'
+- name: 🇫🇷[openproxylist.com] trojan-F...
   network: ws
   password: humanity
   port: 443
   server: chatgpt.com
+  skip-cert-verify: false
   sni: www.gossipglove.com
   type: trojan
   ws-opts:
     headers:
       Host: www.gossipglove.com
-    path: '%2Fassignment'
+    path: /assignment
 - alterId: 0
   cipher: auto
   name: 🇬🇧[openproxylist.com] vmess-GB
@@ -2409,17 +2396,18 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 🇿🇦[openproxylist.com] vmess-ZA
+  name: 🇳🇱[openproxylist.com] vmess-NL
   network: ws
   port: '443'
-  server: boogeyman.chomba.tech
+  server: chatgpt.com
+  servername: neWtEst32.ultImatEman.Ir
   tls: true
   type: vmess
-  uuid: 9b6a87ed-9949-49f6-ab6f-cf9ab15177d7
+  uuid: ba046366-b13c-42d0-80ba-b4b89c6b1909
   ws-opts:
     headers:
-      Host: boogeyman.chomba.tech
-    path: /vmess
+      Host: newtest32.ultimateman.ir
+    path: /eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
 - alterId: 0
   cipher: auto
   name: '🇭🇰[openproxylist.com] vmess-HK #1'
@@ -2537,7 +2525,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 🇫🇷[openproxylist.com] vmess-FR
+  name: '🇫🇷[openproxylist.com] vmess-FR #1'
   network: tcp
   port: '443'
   server: 217.69.5.32
@@ -2547,7 +2535,7 @@ proxies:
   uuid: ec4c349c-b3c6-4cff-be63-01eaad1dc098
 - alterId: 0
   cipher: auto
-  name: '🇫🇷[openproxylist.com] vmess-FR #1'
+  name: '🇫🇷[openproxylist.com] vmess-FR #2'
   network: tcp
   port: '45653'
   server: 94.232.247.165

@@ -45,16 +45,31 @@ proxies:
   skip-cert-verify: true
   sni: fr.test3.net
   type: trojan
-- alpn:
-  - http/1.1
-  name: 🇫🇷[openproxylist.com] trojan-F...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.44.124.96
-  sni: trojan.burgerip.co.uk
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇫🇷[openproxylist.com] vmess-FR
+  network: ws
+  port: '443'
+  server: 162.159.152.4
+  servername: amirzaplus.alsahoarvi.cfd
+  tls: true
+  type: vmess
+  uuid: e510d718-26b8-4b0e-e768-600dd8db7321
+  ws-opts:
+    headers:
+      Host: amirzaplus.alsahoarvi.cfd
+    path: /
 - name: 🇫🇷[openproxylist.com] vless-FR
+  network: ws
+  port: 22224
+  server: 51.44.124.96
+  servername: trojan.burgerip.co.uk
+  tls: true
+  type: vless
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    path: '%2Ftelegram-channel-vlessconfig'
+- name: '🇫🇷[openproxylist.com] vless-FR #1'
   network: ws
   port: 443
   server: chatgpt.com
@@ -66,25 +81,19 @@ proxies:
     headers:
       Host: zitel.digikala-aparat-zula.com
     path: '%2Fadmin'
-- name: '🇫🇷[openproxylist.com] trojan-F... #1'
+- name: 🇫🇷[openproxylist.com] trojan-F...
   network: ws
   password: humanity
   port: 443
   server: chatgpt.com
+  skip-cert-verify: false
   sni: www.gossipglove.com
   type: trojan
   ws-opts:
     headers:
       Host: www.gossipglove.com
-    path: '%2Fassignment'
-- name: '🇫🇷[openproxylist.com] vless-FR #1'
-  network: tcp
-  port: 2024
-  server: 85.133.204.131
-  tls: false
-  type: vless
-  uuid: efdd92c0-c32d-4039-a564-374abaa5d8ce
-- name: '🇫🇷[openproxylist.com] vless-FR #2'
+    path: /assignment
+- name: '🇫🇷[openproxylist.com] vless-FR #3'
   port: 2087
   server: 188.114.98.224
   tls: false
@@ -94,7 +103,7 @@ proxies:
     path: '%2Frahh'
 - alterId: 0
   cipher: auto
-  name: 🇫🇷[openproxylist.com] vmess-FR
+  name: '🇫🇷[openproxylist.com] vmess-FR #1'
   network: tcp
   port: '443'
   server: 217.69.5.32
@@ -104,7 +113,7 @@ proxies:
   uuid: ec4c349c-b3c6-4cff-be63-01eaad1dc098
 - alterId: 0
   cipher: auto
-  name: '🇫🇷[openproxylist.com] vmess-FR #1'
+  name: '🇫🇷[openproxylist.com] vmess-FR #2'
   network: tcp
   port: '45653'
   server: 94.232.247.165
