@@ -48,7 +48,7 @@ proxies:
 - name: 🇫🇷[openproxylist.com] vless-FR
   network: ws
   port: 22224
-  server: 15.236.185.25
+  server: 15.236.163.176
   servername: trojan.burgerip.co.uk
   tls: true
   type: vless
@@ -56,6 +56,16 @@ proxies:
   ws-opts:
     path: '%2Ftelegram-channel-vlessconfig'
 - name: '🇫🇷[openproxylist.com] vless-FR #1'
+  network: ws
+  port: 22224
+  server: 15.236.185.25
+  servername: trojan.burgerip.co.uk
+  tls: true
+  type: vless
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    path: '%2Ftelegram-channel-vlessconfig'
+- name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: ws
   port: 443
   server: chatgpt.com
@@ -72,27 +82,13 @@ proxies:
   password: humanity
   port: 443
   server: chatgpt.com
+  skip-cert-verify: false
   sni: www.gossipglove.com
   type: trojan
   ws-opts:
     headers:
       Host: www.gossipglove.com
-    path: '%2Fassignment'
-- name: '🇫🇷[openproxylist.com] vless-FR #2'
-  network: tcp
-  port: 2024
-  server: 85.133.204.131
-  tls: false
-  type: vless
-  uuid: efdd92c0-c32d-4039-a564-374abaa5d8ce
-- name: '🇫🇷[openproxylist.com] vless-FR #3'
-  port: 2087
-  server: 188.114.98.224
-  tls: false
-  type: vless
-  uuid: 8443822d-6b68-4af2-d096-c03207ed880d
-  ws-opts:
-    path: '%2Frahh'
+    path: /assignment
 - alterId: 0
   cipher: auto
   name: 🇫🇷[openproxylist.com] vmess-FR
