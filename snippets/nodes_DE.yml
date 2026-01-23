@@ -89,8 +89,17 @@ proxies:
   network: tcp
   password: telegram-id-directvpn
   port: 22223
-  server: 3.65.79.146
+  server: 35.157.182.40
   sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '🇩🇪[openproxylist.com] trojan-D... #1'
+  password: fe793ec6-b7a9-4f30-b623-d3c9ca6eb37c
+  port: 19233
+  server: ssr-de-152.rosena.ggff.net
+  skip-cert-verify: true
+  sni: ssr-de-152.rosena.ggff.net
   type: trojan
 - alterId: 0
   cipher: auto
@@ -106,7 +115,7 @@ proxies:
     headers:
       Host: dl3.hupcloud.com
     path: ?ed=2048
-- name: '🇩🇪[openproxylist.com] trojan-D... #1'
+- name: '🇩🇪[openproxylist.com] trojan-D... #2'
   network: ws
   password: TurbooServer
   port: 80
@@ -134,34 +143,12 @@ proxies:
   cipher: auto
   name: '🇩🇪[openproxylist.com] vmess-DE #3'
   network: ws
-  port: '8080'
-  server: 172.67.204.84
-  servername: ''
-  tls: false
+  port: '443'
+  server: frankfurt01.zgjok.com
+  tls: true
   type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
+  uuid: b71579b1-6593-426d-90ac-f002fa96ade1
   ws-opts:
     headers:
-      Host: nasnet-511952424.mcitel.co
-    path: /nasnet/cdn
-- name: '🇩🇪[openproxylist.com] trojan-D... #3'
-  network: ws
-  password: xtA6WF92Itmhm9jfvXUH1MDVL
-  port: 443
-  server: free-de-3.undef.network
-  sni: free-de-3.undef.network
-  type: trojan
-  ws-opts:
-    headers:
-      Host: free-de-3.undef.network
-    path: '%2Ff2fc2a1f'
-- alterId: 0
-  cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #4'
-  network: tcp
-  port: '550'
-  server: 162.19.248.238
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ede27a79-b039-490b-932c-495de4b68880
+      Host: frankfurt01.zgjok.com
+    path: /
