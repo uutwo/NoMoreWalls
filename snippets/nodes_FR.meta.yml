@@ -77,6 +77,7 @@ proxies:
   port: 2222
   server: 45.154.96.51
   servername: tcp1.speedx3net.ir
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: a37f349e-04b0-4967-a9e5-fb35083fa353
@@ -104,17 +105,19 @@ proxies:
     headers:
       Host: www.gossipglove.com
     path: /assignment
-- name: '🇫🇷[openproxylist.com] vless-FR #3'
-  port: 2087
-  server: 188.114.98.224
-  tls: false
-  type: vless
-  uuid: 8443822d-6b68-4af2-d096-c03207ed880d
-  ws-opts:
-    path: '%2Frahh'
 - alterId: 0
   cipher: auto
   name: 🇫🇷[openproxylist.com] vmess-FR
+  network: tcp
+  port: '443'
+  server: 217.69.5.32
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ec4c349c-b3c6-4cff-be63-01eaad1dc098
+- alterId: 0
+  cipher: auto
+  name: '🇫🇷[openproxylist.com] vmess-FR #1'
   network: tcp
   port: '45653'
   server: 94.232.247.165
@@ -122,24 +125,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 9e91d19a-c73f-4276-adbc-b337c374259c
-- name: FR_speednode_0006
-  password: telegram-id-directvpn
-  port: 22223
-  server: 51.44.124.96
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: FR_speednode_0007
-  port: 443
-  reality-opts:
-    public-key: 9ajY_OBOn5CCPnCJTPjxg6J3IWE8uJYAiWQvG9CBGjU
-    short-id: '!!str 00684d2eae2cdd16'
-  server: 185.126.67.73
-  servername: apple.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 95abaefc-7861-417a-81b7-166cb788ce1a
