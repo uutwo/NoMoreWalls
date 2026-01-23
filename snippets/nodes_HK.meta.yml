@@ -68,7 +68,8 @@ proxies:
   server: 20.255.74.102
   sni: jp.iamnotagoodman.com
   type: trojan
-- name: 香港+特别行政区
+- flow: ''
+  name: '香港+特别行政区 #1'
   network: tcp
   port: 1140
   server: 203.189.233.201
@@ -109,12 +110,17 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 🇭🇰[openproxylist.com] vmess-HK
-  network: tcp
-  port: '43425'
-  server: 8.210.248.133
-  tls: false
+  network: ws
+  port: '443'
+  server: n1761214910.74qxv.top
+  servername: n1761214910.74qxv.top
+  tls: true
   type: vmess
-  uuid: aa10afb0-f913-4343-9c69-bc797fcba2db
+  uuid: 011c4670-cdde-44fb-b9be-8a1e27af26c9
+  ws-opts:
+    headers:
+      Host: n1761214910.74qxv.top
+    path: /
 - name: 🇭🇰[openproxylist.com] trojan-H...
   password: BxceQaOe
   port: 443
@@ -140,20 +146,6 @@ proxies:
   name: '🇭🇰[openproxylist.com] vmess-HK #2'
   network: ws
   port: '443'
-  server: n1761214904.wpg27.xyz
-  servername: n1761214904.wpg27.xyz
-  tls: true
-  type: vmess
-  uuid: 7f6f64ae-3778-434c-adfc-95cb67ee8b73
-  ws-opts:
-    headers:
-      Host: n1761214904.wpg27.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #3'
-  network: ws
-  port: '443'
   server: n1761214918.74qxv.top
   tls: true
   type: vmess
@@ -161,4 +153,18 @@ proxies:
   ws-opts:
     headers:
       Host: n1761214918.74qxv.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰[openproxylist.com] vmess-HK #3'
+  network: ws
+  port: 443
+  server: n1761214908.wpg27.xyz
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 3514a93f-bb26-4442-8f99-971b2ff3388a
+  ws-opts:
+    headers:
+      Host: n1761214908.wpg27.xyz
     path: /
