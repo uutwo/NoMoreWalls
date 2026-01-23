@@ -45,9 +45,15 @@ proxies:
   skip-cert-verify: true
   sni: fr.test3.net
   type: trojan
+- name: 🇫🇷[openproxylist.com] vless-FR
+  port: 42541
+  server: france.novaads.shop
+  tls: false
+  type: vless
+  uuid: 5a76fdef-97a2-43cd-93b9-e9646a7d6a6c
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇫🇷[openproxylist.com] vless-FR
+  name: '🇫🇷[openproxylist.com] vless-FR #1'
   network: tcp
   port: 443
   reality-opts:
@@ -58,16 +64,6 @@ proxies:
   tls: false
   type: vless
   uuid: 7e496ad4-bcbf-46e3-a1d7-f75778968a75
-- name: '🇫🇷[openproxylist.com] vless-FR #1'
-  network: ws
-  port: 22224
-  server: 13.37.69.223
-  servername: trojan.burgerip.co.uk
-  tls: true
-  type: vless
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    path: '%2Ftelegram-channel-vlessconfig'
 - alpn:
   - h2
   - http/1.1
