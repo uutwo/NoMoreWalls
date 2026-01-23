@@ -45,26 +45,32 @@ proxies:
   skip-cert-verify: true
   sni: fr.test3.net
   type: trojan
-- name: 🇫🇷[openproxylist.com] vless-FR
-  network: ws
-  port: 22224
-  server: 15.236.163.176
-  servername: trojan.burgerip.co.uk
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: fdvsdv
+  name: 🇫🇷[openproxylist.com] vless-FR
+  network: grpc
+  port: 2098
+  reality-opts:
+    public-key: JNcCRy0bfOEzzyqh1foTuuG9T8IvwiO8ApJu5FhVERs
+    short-id: '!!str 2665af94c7b25f90'
+  server: france.tzteam.online
+  servername: sourceforge.net
+  tls: false
+  type: vless
+  uuid: e017e0ab-08cf-49d1-8eba-2ef69393a89f
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🇫🇷[openproxylist.com] vless-FR #1'
+  network: tcp
+  port: 2222
+  server: 45.154.96.51
+  servername: tcp1.speedx3net.ir
   tls: true
   type: vless
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    path: '%2Ftelegram-channel-vlessconfig'
-- name: '🇫🇷[openproxylist.com] vless-FR #1'
-  network: ws
-  port: 22224
-  server: 15.236.185.25
-  servername: trojan.burgerip.co.uk
-  tls: true
-  type: vless
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    path: '%2Ftelegram-channel-vlessconfig'
+  uuid: a37f349e-04b0-4967-a9e5-fb35083fa353
 - name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: ws
   port: 443
@@ -82,10 +88,37 @@ proxies:
   password: humanity
   port: 443
   server: chatgpt.com
-  skip-cert-verify: false
   sni: www.gossipglove.com
   type: trojan
   ws-opts:
     headers:
       Host: www.gossipglove.com
-    path: /assignment
+    path: '%2Fassignment'
+- name: '🇫🇷[openproxylist.com] vless-FR #3'
+  port: 2087
+  server: 188.114.98.224
+  tls: false
+  type: vless
+  uuid: 8443822d-6b68-4af2-d096-c03207ed880d
+  ws-opts:
+    path: '%2Frahh'
+- alterId: 0
+  cipher: auto
+  name: 🇫🇷[openproxylist.com] vmess-FR
+  network: tcp
+  port: '443'
+  server: 217.69.5.32
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ec4c349c-b3c6-4cff-be63-01eaad1dc098
+- alterId: 0
+  cipher: auto
+  name: '🇫🇷[openproxylist.com] vmess-FR #1'
+  network: tcp
+  port: '45653'
+  server: 94.232.247.165
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9e91d19a-c73f-4276-adbc-b337c374259c
