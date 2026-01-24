@@ -25,15 +25,25 @@ proxies:
   port: 443
   server: 140.238.88.47
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB-82.38.31.208-36
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.208
-  type: ss
-- name: '🇬🇧[openproxylist.com] vless-GB #2'
+- alterId: 0
+  cipher: auto
+  name: 英国 V2CROSS.COM
+  network: tcp
+  port: '180'
+  server: 82.198.246.97
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇬🇧[openproxylist.com] vless-GB #3'
+  network: tcp
   port: 443
+  reality-opts:
+    public-key: -YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs
+    short-id: '!!str feedbacc'
   server: gb.fasti.win
+  servername: uk.fasti.win
   tls: false
   type: vless
   uuid: 3d0b6533-d3ba-4a0d-a46e-27c258ca5c3e
@@ -50,15 +60,27 @@ proxies:
   tls: false
   type: vless
   uuid: 8a56d7cc-e76b-48b0-a706-398f1019e3c9
-- client-fingerprint: chrome
-  name: '🇬🇧[openproxylist.com] vless-GB #3'
+- name: '🇬🇧[openproxylist.com] vless-GB #2'
   network: tcp
-  port: 443
-  reality-opts:
-    public-key: MyBYEHdiEqNf7Z7XscPwANWvXKTUIC3W4Sv2_tmRih0
-    short-id: '!!str d6afa855f8c4'
-  server: 146.19.130.156
-  servername: www.google.com
+  port: 42536
+  server: uk.aparat-movies-download.ir
   tls: false
   type: vless
-  uuid: a8ff17ff-011b-45ea-9ab2-36e38decee9b
+  uuid: bfcb732f-87ab-4879-bcb7-357c4129acb3
+  ws-opts:
+    headers:
+      Host: excoino.com
+    path: '%2F'
+- alterId: 0
+  cipher: auto
+  name: 🇬🇧[openproxylist.com] vmess-GB
+  network: ws
+  port: '443'
+  server: cf-proxy.202507.xyz
+  tls: true
+  type: vmess
+  uuid: fa8c811b-7bd3-4c04-b9dd-c701698f1efd
+  ws-opts:
+    headers:
+      Host: gb.202507.xyz
+    path: /
