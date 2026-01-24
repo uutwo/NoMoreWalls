@@ -45,6 +45,36 @@ proxies:
   skip-cert-verify: true
   sni: fr.test3.net
   type: trojan
+- name: 🇫🇷[openproxylist.com] vless-FR
+  network: tcp
+  port: 44032
+  server: nimbaha.mosti.ir
+  tls: false
+  type: vless
+  uuid: bdde92e0-3fd5-4ca1-a8fc-afe4ef4fb63b
+  ws-opts:
+    headers:
+      Host: myket.ir
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: xyz
+  name: '🇫🇷[openproxylist.com] vless-FR #1'
+  network: grpc
+  port: 19702
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: '!!str 6ba85179e30d4fc2'
+  server: sktr.berkeart.ir
+  servername: check-host.net
+  tls: false
+  type: vless
+  uuid: 1f3b130d-7d29-45d1-b5aa-adc5cd94a885
+- name: '🇫🇷[openproxylist.com] vless-FR #2'
+  port: 42542
+  server: fr.broadcasp.info
+  tls: false
+  type: vless
+  uuid: f56f35a9-1123-4fe9-b1db-be57fb9f95d4
 - alpn:
   - http/1.1
   name: 🇫🇷[openproxylist.com] trojan-F...
@@ -70,7 +100,7 @@ proxies:
     path: /gbt
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇫🇷[openproxylist.com] vless-FR
+  name: '🇫🇷[openproxylist.com] vless-FR #3'
   network: tcp
   port: 443
   reality-opts:
@@ -85,16 +115,15 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: firefox
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
+  name: '🇫🇷[openproxylist.com] vless-FR #4'
   network: tcp
   port: 2222
   server: 45.154.96.51
   servername: tcp1.speedx3net.ir
-  skip-cert-verify: false
   tls: true
   type: vless
   uuid: a37f349e-04b0-4967-a9e5-fb35083fa353
-- name: '🇫🇷[openproxylist.com] vless-FR #2'
+- name: '🇫🇷[openproxylist.com] vless-FR #5'
   network: ws
   port: 443
   server: zzula.ir
@@ -107,7 +136,18 @@ proxies:
     headers:
       Host: zitel.digikala-aparat-zula.com
     path: '%2Fadmin'
-- name: '🇫🇷[openproxylist.com] vless-FR #3'
+- name: '🇫🇷[openproxylist.com] trojan-F... #1'
+  network: ws
+  password: humanity
+  port: 443
+  server: chatgpt.com
+  sni: www.gossipglove.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.gossipglove.com
+    path: '%2Fassignment'
+- name: '🇫🇷[openproxylist.com] vless-FR #6'
   port: 2087
   server: 188.114.98.224
   tls: false
