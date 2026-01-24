@@ -45,21 +45,23 @@ proxies:
   skip-cert-verify: true
   sni: fr.test3.net
   type: trojan
-- name: 🇫🇷[openproxylist.com] trojan-F...
-  network: ws
-  password: humanity
-  port: 443
-  server: chatgpt.com
-  skip-cert-verify: false
-  sni: www.gossipglove.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.gossipglove.com
-    path: /assignment
 - alterId: 0
   cipher: auto
   name: 🇫🇷[openproxylist.com] vmess-FR
+  network: ws
+  port: '8443'
+  server: 162.159.152.4
+  servername: frsys.fl-dl.com
+  tls: true
+  type: vmess
+  uuid: 19e52bf4-1b7d-4bd4-ae66-6ca024436c17
+  ws-opts:
+    headers:
+      Host: frsys.fl-dl.com
+    path: /gbt
+- alterId: 0
+  cipher: auto
+  name: '🇫🇷[openproxylist.com] vmess-FR #1'
   network: tcp
   port: '443'
   server: 217.69.5.32
@@ -69,7 +71,7 @@ proxies:
   uuid: ec4c349c-b3c6-4cff-be63-01eaad1dc098
 - alterId: 0
   cipher: auto
-  name: '🇫🇷[openproxylist.com] vmess-FR #1'
+  name: '🇫🇷[openproxylist.com] vmess-FR #2'
   network: tcp
   port: '45653'
   server: 94.232.247.165
