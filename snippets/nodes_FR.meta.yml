@@ -49,8 +49,8 @@ proxies:
   - http/1.1
   name: 🇫🇷[openproxylist.com] trojan-F...
   network: tcp
-  password: telegram-id-directvpn
-  port: 22223
+  password: telegram-id-privatevpns
+  port: 22222
   server: 13.39.197.201
   sni: trojan.burgerip.co.uk
   type: trojan
@@ -73,23 +73,24 @@ proxies:
   type: vless
   uuid: 1f3b130d-7d29-45d1-b5aa-adc5cd94a885
 - name: '🇫🇷[openproxylist.com] vless-FR #2'
+  port: 42542
+  server: fr.broadcasp.info
+  tls: false
+  type: vless
+  uuid: f56f35a9-1123-4fe9-b1db-be57fb9f95d4
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇫🇷[openproxylist.com] vless-FR #3'
+  network: tcp
   port: 443
+  reality-opts:
+    public-key: hbtt7X9RxXWayUR5Yvff3kzLYQui7uB0KlliIjx68Xw
+    short-id: '!!str 857cf4b3'
   server: 185.10.18.130
+  servername: www.google.com
   tls: false
   type: vless
   uuid: 7e496ad4-bcbf-46e3-a1d7-f75778968a75
-- client-fingerprint: chrome
-  name: '🇫🇷[openproxylist.com] vless-FR #3'
-  network: tcp
-  port: 50511
-  reality-opts:
-    public-key: Mz0OqGiU1O1s9cYbJ94zcpdmUskGBAt-r1DKKKEDwFA
-    short-id: '!!str 732c5236630892f8'
-  server: 170.39.216.61
-  servername: refersion.com
-  tls: false
-  type: vless
-  uuid: 3bc9c90e-dd6c-400d-bfb0-1d06b13fe46c
 - alpn:
   - h2
   - http/1.1
