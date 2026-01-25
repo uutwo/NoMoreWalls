@@ -62,31 +62,18 @@ proxies:
   port: 443
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: '!!str 6ba85179e30d4fc2'
-  server: 138.124.79.3
-  servername: sun6-21.userapi.com
-  tls: false
-  type: vless
-  uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #2'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   server: 138.124.79.4
   servername: sun6-21.userapi.com
   tls: false
   type: vless
   uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
-- name: '🇫🇷[openproxylist.com] vless-FR #3'
+- name: '🇫🇷[openproxylist.com] vless-FR #2'
   port: 19702
   server: sktr.berkeart.ir
   tls: false
   type: vless
   uuid: 1f3b130d-7d29-45d1-b5aa-adc5cd94a885
-- name: '🇫🇷[openproxylist.com] vless-FR #4'
+- name: '🇫🇷[openproxylist.com] vless-FR #3'
   port: 42542
   server: fr.broadcasp.info
   tls: false
@@ -108,7 +95,7 @@ proxies:
     path: /gbt
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #5'
+  name: '🇫🇷[openproxylist.com] vless-FR #4'
   network: tcp
   port: 443
   reality-opts:
@@ -123,7 +110,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: firefox
-  name: '🇫🇷[openproxylist.com] vless-FR #6'
+  name: '🇫🇷[openproxylist.com] vless-FR #5'
   network: tcp
   port: 2222
   server: 45.154.96.51
@@ -131,11 +118,12 @@ proxies:
   tls: true
   type: vless
   uuid: a37f349e-04b0-4967-a9e5-fb35083fa353
-- name: '🇫🇷[openproxylist.com] vless-FR #7'
+- name: '🇫🇷[openproxylist.com] vless-FR #6'
   network: ws
   port: 443
   server: zzula.ir
   servername: zitel.digikala-aparat-zula.com
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: c249ca6f-1bde-479b-af96-da0e948a3800
@@ -157,7 +145,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: UpdateService
-  name: '🇫🇷[openproxylist.com] vless-FR #8'
+  name: '🇫🇷[openproxylist.com] vless-FR #7'
   network: grpc
   port: 2083
   reality-opts:
@@ -168,11 +156,15 @@ proxies:
   tls: false
   type: vless
   uuid: 95abaefc-7861-417a-81b7-166cb788ce1a
-- name: '🇫🇷[openproxylist.com] vless-FR #9'
+- name: '🇫🇷[openproxylist.com] vless-FR #8'
+  network: ws
   port: 2087
   server: 188.114.98.224
-  tls: false
+  servername: vds.rahedarro.com
+  tls: true
   type: vless
   uuid: 8443822d-6b68-4af2-d096-c03207ed880d
   ws-opts:
+    headers:
+      Host: vds.rahedarro.com
     path: '%2Frahh'

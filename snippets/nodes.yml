@@ -1892,42 +1892,36 @@ proxies:
   server: 104.18.23.136
   sni: de1.test3.net
   type: trojan
-- name: 西班牙+V2CROSS.COM
-  network: tcp
-  password: a5inYFE=JGV89+hjxIqgDp1tcWBd6
-  port: 26279
-  server: 80.173.230.196
-  type: trojan
-- name: 香港+电讯盈科有限公司
-  password: BxceQaOe
+- alterId: 0
+  cipher: auto
+  name: 美国 CloudFlare节点
+  network: ws
   port: 443
-  server: 58.152.25.130
-  sni: t.me%2Fripaojiedian
-  type: trojan
+  server: cf.090227.xyz
+  servername: sgal.dagrate.eu.org
+  tls: true
+  type: vmess
+  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+  ws-opts:
+    headers:
+      Host: sgal.dagrate.eu.org
+    path: /
 - name: 加拿大+V2CROSS.COM
-  network: tcp
   password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
   port: 10889
-  server: 167.17.185.228
-  skip-cert-verify: true
-  sni: web.max
+  server: 167.17.185.172
+  sni: web.max.ru
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 英国 V2CROSS.COM
+  name: 🇺🇸[openproxylist.com] vmess-US
   network: tcp
-  port: 180
-  server: 82.198.246.97
+  port: '110'
+  server: 216.75.145.237
+  servername: ''
   tls: false
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: 🇳🇴[openproxylist.com] trojan-N...
-  network: tcp
-  password: wp9IsiY82uQhcmgNC1eoBM
-  port: 12420
-  server: 80.173.231.254
-  sni: www.semanticstaplegun.click
-  type: trojan
+  uuid: a5a25715-1553-4586-949d-3bb0fb87cbcd
 - alterId: 0
   cipher: auto
   name: 中国 阿里云
@@ -1937,18 +1931,46 @@ proxies:
   tls: false
   type: vmess
   uuid: 6c82a994-b6ba-48ca-f2ed-11288fe4913b
-- name: 德国+黑森州法兰克福Choopa数据中心
-  password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
-  port: 20994
-  server: 45.32.158.138
-  sni: ads.x5.ru
+- name: 台湾省台中市+中华电信
+  password: 5c762006-ed60-4b35-b8fe-4520adeac906
+  port: 31102
+  server: green2.cdntencentmusic.com
+  sni: green2.cdntencentmusic.com
   type: trojan
-- name: 俄罗斯+V2CROSS.COM
-  password: ZblhWr0mqMakCPg.N
-  port: 36158
-  server: 212.193.18.144
-  sni: ya.ru
+- name: 🇭🇰 香港5|@ripaojiedian
+  password: BxceQaOe
+  port: 443
+  server: 219.76.135.98
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇬🇧[openproxylist.com] vmess-GB
+  network: ws
+  port: 443
+  server: cf-proxy.202507.xyz
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: fa8c811b-7bd3-4c04-b9dd-c701698f1efd
+  ws-opts:
+    headers:
+      Host: gb.202507.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 机场推荐:dafei.de 德国 09
+  network: ws
+  port: '8080'
+  server: 104.21.69.44
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: nasnet-511952424.mcitel.co
+    path: /nasnet/cdn
 - alterId: 0
   cipher: auto
   name: 🇩🇪 VMESS-未知>德国-NF解锁印度地区非自制剧-Ch...
@@ -2140,7 +2162,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 90be214d-048c-4ea2-a602-b8e4d4e51e36
-- name: '🇩🇪[openproxylist.com] trojan-D... #2'
+- name: '🇺🇸 美国 V2CROSS.COM #1'
   password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
   port: 20994
   server: 140.82.35.244
@@ -2198,13 +2220,6 @@ proxies:
   password: BxceQaOe
   port: 432
   server: 16.162.90.147
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 🇭🇰 香港5|@ripaojiedian
-  password: BxceQaOe
-  port: 443
-  server: 219.76.135.98
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -2271,19 +2286,6 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪 机场推荐:dafei.de 德国 09
-  network: ws
-  port: '8080'
-  server: 104.21.69.44
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: nasnet-511952424.mcitel.co
-    path: /nasnet/cdn
 - name: 香港3|@ripaojiedian
   network: tcp
   password: 869e9086806483ca4744a4cb0f3d6e16
@@ -2378,18 +2380,10 @@ proxies:
   - http/1.1
   name: 🇩🇪[openproxylist.com] trojan-D...
   network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
+  password: telegram-id-directvpn
+  port: 22223
   server: 18.198.0.30
   sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 🇹🇷[openproxylist.com] trojan-T...
-  network: tcp
-  password: nodes-b211f28a
-  port: 2083
-  server: node-tr-1.v2sv.top
-  skip-cert-verify: false
-  sni: node-tr-1.v2sv.top
   type: trojan
 - name: 🇫🇮[openproxylist.com] trojan-F...
   network: ws
@@ -2401,16 +2395,6 @@ proxies:
     headers:
       Host: turboo-server.online
     path: '%2Fed'
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸[openproxylist.com] vmess-US
-  network: tcp
-  port: '110'
-  server: 216.75.145.237
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a5a25715-1553-4586-949d-3bb0fb87cbcd
 - name: 🇭🇰[openproxylist.com] trojan-H...
   password: BxceQaOe
   port: 443
@@ -2446,30 +2430,18 @@ proxies:
     headers:
       Host: n1761214902.wpg27.xyz
     path: /
-- alterId: 0
-  cipher: auto
-  name: 🇰🇷[openproxylist.com] vmess-KR
-  network: ws
-  port: '2096'
-  server: dv4.789900.xyz
-  servername: dv4.789900.xyz
-  tls: true
-  type: vmess
-  uuid: 0c8f3e29-4ec9-4ba6-a6ef-4487873f5d05
-  ws-opts:
-    headers:
-      Host: dv4.789900.xyz
-    path: /0c8f3e29-4ec9-4ba6-a6ef-4487873f5d05-vm
 - name: 🇳🇱[openproxylist.com] trojan-N...
   network: ws
   password: humanity
   port: 443
-  server: www.multiplydose.com
+  server: 104.18.32.47
   skip-cert-verify: false
   sni: www.multiplydose.com
   type: trojan
   ws-opts:
-    path: /assignment
+    headers:
+      Host: www.multiplydose.com
+    path: '%2Fassignment'
 - alterId: 0
   cipher: auto
   name: '🇩🇪[openproxylist.com] vmess-DE #1'
@@ -2495,44 +2467,32 @@ proxies:
     headers:
       Host: www.gossipglove.com
     path: '%2Fassignment'
-- alterId: 0
-  cipher: auto
-  name: 🇬🇧[openproxylist.com] vmess-GB
-  network: ws
-  port: 443
-  server: cf-proxy.202507.xyz
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: fa8c811b-7bd3-4c04-b9dd-c701698f1efd
-  ws-opts:
-    headers:
-      Host: gb.202507.xyz
-    path: /
 - name: '🇩🇪[openproxylist.com] trojan-D... #1'
-  network: ws
   password: TurbooServer
   port: 80
   server: cdn.turbooserver.com
   type: trojan
   ws-opts:
-    headers:
-      Host: jone-turboo-server.com
-    path: '%2Fed%3D25'
+    path: /ed%3D25
 - alterId: 0
   cipher: auto
   name: '🇩🇪[openproxylist.com] vmess-DE #2'
   network: ws
   port: '2087'
-  server: 8.6.112.0
+  server: chatgpt.com
   servername: fgiayubxcnvxcdhfbvgsjhgdfccvxbfxgdsgdfg.vajiko.ir
   tls: true
   type: vmess
-  uuid: 363f58ce-df6e-42ed-a281-25ced2b436a6
+  uuid: 4f71c836-7306-4111-a527-8ccd0346212d
   ws-opts:
     headers:
       Host: fgiayubxcnvxcdhfbvgsjhgdfccvxbfxgdsgdfg.vajiko.ir
     path: /api_surentm
+- name: '🇩🇪[openproxylist.com] trojan-D... #2'
+  password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
+  port: 20994
+  server: 45.32.158.138
+  type: trojan
 - name: 🇨🇦[openproxylist.com] trojan-C...
   password: 30077070-596e-48ea-9400-14c8ed07bd97
   port: 443
@@ -2548,6 +2508,13 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 🇳🇴[openproxylist.com] trojan-N...
+  network: tcp
+  password: wp9IsiY82uQhcmgNC1eoBM
+  port: 12420
+  server: 80.173.231.254
+  sni: www.semanticstaplegun.click
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 🏳[openproxylist.com] vmess-
@@ -2573,6 +2540,20 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '🇭🇰[openproxylist.com] vmess-HK #1'
+  network: ws
+  port: '443'
+  server: n1747624282.lie5d.cyou
+  servername: n1747624282.lie5d.cyou
+  tls: true
+  type: vmess
+  uuid: 30109222-8c53-41bc-9781-a01cdeb68e4c
+  ws-opts:
+    headers:
+      Host: n1747624282.lie5d.cyou
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰[openproxylist.com] vmess-HK #2'
   network: ws
   port: '443'
   server: n1761214912.wpg27.xyz
