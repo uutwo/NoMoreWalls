@@ -98,11 +98,30 @@ proxies:
       Host: dl3.hupcloud.com
     path: ?ed=2048
 - name: 🇩🇪[openproxylist.com] trojan-D...
-  password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
-  port: 20994
-  server: 45.32.158.138
+  network: ws
+  password: TurbooServer
+  port: 80
+  server: cdn.turbooserver.com
   type: trojan
-- name: '🇩🇪[openproxylist.com] trojan-D... #1'
+  ws-opts:
+    headers:
+      Host: jone-turboo-server.com
+    path: '%2Fed%3D25'
+- alterId: 0
+  cipher: auto
+  name: '🇩🇪[openproxylist.com] vmess-DE #2'
+  network: ws
+  port: '8080'
+  server: 172.67.204.84
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: nasnet-511952424.mcitel.co
+    path: /nasnet/cdn
+- name: '🇩🇪[openproxylist.com] trojan-D... #2'
   network: ws
   password: xtA6WF92Itmhm9jfvXUH1MDVL
   port: 443
