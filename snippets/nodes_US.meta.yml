@@ -181,17 +181,18 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 美国 CloudFlare节点
+  name: 🇬🇧[openproxylist.com] vmess-GB
   network: ws
-  port: '8080'
-  server: 104.21.69.44
-  tls: false
+  port: 443
+  server: cf-proxy.202507.xyz
+  servername: ''
+  tls: true
   type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
+  uuid: fa8c811b-7bd3-4c04-b9dd-c701698f1efd
   ws-opts:
     headers:
-      Host: nasnet-511952424.mcitel.co
-    path: /nasnet/cdn
+      Host: gb.202507.xyz
+    path: /
 - name: '🇩🇪[openproxylist.com] trojan-D... #1'
   password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
   port: 20994
@@ -199,6 +200,32 @@ proxies:
   skip-cert-verify: false
   sni: ads.x5.ru
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: '美国 CloudFlare节点 #1'
+  network: ws
+  port: '8080'
+  server: 172.67.204.84
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: nasnet-511952424.mcitel.co
+    path: /nasnet/cdn
+- alterId: 0
+  cipher: auto
+  name: 🇦🇺 VMESS-未知>澳大利亚-NF解锁澳大利亚自制剧-C...
+  network: ws
+  port: '443'
+  server: sy4.620720.xyz
+  tls: true
+  type: vmess
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  ws-opts:
+    headers:
+      Host: sy4.620720.xyz
+    path: /
 - name: 美国2
   password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
   port: 2056
@@ -390,19 +417,6 @@ proxies:
   flow: xtls-rprx-vision
   name: 🇺🇸[openproxylist.com] vless-US
   network: tcp
-  port: 443
-  reality-opts:
-    public-key: 8Y-wG0HpnevxydnNcN0iqGgToTjq9gZ44V2sdPmmsi4
-    short-id: '!!str 94f01bc9c864dcbb'
-  server: 185.28.119.14
-  servername: sberbank.ru
-  tls: false
-  type: vless
-  uuid: 5dd5d72b-1965-44f3-b342-5e96bcb921cb
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #1'
-  network: tcp
   port: 19296
   reality-opts:
     public-key: L8NhClyVJyEDjiwJJb_coRq5YflzOBK175HZk_TR1BU
@@ -414,7 +428,7 @@ proxies:
   uuid: 28c94110-85db-4535-be71-fcec59635e05
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #2'
+  name: '🇺🇸[openproxylist.com] vless-US #1'
   network: tcp
   port: 443
   reality-opts:
@@ -425,7 +439,7 @@ proxies:
   tls: false
   type: vless
   uuid: 191ee2c8-e3e3-09a1-a4a5-c9e8323c6f3d
-- name: '🇺🇸[openproxylist.com] vless-US #3'
+- name: '🇺🇸[openproxylist.com] vless-US #2'
   network: ws
   port: 80
   server: 151.101.25.242
@@ -436,14 +450,20 @@ proxies:
     headers:
       Host: mouwshali.global.ssl.fastly.net
     path: /site
-- name: '🇺🇸[openproxylist.com] vless-US #4'
+- client-fingerprint: firefox
+  name: '🇺🇸[openproxylist.com] vless-US #3'
+  network: tcp
   port: 10001
+  reality-opts:
+    public-key: kKX1o7FhJLyDaVE6sqXUcYpUIuFUgij_ueRYc_E4JhM
+    short-id: '!!str 1a24af87'
   server: 172.234.130.82
+  servername: yahoo.com
   tls: false
   type: vless
   uuid: 53cd8178-2ee6-43d9-a2a7-881f287fd408
 - client-fingerprint: chrome
-  name: '🇺🇸[openproxylist.com] vless-US #5'
+  name: '🇺🇸[openproxylist.com] vless-US #4'
   network: grpc
   port: 8880
   server: 45.82.251.98
