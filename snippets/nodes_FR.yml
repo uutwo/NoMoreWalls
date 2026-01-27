@@ -45,14 +45,10 @@ proxies:
   skip-cert-verify: true
   sni: fr.test3.net
   type: trojan
-- alpn:
-  - http/1.1
-  name: 🇫🇷[openproxylist.com] trojan-F...
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22223
+- name: 🇫🇷[openproxylist.com] trojan-F...
+  password: telegram-id-privatevpns
+  port: 22222
   server: 35.181.82.58
-  sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
   cipher: auto
@@ -68,6 +64,18 @@ proxies:
     headers:
       Host: frsys.fl-dl.com
     path: /gbt
+- name: '🇫🇷[openproxylist.com] trojan-F... #1'
+  network: ws
+  password: humanity
+  port: 443
+  server: chatgpt.com
+  skip-cert-verify: false
+  sni: www.gossipglove.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.gossipglove.com
+    path: /assignment
 - alterId: 0
   cipher: auto
   name: '🇫🇷[openproxylist.com] vmess-FR #1'
@@ -78,14 +86,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 9e91d19a-c73f-4276-adbc-b337c374259c
-- name: '🇫🇷[openproxylist.com] trojan-F... #2'
-  network: ws
-  password: humanity
-  port: 443
-  server: www.calmlunch.com
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
