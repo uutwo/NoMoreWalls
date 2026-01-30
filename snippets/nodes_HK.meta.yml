@@ -77,6 +77,13 @@ proxies:
   port: 443
   server: 20.205.37.136
   type: trojan
+- name: 香港+电讯盈科有限公司
+  password: BxceQaOe
+  port: 443
+  server: 219.76.135.98
+  skip-cert-verify: true
+  sni: 219.76.135.98
+  type: trojan
 - name: 🇭🇰 HK
   password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
   port: 443
@@ -98,9 +105,13 @@ proxies:
   port: '30807'
   server: v10.hdacd.com
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-headers:
+    Host: v10.hdacd.com
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 香港2|@ripaojiedian
@@ -108,10 +119,14 @@ proxies:
   port: '34659'
   server: 47.242.192.233
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 8482671e-846f-45c7-aec4-531c79f775ec
-- name: '🇭🇰[openproxylist.com] trojan-H... #2'
+  ws-headers:
+    Host: 47.242.192.233
+  ws-path: /
+- name: '🇭🇰[openproxylist.com] trojan-H... #1'
   network: tcp
   password: c1d83c0c7d57cead4379ba14a82df69b
   port: 443
@@ -119,42 +134,14 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 🇭🇰[openproxylist.com] trojan-H...
+- name: 新加坡3|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 2826
-  server: 43.207.157.137
+  port: 1691
+  server: 43.199.207.224
   skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
+  sni: t.me%252Fripaojiedian
   type: trojan
-- name: '🇭🇰[openproxylist.com] trojan-H... #1'
-  network: tcp
-  password: BxceQaOe
-  port: 1867
-  server: 54.249.137.88
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: '🇭🇰[openproxylist.com] trojan-H... #3'
-  password: BxceQaOe
-  port: 443
-  server: 58.152.53.45
-  sni: t.me%25252Fripaojiedian
-  type: trojan
-- name: '🇭🇰[openproxylist.com] trojan-H... #4'
-  password: BxceQaOe
-  port: 443
-  server: 219.76.135.98
-  skip-cert-verify: true
-  sni: t.me%25252Fripaojiedian
-  type: trojan
-- name: 🇭🇰[openproxylist.com] vless-HK
-  network: tcp
-  port: 9527
-  server: 43.161.253.78
-  tls: false
-  type: vless
-  uuid: d4a23188-85b0-4b46-b84b-f1d36d66c03e
 - alterId: 0
   cipher: auto
   name: 🇭🇰[openproxylist.com] vmess-HK
