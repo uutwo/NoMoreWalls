@@ -1,23 +1,7 @@
 proxies:
-- name: 🇫🇷[openproxylist.com] vless-FR
-  network: ws
-  port: 80
-  server: ov-france1.09vpn.com
-  tls: false
-  type: vless
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  ws-opts:
-    path: /vless/
-- name: '🇫🇷[openproxylist.com] vless-FR #1'
-  network: tcp
-  port: 46248
-  server: kurd-fr.tawana.online
-  tls: false
-  type: vless
-  uuid: a571b94c-a9f3-407a-a8ef-da608dab5472
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #2'
+  name: 🇫🇷[openproxylist.com] vless-FR
   network: tcp
   port: 443
   reality-opts:
@@ -30,7 +14,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: xyz
-  name: '🇫🇷[openproxylist.com] vless-FR #3'
+  name: '🇫🇷[openproxylist.com] vless-FR #1'
   network: grpc
   port: 19702
   reality-opts:
@@ -41,22 +25,8 @@ proxies:
   tls: false
   type: vless
   uuid: 1f3b130d-7d29-45d1-b5aa-adc5cd94a885
-- alterId: 0
-  cipher: auto
-  name: 🇫🇷[openproxylist.com] vmess-FR
-  network: ws
-  port: '8443'
-  server: 162.159.152.4
-  servername: frsys.fl-dl.com
-  tls: true
-  type: vmess
-  uuid: 19e52bf4-1b7d-4bd4-ae66-6ca024436c17
-  ws-opts:
-    headers:
-      Host: frsys.fl-dl.com
-    path: /gbt
 - client-fingerprint: chrome
-  name: '🇫🇷[openproxylist.com] vless-FR #4'
+  name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: tcp
   port: 50511
   reality-opts:
@@ -67,12 +37,11 @@ proxies:
   tls: false
   type: vless
   uuid: 3bc9c90e-dd6c-400d-bfb0-1d06b13fe46c
-- name: '🇫🇷[openproxylist.com] vless-FR #5'
+- name: '🇫🇷[openproxylist.com] vless-FR #3'
   network: ws
   port: 443
   server: zzula.ir
   servername: zitel.digikala-aparat-zula.com
-  skip-cert-verify: false
   tls: true
   type: vless
   uuid: c249ca6f-1bde-479b-af96-da0e948a3800
@@ -84,11 +53,10 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.18.32.47
-  skip-cert-verify: false
+  server: 172.64.152.23
   sni: www.gossipglove.com
   type: trojan
   ws-opts:
     headers:
       Host: www.gossipglove.com
-    path: '%2Fassignment'
+    path: /assignment
