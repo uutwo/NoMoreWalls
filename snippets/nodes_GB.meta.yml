@@ -83,32 +83,17 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Ff2fc2a1f'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: api
   name: 🇬🇧[openproxylist.com] vless-GB
-  network: tcp
+  network: grpc
   port: 443
-  reality-opts:
-    public-key: 6HeSr7fOSayKfxcsNINPmG5hGABd8Kq3CSZYXN-izzw
-    short-id: '!!str 25'
-  server: 212.115.108.44
-  servername: canva.com
-  tls: false
+  server: nodec.azurka.org
+  servername: nodec.azurka.org
+  tls: true
   type: vless
-  uuid: 7e9f4e11-4507-4493-908e-4c339b98b4a4
-- name: '🇬🇧[openproxylist.com] vless-GB #1'
-  port: 40721
-  server: 140.238.100.35
-  tls: false
-  type: vless
-  uuid: bf3e8944-8d26-47de-8748-b9aa74cce974
-- name: '🇬🇧[openproxylist.com] vless-GB #2'
-  network: tcp
-  port: 443
-  server: 23.81.34.138
-  tls: false
-  type: vless
-  uuid: 85571fb3-6d15-49b0-e1d6-cf8b6dbd623e
-  ws-opts:
-    headers:
-      Host: bmw.co%F0%9F%9F%AA
+  uuid: 0d12578e-50da-41b9-a913-6c1d8c0dd713
