@@ -3,8 +3,8 @@ proxies:
   - http/1.1
   name: 🇫🇷[openproxylist.com] trojan-F...
   network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
+  password: telegram-id-directvpn
+  port: 22223
   server: 51.45.46.184
   sni: trojan.burgerip.co.uk
   type: trojan
@@ -32,26 +32,25 @@ proxies:
   ws-opts:
     path: /vless/
 - name: '🇫🇷[openproxylist.com] vless-FR #1'
-  network: tcp
   port: 46248
   server: kurd-fr.tawana.online
   tls: false
   type: vless
   uuid: a571b94c-a9f3-407a-a8ef-da608dab5472
 - client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: xyz
   name: '🇫🇷[openproxylist.com] vless-FR #2'
-  network: grpc
-  port: 19702
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: '!!str 6ba85179e30d4fc2'
-  server: sktr.berkeart.ir
-  servername: check-host.net
-  tls: false
+  network: ws
+  port: 443
+  server: 104.24.69.114
+  servername: rAyAn-cOnFiG-fr-1.pAriSa.dPdNs.oRg
+  skip-cert-verify: true
+  tls: true
   type: vless
-  uuid: 1f3b130d-7d29-45d1-b5aa-adc5cd94a885
+  uuid: 85462399-8624-4e5c-bbb0-f95d84ca8256
+  ws-opts:
+    headers:
+      Host: rAyAn-cOnFiG-fr-1.pAriSa.dPdNs.oRg
+    path: /ws
 - alterId: 0
   cipher: auto
   name: '🇫🇷[openproxylist.com] vmess-FR #1'
@@ -85,22 +84,9 @@ proxies:
   password: humanity
   port: 443
   server: 172.64.152.23
-  skip-cert-verify: false
   sni: www.gossipglove.com
   type: trojan
   ws-opts:
     headers:
       Host: www.gossipglove.com
     path: /assignment
-- name: '🇫🇷[openproxylist.com] vless-FR #4'
-  network: ws
-  port: 2087
-  server: 188.114.98.224
-  servername: vds.rahedarro.com
-  tls: true
-  type: vless
-  uuid: 8443822d-6b68-4af2-d096-c03207ed880d
-  ws-opts:
-    headers:
-      Host: vds.rahedarro.com
-    path: '%2Frahh'
