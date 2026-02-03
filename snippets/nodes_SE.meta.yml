@@ -1,21 +1,25 @@
 proxies:
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: JNIR
+- client-fingerprint: firefox
   name: 🇸🇪[openproxylist.com] vless-SE
-  network: grpc
-  port: 504
+  network: tcp
+  port: 3039
   reality-opts:
-    public-key: aNLPNNyjIC7QYLe7MpF4nxxHhO421dBSZaQgsDd1szs
-    short-id: '!!str 1d64e9805b4f9ae3'
+    public-key: 21V_VkMUD2XRbyRDg7hjpblUAwxHvlLmbarATdhhJQI
+  server: se.locations-service.com
+  servername: refersion.com
+  tls: false
+  type: vless
+  uuid: d73a9db0-24b5-4592-8ff0-4f0b5329b39f
+- name: '🇸🇪[openproxylist.com] vless-SE #1'
+  network: tcp
+  port: 50
   server: dd.openaccessnode.com
-  servername: nobitex.ir
   tls: false
   type: vless
   uuid: 31701b5d-ca95-92f9-d684-dae3706161ea
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: '🇸🇪[openproxylist.com] vless-SE #1'
+  name: '🇸🇪[openproxylist.com] vless-SE #2'
   network: tcp
   port: 443
   reality-opts:
@@ -27,14 +31,19 @@ proxies:
   type: vless
   uuid: 0da89048-00d8-4c1f-b0ee-bdbd8f3f0b3b
 - name: 🇸🇪[openproxylist.com] trojan-S...
+  network: ws
   password: T9BpZIVMNv
   port: 8443
   server: v1.dabache.top
+  skip-cert-verify: true
+  sni: sweden.vmaxpanel.com
   type: trojan
   ws-opts:
-    path: '%2Famd'
+    headers:
+      Host: sweden.vmaxpanel.com
+    path: /amd
 - client-fingerprint: chrome
-  name: '🇸🇪[openproxylist.com] vless-SE #2'
+  name: '🇸🇪[openproxylist.com] vless-SE #3'
   network: tcp
   port: 443
   server: 144.31.128.36
@@ -42,9 +51,7 @@ proxies:
   tls: true
   type: vless
   uuid: 745d8b0e-1bf2-4921-8058-4d67dd3dbc13
-  ws-opts:
-    path: /XIXVPN?ed=2560
-- name: '🇸🇪[openproxylist.com] vless-SE #3'
+- name: '🇸🇪[openproxylist.com] vless-SE #4'
   network: tcp
   port: 443
   server: secdn11.suio.me
@@ -54,7 +61,7 @@ proxies:
   uuid: a7a9f670-44c0-45a9-8047-69db0203c142
   ws-opts:
     path: /
-- name: '🇸🇪[openproxylist.com] vless-SE #4'
+- name: '🇸🇪[openproxylist.com] vless-SE #5'
   network: tcp
   port: 443
   server: secdn13.suio.me
@@ -66,7 +73,7 @@ proxies:
     path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇸🇪[openproxylist.com] vless-SE #5'
+  name: '🇸🇪[openproxylist.com] vless-SE #6'
   network: tcp
   port: 443
   reality-opts:
