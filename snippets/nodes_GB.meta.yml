@@ -1,26 +1,31 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 英国 V2CROSS.COM
-  network: ''
-  port: 180
+  name: 英国 伦敦Virgin Media
+  network: none
+  port: 17310
+  server: 82.21.80.224
+  tls: true
+  type: vmess
+  uuid: 656920dc-ed05-4f41-8c49-bdff41e383a9
+- alterId: 0
+  cipher: auto
+  name: 🇬🇧 Relay_🇬🇧GB-🇺🇸US_72 |204.35M...
+  network: tcp
+  port: '180'
   server: 82.198.246.97
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: 🇬🇧 英国 V2CROSS.COM
+  name: GB_74 |25.00Mb
   network: tcp
-  port: '180'
-  server: 82.198.246.97
-  skip-cert-verify: true
+  port: '24804'
+  server: 130.185.251.109
   tls: false
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-headers:
-    Host: 82.198.246.97
-  ws-path: /
+  uuid: 8fd82834-1355-4bf0-e393-d2592b4fad50
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇬🇧[openproxylist.com] vless-GB
@@ -34,6 +39,19 @@ proxies:
   tls: false
   type: vless
   uuid: bbed94d9-1120-4b54-8a9c-72d81e411fb8
+- alterId: 0
+  cipher: auto
+  name: 🇬🇧[openproxylist.com] vmess-GB
+  network: ws
+  port: '443'
+  server: www.visa.com.hk
+  tls: true
+  type: vmess
+  uuid: 95037be4-a578-4d31-a0a0-951cb09c746f
+  ws-opts:
+    headers:
+      Host: choice-poetry-mug-bluetooth.trycloudflare.com
+    path: /95037be4-a578-4d31-a0a0-951cb09c746f-vm
 - client-fingerprint: qq
   flow: xtls-rprx-vision
   name: '🇬🇧[openproxylist.com] vless-GB #1'
@@ -65,19 +83,12 @@ proxies:
   name: '🇬🇧[openproxylist.com] vless-GB #2'
   network: ws
   port: 443
-  server: 104.18.32.47
+  server: 173.245.59.121
   servername: rAyAn-cOnFiG-uk-1.pAriSa.dPdNs.oRg
-  skip-cert-verify: true
   tls: true
   type: vless
   uuid: 979b6822-d65a-400d-89f8-30391903ac20
   ws-opts:
     headers:
       Host: rAyAn-cOnFiG-uk-1.pAriSa.dPdNs.oRg
-    path: /ws
-- name: 🇬🇧[openproxylist.com] trojan-G...
-  password: 7LBbob9IutFObLxLf9Svc1HaV
-  port: 443
-  server: 45.89.111.142
-  sni: hl-freedom-1.undef.network
-  type: trojan
+    path: '%2Fws'
