@@ -1,24 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 英国 伦敦Virgin Media
-  network: none
-  port: 17310
-  server: 82.21.80.224
-  tls: true
-  type: vmess
-  uuid: 656920dc-ed05-4f41-8c49-bdff41e383a9
-- alterId: 0
-  cipher: auto
-  name: 🇬🇧 Relay_🇬🇧GB-🇺🇸US_72 |204.35M...
-  network: tcp
-  port: '180'
-  server: 82.198.246.97
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
   name: GB_74 |25.00Mb
   network: tcp
   port: '24804'
@@ -29,6 +11,19 @@ proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇬🇧[openproxylist.com] vless-GB
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: qsL2batSoDcFzdkuqZR-jvB_r0F8Ny95RNVPTBrS1GU
+    short-id: '!!str fedcba9876543210'
+  server: 37.221.127.235
+  servername: api-maps.yandex.ru
+  tls: false
+  type: vless
+  uuid: c4bfda4b-0652-45a2-86ee-d627e5a2d4a5
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇬🇧[openproxylist.com] vless-GB #1'
   network: tcp
   port: 443
   reality-opts:
@@ -54,7 +49,7 @@ proxies:
     path: /95037be4-a578-4d31-a0a0-951cb09c746f-vm
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #1'
+  name: '🇬🇧[openproxylist.com] vless-GB #2'
   network: tcp
   port: 3443
   reality-opts:
@@ -80,7 +75,7 @@ proxies:
       Host: ''
     path: /graphql
 - client-fingerprint: chrome
-  name: '🇬🇧[openproxylist.com] vless-GB #2'
+  name: '🇬🇧[openproxylist.com] vless-GB #3'
   network: ws
   port: 443
   server: 173.245.59.121
