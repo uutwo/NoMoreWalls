@@ -6,6 +6,16 @@ proxies:
   skip-cert-verify: false
   sni: bBbNmKl.TAIwAn2028.IndEvs.In
   type: trojan
+- name: 🇫🇷[openproxylist.com] vless-FR
+  network: tcp
+  port: 2020
+  server: 109.122.251.152
+  tls: false
+  type: vless
+  uuid: dd936ba9-81bc-445b-89d3-6d993745d56c
+  ws-opts:
+    headers:
+      Host: zula.ir
 - alpn:
   - http/1.1
   name: 🇫🇷[openproxylist.com] trojan-F...
@@ -15,18 +25,29 @@ proxies:
   server: 15.188.21.75
   sni: trojan.burgerip.co.uk
   type: trojan
+- name: '🇫🇷[openproxylist.com] vless-FR #1'
+  network: ws
+  port: 22224
+  server: 35.181.252.120
+  servername: trojan.burgerip.co.uk
+  tls: true
+  type: vless
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    path: '%2Ftelegram-channel-vlessconfig'
 - alpn:
   - http/1.1
-  name: '🇫🇷[openproxylist.com] trojan-F... #1'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.181.252.120
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 🇫🇷[openproxylist.com] vless-FR
+  client-fingerprint: chrome
+  name: '🇫🇷[openproxylist.com] vless-FR #2'
+  network: ws
   port: 443
   server: mitivpndozd.global.ssl.fastly.net
-  tls: false
+  servername: mitivpndozd.global.ssl.fastly.net
+  skip-cert-verify: false
+  tls: true
   type: vless
   uuid: 4ee73e0b-0d09-4a06-9619-8a5d0d3d8257
+  ws-opts:
+    headers:
+      Host: mitivpndozd.global.ssl.fastly.net
+    path: '%2Fcontainers%2Ffi'
