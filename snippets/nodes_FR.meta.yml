@@ -5,41 +5,41 @@ proxies:
   network: tcp
   password: telegram-id-directvpn
   port: 22223
-  server: 15.188.21.75
+  server: 13.37.19.80
   sni: trojan.burgerip.co.uk
   type: trojan
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
   name: 🇫🇷[openproxylist.com] vless-FR
-  network: ws
+  network: tcp
   port: 443
-  server: mitivpndozd.global.ssl.fastly.net
-  servername: mitivpndozd.global.ssl.fastly.net
-  skip-cert-verify: false
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: '!!str 6ba85179e30d4fc2'
+  server: 138.124.79.9
+  servername: sun6-21.userapi.com
+  tls: false
+  type: vless
+  uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
+- name: '🇫🇷[openproxylist.com] vless-FR #1'
+  network: ws
+  port: 22224
+  server: 35.181.33.57
+  servername: trojan.burgerip.co.uk
   tls: true
   type: vless
-  uuid: 4ee73e0b-0d09-4a06-9619-8a5d0d3d8257
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
   ws-opts:
-    headers:
-      Host: mitivpndozd.global.ssl.fastly.net
-    path: /containers/fi
-- alterId: 0
-  cipher: auto
-  name: 🇫🇷[openproxylist.com] vmess-FR
-  network: ws
-  port: '8080'
-  server: 188.114.98.0
+    path: '%2Ftelegram-channel-vlessconfig'
+- name: '🇫🇷[openproxylist.com] vless-FR #2'
+  port: 443
+  server: mitivpndozd.global.ssl.fastly.net
   tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: nasnet-162191099.sharghdaily.co
-    path: /nasnet/cdn?ed=2560/?TELEGRAM--KANAL--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN
+  type: vless
+  uuid: 4ee73e0b-0d09-4a06-9619-8a5d0d3d8257
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
+  name: '🇫🇷[openproxylist.com] vless-FR #3'
   network: tcp
   port: 8080
   reality-opts:
