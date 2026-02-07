@@ -1,14 +1,25 @@
 proxies:
-- alpn:
-  - http/1.1
-  name: 🇫🇷[openproxylist.com] trojan-F...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 15.237.164.159
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - name: 🇫🇷[openproxylist.com] vless-FR
+  network: ws
+  port: 22224
+  server: 13.39.246.81
+  servername: trojan.burgerip.co.uk
+  tls: true
+  type: vless
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    path: '%2Ftelegram-channel-vlessconfig'
+- name: '🇫🇷[openproxylist.com] vless-FR #1'
+  network: ws
+  port: 22224
+  server: 15.237.164.159
+  servername: trojan.burgerip.co.uk
+  tls: true
+  type: vless
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    path: '%2Ftelegram-channel-vlessconfig'
+- name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: ws
   port: 80
   server: speedtest.net
@@ -21,7 +32,7 @@ proxies:
     path: '%2Fdownload'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
+  name: '🇫🇷[openproxylist.com] vless-FR #3'
   network: tcp
   port: 443
   reality-opts:
@@ -32,7 +43,7 @@ proxies:
   tls: false
   type: vless
   uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
-- name: '🇫🇷[openproxylist.com] vless-FR #2'
+- name: '🇫🇷[openproxylist.com] vless-FR #4'
   port: 443
   server: mitivpndozd.global.ssl.fastly.net
   tls: false
@@ -54,7 +65,7 @@ proxies:
     path: /nasnet/cdn?ed=2560
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #3'
+  name: '🇫🇷[openproxylist.com] vless-FR #5'
   network: tcp
   port: 8080
   reality-opts:
