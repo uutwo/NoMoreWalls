@@ -3,14 +3,25 @@ proxies:
   - http/1.1
   name: 🇫🇷[openproxylist.com] trojan-F...
   network: tcp
-  password: telegram-id-directvpn
-  port: 22223
-  server: 13.37.19.80
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 15.237.164.159
   sni: trojan.burgerip.co.uk
   type: trojan
+- name: 🇫🇷[openproxylist.com] vless-FR
+  network: ws
+  port: 80
+  server: speedtest.net
+  tls: false
+  type: vless
+  uuid: 056d10f1-4ebd-40e1-9f78-c7e11fce5258
+  ws-opts:
+    headers:
+      Host: sabzb2.global.ssl.fastly.net
+    path: '%2Fdownload'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇫🇷[openproxylist.com] vless-FR
+  name: '🇫🇷[openproxylist.com] vless-FR #1'
   network: tcp
   port: 443
   reality-opts:
@@ -21,46 +32,36 @@ proxies:
   tls: false
   type: vless
   uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
-- name: '🇫🇷[openproxylist.com] vless-FR #1'
-  network: ws
-  port: 22224
-  server: 35.181.33.57
-  servername: trojan.burgerip.co.uk
-  tls: true
-  type: vless
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    path: '%2Ftelegram-channel-vlessconfig'
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇫🇷[openproxylist.com] vless-FR #2'
-  network: ws
+- name: '🇫🇷[openproxylist.com] vless-FR #2'
   port: 443
   server: mitivpndozd.global.ssl.fastly.net
-  servername: mitivpndozd.global.ssl.fastly.net
-  skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
   uuid: 4ee73e0b-0d09-4a06-9619-8a5d0d3d8257
+- alterId: 0
+  cipher: auto
+  name: 🇫🇷[openproxylist.com] vmess-FR
+  network: ws
+  port: '8080'
+  server: tgju.org
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
     headers:
-      Host: mitivpndozd.global.ssl.fastly.net
-    path: /containers/fi
-- name: '🇫🇷[openproxylist.com] vless-FR #3'
-  network: ws
-  port: 80
-  server: ov-france1.09vpn.com
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  ws-opts:
-    path: /vless/
-- name: '🇫🇷[openproxylist.com] vless-FR #4'
+      Host: nasnet-162191099.sharghdaily.co
+    path: /nasnet/cdn?ed=2560
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇫🇷[openproxylist.com] vless-FR #3'
   network: tcp
-  port: 46248
-  server: 46.226.167.138
+  port: 8080
+  reality-opts:
+    public-key: D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw
+    short-id: '!!str b7b70c104ad267b8'
+  server: vmaxa22.gatesrev.ir
+  servername: chatgpt.com
   tls: false
   type: vless
-  uuid: a571b94c-a9f3-407a-a8ef-da608dab5472
+  uuid: 5d0e6695-6c63-4168-b5e5-2a73ea86b1b1
