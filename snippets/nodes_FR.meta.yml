@@ -1,14 +1,15 @@
 proxies:
-- alpn:
-  - http/1.1
-  name: 🇫🇷[openproxylist.com] trojan-F...
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22223
-  server: 13.39.246.81
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - name: 🇫🇷[openproxylist.com] vless-FR
+  network: ws
+  port: 22224
+  server: 13.39.246.81
+  servername: trojan.burgerip.co.uk
+  tls: true
+  type: vless
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    path: '%2Ftelegram-channel-vlessconfig'
+- name: '🇫🇷[openproxylist.com] vless-FR #1'
   network: ws
   port: 22224
   server: 15.237.164.159
@@ -20,7 +21,7 @@ proxies:
     path: '%2Ftelegram-channel-vlessconfig'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
+  name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: tcp
   port: 443
   reality-opts:
@@ -47,7 +48,7 @@ proxies:
     path: /nasnet/cdn?ed=2560
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #2'
+  name: '🇫🇷[openproxylist.com] vless-FR #3'
   network: tcp
   port: 8080
   reality-opts:
@@ -58,7 +59,20 @@ proxies:
   tls: false
   type: vless
   uuid: 5d0e6695-6c63-4168-b5e5-2a73ea86b1b1
-- name: '🇫🇷[openproxylist.com] vless-FR #3'
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇫🇷[openproxylist.com] vless-FR #4'
+  network: tcp
+  port: 8080
+  reality-opts:
+    public-key: D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw
+    short-id: '!!str b7b70c104ad267b8'
+  server: vmaxa20.gatesrev.ir
+  servername: chatgpt.com
+  tls: false
+  type: vless
+  uuid: 5d0e6695-6c63-4168-b5e5-2a73ea86b1b1
+- name: '🇫🇷[openproxylist.com] vless-FR #5'
   network: ws
   port: 80
   server: ov-france1.09vpn.com
@@ -67,10 +81,3 @@ proxies:
   uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
   ws-opts:
     path: /vless/
-- name: '🇫🇷[openproxylist.com] vless-FR #4'
-  network: tcp
-  port: 46248
-  server: kurd-fr.tawana.online
-  tls: false
-  type: vless
-  uuid: a571b94c-a9f3-407a-a8ef-da608dab5472
