@@ -20,13 +20,25 @@ proxies:
   port: 443
   server: nodejs.org
   servername: dev.nestandneighbours.com
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: fef4a93d-eb4f-4657-b56b-32a0dc060045
   ws-opts:
     headers:
       Host: dev.nestandneighbours.com
-    path: /
+    path: '%2F'
+- name: 🇬🇧[openproxylist.com] trojan-G...
+  network: ws
+  password: 76yTlnTIsjCTlmqnUJ5Tzc1rM
+  port: 443
+  server: hl-freedom-0.undef.network
+  sni: hl-freedom-0.undef.network
+  type: trojan
+  ws-opts:
+    headers:
+      Host: hl-freedom-0.undef.network
+    path: /f2fc2a1f
 - alterId: 0
   cipher: auto
   name: 🇬🇧[openproxylist.com] vmess-GB
