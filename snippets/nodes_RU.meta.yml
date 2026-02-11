@@ -1,14 +1,34 @@
 proxies:
-- name: 🇷🇺 俄罗斯 V2CROSS.COM
-  password: ZblhWr0mqMakCPg.N
-  port: 36158
-  server: 212.193.18.144
-  skip-cert-verify: false
-  sni: ya.ru
-  type: trojan
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc
+  name: 🇷🇺[openproxylist.com] vless-RU
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: 4NjqiB_FliKff9bP2ASI3WWuhfuyviPeKoz1DyZJQDE
+    short-id: '!!str 574aa52c'
+  server: 185.86.144.32
+  servername: www.vk.com
+  tls: false
+  type: vless
+  uuid: 895f94cb-5567-4731-bc2c-2f89a54bafe4
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇷🇺[openproxylist.com] vless-RU
+  name: '🇷🇺[openproxylist.com] vless-RU #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 7IOtSp0-n2_uNS5nMO9ywZbn2HibMRGy0KbLad3szXc
+    short-id: '!!str b8cf9578640a9edf'
+  server: 185.39.206.226
+  servername: eh.vk.com
+  tls: false
+  type: vless
+  uuid: 07cd9dbe-21ac-4871-817d-c772687e4b7c
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #2'
   network: tcp
   port: 1488
   reality-opts:
@@ -19,7 +39,30 @@ proxies:
   tls: false
   type: vless
   uuid: 7bc30425-1c2f-4823-b629-90f599a4cbfe
-- name: '🇷🇺[openproxylist.com] vless-RU #1'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #3'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: PGccrEdFmBaB1rQFJqM-a9jJ1pFsxhUP2sD9KTw5Oz4
+    short-id: '!!str f69d7af2d5fc5e0c'
+  server: 178.250.243.97
+  servername: eh.vk.com
+  tls: false
+  type: vless
+  uuid: 50b95deb-6394-46c5-b88a-583e5b3ca7ee
+- client-fingerprint: chrome
+  name: '🇷🇺[openproxylist.com] vless-RU #4'
+  network: ws
+  port: 18570
+  server: 193.163.203.36
+  tls: true
+  type: vless
+  uuid: 88e148ba-1e39-45e9-8aef-6b207411435a
+  ws-opts:
+    path: /
+- name: '🇷🇺[openproxylist.com] vless-RU #5'
   port: 443
   server: 87.239.111.227
   tls: false
@@ -27,13 +70,26 @@ proxies:
   uuid: 895f94cb-5567-4731-bc2c-2f89a54bafe4
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇷🇺[openproxylist.com] vless-RU #2'
+  name: '🇷🇺[openproxylist.com] vless-RU #6'
   network: tcp
   port: 443
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 89.208.230.173
+    short-id: '!!str 6ba85179e30d4fc2'
+  server: 109.120.188.166
   servername: ads.x5.ru
   tls: false
   type: vless
   uuid: 7bc30425-1c2f-4823-b629-90f599a4cbfe
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #7'
+  network: tcp
+  port: 1488
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: 109.120.190.203
+  servername: ads.x5.ru
+  tls: false
+  type: vless
+  uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
