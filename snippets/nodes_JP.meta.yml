@@ -1,4 +1,12 @@
 proxies:
+- client-fingerprint: chrome
+  name: 日本+V2CROSS.COM
+  port: 44519
+  server: 43.173.125.15
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 6b05ea27-051b-450b-965b-f6c5da11a1f0
 - name: JP
   password: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61
   port: 13778
@@ -39,31 +47,17 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵[openproxylist.com] vmess-JP
-  network: ws
+- client-fingerprint: chrome
+  name: 🇯🇵[openproxylist.com] vless-JP
+  network: tcp
   port: 443
-  server: n1753598446.wpg27.xyz
-  servername: n1753598446.wpg27.xyz
-  tls: true
-  type: vmess
-  uuid: a5047d95-24b8-451a-93e3-f2a387b93d5a
+  reality-opts:
+    public-key: DNdTBHyztOVJOBJQX91YXEhNkWbSAntqUoTFBHc6Clw
+    short-id: '!!str 6ba85179e30d4fc2'
+  server: 47.74.6.60
+  servername: cdn77.api.userway.org
+  tls: false
+  type: vless
+  uuid: 5c183802-747d-4d2f-a6f1-aff2d5d78401
   ws-opts:
-    headers:
-      Host: n1753598446.wpg27.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #1'
-  network: ws
-  port: '443'
-  server: n1753598445.74qxv.top
-  servername: n1753598445.74qxv.top
-  tls: true
-  type: vmess
-  uuid: f53b95dc-3ec3-49a2-803a-510e614ae577
-  ws-opts:
-    headers:
-      Host: n1753598445.74qxv.top
     path: /
