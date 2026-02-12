@@ -1,14 +1,32 @@
 proxies:
+- alpn:
+  - http/1.1
+  name: 🇫🇷[openproxylist.com] trojan-F...
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 13.38.185.255
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '🇫🇷[openproxylist.com] trojan-F... #1'
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 35.181.228.222
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - name: 🇫🇷[openproxylist.com] vless-FR
-  network: ws
-  port: 22224
-  server: 35.181.139.200
-  servername: trojan.burgerip.co.uk
-  tls: true
+  network: tcp
+  port: 58128
+  server: 85.133.249.38
+  tls: false
   type: vless
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  uuid: a98dfd2a-b021-607c-af2d-362ae38c9478
   ws-opts:
-    path: '%2Ftelegram-channel-vlessconfig'
+    headers:
+      Host: myket.ir
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇫🇷[openproxylist.com] vless-FR #1'
@@ -33,26 +51,31 @@ proxies:
   tls: false
   type: vless
   uuid: f557eadb-1715-4c0b-aaae-f9b9577d827d
-- name: '🇫🇷[openproxylist.com] vless-FR #3'
-  network: tcp
-  port: 889
-  server: 45.132.185.227
-  tls: false
-  type: vless
-  uuid: f7ddcea8-95e3-48de-909f-bb5d3c47696b
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #4'
+  name: '🇫🇷[openproxylist.com] vless-FR #3'
   network: tcp
   port: 8080
   reality-opts:
     public-key: D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw
     short-id: '!!str b7b70c104ad267b8'
-  server: maxa06.azmoonf.ir
+  server: maxa08.azmoonf.ir
   servername: chatgpt.com
   tls: false
   type: vless
   uuid: 5d0e6695-6c63-4168-b5e5-2a73ea86b1b1
+- client-fingerprint: chrome
+  name: '🇫🇷[openproxylist.com] vless-FR #4'
+  network: tcp
+  port: 8880
+  reality-opts:
+    public-key: Pyq2phArGYw2shJNqNQ6f6pF_eb4AVo_lI6a7lgHd0k
+    short-id: '!!str 2ad726e6b28daf57'
+  server: 79.137.102.79
+  servername: max.ru
+  tls: false
+  type: vless
+  uuid: 4583d428-8ff9-4000-bcbd-953fe8c8df17
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇫🇷[openproxylist.com] vless-FR #5'
