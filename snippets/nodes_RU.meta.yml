@@ -1,4 +1,18 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺[openproxylist.com] vmess-RU
+  network: ws
+  port: 46103
+  server: 94.156.181.190
+  servername: imafake.locker
+  tls: true
+  type: vmess
+  uuid: b2da9920-b0a7-4354-9e26-3833ab8d00d0
+  ws-opts:
+    headers:
+      Host: imafake.locker
+    path: /speedtest
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇷🇺[openproxylist.com] vless-RU
@@ -67,26 +81,21 @@ proxies:
   tls: false
   type: vless
   uuid: 50b95deb-6394-46c5-b88a-583e5b3ca7ee
-- name: '🇷🇺[openproxylist.com] vless-RU #5'
-  network: ws
-  port: 18570
-  server: 193.163.203.36
-  tls: true
-  type: vless
-  uuid: 88e148ba-1e39-45e9-8aef-6b207411435a
-  ws-opts:
-    path: '%2F'
 - client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc
-  name: '🇷🇺[openproxylist.com] vless-RU #6'
-  network: grpc
-  port: 443
+  name: '🇷🇺[openproxylist.com] vless-RU #5'
+  network: tcp
+  port: 10001
   reality-opts:
-    public-key: kz54nOxv8IOst-C_GQO5cf6106be0UakNbCEXiDuhHA
-    short-id: '!!str 3863adb3'
+    public-key: aBNzDaD-NL93hiwCTKg4paOppKc1RNAICxBjHFJrOy8
+    short-id: '!!str 9c9bb63c'
+  server: 193.163.203.36
+  servername: www.intel.com
+  tls: false
+  type: vless
+  uuid: 6a3f4da1-687a-4bde-9943-df057315857c
+- name: '🇷🇺[openproxylist.com] vless-RU #6'
+  port: 443
   server: 87.239.111.227
-  servername: m.vk.ru
   tls: false
   type: vless
   uuid: 895f94cb-5567-4731-bc2c-2f89a54bafe4
@@ -115,15 +124,3 @@ proxies:
   tls: false
   type: vless
   uuid: 7bc30425-1c2f-4823-b629-90f599a4cbfe
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇷🇺[openproxylist.com] vless-RU #9'
-  network: tcp
-  port: 1488
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 109.120.190.203
-  servername: ads.x5.ru
-  tls: false
-  type: vless
-  uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
