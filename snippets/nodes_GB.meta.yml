@@ -1,15 +1,50 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 🇬🇧 英国 V2CROSS.COM
+  name: 🇬🇧 英国 伦敦Virgin Media
+  network: none
+  port: '17310'
+  server: 82.21.80.224
+  tls: true
+  type: vmess
+  uuid: 656920dc-ed05-4f41-8c49-bdff41e383a9
+- alterId: 0
+  cipher: auto
+  name: '🇬🇧 GB英国(mibei77.com 米贝节点分享) #1'
   network: tcp
   port: '180'
   server: 82.198.246.97
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- client-fingerprint: chrome
+- alterId: 0
+  cipher: auto
+  name: '🇬🇧 GB英国(mibei77.com 米贝节点分享) #2'
+  network: ws
+  port: '16616'
+  server: 85.211.192.75
+  tls: false
+  type: vmess
+  uuid: c21bd3c7-15f4-4fad-b54c-fb7199aa427c
+  ws-opts:
+    headers:
+      Host: 94183e0b98de68212af6fd09d925caff.mobgslb.tbcache.com
+    path: /
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
   name: 🇬🇧[openproxylist.com] vless-GB
+  network: tcp
+  port: 8080
+  reality-opts:
+    public-key: D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw
+    short-id: '!!str b7b70c104ad267b8'
+  server: vb08.sibitc.ir
+  servername: chatgpt.com
+  tls: false
+  type: vless
+  uuid: aee46a49-c99e-4c58-b443-4fff31f10ff4
+- client-fingerprint: chrome
+  name: '🇬🇧[openproxylist.com] vless-GB #1'
   network: tcp
   port: 1422
   reality-opts:
@@ -20,29 +55,9 @@ proxies:
   tls: false
   type: vless
   uuid: cbaa6e41-8194-487a-9e2e-bbc0ab4c40bd
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #1'
-  network: tcp
+- name: '🇬🇧[openproxylist.com] vless-GB #2'
   port: 8080
-  reality-opts:
-    public-key: D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw
-    short-id: '!!str b7b70c104ad267b8'
-  server: va04.serverh1ub.ir
-  servername: chatgpt.com
-  tls: false
-  type: vless
-  uuid: e3682df7-e8ec-4705-b5ef-3bbaa7007c94
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #2'
-  network: tcp
-  port: 8080
-  reality-opts:
-    public-key: D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw
-    short-id: '!!str b7b70c104ad267b8'
   server: va28.serverh1ub.ir
-  servername: chatgpt.com
   tls: false
   type: vless
   uuid: e3682df7-e8ec-4705-b5ef-3bbaa7007c94
@@ -51,11 +66,11 @@ proxies:
   port: 443
   server: nodejs.org
   servername: dev.nestandneighbours.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: fef4a93d-eb4f-4657-b56b-32a0dc060045
   ws-opts:
     headers:
       Host: dev.nestandneighbours.com
-    path: '%2F'
+    path: /
