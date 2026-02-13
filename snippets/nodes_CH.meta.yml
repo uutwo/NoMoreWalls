@@ -1,8 +1,11 @@
 proxies:
-- name: 🇨🇭[openproxylist.com] vless-CH
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇨🇭[openproxylist.com] vless-CH
   network: ws
   port: 2096
-  server: 172.66.47.45
+  server: chatgpt.com
   servername: ca.adobe-connect.top
   skip-cert-verify: false
   tls: true
@@ -11,4 +14,4 @@ proxies:
   ws-opts:
     headers:
       Host: ca.adobe-connect.top
-    path: /?TELEGRAM-YamYamProxy_YamYamProxy_YamYamProxy_YamYamProxy_YamYamProxy?ed=512
+    path: /
