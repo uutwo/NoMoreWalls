@@ -1,13 +1,4 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #54'
-  network: tcp
-  port: '30830'
-  server: v30.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇫🇷[openproxylist.com] vless-FR
@@ -40,16 +31,15 @@ proxies:
   tls: false
   type: vless
   uuid: d35308d7-2541-42bd-a0ab-a840cb98f54b
-- name: '🇫🇷[openproxylist.com] vless-FR #4'
-  network: ws
-  port: 22224
+- alpn:
+  - http/1.1
+  name: 🇫🇷[openproxylist.com] trojan-F...
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
   server: 51.44.93.242
-  servername: trojan.burgerip.co.uk
-  tls: true
-  type: vless
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    path: '%2Ftelegram-channel-vlessconfig'
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇫🇷[openproxylist.com] vmess-FR
@@ -60,9 +50,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 2c72c667-093c-47a5-a108-493c93282b57
-- name: '🇫🇷[openproxylist.com] vless-FR #5'
-  port: 58128
-  server: 85.133.249.38
-  tls: false
-  type: vless
-  uuid: a98dfd2a-b021-607c-af2d-362ae38c9478
