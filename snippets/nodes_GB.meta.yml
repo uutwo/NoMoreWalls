@@ -1,13 +1,4 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #66'
-  network: tcp
-  port: '180'
-  server: 82.198.246.97
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - name: 🇬🇧 GB英国(mibei77.com 米贝节点分享)
   password: c52d2de2-fc6d-490c-8421-132f87615736
   port: 443
@@ -22,26 +13,34 @@ proxies:
   skip-cert-verify: false
   sni: ilop.uk2033.ccwu.cc
   type: trojan
-- name: 🇬🇧[openproxylist.com] vless-GB
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #66'
+  network: tcp
+  port: '180'
+  server: 82.198.246.97
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  name: 🇬🇧[openproxylist.com] vless-GB
+  network: tcp
+  port: 443
+  server: uk.1323.world
+  servername: 1323.world
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 0e90f352-e9bc-4834-8ff6-49ba887eded4
+- name: '🇬🇧[openproxylist.com] vless-GB #1'
   network: tcp
   port: 2345
   server: go.adslimit.info
   tls: false
   type: vless
   uuid: 0331b690-79fc-49d5-85f0-54faa4eff89f
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: llaiqC-oIhL_bjc236FPq26LSn7IVhIa4cIC6OVytws
-    short-id: '!!str 175d'
-  server: 37.221.125.34
-  servername: hls-svod.itunes.apple.com
-  tls: false
-  type: vless
-  uuid: ba77276e-9939-4c6c-a73e-90e02b6faf13
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇬🇧[openproxylist.com] vless-GB #2'
