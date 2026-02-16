@@ -1,4 +1,12 @@
 proxies:
+- name: 香港3|@ripaojiedian
+  network: tcp
+  password: 9372cb81c7b0ad903f91f2f8a4d3f02b
+  port: 4856
+  server: 43.206.192.192
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
 - name: 日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -23,20 +31,39 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵[openproxylist.com] vless-JP
+- name: 新加坡|@ripaojiedian
   network: tcp
-  port: 20517
-  reality-opts:
-    public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
-    short-id: '!!str 4b070735'
-  server: hkt.xn--9kqp42aims.top
-  servername: buylite.music.apple.com
-  tls: false
-  type: vless
-  uuid: 04793d5b-1b79-49fc-b5f9-2e8ce0e3ebc6
-- name: '🇯🇵[openproxylist.com] vless-JP #1'
+  password: 9372cb81c7b0ad903f91f2f8a4d3f02b
+  port: 3901
+  server: 160.16.124.55
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 新加坡2|@ripaojiedian
+  network: tcp
+  password: 9372cb81c7b0ad903f91f2f8a4d3f02b
+  port: 3901
+  server: 153.121.39.240
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 美国|@ripaojiedian
+  network: tcp
+  password: 9372cb81c7b0ad903f91f2f8a4d3f02b
+  port: 1281
+  server: 54.95.11.131
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 美国2|@ripaojiedian
+  network: tcp
+  password: 9372cb81c7b0ad903f91f2f8a4d3f02b
+  port: 1281
+  server: 160.16.236.32
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 🇯🇵[openproxylist.com] vless-JP
   network: tcp
   port: 45703
   server: zone.jp.fx2hub.ir
@@ -47,7 +74,7 @@ proxies:
     headers:
       Host: skyroom.online
 - client-fingerprint: chrome
-  name: '🇯🇵[openproxylist.com] vless-JP #2'
+  name: '🇯🇵[openproxylist.com] vless-JP #1'
   network: tcp
   port: 443
   reality-opts:
@@ -58,3 +85,17 @@ proxies:
   tls: false
   type: vless
   uuid: 5c183802-747d-4d2f-a6f1-aff2d5d78401
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: JP_speednode_0004
+  port: 48816
+  reality-opts:
+    public-key: fk4uHkIWXJ5MbcsFASbAhKlC5gV9m-XovXftmIDSuxo
+    short-id: '!!str 21280d81'
+  server: 38.207.130.145
+  servername: www.python.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 570d1a03-6acf-40ca-819e-1049906235d9

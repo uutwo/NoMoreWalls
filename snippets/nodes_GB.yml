@@ -5,17 +5,29 @@ proxies:
   network: tcp
   port: '180'
   server: 82.198.246.97
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-headers:
+    Host: 82.198.246.97
+  ws-path: /
 - name: 🇬🇧[openproxylist.com] trojan-G...
   network: ws
   password: Tn2Bf0iRwJkJQgDk6gX6x81RB
   port: 443
   server: hl-freedom-2.undef.network
-  sni: hl-freedom-2.undef.network
+  type: trojan
+  ws-opts:
+    path: /f2fc2a1f
+- name: '🇬🇧[openproxylist.com] trojan-G... #1'
+  network: ws
+  password: 76yTlnTIsjCTlmqnUJ5Tzc1rM
+  port: 443
+  server: hl-freedom-0.undef.network
+  sni: hl-freedom-0.undef.network
   type: trojan
   ws-opts:
     headers:
-      Host: hl-freedom-2.undef.network
+      Host: hl-freedom-0.undef.network
     path: /f2fc2a1f
