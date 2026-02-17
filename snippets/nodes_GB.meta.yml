@@ -1,4 +1,13 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #66'
+  network: tcp
+  port: '180'
+  server: 82.198.246.97
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - name: 🇬🇧 GB英国(mibei77.com 米贝节点分享)
   password: c52d2de2-fc6d-490c-8421-132f87615736
   port: 443
@@ -13,15 +22,6 @@ proxies:
   skip-cert-verify: false
   sni: ilop.uk2033.ccwu.cc
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #66'
-  network: tcp
-  port: '180'
-  server: 82.198.246.97
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alpn:
   - h2
   client-fingerprint: chrome
@@ -47,6 +47,19 @@ proxies:
   network: tcp
   port: 443
   reality-opts:
+    public-key: SlyS4DeFZ7Ic9r8wc-FNpxfQvCqzEe05RsmhZ4jsYm0
+    short-id: '!!str 3cc8ceccd9de7f'
+  server: alb.pineappled.org
+  servername: www.amd.com
+  tls: false
+  type: vless
+  uuid: a25806c0-0e09-46a2-bd27-a94e92285ce9
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇬🇧[openproxylist.com] vless-GB #3'
+  network: tcp
+  port: 443
+  reality-opts:
     public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
     short-id: '!!str 4daa022e84f8edf2'
   server: 193.46.81.207
@@ -54,11 +67,16 @@ proxies:
   tls: false
   type: vless
   uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
-- name: '🇬🇧[openproxylist.com] vless-GB #3'
+- name: '🇬🇧[openproxylist.com] vless-GB #4'
+  network: ws
   port: 443
   server: nodejs.org
-  tls: false
+  servername: dev.nestandneighbours.com
+  skip-cert-verify: false
+  tls: true
   type: vless
   uuid: fef4a93d-eb4f-4657-b56b-32a0dc060045
   ws-opts:
-    path: '%2F'
+    headers:
+      Host: dev.nestandneighbours.com
+    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=2560

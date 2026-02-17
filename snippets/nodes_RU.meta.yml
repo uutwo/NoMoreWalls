@@ -13,28 +13,52 @@ proxies:
   skip-cert-verify: false
   sni: store.timimi.dpdns.org
   type: trojan
+- name: 🇷🇺[openproxylist.com] vless-RU
+  network: ws
+  port: 8443
+  server: rus3.worldunlocked.org
+  servername: rus3.worldunlocked.org
+  tls: true
+  type: vless
+  uuid: 0e4865bf-811e-44e8-90ce-233ecf209b0b
+  ws-opts:
+    headers:
+      Host: rus3.worldunlocked.org
+    path: /ws-vless/
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇷🇺[openproxylist.com] vless-RU
+  name: '🇷🇺[openproxylist.com] vless-RU #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: '!!str d3b13f31'
+  server: ru02-vlr01.tcp-reset-club.net
+  servername: hls-svod.itunes.apple.com
+  tls: false
+  type: vless
+  uuid: 9fdd70da-b710-48b7-945a-642fe8937861
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #3'
   network: tcp
   port: 443
   reality-opts:
     public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
-    short-id: '!!str 95ec618532fa065e'
-  server: 81.200.151.14
-  servername: m.vk.com
+    short-id: '!!str d17bd238f23fba92'
+  server: 95.163.210.173
+  servername: max.ru
   tls: false
   type: vless
-  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇷🇺[openproxylist.com] vless-RU #1'
-  network: tcp
+  uuid: c690db76-e866-4bca-b184-4965d29ab086
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺[openproxylist.com] vmess-RU
+  network: ws
   port: 443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 89.208.230.173
-  servername: ads.x5.ru
+  server: 213.183.54.243
   tls: false
-  type: vless
-  uuid: 7bc30425-1c2f-4823-b629-90f599a4cbfe
+  type: vmess
+  uuid: d7f56688-56a0-448c-bc04-fd83c6ac17d0
+  ws-opts:
+    path: /
