@@ -20,26 +20,41 @@ proxies:
     headers:
       Host: 547.rtxconfigz.shop
     path: /@Malinda6104
+- name: 🇩🇪[openproxylist.com] vless-DE
+  network: tcp
+  port: 8080
+  server: 46.224.79.45
+  tls: false
+  type: vless
+  uuid: cbf73250-e228-4fc8-95a1-3804176354be
+  ws-opts:
+    headers:
+      Host: play.google.com
+- name: '🇩🇪[openproxylist.com] vless-DE #1'
+  port: 20128
+  server: ox3.liiliil.ir
+  tls: false
+  type: vless
+  uuid: ce1ffe62-9562-4eb9-bcae-774b03f2776d
 - alpn:
   - http/1.1
   name: 🇩🇪[openproxylist.com] trojan-D...
   network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
+  password: telegram-id-directvpn
+  port: 22223
   server: 63.183.53.84
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 🇩🇪[openproxylist.com] vless-DE
-  network: ws
-  port: 22224
+- alpn:
+  - http/1.1
+  name: '🇩🇪[openproxylist.com] trojan-D... #1'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
   server: 3.124.221.203
-  servername: trojan.burgerip.co.uk
-  tls: true
-  type: vless
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    path: '%2Ftelegram-channel-vlessconfig'
-- name: '🇩🇪[openproxylist.com] vless-DE #1'
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: '🇩🇪[openproxylist.com] vless-DE #2'
   network: ws
   port: 80
   server: z.ssl.fastly.net
@@ -50,16 +65,23 @@ proxies:
     headers:
       Host: gerrma.global.ssl.fastly.net
     path: /
-- name: '🇩🇪[openproxylist.com] vless-DE #2'
-  network: tcp
-  port: 37463
-  server: 82.115.17.71
-  tls: false
+- client-fingerprint: chrome
+  name: '🇩🇪[openproxylist.com] vless-DE #3'
+  network: ws
+  port: 2083
+  server: ip.shakhle.ir
+  servername: ipv4.yasharteam.com
+  skip-cert-verify: false
+  tls: true
   type: vless
-  uuid: 7228d8dc-cc98-4bc0-a953-bf89e54f689b
+  uuid: 260f19e2-41c2-4f0c-870f-ab7e28e72ef6
+  ws-opts:
+    headers:
+      Host: ipv4.yasharteam.com
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #3'
+  name: '🇩🇪[openproxylist.com] vless-DE #4'
   network: tcp
   port: 443
   reality-opts:
@@ -69,16 +91,20 @@ proxies:
   tls: false
   type: vless
   uuid: f0b15f64-db59-438c-b1b6-f1b83db52240
-- name: '🇩🇪[openproxylist.com] vless-DE #4'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇩🇪[openproxylist.com] vless-DE #5'
   network: tcp
   port: 443
-  server: decdn12.suio.me
+  server: 62.133.60.50
   servername: decdn12.suio.me
   tls: true
   type: vless
   uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
 - client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #5'
+  name: '🇩🇪[openproxylist.com] vless-DE #6'
   network: tcp
   port: 50855
   reality-opts:
@@ -90,7 +116,7 @@ proxies:
   type: vless
   uuid: 853d23ee-38c6-41bb-a51c-8aea6a25b0bd
 - client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #6'
+  name: '🇩🇪[openproxylist.com] vless-DE #7'
   network: tcp
   port: 443
   reality-opts:
@@ -101,6 +127,19 @@ proxies:
   tls: false
   type: vless
   uuid: 914b0493-7094-4840-b94d-8ec3e92e9c43
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #8'
+  network: tcp
+  port: 2053
+  reality-opts:
+    public-key: WckOSneVajAzpH0sZSAFAWPnmwuuEXKZrTICNj5_hHU
+    short-id: '!!str 4a5b6c7d'
+  server: 89.106.89.112
+  servername: www.ibm.com
+  tls: false
+  type: vless
+  uuid: 07cd9dbe-21ac-4871-817d-c772687e4b7c
 - alterId: 0
   cipher: auto
   name: 🇩🇪[openproxylist.com] vmess-DE
@@ -114,43 +153,3 @@ proxies:
     headers:
       Host: cdge.avaaaal.ir
     path: /
-- name: '🇩🇪[openproxylist.com] vless-DE #9'
-  network: ws
-  port: 2096
-  server: 108.162.194.176
-  servername: hetz.x-smm.com
-  tls: true
-  type: vless
-  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
-  ws-opts:
-    headers:
-      Host: hetz.x-smm.com
-    path: '%2F45.76.183.217%3D49292'
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #8'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw
-  server: 159.195.4.83
-  servername: live.com
-  tls: false
-  type: vless
-  uuid: 03695e31-89d2-4cce-9d7e-3e61d9d80f22
-- client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #11'
-  network: ws
-  port: 2096
-  server: www.speedtest.net
-  servername: hetz.x-smm.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
-  ws-opts:
-    headers:
-      Host: hetz.x-smm.com
-    path: /45.76.183.217=49292
