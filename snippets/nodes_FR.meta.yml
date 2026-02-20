@@ -1,17 +1,25 @@
 proxies:
-- alpn:
-  - http/1.1
-  name: 🇫🇷[openproxylist.com] trojan-F...
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22223
+- name: 🇫🇷[openproxylist.com] vless-FR
+  network: ws
+  port: 22224
   server: 15.236.213.225
-  sni: trojan.burgerip.co.uk
-  type: trojan
+  servername: trojan.burgerip.co.uk
+  tls: true
+  type: vless
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    path: '%2Ftelegram-channel-vlessconfig'
+- name: '🇫🇷[openproxylist.com] vless-FR #1'
+  network: tcp
+  port: 9090
+  server: 46.38.138.221
+  tls: false
+  type: vless
+  uuid: 3334d24a-4fd2-430f-884e-ffb74a23bb50
 - alpn:
   - h2
   client-fingerprint: chrome
-  name: 🇫🇷[openproxylist.com] vless-FR
+  name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: tcp
   port: 443
   server: fr.1323.world
@@ -22,7 +30,7 @@ proxies:
   uuid: 0e90f352-e9bc-4834-8ff6-49ba887eded4
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #2'
+  name: '🇫🇷[openproxylist.com] vless-FR #5'
   network: tcp
   port: 443
   reality-opts:
