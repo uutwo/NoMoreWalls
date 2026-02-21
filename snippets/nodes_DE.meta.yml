@@ -44,23 +44,17 @@ proxies:
   tls: false
   type: vless
   uuid: 14818654-7689-453a-9a1f-4c72f89782d5
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #2'
+- name: '🇩🇪[openproxylist.com] vless-DE #2'
   network: tcp
-  port: 443
-  reality-opts:
-    public-key: XwmblvweauAJK87G-he0C5OQ-S4Czs1X5BXnbJ7UkiU
-    short-id: '!!str 661ee8b0696b45'
-  server: 94.130.132.223
-  servername: rapidpars.com
+  port: 1083
+  server: 188.40.210.8
   tls: false
   type: vless
-  uuid: 0ecc93f5-f30d-47a2-a763-3efeb2a00cc8
+  uuid: 179ddf63-c263-40ff-98a1-f53708573059
 - name: '🇩🇪[openproxylist.com] vless-DE #3'
   network: tcp
   port: 443
-  server: decdn9.suio.me
+  server: 91.196.34.130
   servername: decdn9.suio.me
   tls: true
   type: vless
@@ -79,13 +73,18 @@ proxies:
   type: vless
   uuid: 213325c6-ef4b-4cdb-850b-24a06f2865c8
 - name: '🇩🇪[openproxylist.com] vless-DE #5'
+  network: ws
   port: 2096
-  server: chatgpt.com
-  tls: false
+  server: 104.21.224.5
+  servername: ca.adobe-connect.top
+  skip-cert-verify: false
+  tls: true
   type: vless
   uuid: 686c62d9-17a7-43c9-a40a-f6747df60a9f
   ws-opts:
-    path: '%2F'
+    headers:
+      Host: ca.adobe-connect.top
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇩🇪[openproxylist.com] vless-DE #6'
@@ -111,8 +110,20 @@ proxies:
   tls: false
   type: vless
   uuid: f0b15f64-db59-438c-b1b6-f1b83db52240
-- client-fingerprint: chrome
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
   name: '🇩🇪[openproxylist.com] vless-DE #8'
+  network: tcp
+  port: 443
+  server: 62.133.60.50
+  servername: decdn12.suio.me
+  tls: true
+  type: vless
+  uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
+- client-fingerprint: chrome
+  name: '🇩🇪[openproxylist.com] vless-DE #9'
   network: tcp
   port: 50855
   reality-opts:
@@ -124,7 +135,7 @@ proxies:
   type: vless
   uuid: 853d23ee-38c6-41bb-a51c-8aea6a25b0bd
 - client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #9'
+  name: '🇩🇪[openproxylist.com] vless-DE #10'
   network: tcp
   port: 443
   reality-opts:
@@ -136,16 +147,28 @@ proxies:
   type: vless
   uuid: 914b0493-7094-4840-b94d-8ec3e92e9c43
 - client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #10'
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #11'
   network: tcp
   port: 443
   reality-opts:
-    public-key: iv8v94q9qxkMw5WSUc0obloyLVFNTsfyy9Y3FaGlj1k
-    short-id: '!!str efd29b2d25'
-  server: 64.188.64.59
-  servername: yandex.ru
+    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+    short-id: '!!str 4fa44664f6a566d3'
+  server: 5.254.85.152
+  servername: germany.scroogethebest.com
   tls: false
   type: vless
-  uuid: 12cb9911-a48d-4147-85cc-68dd678e94c6
-  ws-opts:
-    path: /
+  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #12'
+  network: tcp
+  port: 2053
+  reality-opts:
+    public-key: WckOSneVajAzpH0sZSAFAWPnmwuuEXKZrTICNj5_hHU
+    short-id: '!!str 4a5b6c7d'
+  server: 89.106.89.112
+  servername: www.ibm.com
+  tls: false
+  type: vless
+  uuid: 07cd9dbe-21ac-4871-817d-c772687e4b7c
