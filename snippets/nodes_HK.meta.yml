@@ -1,4 +1,11 @@
 proxies:
+- name: 香港+特别行政区
+  network: tcp
+  port: 2020
+  server: fredii.ichimokutrader.org
+  tls: false
+  type: vless
+  uuid: e4bd3863-ef9f-4e39-9478-2003575d3380
 - name: 🇭🇰 HK
   password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
   port: 443
@@ -138,6 +145,7 @@ proxies:
   network: ws
   port: '443'
   server: n1761296880.lie5d.cyou
+  servername: ''
   tls: true
   type: vmess
   uuid: 1effac4a-cdb8-4717-a10c-da97263c802c
@@ -145,9 +153,16 @@ proxies:
     headers:
       Host: n1761296880.lie5d.cyou
     path: /
-- name: 🇭🇰[openproxylist.com] vless-HK
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇭🇰[openproxylist.com] vless-HK
+  network: tcp
   port: 443
+  reality-opts:
+    public-key: l6RZ7aQ4MX_q39a5wLgZt36f4JldG6aZTT8p79hzFx0
+    short-id: '!!str 63d80d5199a2bc'
   server: 95.214.181.51
+  servername: www.debian.org
   tls: false
   type: vless
   uuid: 213325c6-ef4b-4cdb-850b-24a06f2865c8
@@ -157,24 +172,15 @@ proxies:
   server: 58.152.53.227
   sni: www.nintendogames.net
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #8'
-  network: tcp
-  port: '52190'
-  server: 47.242.192.233
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 98689724-deb2-4a3d-b83b-602221995baf
 - name: '🇭🇰[openproxylist.com] trojan-H... #2'
   network: ws
   password: 0zmdDXd0Qt5ff_7Qg67R-Rtq4Tmt4c
   port: 2083
   server: 188.116.22.217
+  skip-cert-verify: false
   sni: xo.e0f.cx
   type: trojan
   ws-opts:
     headers:
       Host: xo.e0f.cx
-    path: /trojan-ws
+    path: '%2Ftrojan-ws'
