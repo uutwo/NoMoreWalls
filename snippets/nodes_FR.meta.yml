@@ -1,24 +1,16 @@
 proxies:
-- name: 🇫🇷 法国 巴黎Amazon数据中心
-  password: telegram-id-directvpn
-  port: 22223
-  server: 15.188.162.245
-  skip-cert-verify: false
+- alpn:
+  - http/1.1
+  name: 🇫🇷[openproxylist.com] trojan-F...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.44.96.183
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 🇫🇷[openproxylist.com] vless-FR
-  network: ws
-  port: 22224
-  server: 51.44.96.183
-  servername: trojan.burgerip.co.uk
-  tls: true
-  type: vless
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    path: '%2Ftelegram-channel-vlessconfig'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
+  name: 🇫🇷[openproxylist.com] vless-FR
   network: tcp
   port: 443
   reality-opts:
@@ -29,13 +21,13 @@ proxies:
   tls: false
   type: vless
   uuid: 299ee660-0ad5-4366-9b34-f4bb51eb73ee
-- name: '🇫🇷[openproxylist.com] vless-FR #2'
+- name: '🇫🇷[openproxylist.com] vless-FR #1'
   port: 13760
   server: 109.172.55.232
   tls: false
   type: vless
   uuid: 5fad3ad2-1a94-40d0-85bb-51eb83f5c7df
-- name: 🇫🇷[openproxylist.com] trojan-F...
+- name: '🇫🇷[openproxylist.com] trojan-F... #1'
   network: ws
   password: humanity
   port: 443
@@ -45,14 +37,14 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: '🇫🇷[openproxylist.com] vless-FR #3'
+- name: '🇫🇷[openproxylist.com] vless-FR #2'
   port: 19547
   server: 109.172.55.157
   tls: false
   type: vless
   uuid: f9cdb2e1-939c-4470-b322-14b7313dec48
 - client-fingerprint: firefox
-  name: '🇫🇷[openproxylist.com] vless-FR #4'
+  name: '🇫🇷[openproxylist.com] vless-FR #3'
   network: ws
   port: 2087
   server: ip-data.turkserver.ir
@@ -67,7 +59,7 @@ proxies:
     path: '%2F'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #6'
+  name: '🇫🇷[openproxylist.com] vless-FR #4'
   network: tcp
   port: 443
   reality-opts:
