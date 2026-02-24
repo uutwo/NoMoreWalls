@@ -13,13 +13,17 @@ proxies:
   port: '30807'
   server: v10.hdacd.com
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-headers:
-    Host: v10.hdacd.com
-  ws-path: /
+- name: 香港3|@ripaojiedian
+  network: tcp
+  password: 64a59181551b5773e390bd717a7b7c06
+  port: 4856
+  server: 54.199.253.251
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
 - name: 香港4|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -36,57 +40,13 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 新加坡3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 15363
-  server: 43.198.227.190
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: 美国3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 50446
-  server: 43.198.227.190
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 印度|@ripaojiedian
-  network: tcp
-  port: '11973'
-  server: board-04.ddnskunlun.com
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
-  ws-headers:
-    Host: board-04.ddnskunlun.com
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 美国4|@ripaojiedian
-  network: tcp
-  port: '9028'
-  server: select-us.ddnskunlun.com
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
-  ws-headers:
-    Host: select-us.ddnskunlun.com
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: 🇭🇰[openproxylist.com] vmess-HK
   network: ws
   port: '443'
   server: n1761296877.lie5d.cyou
-  servername: n1761296877.lie5d.cyou
+  servername: ''
   tls: true
   type: vmess
   uuid: 1ebfdffa-1a37-4336-8494-f85b36cdf087
@@ -99,8 +59,7 @@ proxies:
   name: '🇭🇰[openproxylist.com] vmess-HK #1'
   network: ws
   port: 443
-  server: n1752248946.4u9ma.icu
-  servername: ''
+  server: 8.218.45.191
   tls: true
   type: vmess
   uuid: ef167986-d154-4409-88b1-757efb6ae823
@@ -113,19 +72,6 @@ proxies:
   name: '🇭🇰[openproxylist.com] vmess-HK #2'
   network: ws
   port: '443'
-  server: n1753356378.4u9ma.icu
-  tls: true
-  type: vmess
-  uuid: 37b20639-0d6e-46f2-9db5-472201b10cdd
-  ws-opts:
-    headers:
-      Host: n1753356378.4u9ma.icu
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #3'
-  network: ws
-  port: '443'
   server: n1761296897.lie5d.cyou
   tls: true
   type: vmess
@@ -136,7 +82,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #4'
+  name: '🇭🇰[openproxylist.com] vmess-HK #3'
   network: ws
   port: 443
   server: n1753101277.4u9ma.icu
@@ -150,7 +96,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #5'
+  name: '🇭🇰[openproxylist.com] vmess-HK #4'
   network: ws
   port: '443'
   server: n1752248951.lie5d.cyou
@@ -164,7 +110,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #6'
+  name: '🇭🇰[openproxylist.com] vmess-HK #5'
   network: ws
   port: 443
   server: n1752833184.lie5d.cyou
@@ -178,21 +124,39 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #7'
+  name: '🇭🇰[openproxylist.com] vmess-HK #6'
   network: ws
   port: 443
-  server: n1753348736.lie5d.cyou
+  server: n1761296880.lie5d.cyou
   servername: ''
   tls: true
   type: vmess
-  uuid: f267eac3-dfb4-45be-a480-7e1847ca04ab
+  uuid: 1effac4a-cdb8-4717-a10c-da97263c802c
   ws-opts:
     headers:
-      Host: n1753348736.lie5d.cyou
+      Host: n1761296880.lie5d.cyou
     path: /
-- name: 🇭🇰[openproxylist.com] vless-HK
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇭🇰[openproxylist.com] vless-HK
+  network: tcp
   port: 443
+  reality-opts:
+    public-key: l6RZ7aQ4MX_q39a5wLgZt36f4JldG6aZTT8p79hzFx0
+    short-id: '!!str 63d80d5199a2bc'
   server: 95.214.181.51
+  servername: www.debian.org
   tls: false
   type: vless
   uuid: 213325c6-ef4b-4cdb-850b-24a06f2865c8
+- name: 🇭🇰[openproxylist.com] trojan-H...
+  network: ws
+  password: 0zmdDXd0Qt5ff_7Qg67R-Rtq4Tmt4c
+  port: 2083
+  server: 188.116.22.217
+  sni: xo.e0f.cx
+  type: trojan
+  ws-opts:
+    headers:
+      Host: xo.e0f.cx
+    path: /trojan-ws
