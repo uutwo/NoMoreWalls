@@ -6,17 +6,13 @@ proxies:
   port: '30807'
   server: v10.hdacd.com
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 香港3|@ripaojiedian
-  network: tcp
-  password: 64a59181551b5773e390bd717a7b7c06
-  port: 4856
-  server: 54.199.253.251
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
+  ws-headers:
+    Host: v10.hdacd.com
+  ws-path: /
 - name: 香港4|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -33,6 +29,50 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+- name: 新加坡3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 15363
+  server: 43.198.227.190
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 美国3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 50446
+  server: 43.198.227.190
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 印度|@ripaojiedian
+  network: tcp
+  port: '11973'
+  server: board-04.ddnskunlun.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
+  ws-headers:
+    Host: board-04.ddnskunlun.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 美国4|@ripaojiedian
+  network: tcp
+  port: '9028'
+  server: select-us.ddnskunlun.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
+  ws-headers:
+    Host: select-us.ddnskunlun.com
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 🇭🇰[openproxylist.com] vmess-HK
@@ -51,8 +91,9 @@ proxies:
   cipher: auto
   name: '🇭🇰[openproxylist.com] vmess-HK #1'
   network: ws
-  port: '443'
+  port: 443
   server: n1752248946.4u9ma.icu
+  servername: ''
   tls: true
   type: vmess
   uuid: ef167986-d154-4409-88b1-757efb6ae823
@@ -90,8 +131,9 @@ proxies:
   cipher: auto
   name: '🇭🇰[openproxylist.com] vmess-HK #4'
   network: ws
-  port: '443'
+  port: 443
   server: n1753101277.4u9ma.icu
+  servername: ''
   tls: true
   type: vmess
   uuid: 6ea48dfe-7de2-45dc-9267-d4d9effad9fc
@@ -102,19 +144,6 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '🇭🇰[openproxylist.com] vmess-HK #5'
-  network: ws
-  port: '443'
-  server: n1753356361.lie5d.cyou
-  tls: true
-  type: vmess
-  uuid: cdfd9787-dac8-4c1e-9ae5-104e23a9d994
-  ws-opts:
-    headers:
-      Host: n1753356361.lie5d.cyou
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #6'
   network: ws
   port: '443'
   server: n1752248951.lie5d.cyou
@@ -128,10 +157,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #7'
+  name: '🇭🇰[openproxylist.com] vmess-HK #6'
   network: ws
-  port: '443'
+  port: 443
   server: n1752833184.lie5d.cyou
+  servername: ''
   tls: true
   type: vmess
   uuid: 6c7d09e3-9cfa-41c8-8194-e81eb21bfb88
@@ -141,7 +171,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #8'
+  name: '🇭🇰[openproxylist.com] vmess-HK #7'
   network: ws
   port: 443
   server: n1753348736.lie5d.cyou
@@ -153,57 +183,3 @@ proxies:
     headers:
       Host: n1753348736.lie5d.cyou
     path: /
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #9'
-  network: ws
-  port: '443'
-  server: n1753101272.lie5d.cyou
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 568a3e7a-c13e-4205-af30-e75ec3e5c778
-  ws-opts:
-    headers:
-      Host: n1753101272.lie5d.cyou
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #10'
-  network: ws
-  port: '443'
-  server: n1761296880.lie5d.cyou
-  tls: true
-  type: vmess
-  uuid: 1effac4a-cdb8-4717-a10c-da97263c802c
-  ws-opts:
-    headers:
-      Host: n1761296880.lie5d.cyou
-    path: /
-- name: 🇭🇰[openproxylist.com] trojan-H...
-  password: 64a59181551b5773e390bd717a7b7c06
-  port: 443
-  server: 58.152.53.227
-  sni: www.nintendogames.net
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #11'
-  network: tcp
-  port: '52190'
-  server: 47.242.192.233
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 98689724-deb2-4a3d-b83b-602221995baf
-- name: '🇭🇰[openproxylist.com] trojan-H... #1'
-  network: ws
-  password: 0zmdDXd0Qt5ff_7Qg67R-Rtq4Tmt4c
-  port: 2083
-  server: 188.116.22.217
-  sni: xo.e0f.cx
-  type: trojan
-  ws-opts:
-    headers:
-      Host: xo.e0f.cx
-    path: /trojan-ws
