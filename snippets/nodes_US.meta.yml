@@ -1,4 +1,45 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国 CloudFlare节点
+  network: ws
+  port: '80'
+  server: 104.21.16.211
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+  ws-opts:
+    headers:
+      Host: yyynm.2nn.ccwu.cc
+    path: /iSRWSKUJKNuXvVzsYHmsMrnO
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 CloudFlare节点 #1'
+  network: ws
+  port: '80'
+  server: turk1.net.net
+  servername: TM_AZARBAYJAB1.new.99.workers.dev
+  tls: false
+  type: vmess
+  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+  ws-opts:
+    headers:
+      Host: tr1-smart.adelping.com.
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 CloudFlare节点 #2'
+  network: ws
+  port: '80'
+  server: 104.26.15.137
+  tls: false
+  type: vmess
+  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+  ws-opts:
+    headers:
+      Host: tr1-smart.adelping.com.
+    path: /
 - name: 美国2
   password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
   port: 2056
@@ -137,19 +178,6 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国 CloudFlare节点
-  network: ws
-  port: '80'
-  server: 104.26.15.137
-  tls: false
-  type: vmess
-  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
-  ws-opts:
-    headers:
-      Host: tr1-smart.adelping.com.
-    path: /
 - name: 美国|@ripaojiedian
   network: tcp
   password: 64a59181551b5773e390bd717a7b7c06
@@ -184,6 +212,13 @@ proxies:
   tls: false
   type: vmess
   uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
+- name: 美國
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 172.66.44.230
+  skip-cert-verify: false
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
 - name: 🇺🇸 _US_美国
   password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
   port: 443
@@ -216,17 +251,16 @@ proxies:
   type: vless
   uuid: 3b9ff760-6b22-467b-a54f-e25a82a40908
 - client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: ssp
   name: '🇺🇸[openproxylist.com] vless-US #2'
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo
-    short-id: '!!str 3ca620a7ed5f3196'
-  server: 92.118.231.187
-  servername: sun6-21.userapi.com
-  tls: false
+  network: grpc
+  port: 443
+  server: s842.ccgfw.top
+  servername: u708330u0378s842.ccgfw.top
+  tls: true
   type: vless
-  uuid: 010c8bf7-0a43-404f-a6c5-2427acb4d476
+  uuid: 8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇺🇸[openproxylist.com] vless-US #3'
@@ -239,9 +273,16 @@ proxies:
   tls: false
   type: vless
   uuid: 03dd7e7c-8d2a-4cd2-b920-f5ed564fc8c4
-- name: '🇺🇸[openproxylist.com] vless-US #4'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #4'
+  network: tcp
   port: 443
+  reality-opts:
+    public-key: BaTi5Wrua_Oo_CMJ-uQ6UWtDId9z9IhzoOvRe2qvBhQ
+    short-id: '!!str 63d80d5199a2bc'
   server: 158.62.198.132
+  servername: www.hp.com
   tls: false
   type: vless
   uuid: 213325c6-ef4b-4cdb-850b-24a06f2865c8
@@ -331,3 +372,15 @@ proxies:
     headers:
       Host: ous3.dean52.top
     path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #11'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y
+  server: 142.248.80.157
+  servername: apple.com
+  tls: false
+  type: vless
+  uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
