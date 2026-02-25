@@ -69,31 +69,45 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇭🇰[openproxylist.com] vless-HK
+  network: tcp
+  port: 59750
+  reality-opts:
+    public-key: W9BjX6YmCIVsjhKMlz233Yoe0xcf0SVHfvPKqbf3vCg
+  server: 47.83.153.19
+  servername: www.amd.com
+  tls: false
+  type: vless
+  uuid: 9e76cfb8-b7a6-40f6-c2aa-9905aa19f31b
 - alterId: 0
   cipher: auto
   name: 🇭🇰[openproxylist.com] vmess-HK
   network: ws
-  port: '443'
+  port: 443
+  server: n1752248946.4u9ma.icu
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: ef167986-d154-4409-88b1-757efb6ae823
+  ws-opts:
+    headers:
+      Host: n1752248946.4u9ma.icu
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰[openproxylist.com] vmess-HK #1'
+  network: ws
+  port: 443
   server: n1753356378.4u9ma.icu
+  servername: n1753356378.4u9ma.icu
   tls: true
   type: vmess
   uuid: 37b20639-0d6e-46f2-9db5-472201b10cdd
   ws-opts:
     headers:
       Host: n1753356378.4u9ma.icu
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #1'
-  network: ws
-  port: '443'
-  server: n1761296897.lie5d.cyou
-  tls: true
-  type: vmess
-  uuid: 5ecc3086-93cf-42e3-956b-f2180e042537
-  ws-opts:
-    headers:
-      Host: n1761296897.lie5d.cyou
     path: /
 - alterId: 0
   cipher: auto
@@ -128,20 +142,6 @@ proxies:
   name: '🇭🇰[openproxylist.com] vmess-HK #4'
   network: ws
   port: 443
-  server: n1753101272.lie5d.cyou
-  servername: n1753101272.lie5d.cyou
-  tls: true
-  type: vmess
-  uuid: 568a3e7a-c13e-4205-af30-e75ec3e5c778
-  ws-opts:
-    headers:
-      Host: n1753101272.lie5d.cyou
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #5'
-  network: ws
-  port: 443
   server: n1761296880.lie5d.cyou
   servername: ''
   tls: true
@@ -151,43 +151,21 @@ proxies:
     headers:
       Host: n1761296880.lie5d.cyou
     path: /
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇭🇰[openproxylist.com] vless-HK
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: l6RZ7aQ4MX_q39a5wLgZt36f4JldG6aZTT8p79hzFx0
-    short-id: '!!str 63d80d5199a2bc'
-  server: 95.214.181.51
-  servername: www.debian.org
-  tls: false
-  type: vless
-  uuid: 213325c6-ef4b-4cdb-850b-24a06f2865c8
 - name: 🇭🇰[openproxylist.com] trojan-H...
   password: 64a59181551b5773e390bd717a7b7c06
   port: 443
   server: 58.152.53.227
   sni: www.nintendogames.net
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #6'
-  network: tcp
-  port: '52190'
-  server: 47.242.192.233
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 98689724-deb2-4a3d-b83b-602221995baf
 - name: '🇭🇰[openproxylist.com] trojan-H... #1'
   network: ws
   password: 0zmdDXd0Qt5ff_7Qg67R-Rtq4Tmt4c
   port: 2083
   server: 188.116.22.217
+  skip-cert-verify: false
   sni: xo.e0f.cx
   type: trojan
   ws-opts:
     headers:
       Host: xo.e0f.cx
-    path: /trojan-ws
+    path: '%2Ftrojan-ws'
