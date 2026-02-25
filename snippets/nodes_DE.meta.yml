@@ -31,6 +31,20 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   name: 🇩🇪[openproxylist.com] vless-DE
+  network: ws
+  port: 2053
+  server: 45.130.125.198
+  servername: kaja.thisiswe.uno
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: ee9b0614-50ec-41b6-951b-e1d5d755fa4b
+  ws-opts:
+    headers:
+      Host: kaja.thisiswe.uno
+    path: /
+- client-fingerprint: chrome
+  name: '🇩🇪[openproxylist.com] vless-DE #1'
   network: tcp
   port: 2083
   reality-opts:
@@ -41,14 +55,6 @@ proxies:
   tls: false
   type: vless
   uuid: 9748d6dc-d7a8-45cd-b4df-00476cac75f8
-- name: '🇩🇪[openproxylist.com] vless-DE #1'
-  port: 2053
-  server: solitary-voice-62ec.alird7575.workers.dev
-  tls: false
-  type: vless
-  uuid: c8dff83b-54f8-41b2-8829-7f6b01a9f187
-  ws-opts:
-    path: '%2F'
 - client-fingerprint: chrome
   name: '🇩🇪[openproxylist.com] vless-DE #2'
   network: tcp
@@ -61,10 +67,16 @@ proxies:
   tls: false
   type: vless
   uuid: ad2879c1-7f77-4a4c-ba50-c24dd5ceffa4
-- name: '🇩🇪[openproxylist.com] vless-DE #3'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #3'
   network: tcp
-  port: 1083
-  server: 188.40.210.8
+  port: 443
+  reality-opts:
+    public-key: sxyxV0_y1o09gKJBL9AJJyRSEg6MiYK0j-kb5unzHh4
+    short-id: '!!str 6bb3c7f9f97b45b8'
+  server: nl.jojack.ru
+  servername: nl.jojack.ru
   tls: false
   type: vless
-  uuid: 179ddf63-c263-40ff-98a1-f53708573059
+  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
