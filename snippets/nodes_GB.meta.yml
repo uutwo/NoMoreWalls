@@ -1,20 +1,27 @@
 proxies:
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
+- alterId: 0
+  cipher: auto
+  name: 🇬🇧 英国 V2CROSS.COM
+  network: tcp
+  port: '180'
+  server: 82.198.246.97
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
   name: 🇬🇧[openproxylist.com] vless-GB
-  network: ws
+  network: tcp
   port: 443
-  server: mrv.com.br
-  servername: uk.dlaparat.ir
-  skip-cert-verify: false
-  tls: true
+  reality-opts:
+    public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
+    short-id: '!!str 4daa022e84f8edf2'
+  server: de.cdn.stun.su
+  servername: de.cdn.stun.su
+  tls: false
   type: vless
-  uuid: 98aec3c3-d957-4363-9933-018e533c7c06
-  ws-opts:
-    headers:
-      Host: uk.dlaparat.ir
-    path: /?host:localhoat:443/
+  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
 - name: '🇬🇧[openproxylist.com] vless-GB #1'
   port: 2096
   server: vb27.homianco.ir
@@ -31,16 +38,3 @@ proxies:
     headers:
       Host: hl-freedom-2.undef.network
     path: /f2fc2a1f
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #2'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
-    short-id: '!!str 4daa022e84f8edf2'
-  server: de.cdn.stun.su
-  servername: de.cdn.stun.su
-  tls: false
-  type: vless
-  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
