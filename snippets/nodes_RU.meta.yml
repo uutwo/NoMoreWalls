@@ -6,17 +6,28 @@ proxies:
   skip-cert-verify: false
   sni: ya.ru
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺[openproxylist.com] vmess-RU
-  network: ws
-  port: '443'
-  server: 213.183.54.243
-  servername: ''
+- client-fingerprint: chrome
+  name: 🇷🇺[openproxylist.com] vless-RU
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: 98aKRSTSW_8Fpd8e63HOuqLhnlGvZrTD5EBPTMy0tBc
+    short-id: '!!str 7dcd0c337708'
+  server: 87.242.103.184
+  servername: ya.ru
   tls: false
-  type: vmess
-  uuid: d7f56688-56a0-448c-bc04-fd83c6ac17d0
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  type: vless
+  uuid: f5a8e5fb-baa8-48cb-a62a-930c97c29eb2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: C3hc32Cknec2shasKJIH2DYVb7Fyu64RF9v71L3ipEg
+    short-id: '!!str 9c2378562188c3cb'
+  server: 82.97.243.225
+  servername: spb.scroogethebest.com
+  tls: false
+  type: vless
+  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
