@@ -6,27 +6,6 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: 🇯🇵 日本|@ripaojiedian
-  password: BxceQaOe
-  port: 2595
-  server: 3.112.214.167
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: 🇯🇵 日本2|@ripaojiedian
-  password: 262f1d150049457ac1d6e66b020fa980
-  port: 193
-  server: 160.16.138.24
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 🇯🇵 日本3|@ripaojiedian
-  password: 262f1d150049457ac1d6e66b020fa980
-  port: 3423
-  server: 43.207.87.46
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
 - name: 日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -40,6 +19,7 @@ proxies:
   password: 262f1d150049457ac1d6e66b020fa980
   port: 400
   server: 160.16.231.103
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 日本3|@ripaojiedian
@@ -47,5 +27,34 @@ proxies:
   password: 262f1d150049457ac1d6e66b020fa980
   port: 3423
   server: 54.250.241.85
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: violet
+  name: 🇯🇵[openproxylist.com] vless-JP
+  network: grpc
+  port: 25055
+  server: sgskb.osaip.net
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 18d6752a-47b8-423f-9428-c9020761cd88
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- client-fingerprint: chrome
+  name: '🇯🇵[openproxylist.com] vless-JP #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: DNdTBHyztOVJOBJQX91YXEhNkWbSAntqUoTFBHc6Clw
+    short-id: '!!str 6ba85179e30d4fc2'
+  server: 47.74.6.60
+  servername: cdn77.api.userway.org
+  tls: false
+  type: vless
+  uuid: 5c183802-747d-4d2f-a6f1-aff2d5d78401
