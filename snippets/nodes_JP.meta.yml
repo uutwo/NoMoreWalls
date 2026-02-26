@@ -6,22 +6,6 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: 香港3|@ripaojiedian
-  network: tcp
-  password: 262f1d150049457ac1d6e66b020fa980
-  port: 2255
-  server: 13.231.143.120
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 香港5|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 445
-  server: 13.115.229.23
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
 - name: 日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -46,56 +30,8 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '🇸🇬[openproxylist.com] trojan-S... #1'
-  network: tcp
-  password: 262f1d150049457ac1d6e66b020fa980
-  port: 3419
-  server: 153.121.65.107
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 新加坡2|@ripaojiedian
-  network: tcp
-  password: 262f1d150049457ac1d6e66b020fa980
-  port: 3901
-  server: 35.77.90.248
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 🇺🇸[openproxylist.com] trojan-U...
-  network: tcp
-  password: 262f1d150049457ac1d6e66b020fa980
-  port: 4920
-  server: 153.121.65.107
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国2|@ripaojiedian
-  network: tcp
-  password: 262f1d150049457ac1d6e66b020fa980
-  port: 1281
-  server: 153.121.65.107
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
 - client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: violet
   name: 🇯🇵[openproxylist.com] vless-JP
-  network: grpc
-  port: 25055
-  server: sgskb.osaip.net
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 18d6752a-47b8-423f-9428-c9020761cd88
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- client-fingerprint: chrome
-  name: '🇯🇵[openproxylist.com] vless-JP #1'
   network: tcp
   port: 443
   reality-opts:
@@ -106,3 +42,17 @@ proxies:
   tls: false
   type: vless
   uuid: 5c183802-747d-4d2f-a6f1-aff2d5d78401
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵[openproxylist.com] vmess-JP
+  network: ws
+  port: '443'
+  server: n1753598446.wpg27.xyz
+  servername: n1753598446.wpg27.xyz
+  tls: true
+  type: vmess
+  uuid: a5047d95-24b8-451a-93e3-f2a387b93d5a
+  ws-opts:
+    headers:
+      Host: n1753598446.wpg27.xyz
+    path: /
