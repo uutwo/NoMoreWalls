@@ -11,8 +11,25 @@ proxies:
   tls: false
   type: vless
   uuid: 4c3a2f39-dc52-4322-ac66-83010d12bfc0
-- client-fingerprint: chrome
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
   name: '🇫🇷[openproxylist.com] vless-FR #1'
+  network: tcp
+  port: 8080
+  server: etherfox.mzerati.vip.gift.cdn-pardaz.ir
+  servername: etherfox.mzerati.vip.gift.cdn-pardaz.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: eda30ec9-8200-449e-8cde-ccd8a558c2e3
+  ws-opts:
+    headers:
+      Host: tgju.org
+- client-fingerprint: chrome
+  name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: tcp
   port: 13760
   reality-opts:
@@ -24,7 +41,7 @@ proxies:
   type: vless
   uuid: 5fad3ad2-1a94-40d0-85bb-51eb83f5c7df
 - client-fingerprint: chrome
-  name: '🇫🇷[openproxylist.com] vless-FR #2'
+  name: '🇫🇷[openproxylist.com] vless-FR #3'
   network: tcp
   port: 19547
   reality-opts:
@@ -35,16 +52,3 @@ proxies:
   tls: false
   type: vless
   uuid: f9cdb2e1-939c-4470-b322-14b7313dec48
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #3'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
-    short-id: '!!str 4fa44664f6a566d3'
-  server: 45.13.119.38
-  servername: fran.scroogethebest.com
-  tls: false
-  type: vless
-  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
