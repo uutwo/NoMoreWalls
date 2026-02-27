@@ -6,6 +6,19 @@ proxies:
   sni: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com
   tls: false
   type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 香港 阿里云
+  network: ws
+  port: '443'
+  server: 47.243.95.187
+  tls: true
+  type: vmess
+  uuid: c28a6258-7baa-40fc-8a51-87f59c847cd7
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 2
   cipher: auto
   name: 香港|@ripaojiedian
@@ -46,18 +59,6 @@ proxies:
   server: bgp1.stimaysmhy8.com
   sni: jsygouer.weixin-baidu-qq.com
   type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇭🇰[openproxylist.com] vless-HK
-  network: tcp
-  port: 59750
-  reality-opts:
-    public-key: W9BjX6YmCIVsjhKMlz233Yoe0xcf0SVHfvPKqbf3vCg
-  server: 47.83.153.19
-  servername: www.amd.com
-  tls: false
-  type: vless
-  uuid: 9e76cfb8-b7a6-40f6-c2aa-9905aa19f31b
 - alterId: 0
   cipher: auto
   name: 🇭🇰[openproxylist.com] vmess-HK
@@ -212,7 +213,7 @@ proxies:
     path: /
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇭🇰[openproxylist.com] vless-HK #1'
+  name: 🇭🇰[openproxylist.com] vless-HK
   network: tcp
   port: 443
   reality-opts:
@@ -228,9 +229,10 @@ proxies:
   password: 0zmdDXd0Qt5ff_7Qg67R-Rtq4Tmt4c
   port: 2083
   server: 188.116.22.217
+  skip-cert-verify: false
   sni: xo.e0f.cx
   type: trojan
   ws-opts:
     headers:
       Host: xo.e0f.cx
-    path: /trojan-ws
+    path: '%2Ftrojan-ws'
