@@ -10,19 +10,19 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alpn:
   - http/1.1
+  client-fingerprint: chrome
   name: 🇬🇧[openproxylist.com] vless-GB
   network: ws
   port: 443
-  server: 104.16.139.37
+  server: freedom.gov
   servername: uk.dlaparat.ir
-  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 98aec3c3-d957-4363-9933-018e533c7c06
   ws-opts:
     headers:
       Host: uk.dlaparat.ir
-    path: /
+    path: /?host:localhoat:443/
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇬🇧[openproxylist.com] vless-GB #1'
@@ -41,5 +41,18 @@ proxies:
   password: zp630tdUuD
   port: 52047
   server: 194.150.166.151
+  skip-cert-verify: true
   sni: aws.amazon.com
   type: trojan
+- client-fingerprint: chrome
+  name: '🇬🇧[openproxylist.com] vless-GB #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: kWxGUQ6QtaU-SCCt8Ht-POUPS6Ue6w-KyHjxb1AYQ1w
+    short-id: '!!str 2e0f'
+  server: 217.154.38.156
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: 2a8391ef-383c-4321-ac25-89b50973ab73
