@@ -1,4 +1,12 @@
 proxies:
+- name: 🇬🇧/@en_vpn/کانفیگ های بیشتر
+  password: ad49d6ea-c453-4a2e-b36a-2b71a3e0ed12
+  port: 65535
+  server: 132.145.28.17
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  tls: false
+  type: hysteria2
 - alterId: 0
   cipher: auto
   name: 🇬🇧 英国 V2CROSS.COM
@@ -51,7 +59,6 @@ proxies:
   port: 443
   server: 104.16.139.37
   servername: uk.dlaparat.ir
-  skip-cert-verify: true
   tls: true
   type: vless
   uuid: 98aec3c3-d957-4363-9933-018e533c7c06
@@ -59,7 +66,10 @@ proxies:
     headers:
       Host: uk.dlaparat.ir
     path: '%2F'
-- client-fingerprint: chrome
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇬🇧[openproxylist.com] vless-GB #4'
   network: tcp
