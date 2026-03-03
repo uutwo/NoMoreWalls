@@ -1,16 +1,19 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #128'
-  network: tcp
-  port: '180'
-  server: 82.198.246.97
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- client-fingerprint: firefox
+- alpn:
+  - h3
+  - h2
+  grpc-opts:
+    grpc-service-name: ''
   name: 🇬🇧[openproxylist.com] vless-GB
+  network: grpc
+  port: 2087
+  server: gyeisv.aloiacs.shop
+  servername: Y6lGfTpXg7.TrAmVoKeLi.InFo
+  tls: true
+  type: vless
+  uuid: e999db7a-1b17-4da6-bc37-c9fa24af2e93
+- client-fingerprint: firefox
+  name: '🇬🇧[openproxylist.com] vless-GB #1'
   network: tcp
   port: 2096
   reality-opts:
@@ -22,7 +25,7 @@ proxies:
   type: vless
   uuid: d5f2b8ad-5ee4-41fe-95e9-7adc1acb0549
 - client-fingerprint: firefox
-  name: '🇬🇧[openproxylist.com] vless-GB #1'
+  name: '🇬🇧[openproxylist.com] vless-GB #2'
   network: tcp
   port: 2096
   reality-opts:
@@ -35,11 +38,10 @@ proxies:
   uuid: 6cd0ffa7-0fb6-4036-bc94-019727b5924f
 - alpn:
   - http/1.1
-  client-fingerprint: chrome
-  name: '🇬🇧[openproxylist.com] vless-GB #2'
+  name: '🇬🇧[openproxylist.com] vless-GB #3'
   network: ws
   port: 443
-  server: freedom.gov
+  server: 104.16.139.37
   servername: uk.dlaparat.ir
   skip-cert-verify: false
   tls: true
@@ -48,17 +50,4 @@ proxies:
   ws-opts:
     headers:
       Host: uk.dlaparat.ir
-    path: /?host:localhoat:443/
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #3'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
-    short-id: '!!str 4daa022e84f8edf2'
-  server: de.cdn.stun.su
-  servername: de.cdn.stun.su
-  tls: false
-  type: vless
-  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+    path: /
