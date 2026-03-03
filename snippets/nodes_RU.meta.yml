@@ -1,6 +1,19 @@
 proxies:
 - client-fingerprint: chrome
-  name: '🇷🇺[openproxylist.com] vless-RU #2'
+  flow: xtls-rprx-vision
+  name: 🇷🇺[openproxylist.com] vless-RU
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 5dhqQP68hzsZN7lKNcZQLcDLMZ8PRwpE70pHyUr_sRs
+    short-id: '!!str 2c01bea1'
+  server: 212.233.92.193
+  servername: ads.x5.ru
+  tls: false
+  type: vless
+  uuid: 66bb28f3-6d53-4e48-a8ee-15832815c359
+- client-fingerprint: chrome
+  name: '🇷🇺[openproxylist.com] vless-RU #3'
   network: ws
   port: 443
   server: 212.193.157.118
@@ -13,7 +26,7 @@ proxies:
       Host: lk-cdn.deploy-assure.ru
     path: '%2F%2F'
 - client-fingerprint: chrome
-  name: '🇷🇺[openproxylist.com] vless-RU #1'
+  name: '🇷🇺[openproxylist.com] vless-RU #2'
   network: grpc
   port: 443
   reality-opts:
@@ -25,29 +38,34 @@ proxies:
   tls: false
   type: vless
   uuid: 68ac194a-0313-41a1-89fb-903a6fa3c795
-- name: '🇷🇺[openproxylist.com] vless-RU #3'
+- name: '🇷🇺[openproxylist.com] vless-RU #4'
+  network: ws
   port: 8443
   server: 45.12.114.73
-  tls: false
+  servername: rus21.unboundworld.org
+  skip-cert-verify: true
+  tls: true
   type: vless
   uuid: f1e74548-4c0b-463b-b68d-0d1ec48c965d
   ws-opts:
-    path: '%2Fws-vless%2F'
-- client-fingerprint: chrome
-  name: '🇷🇺[openproxylist.com] vless-RU #4'
-  network: tcp
-  port: 64527
-  reality-opts:
-    public-key: wAKyTOUr89tJU2pVUVrwt0dAsxmNfRHXhPQ3IvyGshc
-    short-id: '!!str 56abcac460c7c6ca'
-  server: 212.192.14.250
-  servername: yandex.ru
-  tls: false
-  type: vless
-  uuid: b3203210-2e42-468a-ad7d-5da9b9a1bac4
+    headers:
+      Host: rus21.unboundworld.org
+    path: /ws-vless/
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇷🇺[openproxylist.com] vless-RU #5'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+  server: 138.124.186.52
+  servername: www.fh-aachen.de
+  tls: false
+  type: vless
+  uuid: e346f220-4ca4-4f69-a66b-52e992b3b625
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #6'
   network: tcp
   port: 443
   reality-opts:
@@ -57,17 +75,3 @@ proxies:
   tls: false
   type: vless
   uuid: e346f220-4ca4-4f69-a66b-52e992b3b625
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺[openproxylist.com] vmess-RU
-  network: ws
-  port: '443'
-  server: 213.183.54.243
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d7f56688-56a0-448c-bc04-fd83c6ac17d0
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
