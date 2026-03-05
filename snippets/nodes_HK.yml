@@ -1,4 +1,17 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 🇮🇱 以色列 V2CROSS.COM
+  network: none
+  port: '35760'
+  server: 149.88.95.217
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 17e96792-d8c3-4741-9c34-e5d1c11d754f
+  ws-headers:
+    Host: 149.88.95.217
+  ws-path: /
 - alterId: 2
   cipher: auto
   name: 香港|@ripaojiedian
@@ -6,25 +19,13 @@ proxies:
   port: '30807'
   server: v10.hdacd.com
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 香港3|@ripaojiedian
-  network: tcp
-  password: f7dbed8b1ca85124e793ba6c0bcfd0db
-  port: 331
-  server: 3.112.130.96
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 香港4|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 388
-  server: 3.112.203.220
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
+  ws-headers:
+    Host: v10.hdacd.com
+  ws-path: /
 - name: 🇭🇰[openproxylist.com] trojan-H...
   network: tcp
   password: BxceQaOe
@@ -80,7 +81,6 @@ proxies:
   network: ws
   port: '443'
   server: n1761296897.lie5d.cyou
-  servername: ''
   tls: true
   type: vmess
   uuid: 5ecc3086-93cf-42e3-956b-f2180e042537
