@@ -1,16 +1,30 @@
 proxies:
-- name: JP
-  password: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61
-  port: 13778
-  server: jp7.dexlos.com
-  skip-cert-verify: true
-  tls: false
-  type: hysteria2
-- name: 日本|@ripaojiedian
-  network: tcp
+- name: 🇯🇵 日本|@stairnode
   password: BxceQaOe
   port: 16919
   server: 52.195.2.120
+  skip-cert-verify: false
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 🇯🇵 日本2|@stairnode
+  password: f7dbed8b1ca85124e793ba6c0bcfd0db
+  port: 4937
+  server: 57.180.36.84
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 🇯🇵 日本3|@stairnode
+  password: f7dbed8b1ca85124e793ba6c0bcfd0db
+  port: 34818
+  server: 13.115.155.105
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 日本|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 21508
+  server: 52.195.220.53
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
@@ -18,34 +32,32 @@ proxies:
   network: tcp
   password: f7dbed8b1ca85124e793ba6c0bcfd0db
   port: 4937
-  server: 57.180.36.84
-  skip-cert-verify: false
+  server: 13.230.112.99
   sni: www.nintendogames.net
   type: trojan
 - name: 日本3|@ripaojiedian
   network: tcp
   password: f7dbed8b1ca85124e793ba6c0bcfd0db
   port: 34818
-  server: 13.115.155.105
-  skip-cert-verify: false
+  server: 18.181.193.208
   sni: www.nintendogames.net
   type: trojan
-- name: 🇯🇵[openproxylist.com] vless-JP
+- name: 🇯🇵[openproxylist.com] trojan-J...
+  password: f7dbed8b1ca85124e793ba6c0bcfd0db
+  port: 2001
+  server: 160.16.214.104
+  sni: www.nintendogames.net
+  type: trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵[openproxylist.com] vless-JP
+  network: tcp
   port: 443
+  reality-opts:
+    public-key: 2Q0J_OPL73qhEIYf3YBLCuY4RIBurgz5QDVchQ8e9ks
+    short-id: '!!str f189d91760bb6663'
   server: jp.cdn.stun.su
+  servername: jp.cdn.stun.su
   tls: false
   type: vless
   uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵[openproxylist.com] vmess-JP
-  network: ws
-  port: '443'
-  server: n1751468092.lie5d.cyou
-  tls: true
-  type: vmess
-  uuid: 7ace1873-9822-46af-9920-bd64f725212c
-  ws-opts:
-    headers:
-      Host: n1751468092.lie5d.cyou
-    path: /
