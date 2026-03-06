@@ -1,10 +1,4 @@
 proxies:
-- name: 俄罗斯+V2CROSS.COM
-  password: ZblhWr0mqMakCPg.N
-  port: 36158
-  server: 212.193.18.144
-  sni: ya.ru
-  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇷🇺[openproxylist.com] vless-RU
@@ -18,19 +12,19 @@ proxies:
   tls: false
   type: vless
   uuid: 95be7de0-2394-47b8-aa2c-27773d61807f
-- name: '🇷🇺[openproxylist.com] vless-RU #1'
-  network: ws
-  port: 8443
-  server: 45.12.114.73
-  servername: rus21.unboundworld.org
+- client-fingerprint: chrome
+  name: '🇷🇺[openproxylist.com] vless-RU #1'
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: izCUzi8srWz4o9UbRkAfemYs13fHQc_6H5QBGct6gWU
+    short-id: '!!str c5b7244c0fef441a'
+  server: 64.188.90.93
+  servername: a.primarymaster.online
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vless
-  uuid: f1e74548-4c0b-463b-b68d-0d1ec48c965d
-  ws-opts:
-    headers:
-      Host: rus21.unboundworld.org
-    path: '%2Fws-vless%2F'
+  uuid: 68ac194a-0313-41a1-89fb-903a6fa3c795
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇷🇺[openproxylist.com] vless-RU #2'
