@@ -1,36 +1,18 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 瑞士 V2CROSS.COM
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇨🇭[openproxylist.com] vless-CH
   network: tcp
-  port: '443'
-  server: 89.31.120.192
+  port: 7443
+  reality-opts:
+    public-key: l1aZ57psAgXXvK_uYa4EUNWlZi91sBg7Cc8hC5pB3j0
+    short-id: '!!str abcd1234'
+  server: 37.139.33.79
+  servername: max.ru
   tls: false
-  type: vmess
-  uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
-- alpn:
-  - h3
-  name: 'کانال تلگرام : Free_VPN_CH@ #1'
-  obfs: salamander
-  obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
-  password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
-  port: 35000
-  server: 5.175.249.174
-  skip-cert-verify: false
-  sni: api.kermanshahi.org
-  tls: false
-  type: hysteria2
-- name: 'کانال تلگرام : Free_VPN_CH@ #3'
-  obfs: salamander
-  obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
-  password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
-  port: 35000
-  server: 5.175.249.174
-  skip-cert-verify: false
-  sni: api.kermanshahi.org@freenettir
-  tls: false
-  type: hysteria2
-- name: 🇨🇭[openproxylist.com] vless-CH
+  type: vless
+  uuid: e08736d8-aec2-4400-bd42-e34daf4a96d4
+- name: '🇨🇭[openproxylist.com] vless-CH #1'
   network: ws
   port: 36261
   server: 37.156.45.227
@@ -41,3 +23,18 @@ proxies:
     headers:
       Host: GitHub.com
     path: '%2F%2Fconnect'
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇨🇭[openproxylist.com] vless-CH #2'
+  network: ws
+  port: 2096
+  server: chatgpt.com
+  servername: ca.adobe-connect.top
+  tls: true
+  type: vless
+  uuid: 686c62d9-17a7-43c9-a40a-f6747df60a9f
+  ws-opts:
+    headers:
+      Host: ca.adobe-connect.top
+    path: /?TELEGRAM-?ed=512

@@ -2,8 +2,15 @@ proxies:
 - name: 加拿大+V2CROSS.COM
   password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
   port: 10889
-  server: 167.17.185.228
-  sni: web.max
+  server: 167.17.185.152
+  sni: ozon.ru
+  type: trojan
+- name: 🇨🇦 加拿大 V2CROSS.COM
+  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+  port: 10889
+  server: 167.17.185.169
+  skip-cert-verify: false
+  sni: ya.ru
   type: trojan
 - alterId: 0
   cipher: auto
@@ -31,28 +38,39 @@ proxies:
     headers:
       Host: ''
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- name: 🇨🇦 加拿大 V2CROSS.COM
-  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-  port: 10889
-  server: 167.17.185.169
-  skip-cert-verify: false
-  sni: ya.ru
-  type: trojan
-- name: '🇨🇦 加拿大 V2CROSS.COM #1'
-  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-  port: 10889
-  server: 167.17.185.172
-  skip-cert-verify: false
-  sni: web.max.ru
-  type: trojan
-- name: 🇨🇦[openproxylist.com] vless-CA
+- alpn:
+  - http/1.1
+  name: 🇨🇦[openproxylist.com] vless-CA
   network: ws
-  port: 80
-  server: 104.17.138.160
-  tls: false
+  port: 443
+  server: poe.com
+  servername: 80bab3a2.gon-7ye.pages.dev
+  skip-cert-verify: true
+  tls: true
   type: vless
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
+  uuid: 081efe27-f6b8-4f60-aedb-3c9effe9c67d
   ws-opts:
     headers:
-      Host: vip.yaml7.ggff.net
+      Host: 80bab3a2.gon-7ye.pages.dev
     path: '%2F'
+- name: '🇨🇦[openproxylist.com] vless-CA #1'
+  port: 2096
+  server: 185.238.228.238
+  tls: false
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    path: '%2F%3Fed%3D2560%26telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40wangcai2'
+- name: '🇨🇦[openproxylist.com] vless-CA #2'
+  network: ws
+  port: 2087
+  server: www.shopify.com
+  servername: xsfvxv55x1.fx03.ccwu.cc
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 77777777-6663-4ef2-b26b-ed2d70642678
+  ws-opts:
+    headers:
+      Host: xsfvxv55x1.fx03.ccwu.cc
+    path: /
