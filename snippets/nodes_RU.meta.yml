@@ -27,12 +27,17 @@ proxies:
   type: vless
   uuid: a774f61d-a518-4c61-902f-807797da6caf
 - name: '🇷🇺[openproxylist.com] vless-RU #1'
+  network: ws
   port: 8443
   server: 45.12.114.73
-  tls: false
+  servername: rus21.unboundworld.org
+  skip-cert-verify: true
+  tls: true
   type: vless
   uuid: f1e74548-4c0b-463b-b68d-0d1ec48c965d
   ws-opts:
+    headers:
+      Host: rus21.unboundworld.org
     path: '%2Fws-vless%2F'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
