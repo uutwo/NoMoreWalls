@@ -21,31 +21,22 @@ proxies:
   sni: api.kermanshahi.org@freenettir
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇨🇭[openproxylist.com] vless-CH
-  network: tcp
-  port: 7443
-  reality-opts:
-    public-key: l1aZ57psAgXXvK_uYa4EUNWlZi91sBg7Cc8hC5pB3j0
-    short-id: '!!str abcd1234'
-  server: 37.139.33.79
-  servername: max.ru
+- name: 🇨🇭[openproxylist.com] vless-CH
+  network: ws
+  port: 36261
+  server: 37.156.45.227
   tls: false
   type: vless
-  uuid: e08736d8-aec2-4400-bd42-e34daf4a96d4
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇨🇭[openproxylist.com] vless-CH #1'
-  network: ws
+  uuid: cb57b920-cd95-4bbf-bd8c-9e58833fcc5c
+  ws-opts:
+    headers:
+      Host: GitHub.com
+    path: '%2F%2Fconnect'
+- name: '🇨🇭[openproxylist.com] vless-CH #1'
   port: 2096
   server: chatgpt.com
-  servername: ca.adobe-connect.top
-  tls: true
+  tls: false
   type: vless
   uuid: 686c62d9-17a7-43c9-a40a-f6747df60a9f
   ws-opts:
-    headers:
-      Host: ca.adobe-connect.top
     path: '%2F'
