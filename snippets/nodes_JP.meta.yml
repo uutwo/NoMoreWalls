@@ -1,25 +1,4 @@
 proxies:
-- name: 🇯🇵 日本|@stairnode
-  password: BxceQaOe
-  port: 4099
-  server: 43.207.71.166
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: 🇯🇵 日本2|@stairnode
-  password: f7dbed8b1ca85124e793ba6c0bcfd0db
-  port: 2001
-  server: 160.16.72.33
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 🇯🇵 日本3|@stairnode
-  password: f7dbed8b1ca85124e793ba6c0bcfd0db
-  port: 34818
-  server: 160.16.72.33
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
 - name: 日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -33,6 +12,7 @@ proxies:
   password: f7dbed8b1ca85124e793ba6c0bcfd0db
   port: 2001
   server: 160.16.70.180
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 日本3|@ripaojiedian
@@ -40,17 +20,9 @@ proxies:
   password: f7dbed8b1ca85124e793ba6c0bcfd0db
   port: 4937
   server: 160.16.70.180
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵[openproxylist.com] vmess-JP
-  network: tcp
-  port: '8443'
-  server: 31.58.223.134
-  tls: false
-  type: vmess
-  uuid: 78cdc6b7-8b14-47d6-bf09-3167bc5124fb
 - name: 🇯🇵[openproxylist.com] trojan-J...
   password: f7dbed8b1ca85124e793ba6c0bcfd0db
   port: 34818
@@ -69,16 +41,16 @@ proxies:
   server: 160.16.214.104
   sni: www.nintendogames.net
   type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵[openproxylist.com] vless-JP
-  network: tcp
-  port: 20443
-  reality-opts:
-    public-key: wIlDoplsuyFT7hzmd7y-gnRAlYTys99OU11k4v_Co0s
-    short-id: '!!str abcd1234'
-  server: 8.216.21.75
-  servername: www.microsoft.com
-  tls: false
-  type: vless
-  uuid: 6ec42587-d79b-479e-984a-a2533eb457b2
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵[openproxylist.com] vmess-JP
+  network: ws
+  port: '443'
+  server: n1751468092.lie5d.cyou
+  tls: true
+  type: vmess
+  uuid: 7ace1873-9822-46af-9920-bd64f725212c
+  ws-opts:
+    headers:
+      Host: n1751468092.lie5d.cyou
+    path: /
