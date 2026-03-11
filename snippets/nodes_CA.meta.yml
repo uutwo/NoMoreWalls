@@ -2,15 +2,16 @@ proxies:
 - name: 🇨🇦 加拿大 V2CROSS.COM
   password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
   port: 10889
+  server: 167.17.185.169
+  skip-cert-verify: false
+  sni: ya.ru
+  type: trojan
+- name: '🇨🇦 加拿大 V2CROSS.COM #1'
+  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
+  port: 10889
   server: 167.17.185.152
   skip-cert-verify: false
   sni: ozon.ru
-  type: trojan
-- name: '加拿大+V2CROSS.COM #1'
-  password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
-  port: 10889
-  server: 167.17.185.169
-  sni: ya.ru
   type: trojan
 - alterId: 0
   cipher: auto
@@ -38,14 +39,20 @@ proxies:
     headers:
       Host: ''
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- name: 🇨🇦[openproxylist.com] vless-CA
+- client-fingerprint: chrome
+  name: 🇨🇦[openproxylist.com] vless-CA
+  network: ws
   port: 2096
-  server: 162.159.153.231
-  tls: false
+  server: 192.0.54.238
+  servername: sni.jpmj.dev
+  skip-cert-verify: true
+  tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%3Fed%3D2560%26telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40wangcai2'
 - client-fingerprint: chrome
   name: '🇨🇦[openproxylist.com] vless-CA #1'
   network: ws
@@ -60,10 +67,28 @@ proxies:
       Host: ylnhh.cc.cd
     path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
 - name: '🇨🇦[openproxylist.com] vless-CA #2'
+  network: ws
   port: 2096
-  server: 188.244.122.138
-  tls: false
+  server: 185.158.133.138
+  servername: sni.111000.indevs.in
+  skip-cert-verify: true
+  tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Ftelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2B%2540wangcai2%3D'
+- name: '🇨🇦[openproxylist.com] vless-CA #3'
+  network: ws
+  port: 2096
+  server: 188.244.122.138
+  servername: sni.111000.indevs.in
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
     path: '%2F'
