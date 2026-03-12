@@ -26,39 +26,10 @@ proxies:
   type: vless
   uuid: 7559ad2a-a419-4fd7-bc6a-9350a017f72a
 - name: '🇷🇺[openproxylist.com] vless-RU #2'
-  network: ws
   port: 8443
   server: 45.12.114.73
-  servername: rus21.unboundworld.org
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vless
   uuid: f1e74548-4c0b-463b-b68d-0d1ec48c965d
   ws-opts:
-    headers:
-      Host: rus21.unboundworld.org
-    path: /ws-vless/
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇷🇺[openproxylist.com] vless-RU #3'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
-  server: 138.124.186.52
-  servername: www.fh-aachen.de
-  tls: false
-  type: vless
-  uuid: e346f220-4ca4-4f69-a66b-52e992b3b625
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇷🇺[openproxylist.com] vless-RU #4'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
-  server: 138.124.186.80
-  servername: www.fh-aachen.de
-  tls: false
-  type: vless
-  uuid: e346f220-4ca4-4f69-a66b-52e992b3b625
+    path: '%2Fws-vless%2F'
