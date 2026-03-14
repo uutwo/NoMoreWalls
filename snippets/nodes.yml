@@ -89,12 +89,18 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- name: 🇨🇦 加拿大 V2CROSS.COM
+- name: 加拿大+V2CROSS.COM
   password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
   port: 10889
-  server: 167.17.185.172
+  server: 167.17.185.169
+  sni: ya.ru
+  type: trojan
+- name: 🇦🇱[openproxylist.com] trojan-A...
+  password: MeaDiUmPlkWbZJ2BON8tz
+  port: 28259
+  server: 78.159.131.12
   skip-cert-verify: false
-  sni: web.max.ru
+  sni: ads.x5.ru
   type: trojan
 - name: 香港+电讯盈科有限公司
   password: BxceQaOe
@@ -103,27 +109,21 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 西班牙+V2CROSS.COM
-  network: tcp
-  password: wp9IsiY82uQhcmgNC1eoBM
-  port: 12420
-  server: 80.173.231.254
-  sni: www.semanticstaplegun.click
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 英国 V2CROSS.COM
   network: tcp
-  port: '180'
+  port: 180
   server: 82.198.246.97
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: '加拿大+V2CROSS.COM #1'
+- name: 🇨🇦 加拿大 V2CROSS.COM
   password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj
   port: 10889
-  server: 167.17.185.169
-  sni: ya.ru
+  server: 167.17.185.172
+  skip-cert-verify: false
+  sni: web.max.ru
   type: trojan
 - alterId: 0
   cipher: auto
@@ -333,13 +333,6 @@ proxies:
     headers:
       Host: 3dfc06a29f8ae09dec34988159d21bee.mobgslb.tbcache.com
     path: /
-- name: 🇦🇱[openproxylist.com] trojan-A...
-  password: MeaDiUmPlkWbZJ2BON8tz
-  port: 28259
-  server: 78.159.131.12
-  skip-cert-verify: false
-  sni: ads.x5.ru
-  type: trojan
 - alterId: 0
   cipher: auto
   name: '🇬🇧 英国 V2CROSS.COM #3'
@@ -558,71 +551,13 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 🇱🇺[openproxylist.com] vmess-LU
-  network: ws
-  port: 53469
-  server: 107.189.7.176
-  tls: true
-  type: vmess
-  uuid: 2d7f32b9-5722-4d12-9325-6a4ef95c78df
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
   name: 🇹🇷[openproxylist.com] vmess-TR
-  network: tcp
-  port: 51384
-  server: 212.87.198.113
-  tls: false
-  type: vmess
-  uuid: 7e1ebb0d-68c0-4d26-94fd-04d14ca55351
-- alterId: 0
-  cipher: auto
-  name: '🇹🇷[openproxylist.com] vmess-TR #1'
-  network: tcp
-  port: 51384
-  server: 212.87.198.102
-  tls: false
-  type: vmess
-  uuid: 7e1ebb0d-68c0-4d26-94fd-04d14ca55351
-- alterId: 0
-  cipher: auto
-  name: '🇹🇷[openproxylist.com] vmess-TR #2'
   network: tcp
   port: 51384
   server: 212.87.198.101
   tls: false
   type: vmess
   uuid: 7e1ebb0d-68c0-4d26-94fd-04d14ca55351
-- alterId: 0
-  cipher: auto
-  name: '🇹🇷[openproxylist.com] vmess-TR #3'
-  network: tcp
-  port: 51384
-  server: 212.87.198.109
-  tls: false
-  type: vmess
-  uuid: 7e1ebb0d-68c0-4d26-94fd-04d14ca55351
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪[openproxylist.com] vmess-DE
-  network: tcp
-  port: 10410
-  server: 46.225.54.75
-  tls: false
-  type: vmess
-  uuid: 0654d64d-08bf-43e5-ad44-18a7d1a8d6f7
-- alterId: 0
-  cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #1'
-  network: tcp
-  port: 10410
-  server: 46.225.61.97
-  tls: false
-  type: vmess
-  uuid: 1a68dece-4457-4aae-899f-ad825c2da22f
 - name: 🇱🇹[openproxylist.com] trojan-L...
   network: tcp
   password: q2GRUM1-odJBWq_KV6xv2fuNvu8ed-
@@ -677,8 +612,8 @@ proxies:
   cipher: auto
   name: 🇮🇩[openproxylist.com] vmess-ID
   network: ws
-  port: 17534
-  server: 213.35.127.9
+  port: '443'
+  server: 149.104.31.55
   servername: mn1ray.jagoanvip.xyz
   tls: true
   type: vmess
