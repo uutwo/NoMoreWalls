@@ -1,7 +1,20 @@
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
+  name: 🇫🇷[openproxylist.com] vless-FR
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 6HaGh1HqaHwxHL7-y-Xpi1vj1lsIM_b-jdY7iG5eOFA
+    short-id: '!!str a1b223d4'
+  server: fr4.darknet.run
+  servername: fr4.darknet.run
+  tls: false
+  type: vless
+  uuid: 9df02c3b-2f4c-45ff-8300-4c280b207301
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: tcp
   port: 443
   reality-opts:
@@ -12,7 +25,7 @@ proxies:
   tls: false
   type: vless
   uuid: 256c5f48-4908-4255-83d1-c86cb58f22b4
-- name: '🇫🇷[openproxylist.com] vless-FR #2'
+- name: '🇫🇷[openproxylist.com] vless-FR #3'
   network: ws
   port: 80
   server: fsdns.ectunnelvpn.me
@@ -22,20 +35,16 @@ proxies:
   ws-opts:
     headers:
       Host: fsdns.ectunnelvpn.me
-    path: /vless
-- name: '🇫🇷[openproxylist.com] vless-FR #3'
+    path: '%2Fvless'
+- client-fingerprint: chrome
+  name: '🇫🇷[openproxylist.com] vless-FR #4'
+  network: tcp
   port: 61873
+  reality-opts:
+    public-key: wEU32qHhiQq-FDYUvuEl7_HAM6r5nDh6M4F8WGnEhjE
+    short-id: '!!str 34d8e80d8fa40501'
   server: 45.95.233.85
+  servername: yandex.ru
   tls: false
   type: vless
   uuid: 8b8f4dfb-cd48-4dab-bb75-b304971176cd
-- alterId: 0
-  cipher: auto
-  name: 🇫🇷[openproxylist.com] vmess-FR
-  network: tcp
-  port: '44030'
-  server: 94.232.247.164
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 22c396a3-95da-4be8-beef-834d17d75784
