@@ -3,29 +3,16 @@ proxies:
   cipher: auto
   name: 美国 CloudFlare节点
   network: ws
-  port: '443'
-  server: cf.090227.xyz
-  servername: sgal.dagrate.eu.org
+  port: 443
+  server: cxsfvn.uhomdex.shop
+  servername: cxsfvn.uhomdex.shop
   tls: true
   type: vmess
-  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+  uuid: bb6e260e-b80d-4365-b252-9fbe466f1f34
   ws-opts:
     headers:
-      Host: sgal.dagrate.eu.org
+      Host: cxsfvn.uhomdex.shop
     path: /
-- alterId: 0
-  cipher: auto
-  name: '美国 CloudFlare节点 #1'
-  network: ws
-  port: '80'
-  server: tg.apocalypse.cc.cd
-  tls: false
-  type: vmess
-  uuid: 13ad36e6-c091-43f2-8505-47d868dd544c
-  ws-opts:
-    headers:
-      Host: tg.apocalypse.cc.cd
-    path: /YsmRouA9ZbxgW4
 - alterId: 0
   cipher: auto
   name: 🇺🇸 VMESS-美国-NF解锁自制剧-ChatGPT-Ti...
@@ -156,6 +143,19 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国 CloudFlare节点
+  network: ws
+  port: '443'
+  server: cf.090227.xyz
+  tls: true
+  type: vmess
+  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+  ws-opts:
+    headers:
+      Host: sgal.dagrate.eu.org
+    path: /
 - name: 美国|@ripaojiedian
   network: tcp
   password: f389ed926e512e15f382dc3804029474
@@ -187,9 +187,24 @@ proxies:
   skip-cert-verify: false
   sni: afrcloud1.mmv.kr
   type: trojan
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇺🇸[openproxylist.com] vless-US
+  network: ws
+  port: 443
+  server: 107.174.204.129
+  servername: snippet.fgfw.indevs.in
+  tls: true
+  type: vless
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.indevs.in
+    path: /danfeng
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇺🇸[openproxylist.com] vless-US
+  name: '🇺🇸[openproxylist.com] vless-US #1'
   network: tcp
   port: 11225
   reality-opts:
@@ -200,18 +215,6 @@ proxies:
   tls: false
   type: vless
   uuid: 6dfbef3b-f718-4053-806f-c9657e2fd943
-- name: '🇺🇸[openproxylist.com] vless-US #1'
-  network: ws
-  port: 2053
-  server: 77.110.119.35
-  servername: zgtwylnhh.cc.cd
-  tls: true
-  type: vless
-  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-  ws-opts:
-    headers:
-      Host: zgtwylnhh.cc.cd
-    path: 🇨🇳
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇺🇸[openproxylist.com] vless-US #6'
@@ -276,18 +279,6 @@ proxies:
   flow: xtls-rprx-vision
   name: '🇺🇸[openproxylist.com] vless-US #7'
   network: tcp
-  port: 22230
-  reality-opts:
-    public-key: FcZ6-LZS5HHqAJ8YwFV_Gu_WxrMuylqxYjBu-1CLVRI
-  server: 173.208.132.162
-  servername: apple.com
-  tls: false
-  type: vless
-  uuid: a04c351d-3efc-43de-99db-b5188cd04531
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #8'
-  network: tcp
   port: 19001
   reality-opts:
     public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU
@@ -297,7 +288,7 @@ proxies:
   type: vless
   uuid: 1773e4cf-cf60-4801-ea3e-872bb63b8b16
 - client-fingerprint: chrome
-  name: '🇺🇸[openproxylist.com] vless-US #10'
+  name: '🇺🇸[openproxylist.com] vless-US #9'
   network: ws
   port: 443
   server: 45.61.140.116
