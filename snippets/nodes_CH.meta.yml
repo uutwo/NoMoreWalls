@@ -1,26 +1,4 @@
 proxies:
-- alpn:
-  - h3
-  name: 'کانال تلگرام : Free_VPN_CH@ #1'
-  obfs: salamander
-  obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
-  password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
-  port: 35000
-  server: 5.175.249.174
-  skip-cert-verify: false
-  sni: api.kermanshahi.org
-  tls: false
-  type: hysteria2
-- name: 'کانال تلگرام : Free_VPN_CH@ #3'
-  obfs: salamander
-  obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
-  password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
-  port: 35000
-  server: 5.175.249.174
-  skip-cert-verify: false
-  sni: api.kermanshahi.org@freenettir
-  tls: false
-  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇨🇭[openproxylist.com] vless-CH
@@ -34,19 +12,23 @@ proxies:
   tls: false
   type: vless
   uuid: e2e1ddaa-1acf-4c4c-a211-92284f6440ed
-- alterId: 0
-  cipher: auto
-  name: 🇨🇭[openproxylist.com] vmess-CH
-  network: tcp
-  port: '6041'
-  server: cn02.365cloud5878.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- client-fingerprint: chrome
+  name: '🇨🇭[openproxylist.com] vless-CH #1'
+  network: ws
+  port: 2053
+  server: s1.eldoradu.ir
+  servername: fz3.sellink.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 9caafed4-04ba-41b2-9c64-e4ce39a985d6
+  ws-opts:
+    headers:
+      Host: fz3.sellink.ir
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇨🇭[openproxylist.com] vless-CH #1'
+  name: '🇨🇭[openproxylist.com] vless-CH #2'
   network: tcp
   port: 443
   reality-opts:
