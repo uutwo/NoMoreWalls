@@ -1,6 +1,20 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: 美国 CloudFlare节点
+  network: ws
+  port: 80
+  server: fbnhu.0wu.ccwu.cc
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
+  ws-opts:
+    headers:
+      Host: fbnhu.0wu.ccwu.cc
+    path: /y3ME81hpTJWwd4RJBAQ5Ah
+- alterId: 0
+  cipher: auto
   name: 🇺🇸 VMESS-美国-NF解锁自制剧-ChatGPT-Ti...
   network: ws
   port: '45979'
@@ -129,23 +143,19 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
-- name: 🇺🇸 美国 Amazon数据中心
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.38.144.105
-  skip-cert-verify: false
-  type: trojan
-- name: 🇺🇸 美国|@stairnode
+- name: 美国|@ripaojiedian
+  network: tcp
   password: f389ed926e512e15f382dc3804029474
-  port: 4019
-  server: 153.121.65.107
+  port: 4920
+  server: 13.113.193.32
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 🇺🇸 美国2|@stairnode
+- name: 美国2|@ripaojiedian
+  network: tcp
   password: f389ed926e512e15f382dc3804029474
-  port: 4019
-  server: 160.16.130.21
+  port: 4920
+  server: 13.115.145.176
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -157,74 +167,6 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #70'
-  network: tcp
-  port: '30812'
-  server: v12.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: '🇬🇧 GB英国(mibei77.com 米贝节点分享) #10'
-  network: tcp
-  port: '180'
-  server: 82.198.246.97
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #18'
-  password: Aimer
-  port: 2053
-  server: 167.68.4.199
-  skip-cert-verify: false
-  sni: epge.muarua.filegear-sg.me
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #30'
-  network: tcp
-  port: '30836'
-  server: v36.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #32'
-  password: trojan
-  port: 8443
-  server: 109.234.211.66
-  skip-cert-verify: false
-  sni: store.timimi.dpdns.org
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #35'
-  network: tcp
-  port: '30808'
-  server: v8.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #43'
-  network: tcp
-  port: '30809'
-  server: v9.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 64
-  cipher: auto
-  name: '🇭🇰 HK香港(mibei77.com 米贝节点分享) #9'
-  network: tcp
-  port: '34114'
-  server: 103.181.164.237
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 🇺🇸 _US_美国
   password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
   port: 443
@@ -232,23 +174,30 @@ proxies:
   skip-cert-verify: false
   sni: afrcloud1.mmv.kr
   type: trojan
-- name: 美国|@ripaojiedian
-  network: tcp
-  password: f389ed926e512e15f382dc3804029474
-  port: 4920
-  server: 13.113.193.32
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国2|@ripaojiedian
-  network: tcp
-  password: f389ed926e512e15f382dc3804029474
-  port: 4920
-  server: 13.115.145.176
-  sni: www.nintendogames.net
-  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇺🇸[openproxylist.com] vless-US
+  name: '🇺🇸[openproxylist.com] vless-US #4'
+  network: tcp
+  port: 22230
+  reality-opts:
+    public-key: FcZ6-LZS5HHqAJ8YwFV_Gu_WxrMuylqxYjBu-1CLVRI
+  server: us3.ultima.foundation
+  servername: apple.com
+  tls: false
+  type: vless
+  uuid: a04c351d-3efc-43de-99db-b5188cd04531
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸[openproxylist.com] vmess-US
+  network: tcp
+  port: '6005'
+  server: cn02.365cloud5878.com
+  tls: false
+  type: vmess
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #1'
   network: tcp
   port: 443
   reality-opts:
@@ -261,7 +210,7 @@ proxies:
   uuid: 45686761-5a47-40c0-a982-a06233f9d64e
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #1'
+  name: '🇺🇸[openproxylist.com] vless-US #2'
   network: tcp
   port: 443
   reality-opts:
@@ -274,32 +223,7 @@ proxies:
   uuid: bd9800ff-4954-4ecb-afb0-84d1fe7281e9
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #2'
-  network: tcp
-  port: 14159
-  reality-opts:
-    public-key: csHT_eLH0xSFUjQ7C1_PkE7s2uWqW67fU_J_S6blDjA
-    short-id: '!!str a5cf'
-  server: us-east-2.vpnd.io
-  servername: amazon.com
-  tls: false
-  type: vless
-  uuid: 50424c5b-de6c-4d2e-980c-74114761bfd3
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #3'
-  network: tcp
-  port: 22230
-  reality-opts:
-    public-key: FcZ6-LZS5HHqAJ8YwFV_Gu_WxrMuylqxYjBu-1CLVRI
-  server: us3.ultima.foundation
-  servername: apple.com
-  tls: false
-  type: vless
-  uuid: a04c351d-3efc-43de-99db-b5188cd04531
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #4'
+  name: '🇺🇸[openproxylist.com] vless-US #5'
   network: tcp
   port: 19001
   reality-opts:
@@ -310,7 +234,7 @@ proxies:
   type: vless
   uuid: 1773e4cf-cf60-4801-ea3e-872bb63b8b16
 - client-fingerprint: chrome
-  name: '🇺🇸[openproxylist.com] vless-US #6'
+  name: '🇺🇸[openproxylist.com] vless-US #8'
   network: ws
   port: 443
   server: 45.61.140.116
@@ -323,3 +247,15 @@ proxies:
     headers:
       Host: zgtwylnhh.cc.cd
     path: Telegram🇨🇳@WangCai2
+- name: '🇺🇸[openproxylist.com] vless-US #7'
+  network: ws
+  port: 2053
+  server: 77.110.119.35
+  servername: zgtwylnhh.cc.cd
+  tls: true
+  type: vless
+  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  ws-opts:
+    headers:
+      Host: zgtwylnhh.cc.cd
+    path: 🇨🇳
