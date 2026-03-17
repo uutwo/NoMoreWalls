@@ -35,22 +35,10 @@ proxies:
   type: trojan
 - name: 🇸🇬[openproxylist.com] vless-SG
   network: ws
-  port: 2096
-  server: 162.159.153.231
+  port: 443
+  server: 162.159.12.151
   servername: sni.111000.indevs.in
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%3Fed'
-- name: '🏳[openproxylist.com] vless- #4'
-  network: ws
-  port: 2096
-  server: 188.114.98.0
-  servername: sni.111000.indevs.in
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
@@ -58,19 +46,41 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: /
-- name: '🇸🇬[openproxylist.com] vless-SG #2'
-  network: ws
+- name: '🇸🇬[openproxylist.com] vless-SG #1'
   port: 2096
-  server: 181.214.1.238
-  servername: sni.jpmj.dev
-  skip-cert-verify: true
-  tls: true
+  server: 190.93.244.138
+  tls: false
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
-    headers:
-      Host: sni.jpmj.dev
     path: '%2F'
+- name: '🇸🇬[openproxylist.com] vless-SG #2'
+  network: ws
+  port: 443
+  server: 104.19.209.12
+  servername: we.090881.xyz
+  tls: true
+  type: vless
+  uuid: 29ff2954-dfea-4d20-8089-059cfa861453
+  ws-opts:
+    headers:
+      Host: we.090881.xyz
+    path: '%2Fproducts%2Fproxyip%3DProxyIP.SG.CMLiussss.net%2Fproxyip%3DProxyIP.SG.CMLiussss.net'
+- alpn:
+  - http/1.1
+  name: '🇸🇬[openproxylist.com] vless-SG #3'
+  network: ws
+  port: 2083
+  server: 125.227.233.197
+  servername: snippet.danfeng.casacam.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.casacam.net
+    path: /danfengfp=random
 - name: '🇸🇬[openproxylist.com] trojan-S... #3'
   network: ws
   password: 13c169be-8592-4eaa-94cb-69c859e7d987
