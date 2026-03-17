@@ -1,9 +1,10 @@
 proxies:
-- name: 香港+电讯盈科有限公司
+- name: 🇭🇰[openproxylist.com] trojan-H...
   password: BxceQaOe
   port: 443
   server: 58.152.25.253
-  sni: t.me/ripaojiedian
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
   type: trojan
 - alterId: 2
   cipher: auto
@@ -42,17 +43,26 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 🇭🇰[openproxylist.com] vmess-HK
-  network: tcp
-  port: '6001'
-  server: cn02.365cloud5878.com
+  network: ws
+  port: 21879
+  server: 103.143.238.196
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-- name: 🇭🇰[openproxylist.com] trojan-H...
-  password: BxceQaOe
-  port: 443
-  server: 58.152.25.253
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
+  uuid: 1e1a6b3b-14b2-4ae4-9aa9-880ba5dff6fa
+  ws-opts:
+    headers:
+      Host: www.cloudflare.com
+    path: /vmesswss
+- client-fingerprint: chrome
+  name: 🇭🇰[openproxylist.com] vless-HK
+  network: tcp
+  port: 62520
+  reality-opts:
+    public-key: OTbIHKT0UyR2T2ooCpI0Ozivr1JHUwOs29LQHtYltkk
+    short-id: '!!str 46319295d140d75d'
+  server: 141.98.234.40
+  servername: yandex.ru
+  tls: false
+  type: vless
+  uuid: be69896f-e641-41d9-bfc8-1e30885263d2
