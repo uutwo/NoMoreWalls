@@ -5,27 +5,12 @@ proxies:
   network: ws
   port: '8443'
   server: t1.620720.xyz
-  servername: ''
   tls: true
   type: vmess
   uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
   ws-opts:
     headers:
       Host: t1.620720.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪[openproxylist.com] vmess-DE
-  network: ws
-  port: 8443
-  server: zzrt.uhomdex.shop
-  servername: zzrt.uhomdex.shop
-  tls: true
-  type: vmess
-  uuid: edb3e961-0b28-4e52-8446-399f3ef03c08
-  ws-opts:
-    headers:
-      Host: zzrt.uhomdex.shop
     path: /
 - alterId: 0
   cipher: auto
@@ -277,19 +262,21 @@ proxies:
   tls: false
   type: vless
   uuid: e384913f-8863-47b4-8858-a84b68abb4a6
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
   name: '🇺🇸[openproxylist.com] vless-US #3'
-  network: tcp
+  network: ws
   port: 443
-  reality-opts:
-    public-key: Htrrk8RBLK56TQwymPi3IJ9s3gHna8C7NOajUn-pUCg
-    short-id: '!!str 1eeaedbc2f137a62'
-  server: us-2.124515.xyz
-  servername: us-2.124515.xyz
-  tls: false
+  server: 107.174.204.129
+  servername: snippet.fgfw.indevs.in
+  tls: true
   type: vless
-  uuid: a55a1cb4-cdb3-43db-9095-a8321ca1e9ad
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.indevs.in
+    path: /danfeng
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇺🇸[openproxylist.com] vless-US #4'
@@ -305,24 +292,12 @@ proxies:
   uuid: bd9800ff-4954-4ecb-afb0-84d1fe7281e9
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #5'
-  network: tcp
-  port: 22230
-  reality-opts:
-    public-key: FcZ6-LZS5HHqAJ8YwFV_Gu_WxrMuylqxYjBu-1CLVRI
-  server: us3.ultima.foundation
-  servername: apple.com
-  tls: false
-  type: vless
-  uuid: a04c351d-3efc-43de-99db-b5188cd04531
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
   name: '🇺🇸[openproxylist.com] vless-US #6'
   network: tcp
   port: 22230
   reality-opts:
     public-key: FcZ6-LZS5HHqAJ8YwFV_Gu_WxrMuylqxYjBu-1CLVRI
-  server: 173.208.132.162
+  server: us3.ultima.foundation
   servername: apple.com
   tls: false
   type: vless
@@ -333,32 +308,9 @@ proxies:
   server: 160.16.72.33
   sni: www.nintendogames.net
   type: trojan
-- client-fingerprint: chrome
-  name: '🇺🇸[openproxylist.com] vless-US #7'
-  network: tcp
-  port: 34045
-  reality-opts:
-    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-    short-id: '!!str e8ab71d0'
-  server: 64.23.143.23
-  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-  tls: false
-  type: vless
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
 - name: '🇺🇸[openproxylist.com] trojan-U... #1'
   password: f389ed926e512e15f382dc3804029474
   port: 4019
   server: 153.121.65.107
   sni: www.nintendogames.net
   type: trojan
-- alpn:
-  - h2
-  name: '🇺🇸[openproxylist.com] vless-US #8'
-  network: grpc
-  port: 443
-  server: 104.18.32.47
-  servername: pqh21v7.carwashipdir.shop
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
