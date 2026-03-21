@@ -89,35 +89,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- name: 西班牙+V2CROSS.COM
-  network: tcp
-  password: wp9IsiY82uQhcmgNC1eoBM
-  port: 12420
-  server: 80.173.231.254
-  sni: www.semanticstaplegun.click
-  type: trojan
-- name: 🇦🇱[openproxylist.com] trojan-A...
-  password: MeaDiUmPlkWbZJ2BON8tz
-  port: 28259
-  server: 78.159.131.12
-  sni: ads.x5.ru
-  type: trojan
-- name: '西班牙+V2CROSS.COM #1'
-  password: a5inYFE=JGV89+hjxIqgDp1tcWBd6
-  port: 26279
-  server: 80.173.230.196
-  sni: io.ozone.ru
-  type: trojan
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 亚太地区 V2CROSS.COM
-  network: tcp
-  port: '34114'
-  server: 103.181.164.237
+  name: 🇯🇵 VMESS-美国>日本-NF解锁日本地区非自制剧-Ch...
+  network: ws
+  port: '8443'
+  server: t1.620720.xyz
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  ws-opts:
+    headers:
+      Host: t1.620720.xyz
+    path: /
 - alterId: 0
   cipher: auto
   name: 🇸🇬[openproxylist.com] vmess-SG
@@ -127,19 +112,25 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 VMESS-美国>日本-NF解锁日本地区非自制剧-Ch...
-  network: ws
-  port: '8443'
-  server: t1.620720.xyz
-  tls: true
-  type: vmess
-  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-  ws-opts:
-    headers:
-      Host: t1.620720.xyz
-    path: /
+- name: 西班牙+V2CROSS.COM
+  password: a5inYFE=JGV89+hjxIqgDp1tcWBd6
+  port: 26279
+  server: 80.173.230.196
+  sni: io.ozone.ru
+  type: trojan
+- name: 🇷🇺 俄罗斯 V2CROSS.COM
+  password: ZblhWr0mqMakCPg.N
+  port: 36158
+  server: 212.193.18.144
+  skip-cert-verify: false
+  sni: ya.ru
+  type: trojan
+- name: 🇦🇱[openproxylist.com] trojan-A...
+  password: MeaDiUmPlkWbZJ2BON8tz
+  port: 28259
+  server: 78.159.131.12
+  sni: ads.x5.ru
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇩🇪 VMESS-未知>德国-NF解锁印度地区非自制剧-Ch...
@@ -322,20 +313,12 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
-- name: 🇷🇺 俄罗斯 V2CROSS.COM
-  password: ZblhWr0mqMakCPg.N
-  port: 36158
-  server: 212.193.18.144
-  skip-cert-verify: false
-  sni: ya.ru
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 🇩🇪[openproxylist.com] vmess-DE
+  name: 🇺🇸 美国 CloudFlare节点
   network: ws
-  port: 443
+  port: '443'
   server: cxsfvn.uhomdex.shop
-  servername: cxsfvn.uhomdex.shop
   tls: true
   type: vmess
   uuid: bb6e260e-b80d-4365-b252-9fbe466f1f34
@@ -349,6 +332,7 @@ proxies:
   network: tcp
   port: '22324'
   server: 85.90.217.42
+  servername: ''
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
@@ -594,14 +578,12 @@ proxies:
   password: IL37892054
   port: 443
   server: outgoing-ladybird.rooster465.autos
-  skip-cert-verify: false
   sni: outgoing-ladybird.rooster465.autos
   type: trojan
 - name: '🇦🇺[openproxylist.com] trojan-A... #1'
   password: IL37892054
   port: 443
   server: engaged-ram.rooster465.autos
-  skip-cert-verify: false
   type: trojan
 - alterId: 0
   cipher: auto
@@ -633,6 +615,20 @@ proxies:
   server: nl-4.tr202512.com
   sni: nl-4.tr202512.com
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: '🇬🇧[openproxylist.com] vmess-GB #1'
+  network: ws
+  port: '80'
+  server: fsdns1.ectunnelvpn.me
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6b2d86e5-df05-4511-a79f-82d53ce99b36
+  ws-opts:
+    headers:
+      Host: fsdns1.ectunnelvpn.me
+    path: /vmess
 - name: 🇸🇬[openproxylist.com] trojan-S...
   password: ZY07256934
   port: 443
@@ -650,11 +646,10 @@ proxies:
   sni: glowing-deer.rooster465.autos
   type: trojan
 - name: 🇱🇹[openproxylist.com] trojan-L...
-  network: tcp
   password: q2GRUM1-odJBWq_KV6xv2fuNvu8ed-
   port: 443
   server: 8443.golden-cards.me
-  skip-cert-verify: true
+  sni: 8443.golden-cards.me
   type: trojan
 - name: 🇺🇸[openproxylist.com] trojan-U...
   password: 86e150eb21c6faee48e81d496d7f61c2
@@ -671,7 +666,7 @@ proxies:
 - name: '🇺🇸[openproxylist.com] trojan-U... #1'
   password: f389ed926e512e15f382dc3804029474
   port: 4019
-  server: 160.16.130.21
+  server: 153.121.65.107
   sni: www.nintendogames.net
   type: trojan
 - name: '🇯🇵[openproxylist.com] trojan-J... #1'
@@ -741,3 +736,23 @@ proxies:
     headers:
       Host: neva.azlan.biz.id
     path: /vmess
+- name: '🇸🇬[openproxylist.com] trojan-S... #4'
+  password: 86e150eb21c6faee48e81d496d7f61c2
+  port: 3419
+  server: 160.16.106.99
+  sni: www.nintendogames.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰[openproxylist.com] vmess-HK
+  network: ws
+  port: '443'
+  server: n1761296877.lie5d.cyou
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 1ebfdffa-1a37-4336-8494-f85b36cdf087
+  ws-opts:
+    headers:
+      Host: n1761296877.lie5d.cyou
+    path: /
