@@ -1,25 +1,44 @@
 proxies:
-- name: 新加坡|@ripaojiedian
-  network: tcp
+- name: 🇸🇬 新加坡|@stairnode
   password: 86e150eb21c6faee48e81d496d7f61c2
   port: 4674
   server: 52.195.220.124
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 新加坡2|@ripaojiedian
-  network: tcp
+- name: 🇸🇬 新加坡2|@stairnode
   password: 86e150eb21c6faee48e81d496d7f61c2
   port: 4674
   server: 160.16.85.33
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- name: 🇸🇬 新加坡3|@stairnode
+  password: BxceQaOe
+  port: 25343
+  server: 54.46.52.255
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 新加坡|@ripaojiedian
+  network: tcp
+  password: 86e150eb21c6faee48e81d496d7f61c2
+  port: 4674
+  server: 13.115.247.248
+  sni: www.nintendogames.net
+  type: trojan
+- name: 新加坡2|@ripaojiedian
+  network: tcp
+  password: 86e150eb21c6faee48e81d496d7f61c2
+  port: 4674
+  server: 160.16.132.38
+  sni: www.nintendogames.net
+  type: trojan
 - name: 新加坡3|@ripaojiedian
   network: tcp
   password: BxceQaOe
   port: 25343
-  server: 54.46.52.255
+  server: 95.40.26.104
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
@@ -34,27 +53,69 @@ proxies:
   server: delicate-buck.rooster465.autos
   type: trojan
 - name: 🇸🇬[openproxylist.com] vless-SG
+  network: ws
   port: 2096
-  server: 212.183.88.238
-  tls: false
+  server: 5.175.141.238
+  servername: sni.jpmj.dev
+  tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
-- name: '🇸🇬[openproxylist.com] trojan-S... #2'
-  password: 86e150eb21c6faee48e81d496d7f61c2
-  port: 4674
-  server: 160.16.72.33
-  sni: www.nintendogames.net
-  type: trojan
-- name: '🇸🇬[openproxylist.com] trojan-S... #3'
+    headers:
+      Host: sni.jpmj.dev
+    path: /?ed
+- client-fingerprint: chrome
+  name: '🇸🇬[openproxylist.com] vless-SG #1'
   network: ws
-  password: 13c169be-8592-4eaa-94cb-69c859e7d987
   port: 443
-  server: ubu.okaoclax.me
-  sni: ubu.okaoclax.me
-  type: trojan
+  server: 1password.com
+  servername: rAyAn-007.fOtOn.dPdNs.oRg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: d2d0f796-edb0-427a-af32-ae360679f9e7
   ws-opts:
     headers:
-      Host: ubu.okaoclax.me
-    path: /trojan-ws
+      Host: rayan-007.foton.dpdns.org
+    path: /?ed%3D2560
+- alpn:
+  - http/1.1
+  name: '🇸🇬[openproxylist.com] vless-SG #2'
+  network: ws
+  port: 443
+  server: 172.67.187.251
+  servername: sant.atira-40.workers.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sant.atira-40.workers.dev
+    path: '%2Fsni.111000.dynv6.net%2F'
+- name: '🇸🇬[openproxylist.com] vless-SG #3'
+  network: ws
+  port: 2096
+  server: 194.59.5.238
+  servername: sni.jpmj.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%3Ftelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2B%2540wangcai2%3D'
+- name: '🇸🇬[openproxylist.com] vless-SG #4'
+  network: ws
+  port: 443
+  server: 172.64.229.59
+  servername: xiaoli0772.ccwu.cc
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: e47eba6b-05f1-46d9-82e1-0d145faa7d53
+  ws-opts:
+    headers:
+      Host: xiaoli0772.ccwu.cc
+    path: '%2Fsocks5%3D123%3A123%408.210.81.59%3A3060'
