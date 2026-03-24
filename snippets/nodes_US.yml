@@ -1,17 +1,52 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 🇯🇵 VMESS-美国>日本-NF解锁日本地区非自制剧-Ch...
+  name: 美国 CloudFlare节点
   network: ws
-  port: '8443'
-  server: t1.620720.xyz
+  port: '443'
+  server: cf.090227.xyz
+  servername: sgal.dagrate.eu.org
   tls: true
   type: vmess
-  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
   ws-opts:
     headers:
-      Host: t1.620720.xyz
+      Host: sgal.dagrate.eu.org
     path: /
+- cipher: aes-256-cfb
+  name: 越南-003 |851KB/s|YT-US|NF|GPT⁺|...
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.252
+  type: ss
+- cipher: aes-256-cfb
+  name: 越南-005 |1.3MB/s|YT-US|NF|GPT⁺|...
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.236
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 美国-014 |4.6MB/s|28%|TK-US|YT-U...
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 817aa69.default.nintendo.com:112719
+    mode: tls
+  port: 2377
+  server: 88.210.36.108
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 美国-015 |4.7MB/s|28%|TK-US|YT-U...
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 817aa69.default.nintendo.com:112719
+    mode: tls
+  port: 2377
+  server: 88.210.36.106
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 🇺🇸 VMESS-美国-NF解锁自制剧-ChatGPT-Ti...
@@ -150,22 +185,6 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 美国2|@ripaojiedian
-  network: tcp
-  password: 6d29eb2f74293cb01a19b32cf08ad2e9
-  port: 4019
-  server: 13.231.152.178
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 🇺🇸[openproxylist.com] trojan-U...
-  network: tcp
-  password: BxceQaOe
-  port: 23255
-  server: 13.192.204.27
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
 - name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #3'
   password: 14326_tf497f7b0
   port: 443
@@ -227,7 +246,7 @@ proxies:
     path: /mea
 - alterId: 0
   cipher: auto
-  name: '🇸🇬[openproxylist.com] vmess-SG #1'
+  name: '🇭🇰 HK香港(mibei77.com 米贝节点分享) #44'
   network: tcp
   port: '30812'
   server: v12.hdacd.com
@@ -245,7 +264,7 @@ proxies:
   cipher: none
   name: 🇺🇸[openproxylist.com] vmess-US
   network: ws
-  port: 8443
+  port: '8443'
   server: 104.17.77.77
   servername: v2ray1.dozapp.xyz
   tls: true
