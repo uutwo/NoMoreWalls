@@ -5,22 +5,9 @@ proxies:
   network: tcp
   port: '180'
   server: 82.198.246.97
-  servername: 4120-BE04-13ef56096989.457.PP.ua
-  skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  xudp: true
-- alterId: 0
-  cipher: auto
-  name: 🇬🇧 英国 伦敦Virgin Media
-  network: none
-  port: '17310'
-  server: 82.21.80.224
-  tls: true
-  type: vmess
-  uuid: 656920dc-ed05-4f41-8c49-bdff41e383a9
 - alterId: 0
   cipher: auto
   name: '🇬🇧 GB英国(mibei77.com 米贝节点分享) #8'
@@ -103,15 +90,17 @@ proxies:
   tls: false
   type: vless
   uuid: d1209ffb-c159-48d5-b40d-542ce11fc768
-- client-fingerprint: chrome
-  name: '🇬🇧[openproxylist.com] vless-GB #5'
-  network: tcp
-  port: 40721
-  reality-opts:
-    public-key: TUZgwzcTvoROSbgnqMh3WorXVMxQNIF2zsEM39FQbyk
-    short-id: '!!str df8611c07d'
-  server: 140.238.100.35
-  servername: yahoo.com
+- alterId: 0
+  cipher: auto
+  name: '🇬🇧[openproxylist.com] vmess-GB #1'
+  network: ws
+  port: '80'
+  server: fsdns1.ectunnelvpn.me
+  servername: ''
   tls: false
-  type: vless
-  uuid: bf3e8944-8d26-47de-8748-b9aa74cce974
+  type: vmess
+  uuid: 6b2d86e5-df05-4511-a79f-82d53ce99b36
+  ws-opts:
+    headers:
+      Host: fsdns1.ectunnelvpn.me
+    path: /vmess
