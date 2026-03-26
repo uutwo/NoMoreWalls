@@ -1,45 +1,24 @@
 proxies:
-- name: 新加坡|@ripaojiedian
-  network: tcp
-  password: 6d29eb2f74293cb01a19b32cf08ad2e9
-  port: 4674
-  server: 52.195.4.144
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 新加坡2|@ripaojiedian
-  network: tcp
-  password: 6d29eb2f74293cb01a19b32cf08ad2e9
-  port: 1524
-  server: 52.192.225.14
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 新加坡3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 22045
-  server: 95.40.2.4
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
 - name: 🇸🇬[openproxylist.com] trojan-S...
   password: 6d29eb2f74293cb01a19b32cf08ad2e9
   port: 1524
   server: 160.16.124.17
   sni: www.nintendogames.net
   type: trojan
-- name: 🇸🇬[openproxylist.com] vless-SG
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬[openproxylist.com] vmess-SG
   network: ws
-  port: 80
-  server: vps.zakir.web.id
+  port: '8880'
+  server: 35.240.225.23
+  servername: ''
   tls: false
-  type: vless
-  uuid: ca73d911-29f4-42d8-ada5-81dee679e96a
+  type: vmess
+  uuid: c5dd6680-64ad-4f04-9952-49d94984f9eb
   ws-opts:
     headers:
-      Host: vps.zakir.web.id
-    path: vless
+      Host: ''
+    path: /
 - name: '🇸🇬[openproxylist.com] vless-SG #1'
   network: ws
   port: 80
@@ -53,25 +32,23 @@ proxies:
     path: '%2F'
 - name: '🇸🇬[openproxylist.com] vless-SG #2'
   network: ws
-  port: 443
-  server: 104.19.173.68
-  servername: paRMis-1Tk63J.PArMiS.WoRkeRs.DeV
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 7e346122-2ee0-406e-b964-a8ee665f1814
-  ws-opts:
-    headers:
-      Host: paRMis-1Tk63J.PArMiS.WoRkeRs.DeV
-    path: '%2F'
-- name: '🇸🇬[openproxylist.com] vless-SG #3'
-  network: ws
   port: 80
-  server: 104.18.173.174
+  server: 104.17.138.160
   tls: false
   type: vless
-  uuid: 53342b53-157e-4475-9f3a-40439434e689
+  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
   ws-opts:
     headers:
-      Host: c.iamdt.dpdns.org
-    path: '%2F%3Fed%3D2048'
+      Host: vip.yaml7.ggff.net
+    path: '%2F'
+- name: '🇸🇬[openproxylist.com] trojan-S... #1'
+  network: ws
+  password: 13c169be-8592-4eaa-94cb-69c859e7d987
+  port: 443
+  server: ubu.okaoclax.me
+  sni: ubu.okaoclax.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ubu.okaoclax.me
+    path: /trojan-ws
