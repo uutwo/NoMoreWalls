@@ -1,4 +1,9 @@
 proxies:
+- name: 新加坡-003 |6.2MB/s
+  port: 1080
+  server: 159.223.53.194
+  skip-cert-verify: true
+  type: socks5
 - name: 新加坡|@ripaojiedian
   network: tcp
   password: 6d29eb2f74293cb01a19b32cf08ad2e9
@@ -56,3 +61,14 @@ proxies:
     headers:
       Host: ''
     path: /
+- name: 🇸🇬[openproxylist.com] vless-SG
+  network: ws
+  port: 80
+  server: vps.zakir.web.id
+  tls: false
+  type: vless
+  uuid: ca73d911-29f4-42d8-ada5-81dee679e96a
+  ws-opts:
+    headers:
+      Host: vps.zakir.web.id
+    path: vless
