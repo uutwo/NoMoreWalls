@@ -1,16 +1,30 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 美国 CloudFlare节点
+  name: 🇯🇵 VMESS-美国>日本-NF解锁日本地区非自制剧-Ch...
   network: ws
   port: '8443'
-  server: c7.620720.xyz
+  server: t1.620720.xyz
+  servername: ''
   tls: true
   type: vmess
   uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
   ws-opts:
     headers:
-      Host: c7.620720.xyz
+      Host: t1.620720.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇦🇺 VMESS-未知>澳大利亚-NF解锁澳大利亚自制剧-C...
+  network: ws
+  port: '443'
+  server: sy4.620720.xyz
+  tls: true
+  type: vmess
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  ws-opts:
+    headers:
+      Host: sy4.620720.xyz
     path: /
 - alterId: 0
   cipher: auto
@@ -142,6 +156,19 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国 CloudFlare节点
+  network: ws
+  port: '8443'
+  server: c7.620720.xyz
+  tls: true
+  type: vmess
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  ws-opts:
+    headers:
+      Host: c7.620720.xyz
+    path: /
 - name: 美国|@ripaojiedian
   network: tcp
   password: 6d29eb2f74293cb01a19b32cf08ad2e9
@@ -219,19 +246,6 @@ proxies:
   flow: xtls-rprx-vision
   name: '🇺🇸[openproxylist.com] vless-US #2'
   network: tcp
-  port: 443
-  reality-opts:
-    public-key: iCY6H8CpnIfqmIkEABduJEAeJrnYS089R1-jKEyVp3w
-    short-id: '!!str 5589c1'
-  server: 45.150.65.43
-  servername: us1.frostbot.ru
-  tls: false
-  type: vless
-  uuid: fd37be2f-f8d1-47de-97e8-13c28107d31e
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #3'
-  network: tcp
   port: 19001
   reality-opts:
     public-key: IiuIighvDsor2v-vb5s3IJbNiqwLw568auiqoXxc7FM
@@ -242,7 +256,7 @@ proxies:
   uuid: b5be8e3f-a17d-479c-ebdb-9c3265c2cab7
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #4'
+  name: '🇺🇸[openproxylist.com] vless-US #3'
   network: tcp
   port: 23335
   reality-opts:
@@ -253,3 +267,16 @@ proxies:
   tls: false
   type: vless
   uuid: e384913f-8863-47b4-8858-a84b68abb4a6
+- client-fingerprint: chrome
+  name: '🇺🇸[openproxylist.com] vless-US #4'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 1HeKf_8KDjfzXfUi9P7WBaGStMvr96TKdUbofpkwBzQ
+    short-id: '!!str 8bd29483ded126b4'
+  server: 185.161.70.10
+  servername: wikihow.com
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 21915536-afb5-4a0c-b047-fcf549d3a173
