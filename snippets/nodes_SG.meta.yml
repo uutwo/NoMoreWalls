@@ -7,7 +7,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 新加坡2|@ripaojiedian
+- name: 🇸🇬[openproxylist.com] trojan-S...
   network: tcp
   password: 9f7d5cb76d1645101994d9b25891e3b7
   port: 4674
@@ -38,6 +38,17 @@ proxies:
     path: /vc
 - name: 🇸🇬[openproxylist.com] vless-SG
   network: ws
+  port: 80
+  server: vps.zakir.web.id
+  tls: false
+  type: vless
+  uuid: ca73d911-29f4-42d8-ada5-81dee679e96a
+  ws-opts:
+    headers:
+      Host: vps.zakir.web.id
+    path: vless
+- name: '🇸🇬[openproxylist.com] vless-SG #2'
+  network: ws
   port: 2096
   server: 194.59.5.238
   servername: sni.jpmj.dev
@@ -49,3 +60,40 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: '%2F%3Ftelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2B%2540wangcai2%3D'
+- alpn:
+  - http/1.1
+  name: '🇸🇬[openproxylist.com] vless-SG #3'
+  network: ws
+  port: 443
+  server: 104.21.7.193
+  servername: sant.atira-40.workers.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sant.atira-40.workers.dev
+    path: '%2Fsni.111000.dynv6.net%2F'
+- name: '🇸🇬[openproxylist.com] vless-SG #4'
+  network: ws
+  port: 80
+  server: 104.21.80.5
+  tls: false
+  type: vless
+  uuid: 14e1775b-d92c-455b-8db3-e6c6d61909e0
+  ws-opts:
+    headers:
+      Host: vpnpro.eshghiabolfazl2009.workers.dev
+    path: '%2F'
+- name: '🇸🇬[openproxylist.com] vless-SG #5'
+  network: ws
+  port: 80
+  server: 104.24.45.247
+  tls: false
+  type: vless
+  uuid: 2e71d8fc-d2e8-44fc-89bd-c8a449a193aa
+  ws-opts:
+    headers:
+      Host: odd-bread-435d.ahmadrezasteamacc.workers.dev
+    path: '%2F'

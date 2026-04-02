@@ -1,11 +1,4 @@
 proxies:
-- name: 🇧🇷[openproxylist.com] trojan-B...
-  network: tcp
-  password: BvzUvt45hON9We5X9wM6I9ZrxHRcYd46QK
-  port: 26593
-  server: 216.238.102.254
-  sni: sao2.cdn-graph.click
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇺🇸 VMESS-美国-NF解锁自制剧-ChatGPT-Ti...
@@ -136,12 +129,12 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
-- name: 🇺🇸[openproxylist.com] trojan-U...
-  password: UNWA6USASAb6=uAAZeZMFd+2uKB4.d5KOm
-  port: 26650
-  server: 166.88.197.60
+- name: '🇺🇸[openproxylist.com] trojan-U... #1'
+  password: WwipNOSqUh49CEapMmIrv6m6AZLf-EC0+T
+  port: 13109
+  server: 104.238.162.6
   skip-cert-verify: false
-  sni: sea9.firewallcontract.click
+  sni: ord2.edge-command.click
   type: trojan
 - name: 美国|@ripaojiedian
   network: tcp
@@ -266,9 +259,9 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '🇺🇸 美国(yudou789.top 玉豆免费节点) #56'
+  name: '🇺🇸 美国(yudou789.top 玉豆免费节点) #55'
   network: tcp
-  port: '51556'
+  port: '54022'
   server: 103.181.164.145
   tls: false
   type: vmess
@@ -311,6 +304,12 @@ proxies:
   tls: false
   type: vless
   uuid: bb7d8763-4afa-465f-b066-35786781ced2
+- name: 🇺🇸[openproxylist.com] trojan-U...
+  password: UNWA6USASAb6=uAAZeZMFd+2uKB4.d5KOm
+  port: 26650
+  server: 166.88.197.60
+  sni: sea9.firewallcontract.click
+  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇺🇸[openproxylist.com] vless-US #1'
@@ -324,15 +323,22 @@ proxies:
   tls: false
   type: vless
   uuid: 6d0e9ded-d23d-4ffb-b165-7bc757be84d3
-- name: '🇺🇸[openproxylist.com] trojan-U... #1'
-  password: WwipNOSqUh49CEapMmIrv6m6AZLf-EC0+T
-  port: 13109
-  server: 104.238.162.6
-  sni: ord2.edge-command.click
-  type: trojan
+- name: '🇺🇸[openproxylist.com] vless-US #2'
+  network: ws
+  port: 443
+  server: us.vpnhi.ru
+  servername: us.vpnhi.ru
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: ea8d14d4-ca12-4cd1-bcad-f0fa72f6eadc
+  ws-opts:
+    headers:
+      Host: us.vpnhi.ru
+    path: '%2Fvpnws'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #2'
+  name: '🇺🇸[openproxylist.com] vless-US #3'
   network: tcp
   port: 8443
   reality-opts:
@@ -356,19 +362,6 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #3'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-    short-id: '!!str ff776ff77be48b88'
-  server: 152.53.80.40
-  servername: sha.helper-internet.com
-  tls: false
-  type: vless
-  uuid: e6567a1e-260f-4b0e-8de3-e2e12f90e854
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
   name: '🇺🇸[openproxylist.com] vless-US #4'
   network: tcp
   port: 23335
@@ -386,3 +379,24 @@ proxies:
   server: 160.16.132.38
   sni: www.nintendogames.net
   type: trojan
+- name: '🇺🇸[openproxylist.com] vless-US #5'
+  network: grpc
+  port: 8880
+  server: 45.82.251.115
+  tls: false
+  type: vless
+  uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
+- client-fingerprint: chrome
+  name: '🇺🇸[openproxylist.com] vless-US #6'
+  network: ws
+  port: 8443
+  server: 167.88.160.144
+  servername: sni.111000.indevs.in
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560
