@@ -3,22 +3,16 @@ proxies:
   cipher: auto
   name: 美国 CloudFlare节点
   network: ws
-  port: 443
-  server: cf.090227.xyz
-  servername: sgal.dagrate.eu.org
+  port: 8443
+  server: 104.17.77.77
+  servername: v2ray1.dozapp.xyz
   tls: true
   type: vmess
-  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   ws-opts:
     headers:
-      Host: sgal.dagrate.eu.org
-    path: /
-- name: 🇺🇸[openproxylist.com] trojan-U...
-  password: UNWA6USASAb6=uAAZeZMFd+2uKB4.d5KOm
-  port: 26650
-  server: 166.88.197.60
-  sni: sea9.firewallcontract.click
-  type: trojan
+      Host: ''
+    path: /lMnsZUN4/
 - alterId: 0
   cipher: auto
   name: 🇺🇸 VMESS-美国-NF解锁自制剧-ChatGPT-Ti...
@@ -149,12 +143,25 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
-- name: '🇺🇸[openproxylist.com] trojan-U... #1'
-  password: WwipNOSqUh49CEapMmIrv6m6AZLf-EC0+T
-  port: 13109
-  server: 104.238.162.6
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国 CloudFlare节点
+  network: ws
+  port: '443'
+  server: cf.090227.xyz
+  tls: true
+  type: vmess
+  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+  ws-opts:
+    headers:
+      Host: sgal.dagrate.eu.org
+    path: /
+- name: 🇺🇸[openproxylist.com] trojan-U...
+  password: UNWA6USASAb6=uAAZeZMFd+2uKB4.d5KOm
+  port: 26650
+  server: 166.88.197.60
   skip-cert-verify: false
-  sni: ord2.edge-command.click
+  sni: sea9.firewallcontract.click
   type: trojan
 - name: 美国|@ripaojiedian
   network: tcp
@@ -224,6 +231,15 @@ proxies:
   skip-cert-verify: false
   sni: jflsjlaf.pages.dev
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: '🇫🇷 FR法国(mibei77.com 米贝节点分享) #2'
+  network: tcp
+  port: '54022'
+  server: 103.181.164.145
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 2
   cipher: auto
   name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #48'
@@ -269,6 +285,19 @@ proxies:
   flow: xtls-rprx-vision
   name: 🇺🇸[openproxylist.com] vless-US
   network: tcp
+  port: 443
+  reality-opts:
+    public-key: -n5iY1LH6WNzxc6_sQg_phf04553mzBExCqQzRvoA3U
+    short-id: '!!str 41427aa565e28984'
+  server: 95.164.85.33
+  servername: www.rakuten.co.jp
+  tls: false
+  type: vless
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #1'
+  network: tcp
   port: 8443
   reality-opts:
     public-key: FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc
@@ -278,22 +307,9 @@ proxies:
   tls: false
   type: vless
   uuid: ca05976a-2dea-11f1-9ec5-baabcd4be2cd
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸[openproxylist.com] vmess-US
-  network: ws
-  port: '8443'
-  server: 47.90.244.153
-  tls: false
-  type: vmess
-  uuid: 65e2a985-ad20-4486-a7ec-b67b20ee56af
-  ws-opts:
-    headers:
-      Host: ''
-    path: /ws
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #1'
+  name: '🇺🇸[openproxylist.com] vless-US #2'
   network: tcp
   port: 8443
   reality-opts:
@@ -303,13 +319,13 @@ proxies:
   tls: false
   type: vless
   uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
-- name: '🇺🇸[openproxylist.com] trojan-U... #2'
+- name: '🇺🇸[openproxylist.com] trojan-U... #1'
   password: de7d6444-a7a8-4b3a-bf26-bc6939bb0279
   port: 443
   server: n1.chateditimage.com
   sni: n1.chateditimage.com
   type: trojan
-- name: '🇺🇸[openproxylist.com] trojan-U... #3'
+- name: '🇺🇸[openproxylist.com] trojan-U... #2'
   password: de7d6444-a7a8-4b3a-bf26-bc6939bb0279
   port: 443
   server: n2.chateditimage.com
@@ -317,7 +333,7 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #2'
+  name: '🇺🇸[openproxylist.com] vless-US #3'
   network: tcp
   port: 23335
   reality-opts:
@@ -330,7 +346,7 @@ proxies:
   uuid: e384913f-8863-47b4-8858-a84b68abb4a6
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #3'
+  name: '🇺🇸[openproxylist.com] vless-US #4'
   network: tcp
   port: 443
   reality-opts:
@@ -341,16 +357,9 @@ proxies:
   tls: false
   type: vless
   uuid: a16bd0e2-ff2e-4e4c-a955-0c684255a065
-- name: '🇺🇸[openproxylist.com] trojan-U... #4'
+- name: '🇺🇸[openproxylist.com] trojan-U... #3'
   password: 9f7d5cb76d1645101994d9b25891e3b7
   port: 3057
   server: 160.16.132.38
   sni: www.nintendogames.net
   type: trojan
-- name: '🇺🇸[openproxylist.com] vless-US #4'
-  network: grpc
-  port: 8880
-  server: 45.82.251.115
-  tls: false
-  type: vless
-  uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
