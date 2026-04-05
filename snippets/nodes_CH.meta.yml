@@ -1,7 +1,27 @@
 proxies:
+- name: 🇳🇴[openproxylist.com] trojan-N...
+  network: tcp
+  password: hCjWaBe5vTkewfiljOL=9FS9DYg0c09c.t
+  port: 18390
+  server: 81.29.149.240
+  sni: osl9.solidly.click
+  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇨🇭[openproxylist.com] vless-CH
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: nPcUKydxoRI66O3tT9O4QCZpLjOBvkGsiXG7pDX1BBw
+    short-id: '!!str 6ba85179e30d4fc2'
+  server: 38.180.162.133
+  servername: www.google.com
+  tls: false
+  type: vless
+  uuid: c8d1c6d3-388f-48fc-a8f0-ed90d955d096
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇨🇭[openproxylist.com] vless-CH #1'
   network: tcp
   port: 443
   reality-opts:
@@ -12,14 +32,16 @@ proxies:
   tls: false
   type: vless
   uuid: c8d1c6d3-388f-48fc-a8f0-ed90d955d096
-- name: 🇨🇭[openproxylist.com] trojan-C...
-  network: ws
-  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
-  port: 2083
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇨🇭[openproxylist.com] vless-CH #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: nPcUKydxoRI66O3tT9O4QCZpLjOBvkGsiXG7pDX1BBw
+    short-id: '!!str 6ba85179e30d4fc2'
   server: 95.85.239.225
-  sni: xo.e0f.cx
-  type: trojan
-  ws-opts:
-    headers:
-      Host: xo.e0f.cx
-    path: /trojan-ws
+  servername: www.google.com
+  tls: false
+  type: vless
+  uuid: c8d1c6d3-388f-48fc-a8f0-ed90d955d096
