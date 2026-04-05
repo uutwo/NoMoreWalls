@@ -8,10 +8,97 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   ws-headers:
     Host: 82.198.246.97
   ws-path: /
+  xudp: true
+- client-fingerprint: chrome
+  name: 德国-004 |1.4MB/s
+  network: ws
+  port: 4002
+  server: 37.114.50.157
+  servername: sub.mot.ip-ddns.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 00000000-0000-4000-8000-000000000000
+  ws-opts:
+    headers:
+      Host: sub.mot.ip-ddns.com
+    path: /
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: '1000'
+  name: 德国-006
+  port: 54177
+  protocol: udp
+  server: 5.83.129.90
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  udp: true
+  up: '500'
+- auth: 9fc87b20-8bd2-4b6e-aa29-dbb581a27262
+  name: 德国-008 |2.6MB/s|7%|TK-DE|YT-DE...
+  password: 9fc87b20-8bd2-4b6e-aa29-dbb581a27262
+  port: 50000
+  server: 138.2.182.211
+  skip-cert-verify: true
+  sni: fastcdn.hoyoverse.com
+  type: hysteria2
+  udp: true
+- client-fingerprint: chrome
+  name: 德国-011 |6.4MB/s|YT-DE|NF|D+
+  network: ws
+  port: 2053
+  server: 5.178.110.39
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.3
+        (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+  xudp: true
+- client-fingerprint: chrome
+  name: 德国-012 | ⬇️ 1.8MB/s|Netflix|Di...
+  network: ws
+  port: 4001
+  server: 185.94.29.156
+  servername: sub.mot.ip-ddns.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 00000000-0000-4000-8000-000000000000
+  ws-opts:
+    headers:
+      Host: sub.mot.ip-ddns.com
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/52.0.2743.116 Safari/537.36
+    path: /
+  xudp: true
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  down: '1000'
+  name: 德国-013
+  port: 20088
+  protocol: udp
+  server: 5.83.129.153
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: '500'
 - cipher: aes-256-cfb
   name: 🇩🇪DE-63.180.254.10-53
   password: amazonskr05
@@ -120,6 +207,7 @@ proxies:
       Host: DOFF.mehrsazi.ir
     path: '%2F'
 - name: 🇩🇪[openproxylist.com] trojan-D...
+  network: tcp
   password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
   port: 10369
   server: 82.26.155.3
