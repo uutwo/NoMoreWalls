@@ -1,10 +1,28 @@
 proxies:
-- cipher: chacha20-ietf
-  name: 新加坡-001 |5.0MB/s
-  password: asd123456
-  port: 8388
-  server: 103.36.91.32
-  type: ss
+- name: 新加坡|@ripaojiedian
+  network: tcp
+  password: 9f7d5cb76d1645101994d9b25891e3b7
+  port: 4674
+  server: 13.231.220.56
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 新加坡2|@ripaojiedian
+  network: tcp
+  password: 9f7d5cb76d1645101994d9b25891e3b7
+  port: 4674
+  server: 54.168.216.209
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 新加坡3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 30726
+  server: 18.166.30.251
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
 - name: 🇸🇬[openproxylist.com] trojan-S...
   password: fQmMJwOLMlqHednu2SVED8gi-+H-db9kbg
   port: 23357
@@ -12,14 +30,32 @@ proxies:
   sni: sgp9.node-resource.click
   type: trojan
 - name: 🇸🇬[openproxylist.com] vless-SG
-  port: 443
-  server: 172.64.155.209
+  network: ws
+  port: 80
+  server: 162.159.36.5
   tls: false
   type: vless
-  uuid: 0833debf-4a9e-4c31-a5b7-a88574bddf18
+  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
   ws-opts:
+    headers:
+      Host: vip.yaml7.ggff.net
     path: '%2F'
-- name: '🇸🇬[openproxylist.com] vless-SG #1'
+- alpn:
+  - http/1.1
+  name: '🇸🇬[openproxylist.com] vless-SG #1'
+  network: ws
+  port: 443
+  server: saas.sin.fan
+  servername: sni.111000.dynv6.net
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: /?proxyip=ip.111000.de5.net:443
+- name: '🇸🇬[openproxylist.com] vless-SG #2'
   network: ws
   port: 2053
   server: 172.64.155.209
@@ -32,15 +68,20 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F'
-- name: '🇸🇬[openproxylist.com] vless-SG #2'
-  port: 2096
-  server: 185.162.231.138
-  tls: false
+- client-fingerprint: chrome
+  name: '🇸🇬[openproxylist.com] vless-SG #3'
+  network: ws
+  port: 443
+  server: 135.84.74.155
+  servername: sni.111000.v6.navy
+  tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
-    path: '%2F%3Fed%3D2560'
-- name: '🇸🇬[openproxylist.com] vless-SG #3'
+    headers:
+      Host: sni.111000.v6.navy
+    path: '%2F%3FTelegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2%3D'
+- name: '🇸🇬[openproxylist.com] vless-SG #4'
   port: 2096
   server: 162.159.153.231
   tls: false
@@ -51,17 +92,6 @@ proxies:
 - name: '🇸🇬[openproxylist.com] trojan-S... #1'
   password: 9f7d5cb76d1645101994d9b25891e3b7
   port: 4674
-  server: 160.16.106.99
+  server: 160.16.72.205
   sni: www.nintendogames.net
   type: trojan
-- name: '🇸🇬[openproxylist.com] trojan-S... #2'
-  network: ws
-  password: 13c169be-8592-4eaa-94cb-69c859e7d987
-  port: 443
-  server: ubu.okaoclax.me
-  sni: ubu.okaoclax.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ubu.okaoclax.me
-    path: /trojan-ws
