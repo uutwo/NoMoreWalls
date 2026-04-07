@@ -1,4 +1,11 @@
 proxies:
+- name: 🇭🇰 香港 电讯盈科有限公司
+  password: BxceQaOe
+  port: 443
+  server: 58.152.25.253
+  skip-cert-verify: false
+  sni: t.me/ripaojiedian
+  type: trojan
 - alterId: 2
   cipher: auto
   name: 香港|@ripaojiedian
@@ -6,9 +13,13 @@ proxies:
   port: '30807'
   server: v10.hdacd.com
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-headers:
+    Host: v10.hdacd.com
+  ws-path: /
 - name: 香港3|@ripaojiedian
   network: tcp
   password: 187dda4498be9ac4f28db939d5940185
@@ -17,19 +28,19 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 香港4|@ripaojiedian
+- name: 新加坡3|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 6313
-  server: 13.193.217.27
+  port: 12070
+  server: 43.199.209.208
   skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
+  sni: t.me%252Fripaojiedian
   type: trojan
-- name: 香港5|@ripaojiedian
+- name: 美国3|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 6313
-  server: 13.231.169.26
+  port: 38692
+  server: 16.162.187.2
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -138,3 +149,17 @@ proxies:
     headers:
       Host: ''
     path: /Notif_Chat
+- client-fingerprint: chrome
+  name: '🇭🇰[openproxylist.com] vless-HK #2'
+  network: ws
+  port: 443
+  server: 104.26.1.221
+  servername: dabaius2.sylu.net
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 3f9c8463-8610-3ed8-86c8-a26713067825
+  ws-opts:
+    headers:
+      Host: dabaius2.sylu.net
+    path: '%2Fdb10240eb751d6ab'
