@@ -1,22 +1,25 @@
 proxies:
-- name: 🇸🇬 新加坡|@stairnode
+- name: 新加坡|@ripaojiedian
+  network: tcp
   password: 187dda4498be9ac4f28db939d5940185
   port: 4674
-  server: 13.192.235.255
+  server: 18.183.79.22
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 🇸🇬 新加坡2|@stairnode
+- name: 新加坡2|@ripaojiedian
+  network: tcp
   password: 187dda4498be9ac4f28db939d5940185
   port: 4674
-  server: 13.115.237.4
+  server: 54.249.79.149
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 🇸🇬 新加坡3|@stairnode
+- name: 新加坡3|@ripaojiedian
+  network: tcp
   password: BxceQaOe
-  port: 22045
-  server: 18.162.110.167
+  port: 12070
+  server: 43.199.209.208
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
@@ -33,25 +36,59 @@ proxies:
     headers:
       Host: vc.fly.dev
     path: /vc
-- name: 新加坡|@ripaojiedian
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬[openproxylist.com] vmess-SG
   network: tcp
-  password: 187dda4498be9ac4f28db939d5940185
-  port: 4674
-  server: 18.183.79.22
-  sni: www.nintendogames.net
-  type: trojan
-- name: 新加坡2|@ripaojiedian
-  network: tcp
-  password: 187dda4498be9ac4f28db939d5940185
-  port: 4674
-  server: 54.249.79.149
-  sni: www.nintendogames.net
-  type: trojan
-- name: 新加坡3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 12070
-  server: 43.199.209.208
+  port: '30812'
+  server: 151.242.180.91
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- client-fingerprint: chrome
+  name: 🇸🇬[openproxylist.com] vless-SG
+  network: ws
+  port: 443
+  server: 188.114.96.0
+  servername: restless-dew-894b.amirhost4.workers.dev
+  tls: true
+  type: vless
+  uuid: 40afa553-1745-4f62-a380-4163c7bb4870
+  ws-opts:
+    headers:
+      Host: restless-dew-894b.amirhost4.workers.dev
+    path: '%2F'
+- name: '🇸🇬[openproxylist.com] vless-SG #1'
+  network: ws
+  port: 443
+  server: 188.114.97.0
+  servername: telegram.proxie2-tel.workers.dev
   skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
+  tls: true
+  type: vless
+  uuid: 6e16baf3-82cd-4e5e-bfea-5bd4d2253b4f
+  ws-opts:
+    headers:
+      Host: telegram.proxie2-tel.workers.dev
+    path: '%2FeyJqdW5rIjoidXYyRXNUTXEiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119'
+- name: '🇸🇬[openproxylist.com] vless-SG #2'
+  port: 2096
+  server: 188.114.98.0
+  tls: false
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    path: '%2F'
+- name: '🇸🇬[openproxylist.com] vless-SG #3'
+  network: ws
+  port: 2096
+  server: 188.244.122.138
+  servername: sni.111000.indevs.in
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F'
