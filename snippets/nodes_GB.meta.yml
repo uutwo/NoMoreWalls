@@ -1,6 +1,15 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: '🇬🇧 GB英国(mibei77.com 米贝节点分享) #27'
+  network: tcp
+  port: '180'
+  server: 82.198.246.97
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #2'
   network: tcp
   port: '180'
@@ -11,8 +20,28 @@ proxies:
 - name: 英国+伦敦Virgin+Media
   password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
   port: 10369
-  server: 82.26.155.3
-  sni: fra34.chasem2026sud.com
+  server: 82.26.155.105
+  sni: fra32.chasem2026sud.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '🇹🇼[openproxylist.com] vmess-TW #1'
+  network: ws
+  port: '16616'
+  server: m.cnmjin.net
+  tls: false
+  type: vmess
+  uuid: b688ce0f-9201-4e8e-a67a-f3be2c6aa201
+  ws-opts:
+    headers:
+      Host: 7a297964a2b31dafd3529ef4d14574b9.mobgslb.tbcache.com
+    path: /
+- name: 🇬🇧 英国 伦敦Virgin Media
+  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
+  port: 10369
+  server: 82.26.155.199
+  skip-cert-verify: true
+  sni: fra4.chasem2026sud.com
   type: trojan
 - name: '🇬🇧 英国 伦敦Virgin Media #1'
   password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
@@ -21,13 +50,6 @@ proxies:
   skip-cert-verify: false
   sni: fra5.chasem2026sud.com
   type: trojan
-- name: 🇬🇧 英国 伦敦Virgin Media
-  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-  port: 10369
-  server: 82.26.155.199
-  skip-cert-verify: true
-  sni: fra4.chasem2026sud.com
-  type: trojan
 - name: '🇬🇧 英国 伦敦Virgin Media #2'
   password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
   port: 10369
@@ -35,15 +57,19 @@ proxies:
   skip-cert-verify: false
   sni: fra35.chasem2026sud.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇬🇧 GB英国(mibei77.com 米贝节点分享) #27'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇬🇧[openproxylist.com] vless-GB
   network: tcp
-  port: '180'
-  server: 82.198.246.97
+  port: 7443
+  reality-opts:
+    public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
+    short-id: '!!str be0ce047'
+  server: 45.43.75.69
+  servername: chat.deepseek.com
   tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  type: vless
+  uuid: 8f8380ae-9f5d-4cb5-8f5f-0f70fbe054a9
 - alterId: 0
   cipher: auto
   name: 🇬🇧[openproxylist.com] vmess-GB
@@ -56,7 +82,7 @@ proxies:
   uuid: c4ea2391-095d-407a-9dab-85fc7104b681
 - alpn:
   - http/1.1
-  name: 🇬🇧[openproxylist.com] vless-GB
+  name: '🇬🇧[openproxylist.com] vless-GB #1'
   network: ws
   port: 443
   server: 188.114.98.0
@@ -69,7 +95,7 @@ proxies:
     headers:
       Host: 639075478000711639.civic-perma.info
     path: '%2Fcahttingws'
-- name: '🇬🇧[openproxylist.com] vless-GB #1'
+- name: '🇬🇧[openproxylist.com] vless-GB #2'
   network: tcp
   port: 8443
   server: uk1.fromblancwithlove.com
@@ -78,7 +104,7 @@ proxies:
   type: vless
   uuid: 394f6981-a782-4779-9a85-e6cf22935d93
 - client-fingerprint: chrome
-  name: '🇬🇧[openproxylist.com] vless-GB #2'
+  name: '🇬🇧[openproxylist.com] vless-GB #3'
   network: tcp
   port: 443
   reality-opts:
