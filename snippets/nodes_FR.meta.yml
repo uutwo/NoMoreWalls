@@ -31,11 +31,15 @@ proxies:
   ws-opts:
     path: '%2Fvless%2F'
 - name: 🇫🇷[openproxylist.com] trojan-F...
+  network: ws
   password: humanity
   port: 443
-  server: 104.21.40.34
+  server: 188.114.96.3
+  sni: www.gossipglove.com
   type: trojan
   ws-opts:
+    headers:
+      Host: www.gossipglove.com
     path: '%2Fassignment'
 - alterId: 0
   cipher: auto
@@ -47,3 +51,27 @@ proxies:
   tls: false
   type: vmess
   uuid: 9e91d19a-c73f-4276-adbc-b337c374259c
+- name: '🇫🇷[openproxylist.com] trojan-F... #1'
+  network: ws
+  password: humanity
+  port: 443
+  server: 172.64.152.23
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+- name: '🇫🇷[openproxylist.com] vless-FR #2'
+  network: ws
+  port: 2053
+  server: 54.36.98.30
+  servername: sni.111000.v6.navy
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+    path: '%2F%3FTelegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2%3D'
