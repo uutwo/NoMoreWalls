@@ -21,20 +21,35 @@ proxies:
   tls: false
   type: vless
   uuid: 81afc754-96c8-4cca-8d5e-3fc993b9afb9
-- name: '🇫🇷[openproxylist.com] vless-FR #1'
-  network: ws
-  port: 80
-  server: ov-france1.09vpn.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇫🇷[openproxylist.com] vless-FR #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: nUl4-UbSlrf8sCY4QNCKF3dMmgWLWJbgeziVqwfklhU
+    short-id: '!!str ad3c6641d540b4e1'
+  server: 51.158.62.94
+  servername: www.laposte.fr
   tls: false
   type: vless
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  ws-opts:
-    path: '%2Fvless%2F'
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+- alterId: 0
+  cipher: auto
+  name: 🇫🇷[openproxylist.com] vmess-FR
+  network: tcp
+  port: '44030'
+  server: 94.232.247.164
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 22c396a3-95da-4be8-beef-834d17d75784
 - name: 🇫🇷[openproxylist.com] trojan-F...
   network: ws
   password: humanity
   port: 443
-  server: 188.114.96.3
+  server: 104.21.40.34
+  skip-cert-verify: true
   sni: www.gossipglove.com
   type: trojan
   ws-opts:
@@ -43,9 +58,9 @@ proxies:
     path: '%2Fassignment'
 - alterId: 0
   cipher: auto
-  name: 🇫🇷[openproxylist.com] vmess-FR
+  name: '🇫🇷[openproxylist.com] vmess-FR #1'
   network: tcp
-  port: '45653'
+  port: 45653
   server: 94.232.247.165
   servername: ''
   tls: false
@@ -62,16 +77,4 @@ proxies:
   ws-opts:
     headers:
       Host: www.calmlunch.com
-    path: /assignment
-- name: '🇫🇷[openproxylist.com] vless-FR #2'
-  network: ws
-  port: 2053
-  server: 54.36.98.30
-  servername: sni.111000.v6.navy
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: '%2F%3FTelegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2%3D'
+    path: '%2Fassignment'
