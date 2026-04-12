@@ -4,6 +4,7 @@ proxies:
   port: 443
   server: 58.152.25.253
   skip-cert-verify: false
+  sni: ''
   type: trojan
 - alterId: 2
   cipher: auto
@@ -41,6 +42,15 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
+  name: 🇳🇱[openproxylist.com] vmess-NL
+  network: tcp
+  port: '30830'
+  server: v30.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
   name: 🇭🇰[openproxylist.com] vmess-HK
   network: ws
   port: 20521
@@ -53,15 +63,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 🇭🇰[openproxylist.com] vless-HK
-  network: ws
-  port: 443
-  server: vpn3.rnmcnm.com
-  tls: true
-  type: vless
-  uuid: c3d4e5f6-7890-1234-5678-90abcdef1234
-  ws-opts:
-    path: /ray
 - alterId: 0
   cipher: auto
   name: '🇭🇰[openproxylist.com] vmess-HK #1'
