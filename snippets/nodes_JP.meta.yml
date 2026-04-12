@@ -1,4 +1,12 @@
 proxies:
+- name: 日本|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 4746
+  server: 18.163.16.38
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
 - name: 日本2|@ripaojiedian
   network: tcp
   password: 187dda4498be9ac4f28db939d5940185
@@ -15,38 +23,28 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 新加坡|@ripaojiedian
-  network: tcp
-  password: 187dda4498be9ac4f28db939d5940185
-  port: 4674
-  server: 18.181.196.7
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 新加坡2|@ripaojiedian
-  network: tcp
-  password: 187dda4498be9ac4f28db939d5940185
-  port: 4674
-  server: 18.177.145.165
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国|@ripaojiedian
-  network: tcp
-  password: 187dda4498be9ac4f28db939d5940185
-  port: 4019
-  server: 57.180.7.56
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国2|@ripaojiedian
-  network: tcp
-  password: 187dda4498be9ac4f28db939d5940185
-  port: 3057
-  server: 160.16.106.99
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
+- name: 🇯🇵[openproxylist.com] vless-JP
+  network: ws
+  port: 443
+  server: dongjing2.zqjsqapi.com
+  servername: dongjing2.zqjsqapi.com
+  tls: true
+  type: vless
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  ws-opts:
+    path: '%2Fproxy'
+- name: '🇯🇵[openproxylist.com] vless-JP #1'
+  network: ws
+  port: 443
+  server: dongjing1.zqjsqapi.com
+  servername: dongjing1.zqjsqapi.com
+  tls: true
+  type: vless
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  ws-opts:
+    headers:
+      Host: dongjing1.zqjsqapi.com
+    path: '%2Fproxy'
 - name: '🇯🇵[openproxylist.com] trojan-J... #1'
   password: 187dda4498be9ac4f28db939d5940185
   port: 4380
