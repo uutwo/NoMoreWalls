@@ -26,26 +26,22 @@ proxies:
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #3'
   network: tcp
-  port: 180
+  port: '180'
   server: 82.198.246.250
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alpn:
-  - http/1.1
-  - h2
-  grpc-opts:
-    grpc-service-name: grpc
-  name: 🇩🇪[openproxylist.com] vless-DE
-  network: grpc
-  port: 2053
-  server: reserve.pilates.rodeo
-  servername: nice.ducks.tel
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 3d243df5-9cda-4aac-89d5-354de77d79e2
-- name: '🇩🇪[openproxylist.com] vless-DE #1'
+- name: 🇩🇪[openproxylist.com] trojan-D...
+  network: ws
+  password: 95tguyDtPydNyzAV1HK-2g
+  port: 443
+  server: backfall.azadiconfig.top
+  skip-cert-verify: false
+  sni: backfall.azadiconfig.top
+  type: trojan
+  ws-opts:
+    path: /blog
+- name: 🇩🇪[openproxylist.com] vless-DE
   network: ws
   port: 2082
   server: 188.114.98.0
@@ -56,16 +52,9 @@ proxies:
     headers:
       Host: DOFF.mehrsazi.ir
     path: '%2F'
-- name: 🇩🇪[openproxylist.com] trojan-D...
-  network: tcp
-  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-  port: 10369
-  server: 82.26.155.3
-  sni: fra34.chasem2026sud.com
-  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #2'
+  name: '🇩🇪[openproxylist.com] vless-DE #1'
   network: tcp
   port: 443
   reality-opts:
@@ -77,7 +66,7 @@ proxies:
   type: vless
   uuid: a1afced8-420b-430d-b25a-08db1c3332da
 - client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #3'
+  name: '🇩🇪[openproxylist.com] vless-DE #2'
   network: tcp
   port: 38765
   reality-opts:
@@ -88,3 +77,14 @@ proxies:
   tls: false
   type: vless
   uuid: 7a0ae662-eee7-44c0-8998-d575870bd749
+- name: '🇩🇪[openproxylist.com] vless-DE #3'
+  network: ws
+  port: 80
+  server: nnet.online
+  tls: false
+  type: vless
+  uuid: 1007b7c2-2170-4ba4-a68d-ec31fbb4bf74
+  ws-opts:
+    headers:
+      Host: nnet.online
+    path: '%2Fvless-ntls'
