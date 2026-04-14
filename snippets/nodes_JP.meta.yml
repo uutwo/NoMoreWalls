@@ -1,5 +1,5 @@
 proxies:
-- name: '🇯🇵[openproxylist.com] trojan-J... #2'
+- name: 日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
   port: 3022
@@ -7,7 +7,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #1'
+- name: 日本2|@ripaojiedian
   network: tcp
   password: 868ecdaf6aed618ec98cf78585672b2b
   port: 4937
@@ -15,7 +15,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 🇯🇵[openproxylist.com] trojan-J...
+- name: 日本3|@ripaojiedian
   network: tcp
   password: 868ecdaf6aed618ec98cf78585672b2b
   port: 9201
@@ -26,10 +26,25 @@ proxies:
 - name: 🇯🇵[openproxylist.com] vless-JP
   network: ws
   port: 443
-  server: dongjing2.zqjsqapi.com
-  servername: dongjing2.zqjsqapi.com
+  server: dongjing1.zqjsqapi.com
+  servername: dongjing1.zqjsqapi.com
   tls: true
   type: vless
   uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
   ws-opts:
+    headers:
+      Host: dongjing1.zqjsqapi.com
     path: '%2Fproxy'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇯🇵[openproxylist.com] vless-JP #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: wLkaWLYNGirBj1ggKZsnmlZiWnwZd99cIShBHVm7BQo
+    short-id: '!!str c906f73d3ba8211f'
+  server: 64.176.57.250
+  servername: www.muji.com
+  tls: false
+  type: vless
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
