@@ -1,16 +1,10 @@
 proxies:
-- name: 🇸🇬[openproxylist.com] trojan-S...
-  password: fQmMJwOLMlqHednu2SVED8gi-+H-db9kbg
-  port: 23357
-  server: 194.87.10.31
-  skip-cert-verify: false
-  sni: sgp9.node-resource.click
-  type: trojan
 - name: 新加坡|@ripaojiedian
   network: tcp
   password: 868ecdaf6aed618ec98cf78585672b2b
   port: 4674
   server: 13.114.50.40
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡2|@ripaojiedian
@@ -18,6 +12,7 @@ proxies:
   password: 868ecdaf6aed618ec98cf78585672b2b
   port: 4674
   server: 52.194.218.62
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡3|@ripaojiedian
@@ -55,6 +50,15 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: '🇸🇬[openproxylist.com] vmess-SG #3'
+  network: tcp
+  port: '30812'
+  server: v12.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: 🇸🇬[openproxylist.com] vless-SG
   port: 80
   server: 104.18.16.56
@@ -64,37 +68,56 @@ proxies:
   ws-opts:
     path: '%2F%20%40ProxyVPN11'
 - name: '🇸🇬[openproxylist.com] vless-SG #1'
-  port: 2096
-  server: 185.158.133.138
-  tls: false
+  network: ws
+  port: 2053
+  server: shop.app
+  servername: qyi.fqjd663.ggff.net
+  tls: true
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
   ws-opts:
-    path: '%2F%3Ftelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2B%2540wangcai2%3D'
+    headers:
+      Host: qyi.fqjd663.ggff.net
+    path: '%2F'
 - name: '🇸🇬[openproxylist.com] vless-SG #2'
+  network: ws
   port: 2096
-  server: 185.238.228.238
-  tls: false
+  server: 188.114.98.0
+  servername: sni.111000.indevs.in
+  skip-cert-verify: true
+  tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
-    path: '%2F%3Fed%3D2560%26telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40wangcai2'
+    headers:
+      Host: sni.111000.indevs.in
+    path: /
 - name: '🇸🇬[openproxylist.com] vless-SG #3'
+  network: ws
   port: 2096
-  server: 172.64.149.54
-  tls: false
+  server: 176.124.223.138
+  servername: sni.111000.indevs.in
+  skip-cert-verify: true
+  tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
-    path: '%2F%3Fed%3D2560'
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Ftelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2B%2540wangcai2%3D'
 - name: '🇸🇬[openproxylist.com] vless-SG #4'
+  network: ws
   port: 2096
-  server: 192.0.54.238
-  tls: false
+  server: 192.200.160.238
+  servername: sni.jpmj.dev
+  skip-cert-verify: true
+  tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
-    path: '%2F%3Fed%3D2560%26telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40wangcai2'
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F'
 - name: '🇸🇬[openproxylist.com] trojan-S... #1'
   network: ws
   password: 13c169be-8592-4eaa-94cb-69c859e7d987
