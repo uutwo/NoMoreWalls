@@ -30,9 +30,28 @@ proxies:
   sni: sgp9.node-resource.click
   type: trojan
 - name: 🇸🇬[openproxylist.com] vless-SG
+  port: 443
+  server: 8.6.112.0
+  tls: false
+  type: vless
+  uuid: a01daac7-1e65-4645-854d-b47d226f6b08
+- name: '🇸🇬[openproxylist.com] vless-SG #1'
   network: ws
   port: 2096
-  server: 192.200.160.238
+  server: 27.50.48.138
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /
+- client-fingerprint: chrome
+  name: '🇸🇬[openproxylist.com] vless-SG #2'
+  network: ws
+  port: 2096
+  server: 8.6.112.0
   servername: sni.jpmj.dev
   skip-cert-verify: true
   tls: true
@@ -41,57 +60,20 @@ proxies:
   ws-opts:
     headers:
       Host: sni.jpmj.dev
-    path: '%2F'
-- alpn:
-  - http/1.1
-  name: '🇸🇬[openproxylist.com] vless-SG #1'
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: '🇸🇬[openproxylist.com] vless-SG #3'
   network: ws
-  port: 8443
-  server: 104.18.16.56
-  servername: b721HJg7h3m87ddmr6xo5OK3W8W2tRbf.L67671355.WOrKERS.dEv
-  tls: true
-  type: vless
-  uuid: 716fdeaf-f256-4101-a329-fbfd60ed11ad
-  ws-opts:
-    headers:
-      Host: b721hjg7h3m87ddmr6xo5ok3w8w2trbf.l67671355.workers.dev
-    path: '%2FeyJqdW5rIjoidmt6M1NUYVkiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119'
-- name: '🇸🇬[openproxylist.com] vless-SG #2'
-  network: ws
-  port: 443
-  server: 135.84.64.66
-  servername: sni.111000.dynv6.net
+  port: 2053
+  server: 104.18.13.149
+  servername: sni.111000.indevs.in
   tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
-      Host: sni.111000.dynv6.net
-    path: /?Telegram🇨🇳@WangCai2=
-- name: '🇸🇬[openproxylist.com] vless-SG #3'
-  network: ws
-  port: 80
-  server: 104.17.150.99
-  tls: false
-  type: vless
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  ws-opts:
-    headers:
-      Host: vip.yaml7.ggff.net
+      Host: sni.111000.indevs.in
     path: '%2F'
-- name: '🇸🇬[openproxylist.com] vless-SG #4'
-  network: ws
-  port: 8443
-  server: 172.64.149.54
-  servername: sni.111000.dynv6.net
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.dynv6.net
-    path: /?Telegram🇨🇳 @WangCai2
 - name: '🇸🇬[openproxylist.com] trojan-S... #2'
   network: ws
   password: 13c169be-8592-4eaa-94cb-69c859e7d987
