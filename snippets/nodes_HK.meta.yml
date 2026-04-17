@@ -5,10 +5,22 @@ proxies:
   network: tcp
   port: '7754'
   server: efan.dnsefan04881.com
-  servername: ''
   tls: false
   type: vmess
   uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
+- alterId: 64
+  cipher: auto
+  name: '亚太地区 V2CROSS.COM #2'
+  network: tcp
+  port: '54022'
+  server: 103.181.164.145
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 103.181.164.145
+  ws-path: /
 - alterId: 2
   cipher: auto
   name: 香港|@ripaojiedian
@@ -16,20 +28,26 @@ proxies:
   port: '30807'
   server: v10.hdacd.com
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇭🇰 香港3|@stairnode
+  ws-headers:
+    Host: v10.hdacd.com
+  ws-path: /
+- name: 香港3|@ripaojiedian
+  network: tcp
   password: 868ecdaf6aed618ec98cf78585672b2b
   port: 52687
-  server: 95.40.85.50
+  server: 16.162.188.94
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 🇭🇰 香港4|@stairnode
+- name: 香港4|@ripaojiedian
+  network: tcp
   password: BxceQaOe
-  port: 39507
-  server: 18.183.212.72
+  port: 11097
+  server: 16.163.144.91
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -41,18 +59,19 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 香港3|@ripaojiedian
-  network: tcp
-  password: 868ecdaf6aed618ec98cf78585672b2b
-  port: 52687
-  server: 16.162.188.94
-  sni: www.nintendogames.net
-  type: trojan
-- name: 香港4|@ripaojiedian
+- name: 新加坡3|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 11097
-  server: 16.163.144.91
+  port: 28033
+  server: 18.166.154.14
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 美国3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 49534
+  server: 43.199.41.136
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
