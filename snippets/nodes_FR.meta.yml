@@ -17,14 +17,12 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.18.12.149
+  server: www.ignitelimit.com
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
+    path: /assignment
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇫🇷[openproxylist.com] vless-FR
@@ -38,3 +36,16 @@ proxies:
   tls: false
   type: vless
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- name: '🇫🇷[openproxylist.com] vless-FR #1'
+  network: ws
+  port: 2053
+  server: 141.94.77.169
+  servername: sni.111000.v6.navy
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+    path: '%2F'

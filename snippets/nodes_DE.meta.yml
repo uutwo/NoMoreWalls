@@ -1,4 +1,42 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-92.119.166.46-29
+  password: NffUh2mvk4HshUtyskEg9A
+  port: 1080
+  server: 92.119.166.46
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #5'
+  network: tcp
+  port: '180'
+  server: 82.198.246.46
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-headers:
+    Host: 82.198.246.46
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '🇬🇧 英国 V2CROSS.COM #5'
+  network: tcp
+  port: '180'
+  server: 82.198.246.97
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-headers:
+    Host: 82.198.246.97
+  ws-path: /
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-63.180.254.10-52
+  password: amazonskr05
+  port: 443
+  server: 63.180.254.10
+  type: ss
 - alterId: 0
   cipher: auto
   name: 🇩🇪 VMESS-未知>德国-NF解锁印度地区非自制剧-Ch...
@@ -12,7 +50,20 @@ proxies:
     headers:
       Host: 547.rtxconfigz.shop
     path: /@Malinda6104
-- name: 🇩🇪[openproxylist.com] vless-DE
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: _wJJxZfV51dD72qGexYZIyqeKDFXWDGClp5D-gF1lVk
+    short-id: '!!str 5bb4c3a77963e3fa'
+  server: ge.pink-world.ru
+  servername: ge.pink-world.ru
+  tls: false
+  type: vless
+  uuid: c5bbdac7-6ff5-4762-87bf-870f55a03581
+- name: '🇩🇪[openproxylist.com] vless-DE #1'
   network: ws
   port: 443
   server: 172.64.149.54
@@ -24,20 +75,7 @@ proxies:
   ws-opts:
     headers:
       Host: my.vulmart.ir
-    path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #5'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: _wJJxZfV51dD72qGexYZIyqeKDFXWDGClp5D-gF1lVk
-    short-id: '!!str 5bb4c3a77963e3fa'
-  server: ge.pink-world.ru
-  servername: ge.pink-world.ru
-  tls: false
-  type: vless
-  uuid: c5bbdac7-6ff5-4762-87bf-870f55a03581
+    path: '%2F'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇩🇪[openproxylist.com] vless-DE #3'
@@ -51,7 +89,7 @@ proxies:
   tls: false
   type: vless
   uuid: 0844ceed-af3c-46cd-9d29-2295309a1701
-- name: '🇩🇪[openproxylist.com] vless-DE #6'
+- name: '🇩🇪[openproxylist.com] vless-DE #4'
   network: ws
   port: 443
   server: 18.245.54.3
@@ -63,47 +101,23 @@ proxies:
     headers:
       Host: d23iuljn5k9z1j.cloudfront.net
     path: '%2F'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #7'
-  network: tcp
-  port: 7443
-  reality-opts:
-    public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
-    short-id: '!!str d82fb387'
-  server: 92.119.166.90
-  servername: chat.deepseek.com
-  tls: false
-  type: vless
-  uuid: 72eb4de8-5eca-420d-8876-173ef58d82e8
-- name: '🇩🇪[openproxylist.com] vless-DE #8'
+- name: '🇩🇪[openproxylist.com] vless-DE #5'
   network: ws
   port: 443
   server: 104.18.12.149
   servername: fire.rezazzz.ir
+  skip-cert-verify: true
   tls: true
   type: vless
   uuid: 2b8d9d73-0031-42f9-9914-c8c579e087cb
   ws-opts:
     headers:
       Host: fire.rezazzz.ir
-    path: '%2Fmovie'
-- client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #9'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: hF-EJNBXVYkS6mPSRRhLfgkuKxdciknzzx6q9smc0lg
-    short-id: '!!str ab'
-  server: 82.165.179.153
-  servername: www.google.com
-  tls: false
-  type: vless
-  uuid: 0388ef39-0883-4fb0-a93c-429da8cb45ab
+    path: /movie
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: GrpcFuckRKN
-  name: '🇩🇪[openproxylist.com] vless-DE #10'
+  name: '🇩🇪[openproxylist.com] vless-DE #6'
   network: grpc
   port: 443
   reality-opts:
@@ -113,7 +127,7 @@ proxies:
   tls: false
   type: vless
   uuid: f00984ef-f57e-41db-9182-b25f7bc3a1e2
-- name: '🇩🇪[openproxylist.com] vless-DE #11'
+- name: '🇩🇪[openproxylist.com] vless-DE #7'
   network: ws
   port: 80
   server: 104.18.4.130
@@ -123,8 +137,8 @@ proxies:
   ws-opts:
     headers:
       Host: cdnhtzner.yas-baaq.ir
-    path: '%2Findex.html'
-- name: '🇩🇪[openproxylist.com] vless-DE #12'
+    path: /index.html
+- name: '🇩🇪[openproxylist.com] vless-DE #8'
   port: 8080
   server: 104.18.16.56
   tls: false
@@ -132,28 +146,3 @@ proxies:
   uuid: 8d5e71e6-1c60-4084-b573-a343879c9380
   ws-opts:
     path: '%2F'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #13'
-  network: tcp
-  port: 7443
-  reality-opts:
-    public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
-    short-id: '!!str d82fb387'
-  server: 103.27.157.161
-  servername: chat.deepseek.com
-  tls: false
-  type: vless
-  uuid: caa3af29-3b04-4099-9772-c64a1b7cca34
-- client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #14'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: L0T7BLyB6gtVckvnxryaK-GGd2XwgoJ3YFM9M8kXmho
-    short-id: '!!str 7554'
-  server: 152.53.116.71
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: 1e878456-0f00-4a85-99a6-1d69bdc62e3d
