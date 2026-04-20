@@ -1,14 +1,16 @@
 proxies:
-- name: '🇬🇧 英国 伦敦Virgin Media #1'
-  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-  port: 10369
-  server: 82.26.155.237
-  skip-cert-verify: false
-  sni: fra5.chasem2026sud.com
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #4'
+  name: 🇺🇸[openproxylist.com] vmess-US
+  network: tcp
+  port: '180'
+  server: 82.198.246.214
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #5'
   network: tcp
   port: '180'
   server: 82.198.246.250
@@ -19,25 +21,47 @@ proxies:
   ws-headers:
     Host: 82.198.246.250
   ws-path: /
-- name: '英国+伦敦Virgin+Media #1'
+- name: 英国+伦敦Virgin+Media
   password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
   port: 10369
-  server: 82.26.155.105
+  server: 82.26.155.199
+  sni: fra4.chasem2026sud.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '🇬🇧 英国 V2CROSS.COM #5'
+  network: tcp
+  port: '180'
+  server: 82.198.246.97
   skip-cert-verify: true
-  sni: fra32.chasem2026sud.com
-  type: trojan
-- name: '英国+伦敦Virgin+Media #2'
-  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-  port: 10369
-  server: 82.26.155.20
-  sni: fra35.chasem2026sud.com
-  type: trojan
-- name: 🇩🇪[openproxylist.com] trojan-D...
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-headers:
+    Host: 82.198.246.97
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬[openproxylist.com] vmess-SG
+  network: tcp
+  port: '30812'
+  server: v12.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 🇬🇧 英国 伦敦Virgin Media
   password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
   port: 10369
   server: 82.26.155.3
   skip-cert-verify: false
   sni: fra34.chasem2026sud.com
+  type: trojan
+- name: '🇬🇧 英国 伦敦Virgin Media #1'
+  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
+  port: 10369
+  server: 82.26.155.237
+  skip-cert-verify: false
+  sni: fra5.chasem2026sud.com
   type: trojan
 - name: '🇬🇧 英国 伦敦Virgin Media #2'
   password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
@@ -54,3 +78,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: '🇬🇧[openproxylist.com] vmess-GB #1'
+  network: ws
+  port: '80'
+  server: fsdns1.ectunnelvpn.me
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6b2d86e5-df05-4511-a79f-82d53ce99b36
+  ws-opts:
+    headers:
+      Host: fsdns1.ectunnelvpn.me
+    path: /vmess
