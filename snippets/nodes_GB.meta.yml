@@ -1,10 +1,31 @@
 proxies:
-- name: 英国+伦敦Virgin+Media
-  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-  port: 10369
-  server: 82.26.155.105
-  sni: fra32.chasem2026sud.com
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #8'
+  network: tcp
+  port: '180'
+  server: 82.198.246.46
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #7'
+  network: tcp
+  port: '180'
+  server: 82.198.246.250
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸[openproxylist.com] vmess-US
+  network: tcp
+  port: 180
+  server: 82.198.246.9
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #3'
@@ -14,31 +35,20 @@ proxies:
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #1'
-  network: tcp
-  port: '180'
-  server: 82.198.246.37
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: 🇬🇧 英国 伦敦Virgin Media
+- name: 英国+伦敦Virgin+Media
+  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
+  port: 10369
+  server: 82.26.155.105
+  skip-cert-verify: true
+  sni: fra32.chasem2026sud.com
+  type: trojan
+- name: '🇩🇪[openproxylist.com] trojan-D... #1'
   password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
   port: 10369
   server: 82.26.155.237
   skip-cert-verify: false
   sni: fra5.chasem2026sud.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #2'
-  network: tcp
-  port: '180'
-  server: 82.198.246.214
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - name: '🇬🇧 英国 伦敦Virgin Media #3'
   password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
   port: 10369
@@ -46,7 +56,7 @@ proxies:
   skip-cert-verify: true
   sni: fra4.chasem2026sud.com
   type: trojan
-- name: '🇩🇪[openproxylist.com] trojan-D... #1'
+- name: '🇬🇧 英国 伦敦Virgin Media #2'
   password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
   port: 10369
   server: 82.26.155.20
@@ -64,10 +74,10 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #8'
+  name: '🇺🇸[openproxylist.com] vmess-US #2'
   network: tcp
-  port: 180
-  server: 82.198.246.46
+  port: '180'
+  server: 82.198.246.214
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
@@ -94,10 +104,10 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 🇺🇸[openproxylist.com] vmess-US
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
   network: tcp
   port: '180'
-  server: 82.198.246.9
+  server: 82.198.246.37
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
@@ -132,6 +142,19 @@ proxies:
   flow: xtls-rprx-vision
   name: '🇬🇧[openproxylist.com] vless-GB #1'
   network: tcp
+  port: 6443
+  reality-opts:
+    public-key: x-VSf_bBIC1iELDvaoM4SKMTK2YAAnUlVkhAWBbvpSc
+    short-id: '!!str b9605803fb4b'
+  server: gbr1.frostbot.ru
+  servername: gbr1.frostbot.ru
+  tls: false
+  type: vless
+  uuid: 5b77fb18-cece-4759-9a81-571f1be53e0c
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇬🇧[openproxylist.com] vless-GB #2'
+  network: tcp
   port: 7443
   reality-opts:
     public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
@@ -141,7 +164,7 @@ proxies:
   tls: false
   type: vless
   uuid: 8f8380ae-9f5d-4cb5-8f5f-0f70fbe054a9
-- name: '🇬🇧[openproxylist.com] vless-GB #2'
+- name: '🇬🇧[openproxylist.com] vless-GB #3'
   network: tcp
   port: 8443
   server: uk1.fromblancwithlove.com
