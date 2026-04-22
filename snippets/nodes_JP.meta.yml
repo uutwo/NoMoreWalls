@@ -1,4 +1,12 @@
 proxies:
+- name: 香港5|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 3685
+  server: 3.113.21.102
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - name: 日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -23,6 +31,36 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- name: 🇸🇬[openproxylist.com] trojan-S...
+  network: tcp
+  password: 1774240c00db2b77d5a99f6540c47b69
+  port: 32876
+  server: 160.16.124.17
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 新加坡2|@ripaojiedian
+  network: tcp
+  password: 1774240c00db2b77d5a99f6540c47b69
+  port: 5594
+  server: 52.192.67.190
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 美国|@ripaojiedian
+  network: tcp
+  password: 1774240c00db2b77d5a99f6540c47b69
+  port: 4019
+  server: 160.16.124.17
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 🇯🇵[openproxylist.com] trojan-J...
+  password: e136d465-0558-43b9-b50c-b1f45d4cb2c2
+  port: 24534
+  server: jp2-8sb.6121999.dpdns.org
+  sni: jp2-8sb.6121999.dpdns.org
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇯🇵[openproxylist.com] vmess-JP
@@ -36,3 +74,29 @@ proxies:
     headers:
       Host: jp248.cowjump.site
     path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵[openproxylist.com] vless-JP
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: wLkaWLYNGirBj1ggKZsnmlZiWnwZd99cIShBHVm7BQo
+    short-id: '!!str c906f73d3ba8211f'
+  server: 64.176.57.250
+  servername: www.muji.com
+  tls: false
+  type: vless
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+- client-fingerprint: chrome
+  name: JP_speednode_0008
+  port: 443
+  reality-opts:
+    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
+    short-id: '!!str 2da72ce6'
+  server: 176.97.73.155
+  servername: navi.bankrate.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b277abf-e0d6-44d8-85c6-f6c7afc0aec5
