@@ -12,25 +12,32 @@ proxies:
     headers:
       Host: 77ca334818bda4db538ebedbe42e0859.mobgslb.tbcache.com
     path: /
-- name: 🇫🇷[openproxylist.com] trojan-F...
+- alpn:
+  - http/1.1
+  name: 🇫🇷[openproxylist.com] trojan-F...
+  network: ws
   password: gRhMxPMmod
   port: 443
   server: cc.websooj.site
+  skip-cert-verify: false
+  sni: cc.websooj.site
   type: trojan
+  ws-opts:
+    path: /heh
 - alpn:
   - http/1.1
   name: '🇫🇷[openproxylist.com] trojan-F... #1'
   network: ws
   password: humanity
   port: 443
-  server: 104.17.150.76
-  skip-cert-verify: false
+  server: 8.6.112.0
+  skip-cert-verify: true
   sni: www.calmloud.com
   type: trojan
   ws-opts:
     headers:
       Host: www.calmloud.com
-    path: '%2Fassignment'
+    path: /assignment
 - name: '🇫🇷[openproxylist.com] trojan-F... #2'
   network: ws
   password: humanity
