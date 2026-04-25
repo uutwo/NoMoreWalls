@@ -30,79 +30,52 @@ proxies:
   skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   type: trojan
-- name: 🇸🇬[openproxylist.com] vless-SG
-  network: ws
-  port: 80
-  server: partner.zoom.us
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇸🇬[openproxylist.com] vless-SG
+  port: 443
+  server: 178.128.16.189
+  servername: www.netflix.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6a0e628b-e689-4c00-8a6e-e039ac7db08d
+- name: '🇸🇬[openproxylist.com] vless-SG #1'
+  port: 8443
+  server: 104.18.13.149
   tls: false
   type: vless
-  uuid: fac62eac-1eec-4260-a991-0cac2f8745a3
-  ws-opts:
-    headers:
-      Host: free-server.techsonic.ggff.net
-    path: /@Tech_Sonic
-- name: '🇸🇬[openproxylist.com] vless-SG #1'
-  network: ws
-  port: 443
-  server: 135.84.73.100
-  servername: sni.111000.dynv6.net
-  skip-cert-verify: true
-  tls: true
-  type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
-    headers:
-      Host: sni.111000.dynv6.net
-    path: '%2F'
+    path: '%2F%3FTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
 - name: '🇸🇬[openproxylist.com] vless-SG #2'
-  network: ws
-  port: 443
-  server: 104.18.12.149
-  servername: y6-3cj.PAgES.DEV
-  tls: true
+  port: 80
+  server: 104.18.16.56
+  tls: false
   type: vless
-  uuid: a01daac7-1e65-4645-854d-b47d226f6b08
+  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
   ws-opts:
-    headers:
-      Host: y6-3cj.PAgES.DEV
-    path: '%2F'
+    path: '%2F%20%40ProxyVPN11'
 - name: '🇸🇬[openproxylist.com] vless-SG #3'
   network: ws
-  port: 2096
-  server: 164.38.155.138
-  servername: sni.111000.indevs.in
+  port: 443
+  server: e1-f55.pages.dev
+  servername: e1-f55.pages.dev
   skip-cert-verify: true
   tls: true
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: 8b5acf77-2c2e-4eed-9ad1-be81851b99ea
   ws-opts:
     headers:
-      Host: sni.111000.indevs.in
+      Host: e1-f55.pages.dev
     path: '%2F'
 - name: '🇸🇬[openproxylist.com] vless-SG #4'
   port: 2096
-  server: 185.238.228.238
-  tls: false
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    path: '%2F%3Fed%3D2560%26telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40wangcai2'
-- name: '🇸🇬[openproxylist.com] vless-SG #5'
-  port: 2096
-  server: 162.159.153.231
+  server: 185.16.110.238
   tls: false
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
-- name: 🇸🇬[openproxylist.com] trojan-S...
-  network: ws
-  password: 13c169be-8592-4eaa-94cb-69c859e7d987
-  port: 443
-  server: ubu.okaoclax.me
-  sni: ubu.okaoclax.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ubu.okaoclax.me
-    path: /trojan-ws
