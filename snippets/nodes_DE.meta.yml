@@ -96,6 +96,17 @@ proxies:
   skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   type: trojan
+- name: 🇩🇪[openproxylist.com] trojan-D...
+  network: ws
+  password: '!!str 1234567890'
+  port: 443
+  server: 193.31.24.53
+  sni: kfm-bn0.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: kfm-bn0.pages.dev
+    path: '%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3'
 - name: 🇩🇪[openproxylist.com] vless-DE
   network: tcp
   port: 2087
@@ -104,18 +115,18 @@ proxies:
   tls: false
   type: vless
   uuid: a34a5f3e-e9fa-40a6-f3af-2984adbd701b
-- name: 🇩🇪[openproxylist.com] trojan-D...
+- name: '🇩🇪[openproxylist.com] trojan-D... #1'
   network: ws
   password: '!!str 1234567890'
   port: 443
-  server: 202.61.195.167
+  server: 159.195.5.181
   sni: kfm-bn0.pages.dev
   type: trojan
   ws-opts:
     headers:
       Host: kfm-bn0.pages.dev
     path: '%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3'
-- name: '🇩🇪[openproxylist.com] trojan-D... #1'
+- name: '🇩🇪[openproxylist.com] trojan-D... #2'
   network: ws
   password: '!!str 1234567890'
   port: 443
@@ -135,7 +146,7 @@ proxies:
   tls: false
   type: vless
   uuid: 595ae3f9-5a91-4eaa-82a3-28a221cf8f7f
-- name: '🇩🇪[openproxylist.com] trojan-D... #2'
+- name: '🇩🇪[openproxylist.com] trojan-D... #3'
   network: ws
   password: '!!str 1234567890'
   port: 2053
@@ -164,28 +175,15 @@ proxies:
   port: 443
   server: 172.64.149.54
   servername: my.vulmart.ir
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 77534396-dead-4a6c-8761-03939cd4fdc8
   ws-opts:
     headers:
       Host: my.vulmart.ir
-    path: '%2F'
-- name: '🇩🇪[openproxylist.com] vless-DE #4'
-  network: ws
-  port: 443
-  server: 18.245.54.3
-  servername: d23iuljn5k9z1j.cloudfront.net
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 97b2cd5b-b98d-494f-8f97-3a06e8c1bbd2
-  ws-opts:
-    headers:
-      Host: d23iuljn5k9z1j.cloudfront.net
     path: /
-- name: '🇩🇪[openproxylist.com] vless-DE #5'
+- name: '🇩🇪[openproxylist.com] vless-DE #4'
   network: ws
   port: 443
   server: 104.18.12.149
@@ -199,7 +197,7 @@ proxies:
       Host: fire.rezazzz.ir
     path: '%2Fmovie'
 - client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #6'
+  name: '🇩🇪[openproxylist.com] vless-DE #5'
   network: grpc
   port: 25565
   reality-opts:
@@ -211,7 +209,7 @@ proxies:
   uuid: 1c45e98c-8a4a-45e7-acc5-3a3cc962f463
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #7'
+  name: '🇩🇪[openproxylist.com] vless-DE #6'
   network: tcp
   port: 8443
   reality-opts:
@@ -222,9 +220,37 @@ proxies:
   tls: false
   type: vless
   uuid: 1e45a266-9a04-47af-b703-e53a67373cc9
-- name: '🇩🇪[openproxylist.com] trojan-D... #3'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #7'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: Ic2uiGhkBgJUsY0CZUBqa1y22V_BO7F4S93Zgk_ir2c
+    short-id: '!!str a1b2c3d4e5f67890'
+  server: 136.244.93.228
+  servername: www.booking.com
+  tls: false
+  type: vless
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #8'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: Ic2uiGhkBgJUsY0CZUBqa1y22V_BO7F4S93Zgk_ir2c
+    short-id: '!!str 0c1553316a645758'
+  server: 45.77.66.142
+  servername: www.zalando.de
+  tls: false
+  type: vless
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+- name: '🇩🇪[openproxylist.com] trojan-D... #4'
+  network: tcp
   password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
   port: 10369
-  server: 82.26.155.3
-  sni: fra34.chasem2026sud.com
+  server: 82.26.155.199
+  skip-cert-verify: true
+  sni: fra4.chasem2026sud.com
   type: trojan
