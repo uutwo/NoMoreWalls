@@ -208,46 +208,27 @@ proxies:
   skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   type: trojan
-- flow: xtls-rprx-vision
-  name: 🇩🇪[openproxylist.com] vless-DE
-  port: 52006
-  server: 178.72.181.87
-  servername: cluster-de-2.firstvideocdn.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 75807638-6f19-01f4-ae08-38492ee85c88
-- name: '🇩🇪[openproxylist.com] vless-DE #1'
+- name: 🇩🇪[openproxylist.com] vless-DE
   network: tcp
   port: 443
   server: srv162.towersflowerss.com
   tls: false
   type: vless
   uuid: 36d85d65-1b57-4cba-a2a6-f61131b08593
+- grpc-opts:
+    grpc-service-name: gprc
+  name: '🇩🇪[openproxylist.com] vless-DE #1'
+  network: grpc
+  port: 30086
+  server: 138.124.32.189
+  tls: false
+  type: vless
+  uuid: 595ae3f9-5a91-4eaa-82a3-28a221cf8f7f
 - name: 🇩🇪[openproxylist.com] trojan-D...
   network: ws
   password: '!!str 1234567890'
-  port: 443
-  server: 152.53.228.86
-  sni: kfm-bn0.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: kfm-bn0.pages.dev
-    path: '%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3'
-- name: '🇩🇪[openproxylist.com] vless-DE #2'
-  network: tcp
-  port: 2087
-  server: 178.104.118.247
-  servername: 178.104.118.247
-  tls: false
-  type: vless
-  uuid: a34a5f3e-e9fa-40a6-f3af-2984adbd701b
-- name: '🇩🇪[openproxylist.com] trojan-D... #1'
-  network: ws
-  password: '!!str 1234567890'
-  port: 443
-  server: 159.195.5.181
+  port: 2053
+  server: 202.61.226.121
   skip-cert-verify: false
   sni: kfm-bn0.pages.dev
   type: trojan
@@ -255,17 +236,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- grpc-opts:
-    grpc-service-name: gprc
-  name: '🇩🇪[openproxylist.com] vless-DE #3'
-  network: grpc
-  port: 30086
-  server: 138.124.32.189
-  tls: false
-  type: vless
-  uuid: 595ae3f9-5a91-4eaa-82a3-28a221cf8f7f
-- client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #4'
+- name: '🇩🇪[openproxylist.com] vless-DE #2'
   network: ws
   port: 443
   server: 18.245.54.3
@@ -277,8 +248,8 @@ proxies:
   ws-opts:
     headers:
       Host: d23iuljn5k9z1j.cloudfront.net
-    path: '%2F'
-- name: '🇩🇪[openproxylist.com] vless-DE #5'
+    path: /
+- name: '🇩🇪[openproxylist.com] vless-DE #3'
   network: ws
   port: 443
   server: 104.18.12.149
@@ -291,9 +262,3 @@ proxies:
     headers:
       Host: fire.rezazzz.ir
     path: /movie
-- name: '🇩🇪[openproxylist.com] trojan-D... #2'
-  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-  port: 10369
-  server: 82.26.155.105
-  sni: fra32.chasem2026sud.com
-  type: trojan

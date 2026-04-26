@@ -1,13 +1,18 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 🇳🇱[openproxylist.com] vmess-NL
-  network: tcp
-  port: '30830'
-  server: v30.hdacd.com
+  name: 美国 3COM公司企业网
+  network: ws
+  port: 443
+  server: 152.67.218.38
+  servername: ''
   tls: false
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4
+  ws-opts:
+    headers:
+      Host: 152.67.218.38
+    path: /
 - alterId: 0
   cipher: auto
   name: 🇺🇸 VMESS-美国-NF解锁自制剧-ChatGPT-Ti...
@@ -595,7 +600,7 @@ proxies:
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #1'
   network: ws
-  port: 44742
+  port: '44742'
   server: 10.a400.top
   servername: 10.a400.top
   tls: true
@@ -605,24 +610,6 @@ proxies:
     headers:
       Host: 10.a400.top
     path: /
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #2'
-  network: tcp
-  port: 180
-  server: 82.198.246.9
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #5'
-  network: tcp
-  port: '180'
-  server: 82.198.246.233
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 1
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #6'
@@ -694,3 +681,16 @@ proxies:
   tls: false
   type: vless
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- name: '🇺🇸[openproxylist.com] vless-US #3'
+  network: ws
+  port: 443
+  server: 94.131.101.135
+  servername: sni.111000.v6.navy
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2'
