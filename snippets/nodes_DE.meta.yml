@@ -19,16 +19,6 @@ proxies:
   skip-cert-verify: true
   sni: kfm-bn0.pages.dev
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #9'
-  network: tcp
-  port: '180'
-  server: 82.198.246.250
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - name: 德國丨yoyapai.com\r
   password: '!!str 1234567890'
   port: 443
@@ -50,18 +40,19 @@ proxies:
   skip-cert-verify: true
   sni: kfm-bn0.pages.dev
   type: trojan
-- alpn:
-  - http/1.1
-  - h2
-  client-fingerprint: chrome
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇩🇪[openproxylist.com] vless-DE
+  network: tcp
   port: 443
-  server: finl9.keepsecured.net
-  servername: finl9.keepsecured.net
-  tls: true
+  reality-opts:
+    public-key: I-ltGSV73Fd08VfuP_XZ-mAAb2ZE3Ag4a_8ftaX0bz0
+    short-id: '!!str fe28038a'
+  server: gr-1.illusion-proxy.ru
+  servername: gr-1.illusion-proxy.ru
+  tls: false
   type: vless
-  uuid: b6ce8a51-19b9-4979-91ba-b4298c26d5fc
+  uuid: bf263367-bb63-4663-b4a1-34946107a72e
 - client-fingerprint: chrome
   name: '🇩🇪[openproxylist.com] vless-DE #1'
   network: ws
@@ -76,18 +67,6 @@ proxies:
     headers:
       Host: tbp.zuhn.ir
     path: /test
-- name: 🇩🇪[openproxylist.com] trojan-D...
-  network: ws
-  password: '!!str 1234567890'
-  port: 443
-  server: 202.61.195.167
-  skip-cert-verify: false
-  sni: kfm-bn0.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: kfm-bn0.pages.dev
-    path: /
 - grpc-opts:
     grpc-service-name: gprc
   name: '🇩🇪[openproxylist.com] vless-DE #2'
@@ -110,8 +89,7 @@ proxies:
   tls: false
   type: vless
   uuid: e679aa5e-fde0-4e9f-ad46-63725e1c47f3
-- client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #4'
+- name: '🇩🇪[openproxylist.com] vless-DE #4'
   network: ws
   port: 443
   server: 18.245.54.3
@@ -123,7 +101,7 @@ proxies:
   ws-opts:
     headers:
       Host: d23iuljn5k9z1j.cloudfront.net
-    path: '%2F'
+    path: /
 - name: '🇩🇪[openproxylist.com] vless-DE #5'
   network: ws
   port: 443
@@ -137,12 +115,6 @@ proxies:
     headers:
       Host: fire.rezazzz.ir
     path: '%2Fmovie'
-- name: '🇩🇪[openproxylist.com] trojan-D... #1'
-  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-  port: 10369
-  server: 82.26.155.105
-  sni: fra32.chasem2026sud.com
-  type: trojan
 - name: '🇩🇪[openproxylist.com] vless-DE #6'
   network: ws
   port: 8443
@@ -156,16 +128,29 @@ proxies:
     headers:
       Host: a1d.bioritalin.ir
     path: /
-- name: '🇩🇪[openproxylist.com] vless-DE #7'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #7'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: DHsthrDRMCGcOyJd4xTce_4CCSAJZGwxCdfNrkB_Pgs
+    short-id: '!!str 479826bdfc3eb86e'
+  server: 54.37.75.187
+  servername: www.speedtest.net
+  tls: false
+  type: vless
+  uuid: a0b067ac-162d-4237-956d-10b8b471d3f5
+- name: '🇩🇪[openproxylist.com] vless-DE #8'
   network: ws
-  port: 8443
-  server: 51.91.100.159
-  servername: sni.111000.v6.navy
+  port: 2053
+  server: 46.101.254.53
+  servername: sni.latonyamadeline.ndjp.net
   skip-cert-verify: true
   tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
-      Host: sni.111000.v6.navy
-    path: '%2F'
+      Host: sni.latonyamadeline.ndjp.net
+    path: '%2F%3Fhttps%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3%3D'
