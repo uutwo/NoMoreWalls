@@ -15,11 +15,18 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 新加坡3|@ripaojiedian
-  network: tcp
+- name: 🇸🇬 新加坡3|@ripaojiedian
   password: BxceQaOe
   port: 4203
   server: 95.40.28.234
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 新加坡3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 7337
+  server: 16.163.157.130
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
@@ -35,17 +42,35 @@ proxies:
       Host: free-server.techsonic.ggff.net
     path: /@Tech_Sonic
 - name: '🇸🇬[openproxylist.com] vless-SG #1'
+  network: ws
   port: 2096
-  server: 212.183.88.238
-  tls: false
+  server: 155.46.167.138
+  servername: sni.111000.indevs.in
+  skip-cert-verify: true
+  tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
+    headers:
+      Host: sni.111000.indevs.in
+    path: /
 - name: '🇸🇬[openproxylist.com] vless-SG #2'
   network: ws
-  port: 2053
-  server: 172.64.155.209
+  port: 443
+  server: 104.20.6.134
+  servername: snippet.danfeng.rr.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.rr.kg
+    path: '%2Fdanfeng'
+- name: '🇸🇬[openproxylist.com] vless-SG #3'
+  network: ws
+  port: 2096
+  server: 45.130.125.138
   servername: sni.111000.indevs.in
   skip-cert-verify: true
   tls: true
@@ -55,28 +80,27 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: '%2F'
-- name: '🇸🇬[openproxylist.com] vless-SG #3'
-  port: 2053
-  server: 172.64.149.54
-  tls: false
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    path: '%2F'
 - name: '🇸🇬[openproxylist.com] vless-SG #4'
-  port: 80
-  server: 104.20.5.134
+  port: 443
+  server: 104.20.6.134
   tls: false
   type: vless
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-opts:
+    path: '%2Fdanfeng'
 - name: '🇸🇬[openproxylist.com] vless-SG #5'
-  port: 2096
-  server: 188.114.98.0
-  tls: false
+  network: ws
+  port: 8443
+  server: 104.18.13.149
+  servername: sni.111000.dynv6.net
+  skip-cert-verify: true
+  tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
+    headers:
+      Host: sni.111000.dynv6.net
+    path: /?Telegram🇨🇳 @WangCai2
 - name: 🇸🇬[openproxylist.com] trojan-S...
   network: ws
   password: 13c169be-8592-4eaa-94cb-69c859e7d987
