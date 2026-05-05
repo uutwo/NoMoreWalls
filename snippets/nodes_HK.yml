@@ -6,16 +6,13 @@ proxies:
   port: '30807'
   server: v10.hdacd.com
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇭🇰 香港3|@ripaojiedian
-  password: ba62c023f9bce796ae334fecb20ef7cc
-  port: 2008
-  server: 54.250.182.223
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
+  ws-headers:
+    Host: v10.hdacd.com
+  ws-path: /
 - name: 🇭🇰 香港5|@ripaojiedian
   password: BxceQaOe
   port: 5383
@@ -23,6 +20,53 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+- name: 🇸🇬 新加坡2|@ripaojiedian
+  password: ba62c023f9bce796ae334fecb20ef7cc
+  port: 49559
+  server: 54.46.53.46
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 🇸🇬 新加坡3|@ripaojiedian
+  password: BxceQaOe
+  port: 4203
+  server: 43.199.41.19
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 🇺🇸 美国3|@ripaojiedian
+  password: BxceQaOe
+  port: 23255
+  server: 43.199.67.7
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 8元老牌专线机场：cczzuu.top
+  network: tcp
+  port: '7754'
+  server: efan.dnsefan04881.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
+  ws-headers:
+    Host: efan.dnsefan04881.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 亚太地区 CCZZUU.TOP
+  network: tcp
+  port: '51556'
+  server: 103.181.164.145
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: trojan.burgerip.co.uk
+  ws-path: /
 - name: 香港3|@ripaojiedian
   network: tcp
   password: ba62c023f9bce796ae334fecb20ef7cc
@@ -128,17 +172,3 @@ proxies:
     headers:
       Host: n1753348736.lie5d.cyou
     path: /
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #7'
-  network: ws
-  port: 55185
-  server: 47.243.135.74
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1375985e-334a-4c25-8f64-52a182bc8037
-  ws-opts:
-    headers:
-      Host: ''
-    path: /Notif_Chat
