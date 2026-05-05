@@ -20,19 +20,6 @@ proxies:
   ws-path: /vmess-balkar
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #2'
-  network: tcp
-  port: '180'
-  server: 82.198.246.9
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-headers:
-    Host: free-v7-09.elbrusway.online
-  ws-path: /vmess-balkar
-- alterId: 0
-  cipher: auto
   name: 🇩🇪 VMESS-未知>德国-NF解锁印度地区非自制剧-Ch...
   network: ws
   port: '8080'
@@ -48,9 +35,8 @@ proxies:
   cipher: auto
   name: '🇩🇪[openproxylist.com] vmess-DE #1'
   network: ws
-  port: 80
+  port: '80'
   server: www.shopify.com
-  servername: ''
   tls: false
   type: vmess
   uuid: 3171ac5c-d746-4298-82e0-d46f2f5aa51f
@@ -58,6 +44,19 @@ proxies:
     headers:
       Host: de.gfw.hidns.co
     path: /danfeng
+- alpn:
+  - http/1.1
+  name: 🇩🇪[openproxylist.com] trojan-D...
+  network: ws
+  password: mSzFVhUczD
+  port: 443
+  server: 104.20.5.134
+  sni: abest.api-tel.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: abest.api-tel.xyz
+    path: '%2F'
 - name: 🇩🇪[openproxylist.com] vless-DE
   network: tcp
   port: 2087
@@ -65,3 +64,16 @@ proxies:
   tls: false
   type: vless
   uuid: a34a5f3e-e9fa-40a6-f3af-2984adbd701b
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: Ic2uiGhkBgJUsY0CZUBqa1y22V_BO7F4S93Zgk_ir2c
+    short-id: '!!str a1b2c3d4e5f67890'
+  server: 136.244.93.228
+  servername: www.booking.com
+  tls: false
+  type: vless
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
