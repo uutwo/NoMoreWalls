@@ -1,25 +1,4 @@
 proxies:
-- name: 🇸🇬 新加坡|@ripaojiedian
-  password: ba62c023f9bce796ae334fecb20ef7cc
-  port: 4840
-  server: 16.163.148.1
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 🇸🇬 新加坡2|@ripaojiedian
-  password: ba62c023f9bce796ae334fecb20ef7cc
-  port: 2511
-  server: 13.231.182.84
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 🇸🇬 新加坡3|@ripaojiedian
-  password: BxceQaOe
-  port: 2074
-  server: 13.231.251.168
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
 - name: '🇸🇬[openproxylist.com] trojan-S... #2'
   network: tcp
   password: ba62c023f9bce796ae334fecb20ef7cc
@@ -44,60 +23,26 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 🇸🇬[openproxylist.com] vless-SG
+- alterId: 32
+  cipher: auto
+  name: '🇸🇬 SG新加坡(mibei77.com 米贝节点分享) #1'
   network: ws
-  port: 80
-  server: 141.193.213.21
-  tls: false
-  type: vless
-  uuid: fac62eac-1eec-4260-a991-0cac2f8745a3
-  ws-opts:
-    headers:
-      Host: free-server.techsonic.ggff.net
-    path: /@Tech_Sonic
-- name: '🇸🇬[openproxylist.com] vless-SG #1'
-  network: ws
-  port: 80
-  server: 104.20.6.134
-  tls: false
-  type: vless
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  ws-opts:
-    headers:
-      Host: vip.yaml7.ggff.net
-    path: /+@ProxyVPN11
-- name: '🇸🇬[openproxylist.com] vless-SG #2'
-  network: ws
-  port: 2096
-  server: 14.102.229.191
-  servername: sni.my111000.tech
-  skip-cert-verify: true
+  port: '443'
+  server: vc.fly.dev
   tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
   ws-opts:
     headers:
-      Host: sni.my111000.tech
-    path: '%2F'
-- name: '🇸🇬[openproxylist.com] vless-SG #3'
-  network: ws
-  port: 2096
-  server: 188.114.96.3
-  servername: sni.111000.indevs.in
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F%3FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2%3D'
+      Host: vc.fly.dev
+    path: /vc
 - alpn:
   - http/1.1
-  name: '🇸🇬[openproxylist.com] vless-SG #4'
+  client-fingerprint: chrome
+  name: 🇸🇬[openproxylist.com] vless-SG
   network: ws
   port: 443
-  server: 162.159.36.20
+  server: 162.159.36.5
   servername: sni.111000.dynv6.net
   skip-cert-verify: true
   tls: true
@@ -106,28 +51,50 @@ proxies:
   ws-opts:
     headers:
       Host: sni.111000.dynv6.net
-    path: '%2F%3Fproxyip%3Dip.111000.de5.net%253A443'
-- name: '🇸🇬[openproxylist.com] vless-SG #5'
+    path: /?proxyip=ip.111000.de5.net:443
+- name: '🇸🇬[openproxylist.com] vless-SG #1'
   network: ws
   port: 2096
-  server: 45.40.147.191
-  servername: sni.my111000.tech
+  server: 162.159.153.231
+  servername: sni.111000.indevs.in
   skip-cert-verify: true
   tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
-      Host: sni.my111000.tech
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%40WangCai2%2F
-- name: '🇸🇬[openproxylist.com] trojan-S... #3'
+      Host: sni.111000.indevs.in
+    path: /?Telegram🇨🇳+@WangCai2=
+- name: '🇸🇬[openproxylist.com] vless-SG #2'
+  port: 2096
+  server: 190.93.244.138
+  tls: false
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    path: '%2F'
+- name: '🇸🇬[openproxylist.com] vless-SG #3'
   network: ws
-  password: 13c169be-8592-4eaa-94cb-69c859e7d987
-  port: 443
-  server: ubu.okaoclax.me
-  sni: ubu.okaoclax.me
-  type: trojan
+  port: 80
+  server: 104.20.63.52
+  tls: false
+  type: vless
+  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
   ws-opts:
     headers:
-      Host: ubu.okaoclax.me
-    path: /trojan-ws
+      Host: vip.yaml7.ggff.net
+    path: '%2F'
+- client-fingerprint: chrome
+  name: '🇸🇬[openproxylist.com] vless-SG #4'
+  network: ws
+  port: 8443
+  server: 104.17.72.206
+  servername: sni.111000.dynv6.net
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: /?Telegram🇨🇳+@WangCai2
