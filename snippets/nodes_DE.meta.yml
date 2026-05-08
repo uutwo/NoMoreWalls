@@ -26,14 +26,22 @@ proxies:
   skip-cert-verify: false
   sni: www.creationlong.org
   type: trojan
-- name: 🇩🇪[openproxylist.com] trojan-D...
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.59.183.236
-  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇩🇪[openproxylist.com] vless-DE
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ
+    short-id: '!!str 23'
+  server: 89.106.83.45
+  servername: www.apple.com
+  tls: false
+  type: vless
+  uuid: 629d2ccc-3a2a-4dd3-83d2-86b25fc8783e
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #1'
   network: tcp
   port: 443
   reality-opts:
@@ -59,7 +67,7 @@ proxies:
     path: /danfeng
 - alpn:
   - http/1.1
-  name: '🇩🇪[openproxylist.com] trojan-D... #1'
+  name: 🇩🇪[openproxylist.com] trojan-D...
   network: ws
   password: mSzFVhUczD
   port: 443
@@ -70,3 +78,31 @@ proxies:
     headers:
       Host: abest.api-tel.xyz
     path: '%2F'
+- name: DE_speednode_0004
+  network: ws
+  port: 8443
+  server: 193.23.219.205
+  servername: sni.latonyamadeline.ndjp.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+    path: /?ed=2560
+- name: DE_speednode_0005
+  network: ws
+  port: 443
+  server: 217.144.190.230
+  servername: sni.latonyamadeline.ndjp.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+    path: /?ed=2560
