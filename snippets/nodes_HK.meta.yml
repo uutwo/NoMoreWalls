@@ -6,9 +6,13 @@ proxies:
   port: '30807'
   server: v10.hdacd.com
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-headers:
+    Host: v10.hdacd.com
+  ws-path: /
 - name: 香港3|@ripaojiedian
   network: tcp
   password: 7ebc402f3383366fe4f554abd8625439
@@ -33,6 +37,43 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+- name: 日本2|@ripaojiedian
+  network: tcp
+  password: 7ebc402f3383366fe4f554abd8625439
+  port: 8066
+  server: 54.46.109.238
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 日本3|@ripaojiedian
+  network: tcp
+  password: 7ebc402f3383366fe4f554abd8625439
+  port: 24184
+  server: 18.167.37.32
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 美国|@ripaojiedian
+  network: tcp
+  password: 7ebc402f3383366fe4f554abd8625439
+  port: 6604
+  server: 18.167.37.32
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 8元老牌专线机场：cczzuu.top
+  network: tcp
+  port: '7754'
+  server: efan.dnsefan04881.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
+  ws-headers:
+    Host: efan.dnsefan04881.com
+  ws-path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇭🇰[openproxylist.com] vless-HK
@@ -46,42 +87,6 @@ proxies:
   cipher: auto
   name: 🇭🇰[openproxylist.com] vmess-HK
   network: ws
-  port: 443
-  server: www.visa.com
-  servername: download.windows11.dpdns.org
-  tls: true
-  type: vmess
-  uuid: 67f4b8ff-15cf-3ec9-b09d-c31a4728c652
-  ws-opts:
-    headers:
-      Host: download.windows11.dpdns.org
-    path: /data
-- client-fingerprint: chrome
-  name: '🇭🇰[openproxylist.com] vless-HK #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  server: 8.210.175.100
-  servername: www.ilovepdf.com
-  tls: false
-  type: vless
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-- client-fingerprint: chrome
-  name: '🇭🇰[openproxylist.com] vless-HK #2'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  server: 47.243.112.34
-  servername: api.company-target.com
-  tls: false
-  type: vless
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #1'
-  network: ws
   port: '443'
   server: 47.242.163.203
   servername: n1761296878.4u9ma.icu
@@ -94,7 +99,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #2'
+  name: '🇭🇰[openproxylist.com] vmess-HK #1'
   network: ws
   port: '443'
   server: n1761296889.4u9ma.icu
@@ -108,7 +113,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #3'
+  name: '🇭🇰[openproxylist.com] vmess-HK #2'
   network: tcp
   port: '9527'
   server: 45.192.101.134
@@ -116,18 +121,9 @@ proxies:
   tls: false
   type: vmess
   uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
-- name: '🇭🇰[openproxylist.com] vless-HK #3'
-  network: ws
-  port: 443
-  server: vpn3.rnmcnm.com
-  tls: true
-  type: vless
-  uuid: c3d4e5f6-7890-1234-5678-90abcdef1234
-  ws-opts:
-    path: /ray
 - alterId: 0
   cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #4'
+  name: '🇭🇰[openproxylist.com] vmess-HK #3'
   network: ws
   port: '21879'
   server: 103.143.238.196
