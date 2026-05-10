@@ -33,17 +33,15 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 🇭🇰[openproxylist.com] vless-HK
-  network: ws
-  port: 39001
-  server: hkcn2.baqi.indevs.in
-  tls: false
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: 🇭🇰[openproxylist.com] vless-HK
+  port: 443
+  server: s306.okgg.top
+  servername: e788s306.okgg.top
+  tls: true
   type: vless
-  uuid: 9f1d6cb6-b2fb-4813-8351-383b72749e2c
-  ws-opts:
-    headers:
-      Host: d0a6b4d945dbfc846b18fade7d631883.mobgslb.tbcache.com
-    path: /
+  uuid: 8f8ccdc5-fe99-38d7-a8a6-422f8c88ef0a
 - name: 🇭🇰[openproxylist.com] trojan-H...
   password: BxceQaOe
   port: 11233
@@ -53,6 +51,17 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   name: '🇭🇰[openproxylist.com] vless-HK #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+  server: 8.210.175.100
+  servername: www.ilovepdf.com
+  tls: false
+  type: vless
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+- client-fingerprint: chrome
+  name: '🇭🇰[openproxylist.com] vless-HK #2'
   network: tcp
   port: 443
   reality-opts:
@@ -100,3 +109,25 @@ proxies:
   tls: false
   type: vmess
   uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
+- name: '🇭🇰[openproxylist.com] vless-HK #3'
+  network: ws
+  port: 443
+  server: vpn3.rnmcnm.com
+  tls: true
+  type: vless
+  uuid: c3d4e5f6-7890-1234-5678-90abcdef1234
+  ws-opts:
+    path: /ray
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰[openproxylist.com] vmess-HK #3'
+  network: ws
+  port: '21879'
+  server: 103.143.238.196
+  tls: true
+  type: vmess
+  uuid: 1e1a6b3b-14b2-4ae4-9aa9-880ba5dff6fa
+  ws-opts:
+    headers:
+      Host: ''
+    path: /vmesswss
