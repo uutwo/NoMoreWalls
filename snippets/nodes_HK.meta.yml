@@ -6,13 +6,17 @@ proxies:
   port: '30807'
   server: v10.hdacd.com
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-headers:
-    Host: v10.hdacd.com
-  ws-path: /
+- name: 香港3|@ripaojiedian
+  network: tcp
+  password: 7ebc402f3383366fe4f554abd8625439
+  port: 2008
+  server: 3.112.206.12
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
 - name: 香港5|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -21,43 +25,6 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 日本2|@ripaojiedian
-  network: tcp
-  password: 7ebc402f3383366fe4f554abd8625439
-  port: 8066
-  server: 54.46.127.252
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 新加坡|@ripaojiedian
-  network: tcp
-  password: 7ebc402f3383366fe4f554abd8625439
-  port: 4840
-  server: 95.40.118.115
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 44386
-  server: 43.198.240.167
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 8元老牌专线机场：cczzuu.top
-  network: tcp
-  port: '7754'
-  server: efan.dnsefan04881.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-  ws-headers:
-    Host: efan.dnsefan04881.com
-  ws-path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇭🇰[openproxylist.com] vless-HK
@@ -95,6 +62,18 @@ proxies:
     headers:
       Host: ''
     path: /
+- name: 🇭🇰[openproxylist.com] trojan-H...
+  network: ws
+  password: 8b45d379-702f-41b3-a6b2-9c87a01dcd5c
+  port: 443
+  server: 23.227.38.178
+  skip-cert-verify: true
+  sni: q6clkp794liy3y90.hktimecsgo.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: q6clkp794liy3y90.hktimecsgo.xyz
+    path: /images
 - alterId: 0
   cipher: auto
   name: '🇭🇰[openproxylist.com] vmess-HK #2'
