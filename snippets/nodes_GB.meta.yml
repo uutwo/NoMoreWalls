@@ -16,7 +16,7 @@ proxies:
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #5'
   network: tcp
-  port: 180
+  port: '180'
   server: 82.198.246.214
   skip-cert-verify: true
   tls: false
@@ -31,6 +31,7 @@ proxies:
   network: tcp
   port: '180'
   server: 82.198.246.37
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -56,8 +57,9 @@ proxies:
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #3'
   network: tcp
-  port: 180
+  port: '180'
   server: 82.198.246.9
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -86,28 +88,6 @@ proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇬🇧[openproxylist.com] vless-GB
-  port: 443
-  server: london1.ap221.com
-  servername: london.ap221.com
-  tls: true
-  type: vless
-  uuid: 8f25d191-c31c-4d07-86ec-db01fe1085d9
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 0rtpNciTfV9TsoEc7Y8lS5LzBUzLppMnRY8bQC_bH3M
-    short-id: '!!str aabbccdd'
-  server: 79.141.171.133
-  servername: apple.com
-  tls: false
-  type: vless
-  uuid: 4c3fe585-ac09-41df-b284-888818888188
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #2'
   network: tcp
   port: 443
   reality-opts:
@@ -118,7 +98,20 @@ proxies:
   tls: false
   type: vless
   uuid: 43488128-319e-f480-64ea-0acdc712e2a8
-- name: '🇬🇧[openproxylist.com] vless-GB #3'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇬🇧[openproxylist.com] vless-GB #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: ZpkoOvcRglQoTWJ3B7hiJlmMYTtIu41hJ51FMMdSTDE
+    short-id: '!!str 41427aa565e28984'
+  server: 78.141.199.54
+  servername: www.vodafone.co.uk
+  tls: false
+  type: vless
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+- name: '🇬🇧[openproxylist.com] vless-GB #2'
   network: tcp
   port: 8443
   server: uk1.fromblancwithlove.com
