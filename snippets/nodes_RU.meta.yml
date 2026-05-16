@@ -1,16 +1,18 @@
 proxies:
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
   name: 俄罗斯+V2CROSS.COM
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: T6xIzGPsy--IRyF0ts9LgfDka7bDMjOaOKT6zJ1hL1U
-  server: 212.113.117.239
-  servername: eh.vk.com
-  tls: false
+  network: ws
+  port: 2096
+  server: 176.124.223.138
+  servername: sni.111000.indevs.in
+  skip-cert-verify: true
+  tls: true
   type: vless
-  uuid: 5b2fc182-a497-4fbe-aeb8-1841dae99022
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: ??[openproxylist.com] vless-RU
@@ -24,15 +26,3 @@ proxies:
   tls: false
   type: vless
   uuid: e80c5348-5a5c-41f0-a78d-7a781f47afce
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '??[openproxylist.com] vless-RU #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
-  server: 138.124.186.100
-  servername: www.fh-aachen.de
-  tls: false
-  type: vless
-  uuid: e346f220-4ca4-4f69-a66b-52e992b3b625
