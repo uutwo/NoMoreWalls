@@ -1,11 +1,35 @@
 proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 英国+V2CROSS.COM
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
+    short-id: '!!str c4fb372c78b32874'
+  server: 2.27.40.63
+  servername: www.deepl.com
+  tls: false
+  type: vless
+  uuid: ae8ddd8e-00af-48e5-bd57-05074a1bbffb
+- name: 英国+社会保险安全部
+  network: ws
+  port: 443
+  server: 51.91.249.93
+  servername: sni.111000.v6.navy
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #13'
+  name: '🇺🇸[openproxylist.com] vmess-US #14'
   network: tcp
   port: '180'
   server: 82.198.246.9
-  servername: ''
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
@@ -51,3 +75,30 @@ proxies:
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: '🇬🇧[openproxylist.com] vmess-GB #1'
+  network: ws
+  port: '80'
+  server: fsdns1.ectunnelvpn.me
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6b2d86e5-df05-4511-a79f-82d53ce99b36
+  ws-opts:
+    headers:
+      Host: fsdns1.ectunnelvpn.me
+    path: /vmess
+- name: '🇬🇧[openproxylist.com] vless-GB #3'
+  network: ws
+  port: 8443
+  server: 158.220.88.180
+  servername: sni.111000.indevs.in
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F'
