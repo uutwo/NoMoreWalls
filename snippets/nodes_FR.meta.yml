@@ -1,16 +1,4 @@
 proxies:
-- client-fingerprint: chrome
-  name: 法国+V2CROSS.COM
-  network: raw
-  port: 55269
-  reality-opts:
-    public-key: i1e3hqslC-n7XGp72HmDKU7ZuRk72pHbzujbNaYF-0s
-    short-id: '!!str 8f'
-  server: 141.11.197.127
-  servername: vk.ru
-  tls: false
-  type: vless
-  uuid: 231e88bb-3a39-4f26-848e-908f83070283
 - alterId: 0
   cipher: auto
   name: '🇬🇧 GB英国(mibei77.com 米贝节点分享) #56'
@@ -20,14 +8,9 @@ proxies:
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: 🇫🇷[openproxylist.com] trojan-F...
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.37.207.166
-  type: trojan
 - alpn:
   - http/1.1
-  name: '🇫🇷[openproxylist.com] trojan-F... #1'
+  name: 🇫🇷[openproxylist.com] trojan-F...
   network: ws
   password: humanity
   port: 443
@@ -41,18 +24,19 @@ proxies:
     path: '%2Fassignment'
 - alpn:
   - http/1.1
-  name: '🇫🇷[openproxylist.com] trojan-F... #2'
+  name: '🇫🇷[openproxylist.com] trojan-F... #1'
   network: ws
   password: humanity
   port: 443
-  server: sourceforge.net
+  server: 8.6.112.6
+  skip-cert-verify: false
   sni: www.calmloud.com
   type: trojan
   ws-opts:
     headers:
       Host: www.calmloud.com
-    path: /assignment
-- name: '🇫🇷[openproxylist.com] trojan-F... #3'
+    path: '%2Fassignment'
+- name: '🇫🇷[openproxylist.com] trojan-F... #2'
   network: ws
   password: humanity
   port: 443
@@ -64,3 +48,29 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: /assignment
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇫🇷[openproxylist.com] vless-FR
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: nUl4-UbSlrf8sCY4QNCKF3dMmgWLWJbgeziVqwfklhU
+    short-id: '!!str ad3c6641d540b4e1'
+  server: 51.158.62.94
+  servername: www.laposte.fr
+  tls: false
+  type: vless
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇫🇷[openproxylist.com] vless-FR #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4
+    short-id: '!!str 9c2378562188c3cb'
+  server: 185.171.202.48
+  servername: fr.denditop.site
+  tls: false
+  type: vless
+  uuid: 256c5f48-4908-4255-83d1-c86cb58f22b4
