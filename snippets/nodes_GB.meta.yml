@@ -1,10 +1,10 @@
 proxies:
-- name: 🇬🇧[openproxylist.com] vless-GB
+- client-fingerprint: chrome
+  name: 🇬🇧[openproxylist.com] vless-GB
   network: tcp
   port: 8443
-  server: 152.233.28.196
+  server: uk1.fromblancwithlove.com
   servername: uk1.fromblancwithlove.com
-  skip-cert-verify: true
   tls: true
   type: vless
   uuid: 394f6981-a782-4779-9a85-e6cf22935d93
@@ -26,7 +26,6 @@ proxies:
   network: tcp
   port: '22324'
   server: 66.163.117.58
-  servername: ''
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
@@ -34,9 +33,9 @@ proxies:
   cipher: auto
   name: '🇬🇧[openproxylist.com] vmess-GB #1'
   network: ws
-  port: '80'
-  server: fsdns1.ectunnelvpn.me
-  servername: ''
+  port: 80
+  server: 149.102.154.144
+  servername: null
   tls: false
   type: vmess
   uuid: 6b2d86e5-df05-4511-a79f-82d53ce99b36
@@ -44,3 +43,16 @@ proxies:
     headers:
       Host: fsdns1.ectunnelvpn.me
     path: /vmess
+- name: '🇬🇧[openproxylist.com] vless-GB #2'
+  network: ws
+  port: 8443
+  server: 158.220.88.180
+  servername: sni.111000.indevs.in
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F'
