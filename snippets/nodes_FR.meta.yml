@@ -1,4 +1,17 @@
 proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇫🇷[openproxylist.com] vless-FR
+  network: raw
+  port: 2223
+  reality-opts:
+    public-key: 5xLCwB8j2l-oqOLyzDyjhJYrHxWrhpU-4QSkLyhh720
+    short-id: '!!str 09'
+  server: 45.192.12.15
+  servername: www.ya.ru
+  tls: false
+  type: vless
+  uuid: 162f984d-811f-4faa-b200-b15460731ad6
 - alpn:
   - http/1.1
   name: 🇫🇷[openproxylist.com] trojan-F...
@@ -31,7 +44,7 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: '%2Fassignment'
-- name: 🇫🇷[openproxylist.com] vless-FR
+- name: '🇫🇷[openproxylist.com] vless-FR #1'
   network: ws
   port: 80
   server: 213.136.69.8
@@ -42,20 +55,9 @@ proxies:
     headers:
       Host: fsdns.ectunnelvpn.me
     path: /vless
-- name: '🇫🇷[openproxylist.com] trojan-F... #3'
-  network: ws
-  password: humanity
-  port: 443
-  server: 188.114.98.0
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
+  name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: tcp
   port: 23576
   reality-opts:
@@ -66,27 +68,3 @@ proxies:
   tls: false
   type: vless
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- name: '🇫🇷[openproxylist.com] trojan-F... #4'
-  network: ws
-  password: humanity
-  port: 443
-  server: 188.114.96.3
-  sni: www.gossipglove.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.gossipglove.com
-    path: '%2Fassignment'
-- name: '🇫🇷[openproxylist.com] vless-FR #2'
-  network: ws
-  port: 8443
-  server: 162.19.79.101
-  servername: sni.111000.indevs.in
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: '%2F'
