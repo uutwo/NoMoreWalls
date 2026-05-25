@@ -1,17 +1,4 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇫🇷[openproxylist.com] vless-FR
-  network: raw
-  port: 2223
-  reality-opts:
-    public-key: 5xLCwB8j2l-oqOLyzDyjhJYrHxWrhpU-4QSkLyhh720
-    short-id: '!!str 09'
-  server: 45.192.12.15
-  servername: www.ya.ru
-  tls: false
-  type: vless
-  uuid: 162f984d-811f-4faa-b200-b15460731ad6
 - alpn:
   - http/1.1
   name: 🇫🇷[openproxylist.com] trojan-F...
@@ -27,12 +14,17 @@ proxies:
       Host: www.calmloud.com
     path: '%2Fassignment'
 - name: '🇫🇷[openproxylist.com] trojan-F... #1'
+  network: ws
   password: humanity
   port: 443
   server: 104.20.42.250
+  skip-cert-verify: true
+  sni: www.calmloud.com
   type: trojan
   ws-opts:
-    path: '%2Fassignment'
+    headers:
+      Host: www.calmloud.com
+    path: /assignment
 - name: '🇫🇷[openproxylist.com] trojan-F... #2'
   network: ws
   password: humanity
@@ -44,20 +36,9 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: '%2Fassignment'
-- name: '🇫🇷[openproxylist.com] vless-FR #1'
-  network: ws
-  port: 80
-  server: 213.136.69.8
-  tls: false
-  type: vless
-  uuid: 15cbab96-197e-46a5-9042-073b3980c798
-  ws-opts:
-    headers:
-      Host: fsdns.ectunnelvpn.me
-    path: /vless
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #2'
+  name: 🇫🇷[openproxylist.com] vless-FR
   network: tcp
   port: 23576
   reality-opts:
