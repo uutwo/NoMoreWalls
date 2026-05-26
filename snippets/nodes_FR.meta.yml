@@ -1,23 +1,17 @@
 proxies:
-- name: 法国+国际航空电讯集团公司(SITA)
-  network: ws
-  port: 8443
-  server: 57.129.137.65
-  servername: sni.111000.v6.navy
-  skip-cert-verify: true
-  tls: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇫🇷[openproxylist.com] vless-FR
+  network: raw
+  port: 2223
+  reality-opts:
+    public-key: 5xLCwB8j2l-oqOLyzDyjhJYrHxWrhpU-4QSkLyhh720
+    short-id: '!!str 09'
+  server: 45.192.12.15
+  servername: www.ya.ru
+  tls: false
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-- name: 🇫🇷 法国 法国计算机科学大学
-  password: 8r<[9'l6hAO#8ZQi
-  port: 2053
-  server: 163.5.187.118
-  skip-cert-verify: false
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
+  uuid: 162f984d-811f-4faa-b200-b15460731ad6
 - alpn:
   - http/1.1
   name: 🇫🇷[openproxylist.com] trojan-F...
@@ -32,27 +26,23 @@ proxies:
     headers:
       Host: www.calmloud.com
     path: '%2Fassignment'
-- alpn:
-  - http/1.1
-  name: '🇫🇷[openproxylist.com] trojan-F... #1'
-  network: ws
+- name: '🇫🇷[openproxylist.com] trojan-F... #1'
   password: humanity
   port: 443
-  server: sourceforge.net
-  sni: www.calmloud.com
+  server: 104.20.42.250
   type: trojan
   ws-opts:
-    headers:
-      Host: www.calmloud.com
-    path: /assignment
-- name: '🇫🇷[openproxylist.com] trojan-F... #2'
+    path: '%2Fassignment'
+- alpn:
+  - http/1.1
+  name: '🇫🇷[openproxylist.com] trojan-F... #2'
   network: ws
   password: humanity
   port: 443
-  server: 8.6.112.0
+  server: 141.101.90.101
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     headers:
       Host: www.ignitelimit.com
-    path: '%2Fassignment'
+    path: /assignment
