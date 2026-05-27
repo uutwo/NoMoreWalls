@@ -1,13 +1,4 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: '🇬🇧 GB英国(mibei77.com 米贝节点分享) #57'
-  network: tcp
-  port: '180'
-  server: 82.198.246.97
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - name: 🇫🇷[openproxylist.com] vless-FR
   network: tcp
   port: 443
@@ -18,23 +9,14 @@ proxies:
 - alpn:
   - h2
   name: '🇫🇷[openproxylist.com] vless-FR #1'
-  network: tcp
   port: 8443
   server: cdg-1.fromblancwithlove.com
   skip-cert-verify: false
   tls: true
   type: vless
   uuid: 55f7d143-a594-4a91-b030-f227039f85ef
-- flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #2'
-  port: 443
-  server: fr-tx.sbrf-cdn342.ru
-  servername: sub.sbrf-cdn342.ru
-  tls: true
-  type: vless
-  uuid: 01ea3b87-b7b1-4aef-b24a-9c43fbd3b26f
 - client-fingerprint: chrome
-  name: '🇫🇷[openproxylist.com] vless-FR #3'
+  name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: tcp
   port: 443
   reality-opts:
@@ -51,18 +33,33 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.20.6.134
-  skip-cert-verify: false
+  server: sourceforge.net
   sni: www.calmloud.com
   type: trojan
   ws-opts:
     headers:
       Host: www.calmloud.com
-    path: '%2Fassignment'
+    path: /assignment
 - name: '🇫🇷[openproxylist.com] trojan-F... #1'
+  network: ws
   password: humanity
   port: 443
-  server: 104.17.177.143
+  server: www.ignitelimit.com
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     path: /assignment
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇫🇷[openproxylist.com] vless-FR #3'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4
+    short-id: '!!str 9c2378562188c3cb'
+  server: 185.171.202.48
+  servername: fr.denditop.site
+  tls: false
+  type: vless
+  uuid: 256c5f48-4908-4255-83d1-c86cb58f22b4
