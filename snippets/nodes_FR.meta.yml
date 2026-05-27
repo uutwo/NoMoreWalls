@@ -1,4 +1,15 @@
 proxies:
+- name: 法国+V2CROSS.COM
+  network: ws
+  port: 8880
+  server: 94.140.0.40
+  tls: false
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime26.workers.dev
+    path: '%2F%3Fhttps%3A%2F%2Ft.me%2FYouTube%40%E5%B0%8F%E9%9D%92%E7%A7%91%E5%AD%A6%E7%BD%91%F0%9F%87%A8%F0%9F%87%B3'
 - alterId: 0
   cipher: auto
   name: '🇬🇧 GB英国(mibei77.com 米贝节点分享) #57'
@@ -9,18 +20,17 @@ proxies:
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
   name: 🇫🇷[openproxylist.com] vless-FR
-  network: raw
-  port: 2223
+  network: tcp
+  port: 443
   reality-opts:
-    public-key: 5xLCwB8j2l-oqOLyzDyjhJYrHxWrhpU-4QSkLyhh720
-    short-id: '!!str 09'
-  server: 45.192.12.15
-  servername: www.ya.ru
+    public-key: i4Mx_tDND0Xxac3WyA7HgT9rvXdZlXpm5m1EGiQF-Uk
+    short-id: '!!str b8aa'
+  server: 194.226.169.36
+  servername: yahoo.com
   tls: false
   type: vless
-  uuid: 162f984d-811f-4faa-b200-b15460731ad6
+  uuid: fae3277c-0541-4ae9-bbbb-8247453ea652
 - alpn:
   - http/1.1
   name: 🇫🇷[openproxylist.com] trojan-F...
@@ -36,20 +46,21 @@ proxies:
       Host: www.calmloud.com
     path: '%2Fassignment'
 - name: '🇫🇷[openproxylist.com] trojan-F... #1'
-  password: humanity
-  port: 443
-  server: 104.20.42.250
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '🇫🇷[openproxylist.com] trojan-F... #2'
   network: ws
   password: humanity
   port: 443
-  server: 141.101.90.101
-  sni: www.ignitelimit.com
+  server: 104.20.42.250
+  skip-cert-verify: true
+  sni: www.calmloud.com
   type: trojan
   ws-opts:
     headers:
-      Host: www.ignitelimit.com
+      Host: www.calmloud.com
     path: /assignment
+- name: '🇫🇷[openproxylist.com] trojan-F... #2'
+  password: humanity
+  port: 443
+  server: 104.16.7.70
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
