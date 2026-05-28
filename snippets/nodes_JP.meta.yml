@@ -33,11 +33,8 @@ proxies:
   type: vmess
   uuid: 5f49c80e-7770-4bd1-9c86-43c2068a3a26
 - name: 🇯🇵[openproxylist.com] vless-JP
-  network: tcp
   port: 8443
   server: 178.249.213.177
-  servername: jp1.fromblancwithlove.com
-  skip-cert-verify: true
   tls: true
   type: vless
   uuid: 394f6981-a782-4779-9a85-e6cf22935d93
@@ -64,22 +61,16 @@ proxies:
   tls: false
   type: vmess
   uuid: b06054ae-f249-438e-998a-8e67bd8df653
-- alterId: 1
+- alterId: 0
   cipher: auto
   name: '🇯🇵[openproxylist.com] vmess-JP #2'
   network: tcp
-  port: '22324'
+  port: 22324
   server: 172.104.80.66
+  servername: null
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- name: 🇯🇵[openproxylist.com] trojan-J...
-  password: BxceQaOe
-  port: 443
-  server: 116.80.80.121
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
 - name: '🇯🇵[openproxylist.com] vless-JP #1'
   network: tcp
   port: 10026
@@ -89,6 +80,15 @@ proxies:
   uuid: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
 - name: '🇯🇵[openproxylist.com] vless-JP #2'
   network: ws
+  port: 25242
+  server: 47.79.144.103
+  tls: false
+  type: vless
+  uuid: a12b0d31-f599-498e-b76e-8558a14b766b
+  ws-opts:
+    path: '%2Fa12b0d31'
+- name: '🇯🇵[openproxylist.com] vless-JP #3'
+  network: ws
   port: 443
   server: dongjing4.zqjsqapi.com
   servername: dongjing4.zqjsqapi.com
@@ -97,17 +97,3 @@ proxies:
   uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
   ws-opts:
     path: /proxy
-- alterId: 0
-  cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #3'
-  network: ws
-  port: 80
-  server: jp01.a0a.xyz
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: jp01.a0a.xyz
-    path: /cctv13.m3u8
