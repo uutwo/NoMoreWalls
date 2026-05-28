@@ -1,39 +1,4 @@
 proxies:
-- name: 🇭🇰 香港3|@ripaojiedian
-  password: f6d3aa07a52dbcedcb4731029e2fb6ae
-  port: 2008
-  server: 3.112.12.209
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 🇭🇰 香港4|@ripaojiedian
-  password: BxceQaOe
-  port: 4327
-  server: 35.77.230.224
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 🇯🇵 日本|@ripaojiedian
-  password: BxceQaOe
-  port: 4633
-  server: 54.248.176.41
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: 🇯🇵 日本3|@ripaojiedian
-  password: f6d3aa07a52dbcedcb4731029e2fb6ae
-  port: 11541
-  server: 3.112.12.209
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 🇸🇬 新加坡2|@ripaojiedian
-  password: f6d3aa07a52dbcedcb4731029e2fb6ae
-  port: 2511
-  server: 13.115.88.193
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
 - name: 日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -58,9 +23,21 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 JP日本(mibei77.com 米贝节点分享)
+  network: tcp
+  port: '56738'
+  server: 103.127.243.59
+  tls: false
+  type: vmess
+  uuid: 5f49c80e-7770-4bd1-9c86-43c2068a3a26
 - name: 🇯🇵[openproxylist.com] vless-JP
+  network: tcp
   port: 8443
   server: 178.249.213.177
+  servername: jp1.fromblancwithlove.com
+  skip-cert-verify: true
   tls: true
   type: vless
   uuid: 394f6981-a782-4779-9a85-e6cf22935d93
@@ -81,22 +58,28 @@ proxies:
   cipher: auto
   name: '🇯🇵[openproxylist.com] vmess-JP #1'
   network: tcp
-  port: '49803'
+  port: '32221'
   server: 153.121.73.175
   servername: ''
   tls: false
   type: vmess
-  uuid: cd3dacbc-2b7b-4718-83ad-ab870f87e12e
-- alterId: 0
+  uuid: b06054ae-f249-438e-998a-8e67bd8df653
+- alterId: 1
   cipher: auto
   name: '🇯🇵[openproxylist.com] vmess-JP #2'
   network: tcp
-  port: 22324
+  port: '22324'
   server: 172.104.80.66
-  servername: null
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- name: 🇯🇵[openproxylist.com] trojan-J...
+  password: BxceQaOe
+  port: 443
+  server: 116.80.80.121
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - name: '🇯🇵[openproxylist.com] vless-JP #1'
   network: tcp
   port: 10026
@@ -105,15 +88,6 @@ proxies:
   type: vless
   uuid: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
 - name: '🇯🇵[openproxylist.com] vless-JP #2'
-  network: ws
-  port: 25242
-  server: 47.79.144.103
-  tls: false
-  type: vless
-  uuid: a12b0d31-f599-498e-b76e-8558a14b766b
-  ws-opts:
-    path: /a12b0d31
-- name: '🇯🇵[openproxylist.com] vless-JP #3'
   network: ws
   port: 443
   server: dongjing4.zqjsqapi.com

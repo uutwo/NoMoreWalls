@@ -1,14 +1,18 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇫🇷[openproxylist.com] vless-FR
-  port: 60396
-  server: gzrefad01.odxxplay.com
-  servername: fr1.fun88linkvn.com
-  skip-cert-verify: true
-  tls: true
+- name: 🇫🇷[openproxylist.com] vless-FR
+  network: tcp
+  port: 2053
+  server: 145.239.173.214
+  tls: false
   type: vless
-  uuid: 231a569a-55f0-4d31-94ac-dbe4bed3efdb
+  uuid: 23752996-3600-4ab8-a4d3-a7f4efc1f349
+- name: 🇫🇷[openproxylist.com] trojan-F...
+  password: humanity
+  port: 40443
+  server: 185.231.112.217
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
 - name: '🇫🇷[openproxylist.com] vless-FR #1'
   network: tcp
   port: 443
@@ -25,19 +29,21 @@ proxies:
   tls: true
   type: vless
   uuid: 55f7d143-a594-4a91-b030-f227039f85ef
-- client-fingerprint: chrome
-  name: '🇫🇷[openproxylist.com] vless-FR #3'
-  network: tcp
+- alpn:
+  - http/1.1
+  name: '🇫🇷[openproxylist.com] trojan-F... #1'
+  network: ws
+  password: humanity
   port: 443
-  reality-opts:
-    public-key: i4Mx_tDND0Xxac3WyA7HgT9rvXdZlXpm5m1EGiQF-Uk
-    short-id: '!!str b8aa'
-  server: 194.226.169.36
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: fae3277c-0541-4ae9-bbbb-8247453ea652
-- name: '🇫🇷[openproxylist.com] trojan-F... #1'
+  server: 104.20.6.134
+  skip-cert-verify: false
+  sni: www.calmloud.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmloud.com
+    path: '%2Fassignment'
+- name: '🇫🇷[openproxylist.com] trojan-F... #2'
   network: ws
   password: humanity
   port: 443
@@ -48,12 +54,11 @@ proxies:
     headers:
       Host: www.calmloud.com
     path: /assignment
-- name: '🇫🇷[openproxylist.com] trojan-F... #2'
+- name: '🇫🇷[openproxylist.com] trojan-F... #3'
   network: ws
   password: humanity
   port: 443
   server: 165.215.250.14
-  skip-cert-verify: true
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
