@@ -1,15 +1,4 @@
 proxies:
-- name: 德国+V2CROSS.COM
-  network: ws
-  port: 8880
-  server: 91.206.71.50
-  tls: false
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime15.workers.dev
-    path: '%2F%3Fhttps%3A%2F%2Ft.me%2FYouTube%40%E5%B0%8F%E9%9D%92%E7%A7%91%E5%AD%A6%E7%BD%91%F0%9F%87%A8%F0%9F%87%B3'
 - cipher: aes-256-cfb
   name: 🇩🇪DE-63.180.254.10-32
   password: amazonskr05
@@ -18,21 +7,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #18'
-  network: tcp
-  port: '180'
-  server: 82.198.246.250
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-headers:
-    Host: 82.198.246.250
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #15'
+  name: '🇺🇸[openproxylist.com] vmess-US #10'
   network: tcp
   port: '180'
   server: 82.198.246.233
@@ -64,23 +39,6 @@ proxies:
   tls: false
   type: vless
   uuid: d4305704-a108-4ce0-8ef0-66076e6227e9
-- name: '🇩🇪[openproxylist.com] vless-DE #1'
-  port: 443
-  server: de-1.shadowhub.cc
-  tls: false
-  type: vless
-  uuid: e3da803c-9c04-4ffb-a0f2-32cda93dd868
-- name: '🇩🇪[openproxylist.com] vless-DE #2'
-  network: ws
-  port: 80
-  server: speedtest.net
-  tls: false
-  type: vless
-  uuid: b39ea5f2-ded9-48ed-9040-0b2875fab211
-  ws-opts:
-    headers:
-      Host: nleiyajji.global.ssl.fastly.net
-    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇩🇪[openproxylist.com] vless-DE #4'
@@ -93,14 +51,18 @@ proxies:
   tls: false
   type: vless
   uuid: 9270ef77-592f-11f1-98cc-54db13ea7d40
-- name: '🇩🇪[openproxylist.com] vless-DE #6'
-  port: 80
-  server: snapp.ir
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #6'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: NPt7NbrWjFl5Uq8xIuolxDDJFTzj5x5jwmiSTRPuuD8
+  server: ddfs.ummapeople.online
+  servername: ddfs.ummapeople.online
   tls: false
   type: vless
-  uuid: 9cdf541f-b8a0-4270-8d31-542bb0961485
-  ws-opts:
-    path: '%2F'
+  uuid: ac195240-6005-412b-9829-1e56e5d5c52a
 - name: '🇩🇪[openproxylist.com] vless-DE #7'
   network: ws
   port: 443
@@ -111,16 +73,13 @@ proxies:
   ws-opts:
     path: /
 - name: '🇩🇪[openproxylist.com] vless-DE #8'
-  network: ws
   port: 80
   server: speedtest.net
   tls: false
   type: vless
   uuid: 384e0806-fcee-4f92-b671-bfc6a4794148
   ws-opts:
-    headers:
-      Host: oijji.global.ssl.fastly.net
-    path: /
+    path: '%2F'
 - name: '🇩🇪[openproxylist.com] vless-DE #9'
   network: ws
   port: 80
@@ -140,12 +99,6 @@ proxies:
   type: vless
   uuid: 88888888-8888-8888-8888-888888888888
 - name: '🇩🇪[openproxylist.com] vless-DE #11'
-  port: 20620
-  server: 91.107.181.212
-  tls: false
-  type: vless
-  uuid: 93fd443d-52b1-4f6a-b78f-2908b7c16fc0
-- name: '🇩🇪[openproxylist.com] vless-DE #12'
   network: tcp
   port: 8443
   server: 152.233.35.228
@@ -153,7 +106,7 @@ proxies:
   tls: true
   type: vless
   uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-- name: '🇩🇪[openproxylist.com] vless-DE #13'
+- name: '🇩🇪[openproxylist.com] vless-DE #12'
   port: 8443
   server: s31588.asancall.cloud
   tls: false
@@ -177,7 +130,7 @@ proxies:
     path: /1awNzxRSwKsdkPVKP0ZQqlHjt10sp
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #14'
+  name: '🇩🇪[openproxylist.com] vless-DE #13'
   network: tcp
   port: 443
   reality-opts:
@@ -188,11 +141,3 @@ proxies:
   tls: false
   type: vless
   uuid: 43488128-319e-f480-64ea-0acdc712e2a8
-- name: '🇩🇪[openproxylist.com] vless-DE #15'
-  port: 80
-  server: 172.64.146.143
-  tls: false
-  type: vless
-  uuid: 478cc26d-16b3-4fdd-be64-60d5a58c1622
-  ws-opts:
-    path: '%2F'

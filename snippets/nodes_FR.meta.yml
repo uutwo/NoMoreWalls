@@ -1,5 +1,15 @@
 proxies:
-- name: 🇫🇷[openproxylist.com] vless-FR
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇫🇷[openproxylist.com] vless-FR
+  port: 60396
+  server: gzrefad01.odxxplay.com
+  servername: fr1.fun88linkvn.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 231a569a-55f0-4d31-94ac-dbe4bed3efdb
+- name: '🇫🇷[openproxylist.com] vless-FR #1'
   network: tcp
   port: 443
   server: 145.239.173.163
@@ -8,7 +18,7 @@ proxies:
   uuid: 05e09c8a-a3a9-4bd5-acf9-2c3c87bab827
 - alpn:
   - h2
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
+  name: '🇫🇷[openproxylist.com] vless-FR #2'
   port: 8443
   server: cdg-1.fromblancwithlove.com
   skip-cert-verify: false
@@ -16,7 +26,7 @@ proxies:
   type: vless
   uuid: 55f7d143-a594-4a91-b030-f227039f85ef
 - client-fingerprint: chrome
-  name: '🇫🇷[openproxylist.com] vless-FR #2'
+  name: '🇫🇷[openproxylist.com] vless-FR #3'
   network: tcp
   port: 443
   reality-opts:
@@ -27,39 +37,26 @@ proxies:
   tls: false
   type: vless
   uuid: fae3277c-0541-4ae9-bbbb-8247453ea652
-- alpn:
-  - http/1.1
-  name: 🇫🇷[openproxylist.com] trojan-F...
+- name: '🇫🇷[openproxylist.com] trojan-F... #1'
   network: ws
   password: humanity
   port: 443
-  server: sourceforge.net
+  server: 104.20.6.134
   sni: www.calmloud.com
   type: trojan
   ws-opts:
     headers:
       Host: www.calmloud.com
     path: /assignment
-- name: '🇫🇷[openproxylist.com] trojan-F... #1'
+- name: '🇫🇷[openproxylist.com] trojan-F... #2'
   network: ws
   password: humanity
   port: 443
-  server: www.ignitelimit.com
-  skip-cert-verify: false
+  server: 165.215.250.14
+  skip-cert-verify: true
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
+    headers:
+      Host: www.ignitelimit.com
     path: /assignment
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #3'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4
-    short-id: '!!str 9c2378562188c3cb'
-  server: 185.171.202.48
-  servername: fr.denditop.site
-  tls: false
-  type: vless
-  uuid: 256c5f48-4908-4255-83d1-c86cb58f22b4
