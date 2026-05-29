@@ -1,7 +1,17 @@
 proxies:
+- name: 🇫🇷[openproxylist.com] trojan-F...
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 15.188.222.65
+  type: trojan
+- name: '🇫🇷[openproxylist.com] trojan-F... #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 15.224.25.236
+  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
+  name: 🇫🇷[openproxylist.com] vless-FR
   network: tcp
   port: 31413
   reality-opts:
@@ -12,22 +22,75 @@ proxies:
   tls: false
   type: vless
   uuid: 5454343b-541b-4c96-8c2a-52e81079d124
-- name: '🇫🇷[openproxylist.com] vless-FR #2'
+- name: '🇫🇷[openproxylist.com] vless-FR #1'
   port: 8443
   server: cdg-1.fromblancwithlove.com
   tls: true
   type: vless
   uuid: 55f7d143-a594-4a91-b030-f227039f85ef
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #3'
-  network: raw
-  port: 20567
+  name: '🇫🇷[openproxylist.com] vless-FR #2'
+  network: tcp
+  port: 443
   reality-opts:
-    public-key: 1WOtQYIQ-3sJtbrhSA1LW6gAnO-wG0Z5aCnlL_zoiXQ
-    short-id: '!!str b82d7208fe23'
-  server: fr.gryaz-vpn.com
-  servername: cloudflare.com
+    public-key: i4Mx_tDND0Xxac3WyA7HgT9rvXdZlXpm5m1EGiQF-Uk
+    short-id: '!!str b8aa'
+  server: 194.226.169.36
+  servername: yahoo.com
   tls: false
   type: vless
-  uuid: 40bf709c-4353-4552-ba26-406d2bf7821d
+  uuid: fae3277c-0541-4ae9-bbbb-8247453ea652
+- alpn:
+  - http/1.1
+  name: '🇫🇷[openproxylist.com] trojan-F... #2'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.20.6.134
+  skip-cert-verify: false
+  sni: www.calmloud.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmloud.com
+    path: '%2Fassignment'
+- name: '🇫🇷[openproxylist.com] trojan-F... #3'
+  password: humanity
+  port: 443
+  server: 45.130.125.69
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: '🇫🇷[openproxylist.com] trojan-F... #4'
+  password: humanity
+  port: 443
+  server: 165.215.250.14
+  type: trojan
+  ws-opts:
+    path: /assignment
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇫🇷[openproxylist.com] vless-FR #3'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: ESRdmody9xdWVTaCtyGLg_LDopyMm9bUYDWH8NVWtjE
+    short-id: '!!str c906f73d3ba8211f'
+  server: 145.239.8.221
+  servername: www.leboncoin.fr
+  tls: false
+  type: vless
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇫🇷[openproxylist.com] vless-FR #4'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: nUl4-UbSlrf8sCY4QNCKF3dMmgWLWJbgeziVqwfklhU
+    short-id: '!!str ad3c6641d540b4e1'
+  server: 51.158.62.94
+  servername: www.laposte.fr
+  tls: false
+  type: vless
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
