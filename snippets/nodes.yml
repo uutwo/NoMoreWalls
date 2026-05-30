@@ -89,53 +89,59 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: 🇭🇺 匈牙利 V2CROSS.COM
-  network: ws
-  port: '30030'
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 4f3cfda3-a255-40eb-8801-71f9fffb19d6
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #1'
+- name: 美国+V2CROSS.COM
   network: tcp
-  port: '6001'
-  server: gtm-sg-cc54q7d1q01.365cloud0285.com
+  password: BzOx2R8u59SOipHwhIYW-IMyJePBEiUY-m
+  port: 443
+  server: 149.104.104.101
+  skip-cert-verify: true
+  sni: www.registry-monitor.click
+  type: trojan
+- name: 🇸🇬[openproxylist.com] trojan-S...
+  password: gcuCpQfaiVeDBdWG
+  port: 19128
+  server: jpbgp.netvigor.cc
+  skip-cert-verify: false
+  sni: yazhou10.dynu.net
+  type: trojan
+- name: 法国+巴黎Choopa数据中心
+  network: tcp
+  password: YGWIMlg.W1wRWQkRDcKfjZY7sng09aC=Yh
+  port: 443
+  server: 217.69.2.107
+  sni: www.weavenet.click
+  type: trojan
+- name: 北美地区+V2CROSS.COM
+  network: tcp
+  password: AZWY=WAZk5TeVYmMUudr2xmeb00I3ymeMQ
+  port: 443
+  server: 23.227.193.173
+  sni: www.dataset-logger.click
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #11'
+  network: tcp
+  port: '180'
+  server: 82.198.246.37
   servername: ''
   tls: false
   type: vmess
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-- name: 美国+CloudFlare节点
-  network: ws
-  password: trojan
-  port: 2087
-  server: 22b.net
-  sni: store.timimi.dpdns.org
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- name: 德国+法尔肯施泰因HETZNER
+  network: tcp
+  password: Q40WHz2g1k-dqYqraBP6Ow
+  port: 8443
+  server: 178.63.244.9
   type: trojan
-  ws-opts:
-    path: '%2F%3FBIA_TELEGRAM%20%28%40AZARBAYJAB1%29%20TM%20%28%40AZARBAYJAB1%29%20TM%20%28%40AZARBAYJAB1%29%20TM%20%28%40AZARBAYJAB1%29%20TM%20%28%40AZARBAYJAB1%29%20TM%20%28%40AZARBAYJAB1%29'
-- alterId: 0
-  cipher: auto
-  name: '🇭🇺 匈牙利 V2CROSS.COM #1'
-  network: ws
-  port: '39953'
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: d0e97ee2-c6de-48f8-bd4a-8e63a9cd9e89
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
+- name: 美国+Akamai科技公司CDN网络节点
+  network: tcp
+  password: G2qM_GHnAEpbuIp1mcZh3mGvVn3+rHrwNe
+  port: 443
+  server: 172.232.194.147
+  skip-cert-verify: false
+  sni: 172.232.194.147
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇩🇪 VMESS-未知>德国-NF解锁印度地区非自制剧-Ch...
@@ -331,6 +337,28 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
+- alterId: 0
+  cipher: auto
+  name: 🇭🇺 匈牙利 V2CROSS.COM
+  network: ws
+  port: '30030'
+  server: 109.61.109.204
+  tls: true
+  type: vmess
+  uuid: 4f3cfda3-a255-40eb-8801-71f9fffb19d6
+  ws-opts:
+    headers:
+      Host: imafake.locker
+    path: /speedtest
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰[openproxylist.com] vmess-HK
+  network: tcp
+  port: '6001'
+  server: gtm-sg-cc54q7d1q01.365cloud0285.com
+  tls: false
+  type: vmess
+  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
 - name: 🇺🇸 美国 CloudFlare节点
   password: trojan
   port: 2087
@@ -338,6 +366,19 @@ proxies:
   skip-cert-verify: false
   sni: store.timimi.dpdns.org
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: '🇭🇺 匈牙利 V2CROSS.COM #1'
+  network: ws
+  port: '39953'
+  server: 109.61.109.204
+  tls: true
+  type: vmess
+  uuid: d0e97ee2-c6de-48f8-bd4a-8e63a9cd9e89
+  ws-opts:
+    headers:
+      Host: imafake.locker
+    path: /speedtest
 - alterId: 2
   cipher: auto
   name: 香港|@ripaojiedian
@@ -348,16 +389,14 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 香港3|@ripaojiedian
-  network: tcp
+- name: 🇭🇰 香港3|@ripaojiedian
   password: f6d3aa07a52dbcedcb4731029e2fb6ae
   port: 2008
   server: 52.69.114.14
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 香港4|@ripaojiedian
-  network: tcp
+- name: 🇭🇰 香港4|@ripaojiedian
   password: BxceQaOe
   port: 4327
   server: 54.168.196.137
@@ -372,72 +411,63 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 日本|@ripaojiedian
-  network: tcp
+- name: 🇯🇵 日本|@ripaojiedian
   password: BxceQaOe
   port: 4099
   server: 13.231.225.85
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 日本2|@ripaojiedian
-  network: tcp
+- name: 🇯🇵 日本2|@ripaojiedian
   password: f6d3aa07a52dbcedcb4731029e2fb6ae
   port: 8066
   server: 16.163.29.124
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 日本3|@ripaojiedian
-  network: tcp
+- name: 🇯🇵 日本3|@ripaojiedian
   password: f6d3aa07a52dbcedcb4731029e2fb6ae
   port: 11541
   server: 16.163.29.124
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 新加坡|@ripaojiedian
-  network: tcp
+- name: 🇸🇬 新加坡|@ripaojiedian
   password: f6d3aa07a52dbcedcb4731029e2fb6ae
   port: 4840
   server: 95.40.114.115
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 新加坡2|@ripaojiedian
-  network: tcp
+- name: 🇸🇬 新加坡2|@ripaojiedian
   password: f6d3aa07a52dbcedcb4731029e2fb6ae
   port: 3842
   server: 16.163.29.124
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 新加坡3|@ripaojiedian
-  network: tcp
+- name: 🇸🇬 新加坡3|@ripaojiedian
   password: BxceQaOe
   port: 39756
   server: 35.78.121.219
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 美国|@ripaojiedian
-  network: tcp
+- name: 🇺🇸 美国|@ripaojiedian
   password: f6d3aa07a52dbcedcb4731029e2fb6ae
   port: 2663
   server: 95.40.114.115
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 美国2|@ripaojiedian
-  network: tcp
+- name: 🇺🇸 美国2|@ripaojiedian
   password: f6d3aa07a52dbcedcb4731029e2fb6ae
   port: 2663
   server: 52.69.114.14
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 美国3|@ripaojiedian
-  network: tcp
+- name: 🇺🇸 美国3|@ripaojiedian
   password: BxceQaOe
   port: 2702
   server: 43.206.155.159
@@ -456,7 +486,7 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #12'
+  name: 美国5|@ripaojiedian
   network: tcp
   port: '180'
   server: 82.198.246.233
@@ -475,7 +505,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #11'
+  name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #58'
   network: tcp
   port: '180'
   server: 82.198.246.214
@@ -655,13 +685,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #9'
-  password: gcuCpQfaiVeDBdWG
-  port: 19128
-  server: jpbgp.netvigor.cc
-  skip-cert-verify: false
-  sni: yazhou10.dynu.net
-  type: trojan
 - name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #10'
   password: gcuCpQfaiVeDBdWG
   port: 19128
@@ -682,7 +705,7 @@ proxies:
   cipher: auto
   name: 🇸🇬[openproxylist.com] vmess-SG
   network: tcp
-  port: 6004
+  port: '6004'
   server: gtm-sg-cc54q7d1q01.365cloud0285.com
   tls: false
   type: vmess
@@ -705,15 +728,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #10'
-  network: tcp
-  port: '180'
-  server: 82.198.246.37
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - name: 🇰🇷 KR韩国(mibei77.com 米贝节点分享)
   password: GKHWMe2R4qwNcNxu6l3KMkdd
   port: 26214
@@ -828,9 +842,129 @@ proxies:
   skip-cert-verify: false
   sni: afrcloud1.mmv.kr
   type: trojan
+- name: 香港3|@ripaojiedian
+  network: tcp
+  password: f6d3aa07a52dbcedcb4731029e2fb6ae
+  port: 53018
+  server: 18.166.208.219
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 香港4|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 50712
+  server: 13.231.192.34
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 日本|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 53307
+  server: 13.231.192.34
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 日本2|@ripaojiedian
+  network: tcp
+  password: f6d3aa07a52dbcedcb4731029e2fb6ae
+  port: 24184
+  server: 18.163.128.27
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 日本3|@ripaojiedian
+  network: tcp
+  password: f6d3aa07a52dbcedcb4731029e2fb6ae
+  port: 3135
+  server: 18.163.128.27
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 新加坡|@ripaojiedian
+  network: tcp
+  password: f6d3aa07a52dbcedcb4731029e2fb6ae
+  port: 4840
+  server: 18.163.128.27
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 新加坡2|@ripaojiedian
+  network: tcp
+  password: f6d3aa07a52dbcedcb4731029e2fb6ae
+  port: 4840
+  server: 54.238.76.39
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 新加坡3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 7484
+  server: 18.166.59.84
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 美国|@ripaojiedian
+  network: tcp
+  password: f6d3aa07a52dbcedcb4731029e2fb6ae
+  port: 2663
+  server: 18.163.128.27
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 美国2|@ripaojiedian
+  network: tcp
+  password: f6d3aa07a52dbcedcb4731029e2fb6ae
+  port: 6604
+  server: 54.238.76.39
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 美国3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 17801
+  server: 43.199.229.84
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 🇺🇸[openproxylist.com] trojan-U...
+  network: tcp
+  password: s.wRSE4ANZp4=4h.=B_9Qbetw6XUc0V1SV
+  port: 443
+  server: 130.94.107.171
+  sni: www.logger-guard.click
+  type: trojan
+- name: 🇩🇪[openproxylist.com] trojan-D...
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 63.185.3.163
+  type: trojan
+- name: '🇩🇪[openproxylist.com] trojan-D... #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 63.185.71.248
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇩🇪[openproxylist.com] vmess-DE
+  network: tcp
+  port: '2080'
+  server: 82.40.62.106
+  tls: false
+  type: vmess
+  uuid: cd682302-c9d7-4c0d-bada-52e7d652c22c
+- name: '🇺🇸[openproxylist.com] trojan-U... #1'
+  password: 8f3a2b1c9d4e5f6a7b8c9d0e1f2a3b4c
+  port: 8443
+  server: link.honghongai.top
+  sni: link.honghongai.top
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '🇩🇪[openproxylist.com] vmess-DE #1'
   network: tcp
   port: '2080'
   server: azmononline.konkuriran.sbs
@@ -838,20 +972,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cd682302-c9d7-4c0d-bada-52e7d652c22c
-- alterId: 0
-  cipher: auto
-  name: 🇳🇱[openproxylist.com] vmess-NL
-  network: ws
-  port: '2087'
-  server: 81.255.154.10
-  servername: win.ccnnx.ir
-  tls: true
-  type: vmess
-  uuid: 78e64117-fb24-4e32-adaa-788ab7876cd3
-  ws-opts:
-    headers:
-      Host: wIn.CcNnx.IR
-    path: /@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia--@v2raydia
 - name: 🇱🇻[openproxylist.com] trojan-L...
   network: grpc
   password: ESYEIBhqTR
@@ -859,7 +979,7 @@ proxies:
   server: 138.124.182.202
   sni: www.sony.com
   type: trojan
-- name: 🇺🇸[openproxylist.com] trojan-U...
+- name: '🇺🇸[openproxylist.com] trojan-U... #2'
   network: tcp
   password: A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM
   port: 443
@@ -869,30 +989,14 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '🇳🇱[openproxylist.com] vmess-NL #1'
-  network: ws
-  port: '443'
-  server: 104.18.32.47
-  servername: sctest1.dr-ping.ir
-  tls: true
+  name: 🇳🇱[openproxylist.com] vmess-NL
+  network: tcp
+  port: '45705'
+  server: 162.217.249.74
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 2f3aadae-66c6-4dca-a670-03c183f8024e
-  ws-opts:
-    headers:
-      Host: sctest1.dr-ping.ir
-    path: /kos-nanat-decoder
-- name: 🇵🇱[openproxylist.com] trojan-P...
-  network: ws
-  password: humanity
-  port: 443
-  server: 43.169.18.179
-  skip-cert-verify: false
-  sni: www.creationlong.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.creationlong.org
-    path: /assignment
+  uuid: 5678b00f-9ed6-4982-9f8a-1a7306e25126
 - alterId: 0
   cipher: auto
   name: 🇨🇦[openproxylist.com] vmess-CA
@@ -910,6 +1014,20 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 🇯🇵[openproxylist.com] vmess-JP
+  network: ws
+  port: 29913
+  server: 109.61.109.204
+  servername: imafake.locker
+  tls: true
+  type: vmess
+  uuid: 54a0bf6d-f2b5-4b2a-942c-798fb129527e
+  ws-opts:
+    headers:
+      Host: imafake.locker
+    path: /speedtest
+- alterId: 0
+  cipher: auto
+  name: '🇯🇵[openproxylist.com] vmess-JP #1'
   network: tcp
   port: 6003
   server: gtm-sg-cc54q7d1q01.365cloud0285.com
@@ -919,7 +1037,7 @@ proxies:
   uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
 - alterId: 0
   cipher: auto
-  name: 🇱🇺[openproxylist.com] vmess-LU
+  name: 🏳[openproxylist.com] vmess-
   network: ws
   port: 80
   server: 45.128.72.44
@@ -933,18 +1051,27 @@ proxies:
     path: /api/v1
 - alterId: 0
   cipher: auto
-  name: 🇧🇦[openproxylist.com] vmess-BA
+  name: 🇵🇱[openproxylist.com] vmess-PL
   network: ws
   port: '80'
-  server: 45.15.178.97
+  server: 51.83.197.140
   servername: ''
   tls: false
   type: vmess
-  uuid: ec91b04e-cadc-47b3-bb0c-4fb762b33063
+  uuid: 7d8c2904-0917-4002-bff9-9a44e1c92fb1
   ws-opts:
     headers:
-      Host: openai.com
+      Host: ''
     path: /api/v1
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸[openproxylist.com] vmess-US
+  network: tcp
+  port: 48111
+  server: 129.146.143.80
+  tls: false
+  type: vmess
+  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
 - alterId: 0
   cipher: auto
   name: 🇷🇴[openproxylist.com] vmess-RO
@@ -957,7 +1084,17 @@ proxies:
   uuid: 9a6be41d-511a-4800-b828-368ca32dd56d
 - alterId: 0
   cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #2'
+  name: 🇲🇾[openproxylist.com] vmess-MY
+  network: tcp
+  port: '10000'
+  server: 47.250.135.244
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰[openproxylist.com] vmess-HK #1'
   network: ws
   port: '666'
   server: 47.239.172.165
@@ -970,7 +1107,7 @@ proxies:
     path: //@BullShit_iu telegramNadia
 - alterId: 0
   cipher: auto
-  name: 🇺🇸[openproxylist.com] vmess-US
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
   network: ws
   port: 39495
   server: 129.146.77.248
@@ -981,44 +1118,45 @@ proxies:
     path: /cctv13.m3u8
 - alterId: 0
   cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #3'
+  name: '🇺🇸[openproxylist.com] vmess-US #2'
   network: tcp
-  port: 6001
-  server: 155.254.126.249
+  port: '13581'
+  server: 104.233.214.176
   servername: ''
   tls: false
   type: vmess
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-- name: 🇸🇬[openproxylist.com] trojan-S...
-  network: tcp
-  password: gcuCpQfaiVeDBdWG
-  port: 19128
-  server: 211.76.176.99
-  sni: yazhou10.dynu.net
-  type: trojan
-- name: 🇸🇪[openproxylist.com] trojan-S...
-  network: tcp
-  password: lpfAiPjB00
-  port: 39425
-  server: 193.168.197.76
-  sni: www.amazon.com
-  type: trojan
+  uuid: d4d715a6-0a2e-4304-df2f-d5efd85a5a5d
 - alterId: 0
   cipher: auto
-  name: 🇲🇾[openproxylist.com] vmess-MY
+  name: '🇲🇾[openproxylist.com] vmess-MY #1'
   network: ws
-  port: 50018
+  port: '50018'
   server: 47.250.149.51
+  servername: ''
   tls: false
   type: vmess
   uuid: 9665280c-a3d1-4aab-ef9f-a3a497337d91
   ws-opts:
     headers:
-      Host: 47.250.149.51
+      Host: ''
     path: /9665280c
+- alpn:
+  - http/1.1
+  name: 🇫🇷[openproxylist.com] trojan-F...
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.20.6.134
+  skip-cert-verify: false
+  sni: www.calmloud.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmloud.com
+    path: '%2Fassignment'
 - alterId: 0
   cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #1'
+  name: '🇩🇪[openproxylist.com] vmess-DE #2'
   network: ws
   port: '80'
   server: heu83ujieiwoeu83j2ewjehuwehu8.dentiscan.ca
@@ -1032,7 +1170,7 @@ proxies:
     path: /1awNzxRSwKsdkPVKP0ZQqlHjt10sp
 - alterId: 0
   cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #4'
+  name: '🇭🇰[openproxylist.com] vmess-HK #2'
   network: tcp
   port: 22324
   server: 213.156.141.52
@@ -1042,7 +1180,7 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #1'
+  name: '🇯🇵[openproxylist.com] vmess-JP #2'
   network: ws
   port: '25686'
   server: jp02.a0a.xyz
@@ -1055,27 +1193,26 @@ proxies:
     path: /cctv13.m3u8
 - alterId: 0
   cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #2'
+  name: '🇯🇵[openproxylist.com] vmess-JP #3'
   network: tcp
-  port: '49803'
+  port: '32221'
   server: 153.121.73.175
   servername: ''
   tls: false
   type: vmess
-  uuid: cd3dacbc-2b7b-4718-83ad-ab870f87e12e
-- alterId: 0
+  uuid: b06054ae-f249-438e-998a-8e67bd8df653
+- alterId: 1
   cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #3'
+  name: '🇯🇵[openproxylist.com] vmess-JP #4'
   network: tcp
   port: '22324'
   server: 172.104.80.66
-  servername: ''
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #1'
+  name: '🇺🇸[openproxylist.com] vmess-US #3'
   network: tcp
   port: '18000'
   server: 38.110.1.246
@@ -1084,7 +1221,7 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: aes-128-gcm
-  name: '🇺🇸[openproxylist.com] vmess-US #2'
+  name: '🇺🇸[openproxylist.com] vmess-US #4'
   network: tcp
   port: '18000'
   server: 67.220.85.46
@@ -1093,29 +1230,10 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #3'
-  network: tcp
-  port: '18000'
-  server: 38.91.107.49
-  tls: false
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #4'
-  network: tcp
-  port: 18000
-  server: 38.114.123.42
-  servername: null
-  tls: false
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #5'
   network: tcp
   port: '18000'
-  server: 169.197.142.22
+  server: 38.91.107.49
   servername: ''
   tls: false
   type: vmess
@@ -1123,6 +1241,16 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #6'
+  network: tcp
+  port: 18000
+  server: 169.197.142.22
+  servername: null
+  tls: false
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #7'
   network: tcp
   port: 22324
   server: 216.106.185.141
@@ -1132,7 +1260,7 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #7'
+  name: '🇺🇸[openproxylist.com] vmess-US #8'
   network: tcp
   port: 18000
   server: 84.17.41.2
@@ -1154,9 +1282,9 @@ proxies:
   cipher: auto
   name: '🇨🇦[openproxylist.com] vmess-CA #2'
   network: tcp
-  port: 18000
+  port: '18000'
   server: 23.162.200.198
-  servername: null
+  servername: ''
   tls: false
   type: vmess
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
@@ -1166,44 +1294,32 @@ proxies:
   network: tcp
   port: '22324'
   server: 172.232.103.186
+  servername: ''
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
-  cipher: auto
-  name: 🇰🇷[openproxylist.com] vmess-KR
-  network: ws
-  port: '80'
-  server: 132.145.80.230
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  ws-opts:
-    headers:
-      Host: kr02.a0a.xyz
-    path: /cctv13.m3u8
-- alterId: 0
   cipher: aes-128-gcm
-  name: '🇺🇸[openproxylist.com] vmess-US #8'
+  name: '🇺🇸[openproxylist.com] vmess-US #9'
   network: tcp
   port: 18000
   server: 67.220.95.3
   tls: false
   type: vmess
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 1
+- alterId: 0
   cipher: auto
   name: 🇧🇷[openproxylist.com] vmess-BR
   network: tcp
   port: '22324'
   server: 172.233.17.76
+  servername: ''
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #9'
+  name: '🇺🇸[openproxylist.com] vmess-US #10'
   network: tcp
   port: '180'
   server: 82.198.246.9
