@@ -39,20 +39,8 @@ proxies:
   type: vless
   uuid: acd726d3-0128-44d8-a575-21013ff7740a
 - client-fingerprint: chrome
-  name: '🇫🇷[openproxylist.com] vless-FR #3'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: enBIOTqlP6CHTvic3CLgpUd_AcJAAbAQIa-oFIk4dVU
-    short-id: '!!str 302e'
-  server: 194.33.34.167
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: 391ff971-a901-415e-b0f1-e0c0047e7a24
-- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #4'
+  name: '🇫🇷[openproxylist.com] vless-FR #3'
   network: tcp
   port: 31413
   reality-opts:
@@ -65,7 +53,7 @@ proxies:
   uuid: 5454343b-541b-4c96-8c2a-52e81079d124
 - alpn:
   - h2
-  name: '🇫🇷[openproxylist.com] vless-FR #5'
+  name: '🇫🇷[openproxylist.com] vless-FR #4'
   network: tcp
   port: 8443
   server: cdg-1.fromblancwithlove.com
@@ -73,3 +61,37 @@ proxies:
   tls: true
   type: vless
   uuid: 55f7d143-a594-4a91-b030-f227039f85ef
+- alpn:
+  - http/1.1
+  name: '🇫🇷[openproxylist.com] trojan-F... #2'
+  network: ws
+  password: humanity
+  port: 443
+  server: 8.6.112.6
+  skip-cert-verify: false
+  sni: www.calmloud.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmloud.com
+    path: '%2Fassignment'
+- name: '🇫🇷[openproxylist.com] trojan-F... #3'
+  password: humanity
+  port: 443
+  server: 165.215.250.14
+  type: trojan
+  ws-opts:
+    path: /assignment
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇫🇷[openproxylist.com] vless-FR #5'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: ESRdmody9xdWVTaCtyGLg_LDopyMm9bUYDWH8NVWtjE
+    short-id: '!!str c906f73d3ba8211f'
+  server: 145.239.8.221
+  servername: www.leboncoin.fr
+  tls: false
+  type: vless
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
