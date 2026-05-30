@@ -1,21 +1,18 @@
 proxies:
 - name: 🇫🇷[openproxylist.com] trojan-F...
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 15.236.200.24
-  type: trojan
-- name: '🇫🇷[openproxylist.com] trojan-F... #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 15.237.10.72
+  network: tcp
+  password: YGWIMlg.W1wRWQkRDcKfjZY7sng09aC=Yh
+  port: 443
+  server: 217.69.2.107
+  sni: www.weavenet.click
   type: trojan
 - alpn:
   - http/1.1
-  name: '🇫🇷[openproxylist.com] trojan-F... #2'
+  name: '🇫🇷[openproxylist.com] trojan-F... #1'
   network: ws
   password: humanity
   port: 443
-  server: 8.6.112.6
+  server: 104.20.6.134
   skip-cert-verify: false
   sni: www.calmloud.com
   type: trojan
@@ -23,10 +20,17 @@ proxies:
     headers:
       Host: www.calmloud.com
     path: '%2Fassignment'
+- name: '🇫🇷[openproxylist.com] trojan-F... #2'
+  password: humanity
+  port: 443
+  server: 104.20.42.250
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
 - name: '🇫🇷[openproxylist.com] trojan-F... #3'
   password: humanity
   port: 443
-  server: 165.215.250.14
+  server: 141.101.90.101
   type: trojan
   ws-opts:
-    path: /assignment
+    path: '%2Fassignment'
