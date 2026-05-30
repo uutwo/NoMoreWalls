@@ -1,4 +1,52 @@
 proxies:
+- name: 德国+V2CROSS.COM
+  network: tcp
+  port: 666
+  server: 194.59.183.234
+  tls: false
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-63.180.254.10-33
+  password: amazonskr05
+  port: 443
+  server: 63.180.254.10
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 美国4|@ripaojiedian
+  network: tcp
+  port: '180'
+  server: 82.198.246.250
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-headers:
+    Host: 82.198.246.250
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 美国5|@ripaojiedian
+  network: tcp
+  port: '180'
+  server: 82.198.246.233
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-headers:
+    Host: 82.198.246.233
+  ws-path: /
+- name: 🇷🇴 罗马尼亚 starcorenode.com
+  password: hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd
+  port: 443
+  server: 185.137.157.254
+  skip-cert-verify: false
+  sni: www.directorypipeline.click
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇩🇪 VMESS-未知>德国-NF解锁印度地区非自制剧-Ch...
@@ -13,33 +61,60 @@ proxies:
       Host: 547.rtxconfigz.shop
     path: /@Malinda6104
 - name: 🇩🇪[openproxylist.com] trojan-D...
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 63.185.3.163
+  network: tcp
+  password: Q40WHz2g1k-dqYqraBP6Ow
+  port: 8443
+  server: 178.63.244.9
   type: trojan
-- name: '🇩🇪[openproxylist.com] trojan-D... #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 63.185.71.248
-  type: trojan
-- name: 🇩🇪[openproxylist.com] vless-DE
-  port: 48862
-  server: 212.100.171.194
-  tls: false
-  type: vless
-  uuid: da9f6ce2-aaba-47dd-be50-5afd17331fd9
 - alterId: 0
   cipher: auto
   name: 🇩🇪[openproxylist.com] vmess-DE
   network: tcp
-  port: '2080'
+  port: 2053
+  server: de5.taskflowhub.org
+  tls: true
+  type: vmess
+  uuid: ca58b165-0f7d-49aa-9fae-a017e8a0f884
+- name: 🇩🇪[openproxylist.com] vless-DE
+  network: ws
+  port: 80
+  server: 185.143.232.201
+  tls: false
+  type: vless
+  uuid: 5f4e864a-3c52-4a63-a870-a935965ed966
+  ws-opts:
+    headers:
+      Host: down.speedtell.ir
+    path: /
+- name: '🇩🇪[openproxylist.com] trojan-D... #1'
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 63.185.3.163
+  type: trojan
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇩🇪[openproxylist.com] vless-DE #1'
+  network: grpc
+  port: 16146
+  reality-opts:
+    public-key: lCkGLh6mypATTCMgrwjjqOxWBISCIB9fmdt_5Fff3Ug
+    short-id: '!!str e7eac240'
+  server: 212.100.171.194
+  servername: www.samsung.com
+  tls: false
+  type: vless
+  uuid: c1e32c6c-9a14-4edf-95c7-b1236a55aa07
+- name: '🇩🇪[openproxylist.com] vless-DE #2'
+  network: tcp
+  port: 2052
   server: 82.40.62.106
   tls: false
-  type: vmess
-  uuid: cd682302-c9d7-4c0d-bada-52e7d652c22c
+  type: vless
+  uuid: b5bd7d6d-5ab9-4965-bccc-32acdbc4f714
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #2'
+  name: '🇩🇪[openproxylist.com] vless-DE #3'
   network: tcp
   port: 8443
   reality-opts:
@@ -51,34 +126,9 @@ proxies:
   type: vless
   uuid: 7625adbb-52f7-4ff4-95f8-677471071a77
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #3'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: rKwAJxz4TAUYnvaGiTCsS1DrtYg-WhPreh-GvtDXwmw
-    short-id: '!!str 8feda7fefa82'
-  server: 37.46.18.128
-  servername: www.amd.com
-  tls: false
-  type: vless
-  uuid: 3c53398c-977f-442d-b7d0-bf92979e5c05
-- client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #4'
-  network: raw
-  port: 8443
-  reality-opts:
-    public-key: Crjd0I6hcasRXZcfNf7cs-YtJLpQ8u-t1CbwHIDAciU
-    short-id: '!!str 478dc6'
-  server: 178.215.238.148
-  servername: eh.vk.com
-  tls: false
-  type: vless
-  uuid: 21c1132b-068c-46fb-880e-3268f6a30e7f
-- client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: GrpcFuckRKN
-  name: '🇩🇪[openproxylist.com] vless-DE #5'
+  name: '🇩🇪[openproxylist.com] vless-DE #4'
   network: grpc
   port: 443
   reality-opts:
@@ -90,20 +140,7 @@ proxies:
   type: vless
   uuid: afc941a0-b6b4-42d1-b284-d59a42f083fd
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #6'
-  network: tcp
-  port: 12443
-  reality-opts:
-    public-key: D3bNJPmy4YJqhWQ3Xv1Fu3Z1danrTzswShytnkkG9Q4
-    short-id: '!!str 876caa38807c88e2'
-  server: 64.188.56.149
-  servername: sun6-21.userapi.com
-  tls: false
-  type: vless
-  uuid: ea484535-0170-4ec8-bb3c-a9dbaa7412d7
-- client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #7'
+  name: '🇩🇪[openproxylist.com] vless-DE #5'
   network: tcp
   port: 33199
   reality-opts:
@@ -130,7 +167,7 @@ proxies:
   client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: iranprimer.usip.org.entekhab.ir.presstv.ir.alef.ir.yjc.ir.presstv.ir.en.mehrnews.com
-  name: '🇩🇪[openproxylist.com] vless-DE #8'
+  name: '🇩🇪[openproxylist.com] vless-DE #6'
   network: grpc
   port: 2096
   server: 104.18.32.47
@@ -138,23 +175,20 @@ proxies:
   tls: true
   type: vless
   uuid: e221880c-0ada-4e89-a336-62c3b909f787
-- name: '🇩🇪[openproxylist.com] vless-DE #9'
+- name: '🇩🇪[openproxylist.com] vless-DE #7'
   network: tcp
   port: 29039
   server: 91.107.189.143
   tls: false
   type: vless
   uuid: 16c6faa4-1162-49ca-acf7-059afdf1ecd3
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #10'
-  port: 443
-  server: 87.120.93.140
-  servername: sub.sbrf-cdn342.ru
-  tls: true
+- name: '🇩🇪[openproxylist.com] vless-DE #8'
+  port: 47518
+  server: de-on-demand.not-a-projects.xyz
+  tls: false
   type: vless
-  uuid: 91e120bc-159a-4390-b4e1-197b19602ea0
-- name: '🇩🇪[openproxylist.com] vless-DE #11'
+  uuid: 25263c14-6cb5-499b-b462-dd498deecfe7
+- name: '🇩🇪[openproxylist.com] vless-DE #9'
   network: ws
   port: 443
   server: 91.99.145.207
@@ -163,7 +197,7 @@ proxies:
   uuid: 4dc0eec9-f0e1-4755-be7e-7ba628522d1b
   ws-opts:
     path: /
-- name: '🇩🇪[openproxylist.com] vless-DE #12'
+- name: '🇩🇪[openproxylist.com] vless-DE #10'
   network: tcp
   port: 8443
   server: 152.233.35.228
@@ -172,14 +206,17 @@ proxies:
   tls: true
   type: vless
   uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-- name: '🇩🇪[openproxylist.com] vless-DE #13'
+- name: '🇩🇪[openproxylist.com] vless-DE #11'
+  network: ws
   port: 8443
   server: s31588.asancall.cloud
   tls: false
   type: vless
   uuid: e550f63f-7975-455d-a5d8-e11a120a519d
   ws-opts:
-    path: '%2Fws%2Fapps%2Fzoomit'
+    headers:
+      Host: '@ProxyVPN11'
+    path: /ws/apps/zoomit
 - alterId: 0
   cipher: auto
   name: '🇩🇪[openproxylist.com] vmess-DE #2'
