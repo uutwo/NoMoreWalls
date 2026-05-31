@@ -1,24 +1,33 @@
 proxies:
 - alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #13'
+  cipher: aes-128-gcm
+  name: '🇺🇸[openproxylist.com] vmess-US #14'
   network: tcp
-  port: '180'
-  server: 82.198.246.37
+  port: 180
+  server: 82.198.246.214
   servername: ''
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #18'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 英国+社会保险安全部
   network: tcp
-  port: '180'
-  server: 82.198.246.250
-  servername: ''
+  port: 443
+  reality-opts:
+    public-key: gLwECcibrJ-wErHzfYbPzMDVu6960VNuXUhjOQ3rUQk
+  server: 51.250.106.197
+  servername: max.ru
   tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #9'
+  password: rYuChHcwQZskq9E0zdoR
+  port: 2053
+  server: 103.45.245.208
+  skip-cert-verify: false
+  sni: vpn5.rnmcnm.com
+  type: trojan
 - name: 🇬🇧[openproxylist.com] vless-GB
   network: tcp
   port: 443
@@ -26,13 +35,42 @@ proxies:
   tls: false
   type: vless
   uuid: 5a20b5d0-3a98-4792-9559-95f4e24277ec
-- alpn:
-  - h2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
   name: '🇬🇧[openproxylist.com] vless-GB #1'
   network: tcp
-  port: 8443
-  server: 152.233.28.198
-  servername: uk1.fromblancwithlove.com
-  tls: true
+  port: 443
+  reality-opts:
+    public-key: UJSYKOEr3a3V1P_obd9zNBq4Pr3Vbd_a2nHE7-rstRk
+    short-id: '!!str 6089640857a72237'
+  server: 217.179.6.84
+  servername: France1cxc.chickenkiller.com
+  tls: false
   type: vless
-  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+  uuid: d78c12c4-6927-40b8-8550-ed9be00334da
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇬🇧[openproxylist.com] vless-GB #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: MBkIKCORF_f5gqwnugFO7K4HUR8HAKPUuYVIarrQNU0
+    short-id: '!!str bfc5'
+  server: 31.76.120.162
+  servername: www.sony.com
+  tls: false
+  type: vless
+  uuid: 05e9d254-8ea8-4097-9450-d4aefc44bd7e
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇬🇧[openproxylist.com] vless-GB #3'
+  network: tcp
+  port: 18633
+  reality-opts:
+    public-key: tpovASeNxNkqDfPZhr2raGUY6pis-9XSLCB6DrIEU1g
+    short-id: '!!str d9029b790f10b2e2'
+  server: 3.8.160.120
+  servername: www.yahoo.com
+  tls: false
+  type: vless
+  uuid: 5da5bc00-ea44-462e-bdb7-7687346ad039

@@ -1,23 +1,4 @@
 proxies:
-- name: 法国+巴黎Choopa数据中心
-  password: YGWIMlg.W1wRWQkRDcKfjZY7sng09aC=Yh
-  port: 443
-  server: 217.69.2.107
-  sni: www.weavenet.click
-  type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 法国+巴黎Online+S.A.S
-  network: tcp
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '!!str 01'
-  server: 51.158.206.86
-  servername: fuck.rkn
-  tls: false
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
 - name: 🇫🇷[openproxylist.com] vless-FR
   network: ws
   port: 443
@@ -44,6 +25,12 @@ proxies:
     headers:
       Host: ''
     path: /ws
+- name: 🇫🇷[openproxylist.com] trojan-F...
+  password: YGWIMlg.W1wRWQkRDcKfjZY7sng09aC=Yh
+  port: 443
+  server: 217.69.2.107
+  sni: www.weavenet.click
+  type: trojan
 - client-fingerprint: chrome
   name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: tcp
@@ -62,22 +49,29 @@ proxies:
   network: tcp
   port: 8443
   server: cdg-1.fromblancwithlove.com
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 55f7d143-a594-4a91-b030-f227039f85ef
-- name: 🇫🇷[openproxylist.com] trojan-F...
+- alpn:
+  - http/1.1
+  name: '🇫🇷[openproxylist.com] trojan-F... #1'
+  network: ws
   password: humanity
   port: 443
-  server: 141.193.213.11
+  server: 45.130.125.69
+  skip-cert-verify: true
+  sni: www.calmloud.com
   type: trojan
   ws-opts:
-    path: '%2Fassignment'
-- name: '🇫🇷[openproxylist.com] trojan-F... #1'
+    headers:
+      Host: www.calmloud.com
+    path: /assignment
+- name: '🇫🇷[openproxylist.com] trojan-F... #2'
   network: ws
   password: humanity
   port: 443
   server: 216.24.57.7
-  skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:

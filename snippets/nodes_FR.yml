@@ -1,23 +1,29 @@
 proxies:
-- name: 法国+巴黎Choopa数据中心
+- name: 🇫🇷[openproxylist.com] trojan-F...
   password: YGWIMlg.W1wRWQkRDcKfjZY7sng09aC=Yh
   port: 443
   server: 217.69.2.107
   sni: www.weavenet.click
   type: trojan
-- name: 🇫🇷[openproxylist.com] trojan-F...
+- alpn:
+  - http/1.1
+  name: '🇫🇷[openproxylist.com] trojan-F... #1'
+  network: ws
   password: humanity
   port: 443
-  server: 141.193.213.11
+  server: 45.130.125.69
+  skip-cert-verify: true
+  sni: www.calmloud.com
   type: trojan
   ws-opts:
-    path: '%2Fassignment'
-- name: '🇫🇷[openproxylist.com] trojan-F... #1'
+    headers:
+      Host: www.calmloud.com
+    path: /assignment
+- name: '🇫🇷[openproxylist.com] trojan-F... #2'
   network: ws
   password: humanity
   port: 443
   server: 216.24.57.7
-  skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
