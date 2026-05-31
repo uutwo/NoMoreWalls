@@ -1,20 +1,54 @@
 proxies:
 - client-fingerprint: chrome
-  name: 俄罗斯+V2CROSS.COM
+  flow: xtls-rprx-vision
+  name: '🇬🇪[openproxylist.com] vless-GE #6'
   network: tcp
-  port: 19562
+  port: 22231
+  server: 85.234.114.53
+  servername: r1.mizulina.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: '🇬🇪[openproxylist.com] vless-GE #10'
+  port: 22231
+  server: r1.mizulina.top
+  servername: r1.mizulina.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+- alpn:
+  - h2
+  - http/1.1
+  flow: xtls-rprx-vision
+  name: 🇷🇺[openproxylist.com] vless-RU
+  port: 443
+  server: gwapp-ru01.freenets.store
+  servername: gwapp-ru01.freenets.store
+  tls: true
+  type: vless
+  uuid: 0c8a9f50-51b3-43b5-b1fb-09fc3131a800
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇷🇺[openproxylist.com] vless-RU #1'
+  network: grpc
+  port: 40470
   reality-opts:
-    public-key: T66pm2f_PN4Hya_A_5K0X1HQb717SUCODyoUO7Gk3Ws
-    short-id: '!!str 9e'
-  server: 90.156.254.164
-  servername: yahoo.com
+    public-key: kn16KgkUCMVfqSIwKI9fd0yDy6VcavlTt56LqE_7JWI
+    short-id: '!!str 1fad87'
+  server: 85.198.85.193
+  servername: 5post-gate.x5.ru
   tls: false
   type: vless
-  uuid: 5b96be74-656d-4bb7-85c2-d2d8a3b7c2f3
+  uuid: b43c896e-d9b8-4606-b902-b1bf6d10d2f9
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: /sequre/grpc
-  name: 🇷🇺[openproxylist.com] vless-RU
+  name: '🇷🇺[openproxylist.com] vless-RU #2'
   network: grpc
   port: 443
   server: 185.14.46.20
@@ -24,7 +58,7 @@ proxies:
   uuid: a1b19834-a5e3-4d49-9301-aaa3fb248f49
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇷🇺[openproxylist.com] vless-RU #1'
+  name: '🇷🇺[openproxylist.com] vless-RU #3'
   network: tcp
   port: 443
   reality-opts:
@@ -35,29 +69,3 @@ proxies:
   tls: false
   type: vless
   uuid: 5e8ee155-0962-4307-98f2-b65f6bbbd5bb
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇷🇺[openproxylist.com] vless-RU #2'
-  network: tcp
-  port: 18543
-  reality-opts:
-    public-key: N6QQQTEXQaXI9PRxOYdlnsdviaLwu4eP4sIq9ifz5VM
-    short-id: '!!str fb0839b3bc1d6e'
-  server: ca-1.omuvpn.tech
-  servername: www.zvuk.com
-  tls: false
-  type: vless
-  uuid: 6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: '🇷🇺[openproxylist.com] vless-RU #3'
-  network: tcp
-  port: 50592
-  reality-opts:
-    public-key: kATzSBDyNkm6Ee7p8Ad8iPD5CrJmkJ5n1T-l-LCRmXQ
-    short-id: '!!str b7ca855a4763a7ac'
-  server: 193.163.203.76
-  servername: api-maps.yandex.ru
-  tls: false
-  type: vless
-  uuid: 439f353b-b52f-4355-93d8-26e0567d5308
