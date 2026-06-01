@@ -1,23 +1,26 @@
 proxies:
-- name: 法国+巴黎Choopa数据中心
+- name: 🇫🇷[openproxylist.com] trojan-F...
   password: YGWIMlg.W1wRWQkRDcKfjZY7sng09aC=Yh
   port: 443
   server: 217.69.2.107
   skip-cert-verify: false
   sni: www.weavenet.click
   type: trojan
-- name: 🇫🇷[openproxylist.com] trojan-F...
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.181.84.6
-  type: trojan
-- name: '🇫🇷[openproxylist.com] trojan-F... #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.39.4.77
-  type: trojan
+- name: '🇫🇷[openproxylist.com] vless-FR #1'
+  network: ws
+  port: 443
+  server: 173.245.58.75
+  servername: octopusss4.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+  ws-opts:
+    headers:
+      Host: octopusss4.com
+    path: /tsghdws
 - client-fingerprint: chrome
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
+  name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: tcp
   port: 443
   reality-opts:
@@ -28,12 +31,27 @@ proxies:
   tls: false
   type: vless
   uuid: 391ff971-a901-415e-b0f1-e0c0047e7a24
-- name: '🇫🇷[openproxylist.com] vless-FR #2'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇫🇷[openproxylist.com] vless-FR #3'
+  network: tcp
+  port: 31413
+  reality-opts:
+    public-key: nMlxwhP34_5wFPscbso_hOfRDmsj9DonMpDSXUrnJR8
+    short-id: '!!str ead3d6f82a9d'
+  server: 51.44.16.107
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: 5454343b-541b-4c96-8c2a-52e81079d124
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  name: '🇫🇷[openproxylist.com] vless-FR #4'
   network: tcp
   port: 8443
-  server: 79.127.196.11
+  server: cdg-1.fromblancwithlove.com
   servername: cdg-1.fromblancwithlove.com
-  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 55f7d143-a594-4a91-b030-f227039f85ef
