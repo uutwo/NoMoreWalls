@@ -1,7 +1,20 @@
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇬🇪[openproxylist.com] vless-GE #23'
+  name: 俄罗斯+V2CROSS.COM
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: uz1Lb_2451iPvrwWCZ-4I9_WHdYm7ML0yjeJAZwBk3E
+    short-id: '!!str 73b4306eb38fe3d6'
+  server: kz-1.nodes.ac
+  servername: kz-1.nodes.ac
+  tls: false
+  type: vless
+  uuid: 593f4d6c-aff1-4832-87a7-b5d8e71584ea
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇬🇪[openproxylist.com] vless-GE #16'
   network: tcp
   port: 22231
   server: r1.mizulina.top
@@ -10,23 +23,25 @@ proxies:
   tls: true
   type: vless
   uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '俄罗斯+V2CROSS.COM #1'
-  network: tcp
-  port: 443
-  server: 85.234.114.53
-  servername: r1.mizulina.top
-  tls: true
-  type: vless
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
 - alterId: 0
   cipher: auto
-  name: 俄罗斯 V2CROSS.COM
+  name: 🇷🇺RU-195.209.90.185-55
+  network: ws
+  port: 443
+  server: renderer-stream-1-411.mirra.now
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+  ws-headers:
+    Host: renderer-stream-1-411.mirra.now
+  ws-path: /api/v1/gpu-stream/socket
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯 starcorenode.com 3
   network: ws
   port: '443'
   server: renderer-stream-1-411.mirra.now
-  servername: renderer-stream-1-411.mirra.now
   tls: true
   type: vmess
   uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
@@ -34,22 +49,9 @@ proxies:
     headers:
       Host: renderer-stream-1-411.mirra.now
     path: /api/v1/gpu-stream/socket
-- name: '🇳🇱[openproxylist.com] vless-NL #5'
+- name: 🇷🇺[openproxylist.com] vless-RU
   port: 443
   server: 185.221.199.37
   tls: false
   type: vless
   uuid: 37253a6a-2a9b-42bb-992c-b5f1b1ef1791
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇷🇺[openproxylist.com] vless-RU #1'
-  network: tcp
-  port: 18543
-  reality-opts:
-    public-key: N6QQQTEXQaXI9PRxOYdlnsdviaLwu4eP4sIq9ifz5VM
-    short-id: '!!str fb0839b3bc1d6e'
-  server: ca-1.omuvpn.tech
-  servername: www.zvuk.com
-  tls: false
-  type: vless
-  uuid: 6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5

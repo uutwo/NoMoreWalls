@@ -6,8 +6,21 @@ proxies:
   skip-cert-verify: false
   sni: www.weavenet.click
   type: trojan
+- name: '🇫🇷[openproxylist.com] vless-FR #1'
+  network: ws
+  port: 443
+  server: 173.245.58.75
+  servername: octopusss4.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+  ws-opts:
+    headers:
+      Host: octopusss4.com
+    path: /tsghdws
 - client-fingerprint: chrome
-  name: 🇫🇷[openproxylist.com] vless-FR
+  name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: tcp
   port: 443
   reality-opts:
@@ -18,9 +31,22 @@ proxies:
   tls: false
   type: vless
   uuid: 391ff971-a901-415e-b0f1-e0c0047e7a24
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇫🇷[openproxylist.com] vless-FR #3'
+  network: tcp
+  port: 31413
+  reality-opts:
+    public-key: nMlxwhP34_5wFPscbso_hOfRDmsj9DonMpDSXUrnJR8
+    short-id: '!!str ead3d6f82a9d'
+  server: 51.44.16.107
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: 5454343b-541b-4c96-8c2a-52e81079d124
 - alpn:
   - h2
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
+  name: '🇫🇷[openproxylist.com] vless-FR #4'
   network: tcp
   port: 8443
   server: cdg-1.fromblancwithlove.com
