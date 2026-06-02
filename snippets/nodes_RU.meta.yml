@@ -1,37 +1,31 @@
 proxies:
 - client-fingerprint: chrome
+  flow: xtls-rprx-vision
   name: 俄罗斯+V2CROSS.COM
   network: tcp
-  port: 19562
-  reality-opts:
-    public-key: T66pm2f_PN4Hya_A_5K0X1HQb717SUCODyoUO7Gk3Ws
-    short-id: '!!str 9e'
-  server: 90.156.254.164
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: 5b96be74-656d-4bb7-85c2-d2d8a3b7c2f3
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: /sequre/grpc
-  name: 🇷🇺[openproxylist.com] vless-RU
-  network: grpc
   port: 443
-  server: 185.14.46.20
-  servername: 185.14.46.20.blanesik.space
+  server: cloud.cdnru.net
+  servername: cloud.cdnru.net
   tls: true
   type: vless
-  uuid: a1b19834-a5e3-4d49-9301-aaa3fb248f49
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇷🇺[openproxylist.com] vless-RU #1'
+  uuid: 33612cbf-0639-4285-81da-f88eba1d4f85
+- name: '俄罗斯+V2CROSS.COM #1'
+  password: tunnel-ljlcf
+  port: 8441
+  server: tr-1.stunnel.cc
+  type: trojan
+- name: '俄罗斯+V2CROSS.COM #2'
   network: tcp
-  port: 443
-  reality-opts:
-    public-key: c9eCHF41FReFLIdarpg8M5edw4_E133EJBzrvYS02Ck
-    short-id: '!!str cd9a5f0edff48da4'
-  server: 213.108.2.130
-  servername: cloudflare.com
-  tls: false
+  port: 8443
+  server: cdn3-25.vk-cdnvideo.com
+  tls: true
   type: vless
-  uuid: 5e8ee155-0962-4307-98f2-b65f6bbbd5bb
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+- name: 🇷🇺43693 | ⚡️Telegram = t.me/SO...
+  password: 68cf2e7761c240d9ba4c31f99ab37a9f
+  port: 443
+  server: 157.22.241.242
+  skip-cert-verify: false
+  sni: 157.22.241.242
+  tls: false
+  type: hysteria2
