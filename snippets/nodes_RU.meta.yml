@@ -1,31 +1,56 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 俄罗斯+V2CROSS.COM
-  network: tcp
-  port: 443
-  server: cloud.cdnru.net
-  servername: cloud.cdnru.net
-  tls: true
-  type: vless
-  uuid: 33612cbf-0639-4285-81da-f88eba1d4f85
-- name: '俄罗斯+V2CROSS.COM #1'
-  password: tunnel-ljlcf
-  port: 8441
-  server: tr-1.stunnel.cc
-  type: trojan
-- name: '俄罗斯+V2CROSS.COM #2'
+- name: 俄罗斯+V2CROSS.COM
   network: tcp
   port: 8443
   server: cdn3-25.vk-cdnvideo.com
   tls: true
   type: vless
   uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-- name: 🇷🇺43693 | ⚡️Telegram = t.me/SO...
-  password: 68cf2e7761c240d9ba4c31f99ab37a9f
-  port: 443
-  server: 157.22.241.242
+- name: '俄罗斯+V2CROSS.COM #1'
+  network: tcp
+  port: 8443
+  server: cdn7-39.vk-cdnvideo.com
   skip-cert-verify: false
-  sni: 157.22.241.242
+  tls: true
+  type: vless
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+- name: '俄罗斯+V2CROSS.COM #2'
+  network: tcp
+  port: 8443
+  server: cdn9-33.vk-cdnvideo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+- name: 🇷🇺[openproxylist.com] vless-RU
+  port: 443
+  server: 185.221.199.37
   tls: false
-  type: hysteria2
+  type: vless
+  uuid: 37253a6a-2a9b-42bb-992c-b5f1b1ef1791
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: c9eCHF41FReFLIdarpg8M5edw4_E133EJBzrvYS02Ck
+    short-id: '!!str cd9a5f0edff48da4'
+  server: 213.108.2.130
+  servername: cloudflare.com
+  tls: false
+  type: vless
+  uuid: 5e8ee155-0962-4307-98f2-b65f6bbbd5bb
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #2'
+  network: tcp
+  port: 18543
+  reality-opts:
+    public-key: N6QQQTEXQaXI9PRxOYdlnsdviaLwu4eP4sIq9ifz5VM
+    short-id: '!!str fb0839b3bc1d6e'
+  server: ca-1.omuvpn.tech
+  servername: www.zvuk.com
+  tls: false
+  type: vless
+  uuid: 6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5
