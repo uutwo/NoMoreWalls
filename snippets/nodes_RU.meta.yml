@@ -1,28 +1,40 @@
 proxies:
-- name: 俄罗斯+V2CROSS.COM
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇬🇪[openproxylist.com] vless-GE #23'
   network: tcp
-  port: 8443
-  server: cdn3-25.vk-cdnvideo.com
-  tls: true
-  type: vless
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-- name: '俄罗斯+V2CROSS.COM #1'
-  network: tcp
-  port: 8443
-  server: cdn7-39.vk-cdnvideo.com
+  port: 22231
+  server: r1.mizulina.top
+  servername: r1.mizulina.top
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-- name: '俄罗斯+V2CROSS.COM #2'
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '俄罗斯+V2CROSS.COM #1'
   network: tcp
-  port: 8443
-  server: cdn9-33.vk-cdnvideo.com
-  skip-cert-verify: false
+  port: 443
+  server: 85.234.114.53
+  servername: r1.mizulina.top
   tls: true
   type: vless
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-- name: 🇷🇺[openproxylist.com] vless-RU
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+- alterId: 0
+  cipher: auto
+  name: 俄罗斯 V2CROSS.COM
+  network: ws
+  port: '443'
+  server: renderer-stream-1-411.mirra.now
+  servername: renderer-stream-1-411.mirra.now
+  tls: true
+  type: vmess
+  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+  ws-opts:
+    headers:
+      Host: renderer-stream-1-411.mirra.now
+    path: /api/v1/gpu-stream/socket
+- name: '🇳🇱[openproxylist.com] vless-NL #5'
   port: 443
   server: 185.221.199.37
   tls: false
@@ -31,19 +43,6 @@ proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇷🇺[openproxylist.com] vless-RU #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: c9eCHF41FReFLIdarpg8M5edw4_E133EJBzrvYS02Ck
-    short-id: '!!str cd9a5f0edff48da4'
-  server: 213.108.2.130
-  servername: cloudflare.com
-  tls: false
-  type: vless
-  uuid: 5e8ee155-0962-4307-98f2-b65f6bbbd5bb
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇷🇺[openproxylist.com] vless-RU #2'
   network: tcp
   port: 18543
   reality-opts:
