@@ -1,24 +1,51 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
+- flow: xtls-rprx-vision
   name: 俄罗斯+V2CROSS.COM
   network: tcp
   port: 443
   server: 85.234.114.53
   servername: r1.mizulina.top
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯 Samara State University
+  network: ws
+  port: '443'
+  server: renderer-stream-1-411.mirra.now
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+  ws-opts:
+    headers:
+      Host: renderer-stream-1-411.mirra.now
+    path: /api/v1/gpu-stream/socket
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺RU-37.220.161.249-59
+  network: ws
+  port: 443
+  server: renderer-stream-1-411.mirra.now
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+  ws-headers:
+    Host: renderer-stream-1-411.mirra.now
+  ws-path: /api/v1/gpu-stream/socket
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇰🇿[openproxylist.com] vless-KZ #1'
+  name: '🇳🇱[openproxylist.com] vless-NL #4'
   network: tcp
   port: 443
   reality-opts:
-    public-key: uz1Lb_2451iPvrwWCZ-4I9_WHdYm7ML0yjeJAZwBk3E
-    short-id: '!!str 73b4306eb38fe3d6'
-  server: kz-1.nodes.ac
-  servername: kz-1.nodes.ac
+    public-key: 3WzSgL8uXA3vE3IHrfdBpJmOO4MYrsWpczDSY_jJRjI
+    short-id: '!!str 226509f017e4c36d'
+  server: 185.221.199.37
+  servername: vruaz.mostserv.xyz
   tls: false
   type: vless
-  uuid: 593f4d6c-aff1-4832-87a7-b5d8e71584ea
+  uuid: 37253a6a-2a9b-42bb-992c-b5f1b1ef1791
