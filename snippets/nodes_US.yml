@@ -1,24 +1,24 @@
 proxies:
-- name: 🇨🇱[openproxylist.com] trojan-C...
-  network: tcp
-  password: lTs6OZOMoqYAkDEbK10t-tE8KMjuREBW3m
+- alpn:
+  - http/1.1
+  name: '🇫🇷[openproxylist.com] trojan-F... #1'
+  network: ws
+  password: humanity
   port: 443
-  server: 130.94.104.210
+  server: 104.20.6.134
   skip-cert-verify: false
-  sni: www.cdn-structure.click
+  sni: www.calmloud.com
   type: trojan
-- name: 🇺🇸 美国 Akamai科技公司CDN网络节点
-  network: tcp
-  password: bX_lNHWoW6ywq82mI=KUr+8i__VSp0Hs_E
+  ws-opts:
+    headers:
+      Host: www.calmloud.com
+    path: '%2Fassignment'
+- name: '🇺🇸 美国 德克萨斯州达拉斯Linode数据中心 #1'
+  password: rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf
   port: 443
-  server: 172.235.63.252
+  server: 45.79.8.17
   skip-cert-verify: false
-  type: trojan
-- name: '美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司 #1'
-  password: l64tlWoGT6USQr=3WnjWedzvVSHXn8TNTE
-  port: 443
-  server: 130.94.68.100
-  sni: www.rolll.click
+  sni: 45.79.8.17
   type: trojan
 - alterId: 0
   cipher: auto
@@ -150,20 +150,12 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
-- name: '🇺🇸 美国 CloudFlare节点 #1'
+- name: 🇺🇸 美国 CloudFlare节点
   password: humanity
   port: 443
-  server: v3.dabache.top
+  server: 104.20.6.134
   skip-cert-verify: false
-  sni: www.gossipglove.com
-  type: trojan
-- name: 🇧🇬[openproxylist.com] trojan-B...
-  network: ''
-  password: Z3_=ewk_+l1U4OT4usQ5=o2vFfk95yfy1V
-  port: 443
-  server: 130.94.97.11
-  skip-cert-verify: false
-  sni: www.selectnet.click
+  sni: www.calmloud.com
   type: trojan
 - name: 美国|@ripaojiedian
   network: tcp
@@ -189,17 +181,72 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '🇩🇪[openproxylist.com] trojan-D... #2'
-  password: r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ
-  port: 443
-  server: 172.238.120.124
-  skip-cert-verify: false
+- alterId: 0
+  cipher: auto
+  name: 美国4|@ripaojiedian
+  network: tcp
+  port: '180'
+  server: 82.198.246.250
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: '美國 #18'
+  network: tcp
+  port: 54022
+  server: 103.181.164.145
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇸🇬[openproxylist.com] trojan-S...
+  password: gcuCpQfaiVeDBdWG
+  port: 19128
+  server: jpbgp.netvigor.cc
+  skip-cert-verify: true
+  sni: yazhou10.dynu.net
   type: trojan
-- name: 🇺🇸 美国 Akamai科技公司CDN网络节点 2
+- alterId: 0
+  cipher: auto
+  name: '美國節點 #32'
+  network: tcp
+  port: 180
+  server: 82.198.246.97
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 美国 加利福尼亚州圣何塞
+  network: tcp
+  port: 56738
+  server: 103.127.243.59
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5f49c80e-7770-4bd1-9c86-43c2068a3a26
+- name: '🇬🇧 GB英国(mibei77.com 米贝节点分享) #1'
+  password: humanity
+  port: 443
+  server: 172.64.152.23
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+- name: 🇺🇸 美国 Akamai科技公司CDN网络节点
   password: s_WEN9lMmufG+qDIsn-4C7JOVAnDdbS3Ui
   port: 443
   server: 172.236.220.10
   skip-cert-verify: false
+  type: trojan
+- name: '🇺🇸[openproxylist.com] trojan-U... #1'
+  password: s.wRSE4ANZp4=4h.=B_9Qbetw6XUc0V1SV
+  port: 443
+  server: 130.94.107.171
+  skip-cert-verify: false
+  sni: www.logger-guard.click
   type: trojan
 - name: 🇭🇰_HK_中国香港->🇺🇸_US_美国
   password: BxceQaOe
@@ -234,19 +281,9 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '🇺🇸_US_美国 #1'
+  name: 🇺🇸_US_美国->🇸🇬_SG_新加坡
   network: tcp
-  port: 180
-  server: 82.198.246.214
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬[openproxylist.com] vmess-SG
-  network: tcp
-  port: '6004'
+  port: 6004
   server: gtm-sg-cc54q7d1q01.365cloud0285.com
   servername: ''
   tls: false
@@ -295,12 +332,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 550e8400-e29b-41d4-a716-446655440000
-- name: '🇺🇸[openproxylist.com] trojan-U... #1'
-  password: s.wRSE4ANZp4=4h.=B_9Qbetw6XUc0V1SV
-  port: 443
-  server: 130.94.107.171
-  sni: www.logger-guard.click
-  type: trojan
 - alterId: 0
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #2'
