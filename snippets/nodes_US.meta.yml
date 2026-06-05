@@ -1,46 +1,84 @@
 proxies:
+- name: '🇩🇪[openproxylist.com] trojan-D... #3'
+  network: tcp
+  password: r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ
+  port: 443
+  server: 172.238.120.124
+  skip-cert-verify: false
+  sni: ''
+  type: trojan
+- name: '🇺🇸[openproxylist.com] trojan-U... #3'
+  network: tcp
+  password: A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM
+  port: 443
+  server: 172.237.145.189
+  skip-cert-verify: false
+  sni: 172.237.145.189
+  type: trojan
 - alpn:
   - http/1.1
   name: 美国+CloudFlare节点
   network: ws
   password: humanity
   port: 443
-  server: 162.159.195.173
-  skip-cert-verify: false
-  sni: www.calmloud.com
+  server: 104.17.121.9
+  skip-cert-verify: true
+  sni: www.calmlunch.com
   type: trojan
   ws-opts:
     headers:
-      Host: www.calmloud.com
+      Host: www.calmlunch.com
     path: '%2Fassignment'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 美国+得克萨斯州
+- name: '🇩🇪[openproxylist.com] trojan-D... #2'
   network: tcp
+  password: s_WEN9lMmufG+qDIsn-4C7JOVAnDdbS3Ui
   port: 443
-  reality-opts:
-    public-key: L6EU_GCGptVyjp1Q60ZMmRAZVCCx6EVbW-gyv1Zk3zc
-    short-id: '!!str fad0a8e7'
-  server: 66.201.4.248
-  servername: usw.org
-  tls: false
-  type: vless
-  uuid: 6048cd5b-621f-40c6-bf81-3855e4c069b1
-- name: 🇯🇵[openproxylist.com] trojan-J...
-  network: raw
-  password: E_hUHrn0+6VeZO=v9=fLgoPDXZWGfcrejg
-  port: 443
-  server: 172.238.19.11
+  server: 172.236.220.10
   skip-cert-verify: false
-  sni: 172.238.19.11
+  sni: 172.236.220.10
   type: trojan
 - name: 🇨🇳[openproxylist.com] trojan-C...
   password: l64tlWoGT6USQr=3WnjWedzvVSHXn8TNTE
   port: 443
   server: 130.94.68.100
-  skip-cert-verify: false
   sni: www.rolll.click
   type: trojan
+- alpn:
+  - http/1.1
+  name: 美国+加利福尼亚
+  password: iGccGWTMHtoXtBhGYK4mogg7iIUhGbcvCf
+  port: 443
+  server: 64.176.65.85
+  type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 美国+佛罗里达州迈阿密市
+  network: tcp
+  port: 443
+  server: 72.56.59.177
+  servername: r1.mizulina.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+- alpn:
+  - http/1.1
+  name: '美国+CloudFlare节点 #1'
+  network: ws
+  port: 443
+  server: 172.64.146.68
+  servername: octopusss4.com
+  tls: true
+  type: vless
+  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+  ws-opts:
+    headers:
+      Host: octopusss4.com
+    path: '%2Ftsghdws'
 - alterId: 0
   cipher: auto
   name: 🇺🇸 VMESS-美国-NF解锁自制剧-ChatGPT-Ti...
@@ -176,9 +214,9 @@ proxies:
   port: 443
   server: 64.176.65.85
   skip-cert-verify: false
-  sni: ''
   type: trojan
 - name: 🇧🇬[openproxylist.com] trojan-B...
+  network: ''
   password: Z3_=ewk_+l1U4OT4usQ5=o2vFfk95yfy1V
   port: 443
   server: 130.94.97.11
@@ -201,6 +239,16 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 美国4|@ripaojiedian
+  network: tcp
+  port: '180'
+  server: 82.198.246.250
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
   name: '美國 #18'
@@ -255,7 +303,7 @@ proxies:
   skip-cert-verify: false
   sni: www.calmlunch.com
   type: trojan
-- name: 🇺🇸 美国 Akamai科技公司CDN网络节点
+- name: 🇺🇸[openproxylist.com] trojan-U...
   password: bX_lNHWoW6ywq82mI=KUr+8i__VSp0Hs_E
   port: 443
   server: 172.235.63.252
@@ -301,9 +349,9 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国->🇸🇬_SG_新加坡
+  name: 🇸🇬[openproxylist.com] vmess-SG
   network: tcp
-  port: 6004
+  port: '6004'
   server: gtm-sg-cc54q7d1q01.365cloud0285.com
   servername: ''
   tls: false
@@ -323,19 +371,6 @@ proxies:
   skip-cert-verify: true
   sni: ch.01.naiun.bilibili.com
   type: trojan
-- name: '🇺🇸[openproxylist.com] vless-US #1'
-  port: 443
-  server: us.healthy-connected.com
-  tls: false
-  type: vless
-  uuid: 4405aeb6-84fc-49ba-a42b-948a3b1ed13c
-- name: 🇺🇸[openproxylist.com] trojan-U...
-  network: tcp
-  password: bX_lNHWoW6ywq82mI=KUr+8i__VSp0Hs_E
-  port: 443
-  server: 172.235.63.252
-  sni: 172.235.63.252
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
@@ -348,7 +383,7 @@ proxies:
   uuid: 550e8400-e29b-41d4-a716-446655440000
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #2'
+  name: 🇺🇸[openproxylist.com] vless-US
   network: tcp
   port: 443
   reality-opts:
@@ -363,7 +398,6 @@ proxies:
   password: rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf
   port: 443
   server: 45.79.8.17
-  skip-cert-verify: false
   sni: 45.79.8.17
   type: trojan
 - name: '🇺🇸[openproxylist.com] trojan-U... #2'
@@ -372,25 +406,6 @@ proxies:
   server: 130.94.107.171
   sni: www.logger-guard.click
   type: trojan
-- name: '🇺🇸[openproxylist.com] trojan-U... #3'
-  password: A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM
-  port: 443
-  server: 172.237.145.189
-  sni: 172.237.145.189
-  type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #3'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 3ik9ws7ATJ5dKDY2Fofv9y7_vpFYsTqgOJRxiQKwA3A
-    short-id: '!!str 7b233a973c94ca0a'
-  server: 132.226.85.167
-  servername: www.microsoft.com
-  tls: false
-  type: vless
-  uuid: e43dd231-7c75-4606-80ec-50fbb8335ce7
 - alterId: 0
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #1'
@@ -411,3 +426,66 @@ proxies:
   uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
   ws-opts:
     path: /cctv13.m3u8
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #3'
+  network: tcp
+  port: '13581'
+  server: 104.233.214.176
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d4d715a6-0a2e-4304-df2f-d5efd85a5a5d
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #4'
+  network: ws
+  port: 48060
+  server: 66.154.106.185
+  servername: null
+  tls: false
+  type: vmess
+  uuid: f60ecc88-d704-489c-e3b9-082805317e7b
+  ws-opts:
+    headers:
+      Host: null
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #5'
+  network: tcp
+  port: '18000'
+  server: 38.110.1.246
+  tls: false
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: aes-128-gcm
+  name: '🇺🇸[openproxylist.com] vmess-US #6'
+  network: tcp
+  port: 18000
+  server: 67.220.85.46
+  servername: null
+  tls: false
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #7'
+  network: tcp
+  port: '18000'
+  server: 38.91.107.49
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #8'
+  network: tcp
+  port: 18000
+  server: 169.197.142.22
+  servername: null
+  tls: false
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
