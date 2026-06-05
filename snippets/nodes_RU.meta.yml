@@ -1,22 +1,31 @@
 proxies:
+- name: 俄罗斯+V2CROSS.COM
+  network: tcp
+  port: 443
+  server: 109.120.138.95
+  tls: false
+  type: vless
+  uuid: c2b6a323-19ec-4e4f-a95c-8b0e99aa7660
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: '🇬🇪[openproxylist.com] vless-GE #13'
+  name: '俄罗斯+V2CROSS.COM #1'
   network: tcp
-  port: 22231
+  port: 443
   server: 85.234.114.53
   servername: r1.mizulina.top
   skip-cert-verify: false
   tls: true
   type: vless
   uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  ws-opts:
+    headers:
+      Host: r1.mizulina.top
 - alterId: 0
   cipher: auto
-  name: 🇳🇱[openproxylist.com] vmess-NL
+  name: 🇷🇺 俄罗斯 V2CROSS.COM
   network: ws
   port: '443'
   server: renderer-stream-1-411.mirra.now
-  servername: ''
   tls: true
   type: vmess
   uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
@@ -25,19 +34,20 @@ proxies:
       Host: renderer-stream-1-411.mirra.now
     path: /api/v1/gpu-stream/socket
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇬🇪[openproxylist.com] vless-GE #15'
+  name: 🇷🇺[openproxylist.com] vless-RU
   network: tcp
-  port: 22231
-  server: r1.mizulina.top
-  servername: r1.mizulina.top
-  skip-cert-verify: false
-  tls: true
+  port: 443
+  reality-opts:
+    public-key: fPSR5GZpxhOV6Rh7VzMtS4AeRN7ipyNX4waG9JzJzxQ
+    short-id: '!!str 31181028b56c8704'
+  server: ru01.goodmaximum.com
+  servername: ru-cloud.221131513.xyz
+  tls: false
   type: vless
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  uuid: 906a8afb-0508-001e-8926-7a754dd62db5
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇷🇺[openproxylist.com] vless-RU
+  name: '🇷🇺[openproxylist.com] vless-RU #1'
   network: tcp
   port: 443
   reality-opts:
