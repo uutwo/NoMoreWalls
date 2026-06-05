@@ -1,4 +1,20 @@
 proxies:
+- name: 法国+ONLINE+S.A.S.数据中心
+  password: github.com/Alvin9999-newpac/fanqiang
+  port: 64772
+  server: 62.210.26.173
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: '法国+ONLINE+S.A.S.数据中心 #1'
+  password: github.com/Alvin9999-newpac/fanqiang
+  port: 64772
+  server: 62.210.29.98
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
 - name: 🇫🇷[openproxylist.com] vless-FR
   port: 8080
   server: 62.60.148.226
@@ -36,9 +52,13 @@ proxies:
   tls: false
   type: vless
   uuid: 391ff971-a901-415e-b0f1-e0c0047e7a24
-- name: '🇫🇷[openproxylist.com] vless-FR #4'
+- alpn:
+  - h2
+  name: '🇫🇷[openproxylist.com] vless-FR #4'
+  network: tcp
   port: 8443
-  server: 79.127.196.11
+  server: cdg-1.fromblancwithlove.com
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 55f7d143-a594-4a91-b030-f227039f85ef
