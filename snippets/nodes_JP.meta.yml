@@ -1,16 +1,33 @@
 proxies:
-- name: 日本+东京Fastly节点
+- alpn:
+  - h3
+  client-fingerprint: chrome
+  name: 日本+东京Fastly节点
   network: ws
-  password: ertpzfsl7w4kqvk4
   port: 443
   server: 151.101.108.223
+  servername: default.ssl.fastly.net
   skip-cert-verify: true
-  sni: default.ssl.fastly.net
-  type: trojan
+  tls: true
+  type: vless
+  uuid: 98c9f668-1f2f-4a6d-bd7a-606fab0ac035
   ws-opts:
     headers:
-      Host: nleiyajji.global.ssl.fastly.net
-    path: /TELEGRAM_NUFiLTER
+      Host: jookeji.global.ssl.fastly.net
+    path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 日本+V2CROSS.COM
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: JE82iOR_U_H7ffxJ5yfoxXeRkMlE-aVu1wxR7n6jrVM
+    short-id: '!!str 473277e2'
+  server: 43.212.235.169
+  servername: dlcdnets.asus.com
+  tls: false
+  type: vless
+  uuid: bce38beb-a6d0-41d7-9c0a-26eed9a6634d
 - name: JP
   password: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61
   port: 13778
@@ -42,6 +59,13 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
+- name: 🇯🇵 日本 东京Fastly节点
+  password: ertpzfsl7w4kqvk4
+  port: 443
+  server: 151.101.108.223
+  skip-cert-verify: false
+  sni: default.ssl.fastly.net
+  type: trojan
 - alterId: 2
   cipher: auto
   name: 🇲🇾_MY_马来西亚->🇯🇵_JP_日本
@@ -52,6 +76,26 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: 🇯🇵[openproxylist.com] vless-JP
+  network: tcp
+  port: 443
+  server: 150.251.158.76
+  servername: s646.okgg.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 10550754-cf62-3d3b-ba6a-50be27a275d7
+- name: '🇯🇵[openproxylist.com] vless-JP #1'
+  network: tcp
+  port: 8443
+  server: 178.249.213.177
+  servername: jp1.fromblancwithlove.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
 - alterId: 0
   cipher: auto
   name: 🇯🇵[openproxylist.com] vmess-JP
@@ -84,36 +128,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- name: 🇯🇵[openproxylist.com] vless-JP
-  network: ws
-  port: 25242
-  server: 47.79.144.103
-  tls: false
-  type: vless
-  uuid: a12b0d31-f599-498e-b76e-8558a14b766b
-  ws-opts:
-    path: /a12b0d31
-- name: '🇯🇵[openproxylist.com] vless-JP #1'
-  network: ws
-  port: 443
-  server: dongjing4.zqjsqapi.com
-  servername: dongjing4.zqjsqapi.com
-  tls: true
-  type: vless
-  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
-  ws-opts:
-    path: /proxy
-- alterId: 0
-  cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #3'
-  network: ws
-  port: 80
-  server: jp01.a0a.xyz
-  servername: jp01.a0a.xyz
-  tls: false
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: jp01.a0a.xyz
-    path: /cctv13.m3u8
