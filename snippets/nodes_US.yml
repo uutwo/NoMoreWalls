@@ -1,33 +1,38 @@
 proxies:
-- name: 美国+CloudFlare节点
-  network: ws
-  password: humanity
-  port: 443
-  server: www.calmlunch.com
-  skip-cert-verify: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: '%2Fassignment'
 - name: '🇺🇸[openproxylist.com] trojan-U... #3'
   password: A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM
   port: 443
   server: 172.237.145.189
+  skip-cert-verify: false
   sni: 172.237.145.189
   type: trojan
-- name: 🇺🇸 美国 Akamai科技公司CDN网络节点
-  network: tcp
-  password: bX_lNHWoW6ywq82mI=KUr+8i__VSp0Hs_E
-  port: 443
-  server: 172.235.63.252
-  skip-cert-verify: false
-  type: trojan
-- name: '美国+CloudFlare节点 #1'
+- name: 美国+CloudFlare节点
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.50
+  server: 104.16.7.70
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: assignment
+- name: '🇩🇪[openproxylist.com] trojan-D... #3'
+  password: r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ
+  port: 443
+  server: 172.238.120.124
+  skip-cert-verify: false
+  type: trojan
+- name: '🇨🇳[openproxylist.com] trojan-C... #1'
+  password: l64tlWoGT6USQr=3WnjWedzvVSHXn8TNTE
+  port: 443
+  server: 130.94.68.100
+  sni: www.rolll.click
+  type: trojan
+- name: '美国+CloudFlare节点 #2'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.219
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
@@ -179,10 +184,10 @@ proxies:
   skip-cert-verify: true
   sni: www.calmlunch.com
   type: trojan
-- name: '🇩🇪[openproxylist.com] trojan-D... #3'
-  password: r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ
+- name: 🇺🇸 美国 Akamai科技公司CDN网络节点
+  password: bX_lNHWoW6ywq82mI=KUr+8i__VSp0Hs_E
   port: 443
-  server: 172.238.120.124
+  server: 172.235.63.252
   skip-cert-verify: false
   type: trojan
 - name: 🇵🇱[openproxylist.com] trojan-P...
@@ -361,19 +366,6 @@ proxies:
   skip-cert-verify: true
   sni: ch.01.naiun.bilibili.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸[openproxylist.com] vmess-US
-  network: ws
-  port: 10011
-  server: 6654c734ccab8f440ff0825eb443dc7f.qos.onl
-  tls: false
-  type: vmess
-  uuid: 52f9cbfb-5bb3-3dd3-b947-725e365c59f3
-  ws-opts:
-    headers:
-      Host: v2pr9feoh0z86anj2gz9onnjg9viuev0j.mobgslb.tbcache.com
-    path: /
 - name: 🇺🇸[openproxylist.com] trojan-U...
   network: tcp
   password: bX_lNHWoW6ywq82mI=KUr+8i__VSp0Hs_E
@@ -383,7 +375,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #1'
+  name: 🇺🇸[openproxylist.com] vmess-US
   network: tcp
   port: '10086'
   server: 57.151.100.27
@@ -399,7 +391,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #2'
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
   network: tcp
   port: 48111
   server: 129.146.143.80
@@ -408,7 +400,7 @@ proxies:
   uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #3'
+  name: '🇺🇸[openproxylist.com] vmess-US #2'
   network: ws
   port: 39495
   server: 129.146.77.248
@@ -419,7 +411,7 @@ proxies:
     path: /cctv13.m3u8
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #4'
+  name: '🇺🇸[openproxylist.com] vmess-US #3'
   network: tcp
   port: '13581'
   server: 104.233.214.176
@@ -429,7 +421,7 @@ proxies:
   uuid: d4d715a6-0a2e-4304-df2f-d5efd85a5a5d
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #5'
+  name: '🇺🇸[openproxylist.com] vmess-US #4'
   network: ws
   port: 48060
   server: 66.154.106.185
@@ -442,17 +434,8 @@ proxies:
       Host: null
     path: /
 - alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #6'
-  network: tcp
-  port: '18000'
-  server: 38.110.1.246
-  tls: false
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
   cipher: aes-128-gcm
-  name: '🇺🇸[openproxylist.com] vmess-US #7'
+  name: '🇺🇸[openproxylist.com] vmess-US #5'
   network: tcp
   port: 18000
   server: 67.220.85.46
@@ -462,7 +445,7 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #8'
+  name: '🇺🇸[openproxylist.com] vmess-US #6'
   network: tcp
   port: '18000'
   server: 38.91.107.49
@@ -472,7 +455,7 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #9'
+  name: '🇺🇸[openproxylist.com] vmess-US #7'
   network: tcp
   port: 18000
   server: 38.114.123.42
@@ -482,7 +465,7 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #10'
+  name: '🇺🇸[openproxylist.com] vmess-US #8'
   network: tcp
   port: 18000
   server: 169.197.142.22
@@ -492,7 +475,7 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #11'
+  name: '🇺🇸[openproxylist.com] vmess-US #9'
   network: tcp
   port: 22324
   server: 216.106.185.141
@@ -502,7 +485,7 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #12'
+  name: '🇺🇸[openproxylist.com] vmess-US #10'
   network: tcp
   port: 18000
   server: 84.17.41.2
