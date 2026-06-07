@@ -1,7 +1,17 @@
 proxies:
-- client-fingerprint: edge
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇬🇪[openproxylist.com] vless-GE #1'
+  name: 俄罗斯+V2CROSS.COM
+  network: tcp
+  port: 22231
+  server: 85.234.114.53
+  servername: r1.mizulina.top
+  tls: true
+  type: vless
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '俄罗斯+V2CROSS.COM #1'
   port: 22231
   server: r1.mizulina.top
   servername: r1.mizulina.top
@@ -15,3 +25,14 @@ proxies:
   tls: false
   type: vless
   uuid: 31fb98b7-e7a1-4b56-8c6a-3f060f06393c
+- alpn:
+  - h2
+  - http/1.1
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #1'
+  port: 443
+  server: gwapp-ru01.freenets.store
+  servername: gwapp-ru01.freenets.store
+  tls: true
+  type: vless
+  uuid: 0c8a9f50-51b3-43b5-b1fb-09fc3131a800
