@@ -11,23 +11,20 @@ proxies:
   tls: false
   type: vless
   uuid: 029a4bc6-4557-4b6b-a5fc-6232e943e43b
-- alterId: 0
-  cipher: auto
-  name: 俄羅斯
-  network: ws
-  port: 443
-  server: renderer-stream-1-411.mirra.now
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
-  ws-opts:
-    headers:
-      Host: renderer-stream-1-411.mirra.now
-    path: /api/v1/gpu-stream/socket
-- client-fingerprint: chrome
+- alpn:
+  - h2
+  - http/1.1
   flow: xtls-rprx-vision
   name: 🇷🇺[openproxylist.com] vless-RU
+  port: 443
+  server: gwapp-ru01.freenets.store
+  servername: gwapp-ru01.freenets.store
+  tls: true
+  type: vless
+  uuid: 0c8a9f50-51b3-43b5-b1fb-09fc3131a800
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #1'
   network: tcp
   port: 443
   reality-opts:
