@@ -1,61 +1,15 @@
 proxies:
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: 俄罗斯+V2CROSS.COM
-  network: tcp
-  port: 22231
-  server: 85.234.114.53
-  servername: r1.mizulina.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: '🇬🇪[openproxylist.com] vless-GE #6'
-  network: tcp
-  port: 22231
-  server: r1.mizulina.top
-  servername: r1.mizulina.top
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
 - alterId: 0
   cipher: auto
-  name: 俄羅斯
+  name: 🇳🇱[openproxylist.com] vmess-NL
   network: ws
-  port: 443
+  port: '443'
   server: renderer-stream-1-411.mirra.now
-  servername: ''
-  tls: false
+  servername: renderer-stream-1-411.mirra.now
+  tls: true
   type: vmess
   uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
   ws-opts:
     headers:
       Host: renderer-stream-1-411.mirra.now
     path: /api/v1/gpu-stream/socket
-- alpn:
-  - h2
-  - http/1.1
-  flow: xtls-rprx-vision
-  name: 🇷🇺[openproxylist.com] vless-RU
-  port: 443
-  server: gwapp-ru01.freenets.store
-  servername: gwapp-ru01.freenets.store
-  tls: true
-  type: vless
-  uuid: 0c8a9f50-51b3-43b5-b1fb-09fc3131a800
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇷🇺[openproxylist.com] vless-RU #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: c9eCHF41FReFLIdarpg8M5edw4_E133EJBzrvYS02Ck
-    short-id: '!!str cd9a5f0edff48da4'
-  server: 213.108.2.130
-  servername: cloudflare.com
-  tls: false
-  type: vless
-  uuid: 5e8ee155-0962-4307-98f2-b65f6bbbd5bb
