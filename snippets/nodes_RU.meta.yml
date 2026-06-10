@@ -1,7 +1,54 @@
 proxies:
+- flow: xtls-rprx-vision
+  name: '🇬🇪[openproxylist.com] vless-GE #2'
+  network: tcp
+  port: 22231
+  server: r1.mizulina.top
+  servername: r1.mizulina.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+- flow: xtls-rprx-vision
+  name: '俄罗斯+V2CROSS.COM #1'
+  network: tcp
+  port: 443
+  server: cloud.cdnru.net
+  servername: cloud.cdnru.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 33612cbf-0639-4285-81da-f88eba1d4f85
+- alterId: 0
+  cipher: auto
+  name: 俄羅斯
+  network: ws
+  port: 443
+  server: renderer-stream-1-411.mirra.now
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+  ws-opts:
+    headers:
+      Host: renderer-stream-1-411.mirra.now
+    path: /api/v1/gpu-stream/socket
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇷🇺[openproxylist.com] vless-RU
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 1BAG3ZcDThZ_tEFyPAaxh5EfY5RyK8D8CIHplP-qXmc
+    short-id: '!!str 9a62a7103e3791eb'
+  server: 212.233.122.244
+  servername: static.rutube.ru
+  tls: false
+  type: vless
+  uuid: 69b578b6-6167-447d-a82c-033928da5e03
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #1'
   network: tcp
   port: 443
   reality-opts:
