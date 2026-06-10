@@ -1,36 +1,9 @@
 proxies:
-- name: 美国+CloudFlare节点
-  network: ws
-  password: humanity
-  port: 443
-  server: www.gossipglove.com
-  skip-cert-verify: true
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: 美国+德克萨斯州达拉斯Linode数据中心
-  network: tcp
-  password: rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf
-  port: 443
-  server: 45.79.8.17
-  skip-cert-verify: false
-  sni: 45.79.8.17
-  type: trojan
-- name: 美国+Fastly全球Anycast节点
-  network: ws
-  port: 80
-  server: 151.101.0.1
-  tls: false
-  type: vless
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /
-- name: '美国+CloudFlare节点 #1'
+- client-fingerprint: chrome
+  name: 美国+加州
   network: ws
   port: 443
-  server: 104.17.121.71
+  server: 216.24.57.7
   servername: octopusss4.com
   tls: true
   type: vless
@@ -38,37 +11,80 @@ proxies:
   ws-opts:
     headers:
       Host: octopusss4.com
-    path: /tsghdws
-- name: '美国+Fastly全球Anycast节点 #1'
+    path: '%2Ftsghdws'
+- name: 美国+CloudFlare节点
+  network: ws
+  port: 443
+  server: 162.159.44.195
+  servername: hhlfy.twiladaphne.ndjp.net
+  tls: true
+  type: vless
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  ws-opts:
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+    path: '%2Ffp%3Dchrome'
+- alpn:
+  - http/1.1
+  name: 美国+德克萨斯州达拉斯Linode数据中心
+  network: tcp
+  password: rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf
+  port: 443
+  server: 45.79.8.17
+  sni: 45.79.8.17
+  type: trojan
+- client-fingerprint: chrome
+  name: '美国+CloudFlare节点 #1'
+  network: ws
+  port: 443
+  server: 104.16.0.0
+  servername: tr-cd.sublink-vip2.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+  ws-opts:
+    headers:
+      Host: tr-cd.sublink-vip2.com
+    path: /
+- name: '美国+CloudFlare节点 #2'
+  network: ws
+  port: 2087
+  server: 172.64.149.209
+  servername: fgnix832fx.fx6hsv0.ccwu.cc
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  ws-opts:
+    headers:
+      Host: fgnix832fx.fx6hsv0.ccwu.cc
+    path: /
+- client-fingerprint: chrome
+  name: '🇩🇪[openproxylist.com] vless-DE #13'
   network: ws
   port: 80
-  server: 151.101.66.219
+  server: 151.101.2.219
   tls: false
   type: vless
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
   ws-opts:
     headers:
       Host: max-gb1.global.ssl.fastly.net
     path: /
-- name: '美国+CloudFlare节点 #2'
-  network: ws
-  password: humanity
+- name: 🇮🇳[openproxylist.com] trojan-I...
+  password: Tu1fZjElnkRg0ECRj0sI0u54PY8ptUmATg
   port: 443
-  server: 172.64.147.24
-  skip-cert-verify: true
-  sni: www.gossipglove.com
+  server: 65.20.90.225
+  sni: www.sandbox-cloud.click
   type: trojan
-  ws-opts:
-    headers:
-      Host: www.gossipglove.com
-    path: '%2Fassignment'
-- name: 美国+V2CROSS.COM
+- name: '🇩🇪[openproxylist.com] vless-DE #14'
   network: ws
   port: 80
-  server: 199.232.197.131
+  server: 151.101.194.219
   tls: false
   type: vless
-  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
   ws-opts:
     headers:
       Host: max-gb1.global.ssl.fastly.net
@@ -212,6 +228,7 @@ proxies:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
 - name: 🇵🇱[openproxylist.com] trojan-P...
+  network: tcp
   password: iGccGWTMHtoXtBhGYK4mogg7iIUhGbcvCf
   port: 443
   server: 64.176.65.85
@@ -295,7 +312,7 @@ proxies:
   skip-cert-verify: true
   sni: epge.muarua.filegear-sg.me
   type: trojan
-- name: 🇺🇸 美国 Akamai科技公司CDN网络节点
+- name: '🇩🇪[openproxylist.com] trojan-D... #5'
   password: s_WEN9lMmufG+qDIsn-4C7JOVAnDdbS3Ui
   port: 443
   server: 172.236.220.10
@@ -329,7 +346,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '🇩🇪[openproxylist.com] trojan-D... #2'
+- name: 🇺🇸_US_美国->🇩🇪_DE_德国
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 46424
   server: 90081bb25c.node.tro.cac.cab
@@ -346,7 +363,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '🇮🇸[openproxylist.com] trojan-I... #2'
+- name: '🏳[openproxylist.com] trojan- #1'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 47909
   server: 90081bb25c.node.tro.cac.cab
@@ -370,7 +387,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '🇨🇭[openproxylist.com] trojan-C... #1'
+- name: 🇺🇸_US_美国->🇨🇭_CH_瑞士
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45553
   server: 90081bb25c.node.tro.cac.cab
@@ -378,12 +395,6 @@ proxies:
   sni: ch.01.naiun.bilibili.com
   type: trojan
 - name: 🇺🇸[openproxylist.com] vless-US
-  port: 58578
-  server: 54.184.242.113
-  tls: false
-  type: vless
-  uuid: a16bb742-7c22-4be2-878c-78d49b6bcb03
-- name: '🇺🇸[openproxylist.com] vless-US #1'
   port: 9443
   server: 77.110.127.191
   tls: false
@@ -391,9 +402,15 @@ proxies:
   uuid: e0de62c9-f317-4275-b7e5-8da7b7fa9bc6
   ws-opts:
     path: '%2Fpourya'
-- name: '🇺🇸[openproxylist.com] vless-US #2'
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #1'
+  network: tcp
   port: 443
+  reality-opts:
+    public-key: Fp0-VrMBeaQe9xOrehDYHt0mqTZL-5CdfuMEzoXkOE8
   server: 2.26.88.109
+  servername: google.com
   tls: false
   type: vless
   uuid: 749a5df1-2d12-45cf-80f3-f85ea6b2e405
@@ -402,4 +419,34 @@ proxies:
   port: 443
   server: 172.235.63.252
   sni: 172.235.63.252
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸[openproxylist.com] vmess-US
+  network: tcp
+  port: '10086'
+  server: 57.151.100.27
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 550e8400-e29b-41d4-a716-446655440000
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: BoWKSM1aSfcTRgKX_kZYPlauG0jLIqku3zPBAiHpUgs
+    short-id: '!!str 5ea7e22e889dabc5'
+  server: pl.fantoff.online
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: b95dd8e5-2758-408f-be99-9362eecee609
+- name: '🇺🇸[openproxylist.com] trojan-U... #3'
+  network: tcp
+  password: rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf
+  port: 443
+  server: 45.79.8.17
+  sni: 45.79.8.17
   type: trojan
