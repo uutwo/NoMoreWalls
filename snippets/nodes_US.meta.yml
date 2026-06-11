@@ -1,11 +1,16 @@
 proxies:
+- name: 🇨🇦[openproxylist.com] trojan-C...
+  password: lTLVIqIvFqp+es9giS.0o77ztLrCQLaxVh
+  port: 443
+  server: 172.105.9.126
+  type: trojan
 - name: 美国+Fastly全球Anycast节点
   network: ws
   port: 80
-  server: speedtest.net
+  server: 151.101.66.219
   tls: false
   type: vless
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
   ws-opts:
     headers:
       Host: max-gb1.global.ssl.fastly.net
@@ -13,45 +18,34 @@ proxies:
 - name: 美国+V2CROSS.COM
   network: ws
   port: 80
-  server: 199.232.197.131
-  servername: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: false
+  server: 167.82.0.1
   tls: false
   type: vless
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
   ws-opts:
     headers:
       Host: max-gb1.global.ssl.fastly.net
     path: /
 - name: 美国+CloudFlare节点
-  network: tcp
-  port: 22
-  server: 172.65.111.43
-  tls: false
-  type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    path: /@monacoVPN@monacoVPN@monacoVPN@monacoVPN
-- name: '美国+V2CROSS.COM #1'
   network: ws
-  port: 443
-  server: 199.232.78.159
-  servername: default.ssl.fastly.net
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: bd6f4e13-80fd-4dd6-8de8-21f23f8c4cdf
-  ws-opts:
-    headers:
-      Host: pan1.global.ssl.fastly.net
-    path: /
-- name: '美国+Fastly全球Anycast节点 #1'
-  network: ws
-  port: 80
-  server: 151.101.130.219
+  port: 8080
+  server: www.speedtest.org
   tls: false
   type: vless
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  ws-opts:
+    headers:
+      Host: tr-cd.sublink-vip2.com
+    path: /
+- name: '🇩🇪[openproxylist.com] vless-DE #8'
+  network: ws
+  port: 80
+  server: speedtest.net
+  servername: max-gb1.global.ssl.fastly.net
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
   ws-opts:
     headers:
       Host: max-gb1.global.ssl.fastly.net
@@ -194,18 +188,12 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
-- name: 🇺🇸 美国 Linode数据中心
-  password: lTLVIqIvFqp+es9giS.0o77ztLrCQLaxVh
-  port: 443
-  server: 172.105.9.126
-  skip-cert-verify: false
-  type: trojan
 - name: 🇺🇸 美国 CloudFlare节点
   password: humanity
   port: 443
-  server: 104.20.6.134
+  server: 104.16.174.36
   skip-cert-verify: false
-  sni: www.multiplydose.com
+  sni: www.ignitelimit.com
   type: trojan
 - name: 美国|@ripaojiedian
   network: tcp
@@ -243,51 +231,14 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国
+  name: '🇺🇸_US_美国 #1'
   network: tcp
   port: 180
-  server: 82.198.246.37
+  server: 82.198.246.214
   servername: ''
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: '香港 #1'
-  network: tcp
-  port: 51556
-  server: 103.181.164.145
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '🇹🇼_TW_中国台湾->🇸🇬_SG_新加坡 #1'
-  password: gcuCpQfaiVeDBdWG
-  port: 19128
-  server: jpbgp.netvigor.cc
-  skip-cert-verify: true
-  sni: yazhou10.dynu.net
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '美國節點 #27'
-  network: tcp
-  port: 180
-  server: 82.198.246.97
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 美国 加利福尼亚州圣何塞
-  network: tcp
-  port: 56738
-  server: 103.127.243.59
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5f49c80e-7770-4bd1-9c86-43c2068a3a26
 - name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #19'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 48697
@@ -295,28 +246,28 @@ proxies:
   skip-cert-verify: true
   sni: gh.01.naiun.bilibili.com
   type: trojan
-- name: 🇨🇭[openproxylist.com] trojan-C...
+- name: 🇺🇸_US_美国->🇨🇭_CH_瑞士
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45553
   server: 90081bb25c.node.tro.cac.cab
   skip-cert-verify: true
   sni: ch.01.naiun.bilibili.com
   type: trojan
-- name: '🇦🇿[openproxylist.com] trojan-A... #2'
+- name: '🇦🇿[openproxylist.com] trojan-A... #1'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 41943
   server: 90081bb25c.node.tro.cac.cab
   skip-cert-verify: true
   sni: az.01.naiun.bilibili.com
   type: trojan
-- name: 🏳[openproxylist.com] trojan-
+- name: 🇺🇸_US_美国->🇩🇪_DE_德国
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 46424
   server: 90081bb25c.node.tro.cac.cab
   skip-cert-verify: true
   sni: de.01.naiun.bilibili.com
   type: trojan
-- name: '🇮🇸[openproxylist.com] trojan-I... #4'
+- name: '🇮🇸[openproxylist.com] trojan-I... #2'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 47909
   server: 90081bb25c.node.tro.cac.cab
@@ -407,7 +358,7 @@ proxies:
   skip-cert-verify: true
   sni: is.01.naiun.bilibili.com
   type: trojan
-- name: '🇩🇪[openproxylist.com] trojan-D... #4'
+- name: 🏳[openproxylist.com] trojan-
   password: s_WEN9lMmufG+qDIsn-4C7JOVAnDdbS3Ui
   port: 443
   server: 172.236.220.10
@@ -453,6 +404,16 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
+  name: 🇺🇸_US_美国
+  network: tcp
+  port: 180
+  server: 82.198.246.37
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
   name: 🇺🇸_US_美国->🇸🇬_SG_新加坡
   network: tcp
   port: 6004
@@ -476,9 +437,15 @@ proxies:
   uuid: 734d7287-27d5-4ed4-ad86-8639669e0607
   ws-opts:
     path: '%2F'
-- name: '🇺🇸[openproxylist.com] vless-US #1'
+- client-fingerprint: firefox
+  name: '🇺🇸[openproxylist.com] vless-US #1'
+  network: tcp
   port: 1005
+  reality-opts:
+    public-key: aEyXUqZ4doy7Qse745h5IKGo31Jc2YEK3QOVaOuPPns
+    short-id: '!!str 4f2087146c1f587a'
   server: newyorkcity.instasup.ir
+  servername: yahoo.com
   tls: false
   type: vless
   uuid: ad356e93-cc14-417d-9f4e-32376d03f5b7
@@ -501,7 +468,12 @@ proxies:
   password: d02e3bb7e6b3333e818d36866d40de6e
   port: 17005
   server: 18.166.223.23
-  sni: www.nintendogames.net
+  type: trojan
+- name: '🇺🇸[openproxylist.com] trojan-U... #2'
+  password: bX_lNHWoW6ywq82mI=KUr+8i__VSp0Hs_E
+  port: 443
+  server: 172.235.63.252
+  sni: 172.235.63.252
   type: trojan
 - alterId: 0
   cipher: auto
