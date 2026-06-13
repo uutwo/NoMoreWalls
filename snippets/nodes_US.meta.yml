@@ -1,50 +1,85 @@
 proxies:
 - client-fingerprint: chrome
-  name: 美国+CloudFlare节点
+  name: 美国+Fastly全球Anycast节点
   network: ws
-  port: 443
-  server: adf.ly
-  servername: rAyAn-007.pArViN.DpDnS.OrG
-  skip-cert-verify: true
-  tls: true
+  port: 80
+  server: 151.101.2.219
+  tls: false
   type: vless
-  uuid: 1679af35-6dd6-4c09-ae3b-18f239217f3e
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
   ws-opts:
     headers:
-      Host: rayan-007.parvin.dpdns.org
-    path: /?ed%3D2560
+      Host: max-gb1.global.ssl.fastly.net
+    path: /
 - alpn:
   - http/1.1
-  name: '美国+CloudFlare节点 #1'
+  name: 美国+CloudFlare节点
   network: ws
   password: humanity
   port: 443
-  server: 104.20.6.134
+  server: 104.18.152.233
   skip-cert-verify: false
   sni: www.calmloud.com
   type: trojan
   ws-opts:
     headers:
       Host: www.calmloud.com
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #2'
+    path: /assignment
+- name: '🇩🇪[openproxylist.com] vless-DE #15'
   network: ws
   port: 80
-  server: 104.17.72.206
+  server: 199.232.197.131
+  servername: max-gb1.global.ssl.fastly.net
+  skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 1de37726-744b-46e1-9101-c926b3402e82
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
   ws-opts:
     headers:
-      Host: v2.v2configlab.workers.dev
+      Host: max-gb1.global.ssl.fastly.net
     path: /
-- name: 美国+V2CROSS.COM
+- name: '美国+CloudFlare节点 #1'
+  network: ws
+  password: humanity
+  port: 443
+  server: www.calmloud.com
+  sni: www.calmloud.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmloud.com
+    path: '%2f%2fassignment'
+- client-fingerprint: chrome
+  name: '🇳🇱[openproxylist.com] vless-NL #7'
   network: tcp
-  port: 28360
-  server: hadi.neticoshop.ilove85.net
+  port: 8443
+  server: cdn3-87.vk-cdnvideo.com
+  servername: cdn3-87.vk-cdnvideo.com
+  tls: true
+  type: vless
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+- name: '美国+Fastly全球Anycast节点 #1'
+  network: ws
+  port: 80
+  server: speedtest.net
   tls: false
   type: vless
-  uuid: 5ade29da-89c1-4546-bac0-542f856aff2d
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /
+- name: '美国+CloudFlare节点 #2'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.97
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: '%2Fassignment'
 - name: '美国+CloudFlare节点 #3'
   network: ws
   password: humanity
@@ -56,56 +91,28 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: '%2Fassignment'
-- name: '🏳[openproxylist.com] vless- #1'
+- name: '🇩🇪[openproxylist.com] vless-DE #11'
   network: ws
   port: 80
-  server: speedtest.net
+  server: 167.82.0.1
+  servername: max-gb1.global.ssl.fastly.net
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
   ws-opts:
     headers:
       Host: max-gb1.global.ssl.fastly.net
     path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #1'
+- name: 🇭🇺[openproxylist.com] vless-HU
   network: tcp
-  port: 7443
-  reality-opts:
-    public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
-    short-id: '!!str d82fb387'
-  server: 167.104.223.68
-  servername: www.microsoft.com
-  tls: false
-  type: vless
-  uuid: 1c0277ad-bb4d-496f-bc0c-40ccee03fca5
-- name: '美国+V2CROSS.COM #2'
-  network: ws
-  port: 80
-  server: 199.232.197.131
-  tls: false
-  type: vless
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /
-- client-fingerprint: chrome
-  name: '美国+CloudFlare节点 #4'
-  network: ws
-  port: 443
-  server: 172.64.146.68
-  servername: octopusss4.com
+  port: 8443
+  server: cdn7-09.vk-cdnvideo.com
+  servername: cdn7-09.vk-cdnvideo.com
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-  ws-opts:
-    headers:
-      Host: octopusss4.com
-    path: /tsghdws
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
 - name: 美国2
   password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
   port: 2056
@@ -244,24 +251,41 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
-- name: 🇺🇸 美国|@ripaojiedian
-  password: d02e3bb7e6b3333e818d36866d40de6e
-  port: 48277
-  server: 18.162.244.255
-  skip-cert-verify: true
-  sni: www.nintendogames.net
+- name: 🇺🇸 美国 CloudFlare节点
+  password: humanity
+  port: 443
+  server: 104.20.6.134
+  skip-cert-verify: false
+  sni: www.multiplydose.com
   type: trojan
-- name: 🇺🇸 美国2|@ripaojiedian
+- name: '🇺🇸 美国 CloudFlare节点 #1'
+  password: humanity
+  port: 443
+  server: 104.16.174.71
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+- name: 美国|@ripaojiedian
+  network: tcp
   password: d02e3bb7e6b3333e818d36866d40de6e
   port: 17005
-  server: 16.162.163.189
+  server: 95.40.55.96
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 🇺🇸 美国3|@ripaojiedian
+- name: 美国2|@ripaojiedian
+  network: tcp
+  password: d02e3bb7e6b3333e818d36866d40de6e
+  port: 17005
+  server: 16.163.144.103
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 美国3|@ripaojiedian
+  network: tcp
   password: BxceQaOe
   port: 17801
-  server: 18.166.30.83
+  server: 43.198.12.196
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -423,7 +447,7 @@ proxies:
   skip-cert-verify: false
   sni: www.logger-guard.click
   type: trojan
-- name: 🇺🇸 美国 CloudFlare节点
+- name: '🇺🇸 美国 CloudFlare节点 #2'
   password: humanity
   port: 443
   server: 104.20.6.134
@@ -491,33 +515,9 @@ proxies:
   skip-cert-verify: true
   sni: ch.01.naiun.bilibili.com
   type: trojan
-- name: 美国|@ripaojiedian
-  network: tcp
-  password: d02e3bb7e6b3333e818d36866d40de6e
-  port: 17005
-  server: 95.40.55.96
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国2|@ripaojiedian
-  network: tcp
-  password: d02e3bb7e6b3333e818d36866d40de6e
-  port: 17005
-  server: 16.163.144.103
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 17801
-  server: 43.198.12.196
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #1'
+  name: 🇸🇪[openproxylist.com] vless-SE
   network: tcp
   port: 443
   reality-opts:
@@ -528,9 +528,15 @@ proxies:
   tls: false
   type: vless
   uuid: 8ea0665e-dee3-418c-8822-1f70f350f2db
-- name: '🇺🇸[openproxylist.com] vless-US #1'
+- client-fingerprint: firefox
+  name: '🇺🇸[openproxylist.com] vless-US #1'
+  network: tcp
   port: 1005
+  reality-opts:
+    public-key: aEyXUqZ4doy7Qse745h5IKGo31Jc2YEK3QOVaOuPPns
+    short-id: '!!str 4f2087146c1f587a'
   server: newyorkcity.instasup.ir
+  servername: yahoo.com
   tls: false
   type: vless
   uuid: ad356e93-cc14-417d-9f4e-32376d03f5b7
@@ -558,6 +564,7 @@ proxies:
   ws-opts:
     path: /
 - name: '🇺🇸[openproxylist.com] vless-US #4'
+  network: ws
   port: 9443
   server: 77.110.127.191
   tls: false
