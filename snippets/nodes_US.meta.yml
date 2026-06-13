@@ -1,43 +1,29 @@
 proxies:
-- client-fingerprint: chrome
-  name: '🏳[openproxylist.com] vless- #13'
-  network: tcp
-  port: 8443
-  server: cdn3-87.vk-cdnvideo.com
-  servername: cdn3-87.vk-cdnvideo.com
-  skip-cert-verify: false
-  tls: true
+- name: 美国+CloudFlare节点
+  network: ws
+  port: 8080
+  server: 104.26.14.16
+  tls: false
   type: vless
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-- name: '🇩🇪[openproxylist.com] vless-DE #16'
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+  ws-opts:
+    headers:
+      Host: tr-cd.sublink-vip2.com
+- name: 美国+V2CROSS.COM
   network: ws
   port: 80
-  server: 151.101.0.1
-  servername: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
+  server: 167.82.0.1
   tls: false
   type: vless
   uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
   ws-opts:
     headers:
       Host: max-gb1.global.ssl.fastly.net
-    path: /
-- name: 美国+CloudFlare节点
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.19.229.21
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: '%2Fassignment'
-- name: '美国+V2CROSS.COM #1'
+    path: '%2F%3FTELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI%3Fed%3D2048'
+- name: '🇩🇪[openproxylist.com] vless-DE #15'
   network: ws
   port: 80
-  server: 167.82.0.1
+  server: 151.101.0.1
   tls: false
   type: vless
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
@@ -48,22 +34,10 @@ proxies:
 - name: '美国+Fastly全球Anycast节点 #1'
   network: ws
   port: 80
-  server: speedtest.net
-  servername: max-gb1.global.ssl.fastly.net
+  server: 151.101.2.219
   tls: false
   type: vless
   uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /
-- name: '美国+Fastly全球Anycast节点 #2'
-  network: ws
-  port: 80
-  server: 151.101.194.219
-  tls: false
-  type: vless
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
   ws-opts:
     headers:
       Host: max-gb1.global.ssl.fastly.net
@@ -322,7 +296,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇺🇸_US_美国->🇮🇸_IS_冰岛
+- name: '🇮🇸[openproxylist.com] trojan-I... #5'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 47909
   server: 90081bb25c.node.tro.cac.cab
@@ -373,9 +347,25 @@ proxies:
   uuid: 5164f226-f833-4e5b-8903-094a3460cd41
   ws-opts:
     path: /5164f226
-- name: '🇺🇸[openproxylist.com] vless-US #1'
+- name: '🇺🇸[openproxylist.com] vless-US #3'
   port: 1005
   server: newyorkcity.instasup.ir
   tls: false
   type: vless
   uuid: ad356e93-cc14-417d-9f4e-32376d03f5b7
+- name: '🇺🇸[openproxylist.com] vless-US #4'
+  network: ws
+  port: 55380
+  server: 172.86.109.206
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 5e1f8cb7-5509-43c9-a417-1c65c0df5959
+  ws-opts:
+    path: /
+- name: '🇺🇸[openproxylist.com] vless-US #5'
+  port: 58578
+  server: 54.184.242.113
+  tls: false
+  type: vless
+  uuid: a16bb742-7c22-4be2-878c-78d49b6bcb03
