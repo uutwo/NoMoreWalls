@@ -1,22 +1,20 @@
 proxies:
 - client-fingerprint: chrome
-  name: 美国+Fastly全球Anycast节点
-  network: ws
-  port: 80
-  server: 151.101.66.219
-  tls: false
-  type: vless
-  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /
-- name: '🇩🇪[openproxylist.com] vless-DE #10'
-  network: ws
-  port: 80
-  server: speedtest.net
-  servername: max-gb1.global.ssl.fastly.net
+  name: '🏳[openproxylist.com] vless- #13'
+  network: tcp
+  port: 8443
+  server: cdn3-87.vk-cdnvideo.com
+  servername: cdn3-87.vk-cdnvideo.com
   skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+- name: '🇩🇪[openproxylist.com] vless-DE #16'
+  network: ws
+  port: 80
+  server: 151.101.0.1
+  servername: max-gb1.global.ssl.fastly.net
+  skip-cert-verify: true
   tls: false
   type: vless
   uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
@@ -26,30 +24,50 @@ proxies:
     path: /
 - name: 美国+CloudFlare节点
   network: ws
-  port: 2087
-  server: 172.64.145.166
-  servername: fgnix832fx.fx6hsv0.ccwu.cc
-  tls: true
-  type: vless
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  ws-opts:
-    headers:
-      Host: fgnix832fx.fx6hsv0.ccwu.cc
-    path: '%2F'
-- alpn:
-  - http/1.1
-  name: '美国+CloudFlare节点 #1'
-  network: ws
   password: humanity
   port: 443
-  server: 104.17.121.9
-  skip-cert-verify: true
+  server: 104.19.229.21
+  skip-cert-verify: false
   sni: www.calmlunch.com
   type: trojan
   ws-opts:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
+- name: '美国+V2CROSS.COM #1'
+  network: ws
+  port: 80
+  server: 167.82.0.1
+  tls: false
+  type: vless
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /
+- name: '美国+Fastly全球Anycast节点 #1'
+  network: ws
+  port: 80
+  server: speedtest.net
+  servername: max-gb1.global.ssl.fastly.net
+  tls: false
+  type: vless
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /
+- name: '美国+Fastly全球Anycast节点 #2'
+  network: ws
+  port: 80
+  server: 151.101.194.219
+  tls: false
+  type: vless
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /
 - name: 美国2
   password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
   port: 2056
@@ -191,16 +209,16 @@ proxies:
 - name: 🇺🇸 美国 CloudFlare节点
   password: humanity
   port: 443
-  server: 104.20.6.134
-  skip-cert-verify: false
-  sni: www.multiplydose.com
+  server: 104.17.121.9
+  skip-cert-verify: true
+  sni: www.calmlunch.com
   type: trojan
 - name: '🇺🇸 美国 CloudFlare节点 #1'
   password: humanity
   port: 443
-  server: 104.16.174.71
+  server: 104.20.6.134
   skip-cert-verify: false
-  sni: www.ignitelimit.com
+  sni: www.calmloud.com
   type: trojan
 - name: 美国|@ripaojiedian
   network: tcp
@@ -280,123 +298,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 5f49c80e-7770-4bd1-9c86-43c2068a3a26
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #10'
-  password: humanity
-  port: 443
-  server: 165.215.250.14
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #18'
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 41943
-  server: 155.117.198.85
-  skip-cert-verify: true
-  sni: az.01.naiun.bilibili.com
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #17'
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45553
-  server: 155.117.198.85
-  skip-cert-verify: true
-  sni: ch.01.naiun.bilibili.com
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #13'
-  password: humanity
-  port: 443
-  server: 165.215.250.14
-  skip-cert-verify: true
-  sni: www.creationlong.org
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #16'
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 46424
-  server: 155.117.198.85
-  skip-cert-verify: true
-  sni: de.01.naiun.bilibili.com
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #19'
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 47909
-  server: 103.177.136.45
-  skip-cert-verify: true
-  sni: is.01.naiun.bilibili.com
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #20'
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 47909
-  server: 103.177.136.42
-  skip-cert-verify: true
-  sni: is.01.naiun.bilibili.com
-  type: trojan
-- name: '🇫🇷[openproxylist.com] trojan-F... #3'
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45619
-  server: 103.177.136.42
-  skip-cert-verify: true
-  sni: fr.01.naiun.bilibili.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #24'
-  network: ws
-  port: '443'
-  server: 104.16.0.0
-  tls: true
-  type: vmess
-  uuid: 95d2c461-61f5-4dae-bc74-4d10ce1f6236
-  ws-opts:
-    headers:
-      Host: gongyilm.dpdns.org
-    path: /ws-gongyi
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #34'
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 41943
-  server: 103.177.136.45
-  skip-cert-verify: true
-  sni: az.01.naiun.bilibili.com
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #35'
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 41943
-  server: 103.177.136.42
-  skip-cert-verify: true
-  sni: az.01.naiun.bilibili.com
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #36'
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 48697
-  server: 103.177.136.42
-  skip-cert-verify: true
-  sni: gh.01.naiun.bilibili.com
-  type: trojan
-- name: 🇺🇸 美国 Akamai科技公司CDN网络节点
-  password: s_WEN9lMmufG+qDIsn-4C7JOVAnDdbS3Ui
-  port: 443
-  server: 172.236.220.10
-  skip-cert-verify: false
-  sni: 172.236.220.10
-  type: trojan
-- name: 🇺🇸 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有...
-  password: s.wRSE4ANZp4=4h.=B_9Qbetw6XUc0V1SV
-  port: 443
-  server: 130.94.107.171
-  skip-cert-verify: false
-  sni: www.logger-guard.click
-  type: trojan
-- name: '🇺🇸 美国 CloudFlare节点 #2'
-  password: humanity
-  port: 443
-  server: 104.20.6.134
-  skip-cert-verify: false
-  sni: www.calmloud.com
-  type: trojan
-- name: 🇺🇸 美国 Akamai科技公司CDN网络节点 2
-  password: r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ
-  port: 443
-  server: 172.238.120.124
-  skip-cert-verify: false
-  type: trojan
 - name: 🇭🇰_HK_中国香港->🇺🇸_US_美国
   password: BxceQaOe
   port: 17801
@@ -452,34 +353,29 @@ proxies:
   skip-cert-verify: true
   sni: ch.01.naiun.bilibili.com
   type: trojan
-- client-fingerprint: firefox
-  name: '🇺🇸[openproxylist.com] vless-US #1'
-  network: tcp
+- name: 🏳[openproxylist.com] vless-
+  port: 8443
+  server: 185.184.121.101
+  tls: false
+  type: vless
+  uuid: c35050ce-01ab-45a9-91b8-54cec637d0a8
+  ws-opts:
+    path: '%2Fudfyfws'
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸[openproxylist.com] vmess-US
+  network: ws
+  port: '44855'
+  server: 45.63.75.211
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5164f226-f833-4e5b-8903-094a3460cd41
+  ws-opts:
+    path: /5164f226
+- name: '🇺🇸[openproxylist.com] vless-US #1'
   port: 1005
-  reality-opts:
-    public-key: aEyXUqZ4doy7Qse745h5IKGo31Jc2YEK3QOVaOuPPns
-    short-id: '!!str 4f2087146c1f587a'
   server: newyorkcity.instasup.ir
-  servername: yahoo.com
   tls: false
   type: vless
   uuid: ad356e93-cc14-417d-9f4e-32376d03f5b7
-- name: '🇺🇸[openproxylist.com] vless-US #2'
-  network: ws
-  port: 55380
-  server: 172.86.109.206
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 5e1f8cb7-5509-43c9-a417-1c65c0df5959
-  ws-opts:
-    path: /
-- name: '🇺🇸[openproxylist.com] vless-US #3'
-  network: ws
-  port: 9443
-  server: 77.110.127.191
-  tls: false
-  type: vless
-  uuid: e0de62c9-f317-4275-b7e5-8da7b7fa9bc6
-  ws-opts:
-    path: '%2Fpourya'
