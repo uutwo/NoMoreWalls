@@ -1,28 +1,4 @@
 proxies:
-- name: 日本+东京Fastly节点
-  network: ws
-  port: 443
-  server: 151.101.109.223
-  servername: default.ssl.fastly.net
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 060cd76b-72e1-478f-b6c9-8e6d2bdc5517
-  ws-opts:
-    headers:
-      Host: bazaryabab.global.ssl.fastly.net
-    path: /
-- name: '日本+东京Fastly节点 #1'
-  network: ws
-  port: 80
-  server: 151.101.109.223
-  tls: false
-  type: vless
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /
 - name: JP
   password: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61
   port: 13778
@@ -30,16 +6,14 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: 日本|@ripaojiedian
-  network: tcp
+- name: 🇯🇵 日本|@ripaojiedian
   password: BxceQaOe
   port: 47655
   server: 18.183.150.2
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 日本3|@ripaojiedian
-  network: tcp
+- name: 🇯🇵 日本3|@ripaojiedian
   password: d02e3bb7e6b3333e818d36866d40de6e
   port: 5701
   server: 18.162.244.255
@@ -76,65 +50,96 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇯🇵[openproxylist.com] vless-JP
+- name: 日本|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 5408
+  server: 18.181.230.17
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 日本2|@ripaojiedian
+  network: tcp
+  password: d02e3bb7e6b3333e818d36866d40de6e
+  port: 55973
+  server: 95.40.55.96
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 日本3|@ripaojiedian
+  network: tcp
+  password: d02e3bb7e6b3333e818d36866d40de6e
+  port: 5701
+  server: 16.163.97.86
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵[openproxylist.com] vless-JP
+  network: tcp
+  port: 5454
+  reality-opts:
+    public-key: 7Mb18pl7fH3NvhVevIVTgRdPlAorUucOWMlUaTrDV0o
+    short-id: '!!str 4265cc8365'
+  server: 1.sdwan.realm-sync.com
+  servername: swcdn.apple.com
+  tls: false
+  type: vless
+  uuid: 8faf6e38-0531-4d63-91f0-2aba5b9ff864
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇯🇵[openproxylist.com] vless-JP #1'
+  network: tcp
   port: 38388
+  reality-opts:
+    public-key: xHaPe5SLprSSqGccSor5d3tCRuwyowBwFeYrVXoSz3w
+    short-id: '!!str 6ba85179e30d4fc2'
   server: 47.79.149.248
+  servername: itunes.apple.com
+  skip-cert-verify: true
   tls: false
   type: vless
   uuid: 45c8d20e-0222-4b16-8d21-37318456b980
-- name: '🇯🇵[openproxylist.com] vless-JP #1'
+- name: '🇯🇵[openproxylist.com] vless-JP #2'
   port: 443
   server: 31.76.91.28
   tls: false
   type: vless
   uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
-- name: '🇯🇵[openproxylist.com] vless-JP #2'
+- name: '🇯🇵[openproxylist.com] vless-JP #3'
   port: 26902
   server: 3.112.19.64
   tls: false
   type: vless
   uuid: 9cb72288-da5a-40a4-b856-4557f9849016
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #3'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs
-    short-id: '!!str 7a3f9e2b1c8d4f6a'
-  server: 31.76.91.18
-  servername: jp.s3-cloud.org
-  tls: false
-  type: vless
-  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
 - name: '🇯🇵[openproxylist.com] vless-JP #4'
   port: 443
-  server: 31.76.91.19
+  server: 31.76.91.18
   tls: false
   type: vless
   uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
 - name: '🇯🇵[openproxylist.com] vless-JP #5'
   port: 443
+  server: 31.76.91.19
+  tls: false
+  type: vless
+  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
+- name: '🇯🇵[openproxylist.com] vless-JP #6'
+  port: 443
   server: 31.76.91.26
   tls: false
   type: vless
   uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #6'
-  network: tcp
+- name: '🇯🇵[openproxylist.com] vless-JP #7'
   port: 12524
-  reality-opts:
-    public-key: snK07S_XyboGtyPOcmLFn4aNuxaRwHBG8w8JH2K0RS4
-    short-id: '!!str 2895e9532d0c'
   server: 57.180.22.236
-  servername: www.intel.com
   tls: false
   type: vless
   uuid: c8a930cb-7a41-403f-922a-0b2148a75e05
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #7'
+  name: '🇯🇵[openproxylist.com] vless-JP #8'
   network: tcp
   port: 26658
   reality-opts:
@@ -145,7 +150,7 @@ proxies:
   tls: false
   type: vless
   uuid: a5ac4482-917b-4739-b199-2602b0d685c1
-- name: '🇯🇵[openproxylist.com] vless-JP #8'
+- name: '🇯🇵[openproxylist.com] vless-JP #9'
   port: 443
   server: 31.76.91.24
   tls: false
@@ -153,7 +158,7 @@ proxies:
   uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #9'
+  name: '🇯🇵[openproxylist.com] vless-JP #10'
   network: tcp
   port: 59826
   reality-opts:
@@ -165,7 +170,7 @@ proxies:
   tls: false
   type: vless
   uuid: aa24026d-9542-4357-8625-3f04653fc4bd
-- name: '🇯🇵[openproxylist.com] vless-JP #10'
+- name: '🇯🇵[openproxylist.com] vless-JP #11'
   port: 443
   server: 31.76.91.12
   tls: false
