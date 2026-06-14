@@ -1,4 +1,9 @@
 proxies:
+- name: 🇫🇷[openproxylist.com] trojan-F...
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.45.49.57
+  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇫🇷[openproxylist.com] vless-FR
@@ -26,17 +31,23 @@ proxies:
     headers:
       Host: fr5.niekotin.de
     path: /vmess
-- name: 🇫🇷[openproxylist.com] trojan-F...
+- name: '🇫🇷[openproxylist.com] trojan-F... #1'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45619
-  server: 155.117.198.3
+  server: 155.117.198.83
   sni: fr.01.naiun.bilibili.com
   type: trojan
-- name: '🇫🇷[openproxylist.com] vless-FR #1'
+- client-fingerprint: chrome
+  name: '🇫🇷[openproxylist.com] vless-FR #1'
+  network: ws
   port: 443
   server: 149.202.58.99
-  tls: false
+  servername: bab-6.site
+  skip-cert-verify: false
+  tls: true
   type: vless
   uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   ws-opts:
+    headers:
+      Host: bab-6.site
     path: '%2Fvws%2F'
