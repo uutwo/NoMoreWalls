@@ -89,12 +89,25 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- name: 英国+V2CROSS.COM
+- name: 🇬🇧 英国 V2CROSS.COM
   password: BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL
   port: 443
   server: 185.126.236.44
+  skip-cert-verify: false
   sni: www.mesaly.click
   type: trojan
+- name: 俄罗斯+V2CROSS.COM
+  network: ws
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  port: 8443
+  server: 46.8.226.197
+  skip-cert-verify: false
+  sni: tjsp.hhxaf.cc.cd
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tjsp.hhxaf.cc.cd
+    path: '%2F'
 - alterId: 0
   cipher: auto
   name: 🇩🇪 VMESS-未知>德国-NF解锁印度地区非自制剧-Ch...
@@ -290,40 +303,12 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
-- name: 🇺🇸 美国 V2CROSS.COM
-  password: humanity
-  port: 443
-  server: 199.181.197.169
-  skip-cert-verify: true
-  sni: www.calmloud.com
-  type: trojan
-- name: 🇧🇷 巴西圣保罗 CloudFlare节点
-  password: humanity
-  port: 443
-  server: 188.114.98.0
+- name: 🇮🇳 IN印度(mibei77.com 米贝节点分享)
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  port: 8443
+  server: 46.8.226.197
   skip-cert-verify: false
-  sni: www.creationlong.org
-  type: trojan
-- name: 🇺🇸 美国 CloudFlare节点
-  password: humanity
-  port: 443
-  server: www.creationlong.org
-  skip-cert-verify: false
-  sni: www.creationlong.org
-  type: trojan
-- name: 🇷🇴 罗马尼亚 V2CROSS.COM
-  password: hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd
-  port: 443
-  server: 185.137.157.254
-  skip-cert-verify: false
-  sni: www.directorypipeline.click
-  type: trojan
-- name: '🇺🇸 美国 CloudFlare节点 #1'
-  password: humanity
-  port: 443
-  server: 104.16.174.12
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
+  sni: tjsp.hhxaf.cc.cd
   type: trojan
 - alterId: 2
   cipher: auto
@@ -654,7 +639,7 @@ proxies:
   skip-cert-verify: true
   sni: az.01.naiun.bilibili.com
   type: trojan
-- name: '🇦🇿[openproxylist.com] trojan-A... #3'
+- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #7'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 41943
   server: 103.177.136.45
@@ -675,13 +660,6 @@ proxies:
   skip-cert-verify: false
   sni: tjsp.hhxaf.cc.cd
   type: trojan
-- name: 🇮🇳 IN印度(mibei77.com 米贝节点分享)
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  port: 8443
-  server: 46.8.226.197
-  skip-cert-verify: false
-  sni: tjsp.hhxaf.cc.cd
-  type: trojan
 - name: 🇸🇬 SG新加坡(mibei77.com 米贝节点分享)
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   port: 443
@@ -696,7 +674,7 @@ proxies:
   skip-cert-verify: true
   sni: www.calmlunch.com
   type: trojan
-- name: 🇩🇪[openproxylist.com] trojan-D...
+- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #30'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 46424
   server: 103.177.136.42
@@ -786,7 +764,7 @@ proxies:
   skip-cert-verify: true
   sni: gh.01.naiun.bilibili.com
   type: trojan
-- name: 🇨🇭[openproxylist.com] trojan-C...
+- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #29'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45553
   server: 103.177.136.42
@@ -902,7 +880,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '🇨🇭[openproxylist.com] trojan-C... #4'
+- name: 🇺🇸_US_美国->🇨🇭_CH_瑞士
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45553
   server: 90081bb25c.node.tro.cac.cab
@@ -937,16 +915,38 @@ proxies:
     headers:
       Host: 47.244.120.197
     path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪[openproxylist.com] vmess-DE
+  network: tcp
+  port: '1020'
+  server: nlt.reata.ir
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6244c41a-f4c1-4733-a654-c38f7729b13c
+- name: 🇨🇭[openproxylist.com] trojan-C...
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 45553
+  server: 155.117.198.87
+  sni: ch.01.naiun.bilibili.com
+  type: trojan
+- name: 🇫🇷[openproxylist.com] trojan-F...
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 45619
+  server: 188.253.12.90
+  sni: fr.01.naiun.bilibili.com
+  type: trojan
 - name: '🇨🇭[openproxylist.com] trojan-C... #1'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45553
-  server: 155.117.198.83
+  server: 155.117.198.85
   sni: ch.01.naiun.bilibili.com
   type: trojan
 - name: 🇦🇿[openproxylist.com] trojan-A...
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 41943
-  server: 188.253.12.90
+  server: 188.253.12.96
   sni: az.01.naiun.bilibili.com
   type: trojan
 - alterId: 0
@@ -965,7 +965,7 @@ proxies:
     path: /speedtest
 - alterId: 0
   cipher: auto
-  name: 🇯🇵[openproxylist.com] vmess-JP
+  name: 🏳[openproxylist.com] vmess-
   network: ws
   port: '443'
   server: 8.211.149.30
@@ -979,14 +979,27 @@ proxies:
 - name: '🇫🇷[openproxylist.com] trojan-F... #1'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45619
-  server: 188.253.12.93
+  server: 188.253.12.98
   sni: fr.01.naiun.bilibili.com
   type: trojan
+- name: 🇬🇧[openproxylist.com] trojan-G...
+  password: hF7uSJfeBPtSNXKtuYvTRNaBdGkkXHpKJfLRfbpaDWovomSL
+  port: 443
+  server: 3.8.238.251
+  type: trojan
+  ws-opts:
+    path: '%2Fuk1-uk1-gcjtze'
 - name: '🇨🇭[openproxylist.com] trojan-C... #2'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45553
-  server: 103.177.136.41
+  server: 188.253.12.90
   sni: ch.01.naiun.bilibili.com
+  type: trojan
+- name: 🇩🇪[openproxylist.com] trojan-D...
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 46424
+  server: 188.253.12.90
+  sni: de.01.naiun.bilibili.com
   type: trojan
 - name: 🇸🇬[openproxylist.com] trojan-S...
   network: ws
@@ -1000,19 +1013,25 @@ proxies:
     headers:
       Host: node1.bw8848.org
     path: /node1-node1-5sczzi
-- name: '🇦🇿[openproxylist.com] trojan-A... #5'
+- name: '🇦🇿[openproxylist.com] trojan-A... #4'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 41943
   server: 188.253.12.99
   sni: az.01.naiun.bilibili.com
   type: trojan
-- name: '🇨🇭[openproxylist.com] trojan-C... #3'
+- name: '🏳[openproxylist.com] trojan- #1'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45553
-  server: 155.117.198.87
+  server: 155.117.198.83
   sni: ch.01.naiun.bilibili.com
   type: trojan
-- name: '🇦🇿[openproxylist.com] trojan-A... #4'
+- name: '🇦🇿[openproxylist.com] trojan-A... #2'
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 41943
+  server: 103.177.136.44
+  sni: az.01.naiun.bilibili.com
+  type: trojan
+- name: '🇦🇿[openproxylist.com] trojan-A... #3'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 41943
   server: 155.117.198.87
@@ -1024,29 +1043,35 @@ proxies:
   server: 155.117.198.82
   sni: is.01.naiun.bilibili.com
   type: trojan
-- name: '🇫🇷[openproxylist.com] trojan-F... #3'
+- name: '🇩🇪[openproxylist.com] trojan-D... #1'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45619
-  server: 155.117.198.3
-  sni: fr.01.naiun.bilibili.com
+  port: 46424
+  server: 188.253.12.99
+  sni: de.01.naiun.bilibili.com
   type: trojan
-- name: '🇫🇷[openproxylist.com] trojan-F... #4'
+- name: '🇫🇷[openproxylist.com] trojan-F... #3'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45619
   server: 90081bb25c.node.tro.cac.cab
   sni: fr.01.naiun.bilibili.com
   type: trojan
-- name: '🇨🇭[openproxylist.com] trojan-C... #5'
+- name: '🇩🇪[openproxylist.com] trojan-D... #2'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45553
-  server: 155.117.198.85
-  sni: ch.01.naiun.bilibili.com
+  port: 46424
+  server: 155.117.198.83
+  sni: de.01.naiun.bilibili.com
   type: trojan
-- name: '🇩🇪[openproxylist.com] trojan-D... #1'
+- name: 🇭🇰[openproxylist.com] trojan-H...
+  password: BxceQaOe
+  port: 443
+  server: 119.246.1.143
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: '🇩🇪[openproxylist.com] trojan-D... #3'
   network: tcp
   password: LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu
   port: 9443
-  server: 94.103.173.70
+  server: de-1.hysteria.ltd
   skip-cert-verify: false
   sni: de-1.hysteria.ltd
   type: trojan
