@@ -1,40 +1,27 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇫🇷[openproxylist.com] vless-FR
-  network: tcp
+- name: 🇫🇷[openproxylist.com] vless-FR
   port: 8443
-  reality-opts:
-    public-key: 1oUeBtHH4DskTM_jCh-6enWRkFMDX9l1OU5kWYl4kxA
-    short-id: '!!str f34818a561dfd1fe'
-  server: fr-gt-01.com
-  servername: storage.yandex.net
+  server: 45.196.224.110
   tls: false
   type: vless
-  uuid: a6349c3f-5234-4821-80b4-d99b33f0924d
-- alterId: 0
-  cipher: auto
-  name: 🇫🇷[openproxylist.com] vmess-FR
-  network: ws
-  port: '80'
-  server: 51.254.133.152
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ac8bcf5e-bb58-4e8b-b4e4-5fdea010a6c6
-  ws-opts:
-    headers:
-      Host: fr5.niekotin.de
-    path: /vmess
+  uuid: ad7b2fde-d820-4dfe-be66-09fde32ddf61
 - name: 🇫🇷[openproxylist.com] trojan-F...
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45619
-  server: 155.117.198.87
+  server: 155.117.198.86
   sni: fr.01.naiun.bilibili.com
   type: trojan
-- name: '🇫🇷[openproxylist.com] trojan-F... #1'
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45619
-  server: 188.253.12.92
-  sni: fr.01.naiun.bilibili.com
-  type: trojan
+- client-fingerprint: chrome
+  name: '🇫🇷[openproxylist.com] vless-FR #1'
+  network: ws
+  port: 443
+  server: 149.202.58.99
+  servername: bab-6.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  ws-opts:
+    headers:
+      Host: bab-6.site
+    path: '%2Fvws%2F'
