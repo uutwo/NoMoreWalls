@@ -53,12 +53,17 @@ proxies:
   type: vless
   uuid: 55d61055-1a7f-4bc5-aca2-4ee78c738b60
 - name: '🇸🇬[openproxylist.com] vless-SG #1'
+  network: ws
   port: 443
   server: python-graysongon.wasmer.app
-  tls: false
+  servername: python-graysongon.wasmer.app
+  skip-cert-verify: false
+  tls: true
   type: vless
   uuid: 7bd180e8-1142-4387-93f5-03e8d750a896
   ws-opts:
+    headers:
+      Host: python-graysongon.wasmer.app
     path: '%2F7bd180e8'
 - name: 🇸🇬[openproxylist.com] trojan-S...
   network: ws
