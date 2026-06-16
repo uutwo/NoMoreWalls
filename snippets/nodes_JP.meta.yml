@@ -30,6 +30,13 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
+- name: 日本節點丨yoyapai.com\r
+  password: 825929f4-c702-35ce-9124-00d3f95b8c32
+  port: 34470
+  server: adak.sonofthewinds.com
+  skip-cert-verify: true
+  sni: gj1.sonofthewinds.com
+  type: trojan
 - alterId: 2
   cipher: auto
   name: 🇲🇾_MY_马来西亚->🇯🇵_JP_日本
@@ -53,9 +60,17 @@ proxies:
     headers:
       Host: polartime.link
     path: /ws/
-- name: 🇯🇵[openproxylist.com] vless-JP
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵[openproxylist.com] vless-JP
+  network: tcp
   port: 38388
+  reality-opts:
+    public-key: xHaPe5SLprSSqGccSor5d3tCRuwyowBwFeYrVXoSz3w
+    short-id: '!!str 6ba85179e30d4fc2'
   server: 47.79.149.248
+  servername: itunes.apple.com
+  skip-cert-verify: true
   tls: false
   type: vless
   uuid: 45c8d20e-0222-4b16-8d21-37318456b980
@@ -93,9 +108,16 @@ proxies:
   tls: false
   type: vless
   uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
-- name: '🇯🇵[openproxylist.com] vless-JP #4'
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: '🇯🇵[openproxylist.com] vless-JP #4'
+  network: tcp
   port: 443
+  reality-opts:
+    public-key: QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs
+    short-id: '!!str 7a3f9e2b1c8d4f6a'
   server: 31.76.91.19
+  servername: jp.s3-cloud.org
   tls: false
   type: vless
   uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
