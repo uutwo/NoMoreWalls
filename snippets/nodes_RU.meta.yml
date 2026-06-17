@@ -1,15 +1,39 @@
 proxies:
+- name: 俄罗斯+V2CROSS.COM
+  network: ws
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  port: 8443
+  server: 46.8.226.197
+  sni: tjsp.hhxaf.cc.cd
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tjsp.hhxaf.cc.cd
+    path: /
 - alterId: 0
   cipher: auto
-  name: 🇳🇱 NL荷兰(mibei77.com 米贝节点分享)
+  name: 俄羅斯
   network: ws
-  port: '443'
+  port: 443
   server: renderer-stream-1-411.mirra.now
   servername: ''
-  tls: true
+  tls: false
   type: vmess
   uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
   ws-opts:
     headers:
       Host: renderer-stream-1-411.mirra.now
     path: /api/v1/gpu-stream/socket
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇷🇺[openproxylist.com] vless-RU
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: fTr_LAmKQdYpAhijlApm1kMjS8_11Y9HMKconlHmZWE
+    short-id: '!!str e8d2a1b4c39f8877'
+  server: 37.77.104.182
+  servername: www.cloudflare.com
+  tls: false
+  type: vless
+  uuid: abd880a5-d08f-4dfe-b8f5-d4b61892163a
