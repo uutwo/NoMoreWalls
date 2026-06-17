@@ -1,4 +1,13 @@
 proxies:
+- flow: ''
+  name: 英国+V2CROSS.COM
+  network: tcp
+  port: 8443
+  server: 89.222.123.117
+  servername: cdn9-33.vk-cdnvideo.com
+  tls: true
+  type: vless
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
 - alterId: 0
   cipher: auto
   name: '🇺🇸_US_美国 #1'
@@ -22,18 +31,15 @@ proxies:
   tls: false
   type: vless
   uuid: d205ae68-0819-473c-b425-6c5947ac2f8d
-- name: '🇬🇧[openproxylist.com] vless-GB #1'
-  port: 443
-  server: 45.130.125.229
-  tls: false
-  type: vless
-  uuid: c35050ce-01ab-45a9-91b8-54cec637d0a8
-  ws-opts:
-    path: '%2Fudfyfws'
 - name: 🇬🇧[openproxylist.com] trojan-G...
+  network: ws
   password: hF7uSJfeBPtSNXKtuYvTRNaBdGkkXHpKJfLRfbpaDWovomSL
   port: 443
   server: 3.8.238.251
+  skip-cert-verify: false
+  sni: uk1.bw8848.org
   type: trojan
   ws-opts:
+    headers:
+      Host: uk1.bw8848.org
     path: '%2Fuk1-uk1-gcjtze'
