@@ -1,16 +1,4 @@
 proxies:
-- alpn:
-  - http/1.1
-  name: 日本+东京Amazon数据中心
-  network: ws
-  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
-  port: 443
-  server: 35.72.81.216
-  skip-cert-verify: false
-  sni: jy.hhllfly.kdns.fr
-  type: trojan
-  ws-opts:
-    path: '%2F%3Fed%3D2048'
 - name: JP
   password: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61
   port: 13778
@@ -18,44 +6,6 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: 🇯🇵 日本|@ripaojiedian
-  password: BxceQaOe
-  port: 4099
-  server: 18.181.78.148
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: 🇯🇵 日本2|@ripaojiedian
-  password: e0195c73018d597b1c2f0ea89d8676ae
-  port: 37973
-  server: 35.75.4.144
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 🇯🇵 日本3|@ripaojiedian
-  password: e0195c73018d597b1c2f0ea89d8676ae
-  port: 5701
-  server: 95.40.125.63
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 日本節點丨yoyapai.com\r
-  password: 825929f4-c702-35ce-9124-00d3f95b8c32
-  port: 34470
-  server: adak.sonofthewinds.com
-  skip-cert-verify: true
-  sni: gj1.sonofthewinds.com
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: 🇲🇾_MY_马来西亚->🇯🇵_JP_日本
-  network: tcp
-  port: 30806
-  server: v6.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: 日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -80,13 +30,35 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
+- name: 日本節點丨yoyapai.com\r
+  password: 825929f4-c702-35ce-9124-00d3f95b8c32
+  port: 34470
+  server: adak.sonofthewinds.com
+  skip-cert-verify: true
+  sni: gj1.sonofthewinds.com
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: 🇲🇾_MY_马来西亚->🇯🇵_JP_日本
+  network: tcp
+  port: 30806
+  server: v6.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 🇯🇵[openproxylist.com] trojan-J...
+  password: s75Gtmy56sptTA39hmBH965YYx4ZgfQR_I
+  port: 443
+  server: 103.125.219.70
+  sni: 103.125.219.70
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇯🇵[openproxylist.com] vmess-JP
   network: ws
-  port: 443
+  port: '443'
   server: 8.211.149.30
-  servername: ''
   tls: true
   type: vmess
   uuid: bc82b8e0-026b-4b7e-8fa7-69977b6d9dc0
@@ -94,9 +66,17 @@ proxies:
     headers:
       Host: polartime.link
     path: /ws/
-- name: 🇯🇵[openproxylist.com] vless-JP
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵[openproxylist.com] vless-JP
+  network: tcp
   port: 38388
+  reality-opts:
+    public-key: xHaPe5SLprSSqGccSor5d3tCRuwyowBwFeYrVXoSz3w
+    short-id: '!!str 6ba85179e30d4fc2'
   server: 47.79.149.248
+  servername: itunes.apple.com
+  skip-cert-verify: true
   tls: false
   type: vless
   uuid: 45c8d20e-0222-4b16-8d21-37318456b980
@@ -113,17 +93,9 @@ proxies:
   tls: false
   type: vless
   uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
-- name: '🇯🇵[openproxylist.com] vless-JP #2'
-  network: tcp
-  port: 47878
-  server: 152.69.195.67
-  servername: 152.69.195.67
-  tls: false
-  type: vless
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #3'
+  name: '🇯🇵[openproxylist.com] vless-JP #2'
   network: tcp
   port: 443
   reality-opts:
@@ -136,7 +108,7 @@ proxies:
   uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #4'
+  name: '🇯🇵[openproxylist.com] vless-JP #3'
   network: tcp
   port: 443
   reality-opts:
@@ -149,7 +121,7 @@ proxies:
   uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #5'
+  name: '🇯🇵[openproxylist.com] vless-JP #4'
   network: tcp
   port: 443
   reality-opts:
@@ -162,7 +134,7 @@ proxies:
   uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #6'
+  name: '🇯🇵[openproxylist.com] vless-JP #5'
   network: tcp
   port: 12524
   reality-opts:
@@ -175,7 +147,7 @@ proxies:
   uuid: c8a930cb-7a41-403f-922a-0b2148a75e05
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #7'
+  name: '🇯🇵[openproxylist.com] vless-JP #6'
   network: tcp
   port: 443
   reality-opts:
