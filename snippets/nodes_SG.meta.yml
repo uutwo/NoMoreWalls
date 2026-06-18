@@ -40,18 +40,28 @@ proxies:
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: 🇸🇬[openproxylist.com] vless-SG
+  network: ws
   port: 2096
   server: 188.114.97.6
-  tls: false
+  servername: group.shalana.xyz
+  skip-cert-verify: false
+  tls: true
   type: vless
   uuid: 70252937-5c61-4fb0-8656-d1a16261b795
   ws-opts:
+    headers:
+      Host: group.shalana.xyz
     path: '%2Fshalana'
 - name: '🇸🇬[openproxylist.com] vless-SG #1'
+  network: ws
   port: 443
   server: python-graysongon.wasmer.app
-  tls: false
+  servername: python-graysongon.wasmer.app
+  skip-cert-verify: false
+  tls: true
   type: vless
   uuid: 7bd180e8-1142-4387-93f5-03e8d750a896
   ws-opts:
+    headers:
+      Host: python-graysongon.wasmer.app
     path: '%2F7bd180e8'
