@@ -1,28 +1,6 @@
 proxies:
 - name: 美国+V2CROSS.COM
   network: tcp
-  port: 8443
-  server: 143.244.45.50
-  servername: ams1.fromblancwithlove.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-- alpn:
-  - h3
-  - h2
-  name: 美国+CloudFlare节点
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.54
-  skip-cert-verify: false
-  sni: www.multiplydose.com
-  type: trojan
-  ws-opts:
-    path: /assignment
-- name: '美国+V2CROSS.COM #1'
-  network: tcp
   port: 13512
   server: 167.233.141.199
   tls: false
@@ -32,7 +10,7 @@ proxies:
     headers:
       Host: http://snap.io
     path: /news/34343
-- name: '美国+V2CROSS.COM #2'
+- name: '美国+V2CROSS.COM #1'
   network: tcp
   port: 8443
   server: 143.244.45.53
@@ -41,10 +19,17 @@ proxies:
   tls: true
   type: vless
   uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-- name: '美国+V2CROSS.COM #3'
+- name: 🇬🇧[openproxylist.com] trojan-G...
+  network: tcp
+  password: PoSQBShqwNV9wKX4WHxDoLxbvp4eQYnD8v
+  port: 443
+  server: 130.94.78.17
+  skip-cert-verify: false
+  type: trojan
+- name: '🇸🇪[openproxylist.com] vless-SE #1'
   network: tcp
   port: 8443
-  server: 45.159.12.196
+  server: 45.159.12.25
   servername: ams1.fromblancwithlove.com
   skip-cert-verify: false
   tls: true
@@ -188,41 +173,6 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
-- name: 🇺🇸 美国 V2CROSS.COM
-  password: humanity
-  port: 443
-  server: 199.181.197.212
-  skip-cert-verify: false
-  sni: www.calmloud.com
-  type: trojan
-- name: 🇺🇸 美国 CloudFlare节点
-  password: humanity
-  port: 443
-  server: 104.16.71.213
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  type: trojan
-- name: '🇺🇸 美国 CloudFlare节点 #1'
-  password: humanity
-  port: 443
-  server: 172.64.147.223
-  skip-cert-verify: false
-  sni: www.multiplydose.com
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #1'
-  password: humanity
-  port: 443
-  server: 165.215.250.14
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
-- name: 🇺🇸 美国 得克萨斯州达拉斯Cloudflare Warp节...
-  password: humanity
-  port: 443
-  server: 8.6.112.6
-  skip-cert-verify: false
-  sni: www.calmloud.com
-  type: trojan
 - name: 美国|@ripaojiedian
   network: tcp
   password: e0195c73018d597b1c2f0ea89d8676ae
@@ -247,16 +197,6 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #1'
-  network: tcp
-  port: '29633'
-  server: 23.141.204.132
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0685a0bf-2413-45d2-dc00-c0281387c247
 - alterId: 0
   cipher: auto
   name: 🇺🇸_US_美国
@@ -286,7 +226,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '美國節點 #9'
+  name: '美國節點 #8'
   network: tcp
   port: 180
   server: 82.198.246.97
@@ -304,113 +244,101 @@ proxies:
   tls: false
   type: vmess
   uuid: 5f49c80e-7770-4bd1-9c86-43c2068a3a26
-- name: 美國節點丨yoyapai.com\r
-  password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
-  port: 443
-  server: blackshadow.dpdns.org
-  skip-cert-verify: true
-  sni: blackshadow.dpdns.org
-  type: trojan
-- name: '美國節點丨yoyapai.com\r #3'
+- name: '美國節點丨yoyapai.com\r #2'
   password: Aimer
   port: 2053
   server: 167.68.4.199
   skip-cert-verify: true
   sni: epge.muarua.filegear-sg.me
   type: trojan
-- name: 🇺🇸 US美国(mibei77.com 米贝节点分享)
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
+  network: tcp
+  port: '29633'
+  server: 23.141.204.132
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0685a0bf-2413-45d2-dc00-c0281387c247
+- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #1'
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   port: 443
-  server: 8.209.231.3
-  skip-cert-verify: true
+  server: 95.181.188.76
+  skip-cert-verify: false
   sni: hhcm.hhxaf.cc.cd
   type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #2'
+- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #15'
   password: humanity
   port: 443
   server: 165.215.250.14
   skip-cert-verify: true
   sni: www.calmlunch.com
   type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #3'
+- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #14'
+  password: humanity
+  port: 443
+  server: 165.215.250.14
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #16'
   password: humanity
   port: 443
   server: 165.215.250.14
   skip-cert-verify: true
   sni: www.creationlong.org
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #4'
-  network: ws
-  port: '443'
-  server: 104.16.0.0
-  tls: true
-  type: vmess
-  uuid: 95d2c461-61f5-4dae-bc74-4d10ce1f6236
-  ws-opts:
-    headers:
-      Host: gongyilm.dpdns.org
-    path: /ws-gongyi
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸[openproxylist.com] vmess-US
-  network: tcp
-  port: '30022'
-  server: 186.244.208.78
-  tls: false
-  type: vmess
-  uuid: b7d93549-0f3f-4af2-9f4d-4340867a23b4
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #6'
+- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #5'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 47909
   server: 103.177.136.42
   skip-cert-verify: true
   sni: is.01.naiun.bilibili.com
   type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #7'
+- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #6'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45619
   server: 103.177.136.45
   skip-cert-verify: true
   sni: fr.01.naiun.bilibili.com
   type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #8'
+- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #7'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45553
   server: 103.177.136.45
   skip-cert-verify: true
   sni: ch.01.naiun.bilibili.com
   type: trojan
-- name: 🇩🇪[openproxylist.com] trojan-D...
+- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #8'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 46424
   server: 103.177.136.45
   skip-cert-verify: true
   sni: de.01.naiun.bilibili.com
   type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #10'
+- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #9'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 48697
   server: 103.177.136.45
   skip-cert-verify: true
   sni: gh.01.naiun.bilibili.com
   type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #11'
+- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #10'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45619
   server: 103.177.136.42
   skip-cert-verify: true
   sni: fr.01.naiun.bilibili.com
   type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #12'
+- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #11'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 47909
   server: 103.177.136.45
   skip-cert-verify: true
   sni: is.01.naiun.bilibili.com
   type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #13'
+- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #12'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45553
   server: 103.177.136.42
@@ -472,23 +400,29 @@ proxies:
   skip-cert-verify: true
   sni: ch.01.naiun.bilibili.com
   type: trojan
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇺🇸[openproxylist.com] vless-US
-  network: tcp
-  port: 7443
-  reality-opts:
-    public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
-    short-id: '!!str d82fb387'
-  server: 31.76.38.18
-  servername: icloud.com
-  skip-cert-verify: true
+- name: 🇺🇸[openproxylist.com] vless-US
+  network: ws
+  port: 80
+  server: newus.mmrknight.app
   tls: false
   type: vless
-  uuid: 6e41151e-ae07-4ea6-910e-7a3986b7bc0d
+  uuid: 5a802fbb-00ed-4447-bece-3e0faf45e213
+  ws-opts:
+    headers:
+      Host: play.google.com
+    path: '%2FTelegram-Raiv2mmr.php'
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸[openproxylist.com] vmess-US
+  network: tcp
+  port: '30022'
+  server: 186.244.208.78
+  tls: false
+  type: vmess
+  uuid: b7d93549-0f3f-4af2-9f4d-4340867a23b4
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #4'
+  name: '🇺🇸[openproxylist.com] vless-US #2'
   network: tcp
   port: 443
   reality-opts:
