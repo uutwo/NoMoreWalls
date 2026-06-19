@@ -1,4 +1,54 @@
 proxies:
+- name: '美国+CloudFlare节点 #1'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.71.213
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+- name: '美国+CloudFlare节点 #2'
+  network: ws
+  password: humanity
+  port: 443
+  server: 172.64.147.223
+  skip-cert-verify: false
+  sni: www.multiplydose.com
+  type: trojan
+  ws-opts:
+    path: /assignment
+- alpn:
+  - http/1.1
+  name: '美国+V2CROSS.COM #2'
+  network: ws
+  password: humanity
+  port: 443
+  server: 165.215.250.14
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: /assignment
+- alpn:
+  - http/1.1
+  name: 美国+得克萨斯州达拉斯Cloudflare+Warp节点
+  network: ws
+  password: humanity
+  port: 443
+  server: 8.6.112.6
+  skip-cert-verify: false
+  sni: www.calmloud.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmloud.com
+    path: '%2Fassignment'
 - alterId: 0
   cipher: auto
   name: 🇺🇸 VMESS-美国-NF解锁自制剧-ChatGPT-Ti...
@@ -169,7 +219,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #2'
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
   network: tcp
   port: '29633'
   server: 23.141.204.132
@@ -285,6 +335,7 @@ proxies:
   network: tcp
   port: '30022'
   server: 186.244.208.78
+  servername: ''
   tls: false
   type: vmess
   uuid: b7d93549-0f3f-4af2-9f4d-4340867a23b4
@@ -302,11 +353,12 @@ proxies:
   skip-cert-verify: true
   sni: fr.01.naiun.bilibili.com
   type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #8'
+- name: 🇨🇭[openproxylist.com] trojan-C...
+  network: tcp
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45553
   server: 103.177.136.45
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: ch.01.naiun.bilibili.com
   type: trojan
 - name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #9'
@@ -399,15 +451,6 @@ proxies:
   skip-cert-verify: true
   sni: ch.01.naiun.bilibili.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #1'
-  network: tcp
-  port: '25213'
-  server: 23.138.148.96
-  tls: false
-  type: vmess
-  uuid: 17301584-89b6-4ce3-f0df-ada8184ff58e
 - name: 🇺🇸[openproxylist.com] trojan-U...
   network: tcp
   password: GTCCjtvCtuy03-aV1mwF0OkG2q6yL+Fc5K
