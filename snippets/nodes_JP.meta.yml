@@ -1,18 +1,4 @@
 proxies:
-- alpn:
-  - http/1.1
-  name: 日本+东京Fastly节点
-  network: ws
-  password: MiTiVPN
-  port: 443
-  server: 151.101.110.219
-  skip-cert-verify: true
-  sni: global.fastly.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: mitivpn.global.ssl.fastly.net
-    path: /ed=mitivpn
 - name: JP
   password: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61
   port: 13778
@@ -20,24 +6,21 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: 日本|@ripaojiedian
-  network: tcp
+- name: 🇯🇵 日本|@ripaojiedian
   password: BxceQaOe
   port: 28694
   server: 18.181.208.41
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 日本2|@ripaojiedian
-  network: tcp
+- name: 🇯🇵 日本2|@ripaojiedian
   password: e0195c73018d597b1c2f0ea89d8676ae
   port: 5701
   server: 95.40.59.3
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 日本3|@ripaojiedian
-  network: tcp
+- name: 🇯🇵 日本3|@ripaojiedian
   password: e0195c73018d597b1c2f0ea89d8676ae
   port: 37973
   server: 3.112.174.152
@@ -117,34 +100,37 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵[openproxylist.com] vmess-JP
-  network: ws
-  port: 443
-  server: 8.211.149.30
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: bc82b8e0-026b-4b7e-8fa7-69977b6d9dc0
-  ws-opts:
-    headers:
-      Host: polartime.link
-    path: /ws/
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #1'
+- name: 日本|@ripaojiedian
   network: tcp
+  password: BxceQaOe
+  port: 4099
+  server: 43.207.206.41
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 日本2|@ripaojiedian
+  network: tcp
+  password: e0195c73018d597b1c2f0ea89d8676ae
+  port: 37973
+  server: 43.198.206.201
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 日本3|@ripaojiedian
+  network: tcp
+  password: e0195c73018d597b1c2f0ea89d8676ae
+  port: 37973
+  server: 18.163.200.170
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 🇯🇵[openproxylist.com] vless-JP
   port: 38388
-  reality-opts:
-    public-key: xHaPe5SLprSSqGccSor5d3tCRuwyowBwFeYrVXoSz3w
-    short-id: '!!str 6ba85179e30d4fc2'
   server: 47.79.149.248
-  servername: itunes.apple.com
   tls: false
   type: vless
   uuid: 45c8d20e-0222-4b16-8d21-37318456b980
-- name: '🇯🇵[openproxylist.com] vless-JP #2'
+- name: '🇯🇵[openproxylist.com] vless-JP #1'
   port: 443
   server: 31.76.91.28
   tls: false
