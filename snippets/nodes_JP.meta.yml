@@ -6,12 +6,12 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: 🇯🇵 日本 东京Fastly节点
-  password: MiTiVPN
+- name: '亚太地区 V2CROSS.COM #1'
+  password: s75Gtmy56sptTA39hmBH965YYx4ZgfQR_I
   port: 443
-  server: 151.101.110.219
-  skip-cert-verify: true
-  sni: global.fastly.com
+  server: 103.125.219.70
+  skip-cert-verify: false
+  sni: 103.125.219.70
   type: trojan
 - name: 日本|@ripaojiedian
   network: tcp
@@ -21,39 +21,55 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 日本2|@ripaojiedian
+- name: '🇸🇬[openproxylist.com] trojan-S... #1'
   network: tcp
   password: e0195c73018d597b1c2f0ea89d8676ae
-  port: 37973
-  server: 43.198.206.201
+  port: 29642
+  server: 35.77.34.38
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 日本3|@ripaojiedian
+- name: 美国|@ripaojiedian
   network: tcp
   password: e0195c73018d597b1c2f0ea89d8676ae
-  port: 37973
-  server: 18.163.200.170
+  port: 49277
+  server: 35.77.34.38
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 日本節點丨yoyapai.com\r
-  password: 825929f4-c702-35ce-9124-00d3f95b8c32
-  port: 34470
-  server: adak.sonofthewinds.com
-  skip-cert-verify: true
-  sni: gj1.sonofthewinds.com
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: 🇲🇾_MY_马来西亚->🇯🇵_JP_日本
+- name: 美国2|@ripaojiedian
   network: tcp
-  port: 30806
-  server: v6.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  password: e0195c73018d597b1c2f0ea89d8676ae
+  port: 17005
+  server: 13.115.223.251
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 🇺🇸_US_美国->🇨🇭_CH_瑞士
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 45553
+  server: 90081bb25c.node.tro.cac.cab
+  skip-cert-verify: true
+  sni: ch.01.naiun.bilibili.com
+  type: trojan
+- name: 🇯🇵[openproxylist.com] trojan-J...
+  network: ws
+  password: hV66LcSGyxUdHq2aAeqxmLfpBDQmRYxo8Wte43oZr8L379SS
+  port: 443
+  server: 43.207.87.133
+  sni: node2.bw8848.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: node2.bw8848.org
+    path: /node2-node2-gu7bfd
+- name: '🇯🇵[openproxylist.com] trojan-J... #1'
+  network: tcp
+  password: s75Gtmy56sptTA39hmBH965YYx4ZgfQR_I
+  port: 443
+  server: 103.125.216.169
+  sni: 103.125.216.169
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇯🇵[openproxylist.com] vmess-JP
@@ -72,16 +88,15 @@ proxies:
   flow: xtls-rprx-vision
   name: 🇯🇵[openproxylist.com] vless-JP
   network: tcp
-  port: 38388
+  port: 5454
   reality-opts:
-    public-key: xHaPe5SLprSSqGccSor5d3tCRuwyowBwFeYrVXoSz3w
-    short-id: '!!str 6ba85179e30d4fc2'
-  server: 47.79.149.248
-  servername: itunes.apple.com
-  skip-cert-verify: true
+    public-key: 7Mb18pl7fH3NvhVevIVTgRdPlAorUucOWMlUaTrDV0o
+    short-id: '!!str 4265cc8365'
+  server: 1.sdwan.realm-sync.com
+  servername: swcdn.apple.com
   tls: false
   type: vless
-  uuid: 45c8d20e-0222-4b16-8d21-37318456b980
+  uuid: da4f61d1-8ca2-4bbf-a79a-1dfff04073e6
 - client-fingerprint: edge
   flow: xtls-rprx-vision
   name: '🇯🇵[openproxylist.com] vless-JP #1'
@@ -91,45 +106,6 @@ proxies:
     public-key: QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs
     short-id: '!!str 7a3f9e2b1c8d4f6a'
   server: 31.76.91.28
-  servername: jp.s3-cloud.org
-  tls: false
-  type: vless
-  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #2'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs
-    short-id: '!!str 7a3f9e2b1c8d4f6a'
-  server: 31.76.91.18
-  servername: jp.s3-cloud.org
-  tls: false
-  type: vless
-  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #3'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs
-    short-id: '!!str 7a3f9e2b1c8d4f6a'
-  server: 31.76.91.26
-  servername: jp.s3-cloud.org
-  tls: false
-  type: vless
-  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #4'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs
-    short-id: '!!str 7a3f9e2b1c8d4f6a'
-  server: 31.76.91.24
   servername: jp.s3-cloud.org
   tls: false
   type: vless
