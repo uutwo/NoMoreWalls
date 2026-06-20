@@ -13,9 +13,13 @@ proxies:
   port: '30807'
   server: v10.hdacd.com
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-headers:
+    Host: v10.hdacd.com
+  ws-path: /
 - name: 香港3|@ripaojiedian
   network: tcp
   password: e0195c73018d597b1c2f0ea89d8676ae
@@ -40,6 +44,120 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+- name: 日本2|@ripaojiedian
+  network: tcp
+  password: e0195c73018d597b1c2f0ea89d8676ae
+  port: 37973
+  server: 43.198.206.201
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 日本3|@ripaojiedian
+  network: tcp
+  password: e0195c73018d597b1c2f0ea89d8676ae
+  port: 37973
+  server: 18.163.200.170
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 新加坡2|@ripaojiedian
+  network: tcp
+  password: e0195c73018d597b1c2f0ea89d8676ae
+  port: 29642
+  server: 18.163.200.170
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 🇸🇬[openproxylist.com] trojan-S...
+  network: tcp
+  password: BxceQaOe
+  port: 9149
+  server: 18.162.50.252
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 美国3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 41889
+  server: 16.163.106.209
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 🇭🇰HK-95.40.68.192-47
+  password: 订阅内容解析错误订阅内容解析错误BxceQaOe
+  port: 17801
+  server: 95.40.68.192
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: '🇹🇼_TW_中国台湾->🇸🇬_SG_新加坡 #1'
+  password: gcuCpQfaiVeDBdWG
+  port: 19128
+  server: jpbgp.netvigor.cc
+  skip-cert-verify: true
+  sni: yazhou10.dynu.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰_HK_中国香港->🇹🇼_TW_中国台湾
+  network: tcp
+  port: 2510
+  server: world.t.51guangtaobao.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 1d3d868e-ae7b-3762-b9d9-a7f267494c7e
+  ws-headers:
+    Host: world.t.51guangtaobao.com
+  ws-path: /
+- cipher: aes-256-gcm
+  name: 🇭🇰HK-47.239.0.60-60
+  password: feng3d@ss2025
+  port: 8388
+  server: li.feng3d.com
+  type: ss
+- name: '🇭🇰_HK_中国香港->🇺🇸_US_美国 #1'
+  password: BxceQaOe
+  port: 2702
+  server: 95.40.68.150
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 🇺🇸_US_美国->🇨🇭_CH_瑞士
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 45553
+  server: 90081bb25c.node.tro.cac.cab
+  skip-cert-verify: true
+  sni: ch.01.naiun.bilibili.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰HK-8.210.239.58-66
+  network: ws
+  port: 443
+  server: 8.210.239.58
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 5fdc6ab1-8347-411c-9bbf-fbc3ea853d2f
+  ws-headers:
+    Host: 8.210.239.58
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰HK-47.244.120.197-68
+  network: ws
+  port: 36703
+  server: 47.244.120.197
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  ws-headers:
+    Host: 47.244.120.197
+  ws-path: /arki?ed=2048
 - client-fingerprint: chrome
   name: 🇭🇰[openproxylist.com] vless-HK
   network: tcp
@@ -52,3 +170,16 @@ proxies:
   tls: false
   type: vless
   uuid: 8224aa92-4a38-4756-a7d9-a9e7cde12a31
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇭🇰[openproxylist.com] vless-HK #1'
+  network: tcp
+  port: 19107
+  reality-opts:
+    public-key: rdfVgNqwK528X1X4ZdKe9abvTm7yMICZ5FRUmdYLF14
+    short-id: '!!str bedc231e12dd39'
+  server: 64.49.44.87
+  servername: www.intel.com
+  tls: false
+  type: vless
+  uuid: 9e13f74e-3ad7-437d-aba6-5def3c42b046
