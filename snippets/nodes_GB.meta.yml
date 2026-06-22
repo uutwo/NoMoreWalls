@@ -1,4 +1,17 @@
 proxies:
+- name: 英国+V2CROSS.COM
+  network: ws
+  port: 443
+  server: 193.123.232.91
+  servername: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  ws-opts:
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+    path: '%2F'
 - alterId: 0
   cipher: auto
   name: '🇺🇸_US_美国 #1'
@@ -27,6 +40,38 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: 🇬🇧[openproxylist.com] vless-GB
+  port: 443
+  server: 95.133.242.210
+  tls: false
+  type: vless
+  uuid: 5982d32f-f2e4-4267-a8ad-48492e65344c
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇬🇧[openproxylist.com] vless-GB #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: hWw_QLJsQmDlX_9AsTb29wy6RhJ-lHtjHseiZlthXhU
+    short-id: '!!str 9550667e9597f1e5'
+  server: gb1.anpmech.com
+  servername: gb1.anpmech.com
+  tls: false
+  type: vless
+  uuid: 0e49e208-e09e-49bc-afee-2907e5419107
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇬🇧[openproxylist.com] vless-GB #2'
+  network: tcp
+  port: 493
+  reality-opts:
+    public-key: hoJugHeT_SOHhybvTE5gEEgEqsar9KrDtC5uP5qi5GY
+    short-id: '!!str 31cf122180c019f7'
+  server: 109.73.65.116
+  servername: louisvuitton.com
+  tls: false
+  type: vless
+  uuid: 20000020-3063-1376-f000-f6c850c0a020
+- name: '🇬🇧[openproxylist.com] vless-GB #3'
   network: ws
   port: 8443
   server: 104.16.75.224
@@ -44,4 +89,5 @@ proxies:
   password: PoSQBShqwNV9wKX4WHxDoLxbvp4eQYnD8v
   port: 443
   server: 130.94.78.17
+  skip-cert-verify: false
   type: trojan
