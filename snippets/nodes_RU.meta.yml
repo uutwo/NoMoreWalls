@@ -1,34 +1,53 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 俄羅斯
-  network: ws
-  port: 443
-  server: renderer-stream-1-411.mirra.now
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
-  ws-opts:
-    headers:
-      Host: renderer-stream-1-411.mirra.now
-    path: /api/v1/gpu-stream/socket
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇷🇺[openproxylist.com] vless-RU
+  name: 俄罗斯+V2CROSS.COM
   network: tcp
   port: 443
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: '!!str 6ba85179e30d4fc2'
-  server: 94.242.55.42
-  servername: enterprisekitten.com
+    public-key: oVRbpcmh0rTxbe2y_zyVQqqzCVIPOFfkk-CHv9QFLF4
+    short-id: '!!str 0fdfdcf08733a33f'
+  server: 89.232.177.23
+  servername: kz-most.api-yandex.net
   tls: false
   type: vless
-  uuid: 8ca5cbd3-ec16-4728-bedc-2bc0d82f0922
-- name: '🇷🇺[openproxylist.com] vless-RU #1'
+  uuid: 39e18f1d-d3e4-4d44-b72e-9545a1d64f49
+- alterId: 0
+  cipher: auto
+  name: 🏳[openproxylist.com] vmess-
+  network: tcp
+  port: '1546'
+  server: vip3.sanaiehdasti.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 6c5fcae3-16e8-4a93-b28e-05588d5d9342
+  ws-headers:
+    Host: play.google.com
+  ws-path: /
+- name: 🇷🇺[openproxylist.com] vless-RU
+  network: ws
+  port: 80
+  server: 80.78.245.227
+  tls: false
+  type: vless
+  uuid: e52fedb7-befe-4615-a53e-89d446f74bf4
+  ws-opts:
+    headers:
+      Host: rutube.globaledgenet.com
+    path: /rutube
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #1'
+  network: tcp
   port: 443
+  reality-opts:
+    public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
+    short-id: '!!str c7e42004e5f024be'
   server: 155.117.137.160
+  servername: cdn8-03.yahoo.com
+  skip-cert-verify: true
   tls: false
   type: vless
   uuid: ccdce320-7eef-4815-8edb-c599987c2279
@@ -38,16 +57,3 @@ proxies:
   tls: false
   type: vless
   uuid: 208b2b41-4801-44f9-9f13-9149dd457da5
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '🇷🇺[openproxylist.com] vless-RU #3'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: kIwNoNzk1uJnZD1evWxURZskv9ZY0aGoUjrAbn3uVXQ
-    short-id: '!!str 4d3ff920673f7534'
-  server: 45.8.228.110
-  servername: max.ru
-  tls: false
-  type: vless
-  uuid: 18655112-fd8a-44e7-a30c-37388c05816b

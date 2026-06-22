@@ -1,4 +1,16 @@
 proxies:
+- name: 日本+东京Fastly节点
+  network: ws
+  password: MITIVPN
+  port: 443
+  server: 151.101.110.219
+  skip-cert-verify: true
+  sni: global.fastly.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: mitivpn-6.global.ssl.fastly.net
+    path: /ed=mitivpn
 - name: JP
   password: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61
   port: 13778
@@ -6,44 +18,14 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: 🇯🇵 日本|@ripaojiedian
-  password: BxceQaOe
-  port: 5408
-  server: 54.65.32.119
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: 🇯🇵 日本2|@ripaojiedian
-  password: e0195c73018d597b1c2f0ea89d8676ae
-  port: 37973
-  server: 43.198.206.201
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 🇯🇵 日本3|@ripaojiedian
-  password: e0195c73018d597b1c2f0ea89d8676ae
-  port: 5701
-  server: 35.77.34.38
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 日本節點丨yoyapai.com\r
-  password: 825929f4-c702-35ce-9124-00d3f95b8c32
-  port: 34470
-  server: adak.sonofthewinds.com
-  skip-cert-verify: true
-  sni: gj1.sonofthewinds.com
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: 🇲🇾_MY_马来西亚->🇯🇵_JP_日本
+- name: 香港3|@ripaojiedian
   network: tcp
-  port: 30806
-  server: v6.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  password: 860c3c2c89a1c7515792be1c5295d21e
+  port: 2008
+  server: 43.207.69.202
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
 - name: 日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -52,32 +34,3 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 日本2|@ripaojiedian
-  network: tcp
-  password: 860c3c2c89a1c7515792be1c5295d21e
-  port: 55973
-  server: 95.40.53.232
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 日本3|@ripaojiedian
-  network: tcp
-  password: 860c3c2c89a1c7515792be1c5295d21e
-  port: 37973
-  server: 18.162.41.225
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵[openproxylist.com] vless-JP
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: IOO3P6BDqBjUA0gB4tgpvxrXL6Fit88QgpJ1y6GYyz0
-    short-id: '!!str 0f4dacf88202e05f'
-  server: 142.91.108.139
-  servername: jp.api-yandex.net
-  tls: false
-  type: vless
-  uuid: 7e6d3393-bb84-45c7-9eef-35de95805b7e
