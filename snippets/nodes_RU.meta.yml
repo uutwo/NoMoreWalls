@@ -13,34 +13,43 @@ proxies:
   tls: true
   type: vless
   uuid: 7fc953d6-ae75-46fb-a970-10b57d513487
-- client-fingerprint: firefox
+- alterId: 0
+  cipher: auto
+  name: 俄羅斯
+  network: ws
+  port: 443
+  server: renderer-stream-1-411.mirra.now
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+  ws-opts:
+    headers:
+      Host: renderer-stream-1-411.mirra.now
+    path: /api/v1/gpu-stream/socket
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇷🇺[openproxylist.com] vless-RU
   network: tcp
-  port: 40443
-  reality-opts:
-    public-key: Y15uAAl8fpWhma1FIWyZujgRKdwxYaaF4zIyWyu9vSo
-    short-id: '!!str 5cc0'
-  server: 72.56.245.170
-  servername: deepl.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  uuid: 403c1990-0922-43e9-9027-03ef38c92c87
-- name: '🇷🇺[openproxylist.com] vless-RU #1'
-  network: ws
-  port: 80
-  server: 45.80.111.208
-  tls: false
-  type: vless
-  uuid: e52fedb7-befe-4615-a53e-89d446f74bf4
-  ws-opts:
-    headers:
-      Host: rutube.globaledgenet.com
-    path: /rutube
-- name: '🇷🇺[openproxylist.com] vless-RU #2'
   port: 443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: 81.17.154.131
+  servername: sellflow.org
+  tls: false
+  type: vless
+  uuid: 33de2596-d95d-412b-a8c2-410be7060ca3
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
+    short-id: '!!str c7e42004e5f024be'
   server: 155.117.137.160
+  servername: cdn8-03.yahoo.com
+  skip-cert-verify: true
   tls: false
   type: vless
   uuid: ccdce320-7eef-4815-8edb-c599987c2279
