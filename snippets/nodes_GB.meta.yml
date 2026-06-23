@@ -1,4 +1,17 @@
 proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 英国+V2CROSS.COM
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: U_E3xSI6QY_Mj-3zjkB4esvMj0aVvYH6W6oHOR50XBs
+    short-id: '!!str f3c5f072749dcc9c'
+  server: 46.33.8.18
+  servername: filesconvert.org
+  tls: false
+  type: vless
+  uuid: 5982d32f-f2e4-4267-a8ad-48492e65344c
 - client-fingerprint: firefox
   name: 🇬🇧[openproxylist.com] vless-GB
   network: tcp
@@ -17,9 +30,16 @@ proxies:
   tls: false
   type: vless
   uuid: 9cda451e-0adf-4df1-a5b4-7fec8f363c10
-- name: '🇬🇧[openproxylist.com] vless-GB #2'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇬🇧[openproxylist.com] vless-GB #2'
+  network: tcp
   port: 443
+  reality-opts:
+    public-key: U_E3xSI6QY_Mj-3zjkB4esvMj0aVvYH6W6oHOR50XBs
+    short-id: '!!str 10debbdf94767541'
   server: 95.133.242.210
+  servername: filesconvert.org
   tls: false
   type: vless
   uuid: 5982d32f-f2e4-4267-a8ad-48492e65344c
@@ -36,21 +56,21 @@ proxies:
   tls: false
   type: vless
   uuid: 20000020-3063-1376-f000-f6c850c0a020
-- alterId: 0
-  cipher: auto
-  name: 🇬🇧[openproxylist.com] vmess-GB
+- name: '🇬🇧[openproxylist.com] vless-GB #4'
   network: ws
-  port: 80
-  server: 69.84.182.49
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f8975871-a7a0-4906-8835-a23c1258ca1e
+  port: 8443
+  server: 104.16.75.224
+  servername: splash.ariyuz.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 4bf9601f-87e8-4250-a4e4-250bf54c5db4
   ws-opts:
     headers:
-      Host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
-    path: /
+      Host: splash.ariyuz.org
+    path: '%2Fapi%2Fv1'
 - name: 🇬🇧[openproxylist.com] trojan-G...
+  network: tcp
   password: PoSQBShqwNV9wKX4WHxDoLxbvp4eQYnD8v
   port: 443
   server: 130.94.78.17
