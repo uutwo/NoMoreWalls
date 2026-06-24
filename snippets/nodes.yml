@@ -89,34 +89,31 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- name: 希腊+V2CROSS.COM
+- name: 美国+Akamai科技公司CDN网络节点
   network: tcp
-  password: aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR
+  password: zK=0KfL3IG+sNNZL-J7d0Nonu4wFBx8MOy
   port: 443
-  server: 92.119.35.130
+  server: 172.235.229.227
   skip-cert-verify: false
   type: trojan
-- name: 罗马尼亚+V2CROSS.COM
-  network: tcp
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+- name: 英国+V2CROSS.COM
+  password: BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL
   port: 443
-  server: 185.137.157.149
-  skip-cert-verify: false
+  server: 185.126.236.44
+  sni: www.mesaly.click
   type: trojan
-- name: 英国+伦敦Choopa数据中心
-  network: tcp
-  password: kflYwtj8VD7Pd4V9ixedIxEDsac4QQXvbP
+- name: '美国+CloudFlare节点 #2'
+  network: ws
+  password: humanity
   port: 443
-  server: 45.77.227.183
+  server: 172.64.152.23
   skip-cert-verify: false
+  sni: www.calmlunch.com
   type: trojan
-- name: 美国+V2CROSS.COM
-  network: tcp
-  password: O4O8.Ew+ujFX6GJBQ=xQr.heGwux0GYHqk
-  port: 443
-  server: 45.61.58.89
-  skip-cert-verify: false
-  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
 - alterId: 0
   cipher: auto
   name: 🇩🇪 VMESS-未知>德国-NF解锁印度地区非自制剧-Ch...
@@ -312,55 +309,47 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
-- name: 🏳[openproxylist.com] trojan-
-  network: tcp
-  password: O4O8.Ew+ujFX6GJBQ=xQr.heGwux0GYHqk
+- name: 🇺🇸 美国 华盛顿Cogent通信公司
+  password: Lw_DP4+W.J5K33MD2Jy5zQVuT5n71+=BcD
   port: 443
-  server: 45.61.52.243
+  server: 38.60.168.129
   skip-cert-verify: false
-  sni: 45.61.52.243
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰 HK香港(mibei77.com 米贝节点分享) #9'
+- name: 🇺🇸 北美地区 V2CROSS.COM
+  password: humanity
+  port: 443
+  server: 198.62.62.23
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+- name: 🇩🇪[openproxylist.com] trojan-D...
   network: tcp
-  port: '52080'
-  server: 154.37.223.56
-  tls: false
-  type: vmess
-  uuid: f1ac5c82-00a4-400b-bb20-530c91b7c5bb
-- name: 🇮🇹 意大利 米兰Fastly节点
-  password: MITIVPN
-  port: 80
-  server: 151.101.242.172
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.145
   skip-cert-verify: false
   type: trojan
-- name: 🇺🇸 美国 Fastly全球Anycast节点
-  password: MITIVPN
-  port: 80
-  server: 151.101.1.194
+- name: 🇺🇸 美国 CloudFlare节点
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  port: 443
+  server: store.ubi.com
   skip-cert-verify: false
+  sni: hhcm.hhxaf.cc.cd
   type: trojan
 - name: '🇩🇪[openproxylist.com] trojan-D... #2'
+  network: tcp
   password: fFj7MAGy1VlAWmB_gMBG_27oPYTSHvV6MX
   port: 443
   server: 185.137.157.59
   skip-cert-verify: false
   sni: www.lateralio.click
   type: trojan
-- name: 🇺🇸 美国 华盛顿Cogent通信公司
-  password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
+- name: 🏳[openproxylist.com] trojan-
+  network: tcp
+  password: urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh
   port: 443
-  server: 38.54.64.247
+  server: 92.119.35.131
   skip-cert-verify: false
-  sni: 38.54.64.247
-  type: trojan
-- name: 🇰🇷 KR韩国(mibei77.com 米贝节点分享)
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  port: 443
-  server: 211.49.57.178
-  skip-cert-verify: false
-  sni: hhcm.hhxaf.cc.cd
   type: trojan
 - alterId: 2
   cipher: auto
@@ -372,87 +361,99 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇭🇰 香港3|@ripaojiedian
-  password: 2009158055b4d37156cee7082c50ffde
+- name: 香港3|@ripaojiedian
+  network: tcp
+  password: ba5b6f1d3a9da87096165da523fb4375
   port: 2008
-  server: 57.183.13.23
+  server: 95.40.43.133
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 🇭🇰 香港4|@ripaojiedian
+- name: 🇭🇰[openproxylist.com] trojan-H...
+  network: tcp
   password: BxceQaOe
-  port: 11035
-  server: 18.167.36.144
+  port: 39414
+  server: 43.199.31.72
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 🇭🇰 香港5|@ripaojiedian
+- name: 香港5|@ripaojiedian
+  network: tcp
   password: BxceQaOe
-  port: 27167
-  server: 43.199.34.99
+  port: 29449
+  server: 43.199.44.33
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 🇯🇵 日本|@ripaojiedian
+- name: 日本|@ripaojiedian
+  network: tcp
   password: BxceQaOe
-  port: 45691
-  server: 18.179.204.16
+  port: 10624
+  server: 18.183.54.150
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 🇯🇵 日本2|@ripaojiedian
-  password: 2009158055b4d37156cee7082c50ffde
-  port: 5701
-  server: 43.199.200.130
+- name: 日本2|@ripaojiedian
+  network: tcp
+  password: ba5b6f1d3a9da87096165da523fb4375
+  port: 37973
+  server: 16.163.95.104
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 🇯🇵 日本3|@ripaojiedian
-  password: 2009158055b4d37156cee7082c50ffde
-  port: 5701
-  server: 18.163.125.35
+- name: 日本3|@ripaojiedian
+  network: tcp
+  password: ba5b6f1d3a9da87096165da523fb4375
+  port: 3743
+  server: 95.40.43.133
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 🇸🇬 新加坡|@ripaojiedian
-  password: 2009158055b4d37156cee7082c50ffde
-  port: 48738
-  server: 43.199.200.130
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 🇸🇬 新加坡2|@ripaojiedian
-  password: 2009158055b4d37156cee7082c50ffde
+- name: 新加坡|@ripaojiedian
+  network: tcp
+  password: ba5b6f1d3a9da87096165da523fb4375
   port: 6357
-  server: 57.183.13.23
+  server: 16.163.95.104
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 🇸🇬 新加坡3|@ripaojiedian
+- name: 新加坡2|@ripaojiedian
+  network: tcp
+  password: ba5b6f1d3a9da87096165da523fb4375
+  port: 6357
+  server: 16.162.120.149
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 新加坡3|@ripaojiedian
+  network: tcp
   password: BxceQaOe
-  port: 51396
-  server: 43.199.34.99
+  port: 41421
+  server: 18.166.60.29
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 🇺🇸 美国|@ripaojiedian
-  password: 2009158055b4d37156cee7082c50ffde
-  port: 49277
-  server: 57.183.13.23
+- name: 美国|@ripaojiedian
+  network: tcp
+  password: ba5b6f1d3a9da87096165da523fb4375
+  port: 17005
+  server: 16.162.120.149
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 🇺🇸 美国2|@ripaojiedian
-  password: 2009158055b4d37156cee7082c50ffde
+- name: 美国2|@ripaojiedian
+  network: tcp
+  password: ba5b6f1d3a9da87096165da523fb4375
   port: 17005
   server: 57.183.13.23
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 🇺🇸 美国3|@ripaojiedian
+- name: 美国3|@ripaojiedian
+  network: tcp
   password: BxceQaOe
-  port: 11993
-  server: 95.40.92.87
+  port: 22657
+  server: 43.199.44.33
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -468,7 +469,7 @@ proxies:
   uuid: d7c13e10-2ba9-4677-a877-d9e9d1738394
 - alterId: 0
   cipher: auto
-  name: 🇬🇧[openproxylist.com] vmess-GB
+  name: '🇬🇧[openproxylist.com] vmess-GB #1'
   network: ws
   port: 80
   server: 69.84.182.49
@@ -731,6 +732,13 @@ proxies:
   skip-cert-verify: false
   sni: tjaaa.hhllfly.kdns.fr
   type: trojan
+- name: 🇰🇷 KR韩国(mibei77.com 米贝节点分享)
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  port: 443
+  server: 211.49.57.178
+  skip-cert-verify: false
+  sni: hhcm.hhxaf.cc.cd
+  type: trojan
 - name: '🇰🇷 KR韩国(mibei77.com 米贝节点分享) #2'
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   port: 443
@@ -810,6 +818,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 68bd04a1-0547-46a6-cdb2-c8ac3fce1e67
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰 HK香港(mibei77.com 米贝节点分享) #9'
+  network: tcp
+  port: '52080'
+  server: 154.37.223.56
+  tls: false
+  type: vmess
+  uuid: f1ac5c82-00a4-400b-bb20-530c91b7c5bb
 - name: 🇭🇰_HK_中国香港->🇺🇸_US_美国
   password: BxceQaOe
   port: 17801
@@ -947,125 +964,6 @@ proxies:
     headers:
       Host: 47.244.120.197
     path: /arki?ed=2048
-- name: 香港3|@ripaojiedian
-  network: tcp
-  password: ba5b6f1d3a9da87096165da523fb4375
-  port: 2008
-  server: 95.40.43.133
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 香港4|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 39414
-  server: 43.199.31.72
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 香港5|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 29449
-  server: 43.199.44.33
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 日本|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 10624
-  server: 18.183.54.150
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: 日本2|@ripaojiedian
-  network: tcp
-  password: ba5b6f1d3a9da87096165da523fb4375
-  port: 37973
-  server: 16.163.95.104
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 日本3|@ripaojiedian
-  network: tcp
-  password: ba5b6f1d3a9da87096165da523fb4375
-  port: 3743
-  server: 95.40.43.133
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 新加坡|@ripaojiedian
-  network: tcp
-  password: ba5b6f1d3a9da87096165da523fb4375
-  port: 6357
-  server: 16.163.95.104
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 新加坡2|@ripaojiedian
-  network: tcp
-  password: ba5b6f1d3a9da87096165da523fb4375
-  port: 6357
-  server: 16.162.120.149
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 新加坡3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 41421
-  server: 18.166.60.29
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: 美国|@ripaojiedian
-  network: tcp
-  password: ba5b6f1d3a9da87096165da523fb4375
-  port: 17005
-  server: 16.162.120.149
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国2|@ripaojiedian
-  network: tcp
-  password: ba5b6f1d3a9da87096165da523fb4375
-  port: 17005
-  server: 57.183.13.23
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 22657
-  server: 43.199.44.33
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸[openproxylist.com] vmess-US
-  network: tcp
-  port: 1516
-  server: sinavip3.cnavippanel.com
-  tls: false
-  type: vmess
-  uuid: 0aca35ee-b845-45d7-9b52-379a2984378a
-- alterId: 0
-  cipher: auto
-  name: 🇩🇰[openproxylist.com] vmess-DK
-  network: tcp
-  port: 1514
-  server: sinavip.cnavippanel.com
-  tls: false
-  type: vmess
-  uuid: 0aca35ee-b845-45d7-9b52-379a2984378a
-- name: 🇩🇪[openproxylist.com] trojan-D...
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.57.203.89
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇸🇪[openproxylist.com] vmess-SE
@@ -1081,11 +979,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #1'
+  name: 🇺🇸[openproxylist.com] vmess-US
   network: ws
   port: '6666'
   server: 107.173.27.219
-  servername: 107.173.27.219
+  servername: ''
   tls: false
   type: vmess
   uuid: f0a2fbe5-29bf-468c-ddc1-b524552d1a23
@@ -1099,6 +997,14 @@ proxies:
   port: 443
   server: 38.54.64.247
   skip-cert-verify: true
+  sni: 38.54.64.247
+  type: trojan
+- name: 🇺🇸[openproxylist.com] trojan-U...
+  network: tcp
+  password: O4O8.Ew+ujFX6GJBQ=xQr.heGwux0GYHqk
+  port: 443
+  server: 45.61.52.243
+  sni: 45.61.52.243
   type: trojan
 - name: '🇩🇪[openproxylist.com] trojan-D... #1'
   network: tcp
@@ -1108,6 +1014,16 @@ proxies:
   skip-cert-verify: false
   sni: fra154.clientfirewall.click
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇬🇧[openproxylist.com] vmess-GB
+  network: tcp
+  port: '110'
+  server: 2.26.231.87
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ecd7aeca-2e37-4761-93e7-7cf4c2ff55bf
 - name: 🇦🇪[openproxylist.com] trojan-A...
   network: tcp
   password: ZfhGKkAmGl.hxRfIUI0LUU.MuK3hkQdxed
@@ -1116,7 +1032,7 @@ proxies:
   sni: 38.60.202.163
   type: trojan
   ws-opts:
-    path: '%2f'
+    path: /
 - name: 🇦🇹[openproxylist.com] trojan-A...
   password: VGBzLm49=M_i02Az30tIeonkQw180t-edg
   port: 443
@@ -1125,24 +1041,18 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #2'
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
   network: tcp
   port: '30022'
   server: 186.244.208.78
   tls: false
   type: vmess
   uuid: b7d93549-0f3f-4af2-9f4d-4340867a23b4
-- name: 🇺🇸[openproxylist.com] trojan-U...
+- name: '🇺🇸[openproxylist.com] trojan-U... #1'
   network: tcp
   password: GTCCjtvCtuy03-aV1mwF0OkG2q6yL+Fc5K
   port: 443
   server: 207.126.167.241
   skip-cert-verify: true
   sni: 207.126.167.241
-  type: trojan
-- name: 🇮🇩[openproxylist.com] trojan-I...
-  password: tUtK5TKdjxsPnOyritLtv8OQWHAK8f8yNR
-  port: 443
-  server: 130.94.94.15
-  sni: 130.94.94.15
   type: trojan
