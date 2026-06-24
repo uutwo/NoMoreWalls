@@ -1,10 +1,26 @@
 proxies:
-- name: 英国+V2CROSS.COM
-  password: BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL
-  port: 443
-  server: 185.126.236.44
-  sni: www.mesaly.click
-  type: trojan
+- name: 英国+伦敦Fastly节点
+  network: ws
+  port: 80
+  server: 151.101.17.151
+  tls: false
+  type: vless
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: '%2F%3Fhttps%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3'
+- name: '英国+伦敦Fastly节点 #1'
+  network: ws
+  port: 80
+  server: 151.101.16.151
+  tls: false
+  type: vless
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: '%2F%3Fhttps%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3'
 - alterId: 0
   cipher: auto
   name: '🇺🇸_US_美国 #1'
@@ -62,30 +78,11 @@ proxies:
   uuid: 5982d32f-f2e4-4267-a8ad-48492e65344c
 - name: '🇬🇧[openproxylist.com] vless-GB #5'
   port: 443
-  server: all20.allenshop100.ir
-  tls: false
-  type: vless
-  uuid: 9cda451e-0adf-4df1-a5b4-7fec8f363c10
-- name: '🇬🇧[openproxylist.com] vless-GB #6'
-  port: 443
-  server: all44.allenshop100.ir
-  tls: false
-  type: vless
-  uuid: 9cda451e-0adf-4df1-a5b4-7fec8f363c10
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #7'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: U_E3xSI6QY_Mj-3zjkB4esvMj0aVvYH6W6oHOR50XBs
-    short-id: '!!str 10debbdf94767541'
   server: 95.133.242.210
-  servername: filesconvert.org
   tls: false
   type: vless
   uuid: 5982d32f-f2e4-4267-a8ad-48492e65344c
-- name: '🇬🇧[openproxylist.com] vless-GB #8'
+- name: '🇬🇧[openproxylist.com] vless-GB #6'
   network: ws
   port: 8443
   server: 104.16.75.224
@@ -108,3 +105,16 @@ proxies:
   tls: false
   type: vmess
   uuid: ecd7aeca-2e37-4761-93e7-7cf4c2ff55bf
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇬🇧[openproxylist.com] vless-GB #7'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 8vqOvJ5eoG_9oHla4B3Vh1E-o39RrCXW6Wr7OcXZGmI
+    short-id: '!!str dd'
+  server: 209.127.228.114
+  servername: cars.morro-settings.ru
+  tls: false
+  type: vless
+  uuid: d205ae68-0819-473c-b425-6c5947ac2f8d
