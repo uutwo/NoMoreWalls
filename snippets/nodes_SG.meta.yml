@@ -1,4 +1,17 @@
 proxies:
+- name: 新加坡+Fastly节点
+  network: ws
+  port: 80
+  server: 151.101.9.151
+  servername: max-gb1.global.ssl.fastly.net
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /
 - name: 新加坡1
   password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
   port: 2055
@@ -39,51 +52,24 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- client-fingerprint: firefox
-  name: 🇸🇬[openproxylist.com] vless-SG
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: tg5AZG_Mj0_c4hh6oeHSRZGkp1ju8Ge7i2nkxRu4jAw
-    short-id: '!!str ed41'
-  server: 52.77.213.104
-  servername: play.google.com
-  tls: false
-  type: vless
-  uuid: a5548d28-c1dc-4c87-93ba-b6a1a393a2eb
-- client-fingerprint: firefox
-  name: '🇸🇬[openproxylist.com] vless-SG #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: tg5AZG_Mj0_c4hh6oeHSRZGkp1ju8Ge7i2nkxRu4jAw
-    short-id: '!!str ed41'
-  server: 47.129.227.54
-  servername: play.google.com
-  tls: false
-  type: vless
-  uuid: a5548d28-c1dc-4c87-93ba-b6a1a393a2eb
-- name: '🇸🇬[openproxylist.com] vless-SG #2'
-  network: ws
+- name: 🇸🇬[openproxylist.com] vless-SG
   port: 2096
   server: 188.114.97.6
-  servername: group.shalana.xyz
-  skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
   uuid: 70252937-5c61-4fb0-8656-d1a16261b795
   ws-opts:
-    headers:
-      Host: group.shalana.xyz
     path: '%2Fshalana'
-- name: '🇸🇬[openproxylist.com] vless-SG #3'
+- name: '🇸🇬[openproxylist.com] vless-SG #1'
   network: ws
-  port: 80
-  server: support.zoom.us
-  tls: false
+  port: 443
+  server: python-graysongon.wasmer.app
+  servername: python-graysongon.wasmer.app
+  skip-cert-verify: false
+  tls: true
   type: vless
-  uuid: cac6ec8f-99f0-44c5-814f-2f3f65e4db74
+  uuid: 7bd180e8-1142-4387-93f5-03e8d750a896
   ws-opts:
     headers:
-      Host: speed.dulacloud.store
-    path: '%2Fdula'
+      Host: python-graysongon.wasmer.app
+    path: '%2F7bd180e8'
