@@ -1,7 +1,26 @@
 proxies:
+- name: 🇸🇪[openproxylist.com] vless-SE
+  port: 443
+  server: 150.241.75.219
+  tls: false
+  type: vless
+  uuid: 1914bf24-90b2-4c08-919f-b07297462185
+- alterId: 0
+  cipher: auto
+  name: 🇸🇪[openproxylist.com] vmess-SE
+  network: ws
+  port: 57865
+  server: 62.60.151.41
+  tls: false
+  type: vmess
+  uuid: 3c61ea53-a550-4252-8211-956f9f7dc2d0
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇸🇪[openproxylist.com] vless-SE
+  name: '🇸🇪[openproxylist.com] vless-SE #1'
   network: tcp
   port: 443
   reality-opts:
@@ -15,7 +34,7 @@ proxies:
 - client-fingerprint: random
   grpc-opts:
     grpc-service-name: data-sync
-  name: '🇸🇪[openproxylist.com] vless-SE #1'
+  name: '🇸🇪[openproxylist.com] vless-SE #2'
   network: grpc
   port: 443
   reality-opts:
@@ -26,16 +45,9 @@ proxies:
   tls: false
   type: vless
   uuid: ed3e860f-c97d-45be-a56b-47b77da11059
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '🇸🇪[openproxylist.com] vless-SE #2'
-  network: tcp
+- name: '🇸🇪[openproxylist.com] vless-SE #3'
   port: 443
-  reality-opts:
-    public-key: Dgu9RaToLbQcM1NCf_pS3ezHj6LsBQSYu50zWs5A6Qk
-    short-id: '!!str 57cc65bfd5ef7465'
   server: 78.40.117.131
-  servername: ikea.com
   tls: false
   type: vless
   uuid: 1281ef13-f1cd-493b-903e-4c2f4ffe1eba
