@@ -89,76 +89,32 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- name: 美国+CloudFlare节点
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.219
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: /assignment
-- name: 美国+V2CROSS.COM
-  network: ws
-  password: humanity
-  port: 443
-  server: 198.202.211.1
-  skip-cert-verify: false
-  sni: www.creationlong.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.creationlong.org
-    path: /assignment
-- name: 美国+华盛顿Cogent通信公司
-  password: t5FsyeQXkNCY6eVGiqBXmPu4..jBEpNbak
-  port: 443
-  server: 38.60.220.65
-  skip-cert-verify: false
-  type: trojan
-- name: 🇺🇸 美国 V2CROSS.COM
-  password: GTCCjtvCtuy03-aV1mwF0OkG2q6yL+Fc5K
-  port: 443
-  server: 207.126.167.162
-  skip-cert-verify: false
-  type: trojan
 - name: 🇿🇦[openproxylist.com] trojan-Z...
   password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
   port: 443
   server: 38.54.64.247
   skip-cert-verify: false
-  sni: ''
-  type: trojan
-- name: 罗马尼亚+V2CROSS.COM
-  network: tcp
-  password: fFj7MAGy1VlAWmB_gMBG_27oPYTSHvV6MX
-  port: 443
-  server: 185.137.157.59
-  skip-cert-verify: false
-  sni: www.lateralio.click
-  type: trojan
-- name: '🇩🇪[openproxylist.com] trojan-D... #2'
-  network: tcp
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.142
-  skip-cert-verify: false
   type: trojan
 - name: 🇬🇧[openproxylist.com] trojan-G...
+  network: tcp
   password: kflYwtj8VD7Pd4V9ixedIxEDsac4QQXvbP
   port: 443
   server: 45.77.227.183
   skip-cert-verify: false
   type: trojan
-- name: 希腊+V2CROSS.COM
+- name: 🇩🇪[openproxylist.com] trojan-D...
   network: tcp
-  password: urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh
+  password: aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR
   port: 443
-  server: 92.119.35.131
+  server: 92.119.35.117
   skip-cert-verify: false
+  type: trojan
+- name: 🇺🇸[openproxylist.com] trojan-U...
+  password: O4O8.Ew+ujFX6GJBQ=xQr.heGwux0GYHqk
+  port: 443
+  server: 45.61.52.243
+  skip-cert-verify: false
+  sni: 45.61.52.243
   type: trojan
 - alterId: 0
   cipher: auto
@@ -355,13 +311,11 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
-- name: 🇺🇸[openproxylist.com] trojan-U...
-  network: tcp
-  password: O4O8.Ew+ujFX6GJBQ=xQr.heGwux0GYHqk
+- name: 🇺🇸 美国 V2CROSS.COM
+  password: GTCCjtvCtuy03-aV1mwF0OkG2q6yL+Fc5K
   port: 443
-  server: 45.61.52.243
+  server: 207.126.167.162
   skip-cert-verify: false
-  sni: 45.61.52.243
   type: trojan
 - name: 🇬🇷 希腊 V2CROSS.COM
   password: urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh
@@ -377,7 +331,7 @@ proxies:
   skip-cert-verify: false
   sni: www.multiplydose.com
   type: trojan
-- name: 🇷🇴 罗马尼亚 V2CROSS.COM
+- name: '🇩🇪[openproxylist.com] trojan-D... #3'
   password: n-S5Kuz58YgwljisuLEJltip2OWf1ourWz
   port: 443
   server: 185.137.157.250
@@ -712,7 +666,7 @@ proxies:
   cipher: auto
   name: 🇬🇧[openproxylist.com] vmess-GB
   network: ws
-  port: '80'
+  port: 80
   server: 69.84.182.49
   servername: ''
   tls: false
@@ -888,23 +842,18 @@ proxies:
   tls: false
   type: vmess
   uuid: 65488bcf-8573-44ee-9b4f-9abf4390acca
-- name: 🇩🇪[openproxylist.com] trojan-D...
-  password: aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR
-  port: 443
-  server: 92.119.35.117
-  type: trojan
 - name: 🇵🇱[openproxylist.com] trojan-P...
   network: ws
   password: humanity
   port: 443
   server: 43.169.18.179
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.creationlong.org
   type: trojan
   ws-opts:
     headers:
       Host: www.creationlong.org
-    path: /assignment
+    path: '%2Fassignment'
 - name: 🇵🇰[openproxylist.com] trojan-P...
   network: tcp
   password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
@@ -919,10 +868,18 @@ proxies:
   skip-cert-verify: false
   type: trojan
 - name: '🇩🇪[openproxylist.com] trojan-D... #1'
+  network: tcp
   password: urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh
   port: 443
-  server: 92.119.35.105
-  sni: ''
+  server: 92.119.35.93
+  skip-cert-verify: false
+  type: trojan
+- name: '🇩🇪[openproxylist.com] trojan-D... #2'
+  network: tcp
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.138
+  skip-cert-verify: false
   type: trojan
 - alterId: 0
   cipher: auto
@@ -951,19 +908,15 @@ proxies:
     headers:
       Host: ''
     path: /youtube
-- name: '🇩🇪[openproxylist.com] trojan-D... #3'
-  network: tcp
-  password: n-S5Kuz58YgwljisuLEJltip2OWf1ourWz
-  port: 443
-  server: 185.137.157.154
-  skip-cert-verify: false
-  sni: fra154.clientfirewall.click
-  type: trojan
 - name: 🇦🇪[openproxylist.com] trojan-A...
+  network: tcp
   password: ZfhGKkAmGl.hxRfIUI0LUU.MuK3hkQdxed
   port: 443
   server: 38.60.202.163
+  sni: 38.60.202.163
   type: trojan
+  ws-opts:
+    path: '%2f'
 - name: 🇦🇹[openproxylist.com] trojan-A...
   network: tcp
   password: VGBzLm49=M_i02Az30tIeonkQw180t-edg

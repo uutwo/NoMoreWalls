@@ -1,4 +1,12 @@
 proxies:
+- name: 新加坡+Amazon数据中心
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  port: 443
+  server: vpn-sg-001.fastervpn.world
+  skip-cert-verify: true
+  sni: vpn-sg-001.fastervpn.world
+  tls: false
+  type: hysteria2
 - name: 新加坡1
   password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
   port: 2055
@@ -55,26 +63,10 @@ proxies:
   sni: tjaaa.hhllfly.kdns.fr
   type: trojan
 - name: 🇸🇬[openproxylist.com] vless-SG
-  network: ws
   port: 2096
   server: 188.114.97.6
-  servername: group.shalana.xyz
-  skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
   uuid: 70252937-5c61-4fb0-8656-d1a16261b795
   ws-opts:
-    headers:
-      Host: group.shalana.xyz
     path: '%2Fshalana'
-- name: '🇸🇬[openproxylist.com] vless-SG #1'
-  network: ws
-  port: 80
-  server: 104.16.72.70
-  tls: false
-  type: vless
-  uuid: a3ca2f6f-3905-406b-b15e-873bed123033
-  ws-opts:
-    headers:
-      Host: education.panelvps.eu.org
-    path: '%2Fvless'

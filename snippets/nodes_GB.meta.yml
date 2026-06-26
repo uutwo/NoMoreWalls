@@ -1,10 +1,24 @@
 proxies:
 - name: 🇬🇧[openproxylist.com] trojan-G...
+  network: tcp
   password: kflYwtj8VD7Pd4V9ixedIxEDsac4QQXvbP
   port: 443
   server: 45.77.227.183
   skip-cert-verify: false
   type: trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 英国+V2CROSS.COM
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY
+    short-id: '!!str 7a3f9e2b1c8d4f6a'
+  server: 31.76.113.29
+  servername: it.s3-cloud.xyz
+  tls: false
+  type: vless
+  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
 - alterId: 0
   cipher: auto
   name: '英國 #5'
@@ -47,9 +61,15 @@ proxies:
   tls: false
   type: vless
   uuid: db1b568f-8847-42bf-84e5-a51e2e49a786
-- name: '🇬🇧[openproxylist.com] vless-GB #3'
+- client-fingerprint: firefox
+  name: '🇬🇧[openproxylist.com] vless-GB #3'
+  network: tcp
   port: 443
+  reality-opts:
+    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
+    short-id: '!!str 98fa0b00d09419f7'
   server: all27.allenshop100.ir
+  servername: play.google.com
   tls: false
   type: vless
   uuid: 9cda451e-0adf-4df1-a5b4-7fec8f363c10
