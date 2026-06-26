@@ -3,17 +3,44 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.20.6.134
-  sni: www.calmloud.com
+  server: 104.18.152.219
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    path: '%2Fassignment'
-- name: 美国+华盛顿Cogent通信公司
-  network: tcp
-  password: hCunaKqdEJDBO+3jCrJUSMevXOw9Q_r4Ey
+    headers:
+      Host: www.ignitelimit.com
+    path: /assignment
+- name: 美国+V2CROSS.COM
+  network: ws
+  password: humanity
   port: 443
-  server: 38.60.136.156
+  server: 198.202.211.1
   skip-cert-verify: false
+  sni: www.creationlong.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.creationlong.org
+    path: /assignment
+- name: 美国+华盛顿Cogent通信公司
+  password: t5FsyeQXkNCY6eVGiqBXmPu4..jBEpNbak
+  port: 443
+  server: 38.60.220.65
+  skip-cert-verify: false
+  type: trojan
+- name: 🇺🇸 美国 V2CROSS.COM
+  password: GTCCjtvCtuy03-aV1mwF0OkG2q6yL+Fc5K
+  port: 443
+  server: 207.126.167.162
+  skip-cert-verify: false
+  type: trojan
+- name: 🇿🇦[openproxylist.com] trojan-Z...
+  password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
+  port: 443
+  server: 38.54.64.247
+  skip-cert-verify: false
+  sni: ''
   type: trojan
 - alterId: 0
   cipher: auto
@@ -145,24 +172,34 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
+- name: 🇺🇸[openproxylist.com] trojan-U...
+  network: tcp
+  password: O4O8.Ew+ujFX6GJBQ=xQr.heGwux0GYHqk
+  port: 443
+  server: 45.61.52.243
+  skip-cert-verify: false
+  sni: 45.61.52.243
+  type: trojan
 - name: 🇺🇸 美国 CloudFlare节点
   password: humanity
   port: 443
-  server: 104.16.7.70
+  server: 104.19.208.184
   skip-cert-verify: false
-  sni: www.calmlunch.com
-  type: trojan
-- name: 🇺🇸 美国 Akamai科技公司CDN网络节点
-  password: zK=0KfL3IG+sNNZL-J7d0Nonu4wFBx8MOy
-  port: 443
-  server: 172.235.229.227
-  skip-cert-verify: false
+  sni: www.multiplydose.com
   type: trojan
 - name: '🇺🇸 美国 CloudFlare节点 #1'
-  password: f922fa0f-3311-4368-85ff-cf65e727c854
+  password: humanity
   port: 443
-  server: space.byu.id.yxls.eu.cc
+  server: 104.16.174.121
   skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+- name: '🇺🇸 美国 CloudFlare节点 #2'
+  password: humanity
+  port: 443
+  server: 104.18.152.208
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
   type: trojan
 - name: 美国2|@ripaojiedian
   network: tcp
@@ -182,7 +219,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国
+  name: '英國 #3'
   network: tcp
   port: 180
   server: 82.198.246.37
@@ -192,7 +229,7 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: '🇺🇸_US_美国 #2'
+  name: '德國 #1'
   network: tcp
   port: 180
   server: 82.198.246.250
@@ -200,7 +237,7 @@ proxies:
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: '🇹🇼_TW_中国台湾->🇸🇬_SG_新加坡 #1'
+- name: '美國丨yoyapai.com\r #1'
   password: gcuCpQfaiVeDBdWG
   port: 19128
   server: jpbgp.netvigor.cc
@@ -255,74 +292,17 @@ proxies:
   skip-cert-verify: true
   sni: www.calmlunch.com
   type: trojan
-- name: 🇭🇰_HK_中国香港->🇺🇸_US_美国
-  password: BxceQaOe
-  port: 17801
-  server: 95.40.68.192
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 🇺🇸_US_美国->🇩🇪_DE_德国
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 46424
-  server: 90081bb25c.node.tro.cac.cab
-  skip-cert-verify: true
-  sni: de.01.naiun.bilibili.com
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: 🇮🇩_ID_印度尼西亚->🇺🇸_US_美国
-  network: tcp
-  port: 30804
-  server: v4.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇺🇸_US_美国->🇮🇸_IS_冰岛
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 47909
-  server: 90081bb25c.node.tro.cac.cab
-  skip-cert-verify: true
-  sni: is.01.naiun.bilibili.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国->🇸🇬_SG_新加坡
-  network: tcp
-  port: 6004
-  server: gtm-sg-cc54q7d1q01.365cloud0285.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-- name: '🇭🇰_HK_中国香港->🇺🇸_US_美国 #1'
-  password: BxceQaOe
-  port: 2702
-  server: 95.40.68.150
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 🇺🇸_US_美国->🇨🇭_CH_瑞士
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45553
-  server: 90081bb25c.node.tro.cac.cab
-  skip-cert-verify: true
-  sni: ch.01.naiun.bilibili.com
-  type: trojan
-- name: 🇺🇸[openproxylist.com] trojan-U...
-  network: tcp
-  password: O4O8.Ew+ujFX6GJBQ=xQr.heGwux0GYHqk
-  port: 443
-  server: 45.61.52.243
-  sni: 45.61.52.243
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
-  network: tcp
-  port: '30022'
-  server: 186.244.208.78
+  network: ws
+  port: '6666'
+  server: 107.173.27.219
+  servername: ''
   tls: false
   type: vmess
-  uuid: b7d93549-0f3f-4af2-9f4d-4340867a23b4
+  uuid: f0a2fbe5-29bf-468c-ddc1-b524552d1a23
+  ws-opts:
+    headers:
+      Host: ''
+    path: /youtube
