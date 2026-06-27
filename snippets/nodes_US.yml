@@ -1,16 +1,24 @@
 proxies:
-- name: 🇦🇪[openproxylist.com] trojan-A...
+- alpn:
+  - h2
+  name: 美国+乔治亚洲亚特兰大Fastly节点
+  network: ws
+  password: Mitivpn
+  port: 443
+  server: 151.101.56.6
+  skip-cert-verify: false
+  sni: ssl.fastly.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 4-4-3-mitivpn.global.ssl.fastly.net
+    path: /
+- name: 🇺🇸 美国 华盛顿Cogent通信公司
   password: ZfhGKkAmGl.hxRfIUI0LUU.MuK3hkQdxed
   port: 443
   server: 38.60.202.163
-  sni: 38.60.202.163
-  type: trojan
-- name: 美国+V2CROSS.COM
-  password: O4O8.Ew+ujFX6GJBQ=xQr.heGwux0GYHqk
-  port: 443
-  server: 45.61.52.243
   skip-cert-verify: false
-  sni: 45.61.52.243
+  sni: 38.60.202.163
   type: trojan
 - name: 美国+Fastly全球Anycast节点
   network: ws
@@ -22,6 +30,13 @@ proxies:
     headers:
       Host: 3-mitivpn.global.ssl.fastly.net
     path: /ed=mitivpn
+- name: 🏳[openproxylist.com] trojan-
+  network: tcp
+  password: hCunaKqdEJDBO+3jCrJUSMevXOw9Q_r4Ey
+  port: 443
+  server: 38.60.136.156
+  skip-cert-verify: false
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇺🇸 VMESS-美国-NF解锁自制剧-ChatGPT-Ti...
@@ -152,24 +167,18 @@ proxies:
     headers:
       Host: cg1c14.waimaojd.com
     path: /api/v1/graphql
-- name: 🇺🇸 美国 华盛顿Cogent通信公司
-  password: ZfhGKkAmGl.hxRfIUI0LUU.MuK3hkQdxed
-  port: 443
-  server: 38.60.202.163
-  skip-cert-verify: false
-  type: trojan
-- name: 🇺🇸 美国 V2CROSS.COM
-  password: GTCCjtvCtuy03-aV1mwF0OkG2q6yL+Fc5K
-  port: 443
-  server: 207.126.167.162
-  skip-cert-verify: false
-  type: trojan
-- name: '🇺🇸 美国 V2CROSS.COM #1'
+- name: 🇺🇸 美国 乔治亚洲亚特兰大Fastly节点
   password: Mitivpn
   port: 443
-  server: 167.82.101.251
+  server: 151.101.56.6
   skip-cert-verify: false
   sni: ssl.fastly.com
+  type: trojan
+- name: 🇺🇸 美国 Fastly全球Anycast节点
+  password: Mitivpn
+  port: 80
+  server: 151.101.0.0
+  skip-cert-verify: false
   type: trojan
 - name: 美国2|@ripaojiedian
   network: tcp
@@ -179,7 +188,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 美国3|@ripaojiedian
+- name: '🇺🇸[openproxylist.com] trojan-U... #1'
   network: tcp
   password: BxceQaOe
   port: 22657
@@ -241,61 +250,19 @@ proxies:
   tls: false
   type: vmess
   uuid: 5f49c80e-7770-4bd1-9c86-43c2068a3a26
-- name: 🇷🇴 罗马尼亚(mibei77.com 米贝节点分享)
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45619
-  server: 103.177.136.42
-  skip-cert-verify: true
-  sni: fr.01.naiun.bilibili.com
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #28'
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45553
-  server: 103.177.136.45
-  skip-cert-verify: true
-  sni: ch.01.naiun.bilibili.com
-  type: trojan
-- name: 🇨🇦_CA_加拿大->🇨🇭_CH_瑞士
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45553
-  server: 103.177.136.42
-  skip-cert-verify: true
-  sni: ch.01.naiun.bilibili.com
-  type: trojan
-- name: 🇫🇷 FR法国(mibei77.com 米贝节点分享)
+- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #27'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 41943
   server: 103.177.136.45
   skip-cert-verify: true
   sni: az.01.naiun.bilibili.com
   type: trojan
-- name: '🇨🇦_CA_加拿大 #2'
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 48697
-  server: 103.177.136.42
-  skip-cert-verify: true
-  sni: gh.01.naiun.bilibili.com
-  type: trojan
-- name: '🇭🇰 HK香港(mibei77.com 米贝节点分享) #4'
+- name: '🇭🇰 HK香港(mibei77.com 米贝节点分享) #2'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45619
   server: 103.177.136.45
   skip-cert-verify: true
   sni: fr.01.naiun.bilibili.com
-  type: trojan
-- name: '🇨🇦_CA_加拿大 #3'
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 48697
-  server: 103.177.136.45
-  skip-cert-verify: true
-  sni: gh.01.naiun.bilibili.com
-  type: trojan
-- name: '🇨🇦_CA_加拿大 #1'
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 46424
-  server: 103.177.136.42
-  skip-cert-verify: true
-  sni: de.01.naiun.bilibili.com
   type: trojan
 - name: 🇨🇦_CA_加拿大->🇩🇪_DE_德国
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
@@ -304,12 +271,47 @@ proxies:
   skip-cert-verify: true
   sni: de.01.naiun.bilibili.com
   type: trojan
-- name: '🇭🇰 HK香港(mibei77.com 米贝节点分享) #6'
+- name: '🇭🇰 HK香港(mibei77.com 米贝节点分享) #4'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 41943
   server: 103.177.136.42
   skip-cert-verify: true
   sni: az.01.naiun.bilibili.com
+  type: trojan
+- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #26'
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 45619
+  server: 103.177.136.42
+  skip-cert-verify: true
+  sni: fr.01.naiun.bilibili.com
+  type: trojan
+- name: 🇨🇦_CA_加拿大->🇨🇭_CH_瑞士
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 45553
+  server: 103.177.136.42
+  skip-cert-verify: true
+  sni: ch.01.naiun.bilibili.com
+  type: trojan
+- name: '🇨🇦_CA_加拿大 #2'
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 48697
+  server: 103.177.136.42
+  skip-cert-verify: true
+  sni: gh.01.naiun.bilibili.com
+  type: trojan
+- name: '🇨🇦_CA_加拿大 #3'
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 48697
+  server: 103.177.136.45
+  skip-cert-verify: true
+  sni: gh.01.naiun.bilibili.com
+  type: trojan
+- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #22'
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 45553
+  server: 103.177.136.45
+  skip-cert-verify: true
+  sni: ch.01.naiun.bilibili.com
   type: trojan
 - name: 🇨🇦_CA_加拿大
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
@@ -318,95 +320,33 @@ proxies:
   skip-cert-verify: true
   sni: is.01.naiun.bilibili.com
   type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #12'
-  password: '!!str 114514'
-  port: 443
-  server: 72.249.204.157
+- name: '🇨🇦_CA_加拿大 #1'
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 46424
+  server: 103.177.136.42
   skip-cert-verify: true
-  sni: tjaaa.hhllfly.kdns.fr
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #13'
-  password: OccIqeORGQwiNkwS
-  port: 19128
-  server: jpbgp.netvigor.cc
-  skip-cert-verify: false
-  sni: yazhou10.dynu.net
+  sni: de.01.naiun.bilibili.com
   type: trojan
 - name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #14'
-  password: humanity
-  port: 443
-  server: 165.215.250.14
-  skip-cert-verify: true
-  sni: www.calmlunch.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #32'
-  network: ws
-  port: '48885'
-  server: 216.36.115.182
-  tls: false
-  type: vmess
-  uuid: 929f4b3b-60ed-4c7d-e94e-243ee9bbc743
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #16'
-  password: '!!str 114514'
-  port: 443
-  server: 43.169.19.179
-  skip-cert-verify: true
-  sni: tjaaa.hhllfly.kdns.fr
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #17'
   password: 7e70223b-f331-41d5-9313-02b8d2df2885
   port: 56168
   server: d1.catcat321.com
   skip-cert-verify: true
   sni: d.usj1.cat.bilibili.com
   type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #18'
+- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #15'
   password: 63872b0d-87dd-4474-b690-92773af2922e
   port: 42531
   server: d1.catcat321.com
   skip-cert-verify: true
   sni: d.usj1.cat.bilibili.com
   type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #19'
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  port: 20050
-  server: hkdcrtc-e.catcat321.com
-  skip-cert-verify: true
-  sni: us.catxstar.com
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #20'
-  password: humanity
-  port: 443
-  server: 165.215.250.14
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #21'
-  password: humanity
-  port: 443
-  server: 165.215.250.14
-  skip-cert-verify: true
-  sni: www.creationlong.org
-  type: trojan
-- name: 🇩🇪 DE德国(mibei77.com 米贝节点分享)
+- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #17'
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 47909
   server: 103.177.136.45
   skip-cert-verify: true
   sni: is.01.naiun.bilibili.com
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #31'
-  password: '!!str 114514'
-  port: 443
-  server: 104.243.20.184
-  skip-cert-verify: true
-  sni: tjaaa.hhllfly.kdns.fr
   type: trojan
 - alterId: 2
   cipher: auto
@@ -456,10 +396,10 @@ proxies:
     headers:
       Host: ''
     path: /youtube
-- name: 🇺🇸[openproxylist.com] trojan-U...
+- name: '🇺🇸[openproxylist.com] trojan-U... #2'
   network: tcp
   password: O4O8.Ew+ujFX6GJBQ=xQr.heGwux0GYHqk
   port: 443
-  server: 45.61.58.89
-  skip-cert-verify: false
+  server: 45.61.52.243
+  sni: 45.61.52.243
   type: trojan
