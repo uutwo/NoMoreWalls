@@ -1,48 +1,16 @@
 proxies:
-- alpn:
-  - http/1.1
-  name: 美国+CloudFlare节点
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.20.42.250
-  skip-cert-verify: false
-  sni: www.calmloud.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmloud.com
-    path: /assignment
-- alpn:
-  - http/1.1
-  name: '美国+V2CROSS.COM #4'
+- name: 美国+乔治亚洲亚特兰大Fastly节点
   network: ws
   password: Mitivpn
   port: 443
-  server: 167.82.101.251
+  server: 151.101.56.6
+  skip-cert-verify: false
   sni: ssl.fastly.com
   type: trojan
   ws-opts:
     headers:
-      Host: 3-mitivpn.global.ssl.fastly.net
-    path: /de
-- name: 🇮🇩[openproxylist.com] trojan-I...
-  network: tcp
-  password: tUtK5TKdjxsPnOyritLtv8OQWHAK8f8yNR
-  port: 443
-  server: 130.94.94.15
-  skip-cert-verify: false
-  sni: 130.94.94.15
-  type: trojan
-- name: '美国+CloudFlare节点 #2'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.71.213
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    path: /assignment
+      Host: 4-4-3-Mitivpn.global.ssl.fastly.net
+    path: /boost/bored_vpn---bored_vpn
 - cipher: chacha20-ietf-poly1305
   name: 🇺🇸US-146.19.49.251-04
   password: ODfxioK0VkKxTdpVQJ4rv8HglAu0vzv6
@@ -320,14 +288,18 @@ proxies:
     headers:
       Host: ''
     path: /youtube
-- name: '🇺🇸[openproxylist.com] trojan-U... #1'
+- name: 🇺🇸[openproxylist.com] trojan-U...
+  network: tcp
   password: O4O8.Ew+ujFX6GJBQ=xQr.heGwux0GYHqk
   port: 443
   server: 45.61.52.243
   sni: 45.61.52.243
   type: trojan
-- name: '🇺🇸[openproxylist.com] trojan-U... #2'
+- name: '🇺🇸[openproxylist.com] trojan-U... #1'
+  network: tcp
   password: GTCCjtvCtuy03-aV1mwF0OkG2q6yL+Fc5K
   port: 443
-  server: 207.126.167.162
+  server: 207.126.167.241
+  skip-cert-verify: true
+  sni: 207.126.167.241
   type: trojan
