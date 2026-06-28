@@ -49,20 +49,14 @@ proxies:
   type: trojan
 - name: 🇸🇬[openproxylist.com] vless-SG
   network: ws
-  port: 80
-  server: 104.16.72.70
-  tls: false
-  type: vless
-  uuid: a3ca2f6f-3905-406b-b15e-873bed123033
-  ws-opts:
-    headers:
-      Host: education.panelvps.eu.org
-    path: '%2Fvless'
-- name: '🇸🇬[openproxylist.com] vless-SG #1'
   port: 443
   server: python-graysongon.wasmer.app
-  tls: false
+  servername: python-graysongon.wasmer.app
+  skip-cert-verify: false
+  tls: true
   type: vless
   uuid: 7bd180e8-1142-4387-93f5-03e8d750a896
   ws-opts:
+    headers:
+      Host: python-graysongon.wasmer.app
     path: '%2F7bd180e8'
