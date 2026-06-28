@@ -1,42 +1,18 @@
 proxies:
 - alpn:
-  - h2
-  name: 美国+乔治亚洲亚特兰大Fastly节点
+  - http/1.1
+  name: '美国+V2CROSS.COM #9'
   network: ws
   password: Mitivpn
   port: 443
-  server: 151.101.56.6
+  server: 167.82.101.251
   skip-cert-verify: false
   sni: ssl.fastly.com
   type: trojan
   ws-opts:
     headers:
-      Host: 4-4-3-mitivpn.global.ssl.fastly.net
-    path: /
-- name: 🇺🇸 美国 华盛顿Cogent通信公司
-  password: ZfhGKkAmGl.hxRfIUI0LUU.MuK3hkQdxed
-  port: 443
-  server: 38.60.202.163
-  skip-cert-verify: false
-  sni: 38.60.202.163
-  type: trojan
-- name: 美国+Fastly全球Anycast节点
-  network: ws
-  password: Mitivpn
-  port: 80
-  server: 151.101.0.0
-  type: trojan
-  ws-opts:
-    headers:
       Host: 3-mitivpn.global.ssl.fastly.net
-    path: /ed=mitivpn
-- name: 🏳[openproxylist.com] trojan-
-  network: tcp
-  password: hCunaKqdEJDBO+3jCrJUSMevXOw9Q_r4Ey
-  port: 443
-  server: 38.60.136.156
-  skip-cert-verify: false
-  type: trojan
+    path: /de
 - alterId: 0
   cipher: auto
   name: 🇺🇸 VMESS-美国-NF解锁自制剧-ChatGPT-Ti...
@@ -174,10 +150,26 @@ proxies:
   skip-cert-verify: false
   sni: ssl.fastly.com
   type: trojan
+- name: 🇦🇪[openproxylist.com] trojan-A...
+  network: tcp
+  password: ZfhGKkAmGl.hxRfIUI0LUU.MuK3hkQdxed
+  port: 443
+  server: 38.60.202.163
+  skip-cert-verify: false
+  sni: 38.60.202.163
+  type: trojan
+  ws-opts:
+    path: /
 - name: 🇺🇸 美国 Fastly全球Anycast节点
   password: Mitivpn
   port: 80
   server: 151.101.0.0
+  skip-cert-verify: false
+  type: trojan
+- name: '🇺🇸 美国 华盛顿Cogent通信公司 #1'
+  password: hCunaKqdEJDBO+3jCrJUSMevXOw9Q_r4Ey
+  port: 443
+  server: 38.60.136.156
   skip-cert-verify: false
   type: trojan
 - name: 美国2|@ripaojiedian
@@ -189,7 +181,6 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - name: '🇺🇸[openproxylist.com] trojan-U... #1'
-  network: tcp
   password: BxceQaOe
   port: 22657
   server: 54.46.109.132
@@ -372,19 +363,17 @@ proxies:
     headers:
       Host: h3.bnm.uw.to
     path: /24ccfc13-c866-4f51-af04-682d9ae98f3c-vm
+- name: 美国3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 22657
+  server: 16.163.142.40
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
-  network: tcp
-  port: '13932'
-  server: 104.253.134.92
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 010a6106-960a-4a3c-94d3-410a50c1219d
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #1'
   network: ws
   port: '6666'
   server: 107.173.27.219
@@ -397,9 +386,12 @@ proxies:
       Host: ''
     path: /youtube
 - name: '🇺🇸[openproxylist.com] trojan-U... #2'
-  network: tcp
   password: O4O8.Ew+ujFX6GJBQ=xQr.heGwux0GYHqk
   port: 443
-  server: 45.61.52.243
-  sni: 45.61.52.243
+  server: 207.126.167.150
+  type: trojan
+- name: '🇺🇸[openproxylist.com] trojan-U... #3'
+  password: GTCCjtvCtuy03-aV1mwF0OkG2q6yL+Fc5K
+  port: 443
+  server: 207.126.167.162
   type: trojan
