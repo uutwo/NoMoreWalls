@@ -1,9 +1,29 @@
 proxies:
-- name: '美国+CloudFlare节点 #3'
+- name: 北美地区+V2CROSS.COM
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.225
+  server: 198.62.62.23
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    path: /assignment
+- name: 美国+Fastly全球Anycast节点
+  network: ws
+  password: Mitivpn
+  port: 80
+  server: 151.101.0.0
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 3-mitivpn.global.ssl.fastly.net
+    path: /ed=mitivpn
+- name: 美国+CloudFlare节点
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.210
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
