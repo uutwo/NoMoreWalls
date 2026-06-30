@@ -1,4 +1,17 @@
 proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 香港+Amazon数据中心
+  network: tcp
+  port: 14010
+  reality-opts:
+    public-key: PT1gw9B5majPBH2_qST-vymli9f6RlTmvGS2gPtdhF8
+    short-id: '!!str 1ebaa8ea57a71ffc'
+  server: vip.bcjdvip.com
+  servername: apple.com
+  tls: false
+  type: vless
+  uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
 - name: 🇭🇰 HK
   password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
   port: 443
@@ -16,68 +29,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇭🇰 香港3|@ripaojiedian
-  password: 4e4910ec52552e36aa43a870a179da83
-  port: 53012
-  server: 13.230.33.22
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 🇭🇰 香港4|@ripaojiedian
-  password: BxceQaOe
-  port: 29449
-  server: 16.163.129.142
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 🇭🇰 香港5|@ripaojiedian
-  password: BxceQaOe
-  port: 27167
-  server: 16.163.145.84
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 香港丨yoyapai.com\r
-  password: 65fQmPHHbPcBCfvSHt
-  port: 443
-  server: au-4.tr202605.com
-  skip-cert-verify: true
-  type: trojan
-- name: 香港節點丨yoyapai.com\r
-  password: 825929f4-c702-35ce-9124-00d3f95b8c32
-  port: 34436
-  server: adak.sonofthewinds.com
-  skip-cert-verify: true
-  sni: hh4.sonofthewinds.com
-  type: trojan
-- name: '🇨🇦_CA_加拿大 #6'
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 41943
-  server: 103.177.136.45
-  skip-cert-verify: true
-  sni: az.01.naiun.bilibili.com
-  type: trojan
-- name: '🇨🇦_CA_加拿大 #5'
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45619
-  server: 103.177.136.45
-  skip-cert-verify: true
-  sni: fr.01.naiun.bilibili.com
-  type: trojan
-- name: 🇨🇦_CA_加拿大->🇩🇪_DE_德国
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 46424
-  server: 103.177.136.45
-  skip-cert-verify: true
-  sni: de.01.naiun.bilibili.com
-  type: trojan
-- name: '🇨🇦_CA_加拿大 #7'
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 41943
-  server: 103.177.136.42
-  skip-cert-verify: true
-  sni: az.01.naiun.bilibili.com
-  type: trojan
 - name: 香港3|@ripaojiedian
   network: tcp
   password: 82c038b55e40ca2613b76bb98c7f6d1f
@@ -102,9 +53,63 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- client-fingerprint: firefox
+- name: 香港丨yoyapai.com\r
+  password: 65fQmPHHbPcBCfvSHt
+  port: 443
+  server: au-4.tr202605.com
+  skip-cert-verify: true
+  type: trojan
+- name: 香港節點丨yoyapai.com\r
+  password: 825929f4-c702-35ce-9124-00d3f95b8c32
+  port: 34436
+  server: adak.sonofthewinds.com
+  skip-cert-verify: true
+  sni: hh4.sonofthewinds.com
+  type: trojan
+- name: '🇨🇦_CA_加拿大 #4'
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 41943
+  server: 103.177.136.45
+  skip-cert-verify: true
+  sni: az.01.naiun.bilibili.com
+  type: trojan
+- name: '🇨🇦_CA_加拿大 #7'
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 45619
+  server: 103.177.136.45
+  skip-cert-verify: true
+  sni: fr.01.naiun.bilibili.com
+  type: trojan
+- name: '🇨🇦_CA_加拿大 #6'
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 46424
+  server: 103.177.136.45
+  skip-cert-verify: true
+  sni: de.01.naiun.bilibili.com
+  type: trojan
+- name: '🇨🇦_CA_加拿大 #3'
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 41943
+  server: 103.177.136.42
+  skip-cert-verify: true
+  sni: az.01.naiun.bilibili.com
+  type: trojan
+- client-fingerprint: safari
   flow: xtls-rprx-vision
   name: 🇭🇰[openproxylist.com] vless-HK
+  network: tcp
+  port: 14007
+  reality-opts:
+    public-key: wybFjQzLnkKIaaTEhwp_N9UXU8miqds9U__P971YHlU
+    short-id: '!!str 1d89ebb78c'
+  server: vip.bcjdvip.com
+  servername: apple.com
+  tls: false
+  type: vless
+  uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇭🇰[openproxylist.com] vless-HK #1'
   network: tcp
   port: 14003
   reality-opts:
@@ -115,27 +120,14 @@ proxies:
   tls: false
   type: vless
   uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '🇭🇰[openproxylist.com] vless-HK #1'
-  network: tcp
-  port: 14008
-  reality-opts:
-    public-key: WQP0QFc9RlOg7TDAI2i_VNQEtFwB_5kE5AKykeIipm0
-    short-id: '!!str 8e5d94464f'
-  server: vip.bcjdvip.com
-  servername: apple.com
-  tls: false
-  type: vless
-  uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
-- client-fingerprint: edge
+- client-fingerprint: safari
   flow: xtls-rprx-vision
   name: '🇭🇰[openproxylist.com] vless-HK #2'
   network: tcp
-  port: 14010
+  port: 14002
   reality-opts:
-    public-key: PT1gw9B5majPBH2_qST-vymli9f6RlTmvGS2gPtdhF8
-    short-id: '!!str 1ebaa8ea57a71ffc'
+    public-key: D4eZTpgaPV_2YQa7cbiDMGnZs6NBEU2JkfUroHpvoWs
+    short-id: '!!str 7cabb05b68f63b'
   server: vip.bcjdvip.com
   servername: apple.com
   tls: false
@@ -143,7 +135,7 @@ proxies:
   uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇭🇰[openproxylist.com] vless-HK #4'
+  name: '🇭🇰[openproxylist.com] vless-HK #3'
   network: tcp
   port: 14006
   reality-opts:
@@ -154,3 +146,22 @@ proxies:
   tls: false
   type: vless
   uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇭🇰[openproxylist.com] vless-HK #4'
+  network: tcp
+  port: 14004
+  reality-opts:
+    public-key: zSt5a1vs3C3oxm3fSUB_egA98IO3XZr7JGzE6OdMTz8
+    short-id: '!!str 22c485f4000241'
+  server: vip.bcjdvip.com
+  servername: apple.com
+  tls: false
+  type: vless
+  uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
+- name: '🇭🇰[openproxylist.com] vless-HK #5'
+  port: 448
+  server: 103.166.127.195
+  tls: false
+  type: vless
+  uuid: 8224aa92-4a38-4756-a7d9-a9e7cde12a31
