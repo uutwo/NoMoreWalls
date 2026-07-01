@@ -1,14 +1,4 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: '英國 #5'
-  network: tcp
-  port: 180
-  server: 82.198.246.214
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: grpc-api
@@ -27,8 +17,11 @@ proxies:
   type: vless
   uuid: 810b8ba9-3232-42ac-a474-3e921fdc8845
 - name: '🇬🇧[openproxylist.com] vless-GB #2'
+  network: tcp
   port: 443
   server: 186.190.211.188
+  servername: 186.190.211.188
+  skip-cert-verify: true
   tls: true
   type: vless
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -49,7 +42,7 @@ proxies:
   name: 🇬🇧[openproxylist.com] vmess-GB
   network: ws
   port: 80
-  server: yg2.ygkkk.dpdns.org
+  server: 69.84.182.49
   servername: ''
   tls: false
   type: vmess
