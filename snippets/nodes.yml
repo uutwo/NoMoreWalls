@@ -9,74 +9,64 @@ proxies:
   tls: true
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- alpn:
-  - http/1.1
-  name: 巴西圣保罗+CloudFlare节点
+- name: '美国+CloudFlare节点 #3'
   network: ws
   password: humanity
   port: 443
-  server: 188.114.97.6
-  skip-cert-verify: false
+  server: www.creationlong.org
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: 🇮🇩[openproxylist.com] trojan-I...
+  network: tcp
+  password: tUtK5TKdjxsPnOyritLtv8OQWHAK8f8yNR
+  port: 443
+  server: 130.94.94.15
+  skip-cert-verify: true
+  sni: 130.94.94.15
+  type: trojan
+- name: '美国+CloudFlare节点 #5'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.20.6.134
   sni: www.calmloud.com
   type: trojan
   ws-opts:
-    headers:
-      Host: www.calmloud.com
     path: /assignment
-- name: '美国+CloudFlare节点 #2'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.37
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: 美国+RF+Engineering
-  network: ws
-  password: f922fa0f-3311-4368-85ff-cf65e727c854
-  port: 443
-  server: 141.193.213.30
-  sni: space.byu.id.yxls.eu.cc
-  type: trojan
-  ws-opts:
-    path: /br-orcl
-- name: 美国+华盛顿Cogent通信公司
-  password: NAdtbpuyJXPH=CfKmdBqD2YVbzdvwAtuxw
-  port: 443
-  server: 38.60.252.118
-  skip-cert-verify: false
-  sni: 38.60.252.118
-  type: trojan
-- name: 🇩🇪[openproxylist.com] trojan-D...
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.145
-  skip-cert-verify: false
-  type: trojan
-- name: 🇿🇦[openproxylist.com] trojan-Z...
-  network: tcp
-  password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
-  port: 443
-  server: 38.54.64.247
-  skip-cert-verify: true
-  type: trojan
-- name: '🇷🇴 罗马尼亚 V2CROSS.COM #1'
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.138
-  skip-cert-verify: false
-  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 🇧🇷BR-38.180.221.145-03
+  name: 🇧🇷BR-38.180.221.145-00
   password: bwjNPcwgz5+1gCyi+rB+nfqugw38B7tqVa
   port: 17283
   server: 38.180.221.145
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-45.32.122.179-01
+  password: I-bP3lFh.dTG3XitF7XtVK83CZ7rI2Ut=n
+  port: 23027
+  server: 45.32.122.179
+  type: ss
+- name: 🇷🇴 罗马尼亚 V2CROSS.COM
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.135
+  skip-cert-verify: false
+  type: trojan
 - name: 🇺🇸 美国 CloudFlare节点
+  password: humanity
+  port: 443
+  server: 104.16.174.117
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-path: h=%2Fassignment
+- cipher: chacha20-ietf-poly1305
+  name: 🇧🇷BR-38.180.221.143-04
+  password: bwjNPcwgz5+1gCyi+rB+nfqugw38B7tqVa
+  port: 17283
+  server: 38.180.221.143
+  type: ss
+- name: '🇺🇸 美国 CloudFlare节点 #1'
   password: humanity
   port: 443
   server: 104.20.6.134
@@ -84,20 +74,22 @@ proxies:
   sni: www.calmloud.com
   type: trojan
   ws-path: h=%2Fassignment
-- name: '🇯🇵[openproxylist.com] trojan-J... #1'
-  password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
+- name: '🇺🇸 美国 CloudFlare节点 #2'
+  password: humanity
   port: 443
-  server: 103.125.216.18
+  server: 104.18.152.204
   skip-cert-verify: false
+  sni: www.ignitelimit.com
   type: trojan
-- name: 🇰🇷[openproxylist.com] trojan-K...
-  password: t5FsyeQXkNCY6eVGiqBXmPu4..jBEpNbak
-  port: 443
-  server: 38.60.220.65
-  skip-cert-verify: false
-  type: trojan
+  ws-path: h=%2Fassignment
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US-38.54.80.160-07
+  password: r_NRe-+WRq2zVqMpCnJtTESlT8WyffHyFy
+  port: 16292
+  server: 38.54.80.160
+  type: ss
 - cipher: aes-256-cfb
-  name: 🇩🇪DE-63.180.254.10-07
+  name: 🇩🇪DE-63.180.254.10-08
   password: amazonskr05
   port: 443
   server: 63.180.254.10
@@ -204,46 +196,20 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-18.166.53.62-21
-  password: 792e0bdb-01db-450c-94c4-925151eb396e
-  port: 19000
-  server: ss.046.node-for-bigairport.win
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰_HK_中国香港->🇯🇵_JP_日本
-  network: tcp
-  port: 30806
-  server: v6.hdacd.com
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-headers:
-    Host: v6.hdacd.com
-  ws-path: /
 - alterId: 2
   cipher: auto
   name: 🇭🇰_HK_中国香港->🇺🇸_US_美国
   network: tcp
-  port: 30824
-  server: v24.hdacd.com
+  port: 30809
+  server: v9.hdacd.com
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-headers:
-    Host: v24.hdacd.com
+    Host: v9.hdacd.com
   ws-path: /
-- name: 🇯🇵[openproxylist.com] trojan-J...
-  password: PI36027154
-  port: 443
-  server: large-baboon.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
 - alterId: 2
   cipher: auto
   name: 🇭🇰_HK_中国香港->🇫🇷_FR_法国
@@ -272,70 +238,15 @@ proxies:
   ws-headers:
     Host: v8.hdacd.com
   ws-path: /
-- alterId: 2
-  cipher: auto
-  name: '🇭🇰_HK_中国香港 #1'
-  network: tcp
-  port: 30829
-  server: v29.hdacd.com
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-headers:
-    Host: v29.hdacd.com
-  ws-path: /
-- name: '🇭🇰_HK_中国香港 #2'
-  password: OccIqeORGQwiNkwS
-  port: 19128
-  server: jpbgp.netvigor.cc
-  skip-cert-verify: true
-  sni: yazhou10.dynu.net
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰_HK_中国香港->🇬🇧_GB_英国
-  network: tcp
-  port: 30836
-  server: v36.hdacd.com
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-headers:
-    Host: v36.hdacd.com
-  ws-path: /
-- name: 🇦🇺[openproxylist.com] trojan-A...
+- name: 🇺🇸_US_美国
   password: PI36027154
   port: 443
-  server: tight-possum.rooster465.autos
+  server: pro-tortoise.rooster465.autos
   skip-cert-verify: true
   type: trojan
 - alterId: 2
   cipher: auto
   name: '🇭🇰_HK_中国香港->🇺🇸_US_美国 #2'
-  network: tcp
-  port: 30809
-  server: v9.hdacd.com
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-headers:
-    Host: v9.hdacd.com
-  ws-path: /
-- cipher: chacha20-ietf
-  name: 🇭🇰HK-103.149.183.113-33
-  password: asd123456
-  port: 8388
-  server: 103.149.183.113
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: '🇭🇰_HK_中国香港->🇺🇸_US_美国 #3'
   network: tcp
   port: 30804
   server: v4.hdacd.com
@@ -347,12 +258,20 @@ proxies:
   ws-headers:
     Host: v4.hdacd.com
   ws-path: /
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵JP-13.193.243.21-35
-  password: 792e0bdb-01db-450c-94c4-925151eb396e
-  port: 19001
-  server: ss.043.node-for-bigairport.win
-  type: ss
+- alterId: 2
+  cipher: auto
+  name: '🇭🇰_HK_中国香港->🇺🇸_US_美国 #3'
+  network: tcp
+  port: 30824
+  server: v24.hdacd.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-headers:
+    Host: v24.hdacd.com
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 🇭🇰[openproxylist.com] vmess-HK
@@ -363,16 +282,17 @@ proxies:
   tls: false
   type: vmess
   uuid: fbd4fc4c-5a2c-4c28-81d1-3d44bb3757f3
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪[openproxylist.com] vmess-DE
-  network: tcp
-  port: '1020'
-  server: nlt.reata.ir
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6244c41a-f4c1-4733-a654-c38f7729b13c
+- name: 🇯🇵[openproxylist.com] trojan-J...
+  password: PI36027154
+  port: 443
+  server: large-baboon.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+- name: 🇦🇺[openproxylist.com] trojan-A...
+  password: PI36027154
+  port: 443
+  server: tight-possum.rooster465.autos
+  type: trojan
 - name: 🇸🇬[openproxylist.com] trojan-S...
   password: PI36027154
   port: 443
@@ -392,29 +312,46 @@ proxies:
     headers:
       Host: ''
     path: /66ff581f-98d0-43cc-cecb-a7232f411c6d
-- alterId: 0
-  cipher: auto
-  name: 🇮🇳[openproxylist.com] vmess-IN
-  network: ws
-  port: '18746'
-  server: 138.252.100.85
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e314349a-7e56-4a3e-9318-eda62b5d6bd3
-  ws-opts:
-    path: /
 - name: 🇻🇳[openproxylist.com] trojan-V...
   password: NAdtbpuyJXPH=CfKmdBqD2YVbzdvwAtuxw
   port: 443
   server: 38.60.252.118
   skip-cert-verify: false
   type: trojan
+- name: 🇰🇷[openproxylist.com] trojan-K...
+  password: t5FsyeQXkNCY6eVGiqBXmPu4..jBEpNbak
+  port: 443
+  server: 38.60.220.65
+  type: trojan
+- name: 🇵🇱[openproxylist.com] trojan-P...
+  network: ws
+  password: humanity
+  port: 443
+  server: 43.169.18.179
+  skip-cert-verify: true
+  sni: www.creationlong.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.creationlong.org
+    path: '%2Fassignment'
 - name: 🇵🇰[openproxylist.com] trojan-P...
+  network: tcp
   password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
   port: 443
   server: 149.104.104.58
-  sni: 149.104.104.58
+  skip-cert-verify: false
+  type: trojan
+- name: '🇯🇵[openproxylist.com] trojan-J... #1'
+  password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
+  port: 443
+  server: 103.125.216.18
+  sni: ''
+  type: trojan
+- name: 🇩🇪[openproxylist.com] trojan-D...
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.138
   type: trojan
 - alterId: 0
   cipher: auto
@@ -429,12 +366,19 @@ proxies:
     headers:
       Host: ''
     path: /
+- name: 🇿🇦[openproxylist.com] trojan-Z...
+  network: tcp
+  password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
+  port: 443
+  server: 38.54.64.247
+  sni: 38.54.64.247
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇬🇧[openproxylist.com] vmess-GB
   network: ws
-  port: '80'
-  server: cf.tencentapp.cn
+  port: 80
+  server: 69.84.182.49
   servername: ''
   tls: false
   type: vmess
@@ -447,26 +391,15 @@ proxies:
   password: ZfhGKkAmGl.hxRfIUI0LUU.MuK3hkQdxed
   port: 443
   server: 38.60.202.163
-  sni: 38.60.202.163
   type: trojan
 - name: '🇩🇪[openproxylist.com] trojan-D... #1'
   network: ws
   password: kZSruDyvxP
   port: 443
   server: 45.130.125.2
-  skip-cert-verify: false
   sni: sk.farxmode.ir
   type: trojan
   ws-opts:
     headers:
       Host: sk.farxmode.ir
-    path: '%2Fda'
-- name: 🏳[openproxylist.com] trojan-
-  network: tcp
-  password: tUtK5TKdjxsPnOyritLtv8OQWHAK8f8yNR
-  port: 443
-  server: 130.94.94.15
-  sni: 130.94.94.15
-  type: trojan
-  ws-opts:
-    path: '%2f'
+    path: /da
