@@ -99,62 +99,37 @@ proxies:
   tls: true
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888889
+- name: 亚太地区 V2CROSS.COM
+  password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
+  port: 443
+  server: 103.125.216.18
+  skip-cert-verify: false
+  type: trojan
 - name: 罗马尼亚+V2CROSS.COM
+  network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
-  server: 185.137.157.151
+  server: 185.137.157.145
+  skip-cert-verify: false
   type: trojan
-- name: 🇿🇦[openproxylist.com] trojan-Z...
+- name: 美国+加利福尼亚
+  network: tcp
+  password: nsKBtW4V7LPHG5.iSySU8_pNM88Gkxz7eE
+  port: 443
+  server: 64.176.74.241
+  type: trojan
+- name: 美国+华盛顿Cogent通信公司
   password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
   port: 443
   server: 38.54.64.247
   type: trojan
-- name: 美国+V2CROSS.COM
-  network: ws
-  password: humanity
-  port: 443
-  server: 45.130.125.32
-  sni: www.calmloud.com
-  type: trojan
-  ws-opts:
-    path: /assignment
-- alpn:
-  - http/1.1
-  name: 美国+加州
-  network: ws
-  password: humanity
-  port: 443
-  server: 216.24.57.6
-  skip-cert-verify: true
-  sni: www.creationlong.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.creationlong.org
-    path: '%2Fassignment'
-- name: '美国+华盛顿Cogent通信公司 #2'
+- name: '美国+华盛顿Cogent通信公司 #1'
   network: tcp
   password: Lw_DP4+W.J5K33MD2Jy5zQVuT5n71+=BcD
   port: 443
   server: 38.60.168.129
   sni: 38.60.168.129
   type: trojan
-- name: 🇯🇵[openproxylist.com] trojan-J...
-  password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
-  port: 443
-  server: 103.125.216.18
-  skip-cert-verify: false
-  type: trojan
-- name: 🇦🇪[openproxylist.com] trojan-A...
-  network: tcp
-  password: ZfhGKkAmGl.hxRfIUI0LUU.MuK3hkQdxed
-  port: 443
-  server: 38.60.202.163
-  skip-cert-verify: false
-  sni: 38.60.202.163
-  type: trojan
-  ws-opts:
-    path: '%2f'
 - name: '🇭🇰 HK香港(mibei77.com 米贝节点分享) #1'
   password: OccIqeORGQwiNkwS
   port: 19128
@@ -181,6 +156,13 @@ proxies:
   port: 443
   server: 185.137.157.135
   skip-cert-verify: false
+  type: trojan
+- name: 🇦🇪[openproxylist.com] trojan-A...
+  password: ZfhGKkAmGl.hxRfIUI0LUU.MuK3hkQdxed
+  port: 443
+  server: 38.60.202.163
+  skip-cert-verify: false
+  sni: 38.60.202.163
   type: trojan
 - alterId: 2
   cipher: auto
@@ -698,7 +680,7 @@ proxies:
     headers:
       Host: seoul01.zgjok.com
     path: /henis01
-- name: 🇩🇪_DE_德国
+- name: 🇩🇪[openproxylist.com] trojan-D...
   password: SoftNetConnect
   port: 42549
   server: 213.108.20.209
@@ -719,31 +701,12 @@ proxies:
     headers:
       Host: n1747624274.4u9ma.icu
     path: /
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵[openproxylist.com] vmess-JP
-  network: ws
-  port: 2052
-  server: 157.85.230.247
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 85357d35-492e-4814-835a-aba4cb7f00ad
-  ws-opts:
-    headers:
-      Host: www.bing.com
-    path: 85357d35-492e-4814-835a-aba4cb7f00ad-vm
-- name: 🇫🇷[openproxylist.com] trojan-F...
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.39.35.22
-  type: trojan
 - name: 🇺🇸[openproxylist.com] trojan-U...
   password: PI36027154
   port: 443
   server: pro-tortoise.rooster465.autos
   type: trojan
-- name: 🏳[openproxylist.com] trojan-
+- name: 🇯🇵[openproxylist.com] trojan-J...
   password: PI36027154
   port: 443
   server: large-baboon.rooster465.autos
@@ -753,7 +716,7 @@ proxies:
   port: 443
   server: tight-possum.rooster465.autos
   type: trojan
-- name: '🏳[openproxylist.com] trojan- #1'
+- name: 🇸🇬[openproxylist.com] trojan-S...
   password: PI36027154
   port: 443
   server: rich-mule.rooster465.autos
@@ -771,75 +734,59 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: 🇫🇷[openproxylist.com] vmess-FR
-  network: ws
-  port: '59525'
-  server: 194.60.95.7
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 66ff581f-98d0-43cc-cecb-a7232f411c6d
-  ws-opts:
-    path: /66ff581f-98d0-43cc-cecb-a7232f411c6d
-- alterId: 0
-  cipher: auto
-  name: 🇮🇳[openproxylist.com] vmess-IN
-  network: ws
-  port: '18746'
-  server: 138.252.100.85
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e314349a-7e56-4a3e-9318-eda62b5d6bd3
-  ws-opts:
-    path: /
 - name: 🇻🇳[openproxylist.com] trojan-V...
   password: NAdtbpuyJXPH=CfKmdBqD2YVbzdvwAtuxw
   port: 443
   server: 38.60.252.118
   skip-cert-verify: false
   type: trojan
-- name: '🏳[openproxylist.com] trojan- #2'
+- name: 🏳[openproxylist.com] trojan-
   password: hCunaKqdEJDBO+3jCrJUSMevXOw9Q_r4Ey
   port: 443
   server: 38.60.136.156
+  type: trojan
+- name: '🏳[openproxylist.com] trojan- #1'
+  network: tcp
+  password: Lw_DP4+W.J5K33MD2Jy5zQVuT5n71+=BcD
+  port: 443
+  server: 38.60.168.129
   type: trojan
 - name: 🇰🇷[openproxylist.com] trojan-K...
   password: t5FsyeQXkNCY6eVGiqBXmPu4..jBEpNbak
   port: 443
   server: 38.60.220.65
   type: trojan
-- name: 🇵🇱[openproxylist.com] trojan-P...
-  network: ws
-  password: humanity
-  port: 443
-  server: 43.169.18.179
-  skip-cert-verify: true
-  sni: www.creationlong.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.creationlong.org
-    path: '%2Fassignment'
 - name: 🇵🇰[openproxylist.com] trojan-P...
+  network: tcp
   password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
   port: 443
   server: 149.104.104.58
-  sni: 149.104.104.58
+  skip-cert-verify: false
   type: trojan
-- name: 🇩🇪[openproxylist.com] trojan-D...
+- name: '🇯🇵[openproxylist.com] trojan-J... #1'
+  password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
+  port: 443
+  server: 103.125.216.68
+  type: trojan
+- name: '🇩🇪[openproxylist.com] trojan-D... #1'
   network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.145
+  sni: 185.137.157.145
+  type: trojan
+- name: 🇿🇦[openproxylist.com] trojan-Z...
+  network: tcp
+  password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
+  port: 443
+  server: 38.54.64.247
+  sni: 38.54.64.247
   type: trojan
 - alterId: 0
   cipher: auto
   name: 🇬🇧[openproxylist.com] vmess-GB
   network: ws
-  port: '80'
+  port: 80
   server: cf.tencentapp.cn
   servername: ''
   tls: false
