@@ -1,4 +1,11 @@
 proxies:
+- name: 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
+  password: OccIqeORGQwiNkwS
+  port: 19128
+  server: jpbgp.netvigor.cc
+  skip-cert-verify: true
+  sni: yazhou10.dynu.net
+  type: trojan
 - name: 🇭🇰 HK
   password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
   port: 443
@@ -16,33 +23,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇭🇰 香港3|@ripaojiedian
-  password: d6788cf74e6844c45538204efd24b00f
-  port: 53012
-  server: 16.163.50.86
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 🇭🇰 香港4|@ripaojiedian
-  password: BxceQaOe
-  port: 11035
-  server: 43.199.66.183
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 🇭🇰 香港5|@ripaojiedian
-  password: BxceQaOe
-  port: 4374
-  server: 16.162.34.241
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 香港丨yoyapai.com\r
-  password: 65fQmPHHbPcBCfvSHt
-  port: 443
-  server: au-4.tr202605.com
-  skip-cert-verify: true
-  type: trojan
 - name: 香港3|@ripaojiedian
   network: tcp
   password: d6788cf74e6844c45538204efd24b00f
@@ -67,9 +47,22 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 🇭🇰[openproxylist.com] vless-HK
-  port: 448
-  server: 103.166.127.195
-  tls: false
-  type: vless
-  uuid: 8224aa92-4a38-4756-a7d9-a9e7cde12a31
+- name: 香港丨yoyapai.com\r
+  password: 65fQmPHHbPcBCfvSHt
+  port: 443
+  server: au-4.tr202605.com
+  skip-cert-verify: true
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰[openproxylist.com] vmess-HK
+  network: ws
+  port: '443'
+  server: n1747624274.4u9ma.icu
+  tls: true
+  type: vmess
+  uuid: d8daf507-a4ac-4eea-8399-8f0cd071eb52
+  ws-opts:
+    headers:
+      Host: n1747624274.4u9ma.icu
+    path: /
