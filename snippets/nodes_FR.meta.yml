@@ -1,9 +1,9 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 🇬🇧[openproxylist.com] vmess-GB
+  name: 法國節點
   network: ws
-  port: '80'
+  port: 80
   server: 69.84.182.49
   servername: ''
   tls: false
@@ -18,13 +18,19 @@ proxies:
   port: 22222
   server: 35.181.216.201
   type: trojan
-- name: 🇫🇷[openproxylist.com] vless-FR
+- client-fingerprint: chrome
+  name: 🇫🇷[openproxylist.com] vless-FR
+  network: ws
   port: 443
   server: love.ns.cloudflare.com
-  tls: false
+  servername: deicl.redstone-vex.sbs
+  skip-cert-verify: false
+  tls: true
   type: vless
   uuid: 8ad6f598-cd8d-4fca-848e-05fc9be15ff3
   ws-opts:
+    headers:
+      Host: deicl.redstone-vex.sbs
     path: '%2Fsea'
 - client-fingerprint: firefox
   name: '🇫🇷[openproxylist.com] vless-FR #1'
@@ -89,36 +95,3 @@ proxies:
   tls: false
   type: vless
   uuid: 1f4c983e-382c-d2fa-b2dc-7981f02b34de
-- client-fingerprint: chrome
-  name: '🇫🇷[openproxylist.com] vless-FR #6'
-  network: ws
-  port: 443
-  server: 104.21.74.63
-  servername: amooaliii.net
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 72d1797c-cef8-410a-b8fd-db9104dc3cb0
-  ws-opts:
-    headers:
-      Host: amooaliii.net
-    path: '%2Fjdhfyws'
-- name: '🇫🇷[openproxylist.com] vless-FR #7'
-  network: tcp
-  port: 8888
-  server: 45.13.119.219
-  tls: false
-  type: vless
-  uuid: eb77be10-9d9e-527b-a78d-8caaf58992d6
-- client-fingerprint: chrome
-  name: '🇫🇷[openproxylist.com] vless-FR #8'
-  network: tcp
-  port: 448
-  reality-opts:
-    public-key: fjPED4_A_EQrL8PAuBUi9ChoNbY2OC4mUl7r8zaLoxo
-    short-id: '!!str 05fdaa8a05be46a9'
-  server: 194.164.217.139
-  servername: www.samsung.com
-  tls: false
-  type: vless
-  uuid: d61b4e1b-4745-484f-8362-18537825a7af
