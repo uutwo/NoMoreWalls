@@ -99,39 +99,21 @@ proxies:
   tls: true
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888889
-- name: '🇯🇵[openproxylist.com] trojan-J... #1'
-  network: tcp
-  password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
-  port: 443
-  server: 103.125.216.18
-  skip-cert-verify: false
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 🇧🇷BR-38.180.221.143-00
-  password: bwjNPcwgz5+1gCyi+rB+nfqugw38B7tqVa
-  port: 17283
-  server: 38.180.221.143
-  type: ss
-- name: '🇺🇸 美国 华盛顿Cogent通信公司 #1'
-  password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
-  port: 443
-  server: 38.54.64.247
-  skip-cert-verify: false
-  type: trojan
-- name: '🇺🇸 美国 华盛顿Cogent通信公司 #2'
-  password: hCunaKqdEJDBO+3jCrJUSMevXOw9Q_r4Ey
-  port: 443
-  server: 38.60.136.156
-  skip-cert-verify: false
-  type: trojan
 - name: 🇷🇴 罗马尼亚 V2CROSS.COM
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
-  server: 185.137.157.135
+  server: 185.137.157.128
   skip-cert-verify: false
   type: trojan
+- name: 🇺🇸 美国 华盛顿Cogent通信公司
+  password: ZfhGKkAmGl.hxRfIUI0LUU.MuK3hkQdxed
+  port: 443
+  server: 38.60.202.163
+  skip-cert-verify: false
+  sni: 38.60.202.163
+  type: trojan
 - cipher: aes-256-cfb
-  name: 🇩🇪DE-63.180.254.10-04
+  name: 🇩🇪DE-63.180.254.10-02
   password: amazonskr05
   port: 443
   server: 63.180.254.10
@@ -246,41 +228,9 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 🇺🇸US-165.215.250.14-18
-  password: 订阅内容解析错误humanity
-  port: 443
-  server: 165.215.250.14
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-path: h=%2Fassignment
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #1'
-  password: humanity
-  port: 443
-  server: 165.215.250.14
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-path: h=%2Fassignment
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #3'
-  password: humanity
-  port: 443
-  server: 165.215.250.14
-  skip-cert-verify: true
-  sni: www.creationlong.org
-  type: trojan
-  ws-path: h=%2Fassignment
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #5'
-  password: humanity
-  port: 443
-  server: 165.215.250.14
-  skip-cert-verify: true
-  sni: www.calmlunch.com
-  type: trojan
-  ws-path: h=%2Fassignment
 - alterId: 0
   cipher: auto
-  name: '🇳🇱[openproxylist.com] vmess-NL #3'
+  name: '🇳🇱[openproxylist.com] vmess-NL #2'
   network: tcp
   port: '18339'
   server: c87s5.portablesubmarines.com
@@ -294,7 +244,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 🇭🇰HK-43.100.32.12-25
+  name: 🇭🇰HK-43.100.32.12-17
   network: ws
   port: 443
   server: n1747624274.4u9ma.icu
@@ -355,12 +305,13 @@ proxies:
   password: zBfIAxaXtz
   port: 443
   server: 45.130.125.2
+  skip-cert-verify: false
   sni: sn.farxmode.ir
   type: trojan
   ws-opts:
     headers:
       Host: sn.farxmode.ir
-    path: /db
+    path: '%2Fdb'
 - name: 🇹🇼[openproxylist.com] trojan-T...
   network: tcp
   password: 9bae11fd9fc7b41b4dcffc0bfbc63613
@@ -392,6 +343,7 @@ proxies:
   password: PI36027154
   port: 443
   server: large-baboon.rooster465.autos
+  skip-cert-verify: false
   type: trojan
 - name: 🇦🇺[openproxylist.com] trojan-A...
   password: PI36027154
@@ -404,21 +356,16 @@ proxies:
   server: rich-mule.rooster465.autos
   type: trojan
 - name: 🇻🇳[openproxylist.com] trojan-V...
-  network: tcp
   password: NAdtbpuyJXPH=CfKmdBqD2YVbzdvwAtuxw
   port: 443
   server: 38.60.252.118
+  sni: ''
   type: trojan
-  ws-opts:
-    path: /
 - name: 🇰🇷[openproxylist.com] trojan-K...
-  network: tcp
   password: t5FsyeQXkNCY6eVGiqBXmPu4..jBEpNbak
   port: 443
   server: 38.60.220.65
   type: trojan
-  ws-opts:
-    path: '%2f'
 - name: '🇵🇱[openproxylist.com] trojan-P... #1'
   network: ws
   password: humanity
@@ -432,15 +379,28 @@ proxies:
       Host: www.creationlong.org
     path: '%2Fassignment'
 - name: 🇵🇰[openproxylist.com] trojan-P...
+  network: tcp
   password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
   port: 443
   server: 149.104.104.58
-  sni: 149.104.104.58
+  skip-cert-verify: false
+  type: trojan
+- name: '🇯🇵[openproxylist.com] trojan-J... #1'
+  password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
+  port: 443
+  server: 103.125.216.68
+  skip-cert-verify: false
   type: trojan
 - name: '🇩🇪[openproxylist.com] trojan-D... #2'
-  network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
-  server: 185.137.157.151
+  server: 185.137.157.145
   skip-cert-verify: false
+  type: trojan
+- name: 🇿🇦[openproxylist.com] trojan-Z...
+  network: tcp
+  password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
+  port: 443
+  server: 38.54.64.247
+  sni: 38.54.64.247
   type: trojan
