@@ -99,6 +99,44 @@ proxies:
   tls: true
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888889
+- alpn:
+  - http/1.1
+  name: 美国+V2CROSS.COM
+  network: ws
+  password: MiTiVPN
+  port: 443
+  server: 167.82.101.252
+  skip-cert-verify: true
+  sni: ssl.fastly.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: miticonfig.global.ssl.fastly.net
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Sw
+- alpn:
+  - http/1.1
+  name: '美国+CloudFlare节点 #5'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.17.121.9
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: '%2Fassignment'
+- name: 亚太地区+V2CROSS.COM
+  password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
+  port: 443
+  server: 103.125.216.18
+  type: trojan
+- name: 罗马尼亚+V2CROSS.COM
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.149
+  type: trojan
 - name: 🇷🇴 罗马尼亚 V2CROSS.COM
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
@@ -132,32 +170,28 @@ proxies:
   ws-headers:
     Host: v10.hdacd.com
   ws-path: /
-- name: 香港3|@ripaojiedian
-  network: tcp
+- name: 🇭🇰 香港3|@ripaojiedian
   password: d6788cf74e6844c45538204efd24b00f
   port: 2008
   server: 18.162.58.236
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 香港4|@ripaojiedian
-  network: tcp
+- name: 🇭🇰 香港4|@ripaojiedian
   password: BxceQaOe
   port: 11035
   server: 16.163.150.200
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 香港5|@ripaojiedian
-  network: tcp
+- name: 🇭🇰 香港5|@ripaojiedian
   password: BxceQaOe
   port: 29449
   server: 16.162.150.200
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 日本|@ripaojiedian
-  network: tcp
+- name: 🇯🇵 日本|@ripaojiedian
   password: BxceQaOe
   port: 27826
   server: 3.112.52.247
@@ -196,8 +230,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 新加坡3|@ripaojiedian
-  network: tcp
+- name: 🇸🇬 新加坡3|@ripaojiedian
   password: BxceQaOe
   port: 41421
   server: 16.163.150.200
@@ -220,8 +253,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 美国3|@ripaojiedian
-  network: tcp
+- name: 🇺🇸 美国3|@ripaojiedian
   password: BxceQaOe
   port: 44265
   server: 95.40.58.154
@@ -290,28 +322,109 @@ proxies:
     headers:
       Host: n1747624274.4u9ma.icu
     path: /
+- name: 香港3|@ripaojiedian
+  network: tcp
+  password: d6788cf74e6844c45538204efd24b00f
+  port: 2008
+  server: 16.163.138.198
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 香港4|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 11035
+  server: 16.162.109.204
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 香港5|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 29449
+  server: 16.162.143.22
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 日本|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 47656
+  server: 95.40.61.197
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 新加坡3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 51396
+  server: 16.162.34.133
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 美国3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 44265
+  server: 18.163.116.155
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 🇵🇱[openproxylist.com] trojan-P...
+  network: ws
+  password: humanity
+  port: 443
+  server: 216.24.57.6
+  skip-cert-verify: false
+  sni: www.creationlong.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.creationlong.org
+    path: '%2Fassignment'
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸[openproxylist.com] vmess-US
+  network: ws
+  port: '443'
+  server: phoenix0202.zgjok.com
+  servername: phoenix0202.zgjok.com
+  tls: true
+  type: vmess
+  uuid: d9c36b55-447a-4484-882b-d799f5301681
+  ws-opts:
+    headers:
+      Host: phoenix0202.zgjok.com
+    path: /d9c36b55-447a-4484-882b-d799f5301681
+- alterId: 0
+  cipher: auto
+  name: 🇮🇹[openproxylist.com] vmess-IT
+  network: ws
+  port: '443'
+  server: 57.131.35.243
+  tls: false
+  type: vmess
+  uuid: 8f9391ed-fede-4ee6-b7c2-89d0939545bd
+  ws-opts:
+    path: /
 - name: 🇩🇪[openproxylist.com] trojan-D...
   password: TrojanPass2026!
   port: 8448
   server: 2.26.54.174
-  type: trojan
-- name: 🇵🇱[openproxylist.com] trojan-P...
-  password: nsKBtW4V7LPHG5.iSySU8_pNM88Gkxz7eE
-  port: 443
-  server: 64.176.74.241
   type: trojan
 - name: '🇩🇪[openproxylist.com] trojan-D... #1'
   network: ws
   password: zBfIAxaXtz
   port: 443
   server: 45.130.125.2
-  skip-cert-verify: false
   sni: sn.farxmode.ir
   type: trojan
   ws-opts:
     headers:
       Host: sn.farxmode.ir
-    path: '%2Fdb'
+    path: /db
 - name: 🇹🇼[openproxylist.com] trojan-T...
   network: tcp
   password: 9bae11fd9fc7b41b4dcffc0bfbc63613
@@ -320,6 +433,20 @@ proxies:
   skip-cert-verify: true
   sni: tw.pitopone.com
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
+  network: ws
+  port: 2095
+  server: 107.173.7.186
+  servername: 107.173.7.186
+  tls: false
+  type: vmess
+  uuid: 383737a2-a196-44b6-a9ac-4f8cc23c9637
+  ws-opts:
+    headers:
+      Host: ''
+    path: 383737a2-a196-44b6-a9ac-4f8cc23c9637-vm
 - alterId: 0
   cipher: auto
   name: 🇯🇵[openproxylist.com] vmess-JP
@@ -343,7 +470,6 @@ proxies:
   password: PI36027154
   port: 443
   server: large-baboon.rooster465.autos
-  skip-cert-verify: false
   type: trojan
 - name: 🇦🇺[openproxylist.com] trojan-A...
   password: PI36027154
@@ -359,7 +485,7 @@ proxies:
   password: NAdtbpuyJXPH=CfKmdBqD2YVbzdvwAtuxw
   port: 443
   server: 38.60.252.118
-  sni: ''
+  sni: 38.60.252.118
   type: trojan
 - name: 🇰🇷[openproxylist.com] trojan-K...
   password: t5FsyeQXkNCY6eVGiqBXmPu4..jBEpNbak
@@ -379,28 +505,8 @@ proxies:
       Host: www.creationlong.org
     path: '%2Fassignment'
 - name: 🇵🇰[openproxylist.com] trojan-P...
-  network: tcp
   password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
   port: 443
   server: 149.104.104.58
-  skip-cert-verify: false
-  type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #1'
-  password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
-  port: 443
-  server: 103.125.216.68
-  skip-cert-verify: false
-  type: trojan
-- name: '🇩🇪[openproxylist.com] trojan-D... #2'
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.145
-  skip-cert-verify: false
-  type: trojan
-- name: 🇿🇦[openproxylist.com] trojan-Z...
-  network: tcp
-  password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
-  port: 443
-  server: 38.54.64.247
-  sni: 38.54.64.247
+  sni: 149.104.104.58
   type: trojan
