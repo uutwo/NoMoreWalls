@@ -100,55 +100,38 @@ proxies:
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888889
 - name: 罗马尼亚+V2CROSS.COM
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.156
-  type: trojan
-- name: 巴西圣保罗+CloudFlare节点
-  network: ws
-  password: humanity
-  port: 443
-  server: 188.114.97.57
-  sni: www.calmloud.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmloud.com
-    path: '%2Fassignment'
-- name: 美国+CloudFlare节点
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.7.70
-  skip-cert-verify: true
-  sni: www.gossipglove.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: 亚太地区+V2CROSS.COM
-  password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
-  port: 443
-  server: 103.125.216.18
-  type: trojan
-- name: '罗马尼亚+V2CROSS.COM #1'
   network: tcp
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
-  server: 185.137.157.145
-  skip-cert-verify: false
+  server: 185.137.157.138
+  sni: 185.137.157.138
   type: trojan
-- alpn:
-  - http/1.1
-  name: '美国+CloudFlare节点 #6'
+- name: '美国+CloudFlare节点 #2'
   network: ws
   password: humanity
   port: 443
-  server: 172.64.229.75
+  server: 104.20.6.134
   sni: www.calmloud.com
   type: trojan
   ws-opts:
-    headers:
-      Host: www.calmloud.com
+    path: /assignment
+- name: 美国+华盛顿Cogent通信公司
+  password: hCunaKqdEJDBO+3jCrJUSMevXOw9Q_r4Ey
+  port: 443
+  server: 38.60.136.156
+  sni: ''
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 美国+V2CROSS.COM
+  network: ws
+  password: humanity
+  port: 443
+  server: 199.181.197.169
+  skip-cert-verify: true
+  sni: www.calmloud.com
+  type: trojan
+  ws-opts:
     path: '%2Fassignment'
 - name: 🇺🇸 美国 CloudFlare节点
   password: humanity
@@ -158,14 +141,12 @@ proxies:
   sni: www.calmloud.com
   type: trojan
 - name: 🇻🇳[openproxylist.com] trojan-V...
-  network: tcp
   password: NAdtbpuyJXPH=CfKmdBqD2YVbzdvwAtuxw
   port: 443
   server: 38.60.252.118
   skip-cert-verify: false
+  sni: ''
   type: trojan
-  ws-opts:
-    path: /
 - name: 🇺🇸[openproxylist.com] trojan-U...
   password: lcGo9bOwOB8yC7oAAI.TC=rBFs6PfVgCeF
   port: 443
@@ -581,7 +562,7 @@ proxies:
   uuid: ac1b933d-afff-4487-93ef-f57130a55dff
 - alterId: 0
   cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #1'
+  name: 🇩🇪[openproxylist.com] vmess-DE
   network: tcp
   port: '5050'
   server: 193.93.169.116
@@ -598,14 +579,18 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 🇩🇪[openproxylist.com] vmess-DE
-  network: tcp
-  port: '1900'
-  server: ir.masterlord.ir
-  servername: ''
-  tls: false
+  name: 🇰🇿[openproxylist.com] vmess-KZ
+  network: ws
+  port: '443'
+  server: vip1314.vip
+  servername: vip1314.vip
+  tls: true
   type: vmess
-  uuid: a5ae0167-b947-4394-a5b8-23a87b63c158
+  uuid: 5f72f180-b21b-4b7a-8484-240759012606
+  ws-opts:
+    headers:
+      Host: vip1314.vip
+    path: /5f72f180-b21b-4b7a-8484-240759096785
 - alterId: 0
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
@@ -703,7 +688,7 @@ proxies:
     path: 85357d35-492e-4814-835a-aba4cb7f00ad-vm
 - alterId: 0
   cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #2'
+  name: '🇩🇪[openproxylist.com] vmess-DE #1'
   network: tcp
   port: '1020'
   server: nlt.reata.ir
@@ -731,7 +716,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #3'
+  name: '🇩🇪[openproxylist.com] vmess-DE #2'
   network: tcp
   port: '1050'
   server: spt.reata.ir
@@ -756,10 +741,8 @@ proxies:
   password: t5FsyeQXkNCY6eVGiqBXmPu4..jBEpNbak
   port: 443
   server: 38.60.220.65
-  sni: 38.60.220.65
+  skip-cert-verify: false
   type: trojan
-  ws-opts:
-    path: '%2f'
 - name: '🇵🇱[openproxylist.com] trojan-P... #1'
   network: ws
   password: humanity
@@ -773,8 +756,60 @@ proxies:
       Host: www.creationlong.org
     path: '%2Fassignment'
 - name: 🇵🇰[openproxylist.com] trojan-P...
-  network: tcp
   password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
   port: 443
   server: 149.104.104.58
+  sni: 149.104.104.58
   type: trojan
+- name: AE_speednode_0001
+  network: ws
+  password: MITIVPN
+  port: 443
+  server: 94.140.0.100
+  skip-cert-verify: false
+  sni: 95r.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: 95r.ir
+    path: /MiTiVPN=Usa
+- name: GB_speednode_0005
+  network: ws
+  password: MITIVPN
+  port: 443
+  server: 164.38.155.135
+  skip-cert-verify: false
+  sni: 95r.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: 95r.ir
+    path: /MiTiVPN=De
+- name: NL_speednode_0016
+  network: ws
+  password: MiTiVPN
+  port: 443
+  server: 45.131.4.118
+  skip-cert-verify: false
+  sni: 95r.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: 95r.ir
+    path: /MiTiVPN=Se
+- name: US_speednode_0063
+  network: ws
+  password: Mitivpn
+  port: 443
+  server: iranpoems.ir
+  skip-cert-verify: false
+  sni: www.gamingdll.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.gamingdll.ir
+    path: /usa=mitivpn
