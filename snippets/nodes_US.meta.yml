@@ -1,34 +1,66 @@
 proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 美国+科罗拉多州NTT(美国)通信公司
+  network: tcp
+  port: 51864
+  reality-opts:
+    public-key: p8vKj6rINds1EgmeSIFOv6uds8IxnN8ypjIslksAYgA
+  server: 207.57.129.74
+  servername: dash.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 0bef99f1-1ab7-4949-8991-80914d9c7535
+  ws-opts:
+    headers:
+      Host: '%2F%3FBIA_TELEGRAM%40MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI'
+- alpn:
+  - http/1.1
+  name: 美国+CloudFlare节点
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.17.121.9
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #1'
+  network: ws
+  port: 8880
+  server: 162.159.156.214
+  tls: false
+  type: vless
+  uuid: 86dc5fb4-f279-45b7-a2c6-0d1e84b85c18
+  ws-opts:
+    headers:
+      Host: lingering-dawn-5d4a.163-3f1.workers.dev
+    path: /pyip=ProxyIP.US.CMLiussss.net
 - name: 美国+V2CROSS.COM
-  obfs: ''
-  obfs-password: ''
   password: 03e7f55f-22f8-4564-880f-b86c8cdbf140
   port: 8449
-  server: 66.234.150.237
+  server: 66.234.150.251
   skip-cert-verify: false
   sni: sni.fi-m247-02.com
   tls: false
   type: hysteria2
-- alpn:
-  - http/1.1
-  name: '美国+V2CROSS.COM #1'
-  network: ws
-  password: MiTiVPN
+- name: '美国+华盛顿Cogent通信公司 #1'
+  password: Lw_DP4+W.J5K33MD2Jy5zQVuT5n71+=BcD
   port: 443
-  server: 167.82.101.252
-  skip-cert-verify: true
-  sni: ssl.fastly.com
+  server: 38.60.168.129
+  sni: ''
   type: trojan
-  ws-opts:
-    headers:
-      Host: miticonfig.global.ssl.fastly.net
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Sw
-- name: '🇺🇸 美国 华盛顿Cogent通信公司 #2'
-  password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
-  port: 443
-  server: 38.54.64.247
-  skip-cert-verify: false
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇹🇷[openproxylist.com] vmess-TR
+  network: tcp
+  port: '2026'
+  server: 155.103.71.163
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b2fcc775-1579-4b4b-9fe8-f8dde771c861
 - name: 美国2
   password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
   port: 2056
@@ -43,6 +75,12 @@ proxies:
   server: 167.82.101.252
   skip-cert-verify: true
   sni: ssl.fastly.com
+  type: trojan
+- name: '🇺🇸 美国 华盛顿Cogent通信公司 #2'
+  password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
+  port: 443
+  server: 38.54.64.247
+  skip-cert-verify: false
   type: trojan
 - name: 美国|@ripaojiedian
   network: tcp
@@ -60,8 +98,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 美国3|@ripaojiedian
-  network: tcp
+- name: 🇺🇸 美国3|@ripaojiedian
   password: BxceQaOe
   port: 44265
   server: 18.163.116.155
@@ -122,21 +159,50 @@ proxies:
   skip-cert-verify: true
   sni: red-cell-47f9.milaniomilan9.workers.dev
   type: trojan
+- name: 美国3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 22657
+  server: 18.162.111.216
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇺🇸[openproxylist.com] vless-US
+  network: ws
+  port: 443
+  server: x4g-production-51c6.up.railway.app
+  servername: x4g-production-51c6.up.railway.app
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 289b68cf-36f8-911c-92e5-a522bdee6ace
+  ws-opts:
+    headers:
+      Host: x4g-production-51c6.up.railway.app
+    path: '%2Fws%2F289b68cf-36f8-911c-92e5-a522bdee6ace'
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇺🇸[openproxylist.com] vless-US #1'
+  network: ws
+  port: 443
+  server: ansooyefilter4.up.railway.app
+  servername: ansooyefilter4.up.railway.app
+  tls: true
+  type: vless
+  uuid: b6d7c0af-fa36-12e6-60d2-a4260129235b
+  ws-opts:
+    headers:
+      Host: ansooyefilter4.up.railway.app
+    path: /ws/b6d7c0af-fa36-12e6-60d2-a4260129235b
 - alterId: 0
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
-  network: tcp
-  port: '16025'
-  server: c722s801.portablesubmarines.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #1'
   network: ws
-  port: 443
+  port: '443'
   server: phoenix0202.zgjok.com
   servername: phoenix0202.zgjok.com
   tls: true
@@ -146,9 +212,64 @@ proxies:
     headers:
       Host: phoenix0202.zgjok.com
     path: /d9c36b55-447a-4484-882b-d799f5301681
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #2'
+  network: tcp
+  port: 51015
+  reality-opts:
+    public-key: wr6ERYaZWWT_P38sI5n-ZBgiNNWUzzQefuXgX_LvZCk
+    short-id: '!!str f25f1104'
+  server: 144.225.187.179
+  servername: apple.com
+  tls: false
+  type: vless
+  uuid: c7ba28f1-dd0a-4fd8-941e-e622f24c8a19
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #3'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: UiZNJMasujuoM7dXc5NLSW1f4VssDlF3DBVg5rl82VM
+    short-id: '!!str a7c8f0630da31f6a'
+  server: 162.218.95.14
+  servername: www.booking.com
+  tls: false
+  type: vless
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #4'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: AYL1z7PNyo6LqYLeZpXa50FnK9eEu7o18KHRhOlST1w
+    short-id: '!!str bd72'
+  server: 216.227.169.104
+  servername: deepl.com
+  tls: false
+  type: vless
+  uuid: b8794f67-80d9-4124-8fc5-2d2ce5516573
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇺🇸[openproxylist.com] vless-US #5'
+  network: ws
+  port: 443
+  server: rvg-production-8249.up.railway.app
+  servername: rvg-production-8249.up.railway.app
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f1f47653-d57b-5917-fa47-c80823a8b7f3
+  ws-opts:
+    headers:
+      Host: rvg-production-8249.up.railway.app
+    path: '%2Fws%2Ff1f47653-d57b-5917-fa47-c80823a8b7f3'
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #2'
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
   network: ws
   port: '2095'
   server: 107.173.7.186
@@ -165,34 +286,24 @@ proxies:
   port: 443
   server: pro-tortoise.rooster465.autos
   type: trojan
-- name: 🇺🇸[openproxylist.com] vless-US
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc
+  name: '🇺🇸[openproxylist.com] vless-US #6'
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: Bvdy2c0cxotdTPXwX1DXQ2RQDcWdRpNCaABu2tCwhzQ
+    short-id: '!!str 0e830794d04398'
+  server: gifi.dns-crypto-yandex.com
+  servername: gifi.dns-crypto-yandex.com
+  tls: false
+  type: vless
+  uuid: eb528c71-441a-4430-867d-ab63d301d4ee
+- name: '🇺🇸[openproxylist.com] vless-US #7'
   network: tcp
   port: 19351
   server: 23.254.226.60
   tls: false
   type: vless
   uuid: 80c01792-7bb5-4818-b531-113c0d6f17a2
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #1'
-  network: tcp
-  port: 22189
-  reality-opts:
-    public-key: 5tUZskKOCKpjz3j7hmuYaQHNfE1QRtZI9P62qvSs1GY
-    short-id: '!!str 47b6d14ff477fe59'
-  server: 34.213.172.16
-  servername: www.tesla.com
-  tls: false
-  type: vless
-  uuid: 4889ee33-74e5-4819-86d8-b2a1a5bc8f46
-- alpn:
-  - h2
-  name: '🇺🇸[openproxylist.com] vless-US #2'
-  network: grpc
-  port: 443
-  server: all.tellmethetrue.shop
-  servername: gco1.afterdomain.shop
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
