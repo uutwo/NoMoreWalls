@@ -7,73 +7,21 @@ proxies:
   sni: www.calmloud.com
   type: trojan
   ws-opts:
-    path: /assignment
-- name: 美国+华盛顿Cogent通信公司
-  password: hCunaKqdEJDBO+3jCrJUSMevXOw9Q_r4Ey
-  port: 443
-  server: 38.60.136.156
-  sni: ''
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 美国+V2CROSS.COM
-  network: ws
-  password: humanity
-  port: 443
-  server: 199.181.197.169
-  skip-cert-verify: true
-  sni: www.calmloud.com
-  type: trojan
-  ws-opts:
+    headers:
+      Host: www.calmloud.com
     path: '%2Fassignment'
 - name: 🇺🇸 美国 CloudFlare节点
   password: humanity
   port: 443
-  server: 162.159.195.173
+  server: 104.20.6.134
   skip-cert-verify: false
   sni: www.calmloud.com
   type: trojan
-- name: 🇻🇳[openproxylist.com] trojan-V...
-  password: NAdtbpuyJXPH=CfKmdBqD2YVbzdvwAtuxw
+- name: '🇺🇸 美国 华盛顿Cogent通信公司 #2'
+  password: hCunaKqdEJDBO+3jCrJUSMevXOw9Q_r4Ey
   port: 443
-  server: 38.60.252.118
+  server: 38.60.136.156
   skip-cert-verify: false
-  sni: ''
-  type: trojan
-- name: 🇺🇸[openproxylist.com] trojan-U...
-  password: lcGo9bOwOB8yC7oAAI.TC=rBFs6PfVgCeF
-  port: 443
-  server: 149.28.241.235
-  skip-cert-verify: false
-  sni: 149.28.241.235
-  type: trojan
-- name: '🇺🇸 美国 华盛顿Cogent通信公司 #1'
-  password: Lw_DP4+W.J5K33MD2Jy5zQVuT5n71+=BcD
-  port: 443
-  server: 38.60.168.129
-  skip-cert-verify: false
-  sni: 38.60.168.129
-  type: trojan
-- name: '🇺🇸 美国 CloudFlare节点 #1'
-  password: humanity
-  port: 443
-  server: 172.64.146.28
-  skip-cert-verify: true
-  sni: www.gossipglove.com
-  type: trojan
-- name: '🇺🇸 美国 CloudFlare节点 #2'
-  password: humanity
-  port: 443
-  server: 104.16.174.121
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-- name: '🇺🇸 美国 CloudFlare节点 #3'
-  password: humanity
-  port: 443
-  server: 104.18.155.229
-  skip-cert-verify: true
-  sni: www.calmloud.com
   type: trojan
 - name: 美国|@ripaojiedian
   network: tcp
@@ -174,6 +122,13 @@ proxies:
   skip-cert-verify: true
   sni: www.calmlunch.com
   type: trojan
+- name: 🇺🇸[openproxylist.com] trojan-U...
+  password: lcGo9bOwOB8yC7oAAI.TC=rBFs6PfVgCeF
+  port: 443
+  server: 149.28.241.235
+  skip-cert-verify: false
+  sni: 149.28.241.235
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
@@ -210,16 +165,3 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: US_speednode_0063
-  network: ws
-  password: Mitivpn
-  port: 443
-  server: iranpoems.ir
-  skip-cert-verify: false
-  sni: www.gamingdll.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.gamingdll.ir
-    path: /usa=mitivpn
