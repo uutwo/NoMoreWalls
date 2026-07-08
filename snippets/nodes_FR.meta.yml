@@ -50,13 +50,19 @@ proxies:
   tls: false
   type: vless
   uuid: a9a96ecb-0d66-5809-a833-7a7431c1ca60
-- name: '🇫🇷[openproxylist.com] vless-FR #4'
+- client-fingerprint: chrome
+  name: '🇫🇷[openproxylist.com] vless-FR #4'
+  network: ws
   port: 443
   server: 162.159.38.119
-  tls: false
+  servername: deicl.redstone-vex.sbs
+  skip-cert-verify: false
+  tls: true
   type: vless
   uuid: 8ad6f598-cd8d-4fca-848e-05fc9be15ff3
   ws-opts:
+    headers:
+      Host: deicl.redstone-vex.sbs
     path: '%2Fsea'
 - client-fingerprint: firefox
   name: '🇫🇷[openproxylist.com] vless-FR #5'
@@ -71,8 +77,34 @@ proxies:
   type: vless
   uuid: 681314c5-b3ee-41f1-a959-fa42841f5383
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
   name: '🇫🇷[openproxylist.com] vless-FR #6'
+  network: ws
+  port: 443
+  server: 104.27.7.125
+  servername: amooaliii.net
+  tls: true
+  type: vless
+  uuid: 72d1797c-cef8-410a-b8fd-db9104dc3cb0
+  ws-opts:
+    headers:
+      Host: amooaliii.net
+    path: '%2Fjdhfyws'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇫🇷[openproxylist.com] vless-FR #7'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: zSjG6wndmLAzE8ykCBXpAm2eh0viWVSy3gt2juXF4EE
+    short-id: '!!str eaa8'
+  server: 195.254.165.243
+  servername: play.google.com
+  tls: false
+  type: vless
+  uuid: 1f6531a1-a6eb-4274-9f51-4a0899456fcf
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇫🇷[openproxylist.com] vless-FR #8'
   network: tcp
   port: 443
   reality-opts:
