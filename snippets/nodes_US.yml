@@ -1,31 +1,14 @@
 proxies:
-- name: 美国+华盛顿Cogent通信公司
-  network: tcp
-  password: Lw_DP4+W.J5K33MD2Jy5zQVuT5n71+=BcD
-  port: 443
-  server: 38.60.168.129
-  sni: 38.60.168.129
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '美国+V2CROSS.COM #1'
+- name: 美国+CloudFlare节点
   network: ws
-  password: MiTiVPN
+  password: humanity
   port: 443
-  server: 167.82.101.252
-  skip-cert-verify: true
-  sni: ssl.fastly.com
+  server: 172.66.44.211
+  skip-cert-verify: false
+  sni: www.multiplydose.com
   type: trojan
   ws-opts:
-    headers:
-      Host: mitivpn-mitivpn-mitivpn.global.ssl.fastly.net
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=sw
-- name: '美国+V2CROSS.COM #3'
-  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
-  port: 443
-  server: 149.104.104.58
-  sni: 149.104.104.58
-  type: trojan
+    path: /assignment
 - alpn:
   - http/1.1
   name: 美国+乔治亚洲亚特兰大Fastly节点
@@ -39,7 +22,23 @@ proxies:
   ws-opts:
     headers:
       Host: mitivpn-mitivpn-mitivpn.global.ssl.fastly.net
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=usa
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=de
+- name: 美国+华盛顿Cogent通信公司
+  network: tcp
+  password: NAdtbpuyJXPH=CfKmdBqD2YVbzdvwAtuxw
+  port: 443
+  server: 38.60.252.118
+  sni: 38.60.252.118
+  type: trojan
+- name: '美国+CloudFlare节点 #6'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.187
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
 - name: 🇺🇸 美国 CloudFlare节点
   password: humanity
   port: 443
@@ -159,6 +158,12 @@ proxies:
   skip-cert-verify: true
   sni: www.creationlong.org
   type: trojan
+- name: 🇺🇸[openproxylist.com] trojan-U...
+  password: XG59623478
+  port: 443
+  server: next-ringtail.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #1'
@@ -168,12 +173,6 @@ proxies:
   tls: false
   type: vmess
   uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-- name: 🇺🇸[openproxylist.com] trojan-U...
-  password: XG59623478
-  port: 443
-  server: adjusted-orca.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
 - alterId: 0
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #2'
