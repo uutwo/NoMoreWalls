@@ -1,14 +1,14 @@
 proxies:
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇨🇭[openproxylist.com] vless-CH
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: 1UOLkCRWAxBF8CTt8AYd0MiOnZxopeDdT2c5YRXeWlk
-    short-id: '!!str ce2491dd'
-  server: yui.kosmojoy.ru
-  servername: www.tesla.com
-  tls: false
+- name: 🇨🇭[openproxylist.com] vless-CH
+  network: ws
+  port: 443
+  server: 151.101.35.82
+  servername: ssl.fastly.com
+  skip-cert-verify: false
+  tls: true
   type: vless
-  uuid: 6d4d70ed-de4d-4938-af65-72e1cef81cf3
+  uuid: 8cc4e5fa-943c-4bd7-93f1-02309c0a6b96
+  ws-opts:
+    headers:
+      Host: bazaryabab.global.ssl.fastly.net
+    path: '%2F'
