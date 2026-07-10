@@ -1,8 +1,19 @@
 proxies:
-- name: 美国+V2CROSS.COM
+- name: 美国+CloudFlare节点
+  network: ws
+  password: '!!str 666'
+  port: 443
+  server: 104.18.33.209
+  skip-cert-verify: false
+  sni: gdurt.ia6o.2s1.hh.penqiask.ccwu.cc
+  type: trojan
+  ws-opts:
+    path: '%2Fglasspanel%2Fguest000_0_5de14443985f%2F'
+- name: 🇺🇸 美国 V2CROSS.COM
   password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
   port: 443
   server: 149.104.104.58
+  skip-cert-verify: false
   sni: 149.104.104.58
   type: trojan
 - name: 🇺🇸 美国 CloudFlare节点
@@ -125,26 +136,6 @@ proxies:
   skip-cert-verify: false
   sni: www.calmlunch.com
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  network: tcp
-  port: 30824
-  server: v24.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: '🇨🇳_CN_中国->🇺🇸_US_美国 #1'
-  network: tcp
-  port: 30804
-  server: v4.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
@@ -174,7 +165,6 @@ proxies:
       Host: remains-istanbul-hide-convention.trycloudflare.com
     path: dc0672f1-1a09-42ec-8f46-0a7e68349e79-vm
 - name: 🇺🇸[openproxylist.com] trojan-U...
-  network: tcp
   password: lcGo9bOwOB8yC7oAAI.TC=rBFs6PfVgCeF
   port: 443
   server: 149.28.241.235
@@ -193,7 +183,7 @@ proxies:
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #3'
   network: ws
-  port: '443'
+  port: 443
   server: phoenix0202.zgjok.com
   servername: phoenix0202.zgjok.com
   tls: true
