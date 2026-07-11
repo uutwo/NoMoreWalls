@@ -39,18 +39,21 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬[openproxylist.com] vmess-SG
-  network: tcp
-  port: '56688'
-  server: 101.32.241.147
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4c6bf87d-dbc0-4ab6-d774-ded20e5ed1c4
+- name: 🇸🇬[openproxylist.com] vless-SG
+  network: ws
+  port: 2096
+  server: 188.114.97.6
+  servername: group.shalana.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 70252937-5c61-4fb0-8656-d1a16261b795
+  ws-opts:
+    headers:
+      Host: group.shalana.xyz
+    path: '%2Fshalana'
 - client-fingerprint: chrome
-  name: 🇸🇬[openproxylist.com] vless-SG
+  name: '🇸🇬[openproxylist.com] vless-SG #1'
   network: tcp
   port: 443
   server: sahanwickramasinghevip.shop
