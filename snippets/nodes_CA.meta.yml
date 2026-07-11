@@ -1,21 +1,9 @@
 proxies:
-- name: 🇨🇦[openproxylist.com] vless-CA
+- client-fingerprint: chrome
+  name: 🇨🇦[openproxylist.com] vless-CA
   network: ws
   port: 443
-  server: ct.877774.xyz
-  servername: do-tor1.862400.xyz
-  tls: true
-  type: vless
-  uuid: c3c92540-ed74-469d-b2e9-ff4d67906a52
-  ws-opts:
-    headers:
-      Host: do-tor1.862400.xyz
-    path: /announcement?ed=2048fp=random
-- client-fingerprint: chrome
-  name: '🇨🇦[openproxylist.com] vless-CA #1'
-  network: ws
-  port: 2083
-  server: 162.159.45.201
+  server: 162.159.38.101
   servername: t1s1.rittbo.kdns.fr
   skip-cert-verify: false
   tls: true
@@ -25,19 +13,30 @@ proxies:
     headers:
       Host: t1s1.rittbo.kdns.fr
     path: '%2F'
-- name: '🇨🇦[openproxylist.com] vless-CA #2'
+- name: '🇨🇦[openproxylist.com] vless-CA #1'
   network: ws
-  port: 443
-  server: 162.159.45.218
+  port: 2083
+  server: 162.159.45.201
   servername: t1s1.rittbo.kdns.fr
-  skip-cert-verify: false
   tls: true
   type: vless
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   ws-opts:
     headers:
       Host: t1s1.rittbo.kdns.fr
-    path: /fp
+    path: '%2Ffp%3Dchrome'
+- name: '🇨🇦[openproxylist.com] vless-CA #2'
+  network: ws
+  port: 443
+  server: 162.159.45.218
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  type: vless
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  ws-opts:
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+    path: '%2Ffp'
 - name: '🇨🇦[openproxylist.com] vless-CA #3'
   network: ws
   port: 443
