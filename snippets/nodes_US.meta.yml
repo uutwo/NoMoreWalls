@@ -1,18 +1,4 @@
 proxies:
-- client-fingerprint: chrome
-  name: 美国+CloudFlare节点
-  network: ws
-  port: 8443
-  server: 172.64.52.134
-  servername: t1s1.rittbo.kdns.fr
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  ws-opts:
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-    path: '%2F'
 - name: 🇺🇸 美国 V2CROSS.COM
   network: tcp
   password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
@@ -21,7 +7,40 @@ proxies:
   skip-cert-verify: false
   sni: 149.104.104.58
   type: trojan
+- name: 美国+CloudFlare节点
+  network: ws
+  port: 8080
+  server: 190.93.247.176
+  tls: false
+  type: vless
+  uuid: 764ce064-b6e7-4279-a014-4547883eee15
+  ws-opts:
+    headers:
+      Host: kourosh-asli-ncjeuv.kourosh-gnlroc.workers.dev
+    path: /kouroshasli_panel
 - name: '美国+V2CROSS.COM #1'
+  network: ws
+  port: 80
+  server: 199.232.100.11
+  tls: false
+  type: vless
+  uuid: 3b940e86-7b0d-40da-acf1-12d334e41023
+  ws-opts:
+    headers:
+      Host: Fastapi.Org
+    path: /
+- name: '美国+CloudFlare节点 #1'
+  network: ws
+  port: 8880
+  server: 162.159.46.0
+  tls: false
+  type: vless
+  uuid: b19b768d-bc57-4d03-9bea-61129ed5fef9
+  ws-opts:
+    headers:
+      Host: new.106-79e.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: '美国+V2CROSS.COM #2'
   network: ws
   port: 80
   server: 199.232.48.11
@@ -32,10 +51,28 @@ proxies:
     headers:
       Host: Fastapi.Org
     path: /
-- name: '美国+V2CROSS.COM #2'
+- name: '美国+CloudFlare节点 #2'
+  network: ws
+  port: 8880
+  server: www.baipiao.eu.org
+  tls: false
+  type: vless
+  uuid: caa0f615-2598-4b78-b339-2824658a602b
+  ws-opts:
+    headers:
+      Host: soft-dream-429a.319.workers.dev
+    path: '%2Fpyip%3DProxyIP.JP.CMLiussss.net'
+- name: 🇺🇸[openproxylist.com] trojan-U...
+  network: tcp
+  password: lcGo9bOwOB8yC7oAAI.TC=rBFs6PfVgCeF
+  port: 443
+  server: 149.28.241.235
+  sni: 149.28.241.235
+  type: trojan
+- name: '美国+V2CROSS.COM #4'
   network: ws
   port: 80
-  server: 199.232.132.11
+  server: 199.232.12.11
   tls: false
   type: vless
   uuid: 3b940e86-7b0d-40da-acf1-12d334e41023
@@ -51,24 +88,21 @@ proxies:
   sni: mg2.mangshe.xyz
   tls: false
   type: hysteria2
-- name: 美国|@ripaojiedian
-  network: tcp
+- name: 🇺🇸 美国|@ripaojiedian
   password: b1a42ca60884057bf527d8d38b618cfb
   port: 17005
   server: 18.163.105.231
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 美国2|@ripaojiedian
-  network: tcp
+- name: 🇺🇸 美国2|@ripaojiedian
   password: b1a42ca60884057bf527d8d38b618cfb
   port: 17005
   server: 18.166.63.229
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 美国3|@ripaojiedian
-  network: tcp
+- name: 🇺🇸 美国3|@ripaojiedian
   password: BxceQaOe
   port: 44265
   server: 18.163.115.109
@@ -181,6 +215,29 @@ proxies:
   tls: false
   type: vmess
   uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+- name: 美国|@ripaojiedian
+  network: tcp
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  port: 49277
+  server: 18.162.115.77
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 美国2|@ripaojiedian
+  network: tcp
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  port: 49277
+  server: 18.163.192.100
+  sni: www.nintendogames.net
+  type: trojan
+- name: 美国3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 34638
+  server: 95.40.54.118
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - alpn:
   - http/1.1
   client-fingerprint: chrome
@@ -188,22 +245,15 @@ proxies:
   network: ws
   port: 443
   server: ans-channel-production-b262.up.railway.app
+  servername: ''
   skip-cert-verify: false
   tls: true
   type: vless
   uuid: f753c98a-bb23-e85a-d174-ebbeabcd7626
   ws-opts:
-    path: '%2Fws%2Ff753c98a-bb23-e85a-d174-ebbeabcd7626'
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #4'
-  network: tcp
-  port: '443'
-  server: 165.140.216.142
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+    headers:
+      Host: ''
+    path: /ws/f753c98a-bb23-e85a-d174-ebbeabcd7626
 - alpn:
   - http/1.1
   client-fingerprint: chrome
@@ -218,7 +268,7 @@ proxies:
   ws-opts:
     headers:
       Host: trollhastambotrvg-production-162c.up.railway.app
-    path: /ws/5b25a339-bf7e-2673-1960-919233576ee0
+    path: '%2Fws%2F5b25a339-bf7e-2673-1960-919233576ee0'
 - client-fingerprint: edge
   flow: xtls-rprx-vision
   name: '🇺🇸[openproxylist.com] vless-US #2'
@@ -234,17 +284,19 @@ proxies:
   uuid: 7499f0a0-3670-4cf6-a31c-ad4cd943cf18
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #2'
+  name: 🇺🇸[openproxylist.com] vmess-US
   network: ws
-  port: '30080'
+  port: 30080
   server: 143.198.235.98
   servername: ''
   tls: false
   type: vmess
   uuid: d76c0edb-8097-4371-8d97-722723756012
   ws-opts:
+    headers:
+      Host: ''
     path: /vm
-- client-fingerprint: chrome
+- client-fingerprint: ios
   name: '🇺🇸[openproxylist.com] vless-US #3'
   network: grpc
   port: 56625
@@ -280,24 +332,25 @@ proxies:
   uuid: b75fe5c1-cd5d-046f-10cf-6ffc0ae37fef
   ws-opts:
     path: '%2Fws%2Fb75fe5c1-cd5d-046f-10cf-6ffc0ae37fef'
-- name: '🇺🇸[openproxylist.com] vless-US #7'
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇺🇸[openproxylist.com] vless-US #7'
+  network: ws
   port: 443
   server: x4g-production-23fd.up.railway.app
-  tls: false
+  servername: x4g-production-23fd.up.railway.app
+  skip-cert-verify: false
+  tls: true
   type: vless
   uuid: ea5dbb0a-4dd4-7b78-84f3-3188b2de74ed
   ws-opts:
+    headers:
+      Host: x4g-production-23fd.up.railway.app
     path: '%2Fws%2Fea5dbb0a-4dd4-7b78-84f3-3188b2de74ed'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #8'
-  network: tcp
+- name: '🇺🇸[openproxylist.com] vless-US #8'
   port: 57176
-  reality-opts:
-    public-key: UvZM3FjG0QECXEojqtYLxfUYqw96Q5J56ylZOWp4FBM
-    short-id: '!!str 3818373396cb'
   server: 31.76.21.58
-  servername: www.amd.com
   tls: false
   type: vless
   uuid: 6395bc01-f320-4327-94a4-7f523e96b5dc
@@ -334,14 +387,13 @@ proxies:
   port: 443
   server: ansooyefilter-production-4623.up.railway.app
   servername: ansooyefilter-production-4623.up.railway.app
-  skip-cert-verify: false
   tls: true
   type: vless
   uuid: a75f5c82-d667-0ce8-d297-30286b054691
   ws-opts:
     headers:
       Host: ansooyefilter-production-4623.up.railway.app
-    path: '%2Fws%2Fa75f5c82-d667-0ce8-d297-30286b054691'
+    path: /ws/a75f5c82-d667-0ce8-d297-30286b054691
 - alpn:
   - http/1.1
   client-fingerprint: ios
@@ -350,31 +402,27 @@ proxies:
   port: 443
   server: x4g-production-06e2.up.railway.app
   servername: x4g-production-06e2.up.railway.app
-  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 14dc1390-2efc-724d-9dfa-1bc02bc644bc
   ws-opts:
     headers:
       Host: x4g-production-06e2.up.railway.app
-    path: '%2Fws%2F14dc1390-2efc-724d-9dfa-1bc02bc644bc'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #13'
+    path: /ws/14dc1390-2efc-724d-9dfa-1bc02bc644bc
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #3'
   network: tcp
-  port: 443
-  reality-opts:
-    public-key: Od_l3To6OKuXy19tY0Feep0qNZfWcDL8kW3dRQHW2AQ
-    short-id: '!!str 99'
-  server: us2.fast-cone.com
-  servername: us2.fast-cone.com
+  port: '443'
+  server: 165.140.216.142
+  servername: ''
   tls: false
-  type: vless
-  uuid: c99fdb9a-0cec-497d-9d29-d45ed770807b
+  type: vmess
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇺🇸[openproxylist.com] vless-US #14'
+  name: '🇺🇸[openproxylist.com] vless-US #13'
   network: ws
   port: 443
   server: x4g-production-1e7a.up.railway.app
@@ -386,10 +434,10 @@ proxies:
   ws-opts:
     headers:
       Host: x4g-production-1e7a.up.railway.app
-    path: '%2Fws%2F65bed288-9602-d3aa-f7ef-752da3683677'
+    path: /ws/65bed288-9602-d3aa-f7ef-752da3683677
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #3'
+  name: '🇺🇸[openproxylist.com] vmess-US #2'
   network: ws
   port: 443
   server: zt-ai.cloud
@@ -404,7 +452,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇺🇸[openproxylist.com] vless-US #15'
+  name: '🇺🇸[openproxylist.com] vless-US #14'
   network: ws
   port: 443
   server: 104.16.75.234
@@ -420,7 +468,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇺🇸[openproxylist.com] vless-US #16'
+  name: '🇺🇸[openproxylist.com] vless-US #15'
   network: ws
   port: 443
   server: ansooyefilter-production-454e.up.railway.app
@@ -432,9 +480,9 @@ proxies:
     headers:
       Host: ansooyefilter-production-454e.up.railway.app
     path: /ws/a9d1b03b-e73c-a9ce-6520-1f988c20749e
-- client-fingerprint: edge
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #17'
+  name: '🇺🇸[openproxylist.com] vless-US #16'
   network: tcp
   port: 443
   reality-opts:
@@ -445,10 +493,24 @@ proxies:
   tls: false
   type: vless
   uuid: ef3e206d-3cbc-4254-8374-df04fe35a762
-- name: '🇺🇸[openproxylist.com] vless-US #18'
+- name: '🇺🇸[openproxylist.com] vless-US #17'
   network: ws
   port: 443
-  server: 45.131.211.136
+  server: 104.16.72.2
+  servername: shegeftihaaa.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 7e544a9d-7667-413b-bbb0-b3bb1aac6d77
+  ws-opts:
+    headers:
+      Host: shegeftihaaa.net
+    path: '%2Frsedgws'
+- client-fingerprint: chrome
+  name: '🇺🇸[openproxylist.com] vless-US #18'
+  network: ws
+  port: 443
+  server: 188.114.97.6
   servername: vangoghhh.info
   skip-cert-verify: false
   tls: true
@@ -457,14 +519,7 @@ proxies:
   ws-opts:
     headers:
       Host: vangoghhh.info
-    path: /rdfgtws
-- name: 🇺🇸[openproxylist.com] trojan-U...
-  network: tcp
-  password: lcGo9bOwOB8yC7oAAI.TC=rBFs6PfVgCeF
-  port: 443
-  server: 149.28.241.235
-  sni: 149.28.241.235
-  type: trojan
+    path: '%2Frdfgtws'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇺🇸[openproxylist.com] vless-US #19'
@@ -478,7 +533,7 @@ proxies:
   tls: false
   type: vless
   uuid: c7ba28f1-dd0a-4fd8-941e-e622f24c8a19
-- client-fingerprint: qq
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇺🇸[openproxylist.com] vless-US #20'
   network: tcp
@@ -492,9 +547,8 @@ proxies:
   type: vless
   uuid: b8794f67-80d9-4124-8fc5-2d2ce5516573
 - name: '🇺🇸[openproxylist.com] vless-US #21'
-  network: tcp
-  port: 19351
-  server: 23.254.226.60
+  port: 443
+  server: gifi.dns-crypto-yandex.com
   tls: false
   type: vless
-  uuid: 80c01792-7bb5-4818-b531-113c0d6f17a2
+  uuid: eb528c71-441a-4430-867d-ab63d301d4ee
