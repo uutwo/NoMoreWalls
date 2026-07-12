@@ -89,86 +89,19 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
+- name: 美国+CloudFlare节点
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.20.6.134
+  sni: www.calmloud.com
+  type: trojan
+  ws-opts:
+    path: /assignment
 - name: 🇷🇴 罗马尼亚 V2CROSS.COM
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.149
-  skip-cert-verify: false
-  type: trojan
-- name: 🇭🇰 HK香港(mibei77.com 米贝节点分享)
-  password: OccIqeORGQwiNkwS
-  port: 19128
-  server: jpbgp.netvigor.cc
-  skip-cert-verify: true
-  sni: yazhou10.dynu.net
-  type: trojan
-- name: 美国+CloudFlare
-  network: ws
-  password: humanity
-  port: 443
-  server: 162.159.17.189
-  skip-cert-verify: false
-  sni: www.multiplydose.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.multiplydose.com
-    path: /assignment
-- alpn:
-  - http/1.1
-  name: 美国+V2CROSS.COM
-  network: ws
-  password: humanity
-  port: 443
-  server: 199.181.197.169
-  sni: www.calmloud.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmloud.com
-    path: '%2Fassignment'
-- name: 巴西圣保罗+CloudFlare节点
-  network: ws
-  password: humanity
-  port: 443
-  server: 188.114.99.0
-  skip-cert-verify: false
-  sni: www.gossipglove.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.gossipglove.com
-    path: /assignment
-- alpn:
-  - http/1.1
-  name: '美国+V2CROSS.COM #2'
-  network: ws
-  password: humanity
-  port: 443
-  server: 45.130.125.0
-  sni: www.calmloud.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmloud.com
-    path: '%2Fassignment'
-- name: 西班牙+V2CROSS.COM
-  network: ws
-  password: humanity
-  port: 443
-  server: 185.18.250.252
-  skip-cert-verify: true
-  sni: www.gossipglove.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.gossipglove.com
-    path: /assignment
-- name: '🇷🇴 罗马尼亚 V2CROSS.COM #2'
-  network: tcp
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.138
   skip-cert-verify: false
   type: trojan
 - name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #6'
@@ -197,6 +130,12 @@ proxies:
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.142
+  skip-cert-verify: false
+  type: trojan
+- name: '🇷🇴 罗马尼亚 V2CROSS.COM #2'
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.138
   skip-cert-verify: false
   type: trojan
 - name: 🇳🇿 新西兰 V2CROSS.COM
@@ -353,6 +292,13 @@ proxies:
   sni: tjplay.lxdxo.kdns.fr
   type: trojan
   ws-path: h=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2
+- name: 🇭🇰 HK香港(mibei77.com 米贝节点分享)
+  password: OccIqeORGQwiNkwS
+  port: 19128
+  server: jpbgp.netvigor.cc
+  skip-cert-verify: true
+  sni: yazhou10.dynu.net
+  type: trojan
 - name: '🇯🇵[openproxylist.com] trojan-J... #3'
   password: PI36027154
   port: 443
@@ -609,6 +555,16 @@ proxies:
       Host: n1747624274.4u9ma.icu
     path: /
 - alterId: 0
+  cipher: none
+  name: 🇺🇸[openproxylist.com] vmess-US
+  network: tcp
+  port: '10086'
+  server: 43.153.94.24
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bd7e0c40-79c7-4db1-ba27-43894d59a4a1
+- alterId: 0
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #3'
   network: tcp
@@ -628,11 +584,6 @@ proxies:
   tls: false
   type: vmess
   uuid: d1b0c103-a7ff-4bd6-887d-a73d6ebf1f50
-- name: 🇪🇪[openproxylist.com] trojan-E...
-  password: CFvS99VcEv82u3XFr36EPbumLPadKXT6
-  port: 9443
-  server: trojan-tcp-tls-test.hysteria.ltd
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇸🇪[openproxylist.com] vmess-SE
@@ -643,20 +594,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 958f5940-de3d-4466-bb30-b605993db27e
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #1'
-  network: ws
-  port: '30080'
-  server: 143.198.235.98
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d76c0edb-8097-4371-8d97-722723756012
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vm
 - alterId: 0
   cipher: auto
   name: 🇭🇰[openproxylist.com] vmess-HK
@@ -711,7 +648,6 @@ proxies:
   password: 0ds_NIm933rf_Nxio294_nbZi3
   port: 449
   server: 78.135.73.38
-  skip-cert-verify: false
   sni: grape-ataturk-tr.yyuyy.com
   type: trojan
   ws-opts:
@@ -721,6 +657,7 @@ proxies:
   password: PI36027154
   port: 443
   server: large-baboon.rooster465.autos
+  skip-cert-verify: false
   type: trojan
 - name: '🇯🇵[openproxylist.com] trojan-J... #6'
   password: PI36027154
@@ -774,7 +711,7 @@ proxies:
   servername: ''
   tls: false
   type: vmess
-  uuid: ad298d1d-2ae9-46fa-895c-f0401f38b02c
+  uuid: aeff933f-0ae6-4465-85bf-12f1394f35af
 - name: 🇳🇱[openproxylist.com] trojan-N...
   password: XG59623478
   port: 443
@@ -786,10 +723,10 @@ proxies:
   server: growing-oyster.rooster465.autos
   type: trojan
 - name: 🇺🇸[openproxylist.com] trojan-U...
+  network: tcp
   password: lcGo9bOwOB8yC7oAAI.TC=rBFs6PfVgCeF
   port: 443
   server: 149.28.241.235
-  skip-cert-verify: false
   sni: 149.28.241.235
   type: trojan
 - alterId: 0
@@ -807,17 +744,3 @@ proxies:
   port: 8448
   server: 2.26.54.174
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵[openproxylist.com] vmess-JP
-  network: ws
-  port: '2052'
-  server: 157.85.230.247
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 85357d35-492e-4814-835a-aba4cb7f00ad
-  ws-opts:
-    headers:
-      Host: www.bing.com
-    path: 85357d35-492e-4814-835a-aba4cb7f00ad-vm
