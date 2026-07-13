@@ -1,36 +1,36 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 英國
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-82.38.31.35-04
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 443
+  server: 82.38.31.35
+  type: ss
+- client-fingerprint: ios
+  name: 🇬🇧[openproxylist.com] vless-GB
   network: tcp
-  port: 180
-  server: 82.198.246.37
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英國節點
-  network: tcp
-  port: 180
-  server: 82.198.246.250
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '🇫🇮[openproxylist.com] vless-FI #1'
-  network: tcp
-  port: 993
+  port: 1006
   reality-opts:
-    public-key: fp2XmT8otUDkl65Df2h1b5b0oCe0CQiAimPKEMdnwmI
-  server: 104.245.242.4
-  servername: cdn.steamstatic.com
+    public-key: ECxm-BdHYhxYK9MtN33NkkrFSdFZXp-OB-yhN8AleRY
+    short-id: '!!str a62d513cd709744a'
+  server: teain.org
+  servername: knox.cdn-apple.com
   tls: false
   type: vless
-  uuid: 526d2855-c7d1-ecf3-e4f8-5a75f77d5bb3
+  uuid: 5ae768bf-2ea0-22d2-eade-6763e14dc745
+- alpn:
+  - http/1.1
+  name: '🇬🇧[openproxylist.com] vless-GB #1'
+  network: ws
+  port: 8443
+  server: chatgpt.com
+  servername: uk.hknetapp.com
+  tls: true
+  type: vless
+  uuid: 7f547a00-bc25-4512-baeb-5a3983c118d3
+  ws-opts:
+    headers:
+      Host: uk.hknetapp.com
+    path: '%2F'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇬🇧[openproxylist.com] vless-GB #2'
@@ -50,8 +50,9 @@ proxies:
   name: '🇬🇧[openproxylist.com] vless-GB #3'
   network: grpc
   port: 443
-  server: osit1.ghast.sbs
+  server: 31.77.201.77
   servername: osit1.ghast.sbs
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 367ff772-a8f4-4895-8e99-3702a868f0c6
@@ -95,3 +96,25 @@ proxies:
   tls: false
   type: vless
   uuid: 52b71b75-4b77-4cec-990b-046ec1938e1f
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇬🇧[openproxylist.com] vless-GB #8'
+  network: tcp
+  port: 55025
+  reality-opts:
+    public-key: w-7OnHTgZcqOMrpIADIVnpAcbyColg9Y9w3BYpFeTg8
+    short-id: '!!str 06e557c2cc84390f'
+  server: 51.195.235.8
+  servername: www.googletagmanager.com
+  tls: false
+  type: vless
+  uuid: be20f85a-bc04-45f8-b6cf-b8abc5f746ce
+- grpc-opts:
+    grpc-service-name: vless
+  name: '🇬🇧[openproxylist.com] vless-GB #9'
+  network: grpc
+  port: 2085
+  server: 45.86.159.134
+  tls: false
+  type: vless
+  uuid: 1ea1b30b-4114-4a5c-bd3a-9637bdae1948
