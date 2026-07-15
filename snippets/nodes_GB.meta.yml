@@ -1,4 +1,17 @@
 proxies:
+- name: 英国+V2CROSS.COM
+  network: ws
+  port: 443
+  server: 91.110.209.63
+  servername: edge-4cb23bf6.pages.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 4feb7818-dc02-46cd-b985-abf3fdd0cdc5
+  ws-opts:
+    headers:
+      Host: edge-4cb23bf6.pages.dev
+    path: '%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
 - alterId: 0
   cipher: auto
   name: 英國
@@ -21,7 +34,7 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇬🇧[openproxylist.com] vless-GB
+  name: '🇬🇧[openproxylist.com] vless-GB #1'
   network: tcp
   port: 443
   reality-opts:
@@ -31,21 +44,9 @@ proxies:
   tls: false
   type: vless
   uuid: 8516c47e-a7a1-42f7-9c14-ae9b14873cc8
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '🇫🇮[openproxylist.com] vless-FI #18'
-  network: tcp
-  port: 993
-  reality-opts:
-    public-key: fp2XmT8otUDkl65Df2h1b5b0oCe0CQiAimPKEMdnwmI
-  server: 104.245.242.4
-  servername: cdn.steamstatic.com
-  tls: false
-  type: vless
-  uuid: 526d2855-c7d1-ecf3-e4f8-5a75f77d5bb3
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #9'
+  name: '🇬🇧[openproxylist.com] vless-GB #4'
   network: tcp
   port: 443
   reality-opts:
@@ -56,3 +57,12 @@ proxies:
   tls: false
   type: vless
   uuid: 47df3f6c-c3a0-463b-a6a0-ad4e8494c95b
+- grpc-opts:
+    grpc-service-name: vless
+  name: '🇬🇧[openproxylist.com] vless-GB #5'
+  network: grpc
+  port: 2085
+  server: 45.86.159.142
+  tls: false
+  type: vless
+  uuid: 1ea1b30b-4114-4a5c-bd3a-9637bdae1948
