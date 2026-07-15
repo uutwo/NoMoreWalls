@@ -1,18 +1,32 @@
 proxies:
 - name: 美国+华盛顿Cogent通信公司
-  password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
+  password: Lw_DP4+W.J5K33MD2Jy5zQVuT5n71+=BcD
   port: 443
-  server: 38.54.64.247
-  sni: 38.54.64.247
+  server: 38.60.168.129
   type: trojan
-- name: '美国+CloudFlare节点 #1'
+- name: '美国+CloudFlare节点 #3'
   network: ws
   password: humanity
   port: 443
   server: 104.26.6.159
+  skip-cert-verify: false
   sni: www.creationlong.org
   type: trojan
   ws-opts:
+    headers:
+      Host: www.creationlong.org
+    path: /assignment
+- name: '美国+CloudFlare节点 #4'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.19.230.21
+  skip-cert-verify: true
+  sni: www.multiplydose.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.multiplydose.com
     path: '%2Fassignment'
 - name: 🇺🇸 美国|@ripaojiedian
   password: b490740312aedb5f9f6b84c7aebd08c0
@@ -110,7 +124,7 @@ proxies:
   skip-cert-verify: true
   sni: www.creationlong.org
   type: trojan
-- name: 🇺🇸_US_美国
+- name: 🇺🇸[openproxylist.com] trojan-U...
   password: '!!str 3632736327'
   port: 2888
   server: us04021322.tmdsb.org
@@ -151,7 +165,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 🇺🇸[openproxylist.com] vmess-US
+  name: '🇺🇸[openproxylist.com] vmess-US #2'
   network: tcp
   port: '443'
   server: 165.140.216.142
@@ -162,6 +176,19 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #1'
+  network: ws
+  port: '443'
+  server: 209.54.107.157
+  tls: true
+  type: vmess
+  uuid: c4d1c2f9-30ac-4446-8f26-f6e230ea07b3
+  ws-opts:
+    headers:
+      Host: ''
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #3'
   network: ws
   port: '2083'
   server: us1.xuanmiao.xyz
@@ -175,19 +202,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #2'
+  name: '🇺🇸[openproxylist.com] vmess-US #4'
   network: ws
   port: '443'
   server: loveourlive.com
-  servername: loveourlive.com
   tls: true
   type: vmess
   uuid: 183AFF7A-001B-4C5E-A754-FE1506BF33A2
   ws-opts:
+    headers:
+      Host: loveourlive.com
     path: /ws
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #3'
+  name: '🇺🇸[openproxylist.com] vmess-US #5'
   network: ws
   port: '8443'
   server: 176.122.174.175
@@ -200,7 +228,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #4'
+  name: '🇺🇸[openproxylist.com] vmess-US #6'
   network: ws
   port: '17432'
   server: 128.242.109.20
@@ -213,7 +241,7 @@ proxies:
     path: /arki
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #5'
+  name: '🇺🇸[openproxylist.com] vmess-US #7'
   network: ws
   port: '443'
   server: xsj004-10.facai2024.com
@@ -226,28 +254,14 @@ proxies:
     path: /1f1aa362-25
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #6'
+  name: '🇺🇸[openproxylist.com] vmess-US #8'
   network: ws
-  port: '59284'
+  port: '27489'
   server: 107.161.82.89
   tls: false
   type: vmess
-  uuid: bd16ed8f-a5bd-47ea-a69a-651fc70e92ac
+  uuid: 1f111c76-69ce-4fa9-a55c-1ae21cd1ab2a
   ws-opts:
     headers:
       Host: ''
     path: /arki
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #7'
-  network: ws
-  port: 443
-  server: zt-ai.cloud
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: fce3d6a4-0f12-49b5-a810-84bcf0fde202
-  ws-opts:
-    headers:
-      Host: zt-ai.cloud
-    path: /v2ray

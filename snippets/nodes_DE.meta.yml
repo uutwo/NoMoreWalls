@@ -17,8 +17,20 @@ proxies:
   sni: api.kermanshahi.org
   tls: false
   type: hysteria2
-- client-fingerprint: firefox
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
   name: 🇩🇪[openproxylist.com] vless-DE
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: W8hnq0oVIPpRGyM8UUQuaAF2KKxl6C10yBgO911iFwM
+  server: ge-5.lemonbow.ru
+  servername: www.samsung.com
+  tls: false
+  type: vless
+  uuid: 8516c47e-a7a1-42f7-9c14-ae9b14873cc8
+- client-fingerprint: firefox
+  name: '🇩🇪[openproxylist.com] vless-DE #1'
   network: tcp
   port: 443
   reality-opts:
@@ -30,13 +42,6 @@ proxies:
   tls: false
   type: vless
   uuid: 4e155a2f-c1b1-4ce7-9f4e-47fdcc4d8f0f
-- name: '🇩🇪[openproxylist.com] vless-DE #1'
-  network: tcp
-  port: 22223
-  server: 63.179.29.71
-  tls: false
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - name: '🇩🇪[openproxylist.com] vless-DE #2'
   network: tcp
   port: 22222
@@ -70,18 +75,19 @@ proxies:
   tls: false
   type: vless
   uuid: d7955f3f-dfa3-45a0-a3ef-9693df439a0f
-- client-fingerprint: chrome
+- client-fingerprint: ios
   name: '🇩🇪[openproxylist.com] vless-DE #4'
   network: grpc
   port: 56625
   reality-opts:
     public-key: sVtMU2ZA5W6TLnBCZdgfXqDnOwWePrGVjSNnueDlYmM
-    short-id: '!!str b7c8604c2d6dbfd6'
-  server: 2060072484833a47.nimaghaffarzadeh.ir
+    short-id: '!!str d5e4b75249e38cbb'
+  server: cf380c40b2993608.nimaghaffarzadeh.ir
   servername: icloud.com
+  skip-cert-verify: true
   tls: false
   type: vless
-  uuid: 3b4529e8-9c14-4541-8388-fe90d737baeb
+  uuid: d7955f3f-dfa3-45a0-a3ef-9693df439a0f
 - name: '🇩🇪[openproxylist.com] vless-DE #5'
   network: tcp
   port: 8882
@@ -92,11 +98,12 @@ proxies:
   ws-opts:
     headers:
       Host: '%2F%3FBIA_TELEGRAM%40MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI'
+    path: '%2F'
 - client-fingerprint: chrome
   name: '🇩🇪[openproxylist.com] vless-DE #6'
   network: ws
   port: 443
-  server: 104.21.74.63
+  server: 108.162.192.75
   servername: amooaliii.net
   tls: true
   type: vless
@@ -145,20 +152,27 @@ proxies:
     headers:
       Host: pan1.global.ssl.fastly.net
     path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed
-- name: '🇩🇪[openproxylist.com] vless-DE #10'
+- client-fingerprint: chrome
+  name: '🇩🇪[openproxylist.com] vless-DE #10'
+  network: ws
   port: 443
-  server: 140.248.180.30
+  server: 104.19.134.235
+  servername: amooaliii.net
+  tls: true
+  type: vless
+  uuid: 72d1797c-cef8-410a-b8fd-db9104dc3cb0
+  ws-opts:
+    headers:
+      Host: amooaliii.net
+    path: '%2Fjdhfyws'
+- name: '🇳🇱[openproxylist.com] vless-NL #7'
+  port: 443
+  server: 199.232.9.94
   tls: false
   type: vless
   uuid: 86fdb625-1a7f-4784-99a6-a96b3a80fc6d
   ws-opts:
     path: '%2Fvip1'
-- name: '🇩🇪[openproxylist.com] vless-DE #11'
-  port: 50567
-  server: soskeynets.monopolitass.ir
-  tls: false
-  type: vless
-  uuid: d7955f3f-dfa3-45a0-a3ef-9693df439a0f
 - client-fingerprint: firefox
   name: '🇩🇪[openproxylist.com] vless-DE #12'
   network: tcp
@@ -173,21 +187,7 @@ proxies:
   type: vless
   uuid: c95f6104-6b19-4f3e-aaa6-a74fec3ee258
 - client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: products
   name: '🇩🇪[openproxylist.com] vless-DE #13'
-  network: grpc
-  port: 2089
-  reality-opts:
-    public-key: vdLIQuM7v4b6PzknfK1luaQdEWoWdRVbhNFm0a7_UFA
-    short-id: '!!str 85dc255ba7bbe54e'
-  server: jazzghost.com
-  servername: shield.nvidia.asia
-  tls: false
-  type: vless
-  uuid: 45e6cc1d-fc2e-4c97-8633-b33caa28e130
-- client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #14'
   network: grpc
   port: 56625
   reality-opts:
