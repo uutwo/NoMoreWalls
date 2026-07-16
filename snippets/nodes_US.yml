@@ -1,15 +1,21 @@
 proxies:
-- name: '美国+CloudFlare节点 #2'
+- name: 美国+CloudFlare节点
   network: ws
   password: humanity
   port: 443
-  server: 104.20.6.134
-  sni: www.multiplydose.com
+  server: 104.26.6.159
+  skip-cert-verify: false
+  sni: www.creationlong.org
   type: trojan
   ws-opts:
     headers:
-      Host: www.multiplydose.com
-    path: '%2F%252F%252Fassignment'
+      Host: www.creationlong.org
+    path: /assignment
+- name: 美国+华盛顿Cogent通信公司
+  password: Lw_DP4+W.J5K33MD2Jy5zQVuT5n71+=BcD
+  port: 443
+  server: 38.60.168.129
+  type: trojan
 - name: 🇺🇸 美国|@ripaojiedian
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 17005
@@ -192,7 +198,17 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #3'
+  name: 🇺🇸[openproxylist.com] vmess-US
+  network: tcp
+  port: '10086'
+  server: 45.205.31.175
+  servername: vpn.cyedu.xyz
+  tls: true
+  type: vmess
+  uuid: 33f38758-81d2-43b0-a74a-2d7c70ea27c8
+- alterId: 0
+  cipher: auto
+  name: 🏳[openproxylist.com] vmess-
   network: tcp
   port: '443'
   server: 165.140.216.142
@@ -200,43 +216,3 @@ proxies:
   tls: false
   type: vmess
   uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #4'
-  network: ws
-  port: '17432'
-  server: 128.242.109.20
-  tls: false
-  type: vmess
-  uuid: 6cc4a312-2d18-4694-b92d-0af1c039e697
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #5'
-  network: ws
-  port: '443'
-  server: xsj004-10.facai2024.com
-  tls: true
-  type: vmess
-  uuid: 1f1aa362-2576-4989-8fdb-7cf1c2c96490
-  ws-opts:
-    headers:
-      Host: xsj004-10.facai2024.com
-    path: /1f1aa362-25
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #6'
-  network: ws
-  port: '59912'
-  server: 107.161.82.89
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: bda619b6-c5e7-444a-aed7-4d8716237bd7
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki
