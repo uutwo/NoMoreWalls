@@ -1,5 +1,44 @@
 proxies:
 - client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇧🇾[openproxylist.com] vless-BY
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: VE6aUAkSRew5ySZw80myEtL1LOWwDo7BuYyuIKaYPUI
+  server: 87.252.237.219
+  servername: tradingview.com
+  tls: false
+  type: vless
+  uuid: c50680f6-8dc9-44cc-a8fe-72cab1f7f51b
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 俄罗斯+V2CROSS.COM
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: QAuH8zM3gn1RhOc9g9gTU-8WCVVyRZ2gC4xFrS5C7mY
+    short-id: '!!str a1b2c3d4'
+  server: pobos-yezha.ru
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 11c3c90f-d681-4f71-929e-68834d18b5cd
+- alterId: 0
+  cipher: auto
+  name: 俄羅斯
+  network: ws
+  port: 443
+  server: renderer-stream-1-411.mirra.now
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+  ws-opts:
+    headers:
+      Host: renderer-stream-1-411.mirra.now
+    path: /api/v1/gpu-stream/socket
+- client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: grpc
   name: 🇷🇺[openproxylist.com] vless-RU
@@ -13,21 +52,8 @@ proxies:
   tls: false
   type: vless
   uuid: a521084f-7c84-4fe0-adfb-e71328d715f9
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '🇷🇺[openproxylist.com] vless-RU #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: -sij6MifOyoPdIBR9kjB3ww2ClWk7IhITppFxUEdBzI
-    short-id: '!!str 9e0ba98da61cb818'
-  server: ru.bvps.cloud
-  servername: ru.bvps.cloud
-  tls: false
-  type: vless
-  uuid: 52b71b75-4b77-4cec-990b-046ec1938e1f
 - client-fingerprint: qq
-  name: '🇷🇺[openproxylist.com] vless-RU #2'
+  name: '🇷🇺[openproxylist.com] vless-RU #1'
   network: tcp
   port: 40443
   reality-opts:
