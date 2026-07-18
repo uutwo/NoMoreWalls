@@ -1,48 +1,41 @@
 proxies:
-- name: 美国+华盛顿Cogent通信公司
-  network: tcp
-  password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
-  port: 443
-  server: 38.54.64.247
-  skip-cert-verify: true
-  sni: 38.54.64.247
-  type: trojan
-- name: '美国+CloudFlare节点 #3'
+- name: '美国+CloudFlare节点 #4'
   network: ws
   password: humanity
   port: 443
-  server: 104.20.6.134
-  sni: www.multiplydose.com
+  server: 104.26.6.159
+  sni: www.creationlong.org
   type: trojan
   ws-opts:
-    headers:
-      Host: www.multiplydose.com
-    path: '%2F%2Fassignment'
-- name: 🇺🇸 美国 V2CROSS.COM
-  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
+    path: '%2Fassignment'
+- name: 🇺🇸 美国 CloudFlare节点
+  password: humanity
   port: 443
-  server: 149.104.104.58
+  server: 104.26.6.159
   skip-cert-verify: false
-  sni: 149.104.104.58
+  sni: www.creationlong.org
   type: trojan
-- name: 🇺🇸 美国|@ripaojiedian
+- name: 美国|@ripaojiedian
+  network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
-  port: 17005
-  server: 18.166.55.241
+  port: 49277
+  server: 16.163.108.33
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 🇺🇸 美国2|@ripaojiedian
+- name: 美国2|@ripaojiedian
+  network: tcp
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 17005
-  server: 43.198.71.42
+  server: 16.163.108.33
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 🇺🇸 美国3|@ripaojiedian
+- name: 美国3|@ripaojiedian
+  network: tcp
   password: BxceQaOe
-  port: 35966
-  server: 18.163.5.109
+  port: 25651
+  server: 43.199.202.34
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -128,38 +121,23 @@ proxies:
   skip-cert-verify: true
   sni: www.calmlunch.com
   type: trojan
-- name: 🇭🇰_HK_中国香港->🇺🇸_US_美国
-  password: BxceQaOe
-  port: 35966
-  server: 18.163.5.109
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: 美国|@ripaojiedian
-  network: tcp
-  password: b490740312aedb5f9f6b84c7aebd08c0
-  port: 49277
-  server: 16.163.108.33
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国2|@ripaojiedian
-  network: tcp
-  password: b490740312aedb5f9f6b84c7aebd08c0
-  port: 17005
-  server: 16.163.108.33
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 25651
-  server: 43.199.202.34
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #1'
+  name: 🇺🇸_US_美国->🇫🇷_FR_法国
+  network: ws
+  port: 443
+  server: 4cdn.njkrpl.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a0449b33-d7f6-42a5-8bdc-3b5e727ec9f8
+  ws-opts:
+    headers:
+      Host: 4cdn.njkrpl.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #4'
   network: tcp
   port: '443'
   server: 165.140.216.142
@@ -167,20 +145,6 @@ proxies:
   tls: false
   type: vmess
   uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-- name: 🇺🇸[openproxylist.com] trojan-U...
-  password: NQ26071394
-  port: 443
-  server: sharing-porpoise.rooster465.autos
-  skip-cert-verify: false
-  sni: sharing-porpoise.rooster465.autos
-  type: trojan
-- name: '🇺🇸[openproxylist.com] trojan-U... #1'
-  password: NQ26071394
-  port: 443
-  server: engaging-elephant.rooster465.autos
-  skip-cert-verify: false
-  sni: engaging-elephant.rooster465.autos
-  type: trojan
 - alterId: 0
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #2'
@@ -190,12 +154,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
-- name: '🇺🇸[openproxylist.com] trojan-U... #2'
-  password: eb6fb64d-18c0-44d0-9ee5-f29c29194083
-  port: 443
-  server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
-  sni: 8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
-  type: trojan
 - alterId: 0
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #3'
@@ -205,3 +163,9 @@ proxies:
   tls: false
   type: vmess
   uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
+- name: 🇺🇸[openproxylist.com] trojan-U...
+  password: CF68213490
+  port: 443
+  server: polite-coyote.rooster465.autos
+  sni: polite-coyote.rooster465.autos
+  type: trojan
