@@ -20,6 +20,20 @@ proxies:
   skip-cert-verify: true
   sni: ready-kangaroo.rooster465.autos
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇫🇷[openproxylist.com] vmess-FR
+  network: ws
+  port: '8443'
+  server: tg.hrmp.kdns.fr
+  servername: tg.hrmp.kdns.fr
+  tls: true
+  type: vmess
+  uuid: af1ccd89-b66b-44e8-99b8-0d945078c04b
+  ws-opts:
+    headers:
+      Host: tg.hrmp.kdns.fr
+    path: /tirexvmess
 - name: 🇫🇷[openproxylist.com] vless-FR
   port: 22222
   server: 13.39.56.66
@@ -32,30 +46,17 @@ proxies:
   tls: false
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- client-fingerprint: chrome
-  name: '🇫🇷[openproxylist.com] vless-FR #2'
-  network: ws
-  port: 443
-  server: 104.17.147.22
-  servername: octopusss.net
-  tls: true
-  type: vless
-  uuid: 073d1d50-8478-47bf-a828-7a1b381931d5
-  ws-opts:
-    headers:
-      Host: octopusss.net
-    path: /odiyfws
 - name: '🇫🇷[openproxylist.com] vless-FR #3'
-  network: tcp
-  port: 8443
-  server: 31.58.76.95
-  tls: false
-  type: vless
-  uuid: 7dc3461c-630f-4547-82a9-08042b0daba5
-- name: '🇫🇷[openproxylist.com] vless-FR #4'
   network: tcp
   port: 8443
   server: 31.56.146.93
   tls: false
   type: vless
   uuid: d7b8d855-352f-44fd-a20f-7e8ff06d0f66
+- name: '🇫🇷[openproxylist.com] vless-FR #4'
+  network: grpc
+  port: 443
+  server: 77.221.152.151
+  tls: false
+  type: vless
+  uuid: d2e3768f-cb23-4cfc-a884-dbd6813cb70b
