@@ -89,38 +89,59 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- name: 罗马尼亚+V2CROSS.COM
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.156
-  sni: 185.137.157.156
-  type: trojan
-- name: '罗马尼亚+V2CROSS.COM #1'
+- name: '🇷🇴 罗马尼亚 V2CROSS.COM #1'
   network: tcp
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.145
-  skip-cert-verify: false
-  type: trojan
-- name: '美国+V2CROSS.COM #2'
-  network: tcp
-  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
-  port: 443
-  server: 149.104.104.58
-  sni: 149.104.104.58
-  type: trojan
-- name: 香港+电讯盈科有限公司
-  password: OccIqeORGQwiNkwS
-  port: 19128
-  server: jpbgp.netvigor.cc
-  skip-cert-verify: false
-  sni: yazhou10.dynu.net
-  type: trojan
-- name: 🇷🇴 罗马尼亚 V2CROSS.COM
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
   server: 185.137.157.151
   skip-cert-verify: false
+  sni: 185.137.157.151
+  type: trojan
+- name: '美国+CloudFlare节点 #3'
+  network: ws
+  password: humanity
+  port: 443
+  server: www.host-tracker.com
+  sni: www.gossipglove.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: 美国+华盛顿Cogent通信公司
+  password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
+  port: 443
+  server: 38.54.64.247
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '🇹🇷[openproxylist.com] vmess-TR #1'
+  network: tcp
+  port: '2078'
+  server: 93.180.134.52
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1c18da66-a912-40af-b90d-787574efe6d3
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国 法尔肯施泰因HETZNER
+  network: tcp
+  port: '14991'
+  server: me.echo-license.gr
+  tls: false
+  type: vmess
+  uuid: fbd2b2f1-af4a-4e5f-9556-af37edea9db5
+- name: 🇷🇴 罗马尼亚 V2CROSS.COM
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.149
+  skip-cert-verify: false
+  type: trojan
+- name: 🇺🇸 美国 CloudFlare节点
+  password: humanity
+  port: 443
+  server: 172.64.146.28
+  skip-cert-verify: true
+  sni: www.gossipglove.com
   type: trojan
 - alterId: 2
   cipher: auto
@@ -478,53 +499,9 @@ proxies:
   skip-cert-verify: true
   sni: www.creationlong.org
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
-  network: tcp
-  port: 30809
-  server: v9.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
   name: 🇭🇰_HK_中国香港
-  network: tcp
-  port: 5566
-  server: 47.76.127.88
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 44712929-c2b7-4fa4-93bd-9de332a78c8c
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  network: tcp
-  port: 30804
-  server: v4.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国->🇫🇷_FR_法国
-  network: ws
-  port: 443
-  server: 4cdn.njkrpl.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a0449b33-d7f6-42a5-8bdc-3b5e727ec9f8
-  ws-opts:
-    headers:
-      Host: 4cdn.njkrpl.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰_HK_中国香港 #1'
   network: ws
   port: 443
   server: n1747624260.4u9ma.icu
@@ -536,16 +513,50 @@ proxies:
     headers:
       Host: n1747624260.4u9ma.icu
     path: /
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: 🇺🇸_US_美国
+  name: '🇭🇰_HK_中国香港 #1'
   network: tcp
-  port: 443
-  server: guanwang.awsno.com
+  port: 30807
+  server: v10.zgtfqs.click
   servername: ''
   tls: false
   type: vmess
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 🇸🇬_SG_新加坡
+  password: HW85960347
+  port: 443
+  server: pro-mako.rooster465.autos
+  skip-cert-verify: true
+  sni: pro-mako.rooster465.autos
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  network: tcp
+  port: 30824
+  server: v24.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇩🇪_DE_德国
+  network: tcp
+  port: 30833
+  server: v33.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: '🇸🇬_SG_新加坡 #1'
+  password: JA96378052
+  port: 443
+  server: 13.212.210.184
+  skip-cert-verify: true
+  sni: WangCai.rooster465.autos
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '🇭🇰_HK_中国香港 #2'
@@ -560,12 +571,94 @@ proxies:
     headers:
       Host: n1747624274.4u9ma.icu
     path: /
-- name: 🇩🇪_DE_德国
-  password: 5X8o4K1Ybu
-  port: 27068
-  server: mahsa246qub5.mahsaaminivpn.com
+- alterId: 2
+  cipher: auto
+  name: '🇨🇳_CN_中国->🇺🇸_US_美国 #1'
+  network: tcp
+  port: 30804
+  server: v4.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: '🇨🇳_CN_中国->🇺🇸_US_美国 #2'
+  network: tcp
+  port: 30829
+  server: v29.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: '🇸🇬_SG_新加坡 #2'
+  password: JA96378052
+  port: 443
+  server: inspired-goshawk.rooster465.autos
   skip-cert-verify: true
+  sni: inspired-goshawk.rooster465.autos
   type: trojan
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇯🇵_JP_日本
+  network: tcp
+  port: 30806
+  server: v6.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸_US_美国
+  network: tcp
+  port: 443
+  server: guanwang.awsno.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+  network: tcp
+  port: 30809
+  server: v9.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 🇯🇵_JP_日本
+  password: JA96378052
+  port: 443
+  server: 52.195.11.84
+  skip-cert-verify: true
+  sni: WangCai.rooster465.autos
+  type: trojan
+- name: '🇺🇸_US_美国 #1'
+  password: HW85960347
+  port: 443
+  server: dashing-possum.rooster465.autos
+  skip-cert-verify: true
+  sni: dashing-possum.rooster465.autos
+  type: trojan
+- name: '🇯🇵_JP_日本 #1'
+  password: HW85960347
+  port: 443
+  server: casual-bee.rooster465.autos
+  skip-cert-verify: true
+  sni: casual-bee.rooster465.autos
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #3'
+  network: tcp
+  port: '443'
+  server: 165.140.216.142
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
 - name: 🇺🇸[openproxylist.com] trojan-U...
   password: KV63147582
   port: 443
@@ -580,50 +673,10 @@ proxies:
   skip-cert-verify: false
   sni: master-possum.rooster465.autos
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #5'
-  network: tcp
-  port: '443'
-  server: 165.140.216.142
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪[openproxylist.com] vmess-DE
-  network: tcp
-  port: '10037'
-  server: family.bucket.x9.kfc-520.com
-  tls: false
-  type: vmess
-  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
 - name: '🇺🇸[openproxylist.com] trojan-U... #1'
   password: CF68213490
   port: 443
   server: tolerant-rattler.rooster465.autos
-  type: trojan
-- name: 🇯🇵[openproxylist.com] trojan-J...
-  password: HW85960347
-  port: 443
-  server: renewing-leopard.rooster465.autos
-  skip-cert-verify: true
-  sni: renewing-leopard.rooster465.autos
-  type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #1'
-  password: JA96378052
-  port: 443
-  server: 3.112.1.122
-  skip-cert-verify: true
-  sni: WangCai.rooster465.autos
-  type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #2'
-  password: JA96378052
-  port: 443
-  server: 52.195.11.84
-  skip-cert-verify: true
-  sni: WangCai.rooster465.autos
   type: trojan
 - name: '🇸🇬[openproxylist.com] trojan-S... #1'
   password: JA96378052
@@ -631,97 +684,6 @@ proxies:
   server: trusting-moccasin.rooster465.autos
   skip-cert-verify: true
   sni: trusting-moccasin.rooster465.autos
-  type: trojan
-- name: '🇸🇬[openproxylist.com] trojan-S... #2'
-  password: HW85960347
-  port: 443
-  server: informed-alpaca.rooster465.autos
-  skip-cert-verify: true
-  sni: informed-alpaca.rooster465.autos
-  type: trojan
-- name: '🇸🇬[openproxylist.com] trojan-S... #3'
-  password: JA96378052
-  port: 443
-  server: upward-puma.rooster465.autos
-  skip-cert-verify: true
-  sni: upward-puma.rooster465.autos
-  type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #3'
-  password: HW85960347
-  port: 443
-  server: deep-ringtail.rooster465.autos
-  skip-cert-verify: true
-  sni: deep-ringtail.rooster465.autos
-  type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #4'
-  password: JA96378052
-  port: 443
-  server: square-skink.rooster465.autos
-  skip-cert-verify: true
-  sni: square-skink.rooster465.autos
-  type: trojan
-- name: '🇸🇬[openproxylist.com] trojan-S... #4'
-  password: HW85960347
-  port: 443
-  server: pro-mako.rooster465.autos
-  skip-cert-verify: true
-  sni: pro-mako.rooster465.autos
-  type: trojan
-- name: '🇸🇬[openproxylist.com] trojan-S... #5'
-  password: JA96378052
-  port: 443
-  server: willing-eagle.rooster465.autos
-  skip-cert-verify: false
-  sni: willing-eagle.rooster465.autos
-  type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #5'
-  password: HW85960347
-  port: 443
-  server: elegant-arachnid.rooster465.autos
-  skip-cert-verify: false
-  sni: elegant-arachnid.rooster465.autos
-  type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #6'
-  password: JA96378052
-  port: 443
-  server: certain-kit.rooster465.autos
-  skip-cert-verify: false
-  sni: certain-kit.rooster465.autos
-  type: trojan
-- name: '🇸🇬[openproxylist.com] trojan-S... #6'
-  password: JA96378052
-  port: 443
-  server: inspired-goshawk.rooster465.autos
-  skip-cert-verify: false
-  sni: inspired-goshawk.rooster465.autos
-  type: trojan
-- name: '🇸🇬[openproxylist.com] trojan-S... #7'
-  password: HW85960347
-  port: 443
-  server: feasible-guppy.rooster465.autos
-  skip-cert-verify: false
-  sni: feasible-guppy.rooster465.autos
-  type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #7'
-  password: JA96378052
-  port: 443
-  server: 54.178.60.95
-  skip-cert-verify: true
-  sni: WangCai.rooster465.autos
-  type: trojan
-- name: '🇸🇬[openproxylist.com] trojan-S... #8'
-  password: PD07395842
-  port: 443
-  server: national-dingo.rooster465.autos
-  skip-cert-verify: true
-  sni: national-dingo.rooster465.autos
-  type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #8'
-  password: HW85960347
-  port: 443
-  server: outgoing-eagle.rooster465.autos
-  skip-cert-verify: true
-  sni: outgoing-eagle.rooster465.autos
   type: trojan
 - alterId: 0
   cipher: auto
@@ -739,16 +701,6 @@ proxies:
     path: /tirexvmess
 - alterId: 0
   cipher: auto
-  name: 🇫🇮[openproxylist.com] vmess-FI
-  network: tcp
-  port: '52525'
-  server: 65.109.219.124
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 358f44f0-2686-46c8-9cc6-ec52abd66df4
-- alterId: 0
-  cipher: auto
   name: 🇹🇷[openproxylist.com] vmess-TR
   network: tcp
   port: '10048'
@@ -756,17 +708,11 @@ proxies:
   tls: false
   type: vmess
   uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
-- name: '🇯🇵[openproxylist.com] trojan-J... #9'
+- name: 🇯🇵[openproxylist.com] trojan-J...
   password: NQ26071394
   port: 443
   server: optimal-penguin.rooster465.autos
   sni: optimal-penguin.rooster465.autos
-  type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #10'
-  password: NQ26071394
-  port: 443
-  server: adapting-spider.rooster465.autos
-  sni: adapting-spider.rooster465.autos
   type: trojan
 - name: 🇰🇷[openproxylist.com] trojan-K...
   password: NQ26071394
@@ -774,18 +720,13 @@ proxies:
   server: sensible-mongrel.rooster465.autos
   sni: sensible-mongrel.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #11'
-  password: CF68213490
-  port: 443
-  server: star-cheetah.rooster465.autos
-  type: trojan
 - name: '🇺🇸[openproxylist.com] trojan-U... #2'
   password: eb6fb64d-18c0-44d0-9ee5-f29c29194083
   port: 443
   server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
   sni: 8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
   type: trojan
-- name: '🇸🇬[openproxylist.com] trojan-S... #9'
+- name: '🇸🇬[openproxylist.com] trojan-S... #2'
   password: NQ26071394
   port: 443
   server: promoted-rattler.rooster465.autos
@@ -797,19 +738,19 @@ proxies:
   server: flexible-titmouse.rooster465.autos
   sni: flexible-titmouse.rooster465.autos
   type: trojan
-- name: '🇸🇬[openproxylist.com] trojan-S... #10'
+- name: '🇸🇬[openproxylist.com] trojan-S... #3'
   password: NQ26071394
   port: 443
   server: evident-ant.rooster465.autos
   sni: evident-ant.rooster465.autos
   type: trojan
-- name: '🇸🇬[openproxylist.com] trojan-S... #11'
+- name: '🇸🇬[openproxylist.com] trojan-S... #4'
   password: NQ26071394
   port: 443
   server: square-gnat.rooster465.autos
   sni: square-gnat.rooster465.autos
   type: trojan
-- name: '🇸🇬[openproxylist.com] trojan-S... #12'
+- name: '🇸🇬[openproxylist.com] trojan-S... #5'
   password: NQ26071394
   port: 443
   server: emerging-baboon.rooster465.autos
@@ -827,37 +768,19 @@ proxies:
   server: polished-shrew.rooster465.autos
   sni: polished-shrew.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #12'
+- name: '🇯🇵[openproxylist.com] trojan-J... #1'
   password: NQ26071394
   port: 443
   server: grateful-crawdad.rooster465.autos
   sni: grateful-crawdad.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #13'
-  password: NQ26071394
-  port: 443
-  server: elegant-marten.rooster465.autos
-  sni: elegant-marten.rooster465.autos
-  type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #14'
-  password: NQ26071394
-  port: 443
-  server: harmless-pegasus.rooster465.autos
-  sni: harmless-pegasus.rooster465.autos
-  type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #15'
-  password: NQ26071394
-  port: 443
-  server: warm-bass.rooster465.autos
-  sni: warm-bass.rooster465.autos
-  type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #16'
+- name: '🇯🇵[openproxylist.com] trojan-J... #2'
   password: NQ26071394
   port: 443
   server: fit-marten.rooster465.autos
   sni: fit-marten.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #17'
+- name: '🇯🇵[openproxylist.com] trojan-J... #3'
   password: NQ26071394
   port: 443
   server: stunning-mastodon.rooster465.autos
@@ -869,7 +792,7 @@ proxies:
   server: fun-labrador.rooster465.autos
   sni: fun-labrador.rooster465.autos
   type: trojan
-- name: '🇸🇬[openproxylist.com] trojan-S... #13'
+- name: '🇸🇬[openproxylist.com] trojan-S... #6'
   password: NQ26071394
   port: 443
   server: helping-newt.rooster465.autos
@@ -887,7 +810,7 @@ proxies:
   server: grateful-bedbug.rooster465.autos
   sni: grateful-bedbug.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #18'
+- name: '🇯🇵[openproxylist.com] trojan-J... #4'
   password: NQ26071394
   port: 443
   server: working-tomcat.rooster465.autos
@@ -899,7 +822,7 @@ proxies:
   server: upright-caribou.rooster465.autos
   sni: upright-caribou.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #19'
+- name: '🇯🇵[openproxylist.com] trojan-J... #5'
   password: NQ26071394
   port: 443
   server: new-eagle.rooster465.autos
@@ -911,7 +834,7 @@ proxies:
   server: merry-falcon.rooster465.autos
   sni: merry-falcon.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #20'
+- name: '🇯🇵[openproxylist.com] trojan-J... #6'
   password: NQ26071394
   port: 443
   server: infinite-killdeer.rooster465.autos
@@ -929,35 +852,29 @@ proxies:
   server: funky-opossum.rooster465.autos
   sni: funky-opossum.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #21'
+- name: '🇫🇷[openproxylist.com] trojan-F... #1'
   password: NQ26071394
   port: 443
-  server: brief-hare.rooster465.autos
-  sni: brief-hare.rooster465.autos
+  server: chief-cricket.rooster465.autos
+  skip-cert-verify: false
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #22'
+- name: '🇯🇵[openproxylist.com] trojan-J... #7'
   password: NQ26071394
   port: 443
   server: alert-wren.rooster465.autos
   sni: alert-wren.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #23'
+- name: '🇯🇵[openproxylist.com] trojan-J... #8'
   password: NQ26071394
   port: 443
   server: firm-krill.rooster465.autos
   sni: firm-krill.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #24'
+- name: '🇯🇵[openproxylist.com] trojan-J... #9'
   password: NQ26071394
   port: 443
   server: legible-ram.rooster465.autos
   sni: legible-ram.rooster465.autos
-  type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #25'
-  password: NQ26071394
-  port: 443
-  server: expert-muskrat.rooster465.autos
-  sni: expert-muskrat.rooster465.autos
   type: trojan
 - name: '🇮🇪[openproxylist.com] trojan-I... #2'
   password: NQ26071394
@@ -971,7 +888,7 @@ proxies:
   server: modest-amoeba.rooster465.autos
   sni: modest-amoeba.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #26'
+- name: '🇯🇵[openproxylist.com] trojan-J... #10'
   password: NQ26071394
   port: 443
   server: hot-tapir.rooster465.autos
@@ -983,7 +900,7 @@ proxies:
   server: normal-bull.rooster465.autos
   sni: normal-bull.rooster465.autos
   type: trojan
-- name: '🇸🇬[openproxylist.com] trojan-S... #14'
+- name: '🇸🇬[openproxylist.com] trojan-S... #7'
   password: NQ26071394
   port: 443
   server: proper-marlin.rooster465.autos
@@ -1001,13 +918,7 @@ proxies:
   server: guided-pelican.rooster465.autos
   sni: guided-pelican.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #27'
-  password: NQ26071394
-  port: 443
-  server: real-ewe.rooster465.autos
-  sni: real-ewe.rooster465.autos
-  type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #28'
+- name: '🇯🇵[openproxylist.com] trojan-J... #11'
   password: NQ26071394
   port: 443
   server: magical-prawn.rooster465.autos
@@ -1052,7 +963,7 @@ proxies:
   server: living-hagfish.rooster465.autos
   sni: living-hagfish.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #29'
+- name: '🇯🇵[openproxylist.com] trojan-J... #12'
   password: NQ26071394
   port: 443
   server: grand-grub.rooster465.autos
@@ -1062,28 +973,28 @@ proxies:
   port: 443
   server: quiet-condor.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #30'
+- name: '🇯🇵[openproxylist.com] trojan-J... #13'
   password: NQ26071394
   port: 443
   server: skilled-polliwog.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #31'
+- name: '🇯🇵[openproxylist.com] trojan-J... #14'
   password: NQ26071394
   port: 443
   server: inviting-rabbit.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #32'
+- name: '🇯🇵[openproxylist.com] trojan-J... #15'
   password: NQ26071394
   port: 443
   server: gentle-turtle.rooster465.autos
   sni: gentle-turtle.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #33'
+- name: '🇯🇵[openproxylist.com] trojan-J... #16'
   password: NQ26071394
   port: 443
   server: direct-hawk.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #34'
+- name: '🇯🇵[openproxylist.com] trojan-J... #17'
   password: NQ26071394
   port: 443
   server: arriving-koala.rooster465.autos
@@ -1094,7 +1005,7 @@ proxies:
   server: polite-coyote.rooster465.autos
   sni: polite-coyote.rooster465.autos
   type: trojan
-- name: '🇸🇬[openproxylist.com] trojan-S... #15'
+- name: '🇸🇬[openproxylist.com] trojan-S... #8'
   password: NQ26071394
   port: 443
   server: amazing-troll.rooster465.autos
@@ -1104,65 +1015,28 @@ proxies:
   port: 443
   server: gentle-platypus.rooster465.autos
   type: trojan
-- name: '🇸🇬[openproxylist.com] trojan-S... #16'
+- name: '🇸🇬[openproxylist.com] trojan-S... #9'
   password: NQ26071394
   port: 443
   server: allowed-moose.rooster465.autos
   type: trojan
-- name: '🇸🇬[openproxylist.com] trojan-S... #17'
+- name: '🇸🇬[openproxylist.com] trojan-S... #10'
   password: NQ26071394
   port: 443
   server: bold-eagle.rooster465.autos
   type: trojan
-- name: AE_speednode_0001
-  network: ws
-  password: MITIVPN
+- name: '🇰🇷[openproxylist.com] trojan-K... #12'
+  password: NQ26071394
   port: 443
-  server: 94.140.0.100
-  skip-cert-verify: false
-  sni: 95r.ir
+  server: thorough-foxhound.rooster465.autos
   type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: 95r.ir
-    path: /MiTiVPN=Usa
-- name: GB_speednode_0005
-  network: ws
-  password: MITIVPN
+- name: '🇸🇬[openproxylist.com] trojan-S... #11'
+  password: NQ26071394
   port: 443
-  server: 164.38.155.135
-  skip-cert-verify: false
-  sni: 95r.ir
+  server: topical-shark.rooster465.autos
   type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: 95r.ir
-    path: /MiTiVPN=De
-- name: NL_speednode_0016
-  network: ws
-  password: MiTiVPN
+- name: '🇸🇬[openproxylist.com] trojan-S... #12'
+  password: CF68213490
   port: 443
-  server: 45.131.4.118
-  skip-cert-verify: false
-  sni: 95r.ir
+  server: lucky-chimp.rooster465.autos
   type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: 95r.ir
-    path: /MiTiVPN=Se
-- name: US_speednode_0063
-  network: ws
-  password: Mitivpn
-  port: 443
-  server: iranpoems.ir
-  skip-cert-verify: false
-  sni: www.gamingdll.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.gamingdll.ir
-    path: /usa=mitivpn
