@@ -89,14 +89,47 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- name: 🇺🇸 美国 华盛顿Cogent通信公司
+- name: 香港+电讯盈科有限公司
   network: tcp
+  password: OccIqeORGQwiNkwS
+  port: 19128
+  server: jpbgp.netvigor.cc
+  sni: yazhou10.dynu.net
+  type: trojan
+- name: '美国+CloudFlare节点 #3'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.26.6.159
+  sni: www.creationlong.org
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- alpn:
+  - http/1.1
+  name: '美国+CloudFlare节点 #6'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.20.6.134
+  skip-cert-verify: false
+  sni: www.creationlong.org
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: 🇺🇸 美国 华盛顿Cogent通信公司
   password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
   port: 443
   server: 38.54.64.247
   skip-cert-verify: true
   sni: 38.54.64.247
   type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 🇮🇳IN-103.111.114.80-01
+  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
+  port: 28061
+  server: 103.111.114.80
+  type: ss
 - name: 🇷🇴 罗马尼亚 V2CROSS.COM
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
@@ -110,12 +143,6 @@ proxies:
   skip-cert-verify: false
   sni: 185.137.157.140
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇳IN-103.111.114.80-01
-  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
-  port: 28061
-  server: 103.111.114.80
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇮🇳IN-103.111.114.71-04
   password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
@@ -142,96 +169,84 @@ proxies:
   ws-headers:
     Host: v10.hdacd.com
   ws-path: /
-- name: 香港3|@ripaojiedian
-  network: tcp
+- name: 🇭🇰 香港3|@ripaojiedian
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 47867
   server: 18.166.74.220
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 香港4|@ripaojiedian
-  network: tcp
+- name: 🇭🇰 香港4|@ripaojiedian
   password: BxceQaOe
   port: 7674
   server: 16.163.145.248
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 香港5|@ripaojiedian
-  network: tcp
+- name: 🇭🇰 香港5|@ripaojiedian
   password: BxceQaOe
   port: 50115
   server: 54.46.125.103
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 日本|@ripaojiedian
-  network: tcp
+- name: 🇯🇵 日本|@ripaojiedian
   password: BxceQaOe
   port: 24397
   server: 54.238.245.134
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 日本2|@ripaojiedian
-  network: tcp
+- name: 🇯🇵 日本2|@ripaojiedian
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 40138
   server: 16.163.40.213
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 日本3|@ripaojiedian
-  network: tcp
+- name: 🇯🇵 日本3|@ripaojiedian
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 38937
   server: 16.163.40.213
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 新加坡|@ripaojiedian
-  network: tcp
+- name: 🇸🇬 新加坡|@ripaojiedian
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 6357
   server: 18.166.74.220
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 新加坡2|@ripaojiedian
-  network: tcp
+- name: 🇸🇬 新加坡2|@ripaojiedian
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 48738
   server: 95.40.52.88
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 新加坡3|@ripaojiedian
-  network: tcp
+- name: 🇸🇬 新加坡3|@ripaojiedian
   password: BxceQaOe
   port: 32434
   server: 54.46.125.103
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 美国|@ripaojiedian
-  network: tcp
+- name: 🇺🇸 美国|@ripaojiedian
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 49277
   server: 16.163.108.33
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 美国2|@ripaojiedian
-  network: tcp
+- name: 🇺🇸 美国2|@ripaojiedian
   password: b490740312aedb5f9f6b84c7aebd08c0
   port: 17005
   server: 16.163.108.33
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 美国3|@ripaojiedian
-  network: tcp
+- name: 🇺🇸 美国3|@ripaojiedian
   password: BxceQaOe
   port: 25651
   server: 43.199.202.34
@@ -538,9 +553,99 @@ proxies:
     headers:
       Host: n1747624274.4u9ma.icu
     path: /
+- name: 香港3|@ripaojiedian
+  network: tcp
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  port: 47867
+  server: 18.162.155.166
+  sni: www.nintendogames.net
+  type: trojan
+- name: 香港4|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 27161
+  server: 18.166.57.77
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 香港5|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 27161
+  server: 95.40.118.114
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 日本|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 10624
+  server: 43.198.72.49
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 日本2|@ripaojiedian
+  network: tcp
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  port: 38937
+  server: 54.46.77.161
+  sni: www.nintendogames.net
+  type: trojan
+- name: 日本3|@ripaojiedian
+  network: tcp
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  port: 40138
+  server: 18.166.58.27
+  sni: www.nintendogames.net
+  type: trojan
+- name: 新加坡|@ripaojiedian
+  network: tcp
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  port: 48738
+  server: 18.166.58.27
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 新加坡2|@ripaojiedian
+  network: tcp
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  port: 48738
+  server: 18.162.155.166
+  sni: www.nintendogames.net
+  type: trojan
+- name: 新加坡3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 41421
+  server: 43.198.13.164
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 美国|@ripaojiedian
+  network: tcp
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  port: 49277
+  server: 18.166.58.27
+  sni: www.nintendogames.net
+  type: trojan
+- name: 美国2|@ripaojiedian
+  network: tcp
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  port: 49277
+  server: 18.162.155.166
+  sni: www.nintendogames.net
+  type: trojan
+- name: 美国3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 11993
+  server: 43.199.148.22
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '🏳[openproxylist.com] vmess- #5'
+  name: '🇺🇸[openproxylist.com] vmess-US #8'
   network: tcp
   port: '443'
   server: 165.140.216.142
@@ -548,22 +653,31 @@ proxies:
   tls: false
   type: vmess
   uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+- name: 🇵🇱[openproxylist.com] trojan-P...
+  password: NQ26071394
+  port: 443
+  server: ready-lion.rooster465.autos
+  type: trojan
+- name: 🇩🇪[openproxylist.com] trojan-D...
+  password: NQ26071394
+  port: 443
+  server: certain-prawn.rooster465.autos
+  type: trojan
+- name: 🇭🇰[openproxylist.com] trojan-H...
+  password: ON38567014
+  port: 443
+  server: genuine-grackle.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '🏳[openproxylist.com] vmess- #1'
+  name: 🇻🇳[openproxylist.com] vmess-VN
   network: tcp
   port: 27467
   server: 103.166.184.134
   tls: false
   type: vmess
   uuid: 93637105-bcea-4a68-b089-1bb6091f0b16
-- name: 🇸🇬[openproxylist.com] trojan-S...
-  password: ON38567014
-  port: 443
-  server: glorious-glider.rooster465.autos
-  skip-cert-verify: false
-  sni: glorious-glider.rooster465.autos
-  type: trojan
 - name: 🇨🇭[openproxylist.com] trojan-C...
   network: grpc
   password: '-----------BanV2ray-----------'
@@ -571,23 +685,35 @@ proxies:
   server: uupupupuppupupupuuppupupupupuup-11.poki-pakipon.ir
   sni: chi.yahoo.com
   type: trojan
-- name: 🇵🇱[openproxylist.com] trojan-P...
+- name: '🇵🇱[openproxylist.com] trojan-P... #1'
   password: CF68213490
   port: 443
   server: emerging-weevil.rooster465.autos
   type: trojan
 - name: 🇺🇸[openproxylist.com] trojan-U...
+  password: KV63147582
+  port: 443
+  server: wondrous-dogfish.rooster465.autos
+  sni: wondrous-dogfish.rooster465.autos
+  type: trojan
+- name: '🇺🇸[openproxylist.com] trojan-U... #1'
   password: CF68213490
   port: 443
   server: tolerant-rattler.rooster465.autos
+  type: trojan
+- name: '🇺🇸[openproxylist.com] trojan-U... #2'
+  password: HW85960347
+  port: 443
+  server: dashing-possum.rooster465.autos
+  sni: dashing-possum.rooster465.autos
   type: trojan
 - alterId: 0
   cipher: auto
   name: 🇫🇷[openproxylist.com] vmess-FR
   network: ws
-  port: 8443
+  port: '8443'
   server: tg.hrmp.kdns.fr
-  servername: ''
+  servername: tg.hrmp.kdns.fr
   tls: true
   type: vmess
   uuid: af1ccd89-b66b-44e8-99b8-0d945078c04b
@@ -597,39 +723,61 @@ proxies:
     path: /tirexvmess
 - alterId: 0
   cipher: auto
-  name: '🏳[openproxylist.com] vmess- #2'
+  name: 🇫🇮[openproxylist.com] vmess-FI
   network: tcp
   port: '52525'
   server: 65.109.219.124
   servername: ''
   tls: false
   type: vmess
-  uuid: 358f44f0-2686-46c8-9cc6-ec52abd66df4
+  uuid: bf973a3b-b285-4369-8c01-1f1e50024a38
 - name: 🇳🇱[openproxylist.com] trojan-N...
   password: NQ26071394
   port: 443
   server: renewed-phoenix.rooster465.autos
   sni: renewed-phoenix.rooster465.autos
   type: trojan
-- name: '🇵🇱[openproxylist.com] trojan-P... #1'
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪[openproxylist.com] vmess-DE
+  network: tcp
+  port: '17367'
+  server: 136.244.95.190
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 399f7f1b-0f5e-43a1-b0b5-6f255367d778
+- name: '🇵🇱[openproxylist.com] trojan-P... #2'
   password: NQ26071394
   port: 443
   server: kind-unicorn.rooster465.autos
-  sni: kind-unicorn.rooster465.autos
   type: trojan
-- name: '🇺🇸[openproxylist.com] trojan-U... #1'
+- name: '🇺🇸[openproxylist.com] trojan-U... #3'
   password: eb6fb64d-18c0-44d0-9ee5-f29c29194083
   port: 443
   server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
   sni: 8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
   type: trojan
-- name: '🇺🇸[openproxylist.com] trojan-U... #2'
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵[openproxylist.com] vmess-JP
+  network: ws
+  port: '12883'
+  server: cs.ktmcn.net
+  tls: false
+  type: vmess
+  uuid: 78f2e8f0-68ea-438e-84ec-d58c9416c680
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /
+- name: '🇺🇸[openproxylist.com] trojan-U... #4'
   password: CF68213490
   port: 443
   server: alert-monster.rooster465.autos
   sni: alert-monster.rooster465.autos
   type: trojan
-- name: 🏳[openproxylist.com] trojan-
+- name: 🇮🇪[openproxylist.com] trojan-I...
   password: NQ26071394
   port: 443
   server: fun-labrador.rooster465.autos
@@ -647,13 +795,13 @@ proxies:
   server: grateful-bedbug.rooster465.autos
   sni: grateful-bedbug.rooster465.autos
   type: trojan
-- name: 🇮🇪[openproxylist.com] trojan-I...
+- name: '🇮🇪[openproxylist.com] trojan-I... #1'
   password: NQ26071394
   port: 443
   server: funky-opossum.rooster465.autos
   sni: funky-opossum.rooster465.autos
   type: trojan
-- name: '🏳[openproxylist.com] trojan- #1'
+- name: '🇫🇷[openproxylist.com] trojan-F... #1'
   network: tcp
   password: NQ26071394
   port: 443
@@ -661,42 +809,42 @@ proxies:
   skip-cert-verify: false
   sni: chief-cricket.rooster465.autos
   type: trojan
-- name: '🇮🇪[openproxylist.com] trojan-I... #1'
+- name: '🇮🇪[openproxylist.com] trojan-I... #2'
   password: NQ26071394
   port: 443
   server: thankful-piranha.rooster465.autos
   sni: thankful-piranha.rooster465.autos
   type: trojan
-- name: '🇮🇪[openproxylist.com] trojan-I... #2'
+- name: '🇮🇪[openproxylist.com] trojan-I... #3'
   password: NQ26071394
   port: 443
   server: correct-starfish.rooster465.autos
   sni: correct-starfish.rooster465.autos
   type: trojan
-- name: 🇩🇪[openproxylist.com] trojan-D...
+- name: '🇩🇪[openproxylist.com] trojan-D... #1'
   password: NQ26071394
   port: 443
   server: quiet-condor.rooster465.autos
   type: trojan
-- name: '🏳[openproxylist.com] trojan- #2'
+- name: 🇦🇺[openproxylist.com] trojan-A...
   password: KV63147582
   port: 443
   server: selected-bison.rooster465.autos
   sni: selected-bison.rooster465.autos
   type: trojan
-- name: '🇺🇸[openproxylist.com] trojan-U... #3'
+- name: '🇺🇸[openproxylist.com] trojan-U... #5'
   password: CF68213490
   port: 443
   server: polite-coyote.rooster465.autos
   sni: polite-coyote.rooster465.autos
   type: trojan
-- name: '🇺🇸[openproxylist.com] trojan-U... #4'
+- name: '🇺🇸[openproxylist.com] trojan-U... #6'
   password: CF68213490
   port: 443
   server: balanced-puma.rooster465.autos
   sni: balanced-puma.rooster465.autos
   type: trojan
-- name: '🇺🇸[openproxylist.com] trojan-U... #5'
+- name: '🇺🇸[openproxylist.com] trojan-U... #7'
   password: OD90375861
   port: 443
   server: nearby-muskrat.rooster465.autos
@@ -704,41 +852,27 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '🏳[openproxylist.com] vmess- #3'
+  name: 🇹🇷[openproxylist.com] vmess-TR
   network: tcp
   port: '2078'
   server: 93.180.134.52
+  servername: ''
   tls: false
   type: vmess
   uuid: 1c18da66-a912-40af-b90d-787574efe6d3
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #4'
-  network: ws
-  port: 443
-  server: 45.205.31.175
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 79e0df31-8ed5-4213-9fff-292a9fbeae7b
-  ws-opts:
-    headers:
-      Host: ''
-    path: /ws
-- name: '🇮🇪[openproxylist.com] trojan-I... #3'
+- name: '🇮🇪[openproxylist.com] trojan-I... #4'
   password: OD90375861
   port: 443
   server: wired-tick.rooster465.autos
   type: trojan
-- name: '🇩🇪[openproxylist.com] trojan-D... #1'
-  network: tcp
+- name: '🇩🇪[openproxylist.com] trojan-D... #2'
   password: OD90375861
   port: 443
-  server: 3.67.171.41
+  server: busy-hermit.rooster465.autos
   skip-cert-verify: false
   sni: busy-hermit.rooster465.autos
   type: trojan
-- name: '🇵🇱[openproxylist.com] trojan-P... #2'
+- name: '🇵🇱[openproxylist.com] trojan-P... #3'
   password: KV63147582
   port: 443
   server: more-trout.rooster465.autos
@@ -749,42 +883,30 @@ proxies:
   port: 443
   server: game-firefly.rooster465.autos
   type: trojan
-- name: '🇩🇪[openproxylist.com] trojan-D... #2'
+- name: '🇩🇪[openproxylist.com] trojan-D... #3'
   password: CF68213490
   port: 443
   server: harmless-lab.rooster465.autos
   sni: harmless-lab.rooster465.autos
   type: trojan
-- name: '🇩🇪[openproxylist.com] trojan-D... #3'
+- name: '🇩🇪[openproxylist.com] trojan-D... #4'
   password: KV63147582
   port: 443
   server: evolving-baboon.rooster465.autos
   sni: evolving-baboon.rooster465.autos
   type: trojan
-- name: '🇩🇪[openproxylist.com] trojan-D... #4'
+- name: '🇩🇪[openproxylist.com] trojan-D... #5'
   password: XG59623478
   port: 443
   server: enabling-asp.rooster465.autos
   sni: enabling-asp.rooster465.autos
   type: trojan
-- name: '🇨🇭[openproxylist.com] trojan-C... #1'
+- grpc-opts:
+    grpc-service-name: ''
+  name: '🇨🇭[openproxylist.com] trojan-C... #1'
   network: grpc
   password: '-------BanV2ray------'
   port: 36268
   server: edededededededededededede-66.poki-pakipon.ir
   sni: chi.yahoo.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵[openproxylist.com] vmess-JP
-  network: ws
-  port: 4010
-  server: 45.76.202.45
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 071a8a71-c656-4fb6-a908-4e42eb72243d
-  ws-opts:
-    headers:
-      Host: ''
-    path: /liksuzcp
