@@ -1,17 +1,34 @@
 proxies:
-- name: 俄罗斯+V2CROSS.COM
+- alterId: 0
+  cipher: auto
+  name: 俄羅斯
   network: ws
-  port: 4100
-  server: 194.87.161.60
-  servername: live.ok.ru
+  port: 443
+  server: renderer-stream-1-411.mirra.now
+  servername: ''
   tls: false
-  type: vless
-  uuid: 9b44bfb4-9d28-4870-9fc3-5154d6d462ff
+  type: vmess
+  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
   ws-opts:
-    path: '%2Fv1'
-- client-fingerprint: chrome
+    headers:
+      Host: renderer-stream-1-411.mirra.now
+    path: /api/v1/gpu-stream/socket
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: 🇷🇺[openproxylist.com] vless-RU
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 97m6bc1WSj1DJ-QzBU6Fx5s0NxA4uSvVKTcZAcjlHF8
+    short-id: '!!str 138dcd25cce7ab07'
+  server: 94.126.204.93
+  servername: storage.yandexcloud.net
+  tls: false
+  type: vless
+  uuid: 971adc95-c9f1-437c-8964-8dbdaaaec2b8
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #1'
   network: tcp
   port: 443
   reality-opts:
