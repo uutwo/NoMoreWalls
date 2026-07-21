@@ -1,43 +1,16 @@
 proxies:
-- name: 英国+V2CROSS.COM
-  network: tcp
-  port: 2553
-  server: 82.109.242.198
-  tls: false
-  type: vless
-  uuid: d8b42cd5-a149-4356-9e61-000000000000
-- alterId: 0
-  cipher: auto
-  name: 英國
-  network: tcp
-  port: 180
-  server: 82.198.246.37
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英國節點
-  network: tcp
-  port: 180
-  server: 82.198.246.250
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 🇬🇧 GB英国(mibei77.com 米贝节点分享)
-  network: tcp
-  port: '2078'
-  server: 93.180.134.52
-  tls: false
-  type: vmess
-  uuid: 1c18da66-a912-40af-b90d-787574efe6d3
 - grpc-opts:
     grpc-service-name: vless
   name: 🇬🇧[openproxylist.com] vless-GB
+  network: grpc
+  port: 2085
+  server: 45.86.159.132
+  tls: false
+  type: vless
+  uuid: ae86f68e-84c7-41de-b69f-87285451fb71
+- grpc-opts:
+    grpc-service-name: vless
+  name: '🇬🇧[openproxylist.com] vless-GB #1'
   network: grpc
   port: 2085
   server: 45.86.159.131
@@ -46,7 +19,7 @@ proxies:
   uuid: ae86f68e-84c7-41de-b69f-87285451fb71
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #1'
+  name: '🇬🇧[openproxylist.com] vless-GB #2'
   network: tcp
   port: 443
   reality-opts:
@@ -59,7 +32,7 @@ proxies:
   uuid: 16ad976d-b5df-4b4e-87b6-87cc64ac0a8b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #2'
+  name: '🇬🇧[openproxylist.com] vless-GB #3'
   network: tcp
   port: 443
   reality-opts:
@@ -70,21 +43,16 @@ proxies:
   tls: false
   type: vless
   uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
-- name: '🇬🇧[openproxylist.com] vless-GB #3'
-  network: ws
+- name: '🇬🇧[openproxylist.com] vless-GB #4'
   port: 443
-  server: 162.159.38.119
-  servername: terazhediii.info
-  skip-cert-verify: true
-  tls: true
+  server: 173.245.58.75
+  tls: false
   type: vless
   uuid: b2f6aa3a-2550-4a1c-b2c0-1c94b1207217
   ws-opts:
-    headers:
-      Host: terazhediii.info
     path: '%2Fhdgrbws'
 - client-fingerprint: chrome
-  name: '🇬🇧[openproxylist.com] vless-GB #5'
+  name: '🇬🇧[openproxylist.com] vless-GB #6'
   network: ws
   port: 443
   server: 45.130.125.207
