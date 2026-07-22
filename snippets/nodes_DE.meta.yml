@@ -77,14 +77,20 @@ proxies:
   sni: www.amd.com
   tls: false
   type: hysteria2
-- name: 🇩🇪[openproxylist.com] vless-DE
-  port: 443
-  server: love.ns.cloudflare.com
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: api.v1.data
+  name: 🇩🇪[openproxylist.com] vless-DE
+  network: grpc
+  port: 2053
+  reality-opts:
+    public-key: GS0dfvzX-bVKBDl2brVxsrE6T2WyXXkfgP3x-mQC7BY
+    short-id: '!!str 524efc1f88592266'
+  server: gr157.bamajobin.ir
+  servername: play.google.com
   tls: false
   type: vless
-  uuid: 8ad6f598-cd8d-4fca-848e-05fc9be15ff3
-  ws-opts:
-    path: '%2Fsea'
+  uuid: 70f28a55-1e6c-4082-aef4-2dc2cfa78fca
 - name: 🇩🇪[openproxylist.com] trojan-D...
   network: tcp
   password: PD07395842
@@ -102,6 +108,17 @@ proxies:
   type: trojan
   ws-opts:
     path: /trojan-ws
+- name: '🇩🇪[openproxylist.com] vless-DE #5'
+  network: tcp
+  port: 2087
+  server: tun.temas-bor.ir
+  tls: false
+  type: vless
+  uuid: 13ce37df-0738-4130-9b02-a87658921feb
+  ws-opts:
+    headers:
+      Host: play.google.com
+    path: '%2F'
 - name: '🇩🇪[openproxylist.com] vless-DE #2'
   network: tcp
   port: 3031
@@ -148,17 +165,9 @@ proxies:
   tls: false
   type: vless
   uuid: 2042e1e6-7175-4604-9e0a-b13284ffeb54
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #7'
-  network: tcp
+- name: '🇩🇪[openproxylist.com] vless-DE #7'
   port: 443
-  reality-opts:
-    public-key: qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM
-    short-id: '!!str 9d84de9d9f7b85e9'
   server: de.edge-9d7c.com
-  servername: de.edge-9d7c.com
-  skip-cert-verify: true
   tls: false
   type: vless
   uuid: bbae962a-b6e9-46e6-990c-6abf13e6b075
@@ -169,19 +178,6 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   name: '🇩🇪[openproxylist.com] vless-DE #8'
-  network: ws
-  port: 8443
-  server: ad-005.vector9nmb3.info
-  servername: ad-005.vector9nmb3.info
-  tls: true
-  type: vless
-  uuid: 2e1eb27b-9b56-40e9-a2f8-b959bc71736e
-  ws-opts:
-    headers:
-      Host: ad-005.vector9nmb3.info
-    path: /
-- client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #9'
   network: tcp
   port: 445
   reality-opts:
@@ -192,39 +188,3 @@ proxies:
   tls: false
   type: vless
   uuid: 2b1fb18c-65c4-4154-9d66-2e0c8c7fc729
-- alpn:
-  - h2
-  grpc-opts:
-    grpc-service-name: Ts7kIzm7a8mYEa7OOaBF
-  name: '🇩🇪[openproxylist.com] vless-DE #10'
-  network: grpc
-  port: 443
-  server: ger.wafer.fun
-  servername: ger.wafer.fun
-  tls: true
-  type: vless
-  uuid: 5a4ea216-9597-4df7-a119-02949a3b6b82
-- name: '🇩🇪[openproxylist.com] vless-DE #11'
-  network: tcp
-  port: 8882
-  server: gr1.fifapes.monster
-  tls: false
-  type: vless
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
-  ws-opts:
-    headers:
-      Host: gr1.fifapes.monster
-    path: '%2F'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #12'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: QocXHwad0mV7WA5jSAcqDac3uuVBEp1WF775-CilniE
-    short-id: '!!str 45ba18f429ad1f28'
-  server: de.vrsvpn.com
-  servername: web.max.ru
-  tls: false
-  type: vless
-  uuid: 0b9bcbc1-b289-4a64-86fa-a5b731b65384

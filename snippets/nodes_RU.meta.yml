@@ -25,7 +25,7 @@ proxies:
   tls: false
   type: vless
   uuid: 84e919d1-efc6-48fc-8248-8c3cbfec9f17
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: '🇷🇺[openproxylist.com] vless-RU #1'
   network: tcp
@@ -38,16 +38,17 @@ proxies:
   tls: false
   type: vless
   uuid: 971adc95-c9f1-437c-8964-8dbdaaaec2b8
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
+- client-fingerprint: firefox
   name: '🇷🇺[openproxylist.com] vless-RU #2'
-  network: tcp
+  network: ws
   port: 443
-  reality-opts:
-    public-key: zA-R_HtKJR1Hb0c1KXA3Yxh1TH_SPi1oV6cDfWURdQs
-    short-id: '!!str d4f1c403150d9964'
-  server: ru.themesh.site
-  servername: ru.themesh.site
-  tls: false
+  server: 78.159.245.32
+  servername: furrycdn.net
+  skip-cert-verify: false
+  tls: true
   type: vless
-  uuid: 6fa9f6ae-877b-4858-b128-a8377fd9038b
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+  ws-opts:
+    headers:
+      Host: furrycdn.net
+    path: '%2Fapi%2Fv1%2Fvideo-stream'
