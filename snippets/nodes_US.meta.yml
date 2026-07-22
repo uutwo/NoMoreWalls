@@ -1,43 +1,27 @@
 proxies:
-- client-fingerprint: chrome
-  name: 美国+CloudFlare节点
+- name: 美国+CloudFlare节点
   network: ws
   port: 443
-  server: yx.cloudflare.182682.xyz
+  server: 104.26.5.60
   servername: t1s1.rittbo.kdns.fr
-  skip-cert-verify: false
   tls: true
   type: vless
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   ws-opts:
     headers:
       Host: t1s1.rittbo.kdns.fr
-    path: /
-- client-fingerprint: chrome
-  name: '美国+CloudFlare节点 #1'
-  network: ws
-  port: 443
-  server: 172.64.145.2
-  servername: t1s1.rittbo.kdns.fr
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  ws-opts:
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-    path: /
-- name: '美国+CloudFlare节点 #2'
+    path: '%2F'
+- name: '美国+CloudFlare节点 #1'
   network: ws
   port: 8880
   server: deepl.com
   tls: false
   type: vless
-  uuid: f15a5586-23f6-453f-97f5-c301b949e699
+  uuid: 9bf81377-d077-4569-9fc9-5f0a55180651
   ws-opts:
     headers:
-      Host: mute-sunset-0849.40-aeb.workers.dev
-    path: /pyip=ProxyIP.KR.CMLiussss.net
+      Host: super-feather-91c4.267.workers.dev
+    path: /pyip=ProxyIP.JP.CMLiussss.net
 - name: 美国2
   password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
   port: 2056
@@ -262,6 +246,18 @@ proxies:
     headers:
       Host: snapp.ir
     path: '%2F'
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #5'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: oL0fquzIu8nvRFNp2nKKZ1V93VJBHfYKTHQLHW9vK2s
+  server: usr.sempai.site
+  servername: usr.sempai.site
+  tls: false
+  type: vless
+  uuid: ba0f90b6-3c3c-4701-b2b6-afe57da05527
 - name: '🇺🇸[openproxylist.com] trojan-U... #7'
   password: 0ebb269c9f2d4e8e46b0cd4105a55134
   port: 49361
@@ -275,7 +271,7 @@ proxies:
   type: trojan
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #5'
+  name: '🇺🇸[openproxylist.com] vless-US #6'
   network: tcp
   port: 55861
   reality-opts:
@@ -302,6 +298,19 @@ proxies:
   server: harmless-akita.rooster465.autos
   sni: harmless-akita.rooster465.autos
   type: trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #7'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 4-qE0E0B5ShfnAe0KFM0qRkXJ33rRF39AlHK7MpBzAE
+    short-id: '!!str 4c5a76834671'
+  server: 185.164.111.48
+  servername: www.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 59eefc04-b831-45cf-8d68-63ca23381171
 - name: '🇺🇸[openproxylist.com] trojan-U... #12'
   password: KV63147582
   port: 443
@@ -327,7 +336,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: web.max.ru
-  name: '🇺🇸[openproxylist.com] vless-US #6'
+  name: '🇺🇸[openproxylist.com] vless-US #8'
   network: grpc
   port: 444
   reality-opts:
@@ -338,11 +347,3 @@ proxies:
   tls: false
   type: vless
   uuid: 0b9bcbc1-b289-4a64-86fa-a5b731b65384
-- name: '🇺🇸[openproxylist.com] trojan-U... #16'
-  network: tcp
-  password: CF68213490
-  port: 443
-  server: polite-coyote.rooster465.autos
-  skip-cert-verify: false
-  sni: polite-coyote.rooster465.autos
-  type: trojan
