@@ -1,4 +1,15 @@
 proxies:
+- name: 英国+V2CROSS.COM
+  network: tcp
+  port: 8882
+  server: gr1.fifapes.monster
+  tls: false
+  type: vless
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  ws-opts:
+    headers:
+      Host: gr1.fifapes.monster
+    path: '%2F'
 - alterId: 0
   cipher: auto
   name: 英國
@@ -23,7 +34,7 @@ proxies:
   name: 🇬🇧[openproxylist.com] vless-GB
   network: ws
   port: 443
-  server: 104.17.121.110
+  server: 173.245.58.75
   servername: terazhediii.info
   skip-cert-verify: false
   tls: true
@@ -47,6 +58,14 @@ proxies:
   tls: false
   type: vless
   uuid: 70f28a55-1e6c-4082-aef4-2dc2cfa78fca
+- name: '🇬🇧[openproxylist.com] vless-GB #2'
+  port: 443
+  server: 162.159.38.119
+  tls: false
+  type: vless
+  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
+  ws-opts:
+    path: '%2Frdfgtws'
 - name: '🇳🇱[openproxylist.com] vless-NL #7'
   network: ws
   port: 443
@@ -60,29 +79,3 @@ proxies:
     headers:
       Host: vangoghhh.info
     path: /rdfgtws
-- client-fingerprint: chrome
-  name: '🇬🇧[openproxylist.com] vless-GB #3'
-  network: ws
-  port: 8443
-  server: ad-007.cloud25075.info
-  servername: ad-007.cloud25075.info
-  tls: true
-  type: vless
-  uuid: 2e8beadd-99bf-4fda-8692-8493886504bc
-  ws-opts:
-    headers:
-      Host: ad-007.cloud25075.info
-    path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #4'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: vWSgdMDirb9aDZLWijSXXXl-NCTrtBgEe9MQqcgV6h8
-    short-id: '!!str 6a2e3af684799b19'
-  server: cdn.pinecloud.net
-  servername: cdn.pinecloud.net
-  tls: false
-  type: vless
-  uuid: b052df40-d51c-456c-9bd6-57af01a87e4e

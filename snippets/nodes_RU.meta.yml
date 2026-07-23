@@ -1,11 +1,14 @@
 proxies:
 - name: 俄罗斯+V2CROSS.COM
-  network: tcp
-  port: 2090
-  server: fn.fifapes.monster
+  network: ws
+  port: 4100
+  server: 194.87.161.60
+  servername: live.ok.ru
   tls: false
   type: vless
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  uuid: 9b44bfb4-9d28-4870-9fc3-5154d6d462ff
+  ws-opts:
+    path: '%2Fv1'
 - alterId: 0
   cipher: auto
   name: 俄羅斯
@@ -20,20 +23,12 @@ proxies:
     headers:
       Host: renderer-stream-1-411.mirra.now
     path: /api/v1/gpu-stream/socket
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: 🇷🇺[openproxylist.com] vless-RU
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: A41b2Th15KC7t1hSRTvkA3-CzZfv1DD1XOV2L5ICuA0
-    short-id: '!!str '
-  server: 188.68.218.101
-  servername: cloud.mail.ru
-  skip-cert-verify: true
+- name: 🇷🇺[openproxylist.com] vless-RU
+  port: 25565
+  server: 176.108.245.184
   tls: false
   type: vless
-  uuid: 5238521b-c5dd-42af-870e-c174a2aaaafe
+  uuid: bfa96ee8-0d73-4f24-9b61-4833e8a04b9b
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: '🇷🇺[openproxylist.com] vless-RU #1'
@@ -46,7 +41,7 @@ proxies:
   tls: false
   type: vless
   uuid: d768d4ba-0b73-4509-87ea-afb074d2f766
-- client-fingerprint: chrome
+- client-fingerprint: qq
   name: '🇷🇺[openproxylist.com] vless-RU #2'
   network: tcp
   port: 40443
