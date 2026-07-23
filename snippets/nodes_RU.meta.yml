@@ -1,15 +1,24 @@
 proxies:
 - name: 俄罗斯+V2CROSS.COM
-  network: ws
-  port: 58500
-  server: 176.124.221.208
+  network: tcp
+  port: 2090
+  server: fn.fifapes.monster
   tls: false
   type: vless
-  uuid: 3b2e0eab-f47f-45b0-87b2-71de9feef5c6
-  ws-opts:
-    headers:
-      Host: ''
-    path: /free
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: b0y3fVgL8jKbO3cNmh_qCoZWoWRsY6BYc6VDJFkNe2I
+    short-id: '!!str b7fc0f11dda97edb'
+  server: corelink.su
+  servername: corelink.su
+  tls: false
+  type: vless
+  uuid: 153560b0-1a33-4b44-b059-ca5b22e55c19
 - alterId: 0
   cipher: auto
   name: 俄羅斯
@@ -24,13 +33,24 @@ proxies:
     headers:
       Host: renderer-stream-1-411.mirra.now
     path: /api/v1/gpu-stream/socket
-- name: '🇷🇺[openproxylist.com] vless-RU #1'
+- alpn:
+  - h2
+  client-fingerprint: randomized
+  flow: xtls-rprx-vision
+  name: 🇷🇺[openproxylist.com] vless-RU
+  port: 8443
+  server: yt.noooo.win
+  servername: ai-6a607097.noooo.win
+  tls: true
+  type: vless
+  uuid: 6f98a077-004e-4b86-8b78-8d09308d3868
+- name: '🇷🇺[openproxylist.com] vless-RU #2'
   port: 40443
   server: tw02.kinomir.fun
   tls: false
   type: vless
   uuid: 9f5f55bd-e59e-4c32-a29d-85639919f01f
-- name: '🇷🇺[openproxylist.com] vless-RU #2'
+- name: '🇷🇺[openproxylist.com] vless-RU #3'
   port: 40443
   server: tw04.kinomir.fun
   tls: false
