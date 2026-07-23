@@ -17,7 +17,20 @@ proxies:
   sni: api.kermanshahi.org
   tls: false
   type: hysteria2
-- name: 🇩🇪[openproxylist.com] vless-DE
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇷🇺[openproxylist.com] vless-RU
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: b0y3fVgL8jKbO3cNmh_qCoZWoWRsY6BYc6VDJFkNe2I
+    short-id: '!!str b7fc0f11dda97edb'
+  server: corelink.su
+  servername: corelink.su
+  tls: false
+  type: vless
+  uuid: 153560b0-1a33-4b44-b059-ca5b22e55c19
+- name: '🇩🇪[openproxylist.com] vless-DE #1'
   port: 448
   server: 93.114.194.114
   tls: false
@@ -26,7 +39,7 @@ proxies:
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: grpc
-  name: '🇩🇪[openproxylist.com] vless-DE #1'
+  name: '🇩🇪[openproxylist.com] vless-DE #2'
   network: grpc
   port: 7443
   reality-opts:
@@ -37,23 +50,31 @@ proxies:
   tls: false
   type: vless
   uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
-- name: '🇩🇪[openproxylist.com] vless-DE #2'
+- name: '🇩🇪[openproxylist.com] vless-DE #3'
   network: tcp
   port: 39942
   server: 136.244.88.245
   tls: false
   type: vless
   uuid: 94ada67d-2d74-4e0b-a0d4-07a5198296a4
-- name: '🇩🇪[openproxylist.com] vless-DE #3'
-  port: 443
-  server: ge03.auragg.org
-  tls: false
-  type: vless
-  uuid: b05346a9-4d13-41a4-8d2a-6b7b64e73ffc
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: auragrpc
   name: '🇩🇪[openproxylist.com] vless-DE #4'
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: TGJxKbPG8ds2NwK6uhgQURUfVJ01BcRh3Eaoy3dtdGA
+    short-id: '!!str a3d8f1e9b2c7d4e6'
+  server: ge03.auragg.org
+  servername: cloudflare.com
+  tls: false
+  type: vless
+  uuid: 8bc63720-5ec8-45b5-b6a6-9a21ffb490e8
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: auragrpc
+  name: '🇩🇪[openproxylist.com] vless-DE #5'
   network: grpc
   port: 443
   reality-opts:
@@ -69,7 +90,7 @@ proxies:
   port: 443
   server: 18.196.207.79
   type: trojan
-- name: '🇫🇮[openproxylist.com] vless-FI #7'
+- name: '🇫🇮[openproxylist.com] vless-FI #6'
   network: tcp
   port: 2087
   server: tun.temas-bor.ir
@@ -80,20 +101,18 @@ proxies:
     headers:
       Host: play.google.com
     path: '%2F'
-- client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #7'
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪[openproxylist.com] vmess-DE
   network: tcp
-  port: 443
-  reality-opts:
-    public-key: xZmWaz6lRWkAX4JI1ITHh86SOBzIlkZ7H41DKw3iXjY
-  server: 192.248.180.96
-  servername: yahoo.com
+  port: '15503'
+  server: 91.107.135.249
   tls: false
-  type: vless
-  uuid: 491265c8-8057-489c-9e49-b30d2df5486c
+  type: vmess
+  uuid: 25ee6754-05d0-4537-803a-2782843af12f
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #10'
+  name: '🇩🇪[openproxylist.com] vless-DE #9'
   network: tcp
   port: 443
   reality-opts:
@@ -103,23 +122,10 @@ proxies:
   tls: false
   type: vless
   uuid: 4f51ca84-43ea-4087-b8a2-938e0ccbe27a
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #11'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: b0y3fVgL8jKbO3cNmh_qCoZWoWRsY6BYc6VDJFkNe2I
-    short-id: '!!str b7fc0f11dda97edb'
-  server: corelink.su
-  servername: corelink.su
-  tls: false
-  type: vless
-  uuid: 153560b0-1a33-4b44-b059-ca5b22e55c19
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: api.v1.data
-  name: '🇩🇪[openproxylist.com] vless-DE #12'
+  name: '🇩🇪[openproxylist.com] vless-DE #10'
   network: grpc
   port: 2053
   reality-opts:
@@ -130,17 +136,6 @@ proxies:
   tls: false
   type: vless
   uuid: 70f28a55-1e6c-4082-aef4-2dc2cfa78fca
-- name: '🇩🇪[openproxylist.com] vless-DE #13'
-  network: ws
-  port: 58500
-  server: 176.124.221.208
-  tls: false
-  type: vless
-  uuid: 3b2e0eab-f47f-45b0-87b2-71de9feef5c6
-  ws-opts:
-    headers:
-      Host: ''
-    path: /free
 - name: '🇩🇪[openproxylist.com] trojan-D... #1'
   network: tcp
   password: PD07395842
@@ -172,7 +167,7 @@ proxies:
   skip-cert-verify: false
   sni: glad-javelin.rooster465.autos
   type: trojan
-- name: '🇩🇪[openproxylist.com] vless-DE #15'
+- name: '🇩🇪[openproxylist.com] vless-DE #12'
   port: 3031
   server: panel3.nanaweb.ir
   tls: false
@@ -180,7 +175,7 @@ proxies:
   uuid: 1b73f053-2709-4698-bbec-cb20e8a5f288
 - grpc-opts:
     grpc-service-name: ge1grpc
-  name: '🇩🇪[openproxylist.com] vless-DE #16'
+  name: '🇩🇪[openproxylist.com] vless-DE #13'
   network: grpc
   port: 8443
   server: ge1.cyphervpn.pro
@@ -189,10 +184,28 @@ proxies:
   tls: true
   type: vless
   uuid: 8bba3194-4856-46d1-8319-075817d87eb1
-- name: '🇩🇪[openproxylist.com] vless-DE #17'
+- name: '🇩🇪[openproxylist.com] vless-DE #14'
   network: tcp
   port: 30153
   server: 195.133.18.161
   tls: false
   type: vless
   uuid: da97d2d7-d255-4efd-8398-7101d698768e
+- name: '🇩🇪[openproxylist.com] trojan-D... #5'
+  password: IQ68037294
+  port: 443
+  server: aware-pika.rooster465.autos
+  sni: aware-pika.rooster465.autos
+  type: trojan
+- client-fingerprint: chrome
+  name: '🇩🇪[openproxylist.com] vless-DE #15'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: T7S1Y2CoRdwseMAqiTUhEzZ7LE7LWp6DMGmu7cORvCk
+    short-id: '!!str 4f3e2491e42b6a'
+  server: 212.227.102.223
+  servername: npv.tosiko.com
+  tls: false
+  type: vless
+  uuid: 2042e1e6-7175-4604-9e0a-b13284ffeb54
