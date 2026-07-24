@@ -98,10 +98,11 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Fin-pdr'
-- name: 美国+V2CROSS.COM
+- name: 🇺🇸 美国 V2CROSS.COM
   password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
   port: 443
   server: 149.104.104.58
+  skip-cert-verify: false
   sni: 149.104.104.58
   type: trojan
 - alterId: 2
@@ -532,53 +533,23 @@ proxies:
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  network: tcp
-  port: 30829
-  server: v29.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰_HK_中国香港
-  network: ws
-  port: 443
-  server: n1747624260.4u9ma.icu
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: eee8cb72-7eab-4034-a308-ed06cb07e003
-  ws-opts:
-    headers:
-      Host: n1747624260.4u9ma.icu
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国
-  network: tcp
-  port: 443
-  server: guanwang.awsno.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-- alterId: 2
-  cipher: auto
-  name: 🇯🇵_JP_日本->🇸🇬_SG_新加坡
-  network: tcp
-  port: 30845
-  server: v45.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
   name: '🇭🇰_HK_中国香港 #1'
+  network: ws
+  port: 443
+  server: n1747624274.4u9ma.icu
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d8daf507-a4ac-4eea-8399-8f0cd071eb52
+  ws-opts:
+    headers:
+      Host: n1747624274.4u9ma.icu
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰_HK_中国香港 #2'
   network: ws
   port: 44867
   server: 47.244.120.197
@@ -592,17 +563,7 @@ proxies:
     path: /arki?ed=2048
 - alterId: 2
   cipher: auto
-  name: '🇨🇳_CN_中国->🇺🇸_US_美国 #1'
-  network: tcp
-  port: 30804
-  server: v4.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: '🇨🇳_CN_中国->🇺🇸_US_美国 #2'
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国
   network: tcp
   port: 30808
   server: v8.hdacd.com
@@ -612,21 +573,48 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: 🇯🇵_JP_日本->🇺🇸_US_美国
+  name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
   network: tcp
-  port: 30824
-  server: v24.hdacd.com
+  port: 30809
+  server: v9.hdacd.com
   servername: ''
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '🇸🇬[openproxylist.com] trojan-S... #10'
-  password: FC60532879
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸_US_美国
+  network: tcp
   port: 443
-  server: resolved-gelding.rooster465.autos
-  skip-cert-verify: true
-  sni: resolved-gelding.rooster465.autos
-  type: trojan
+  server: guanwang.awsno.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰_HK_中国香港 #3'
+  network: ws
+  port: 443
+  server: n1747624260.4u9ma.icu
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: eee8cb72-7eab-4034-a308-ed06cb07e003
+  ws-opts:
+    headers:
+      Host: n1747624260.4u9ma.icu
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇯🇵_JP_日本
+  network: tcp
+  port: 30806
+  server: v6.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
   name: 🇨🇳_CN_中国->🇩🇪_DE_德国
@@ -639,14 +627,14 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
-  name: '🇭🇰_HK_中国香港 #2'
+  name: '🇺🇸[openproxylist.com] vmess-US #11'
   network: tcp
-  port: 5566
-  server: 47.76.127.88
+  port: '443'
+  server: 165.140.216.142
   servername: ''
   tls: false
   type: vmess
-  uuid: 44712929-c2b7-4fa4-93bd-9de332a78c8c
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
 - name: 🇦🇺[openproxylist.com] trojan-A...
   password: IQ68037294
   port: 443
@@ -671,16 +659,6 @@ proxies:
   server: exotic-chicken.rooster465.autos
   sni: exotic-chicken.rooster465.autos
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #9'
-  network: tcp
-  port: '443'
-  server: 165.140.216.142
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
 - name: '🇰🇷[openproxylist.com] trojan-K... #1'
   password: FC60532879
   port: 443
@@ -819,11 +797,6 @@ proxies:
   server: lucky-marmot.rooster465.autos
   sni: lucky-marmot.rooster465.autos
   type: trojan
-- name: 🇨🇭[openproxylist.com] trojan-C...
-  password: UKGgxZwI4G
-  port: 443
-  server: 179.237.75.217
-  type: trojan
 - name: '🇳🇱[openproxylist.com] trojan-N... #1'
   password: IQ68037294
   port: 443
@@ -841,6 +814,12 @@ proxies:
   port: 443
   server: fair-reptile.rooster465.autos
   sni: fair-reptile.rooster465.autos
+  type: trojan
+- name: '🇸🇬[openproxylist.com] trojan-S... #10'
+  password: FC60532879
+  port: 443
+  server: resolved-gelding.rooster465.autos
+  sni: resolved-gelding.rooster465.autos
   type: trojan
 - name: '🇦🇺[openproxylist.com] trojan-A... #2'
   password: JA96378052
@@ -919,82 +898,4 @@ proxies:
   port: 443
   server: square-anchovy.rooster465.autos
   sni: square-anchovy.rooster465.autos
-  type: trojan
-- name: '🇸🇬[openproxylist.com] trojan-S... #13'
-  password: IQ68037294
-  port: 443
-  server: pet-albacore.rooster465.autos
-  sni: pet-albacore.rooster465.autos
-  type: trojan
-- name: '🇰🇷[openproxylist.com] trojan-K... #4'
-  password: IQ68037294
-  port: 443
-  server: robust-toucan.rooster465.autos
-  sni: robust-toucan.rooster465.autos
-  type: trojan
-- name: '🇸🇬[openproxylist.com] trojan-S... #14'
-  password: IQ68037294
-  port: 443
-  server: full-mackerel.rooster465.autos
-  type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #6'
-  password: IQ68037294
-  port: 443
-  server: sweeping-parakeet.rooster465.autos
-  sni: sweeping-parakeet.rooster465.autos
-  type: trojan
-- name: 🇺🇸[openproxylist.com] trojan-U...
-  password: 0ebb269c9f2d4e8e46b0cd4105a55134
-  port: 49361
-  server: 163.245.196.68
-  sni: 163.245.196.68.sslip.io
-  type: trojan
-- name: '🇸🇬[openproxylist.com] trojan-S... #15'
-  password: IQ68037294
-  port: 443
-  server: casual-stallion.rooster465.autos
-  type: trojan
-- name: '🇳🇱[openproxylist.com] trojan-N... #4'
-  password: IQ68037294
-  port: 443
-  server: casual-bullfrog.rooster465.autos
-  sni: casual-bullfrog.rooster465.autos
-  type: trojan
-- name: '🇭🇰[openproxylist.com] trojan-H... #1'
-  password: HW85960347
-  port: 443
-  server: eminent-lamb.rooster465.autos
-  sni: eminent-lamb.rooster465.autos
-  type: trojan
-- name: '🇸🇬[openproxylist.com] trojan-S... #16'
-  password: IQ68037294
-  port: 443
-  server: endless-kiwi.rooster465.autos
-  type: trojan
-- name: '🇸🇬[openproxylist.com] trojan-S... #17'
-  password: IQ68037294
-  port: 443
-  server: prepared-turkey.rooster465.autos
-  sni: prepared-turkey.rooster465.autos
-  type: trojan
-- name: '🇳🇱[openproxylist.com] trojan-N... #5'
-  password: IQ68037294
-  port: 443
-  server: whole-woodcock.rooster465.autos
-  type: trojan
-- name: '🇰🇷[openproxylist.com] trojan-K... #5'
-  password: IQ68037294
-  port: 443
-  server: artistic-pigeon.rooster465.autos
-  sni: artistic-pigeon.rooster465.autos
-  type: trojan
-- name: '🇰🇷[openproxylist.com] trojan-K... #6'
-  password: IQ68037294
-  port: 443
-  server: select-marmoset.rooster465.autos
-  type: trojan
-- name: '🇸🇬[openproxylist.com] trojan-S... #18'
-  password: IQ68037294
-  port: 443
-  server: glowing-deer.rooster465.autos
   type: trojan
