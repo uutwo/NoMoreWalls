@@ -1,24 +1,4 @@
 proxies:
-- name: 俄罗斯+V2CROSS.COM
-  network: tcp
-  port: 2090
-  server: fn.fifapes.monster
-  tls: false
-  type: vless
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇷🇺[openproxylist.com] vless-RU #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: b0y3fVgL8jKbO3cNmh_qCoZWoWRsY6BYc6VDJFkNe2I
-    short-id: '!!str b7fc0f11dda97edb'
-  server: corelink.su
-  servername: corelink.su
-  tls: false
-  type: vless
-  uuid: 153560b0-1a33-4b44-b059-ca5b22e55c19
 - alterId: 0
   cipher: auto
   name: 俄羅斯
@@ -33,26 +13,56 @@ proxies:
     headers:
       Host: renderer-stream-1-411.mirra.now
     path: /api/v1/gpu-stream/socket
+- name: 🇷🇺[openproxylist.com] vless-RU
+  network: ws
+  port: 8880
+  server: 130.49.148.134
+  tls: false
+  type: vless
+  uuid: 6ed59a5b-efef-4ddf-99f2-57d200caed47
+  ws-opts:
+    headers:
+      Host: rutube.ummapeople.online
+    path: '%2Frutube'
 - alpn:
   - h2
-  client-fingerprint: randomized
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇷🇺[openproxylist.com] vless-RU
+  name: '🇷🇺[openproxylist.com] vless-RU #1'
   port: 8443
   server: yt.noooo.win
   servername: ai-6a607097.noooo.win
   tls: true
   type: vless
   uuid: 6f98a077-004e-4b86-8b78-8d09308d3868
-- name: '🇷🇺[openproxylist.com] vless-RU #2'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 3v-9P94hjSE1fw6we1J4RvyIYnFhySQUAe1DUKqkaBo
+    short-id: '!!str 7f2e9c4b1a8d6a53'
+  server: 37.139.43.57
+  servername: eh.vk.com
+  tls: false
+  type: vless
+  uuid: ceeba701-bb9f-4f2c-8142-677d27a2acb1
+- name: '🇷🇺[openproxylist.com] vless-RU #3'
   port: 40443
   server: tw02.kinomir.fun
   tls: false
   type: vless
   uuid: 9f5f55bd-e59e-4c32-a29d-85639919f01f
-- name: '🇷🇺[openproxylist.com] vless-RU #3'
+- client-fingerprint: qq
+  name: '🇷🇺[openproxylist.com] vless-RU #4'
+  network: tcp
   port: 40443
+  reality-opts:
+    public-key: IZn3ibz8K1yot2cj4ssmAQHVB--xrcQEc3RCFQUSRiE
+    short-id: '!!str 2143'
   server: tw04.kinomir.fun
+  servername: deepl.com
   tls: false
   type: vless
   uuid: 84e919d1-efc6-48fc-8248-8c3cbfec9f17
