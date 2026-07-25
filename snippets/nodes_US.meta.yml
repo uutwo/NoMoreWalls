@@ -1,24 +1,39 @@
 proxies:
-- name: 北美地区+V2CROSS.COM
+- alpn:
+  - http/1.1
+  name: 美国+V2CROSS.COM
   network: ws
   password: humanity
   port: 443
-  server: 198.62.62.23
-  sni: www.calmlunch.com
+  server: 208.103.161.170
+  skip-cert-verify: false
+  sni: www.calmloud.com
   type: trojan
   ws-opts:
-    path: '%2Fassignment'
-- name: 美国+V2CROSS.COM
-  network: ws
-  port: 80
-  server: 167.82.0.7
+    headers:
+      Host: www.calmloud.com
+    path: /assignment
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '美国+V2CROSS.COM #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: HyVSZ2OyySwXT-xRhTAqoiuYflIaj_b0Jxm7S1Iq9hs
+    short-id: '!!str 7a76f3c4b9dd'
+  server: jdwabxe.cvewfjg.shop
+  servername: www.cloudflare.com
   tls: false
   type: vless
-  uuid: 46445435-11cd-47e8-87dc-1acc159fc360
-  ws-opts:
-    headers:
-      Host: BankMelat.glObal.ssl.faStly.nEt.
-    path: ''
+  uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
+- name: '美国+V2CROSS.COM #2'
+  password: b42d90fa667942aebc734d60
+  port: 30000
+  server: 161.33.231.22
+  skip-cert-verify: false
+  sni: vpn7.rnmcnm.com
+  tls: false
+  type: hysteria2
 - name: 美国2
   password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
   port: 2056
@@ -27,24 +42,34 @@ proxies:
   sni: mg2.mangshe.xyz
   tls: false
   type: hysteria2
-- name: 🇺🇸 美国|@ripaojiedian
-  password: b490740312aedb5f9f6b84c7aebd08c0
+- name: 🇺🇸 美国 V2CROSS.COM
+  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
+  port: 443
+  server: 149.104.104.58
+  skip-cert-verify: false
+  sni: 149.104.104.58
+  type: trojan
+- name: 美国|@ripaojiedian
+  network: tcp
+  password: d1960ba9f0f6353353994fa844cf817b
   port: 49277
-  server: 95.40.110.103
+  server: 54.46.11.134
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 🇺🇸 美国2|@ripaojiedian
-  password: b490740312aedb5f9f6b84c7aebd08c0
+- name: 美国2|@ripaojiedian
+  network: tcp
+  password: d1960ba9f0f6353353994fa844cf817b
   port: 49277
-  server: 18.167.94.81
+  server: 43.207.96.164
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 🇺🇸 美国3|@ripaojiedian
+- name: 美国3|@ripaojiedian
+  network: tcp
   password: BxceQaOe
-  port: 35966
-  server: 18.163.28.78
+  port: 51396
+  server: 18.166.59.129
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -144,60 +169,17 @@ proxies:
   skip-cert-verify: false
   sni: _acme-challenge.sb.cloudns.biz
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  network: tcp
-  port: 30808
-  server: v8.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国
-  network: tcp
-  port: 443
-  server: guanwang.awsno.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-- name: 美国|@ripaojiedian
-  network: tcp
-  password: d1960ba9f0f6353353994fa844cf817b
-  port: 49277
-  server: 54.46.11.134
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国2|@ripaojiedian
-  network: tcp
-  password: d1960ba9f0f6353353994fa844cf817b
-  port: 49277
-  server: 43.207.96.164
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 51396
-  server: 18.166.59.129
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- client-fingerprint: qq
-  name: 🇺🇸[openproxylist.com] vless-US
-  network: tcp
-  port: 40443
-  reality-opts:
-    public-key: KCbW84C8h2Ja01LS0Ro8EpLLfzMTjs11t1ldDWLd5zo
-    short-id: '!!str aae8'
-  server: 194.55.189.249
-  servername: deepl.com
+- name: 🇺🇸[openproxylist.com] vless-US
+  network: ws
+  port: 2095
+  server: 104.18.42.163
   tls: false
   type: vless
-  uuid: 8212a50b-25bf-4739-bba1-aaffb5ffc84c
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  ws-opts:
+    headers:
+      Host: download.pusytroller.gq
+    path: '%2F'
 - alterId: 0
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #5'
@@ -208,42 +190,31 @@ proxies:
   tls: false
   type: vmess
   uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-- name: '🇺🇸[openproxylist.com] vless-US #1'
-  port: 2095
-  server: 104.18.42.163
+- client-fingerprint: qq
+  name: '🇺🇸[openproxylist.com] vless-US #1'
+  network: tcp
+  port: 40443
+  reality-opts:
+    public-key: KCbW84C8h2Ja01LS0Ro8EpLLfzMTjs11t1ldDWLd5zo
+    short-id: '!!str aae8'
+  server: 194.55.189.249
+  servername: deepl.com
   tls: false
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: 8212a50b-25bf-4739-bba1-aaffb5ffc84c
 - name: '🇺🇸[openproxylist.com] vless-US #2'
   port: 26604
   server: mgxui.peng.mom
   tls: true
   type: vless
   uuid: 94213f38-6bf8-4d35-b8ad-7b1431ab20f6
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #3'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
-    short-id: '!!str dbbe8dca27a92c35'
-  server: 154.193.55.183
-  servername: storage.yandex.net
-  tls: false
-  type: vless
-  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
 - name: '🇺🇸[openproxylist.com] vless-US #4'
-  network: ws
-  port: 8880
-  server: 130.49.148.134
+  network: tcp
+  port: 52535
+  server: 154.19.184.40
   tls: false
   type: vless
-  uuid: 6ed59a5b-efef-4ddf-99f2-57d200caed47
-  ws-opts:
-    headers:
-      Host: cnd.usa.newwaycdn.com
-    path: '%2Fcdn%2Fassets%2Fstream'
+  uuid: a1ac8747-4fd7-486b-b099-19fbb45610be
 - name: '🇺🇸[openproxylist.com] vless-US #5'
   port: 40443
   server: 186.246.21.156
@@ -262,12 +233,6 @@ proxies:
   tls: false
   type: vless
   uuid: 2a77a470-315c-493d-b690-59b814a804cb
-- name: '🇺🇸[openproxylist.com] vless-US #8'
-  port: 443
-  server: 82.40.23.159
-  tls: false
-  type: vless
-  uuid: 2a77a470-315c-493d-b690-59b814a804cb
 - name: '🇺🇸[openproxylist.com] vless-US #9'
   port: 443
   server: 82.40.23.174
@@ -281,3 +246,25 @@ proxies:
   tls: false
   type: vless
   uuid: cbc1b9e7-c393-4053-a338-6ed714daf4eb
+- name: '🇺🇸[openproxylist.com] vless-US #11'
+  network: ws
+  port: 30016
+  server: 69.48.201.136
+  tls: false
+  type: vless
+  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
+  ws-opts:
+    headers:
+      Host: uspanel.unixzone.us
+    path: '%2Fusserver'
+- name: '🇺🇸[openproxylist.com] vless-US #12'
+  network: tcp
+  port: 48711
+  server: 155.103.69.195
+  tls: false
+  type: vless
+  uuid: 23a9b46e-9443-4268-81c5-399929919ab0
+  ws-opts:
+    headers:
+      Host: snapp.ir
+    path: '%2F'
