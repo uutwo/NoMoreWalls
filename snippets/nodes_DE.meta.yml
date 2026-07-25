@@ -1,4 +1,12 @@
 proxies:
+- name: 德国+V2CROSS.COM
+  password: 1hOIVDVBG2hdKtJwOV2aUEFTDaFArCSH9-HrcOnps8yqQZeq
+  port: 443
+  server: prodfr.h2corp.org
+  skip-cert-verify: false
+  sni: prodfr.h2corp.org
+  tls: false
+  type: hysteria2
 - name: DE
   password: a084933d-0b41-4571-ae0c-7163b8c71ed1
   port: 2056
@@ -7,7 +15,7 @@ proxies:
   sni: de.eyucdn.xyz
   tls: false
   type: hysteria2
-- name: '@KAFING_2'
+- name: 🇩🇪 - DE - @FreeOnlineVPN
   obfs: salamander
   obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
   password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
@@ -17,28 +25,44 @@ proxies:
   sni: api.kermanshahi.org
   tls: false
   type: hysteria2
-- name: 🇩🇪 Telegram = V2RayyNGvpn 2🇩🇪
-  obfs: salamander
-  obfs-password: RedmEthIS-Join-V2RayyNGvpn-oBsPaHard183hgak
-  password: T-me-V2RayyNGvpn
-  port: 443
-  server: 91.107.178.22
-  skip-cert-verify: true
-  sni: www.refersion.com
-  tls: false
-  type: hysteria2
-- name: 🇩🇪 Telegram = irconfiig 🇩🇪
-  obfs: salamander
-  obfs-password: RedmEthIS-Join-V2RayyNGvpn-oBsPaHard183hgak
-  password: V2RayyNGvpn
-  port: 443
-  server: 91.107.178.22
-  skip-cert-verify: true
-  sni: www.refersion.com
-  tls: false
-  type: hysteria2
 - client-fingerprint: chrome
+  flow: xtls-rprx-vision
   name: 🇩🇪[openproxylist.com] vless-DE
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: 45.131.212.7
+  servername: de.sellflow.org
+  tls: false
+  type: vless
+  uuid: 0108c657-a9bd-4c99-9179-74050cf78889
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #4'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: 45.131.212.4
+  servername: abuse.sellflow.org
+  tls: false
+  type: vless
+  uuid: 2a77a470-315c-493d-b690-59b814a804cb
+- client-fingerprint: safari
+  name: '🇩🇪[openproxylist.com] vless-DE #2'
+  network: tcp
+  port: 5039
+  reality-opts:
+    public-key: fv-InxuZSzLlHc83OANs4U2windIUSwPilOpJkMgtW0
+    short-id: '!!str 2e8424a2696cb606'
+  server: 5.75.196.139
+  servername: www.yahoo.com
+  tls: false
+  type: vless
+  uuid: b6749f13-cd63-4bc4-b165-5d120b7a1ff4
+- client-fingerprint: chrome
+  name: '🇩🇪[openproxylist.com] vless-DE #3'
   network: ws
   port: 2087
   server: push.sukario.ir
@@ -51,62 +75,23 @@ proxies:
     headers:
       Host: tot1.erooo12345.xyz
     path: /
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #7'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 45.131.212.4
-  servername: abuse.sellflow.org
-  tls: false
-  type: vless
-  uuid: 2a77a470-315c-493d-b690-59b814a804cb
-- name: '🇩🇪[openproxylist.com] vless-DE #3'
-  port: 2200
-  server: 81.85.78.78
-  tls: false
-  type: vless
-  uuid: e7299042-7d8f-440f-8368-2516b0e69341
-- name: '🇩🇪[openproxylist.com] vless-DE #4'
+- name: '🇩🇪[openproxylist.com] vless-DE #6'
   network: ws
   port: 2200
-  server: 89.127.217.210
+  server: 212.67.9.113
   tls: false
   type: vless
-  uuid: 9501f3d6-483f-45c1-ab2c-33266520cd5c
+  uuid: 2aa7f4b1-e859-46d0-b8ac-8587811ab7b1
   ws-opts:
-    headers:
-      Host: rzd.ru
     path: '%2Fv1'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #6'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: HyVSZ2OyySwXT-xRhTAqoiuYflIaj_b0Jxm7S1Iq9hs
-    short-id: '!!str 7a76f3c4b9dd'
-  server: jdwabxe.cvewfjg.shop
-  servername: www.cloudflare.com
+- name: '🇩🇪[openproxylist.com] vless-DE #7'
+  network: ws
+  port: 2200
+  server: 81.85.78.193
   tls: false
   type: vless
-  uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #7'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: NoHprmPbWaiIEovefl_30LpysTs2VSiXRbqehIdkV3c
-    short-id: '!!str 8b2df24d395b6de7'
-  server: 144.31.217.155
-  servername: www.mozilla.org
-  tls: false
-  type: vless
-  uuid: e5afa6a0-a4a6-44e3-a3e0-e05b0c67cd02
-- client-fingerprint: chrome
+  uuid: 2aa7f4b1-e859-46d0-b8ac-8587811ab7b1
+- client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: api.v1.data
   name: '🇩🇪[openproxylist.com] vless-DE #8'
@@ -120,17 +105,9 @@ proxies:
   tls: false
   type: vless
   uuid: 70f28a55-1e6c-4082-aef4-2dc2cfa78fca
-- client-fingerprint: safari
-  grpc-opts:
-    grpc-service-name: grpc
-  name: '🇩🇪[openproxylist.com] vless-DE #9'
-  network: grpc
+- name: '🇩🇪[openproxylist.com] vless-DE #9'
   port: 443
-  reality-opts:
-    public-key: vxhkDXfYpz1OLqZ-_9QVoQr3_UJLtJFheb5bD5YH7z8
-    short-id: '!!str 3303c7a5'
   server: 194.93.0.28
-  servername: media2.tcpdoor.net
   tls: false
   type: vless
   uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
@@ -159,11 +136,24 @@ proxies:
     short-id: '!!str 524efc1f88592266'
   server: 135.125.185.225
   servername: play.google.com
+  skip-cert-verify: true
   tls: false
   type: vless
   uuid: 70f28a55-1e6c-4082-aef4-2dc2cfa78fca
+- name: '🇩🇪[openproxylist.com] vless-DE #12'
+  network: ws
+  port: 443
+  server: 92.42.96.240
+  servername: mAhaNrEaliteAm.MaHkHan.iR
+  tls: true
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: mAhaNrEaliteAm.MaHkHan.iR
+    path: /?ed=2560fp=chrome
 - client-fingerprint: firefox
-  name: '🇳🇱[openproxylist.com] vless-NL #2'
+  name: '🇩🇪[openproxylist.com] vless-DE #13'
   network: tcp
   port: 443
   reality-opts:
@@ -176,7 +166,7 @@ proxies:
   uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #13'
+  name: '🇩🇪[openproxylist.com] vless-DE #14'
   network: tcp
   port: 443
   reality-opts:
@@ -187,12 +177,6 @@ proxies:
   tls: false
   type: vless
   uuid: 18bb7397-9f8c-4c26-a316-69b38515e8e6
-- name: '🇩🇪[openproxylist.com] vless-DE #14'
-  port: 448
-  server: 93.114.194.114
-  tls: false
-  type: vless
-  uuid: bc5b801f-49a7-4db7-ac92-a2c57d42d132
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: grpc
@@ -233,3 +217,23 @@ proxies:
   tls: false
   type: vless
   uuid: 70f28a55-1e6c-4082-aef4-2dc2cfa78fca
+- name: '🇩🇪[openproxylist.com] vless-DE #18'
+  port: 443
+  server: love.ns.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 8ad6f598-cd8d-4fca-848e-05fc9be15ff3
+  ws-opts:
+    path: '%2Fsea'
+- client-fingerprint: chrome
+  name: '🇩🇪[openproxylist.com] vless-DE #19'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: OncWhxWwzrKOFH21JT9WxcenacQuc7ZmuQy_rZFJ8xg
+    short-id: '!!str c6e19c434dc87df7'
+  server: tun.temas-bor.ir
+  servername: login.yahoo.com
+  tls: false
+  type: vless
+  uuid: 4b1d39f2-42d4-4850-8b8a-fd4fa2f1ae55
