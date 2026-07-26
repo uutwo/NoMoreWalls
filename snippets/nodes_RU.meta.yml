@@ -1,23 +1,4 @@
 proxies:
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  grpc-opts:
-    grpc-service-name: ''
-  name: 俄罗斯+V2CROSS.COM
-  network: tcp
-  port: 443
-  server: s306.ccgfw.top
-  servername: u695099u36cf43b9s298.wagahaha.xyz
-  tls: true
-  type: vless
-  uuid: 5d02517f-63d5-3e9f-b467-1bcf4d4e25d3
-  ws-opts:
-    headers:
-      Host: 36cf43b9s298.wagahaha.xyz
-    path: ''
 - alterId: 0
   cipher: auto
   name: 俄羅斯
@@ -34,8 +15,22 @@ proxies:
     path: /api/v1/gpu-stream/socket
 - client-fingerprint: chrome
   grpc-opts:
-    grpc-service-name: ebl
+    grpc-service-name: api.v1.StreamService
   name: 🇷🇺[openproxylist.com] vless-RU
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: erUxbU3_rhHJqRE6rTj-FRfz9IbTPnxx5DgKaT5C6Rs
+    short-id: '!!str 6d08059a'
+  server: funny2.oneok.name
+  servername: funny2.oneok.name
+  tls: false
+  type: vless
+  uuid: 8b02563b-cf46-4c94-bb82-e0fdecd26630
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: ebl
+  name: '🇷🇺[openproxylist.com] vless-RU #1'
   network: grpc
   port: 443
   reality-opts:
@@ -45,7 +40,31 @@ proxies:
   tls: false
   type: vless
   uuid: 507e8554-4941-4297-9196-af102455f6ed
-- name: '🇷🇺[openproxylist.com] vless-RU #4'
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: 45.131.212.6
+  servername: abuse.sellflow.org
+  tls: false
+  type: vless
+  uuid: 2a77a470-315c-493d-b690-59b814a804cb
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #4'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: 45.131.212.14
+  servername: abuse.sellflow.org
+  tls: false
+  type: vless
+  uuid: 2a77a470-315c-493d-b690-59b814a804cb
+- name: '🇷🇺[openproxylist.com] vless-RU #5'
   network: ws
   port: 8880
   server: 130.49.148.134
