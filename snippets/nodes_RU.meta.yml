@@ -1,12 +1,15 @@
 proxies:
 - name: 俄罗斯+V2CROSS.COM
   network: tcp
-  port: 2090
-  server: fn.fifapes.monster
-  servername: '%2F%3F'
+  port: 8882
+  server: gr1.fifapes.monster
   tls: false
   type: vless
   uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  ws-opts:
+    headers:
+      Host: '%2F%3FBIA_TELEGRAM%40MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI'
+    path: '%2F'
 - alterId: 0
   cipher: auto
   name: 俄羅斯
@@ -22,8 +25,21 @@ proxies:
       Host: renderer-stream-1-411.mirra.now
     path: /api/v1/gpu-stream/socket
 - client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: ebl
+  name: 🇷🇺[openproxylist.com] vless-RU
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: unNROkbh95ZZNHzG2RIkgrFftOLldNH0ccmtW63CziE
+  server: 186.246.6.189
+  servername: optim.tildacdn.pub
+  tls: false
+  type: vless
+  uuid: 507e8554-4941-4297-9196-af102455f6ed
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇨🇭[openproxylist.com] vless-CH #1'
+  name: 🇨🇭[openproxylist.com] vless-CH
   network: tcp
   port: 443
   reality-opts:
@@ -33,15 +49,30 @@ proxies:
   tls: false
   type: vless
   uuid: 2a77a470-315c-493d-b690-59b814a804cb
-- client-fingerprint: firefox
+- client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: 🇨🇭[openproxylist.com] vless-CH
+  name: '🇷🇺[openproxylist.com] vless-RU #2'
   network: tcp
   port: 443
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 45.131.212.6
-  servername: abuse.sellflow.org
+    public-key: A41b2Th15KC7t1hSRTvkA3-CzZfv1DD1XOV2L5ICuA0
+    short-id: '!!str '
+  server: 188.68.218.101
+  servername: cloud.mail.ru
+  skip-cert-verify: true
   tls: false
   type: vless
-  uuid: 2a77a470-315c-493d-b690-59b814a804cb
+  uuid: 5238521b-c5dd-42af-870e-c174a2aaaafe
+- client-fingerprint: qq
+  name: '🇷🇺[openproxylist.com] vless-RU #3'
+  network: tcp
+  port: 40443
+  reality-opts:
+    public-key: IZn3ibz8K1yot2cj4ssmAQHVB--xrcQEc3RCFQUSRiE
+    short-id: '!!str 2143'
+  server: tw04.kinomir.fun
+  servername: deepl.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  uuid: 84e919d1-efc6-48fc-8248-8c3cbfec9f17

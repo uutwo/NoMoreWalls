@@ -89,21 +89,35 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- alpn:
-  - http/1.1
-  name: 美国+V2CROSS.COM
+- name: 美国+CloudFlare节点
   network: ws
   password: humanity
   port: 443
-  server: 208.103.161.170
-  skip-cert-verify: false
-  sni: www.calmloud.com
+  server: 172.64.147.2
+  skip-cert-verify: true
+  sni: www.gossipglove.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: 荷兰+V2CROSS.COM
+  network: ws
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
+  port: 443
+  server: 188.164.248.122
+  sni: space.byu.id.yxls.eu.cc
   type: trojan
   ws-opts:
     headers:
-      Host: www.calmloud.com
-    path: /assignment
-- name: '美国+CloudFlare节点 #2'
+      Host: space.byu.id.yxls.eu.cc
+    path: /in-pdr
+- name: '美国+V2CROSS.COM #2'
+  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
+  port: 443
+  server: 149.104.104.58
+  skip-cert-verify: false
+  sni: 149.104.104.58
+  type: trojan
+- name: '美国+CloudFlare节点 #1'
   network: xhttp
   password: VPNCUSTOMIZE
   port: 443
@@ -590,6 +604,15 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
+  name: 🇩🇪[openproxylist.com] vmess-DE
+  network: tcp
+  port: '51459'
+  server: 91.107.139.186
+  tls: false
+  type: vmess
+  uuid: 500cdc83-b189-4d79-b06b-139c7972a57f
+- alterId: 0
+  cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
   network: ws
   port: 2086
@@ -607,16 +630,6 @@ proxies:
   server: alert-monster.rooster465.autos
   skip-cert-verify: true
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #5'
-  network: tcp
-  port: '443'
-  server: 165.140.216.142
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
 - alterId: 0
   cipher: auto
   name: 🇯🇵[openproxylist.com] vmess-JP
@@ -639,6 +652,15 @@ proxies:
   skip-cert-verify: false
   sni: optimal-urchin.rooster465.autos
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #4'
+  network: tcp
+  port: '443'
+  server: 165.140.216.142
+  tls: false
+  type: vmess
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
 - name: 🇰🇷[openproxylist.com] trojan-K...
   password: JT80563429
   port: 443
@@ -662,12 +684,6 @@ proxies:
   password: JT80563429
   port: 443
   server: musical-shrew.rooster465.autos
-  type: trojan
-- name: 🇭🇰[openproxylist.com] trojan-H...
-  password: IQ68037294
-  port: 443
-  server: desired-tahr.rooster465.autos
-  sni: desired-tahr.rooster465.autos
   type: trojan
 - name: '🇯🇵[openproxylist.com] trojan-J... #1'
   password: JT80563429
@@ -875,11 +891,9 @@ proxies:
   server: evident-gnat.rooster465.autos
   type: trojan
 - name: '🇳🇱[openproxylist.com] trojan-N... #3'
-  network: tcp
   password: XG59623478
   port: 443
-  server: 89.39.70.159
-  skip-cert-verify: false
+  server: upward-hedgehog.rooster465.autos
   sni: upward-hedgehog.rooster465.autos
   type: trojan
 - name: '🇫🇷[openproxylist.com] trojan-F... #4'
@@ -888,8 +902,22 @@ proxies:
   server: nearby-cod.rooster465.autos
   type: trojan
 - name: '🇳🇱[openproxylist.com] trojan-N... #4'
+  network: tcp
   password: NQ26071394
   port: 443
   server: 89.39.70.143
+  skip-cert-verify: false
   sni: thorough-falcon.rooster465.autos
+  type: trojan
+- name: '🇰🇷[openproxylist.com] trojan-K... #5'
+  password: IQ68037294
+  port: 443
+  server: accurate-drake.rooster465.autos
+  sni: accurate-drake.rooster465.autos
+  type: trojan
+- name: 🇭🇰[openproxylist.com] trojan-H...
+  password: NQ26071394
+  port: 443
+  server: pretty-mollusk.rooster465.autos
+  sni: pretty-mollusk.rooster465.autos
   type: trojan
