@@ -11,11 +11,15 @@ proxies:
   type: hysteria2
 - name: 🇩🇪[openproxylist.com] vless-DE
   network: ws
-  port: 2200
-  server: 31.172.67.215
+  port: 4100
+  server: 81.85.78.78
   tls: false
   type: vless
-  uuid: 2aa7f4b1-e859-46d0-b8ac-8587811ab7b1
+  uuid: 9b44bfb4-9d28-4870-9fc3-5154d6d462ff
+  ws-opts:
+    headers:
+      Host: live.ok.ru
+    path: '%2Fv1'
 - alterId: 0
   cipher: auto
   name: 🇩🇪[openproxylist.com] vmess-DE
@@ -34,39 +38,29 @@ proxies:
   name: '🇩🇪[openproxylist.com] vmess-DE #1'
   network: tcp
   port: '27726'
-  server: fj260203.freechatup.com
+  server: fj260205.freechatup.com
   tls: false
   type: vmess
   uuid: 98e2be3c-8f84-4b85-996b-b68dcc2fbcb6
-- name: '🇩🇪[openproxylist.com] vless-DE #1'
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: '!!str c39cc7310a'
+  server: 82.39.171.131
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+- name: '🇩🇪[openproxylist.com] vless-DE #2'
   port: 33786
   server: fz.tempfast.ir
   tls: false
   type: vless
   uuid: 3557dcfe-4b3c-46e9-b98f-810d959a188f
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #2'
-  network: tcp
-  port: 2027
-  reality-opts:
-    public-key: EApxy12MeXpqt-78odxizwcXT6hX9f8XeAcbMDVRAV0
-    short-id: '!!str 6ba7b8109dad11d1'
-  server: germ.skysafe.online
-  servername: germ.skysafe.online
-  tls: false
-  type: vless
-  uuid: 806b803b-7dad-4f13-b525-f3b1ab50e44e
-- name: 🇩🇪[openproxylist.com] trojan-D...
-  network: ws
-  password: ncnr1qxfkf4j1pg1
-  port: 44600
-  server: de-d-178105.homelanderwins.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: P30day.ir
-    path: '%2Ft.me%2Fdefyxvpn_fa'
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: '🇩🇪[openproxylist.com] vless-DE #3'
@@ -125,43 +119,41 @@ proxies:
   tls: false
   type: vless
   uuid: 2d7c8eef-49c0-4d89-a74f-591ea805274d
-- client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #8'
+- name: '🇩🇪[openproxylist.com] vless-DE #8'
+  network: ws
+  port: 2200
+  server: 130.17.2.27
+  servername: tn.tmn141246.ru
+  tls: false
+  type: vless
+  uuid: d4aad26f-70b6-4411-8517-17f7b4281886
+  ws-opts:
+    headers:
+      Host: rzd.ru
+    path: /v1
+- name: '🇩🇪[openproxylist.com] vless-DE #9'
+  network: ws
+  port: 2200
+  server: 89.127.217.210
+  tls: false
+  type: vless
+  uuid: 9501f3d6-483f-45c1-ab2c-33266520cd5c
+  ws-opts:
+    headers:
+      Host: rzd.ru
+    path: '%2Fv1'
+- alterId: 0
+  cipher: auto
+  name: '🇩🇪[openproxylist.com] vmess-DE #2'
   network: tcp
-  port: 443
-  reality-opts:
-    public-key: OncWhxWwzrKOFH21JT9WxcenacQuc7ZmuQy_rZFJ8xg
-    short-id: '!!str c6e19c434dc87df7'
-  server: tun.temas-bor.ir
-  servername: login.yahoo.com
-  skip-cert-verify: true
+  port: '51459'
+  server: 91.107.139.186
+  servername: ''
   tls: false
-  type: vless
-  uuid: 38df5518-26c5-449b-98d9-a4f456f5f689
-- name: '🇩🇪[openproxylist.com] vless-DE #14'
-  network: ws
-  port: 4100
-  server: 81.85.78.78
-  tls: false
-  type: vless
-  uuid: 9b44bfb4-9d28-4870-9fc3-5154d6d462ff
-  ws-opts:
-    headers:
-      Host: live.ok.ru
-    path: '%2Fv1'
-- name: '🇩🇪[openproxylist.com] vless-DE #10'
-  network: ws
-  port: 4100
-  server: tn.tmn141246.ru
-  tls: false
-  type: vless
-  uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
-  ws-opts:
-    headers:
-      Host: live.ok.ru
-    path: '%2Fv1'
+  type: vmess
+  uuid: 500cdc83-b189-4d79-b06b-139c7972a57f
 - client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #11'
+  name: '🇩🇪[openproxylist.com] vless-DE #10'
   network: ws
   port: 2087
   server: push.sukario.ir
@@ -178,7 +170,7 @@ proxies:
   - networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-channel@.networld_vpn-
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #12'
+  name: '🇩🇪[openproxylist.com] vless-DE #11'
   network: tcp
   port: 443
   reality-opts:
@@ -189,31 +181,3 @@ proxies:
   tls: false
   type: vless
   uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
-- name: '🇩🇪[openproxylist.com] vless-DE #13'
-  network: ws
-  port: 2200
-  server: 81.85.78.78
-  tls: false
-  type: vless
-  uuid: 2aa7f4b1-e859-46d0-b8ac-8587811ab7b1
-  ws-opts:
-    path: '%2Fv1'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #15'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: HyVSZ2OyySwXT-xRhTAqoiuYflIaj_b0Jxm7S1Iq9hs
-    short-id: '!!str 7a76f3c4b9dd'
-  server: jdwadgw.cvewfjg.shop
-  servername: www.cloudflare.com
-  tls: false
-  type: vless
-  uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
-- name: '🇩🇪[openproxylist.com] vless-DE #16'
-  port: 443
-  server: 194.93.0.28
-  tls: false
-  type: vless
-  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
