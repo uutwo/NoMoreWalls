@@ -1,50 +1,69 @@
 proxies:
+- name: 美国+宾利大学
+  network: tcp
+  port: 20342
+  server: 141.133.172.222
+  tls: false
+  type: vless
+  uuid: 5eecb34f-c905-4c77-b7fb-d830b451cd11
 - client-fingerprint: chrome
-  name: 美国+CloudFlare节点
+  name: 美国+Fastly全球Anycast节点
   network: ws
-  port: 443
-  server: 104.25.244.217
-  servername: support.zoom.us.yxls.eu.cc
-  tls: true
+  port: 80
+  server: 151.101.193.54
+  tls: false
   type: vless
-  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
   ws-opts:
     headers:
-      Host: support.zoom.us.yxls.eu.cc
-    path: /sg-melbi
-- name: '美国+CloudFlare节点 #1'
+      Host: BankMelat.glObal.ssl.faStly.nEt.
+    path: '%2F'
+- name: 美国+V2CROSS.COM
   network: ws
-  port: 443
-  server: skk.moe
-  servername: sg.xfj123.top
-  skip-cert-verify: false
-  tls: true
+  port: 80
+  server: 167.82.0.1
+  tls: false
   type: vless
-  uuid: 0ba5211f-fb2b-42a0-8e18-9ce7a41745a5
+  uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
   ws-opts:
     headers:
-      Host: sg.xfj123.top
-    path: /0ba5211f-fb2b-42a0-8e18-9ce7a41745a5-vless
+      Host: BankMelat.glObal.ssl.faStly.nEt.
+    path: /
+- name: 美国+麻省理工学院
+  network: ws
+  port: 80
+  server: 18.244.214.108
+  tls: false
+  type: vless
+  uuid: f27894bf-349c-44e6-a0ce-4c787e18476f
+  ws-opts:
+    headers:
+      Host: duatoup3wk8q2.cloudfront.net
+    path: '%2FGDkX4xpB%2F'
+- name: '美国+麻省理工学院 #1'
+  network: ws
+  port: 80
+  server: 18.238.109.26
+  tls: false
+  type: vless
+  uuid: f27894bf-349c-44e6-a0ce-4c787e18476f
+  ws-opts:
+    headers:
+      Host: duatoup3wk8q2.cloudfront.net
+    path: '%2FGDkX4xpB%2F'
 - client-fingerprint: chrome
-  name: '美国+CloudFlare节点 #2'
-  network: ws
+  flow: xtls-rprx-vision
+  name: '美国+V2CROSS.COM #1'
+  network: tcp
   port: 443
-  server: 172.67.190.141
-  servername: uk.xfj123.top
-  tls: true
+  reality-opts:
+    public-key: HyVSZ2OyySwXT-xRhTAqoiuYflIaj_b0Jxm7S1Iq9hs
+    short-id: '!!str 7a76f3c4b9dd'
+  server: 152.53.127.214
+  servername: www.cloudflare.com
+  tls: false
   type: vless
-  uuid: e1bd5c86-721c-4a2d-bdf8-ba50e522ec57
-  ws-opts:
-    headers:
-      Host: uk.xfj123.top
-    path: /e1bd5c86-721c-4a2d-bdf8-ba50e522ec57-vless
-- name: 🇺🇸 美国 CloudFlare节点
-  password: humanity
-  port: 443
-  server: 172.64.146.1
-  skip-cert-verify: true
-  sni: www.gossipglove.com
-  type: trojan
+  uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
 - name: 美国|@ripaojiedian
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
@@ -68,20 +87,6 @@ proxies:
   server: 95.41.27.1
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 美國丨yoyapai.com\r
-  password: d1960ba9f0f6353353994fa844cf817b
-  port: 17005
-  server: 18.163.123.29
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: '美國丨yoyapai.com\r #1'
-  password: d1960ba9f0f6353353994fa844cf817b
-  port: 49277
-  server: 18.163.123.29
-  skip-cert-verify: true
-  sni: www.nintendogames.net
   type: trojan
 - alterId: 0
   cipher: auto
@@ -110,14 +115,14 @@ proxies:
   skip-cert-verify: true
   sni: hhcm.hhxaf.cc.cd
   type: trojan
-- name: '美國丨yoyapai.com\r #2'
+- name: 美國丨yoyapai.com\r
   password: Mitivpn
   port: 443
   server: 167.82.101.251
   skip-cert-verify: true
   sni: ssl.fastly.com
   type: trojan
-- name: '美國丨yoyapai.com\r #6'
+- name: '美國丨yoyapai.com\r #2'
   password: humanity
   port: 443
   server: www.ignitelimit.com
@@ -144,14 +149,14 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: '美國丨yoyapai.com\r #5'
-  password: d1960ba9f0f6353353994fa844cf817b
-  port: 49277
-  server: 43.207.96.164
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
 - name: 🇺🇸 US美国(mibei77.com 米贝节点分享)
+  password: humanity
+  port: 443
+  server: 165.215.250.14
+  skip-cert-verify: true
+  sni: www.creationlong.org
+  type: trojan
+- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #1'
   password: '!!str 521314'
   port: 443
   server: 155.46.167.27
@@ -165,21 +170,32 @@ proxies:
   skip-cert-verify: true
   sni: www.ignitelimit.com
   type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #3'
-  password: humanity
+- client-fingerprint: chrome
+  name: 🇺🇸[openproxylist.com] vless-US
+  network: tcp
   port: 443
-  server: 165.215.250.14
-  skip-cert-verify: true
-  sni: www.creationlong.org
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #5'
-  password: humanity
+  reality-opts:
+    public-key: lYcMPEgf6ePmF_d8RXR5fsVorycW37v_ECl-fz_H6w4
+    short-id: '!!str cfe08c23a85f24'
+  server: 52.43.158.158
+  servername: www.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 0370b162-baff-4757-86cc-cce4bf07f6f1
+- client-fingerprint: chrome
+  name: '🇺🇸[openproxylist.com] vless-US #1'
+  network: ws
   port: 443
-  server: 104.19.229.21
-  skip-cert-verify: false
-  sni: www.multiplydose.com
-  type: trojan
-- name: 🇺🇸[openproxylist.com] vless-US
+  server: 1.rmgyvpn.rest
+  servername: 1.rmgyvpn.rest
+  tls: true
+  type: vless
+  uuid: 98262dbd-3606-437b-b12e-3f38ca62522f
+  ws-opts:
+    headers:
+      Host: 1.rmgyvpn.rest
+    path: /ws-cdn
+- name: '🇺🇸[openproxylist.com] vless-US #2'
   network: ws
   port: 2095
   server: 104.18.42.163
@@ -192,7 +208,7 @@ proxies:
     path: '%2F'
 - alterId: 0
   cipher: auto
-  name: '🏳[openproxylist.com] vmess- #4'
+  name: '🇺🇸[openproxylist.com] vmess-US #5'
   network: tcp
   port: '443'
   server: 165.140.216.142
@@ -204,40 +220,50 @@ proxies:
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #2'
   network: ws
-  port: 443
+  port: '443'
   server: 192.204.57.30
   tls: false
   type: vmess
   uuid: 4da9adf3-8c0c-48a7-92ac-429c72a76ef8
   ws-opts:
+    headers:
+      Host: ''
     path: /speed
 - alterId: 0
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #3'
   network: ws
-  port: '8880'
-  server: 154.17.238.183
-  servername: ''
+  port: '36822'
+  server: sylva51.ceoiii.com
   tls: false
   type: vmess
-  uuid: b7479b73-8cea-4a82-97e8-bacf9bd86605
+  uuid: 4f198ea9-311e-3dcf-910c-896de6cb160b
   ws-opts:
     headers:
-      Host: www.bing.com
-    path: b7479b73-8cea-4a82-97e8-bacf9bd86605-vm
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #4'
+      Host: ajax.microsoft.com
+    path: /hls/cctv5phd.m3u8
+- name: '🇺🇸[openproxylist.com] vless-US #3'
   network: ws
-  port: '7739'
+  port: 443
+  server: skk.moe
+  servername: sg.xfj123.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 0ba5211f-fb2b-42a0-8e18-9ce7a41745a5
+  ws-opts:
+    headers:
+      Host: sg.xfj123.top
+    path: /0ba5211f-fb2b-42a0-8e18-9ce7a41745a5-vless
+- name: '🇺🇸[openproxylist.com] vless-US #4'
+  network: ws
+  port: 44194
   server: 154.64.228.51
   tls: false
-  type: vmess
-  uuid: 63d54df4-02eb-413e-beba-95e27bee760f
+  type: vless
+  uuid: 3857c126-6475-4dd7-d219-2e1d8fd43684
   ws-opts:
-    headers:
-      Host: ''
-    path: /arki
+    path: /
 - alterId: 0
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #6'
@@ -256,16 +282,16 @@ proxies:
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #7'
   network: ws
-  port: '2082'
-  server: 69.63.204.31
+  port: '8880'
+  server: 154.21.83.77
   servername: ''
   tls: false
   type: vmess
-  uuid: 542bd1db-f5e7-4c81-a08a-d95da62a914b
+  uuid: 04bccfa1-a6a8-4ace-991f-454624a8766f
   ws-opts:
     headers:
-      Host: ''
-    path: 542bd1db-f5e7-4c81-a08a-d95da62a914b-vm
+      Host: www.bing.com
+    path: 04bccfa1-a6a8-4ace-991f-454624a8766f-vm
 - alterId: 0
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #8'
@@ -280,3 +306,28 @@ proxies:
     headers:
       Host: www.bing.com
     path: 7e25875e-50bb-47ed-9627-261e6d232f69-vm
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #5'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: vJBCJXM6AYo1zobLsW7-UzJsznfiqzVpz7OphyAbGX0
+    short-id: '!!str 7b661daae97b9789'
+  server: 167.88.167.57
+  servername: site.rumedia-cdn.com
+  tls: false
+  type: vless
+  uuid: 41cbcc75-759f-4707-984e-aea715046830
+- client-fingerprint: chrome
+  name: '🇺🇸[openproxylist.com] vless-US #6'
+  network: tcp
+  port: 40443
+  reality-opts:
+    public-key: KCbW84C8h2Ja01LS0Ro8EpLLfzMTjs11t1ldDWLd5zo
+    short-id: '!!str aae8'
+  server: 194.55.189.249
+  servername: deepl.com
+  tls: false
+  type: vless
+  uuid: 8212a50b-25bf-4739-bba1-aaffb5ffc84c
