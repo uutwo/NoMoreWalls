@@ -1,41 +1,17 @@
 proxies:
-- name: 美国+CloudFlare节点
+- alpn:
+  - http/1.1
+  name: 美国+CloudFlare节点
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.36
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
+  server: 104.17.121.9
+  skip-cert-verify: true
+  sni: www.calmlunch.com
   type: trojan
   ws-opts:
     headers:
-      Host: www.ignitelimit.com
-    path: /assignment
-- alterId: 0
-  cipher: auto
-  name: 美国 V2CROSS.COM
-  network: ws
-  port: '36822'
-  server: sylva51.ceoiii.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4f198ea9-311e-3dcf-910c-896de6cb160b
-  ws-opts:
-    headers:
-      Host: ajax.microsoft.com
-    path: /hls/cctv5phd.m3u8
-- name: 美国+V2CROSS.COM
-  network: ws
-  password: humanity
-  port: 443
-  server: 198.202.211.1
-  skip-cert-verify: false
-  sni: www.creationlong.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.creationlong.org
+      Host: www.calmlunch.com
     path: '%2Fassignment'
 - name: 美国|@ripaojiedian
   network: tcp
@@ -158,16 +134,33 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #1'
-  network: tcp
-  port: '443'
-  server: 165.140.216.142
-  servername: ''
+  network: ws
+  port: '36822'
+  server: sylva51.ceoiii.com
   tls: false
   type: vmess
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  uuid: 4f198ea9-311e-3dcf-910c-896de6cb160b
+  ws-opts:
+    headers:
+      Host: ajax.microsoft.com
+    path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #2'
+  network: ws
+  port: '2095'
+  server: 64.186.253.113
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3df54c90-5cc4-4a70-98f7-52245f25230b
+  ws-opts:
+    headers:
+      Host: www.bing.com
+    path: 3df54c90-5cc4-4a70-98f7-52245f25230b-vm
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #3'
   network: ws
   port: '8880'
   server: 154.21.83.77
@@ -181,7 +174,7 @@ proxies:
     path: 04bccfa1-a6a8-4ace-991f-454624a8766f-vm
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #3'
+  name: '🇺🇸[openproxylist.com] vmess-US #4'
   network: ws
   port: '2086'
   server: 154.17.234.39
@@ -192,4 +185,4 @@ proxies:
   ws-opts:
     headers:
       Host: www.bing.com
-    path: /7e25875e-50bb-47ed-9627-261e6d232f69-vm
+    path: 7e25875e-50bb-47ed-9627-261e6d232f69-vm

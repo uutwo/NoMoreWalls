@@ -1,57 +1,48 @@
 proxies:
-- name: 美国+CloudFlare节点
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.36
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: /assignment
-- alpn:
-  - http/1.1
-  name: '美国+CloudFlare节点 #1'
-  network: ws
-  port: 443
-  server: 104.16.75.68
-  servername: germany-2.ariyuz.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 03707fb7-0990-440f-88f6-b0e0f7242a38
-  ws-opts:
-    headers:
-      Host: germany-2.ariyuz.org
-    path: '%2F'
-- alterId: 0
-  cipher: auto
-  name: 美国 V2CROSS.COM
-  network: ws
-  port: '36822'
-  server: sylva51.ceoiii.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4f198ea9-311e-3dcf-910c-896de6cb160b
-  ws-opts:
-    headers:
-      Host: ajax.microsoft.com
-    path: /hls/cctv5phd.m3u8
 - name: 美国+V2CROSS.COM
   network: ws
+  port: 80
+  server: 167.82.0.17
+  tls: false
+  type: vless
+  uuid: 993aa8b6-7160-4202-970b-b3139cbc72a6
+  ws-opts:
+    headers:
+      Host: BankMelat.glObal.ssl.faStly.nEt.
+- name: 美国+宾利大学
+  network: tcp
+  port: 20342
+  server: 141.133.172.222
+  tls: false
+  type: vless
+  uuid: 5eecb34f-c905-4c77-b7fb-d830b451cd11
+- alpn:
+  - http/1.1
+  name: 美国+CloudFlare节点
+  network: ws
   password: humanity
   port: 443
-  server: 198.202.211.1
-  skip-cert-verify: false
-  sni: www.creationlong.org
+  server: 104.17.121.9
+  skip-cert-verify: true
+  sni: www.calmlunch.com
   type: trojan
   ws-opts:
     headers:
-      Host: www.creationlong.org
+      Host: www.calmlunch.com
     path: '%2Fassignment'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '美国+V2CROSS.COM #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: HyVSZ2OyySwXT-xRhTAqoiuYflIaj_b0Jxm7S1Iq9hs
+    short-id: '!!str 7a76f3c4b9dd'
+  server: jdvymxi.cvewfjg.shop
+  servername: www.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
 - name: 美国|@ripaojiedian
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
@@ -157,6 +148,29 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇺🇸[openproxylist.com] vless-US
+  network: tcp
+  port: 4353
+  reality-opts:
+    public-key: YXVnk7FdM6IXOlFqisWurmtfmoftXLqqsrJ-JqqP6Rc
+  server: 92.63.99.228
+  servername: tradingview.com
+  tls: false
+  type: vless
+  uuid: b222ebc7-569c-45ca-a0e4-756f171b247b
+- name: '🇺🇸[openproxylist.com] vless-US #1'
+  network: ws
+  port: 2095
+  server: 104.18.42.163
+  tls: false
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  ws-opts:
+    headers:
+      Host: download.pusytroller.gq
+    path: /
 - alterId: 0
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
@@ -170,8 +184,21 @@ proxies:
     headers:
       Host: ajax.microsoft.com
     path: /hls/cctv5phd.m3u8
-- client-fingerprint: random
-  name: 🇺🇸[openproxylist.com] vless-US
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: fmgZqiXIsO-LWrQMCNsi8_o_EaShi4ubxajVI_m8TBA
+    short-id: '!!str d4e718a6ea7cdb2d'
+  server: free.us2.laodavip.com
+  servername: free.us2.laodavip.com
+  tls: false
+  type: vless
+  uuid: da54c327-4e3f-483c-9c48-705a6d739ab6
+- client-fingerprint: chrome
+  name: '🇺🇸[openproxylist.com] vless-US #3'
   network: tcp
   port: 443
   reality-opts:
@@ -183,20 +210,7 @@ proxies:
   type: vless
   uuid: 0370b162-baff-4757-86cc-cce4bf07f6f1
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #1'
-  network: tcp
-  port: 25565
-  reality-opts:
-    public-key: vSD7OjQzz4Bl1a-Q9LljpZrccUdLGdaVMWCLgkJht10
-    short-id: '!!str d8acb17fe3c9e4f2'
-  server: 45.41.204.232
-  servername: gateway.icloud.com
-  tls: false
-  type: vless
-  uuid: 9d1f3ed0-7426-4100-ac06-21ec1f01c51b
-- client-fingerprint: chrome
-  name: '🇺🇸[openproxylist.com] vless-US #2'
+  name: '🇺🇸[openproxylist.com] vless-US #4'
   network: tcp
   port: 443
   reality-opts:
@@ -210,16 +224,33 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #1'
-  network: tcp
-  port: '443'
-  server: 165.140.216.142
-  servername: ''
+  network: ws
+  port: '36822'
+  server: sylva51.ceoiii.com
   tls: false
   type: vmess
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  uuid: 4f198ea9-311e-3dcf-910c-896de6cb160b
+  ws-opts:
+    headers:
+      Host: ajax.microsoft.com
+    path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #2'
+  network: ws
+  port: '2095'
+  server: 64.186.253.113
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3df54c90-5cc4-4a70-98f7-52245f25230b
+  ws-opts:
+    headers:
+      Host: www.bing.com
+    path: 3df54c90-5cc4-4a70-98f7-52245f25230b-vm
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #3'
   network: ws
   port: '8880'
   server: 154.21.83.77
@@ -233,7 +264,7 @@ proxies:
     path: 04bccfa1-a6a8-4ace-991f-454624a8766f-vm
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #3'
+  name: '🇺🇸[openproxylist.com] vmess-US #4'
   network: ws
   port: '2086'
   server: 154.17.234.39
@@ -244,40 +275,10 @@ proxies:
   ws-opts:
     headers:
       Host: www.bing.com
-    path: /7e25875e-50bb-47ed-9627-261e6d232f69-vm
-- client-fingerprint: chrome
+    path: 7e25875e-50bb-47ed-9627-261e6d232f69-vm
+- client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #3'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: vJBCJXM6AYo1zobLsW7-UzJsznfiqzVpz7OphyAbGX0
-    short-id: '!!str 7b661daae97b9789'
-  server: 167.88.167.57
-  servername: site.rumedia-cdn.com
-  tls: false
-  type: vless
-  uuid: 41cbcc75-759f-4707-984e-aea715046830
-- name: '🇺🇸[openproxylist.com] vless-US #4'
-  network: ws
-  port: 2095
-  server: 104.18.42.163
-  tls: false
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  ws-opts:
-    headers:
-      Host: download.pusytroller.gq
-    path: '%2F'
-- name: '🇺🇸[openproxylist.com] vless-US #5'
-  port: 40443
-  server: 194.55.189.249
-  tls: false
-  type: vless
-  uuid: 8212a50b-25bf-4739-bba1-aaffb5ffc84c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #7'
+  name: '🇺🇸[openproxylist.com] vless-US #6'
   network: tcp
   port: 40443
   reality-opts:
@@ -290,7 +291,7 @@ proxies:
   uuid: 17d29827-7cf1-4115-b40d-548e10ec355d
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #8'
+  name: '🇺🇸[openproxylist.com] vless-US #7'
   network: tcp
   port: 40443
   reality-opts:
