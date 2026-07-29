@@ -1,22 +1,27 @@
 proxies:
-- name: 新加坡|@ripaojiedian
-  network: tcp
+- name: 新加坡+Amazon数据中心
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  port: 443
+  server: vpn-sg-001.fastervpn.world
+  skip-cert-verify: true
+  sni: vpn-sg-001.fastervpn.world
+  tls: false
+  type: hysteria2
+- name: 🇸🇬 新加坡|@ripaojiedian
   password: d1960ba9f0f6353353994fa844cf817b
   port: 6357
   server: 18.163.180.201
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 新加坡2|@ripaojiedian
-  network: tcp
+- name: 🇸🇬 新加坡2|@ripaojiedian
   password: d1960ba9f0f6353353994fa844cf817b
   port: 48738
   server: 18.163.180.201
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 新加坡3|@ripaojiedian
-  network: tcp
+- name: 🇸🇬 新加坡3|@ripaojiedian
   password: BxceQaOe
   port: 9194
   server: 18.162.152.65
@@ -63,6 +68,42 @@ proxies:
   skip-cert-verify: true
   sni: fun-salmon.rooster465.autos
   type: trojan
+- name: 新加坡|@ripaojiedian
+  network: tcp
+  password: d1960ba9f0f6353353994fa844cf817b
+  port: 6357
+  server: 16.162.55.106
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 新加坡2|@ripaojiedian
+  network: tcp
+  password: d1960ba9f0f6353353994fa844cf817b
+  port: 6357
+  server: 57.183.19.130
+  sni: www.nintendogames.net
+  type: trojan
+- name: 新加坡3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 45744
+  server: 18.166.236.71
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇸🇬[openproxylist.com] vless-SG
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: jWVk2Z7eFkyDcu2xgzqX8JsPbZuCVhHUWD463Vfgazw
+    short-id: '!!str 7a5b89ecdb01f781'
+  server: 94.126.206.121
+  servername: www.singaporeair.com
+  tls: false
+  type: vless
+  uuid: a8f84171-5f96-4547-b621-59758fe668c8
 - alterId: 0
   cipher: auto
   name: 🇸🇬[openproxylist.com] vmess-SG
@@ -76,7 +117,7 @@ proxies:
     headers:
       Host: ajax.microsoft.com
     path: /hls/cctv5phd.m3u8
-- name: 🇸🇬[openproxylist.com] vless-SG
+- name: '🇸🇬[openproxylist.com] vless-SG #1'
   network: ws
   port: 57137
   server: 104.64.206.42
@@ -87,3 +128,14 @@ proxies:
     headers:
       Host: m.zoom.us
     path: /FREE By Tharuwa (0767597317)
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc
+  name: '🇸🇬[openproxylist.com] vless-SG #2'
+  network: grpc
+  port: 54324
+  server: sgp3xui.jzy88.top
+  servername: sgp3xui.jzy88.top
+  tls: true
+  type: vless
+  uuid: cdd37253-5f9b-4dcb-8b01-ad60a29384b8

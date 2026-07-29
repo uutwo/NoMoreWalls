@@ -1,4 +1,11 @@
 proxies:
+- name: 🇺🇦[openproxylist.com] trojan-U...
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20066
+  server: oplosgru-c.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
 - name: 🇭🇰_HK_中国香港->🇹🇭_TH_泰国
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20023
@@ -33,10 +40,21 @@ proxies:
   skip-cert-verify: true
   sni: www.calmlunch.com
   type: trojan
-- name: 🇬🇧[openproxylist.com] vless-GB
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: ljfxz
+  name: 🇬🇧[openproxylist.com] vless-GB
+  network: grpc
+  port: 46784
+  server: t1.hhaakk9922.com
+  servername: t1.hhaakk9922.com
+  tls: true
+  type: vless
+  uuid: e34501b9-faa9-356f-8b30-8f2c986b764b
+- name: '🇬🇧[openproxylist.com] vless-GB #1'
   network: ws
   port: 443
-  server: 89.116.250.135
+  server: 188.114.97.6
   servername: vangoghhh.info
   skip-cert-verify: false
   tls: true
@@ -45,9 +63,9 @@ proxies:
   ws-opts:
     headers:
       Host: vangoghhh.info
-    path: /rdfgtws
+    path: '%2Frdfgtws'
 - client-fingerprint: firefox
-  name: '🇬🇧[openproxylist.com] vless-GB #1'
+  name: '🇬🇧[openproxylist.com] vless-GB #2'
   network: tcp
   port: 22012
   reality-opts:
@@ -58,22 +76,22 @@ proxies:
   tls: false
   type: vless
   uuid: efeefecf-72f9-4118-9e25-634ca2b2ca11
-- name: '🇬🇧[openproxylist.com] vless-GB #2'
-  network: ws
-  port: 443
-  server: 45.131.211.136
-  servername: vangoghhh.info
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
-  ws-opts:
-    headers:
-      Host: vangoghhh.info
-    path: '%2Frdfgtws'
 - name: '🇬🇧[openproxylist.com] vless-GB #3'
   port: 22012
   server: 78.47.104.140
   tls: false
   type: vless
   uuid: efeefecf-72f9-4118-9e25-634ca2b2ca11
+- client-fingerprint: chrome
+  name: '🇬🇧[openproxylist.com] vless-GB #4'
+  network: tcp
+  port: 448
+  reality-opts:
+    public-key: IuB1jsALd-wN_8jRTGxVLBbVG5eSxNbOXjvFyZlm3UU
+    short-id: '!!str 113241ad01e99a2d'
+  server: 205.237.109.211
+  servername: www.samsung.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  uuid: 70df38ff-5a22-4ffc-a3f9-1725515e0ea5
