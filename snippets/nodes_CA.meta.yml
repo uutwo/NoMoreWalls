@@ -1,4 +1,11 @@
 proxies:
+- name: 🇨🇦 CA加拿大(mibei77.com 米贝节点分享)
+  password: '!!str 521314'
+  port: 443
+  server: 103.133.1.27
+  skip-cert-verify: false
+  sni: hhtj.hhllfly.kdns.fr
+  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇨🇦[openproxylist.com] vless-CA
@@ -26,15 +33,29 @@ proxies:
     headers:
       Host: z-e-u-s-panel-m0yjjp.zeus-12g9x8.workers.dev
     path: /stream/PANEL_ZEUS/6d24857831b8?loc=0
-- name: '🇨🇦[openproxylist.com] vless-CA #2'
-  network: ws
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇨🇦[openproxylist.com] vless-CA #2'
+  network: tcp
   port: 443
-  server: 172.64.145.0
-  servername: learn00.evany.de5.net
-  tls: true
+  reality-opts:
+    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
+    short-id: '!!str 3d3c1e645f763ee3'
+  server: 158.69.112.254
+  servername: www.speedtest.net
+  tls: false
   type: vless
-  uuid: 29ca503d-e6b8-4509-b666-48133f450857
-  ws-opts:
-    headers:
-      Host: learn00.evany.de5.net
-    path: /fdip=tw.william.us.ci!txt?ed=2560fp=random
+  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇨🇦[openproxylist.com] vless-CA #3'
+  network: tcp
+  port: 41373
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: '!!str 0e'
+  server: 130.107.73.148
+  servername: google.com
+  tls: false
+  type: vless
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
