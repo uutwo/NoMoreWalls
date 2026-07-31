@@ -1,21 +1,34 @@
 proxies:
 - client-fingerprint: chrome
-  name: 俄罗斯+V2CROSS.COM
-  network: ws
+  grpc-opts:
+    grpc-service-name: grpc
+  name: 🇷🇺[openproxylist.com] vless-RU
+  network: grpc
   port: 2053
-  server: 195.133.94.188
-  servername: forfreeuse.sub-flow.online
-  skip-cert-verify: true
-  tls: true
+  reality-opts:
+    public-key: RaAQd349NbMoL5WJOfT_RWvlT2s6sav0pOgEsoSm2zw
+    short-id: '!!str f0131a4772b494d4'
+  server: 85.209.135.3
+  servername: dns.adguard-dns.com
+  tls: false
   type: vless
-  uuid: c7e9c591-2764-423a-afca-efbd010fd396
-  ws-opts:
-    headers:
-      Host: forfreeuse.sub-flow.online
-    path: '%2F'
+  uuid: 347e34f2-3211-4e01-b475-409f46788d3f
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: tZEzySB7soxBmNn2NPyzvUZtC7H1O0pyZx5M60_X2g4
+    short-id: '!!str 496ee75c2f91f51d'
+  server: 217.149.23.141
+  servername: ads.x5.ru
+  tls: false
+  type: vless
+  uuid: 3ad1d277-5715-4ca1-84db-5baea72f822d
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇷🇺[openproxylist.com] vless-RU
+  name: '🇷🇺[openproxylist.com] vless-RU #2'
   network: tcp
   port: 443
   reality-opts:

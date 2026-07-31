@@ -1,15 +1,20 @@
 proxies:
 - name: 🇫🇷[openproxylist.com] vless-FR
-  port: 22223
+  port: 22222
+  server: 52.47.166.241
+  tls: false
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: '🇫🇷[openproxylist.com] vless-FR #1'
+  port: 22222
   server: 13.38.146.131
   tls: false
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- client-fingerprint: chrome
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
+- name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: ws
   port: 443
-  server: 104.17.148.22
+  server: 173.245.58.75
   servername: octopusss.net
   skip-cert-verify: false
   tls: true
@@ -18,27 +23,21 @@ proxies:
   ws-opts:
     headers:
       Host: octopusss.net
-    path: '%2Fodiyfws'
-- name: '🇫🇷[openproxylist.com] vless-FR #2'
+    path: /odiyfws
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: your-custom-path
+  name: '🇫🇷[openproxylist.com] vless-FR #3'
   network: grpc
   port: 8443
+  reality-opts:
+    public-key: OMlQAFrCMZ3DX0xlnbEZiByLBFzpUE8XJHJsrBzLdlY
+    short-id: '!!str 2da4299da566b7'
   server: 45.151.102.99
+  servername: maps.apple.com
   tls: false
   type: vless
   uuid: 423caebf-ce56-4e26-a792-7a6becb17e9b
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #3'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
-    short-id: '!!str bbc68cec8bb8d2e3'
-  server: node13.mxvpn.dev
-  servername: node13.mxvpn.dev
-  tls: false
-  type: vless
-  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
 - client-fingerprint: chrome
   name: '🇫🇷[openproxylist.com] vless-FR #4'
   network: ws
@@ -52,17 +51,3 @@ proxies:
     headers:
       Host: ov.iran-servers.shop
     path: '%2FJ5aLQOY1R9ONWYCM'
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: api
-  name: '🇫🇷[openproxylist.com] vless-FR #5'
-  network: grpc
-  port: 19168
-  reality-opts:
-    public-key: j9-PqbvTxOh3VZ_Sz696WKpEEFvft1CzUzzIvGCJn0w
-    short-id: '!!str baeaf515feed2c64'
-  server: 45.95.233.185
-  servername: apple.com
-  tls: false
-  type: vless
-  uuid: c90fdc71-d7ac-4b66-8c0c-2be2a7b4ae0c

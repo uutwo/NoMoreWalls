@@ -89,16 +89,27 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- alpn:
-  - http/1.1
-  name: '美国+CloudFlare节点 #1'
+- name: 美国+CloudFlare节点
   network: ws
   password: humanity
   port: 443
-  server: 104.20.6.134
-  sni: www.creationlong.org
+  server: www.multiplydose.com
+  skip-cert-verify: true
+  sni: www.multiplydose.com
   type: trojan
   ws-opts:
+    path: /assignment
+- name: '美国+CloudFlare节点 #6'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.71.213
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
     path: '%2Fassignment'
 - name: 🇭🇰_HK_中国香港->🇮🇳_IN_印度
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
@@ -294,13 +305,13 @@ proxies:
   server: rr2.tube-cat.com
   skip-cert-verify: true
   type: trojan
-- name: '🇯🇵 JP日本(mibei77.com 米贝节点分享) #10'
+- name: 🇬🇧[openproxylist.com] trojan-G...
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20041
   server: hkdcrtc-e.catcat321.com
   skip-cert-verify: true
   type: trojan
-- name: 🇬🇧[openproxylist.com] trojan-G...
+- name: '🇭🇰_HK_中国香港->🇩🇪_DE_德国 #1'
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20041
   server: hkdcrtc-e.catcat321.com
@@ -411,11 +422,12 @@ proxies:
   skip-cert-verify: true
   sni: hk.catxstar.com
   type: trojan
-- name: 香港3|@ripaojiedian
+- name: 🇭🇰[openproxylist.com] trojan-H...
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 13118
   server: 18.167.20.3
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 香港4|@ripaojiedian
@@ -493,7 +505,7 @@ proxies:
   server: 18.167.20.3
   sni: www.nintendogames.net
   type: trojan
-- name: 美国3|@ripaojiedian
+- name: 🇺🇸[openproxylist.com] trojan-U...
   network: tcp
   password: BxceQaOe
   port: 38961
@@ -508,7 +520,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #2'
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
   network: tcp
   port: '443'
   server: 165.140.216.142
@@ -526,16 +538,18 @@ proxies:
   tls: false
   type: vmess
   uuid: 8c207682-e007-4a0d-88a3-68b8638b3d10
-- alterId: 0
-  cipher: auto
-  name: '🇳🇱[openproxylist.com] vmess-NL #1'
-  network: tcp
-  port: '8881'
-  server: 157.245.4.52
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
+- name: 🇳🇱[openproxylist.com] trojan-N...
+  network: ws
+  password: humanity
+  port: 443
+  server: 172.64.147.224
+  skip-cert-verify: true
+  sni: www.gossipglove.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.gossipglove.com
+    path: /assignment
 - alterId: 0
   cipher: auto
   name: 🇭🇰[openproxylist.com] vmess-HK
@@ -548,30 +562,32 @@ proxies:
   uuid: f2c67cae-c09d-4739-947d-f5302d87a3c0
 - alterId: 0
   cipher: auto
-  name: '🇳🇱[openproxylist.com] vmess-NL #2'
+  name: '🇳🇱[openproxylist.com] vmess-NL #1'
   network: ws
-  port: 443
+  port: '443'
   server: apjhdggyx.com
   tls: true
   type: vmess
   uuid: 5f72f180-b21b-4b7a-8484-240759012604
   ws-opts:
+    headers:
+      Host: apjhdggyx.com
     path: /5f72f180-b21b-4b7a-8484-240759096785
 - alterId: 0
   cipher: auto
   name: 🇩🇪[openproxylist.com] vmess-DE
   network: tcp
   port: '27726'
-  server: fj260205.freechatup.com
+  server: fj260204.freechatup.com
   servername: ''
   tls: false
   type: vmess
   uuid: 98e2be3c-8f84-4b85-996b-b68dcc2fbcb6
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #3'
+  name: '🇺🇸[openproxylist.com] vmess-US #2'
   network: ws
-  port: 8880
+  port: '8880'
   server: 154.17.238.183
   servername: ''
   tls: false
@@ -583,9 +599,18 @@ proxies:
     path: b7479b73-8cea-4a82-97e8-bacf9bd86605-vm
 - alterId: 0
   cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #3'
+  network: tcp
+  port: '51360'
+  server: lt.badns.help
+  tls: false
+  type: vmess
+  uuid: 85ad21e1-c2cd-3407-aa90-815f3f3ea636
+- alterId: 0
+  cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #4'
   network: ws
-  port: 2095
+  port: '2095'
   server: 64.186.253.113
   servername: ''
   tls: false
@@ -593,7 +618,7 @@ proxies:
   uuid: 3df54c90-5cc4-4a70-98f7-52245f25230b
   ws-opts:
     headers:
-      Host: www.bing.com
+      Host: ''
     path: 3df54c90-5cc4-4a70-98f7-52245f25230b-vm
 - alterId: 0
   cipher: auto
@@ -668,21 +693,7 @@ proxies:
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #5'
   network: ws
-  port: 8880
-  server: 154.26.183.5
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f4a047d5-f419-4e3f-9054-bd2a087e1dc2
-  ws-opts:
-    headers:
-      Host: www.bing.com
-    path: f4a047d5-f419-4e3f-9054-bd2a087e1dc2-vm
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #6'
-  network: ws
-  port: 2082
+  port: '2082'
   server: 69.63.204.31
   servername: ''
   tls: false
@@ -690,40 +701,36 @@ proxies:
   uuid: 542bd1db-f5e7-4c81-a08a-d95da62a914b
   ws-opts:
     headers:
-      Host: www.bing.com
+      Host: ''
     path: 542bd1db-f5e7-4c81-a08a-d95da62a914b-vm
 - alterId: 0
   cipher: auto
   name: '🇭🇰[openproxylist.com] vmess-HK #6'
   network: ws
-  port: '443'
+  port: 443
   server: mh7r5ardl0z5jtgy.v.3dns.vip
   tls: true
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
-    headers:
-      Host: mh7R5ArdL0z5jTGY.v.3dns.vip
     path: /ws-vmess
 - alterId: 0
   cipher: auto
   name: '🇭🇰[openproxylist.com] vmess-HK #7'
   network: ws
-  port: '443'
+  port: 443
   server: qtkdr8jxe3wefxjm.v.3dns.vip
   tls: true
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
-    headers:
-      Host: qTKDR8jXE3wEFxJM.v.3dns.vip
     path: /ws-vmess
 - alterId: 0
   cipher: auto
   name: '🇭🇰[openproxylist.com] vmess-HK #8'
   network: ws
   port: 443
-  server: lcv8v9l7oyamxxfz.v.3dns.vip
+  server: 47.86.107.119
   servername: lcv8v9l7OyamxxfZ.v.3dns.vip
   tls: true
   type: vmess
@@ -737,7 +744,7 @@ proxies:
   name: '🇭🇰[openproxylist.com] vmess-HK #9'
   network: ws
   port: 443
-  server: 6jdvarazgu3qqr6q.v.3dns.vip
+  server: 47.83.19.148
   servername: 6JDvArazgU3qQR6Q.v.3dns.vip
   tls: true
   type: vmess
@@ -796,14 +803,12 @@ proxies:
   cipher: auto
   name: '🇭🇰[openproxylist.com] vmess-HK #14'
   network: ws
-  port: '443'
+  port: 443
   server: m01c7b2z26dtqgee.v.3dns.vip
   tls: true
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
-    headers:
-      Host: M01c7B2z26DtQGEe.v.3dns.vip
     path: /ws-vmess
 - alterId: 0
   cipher: auto
@@ -869,3 +874,17 @@ proxies:
     headers:
       Host: DrBKg16eGf3FZlM3.v.3dns.vip
     path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #6'
+  network: ws
+  port: '2086'
+  server: 154.17.234.39
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7e25875e-50bb-47ed-9627-261e6d232f69
+  ws-opts:
+    headers:
+      Host: www.bing.com
+    path: /7e25875e-50bb-47ed-9627-261e6d232f69-vm
