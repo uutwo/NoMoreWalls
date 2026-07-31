@@ -1,7 +1,14 @@
 proxies:
-- name: '🇯🇵[openproxylist.com] trojan-J... #3'
+- name: '🇯🇵[openproxylist.com] trojan-J... #1'
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20004
+  server: oplosgru-c.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+- name: 🇭🇰_HK_中国香港->🇮🇳_IN_印度
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20035
   server: oplosgru-c.catcat321.com
   skip-cert-verify: true
   sni: hk.catxstar.com
@@ -14,42 +21,22 @@ proxies:
   sni: iosapps.itunes.apple.com
   tls: false
   type: hysteria2
-- name: 🇮🇩[openproxylist.com] trojan-I...
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20120
-  server: oplosgru-c.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 英國
-  network: tcp
-  port: 180
-  server: 82.198.246.37
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英國節點
-  network: tcp
-  port: 180
-  server: 82.198.246.250
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #3'
-  password: humanity
-  port: 443
-  server: 165.215.250.14
-  skip-cert-verify: true
-  sni: www.calmlunch.com
-  type: trojan
 - client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: api.v1.data
   name: 🇬🇧[openproxylist.com] vless-GB
+  network: grpc
+  port: 2053
+  reality-opts:
+    public-key: GS0dfvzX-bVKBDl2brVxsrE6T2WyXXkfgP3x-mQC7BY
+    short-id: '!!str 524efc1f88592266'
+  server: 51.89.229.242
+  servername: play.google.com
+  tls: false
+  type: vless
+  uuid: e480ec05-1570-4a7d-b377-c3a20f80afa8
+- client-fingerprint: chrome
+  name: '🇬🇧[openproxylist.com] vless-GB #1'
   network: tcp
   port: 448
   reality-opts:
@@ -60,19 +47,6 @@ proxies:
   tls: false
   type: vless
   uuid: 70df38ff-5a22-4ffc-a3f9-1725515e0ea5
-- client-fingerprint: chrome
-  name: '🇬🇧[openproxylist.com] vless-GB #1'
-  network: ws
-  port: 443
-  server: betty.ns.cloudflare.com
-  servername: terazhediii.info
-  tls: true
-  type: vless
-  uuid: b2f6aa3a-2550-4a1c-b2c0-1c94b1207217
-  ws-opts:
-    headers:
-      Host: terazhediii.info
-    path: /hdgrbws
 - name: '🇬🇧[openproxylist.com] vless-GB #2'
   network: ws
   port: 8443
