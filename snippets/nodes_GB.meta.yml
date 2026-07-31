@@ -1,4 +1,11 @@
 proxies:
+- name: '🇯🇵[openproxylist.com] trojan-J... #3'
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20004
+  server: oplosgru-c.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
 - name: 🇬🇧英国
   password: 9abff4cd-ac3b-40ce-a3e7-f71f445d670f
   port: 443
@@ -7,29 +14,6 @@ proxies:
   sni: iosapps.itunes.apple.com
   tls: false
   type: hysteria2
-- name: 🇬🇧128556 | ⚡️Telegram = t.me/S...
-  password: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
-  port: 443
-  server: soskeynets.api3-max.ru
-  skip-cert-verify: false
-  sni: wopa6.api3-max.ru
-  tls: false
-  type: hysteria2
-- name: '🇬🇧128556 | ⚡️Telegram = t.me/S... #1'
-  password: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
-  port: 443
-  server: wopa6.api3-max.ru
-  skip-cert-verify: false
-  sni: wopa6.api3-max.ru
-  tls: false
-  type: hysteria2
-- name: 🇯🇵[openproxylist.com] trojan-J...
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20004
-  server: oplosgru-c.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
 - name: 🇮🇩[openproxylist.com] trojan-I...
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20120
@@ -64,14 +48,20 @@ proxies:
   skip-cert-verify: true
   sni: www.calmlunch.com
   type: trojan
-- name: 🇬🇧[openproxylist.com] trojan-G...
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20041
-  server: hkdcrtc-e.catcat321.com
-  sni: hkdcrtc-e.catcat321.com
-  type: trojan
 - client-fingerprint: chrome
   name: 🇬🇧[openproxylist.com] vless-GB
+  network: tcp
+  port: 448
+  reality-opts:
+    public-key: IuB1jsALd-wN_8jRTGxVLBbVG5eSxNbOXjvFyZlm3UU
+    short-id: '!!str 113241ad01e99a2d'
+  server: 205.237.109.211
+  servername: www.samsung.com
+  tls: false
+  type: vless
+  uuid: 70df38ff-5a22-4ffc-a3f9-1725515e0ea5
+- client-fingerprint: chrome
+  name: '🇬🇧[openproxylist.com] vless-GB #1'
   network: ws
   port: 443
   server: betty.ns.cloudflare.com
@@ -83,3 +73,12 @@ proxies:
     headers:
       Host: terazhediii.info
     path: /hdgrbws
+- name: '🇬🇧[openproxylist.com] vless-GB #2'
+  network: ws
+  port: 8443
+  server: ad-007.cloud25075.info
+  tls: true
+  type: vless
+  uuid: 2e8beadd-99bf-4fda-8692-8493886504bc
+  ws-opts:
+    path: /
