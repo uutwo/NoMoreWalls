@@ -1,40 +1,59 @@
 proxies:
-- name: '🇷🇺[openproxylist.com] vless-RU #1'
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 俄罗斯+V2CROSS.COM
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
+  server: 94.139.251.9
+  servername: apple.com
+  tls: false
+  type: vless
+  uuid: eadcacfa-ef1a-4901-a28b-8815fa1962a5
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: '🇳🇱[openproxylist.com] vless-NL #5'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
+  server: 94.139.251.191
+  servername: apple.com
+  tls: false
+  type: vless
+  uuid: d6dc1358-1bb5-4a9d-92fd-3e255567e3fc
+- name: '俄罗斯+V2CROSS.COM #2'
   network: ws
-  port: 8443
-  server: 72.56.249.226
+  port: 8880
+  server: 176.124.223.30
   tls: false
   type: vless
-  uuid: 42713553-c2e5-408a-8a1b-651b2facf01e
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
-    path: '%2Fsubscribe%2Fws'
-- client-fingerprint: firefox
+    headers:
+      Host: vms.lifetime38.workers.dev
+    path: /
+- client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: '🇷🇺[openproxylist.com] vless-RU #2'
+  name: 🇷🇺[openproxylist.com] vless-RU
   network: tcp
-  port: 443
+  port: 40443
   reality-opts:
-    public-key: KlybaLW0-grtjEATyTVFIYoWIaoW-Duxi4lcM54_t2U
-  server: 91.135.156.243
-  servername: sun6-21.userapi.com
+    public-key: WRveYv8IuUyvai4jgnQ6nWCL971-wKboe8evES5arlg
+    short-id: '!!str 69d4'
+  server: status.netraidly.ru
+  servername: deepl.com
   tls: false
   type: vless
-  uuid: 42713553-c2e5-408a-8a1b-651b2facf01e
+  uuid: 28d0edc6-93c9-4465-bac9-720274d8b8c4
+  ws-opts:
+    headers:
+      Host: deepl.com
+    path: '%2F'
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇷🇺[openproxylist.com] vless-RU #3'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: KlybaLW0-grtjEATyTVFIYoWIaoW-Duxi4lcM54_t2U
-  server: 185.147.26.169
-  servername: ads.x5.ru
-  tls: false
-  type: vless
-  uuid: 42713553-c2e5-408a-8a1b-651b2facf01e
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '🇷🇺[openproxylist.com] vless-RU #4'
+  name: '🇷🇺[openproxylist.com] vless-RU #1'
   network: tcp
   port: 443
   reality-opts:
@@ -50,7 +69,7 @@ proxies:
   client-fingerprint: qq
   grpc-opts:
     grpc-service-name: grpc
-  name: '🇷🇺[openproxylist.com] vless-RU #5'
+  name: '🇷🇺[openproxylist.com] vless-RU #2'
   network: grpc
   port: 2053
   reality-opts:
@@ -61,7 +80,7 @@ proxies:
   tls: false
   type: vless
   uuid: 347e34f2-3211-4e01-b475-409f46788d3f
-- name: '🇷🇺[openproxylist.com] vless-RU #6'
+- name: '🇷🇺[openproxylist.com] vless-RU #3'
   network: tcp
   port: 443
   server: 82.97.252.129
