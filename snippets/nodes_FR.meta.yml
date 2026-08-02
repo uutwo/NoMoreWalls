@@ -34,36 +34,25 @@ proxies:
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
-- name: 🇫🇷[openproxylist.com] vless-FR
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇫🇷[openproxylist.com] vless-FR
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
+    short-id: '!!str bbc68cec8bb8d2e3'
+  server: node12.mxvpn.dev
+  servername: node12.mxvpn.dev
+  tls: false
+  type: vless
+  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
+  ws-opts:
+    path: /
+- name: '🇫🇷[openproxylist.com] vless-FR #1'
   network: tcp
   port: 443
   server: 89.208.113.16
   tls: false
   type: vless
   uuid: adce7c2a-3191-49ae-b61c-9b8258ea1b0e
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
-    short-id: '!!str bbc68cec8bb8d2e3'
-  server: node13.mxvpn.dev
-  servername: node13.mxvpn.dev
-  tls: false
-  type: vless
-  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
-- client-fingerprint: chrome
-  name: '🇫🇷[openproxylist.com] vless-FR #2'
-  network: ws
-  port: 2053
-  server: 172.64.155.209
-  servername: ov.iran-servers.shop
-  tls: true
-  type: vless
-  uuid: d361072e-9e0e-4e2d-8ec7-2a4189b5b23a
-  ws-opts:
-    headers:
-      Host: ov.iran-servers.shop
-    path: '%2FJ5aLQOY1R9ONWYCM'
