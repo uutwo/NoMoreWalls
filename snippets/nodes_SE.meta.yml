@@ -1,7 +1,22 @@
 proxies:
-- client-fingerprint: chrome
+- client-fingerprint: ios
+  name: '🇸🇪[openproxylist.com] vless-SE #5'
+  network: tcp
+  port: 1000
+  reality-opts:
+    public-key: ECxm-BdHYhxYK9MtN33NkkrFSdFZXp-OB-yhN8AleRY
+    short-id: '!!str a62d513cd709744a'
+  server: teain.org
+  servername: knox.cdn-apple.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  uuid: 6f436a44-f703-93da-7e45-615824a39d3b
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇸🇪[openproxylist.com] vless-SE
+  name: '🇸🇪[openproxylist.com] vless-SE #6'
   network: tcp
   port: 443
   reality-opts:
@@ -13,14 +28,17 @@ proxies:
   type: vless
   uuid: 3ad1d277-5715-4ca1-84db-5baea72f822d
 - client-fingerprint: chrome
-  name: '🇸🇪[openproxylist.com] vless-SE #1'
+  flow: xtls-rprx-vision
+  name: '🇸🇪[openproxylist.com] vless-SE #7'
   network: tcp
-  port: 8443
+  port: 443
   reality-opts:
-    public-key: dNfk0sOCzOlmE61B7ur7YzU2i08RqXIBcGVBA2Ne1Ck
-    short-id: '!!str 7548bc'
-  server: v-de-node-03.bot-auth.com
-  servername: www.oracle.com
+    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
+    short-id: '!!str bbc68cec8bb8d2e3'
+  server: node1.mxvpn.dev
+  servername: node1.mxvpn.dev
   tls: false
   type: vless
-  uuid: b9b1e7c9-4160-49b4-85a4-2f096706509a
+  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
+  ws-opts:
+    path: /
