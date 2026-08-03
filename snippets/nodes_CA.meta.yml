@@ -1,34 +1,27 @@
 proxies:
-- name: 🇨🇦[openproxylist.com] vless-CA
+- name: '🇺🇸[openproxylist.com] vless-US #1'
+  network: tcp
+  port: 443
+  server: 138.68.53.88
+  tls: false
+  type: vless
+  uuid: 413a66e9-b05b-4ae6-a9eb-6d28204a28f4
+- client-fingerprint: chrome
+  name: '🇨🇦[openproxylist.com] vless-CA #1'
   network: ws
-  port: 2087
-  server: 104.18.37.191
+  port: 443
+  server: ip.sb
   servername: learn00.evany.de5.net
-  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 29ca503d-e6b8-4509-b666-48133f450857
   ws-opts:
     headers:
       Host: learn00.evany.de5.net
-    path: /fdip
-- name: '🇨🇦[openproxylist.com] vless-CA #1'
+    path: '%2Ffdip'
+- name: '🇨🇦[openproxylist.com] vless-CA #2'
   port: 443
   server: 216.152.147.28
   tls: false
   type: vless
   uuid: d9e4721d-cdac-44c7-bc91-117367eac194
-- client-fingerprint: chrome
-  name: '🇨🇦[openproxylist.com] vless-CA #2'
-  network: ws
-  port: 2087
-  server: 172.64.146.59
-  servername: learn00.evany.de5.net
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 29ca503d-e6b8-4509-b666-48133f450857
-  ws-opts:
-    headers:
-      Host: learn00.evany.de5.net
-    path: /fdip
