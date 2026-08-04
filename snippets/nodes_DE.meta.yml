@@ -19,8 +19,21 @@ proxies:
   sni: www.refersion.com
   tls: false
   type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪DE-172.236.192.49-02
+  network: ws
+  port: 2053
+  server: deapp.jisuyun.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9a1a05d9-69be-45d3-e326-c6621edf7b31
+  ws-headers:
+    Host: deapp.jisuyun.top
+  ws-path: /devm
 - cipher: aes-256-cfb
-  name: 🇩🇪DE-63.180.254.10-02
+  name: 🇩🇪DE-63.180.254.10-03
   password: amazonskr05
   port: 443
   server: 63.180.254.10
@@ -35,6 +48,32 @@ proxies:
 - client-fingerprint: chrome
   name: '🇩🇪[openproxylist.com] vless-DE #1'
   network: ws
+  port: 2087
+  server: 5hsytrdbbvcrxokk.localip.ir
+  servername: vo1.erooo12345.xyz
+  tls: true
+  type: vless
+  uuid: 03707fb7-0990-440f-88f6-b0e0f7242a38
+  ws-opts:
+    headers:
+      Host: vo1.erooo12345.xyz
+    path: '%2F'
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: kaw2U8L2ZTcgo56qUBONfylYJpHprI_CgZfv1I4q2Sc
+    short-id: '!!str b512d49930874a31'
+  server: 185.126.67.76
+  servername: cdn-de-4.ai-apiroute.cc
+  tls: false
+  type: vless
+  uuid: b6f3b292-00c9-430e-bc4c-b1294bd895c0
+- client-fingerprint: chrome
+  name: '🇩🇪[openproxylist.com] vless-DE #3'
+  network: ws
   port: 443
   server: love.ns.cloudflare.com
   servername: oxoel.starleafnet-addd.sbs
@@ -46,38 +85,69 @@ proxies:
     headers:
       Host: oxoel.starleafnet-addd.sbs
     path: /carbon
-- name: '🇩🇪[openproxylist.com] vless-DE #2'
+- client-fingerprint: chrome
+  name: '🇩🇪[openproxylist.com] vless-DE #4'
+  network: ws
   port: 443
   server: love.ns.cloudflare.com
-  tls: false
+  servername: oxoel.starleafnet-addd.sbs
+  skip-cert-verify: false
+  tls: true
   type: vless
   uuid: 49e76398-5127-4005-90cb-c2a971f745f1
   ws-opts:
+    headers:
+      Host: oxoel.starleafnet-addd.sbs
     path: '%2Fcarbon'
-- name: '🇩🇪[openproxylist.com] vless-DE #3'
-  network: ws
-  port: 4100
-  server: 147.45.253.97
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #5'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: rTnh7Y8RsSA5HSvFf-pWT49x8va6U6XHMRgNiMuwB0A
+    short-id: '!!str ab88d256'
+  server: 170.101.109.37
+  servername: www.cloudflare.com
   tls: false
   type: vless
-  uuid: 9b44bfb4-9d28-4870-9fc3-5154d6d462ff
+  uuid: bf645ffe-a3cc-4480-8e4c-9bcd1af41052
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  name: '🇩🇪[openproxylist.com] vless-DE #6'
+  network: tcp
+  port: 443
+  server: 217.60.193.1
+  servername: ddc-akn.astralweb.tech
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 5c192fd7-ef98-4112-a20c-129108fcd7e9
+- name: '🇩🇪[openproxylist.com] vless-DE #7'
+  network: ws
+  port: 2200
+  server: 81.85.78.193
+  tls: false
+  type: vless
+  uuid: d4aad26f-70b6-4411-8517-17f7b4281886
   ws-opts:
     headers:
-      Host: live.ok.ru
+      Host: rzd.ru
     path: '%2Fv1'
 - alterId: 0
   cipher: auto
   name: 🇩🇪[openproxylist.com] vmess-DE
   network: tcp
   port: '27726'
-  server: fj260203.freechatup.com
+  server: fj260205.freechatup.com
   servername: ''
   tls: false
   type: vmess
   uuid: 98e2be3c-8f84-4b85-996b-b68dcc2fbcb6
 - client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #4'
+  name: '🇩🇪[openproxylist.com] vless-DE #8'
   network: tcp
   port: 443
   reality-opts:
@@ -92,7 +162,7 @@ proxies:
   flow: ''
   grpc-opts:
     grpc-service-name: ''
-  name: '🇩🇪[openproxylist.com] vless-DE #5'
+  name: '🇩🇪[openproxylist.com] vless-DE #9'
   network: ws
   port: 4100
   server: 168.222.140.204
@@ -106,7 +176,7 @@ proxies:
     path: '%2Fv1'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #6'
+  name: '🇩🇪[openproxylist.com] vless-DE #10'
   network: raw
   port: 443
   reality-opts:
@@ -117,3 +187,58 @@ proxies:
   tls: false
   type: vless
   uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
+- name: '🇩🇪[openproxylist.com] vless-DE #11'
+  network: ws
+  port: 2200
+  server: 81.85.78.78
+  tls: false
+  type: vless
+  uuid: 9501f3d6-483f-45c1-ab2c-33266520cd5c
+  ws-opts:
+    headers:
+      Host: rzd.ru
+    path: '%2Fv1'
+- name: '🇩🇪[openproxylist.com] vless-DE #12'
+  network: ws
+  port: 4100
+  server: 194.87.161.60
+  tls: false
+  type: vless
+  uuid: 9b44bfb4-9d28-4870-9fc3-5154d6d462ff
+  ws-opts:
+    path: /v1
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #14'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: HyVSZ2OyySwXT-xRhTAqoiuYflIaj_b0Jxm7S1Iq9hs
+    short-id: '!!str 7a76f3c4b9dd'
+  server: jdwadgw.cvewfjg.shop
+  servername: www.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
+- client-fingerprint: firefox
+  name: '🇩🇪[openproxylist.com] vless-DE #15'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
+    short-id: '!!str 0b'
+  server: 45.155.52.231
+  servername: ru2.skydrgn-online.online
+  tls: false
+  type: vless
+  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
+- name: '🇩🇪[openproxylist.com] vless-DE #16'
+  network: tcp
+  port: 3031
+  server: panel3.nanaweb.ir
+  tls: false
+  type: vless
+  uuid: 1b73f053-2709-4698-bbec-cb20e8a5f288
+  ws-opts:
+    headers:
+      Host: play.google.com
