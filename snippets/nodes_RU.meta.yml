@@ -1,5 +1,24 @@
 proxies:
-- client-fingerprint: chrome
+- name: 俄罗斯+V2CROSS.COM
+  network: ws
+  port: 8880
+  server: 176.124.223.30
+  tls: false
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime38.workers.dev
+    path: /
+- name: '俄罗斯+V2CROSS.COM #1'
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  port: 443
+  server: 91.196.32.163
+  skip-cert-verify: true
+  sni: 91.196.32.163
+  tls: false
+  type: hysteria2
+- client-fingerprint: qq
   flow: xtls-rprx-vision
   name: 🇷🇺[openproxylist.com] vless-RU
   network: tcp
@@ -12,8 +31,21 @@ proxies:
   tls: false
   type: vless
   uuid: 28d0edc6-93c9-4465-bac9-720274d8b8c4
+- name: '🇷🇺[openproxylist.com] vless-RU #1'
+  network: ws
+  port: 8880
+  server: 8.47.69.0
+  servername: rutube.ummapeople.online
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: fd22ad82-2d89-4338-b72c-5092ae699c7d
+  ws-opts:
+    headers:
+      Host: rutube.ummapeople.online
+    path: /rutube
 - client-fingerprint: chrome
-  name: '🇷🇺[openproxylist.com] vless-RU #1'
+  name: '🇷🇺[openproxylist.com] vless-RU #2'
   network: grpc
   port: 38733
   reality-opts:

@@ -89,20 +89,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: 🇲🇾[openproxylist.com] vmess-MY
+- name: 美国+CloudFlare节点
   network: ws
-  port: '36803'
-  server: cindy52.ceoiii.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
+  password: humanity
+  port: 443
+  server: 104.18.152.73
+  sni: www.ignitelimit.com
+  type: trojan
   ws-opts:
-    headers:
-      Host: ajax.microsoft.com
-    path: /hls/cctv5phd.m3u8
+    path: '%2Fassignment'
 - name: 🇺🇸 美国 V2CROSS.COM
   password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
   port: 443
@@ -380,7 +375,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 🇯🇵[openproxylist.com] vmess-JP
+  name: '🇯🇵[openproxylist.com] vmess-JP #1'
   network: ws
   port: '36801'
   server: cindy50.ceoiii.com
@@ -428,12 +423,12 @@ proxies:
     path: /ws-vmess
 - alterId: 0
   cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #14'
+  name: '🇭🇰_HK_中国香港 #2'
   network: ws
-  port: '443'
+  port: 443
   server: m01c7b2z26dtqgee.v.3dns.vip
-  servername: m01c7b2z26dtqgee.v.3dns.vip
-  tls: true
+  servername: ''
+  tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
@@ -565,13 +560,20 @@ proxies:
 - name: 🇵🇱[openproxylist.com] trojan-P...
   password: ND91608427
   port: 443
+  server: relaxed-gull.rooster465.autos
+  skip-cert-verify: true
+  sni: relaxed-gull.rooster465.autos
+  type: trojan
+- name: '🇵🇱[openproxylist.com] trojan-P... #1'
+  password: ND91608427
+  port: 443
   server: discrete-basilisk.rooster465.autos
   skip-cert-verify: true
   sni: discrete-basilisk.rooster465.autos
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #3'
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
   network: tcp
   port: '443'
   server: 165.140.216.142
@@ -579,16 +581,6 @@ proxies:
   tls: false
   type: vmess
   uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-- alterId: 0
-  cipher: auto
-  name: 🇫🇮[openproxylist.com] vmess-FI
-  network: tcp
-  port: '80'
-  server: 7.bmi.ir.varzesh3.com.de
-  servername: fast.com
-  tls: false
-  type: vmess
-  uuid: f53857de-64d7-4c3d-a216-0fb2614c0d1b
 - name: 🇰🇷[openproxylist.com] trojan-K...
   password: ND91608427
   port: 443
@@ -686,6 +678,37 @@ proxies:
   skip-cert-verify: true
   sni: sacred-treefrog.rooster465.autos
   type: trojan
+- name: '🇫🇷[openproxylist.com] trojan-F... #1'
+  network: ws
+  password: humanity
+  port: 443
+  server: 45.130.125.160
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: '%2Fassignment'
+- name: '🇫🇷[openproxylist.com] trojan-F... #2'
+  network: ws
+  password: humanity
+  port: 443
+  server: 165.215.250.14
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: '%2Fassignment'
+- name: '🇫🇷[openproxylist.com] trojan-F... #3'
+  password: humanity
+  port: 443
+  server: 45.130.125.160
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
 - name: '🇯🇵[openproxylist.com] trojan-J... #9'
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20004
@@ -701,7 +724,32 @@ proxies:
   tls: true
   type: vmess
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-- name: '🇫🇷[openproxylist.com] trojan-F... #1'
+- alpn:
+  - http/1.1
+  name: '🇫🇷[openproxylist.com] trojan-F... #4'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.17.121.9
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: '%2Fassignment'
+- name: '🇫🇷[openproxylist.com] trojan-F... #5'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.19.64.105
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: '%2Fassignment'
+- name: '🇫🇷[openproxylist.com] trojan-F... #6'
   network: ws
   password: humanity
   port: 443
@@ -713,14 +761,26 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: /assignment
-- name: '🇰🇷[openproxylist.com] trojan-K... #3'
-  network: tcp
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 9450
-  server: 154.64.226.149
-  skip-cert-verify: false
-  sni: hk.catxstar.com
+- name: '🇫🇷[openproxylist.com] trojan-F... #7'
+  password: humanity
+  port: 443
+  server: 104.17.121.71
   type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- alterId: 0
+  cipher: auto
+  name: 🇲🇾[openproxylist.com] vmess-MY
+  network: ws
+  port: '36803'
+  server: cindy52.ceoiii.com
+  tls: false
+  type: vmess
+  uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
+  ws-opts:
+    headers:
+      Host: ajax.microsoft.com
+    path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
   name: 🇭🇰[openproxylist.com] vmess-HK
@@ -749,10 +809,18 @@ proxies:
   name: 🇩🇪[openproxylist.com] vmess-DE
   network: tcp
   port: '27726'
-  server: fj260404.freechatup.com
+  server: fj260203.freechatup.com
+  servername: ''
   tls: false
   type: vmess
   uuid: 98e2be3c-8f84-4b85-996b-b68dcc2fbcb6
+- name: 🇺🇦[openproxylist.com] trojan-U...
+  password: 41c406e2-12b5-41f2-a329-d0621052d675
+  port: 20066
+  server: hkdcrtc-e.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: '🇭🇰[openproxylist.com] vmess-HK #1'
@@ -828,11 +896,13 @@ proxies:
   network: ws
   port: '443'
   server: mh7r5ardl0z5jtgy.v.3dns.vip
-  servername: mh7r5ardl0z5jtgy.v.3dns.vip
+  servername: mh7R5ArdL0z5jTGY.v.3dns.vip
   tls: true
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
+    headers:
+      Host: mh7R5ArdL0z5jTGY.v.3dns.vip
     path: /ws-vmess
 - alterId: 0
   cipher: auto
@@ -882,7 +952,6 @@ proxies:
   network: ws
   port: '443'
   server: u2frxj0g13vdi0wo.v.3dns.vip
-  servername: U2FRxj0G13vDI0Wo.v.3dns.vip
   tls: true
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
@@ -918,6 +987,17 @@ proxies:
     path: /ws-vmess
 - alterId: 0
   cipher: auto
+  name: '🇭🇰[openproxylist.com] vmess-HK #14'
+  network: ws
+  port: 443
+  server: m01c7b2z26dtqgee.v.3dns.vip
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
   name: '🇭🇰[openproxylist.com] vmess-HK #15'
   network: ws
   port: '443'
@@ -942,4 +1022,40 @@ proxies:
   ws-opts:
     headers:
       Host: 2b9hwy8ocx7q74nm.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰[openproxylist.com] vmess-HK #17'
+  network: ws
+  port: '443'
+  server: zudssgtmrqg9lpvi.v.3dns.vip
+  servername: zUDssgTMRqg9LpvI.v.3dns.vip
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: zUDssgTMRqg9LpvI.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰[openproxylist.com] vmess-HK #18'
+  network: ws
+  port: 443
+  server: 93ucrn4i0pffuabk.v.3dns.vip
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰[openproxylist.com] vmess-HK #19'
+  network: ws
+  port: 443
+  server: drbkg16egf3fzlm3.v.3dns.vip
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
     path: /ws-vmess

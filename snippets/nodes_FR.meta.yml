@@ -6,7 +6,19 @@ proxies:
   skip-cert-verify: false
   sni: blackshadow.dpdns.org
   type: trojan
-- name: 🇫🇷[openproxylist.com] vless-FR
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇫🇷[openproxylist.com] vless-FR
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: SAw2LG0CxynFfpOpX9-5PZOxlz7eQloRLSnbQh9pRUs
+  server: fr-6.flowersyellow.ru
+  servername: www.samsung.com
+  tls: false
+  type: vless
+  uuid: 1b97d3d9-8320-4015-92d7-c94a07ae48fc
+- name: '🇫🇷[openproxylist.com] vless-FR #1'
   port: 22222
   server: 51.45.45.205
   tls: false
@@ -22,6 +34,62 @@ proxies:
   network: ws
   password: humanity
   port: 443
+  server: 45.130.125.160
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: '%2Fassignment'
+- name: '🇫🇷[openproxylist.com] trojan-F... #2'
+  network: ws
+  password: humanity
+  port: 443
+  server: 165.215.250.14
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: '%2Fassignment'
+- name: '🇫🇷[openproxylist.com] trojan-F... #3'
+  password: humanity
+  port: 443
+  server: 45.130.125.160
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- alpn:
+  - http/1.1
+  name: '🇫🇷[openproxylist.com] trojan-F... #4'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.17.121.9
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: '%2Fassignment'
+- name: '🇫🇷[openproxylist.com] trojan-F... #5'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.19.64.105
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: '%2Fassignment'
+- name: '🇫🇷[openproxylist.com] trojan-F... #6'
+  network: ws
+  password: humanity
+  port: 443
   server: 104.16.71.213
   skip-cert-verify: false
   sni: www.calmlunch.com
@@ -30,10 +98,25 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: /assignment
-- name: '🇫🇷[openproxylist.com] vless-FR #1'
+- name: '🇫🇷[openproxylist.com] trojan-F... #7'
+  password: humanity
+  port: 443
+  server: 104.17.121.71
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: tcp
   port: 443
   server: 89.208.113.16
   tls: false
   type: vless
   uuid: adce7c2a-3191-49ae-b61c-9b8258ea1b0e
+- name: '🇫🇷[openproxylist.com] vless-FR #3'
+  port: 2053
+  server: 172.64.155.209
+  tls: false
+  type: vless
+  uuid: d361072e-9e0e-4e2d-8ec7-2a4189b5b23a
+  ws-opts:
+    path: '%2FJ5aLQOY1R9ONWYCM'
