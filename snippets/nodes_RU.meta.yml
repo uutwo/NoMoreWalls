@@ -1,4 +1,17 @@
 proxies:
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: 俄罗斯+V2CROSS.COM
+  network: tcp
+  port: 33729
+  reality-opts:
+    public-key: b5vvvll6WHFXYBOc-P4iEYNFw_uVALgypTESN0Nup2s
+    short-id: '!!str 0bd4698a48'
+  server: kino.memhd.store
+  servername: ymail.com
+  tls: false
+  type: vless
+  uuid: cf8906f5-63d3-44c2-8c1f-d2906cb3a229
 - name: 🇷🇺俄罗斯
   password: 3f3da036-ab8f-405e-a5fd-e7223cb39866
   port: 443
@@ -28,17 +41,9 @@ proxies:
   sni: de-two.quiet-rogue.site
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇷🇺[openproxylist.com] vless-RU
-  network: tcp
+- name: 🇷🇺[openproxylist.com] vless-RU
   port: 443
-  reality-opts:
-    public-key: 84d_aHtsBvclx_Y6FnTmhhTqsZyQdfCGWtmFvefTrUI
-    short-id: '!!str ee57ea513371ce89'
   server: code-sandbox.blog
-  servername: code-sandbox.blog
-  skip-cert-verify: true
   tls: false
   type: vless
   uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
@@ -68,3 +73,16 @@ proxies:
   tls: false
   type: vless
   uuid: 28d0edc6-93c9-4465-bac9-720274d8b8c4
+- name: '🇷🇺[openproxylist.com] vless-RU #3'
+  network: ws
+  port: 8880
+  server: 8.47.69.0
+  servername: rutube.ummapeople.online
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: fd22ad82-2d89-4338-b72c-5092ae699c7d
+  ws-opts:
+    headers:
+      Host: rutube.ummapeople.online
+    path: /rutube
