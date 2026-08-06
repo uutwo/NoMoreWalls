@@ -80,30 +80,21 @@ proxies:
     headers:
       Host: deapp.jisuyun.top
     path: /devm
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: api.v1.StreamService
-  name: 🇩🇪[openproxylist.com] vless-DE
-  network: grpc
+- name: 🇩🇪[openproxylist.com] vless-DE
   port: 443
-  reality-opts:
-    public-key: q3kOYHdjmqWLLYj8oikvna1bTjofk45ktegGaJE611g
-    short-id: '!!str d3b394558cfe0266'
-  server: 88.216.220.88
-  servername: files.noneok.com
+  server: 88.216.220.87
   tls: false
   type: vless
   uuid: a8e3155b-ceb1-4fcb-bc0c-2e77ec005401
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #1'
-  network: tcp
+- name: '🇩🇪[openproxylist.com] vless-DE #1'
   port: 443
-  reality-opts:
-    public-key: Vci2ab6lM0ezoLBj2LgE-ynvakjbWOqUUSZmk5vcNjE
-    short-id: '!!str 44d44d1c625a13aa'
+  server: 88.216.220.88
+  tls: false
+  type: vless
+  uuid: a8e3155b-ceb1-4fcb-bc0c-2e77ec005401
+- name: '🇩🇪[openproxylist.com] vless-DE #2'
+  port: 443
   server: 45.145.56.163
-  servername: de2.spectrum.vu
   tls: false
   type: vless
   uuid: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
@@ -114,11 +105,9 @@ proxies:
   sni: rapid-firefly.rooster465.autos
   type: trojan
 - name: '🇩🇪[openproxylist.com] trojan-D... #1'
-  network: tcp
   password: ND91608427
   port: 443
-  server: 3.64.59.246
-  skip-cert-verify: false
+  server: gentle-raptor.rooster465.autos
   sni: gentle-raptor.rooster465.autos
   type: trojan
 - name: '🇩🇪[openproxylist.com] trojan-D... #2'
@@ -127,7 +116,7 @@ proxies:
   server: next-turkey.rooster465.autos
   sni: next-turkey.rooster465.autos
   type: trojan
-- name: '🇩🇪[openproxylist.com] vless-DE #2'
+- name: '🇩🇪[openproxylist.com] vless-DE #3'
   port: 443
   server: 185.126.67.76
   tls: false
@@ -135,7 +124,7 @@ proxies:
   uuid: b6f3b292-00c9-430e-bc4c-b1294bd895c0
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #3'
+  name: '🇩🇪[openproxylist.com] vless-DE #4'
   network: tcp
   port: 443
   reality-opts:
@@ -146,14 +135,17 @@ proxies:
   tls: false
   type: vless
   uuid: bf645ffe-a3cc-4480-8e4c-9bcd1af41052
-- name: '🇩🇪[openproxylist.com] vless-DE #4'
-  network: ws
-  port: 2200
-  server: 77.222.46.162
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: grpc
+  name: '🇩🇪[openproxylist.com] vless-DE #5'
+  network: grpc
+  port: 7443
+  reality-opts:
+    public-key: P5eqN_q-Vq7M8YgrTIS_yZBgWLskGKQ9hAHhW__R6js
+    short-id: '!!str 89136b6e'
+  server: 193.233.74.57
+  servername: www.telekom.de
   tls: false
   type: vless
-  uuid: 2aa7f4b1-e859-46d0-b8ac-8587811ab7b1
-  ws-opts:
-    headers:
-      Host: 77.222.46.162
-    path: '%2Fv1'
+  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
