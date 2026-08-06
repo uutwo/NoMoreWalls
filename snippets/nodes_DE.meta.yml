@@ -67,27 +67,6 @@ proxies:
   sni: bel-03.node.lumixnet.com
   tls: false
   type: hysteria2
-- name: '🇩🇪[openproxylist.com] trojan-D... #2'
-  password: ND91608427
-  port: 443
-  server: next-turkey.rooster465.autos
-  skip-cert-verify: true
-  sni: next-turkey.rooster465.autos
-  type: trojan
-- name: '🇩🇪[openproxylist.com] trojan-D... #1'
-  password: ND91608427
-  port: 443
-  server: gentle-raptor.rooster465.autos
-  skip-cert-verify: true
-  sni: gentle-raptor.rooster465.autos
-  type: trojan
-- name: 🇩🇪[openproxylist.com] trojan-D...
-  password: ND91608427
-  port: 443
-  server: rapid-firefly.rooster465.autos
-  skip-cert-verify: true
-  sni: rapid-firefly.rooster465.autos
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇩🇪[openproxylist.com] vmess-DE
@@ -101,21 +80,23 @@ proxies:
     headers:
       Host: deapp.jisuyun.top
     path: /devm
-- name: 🇩🇪[openproxylist.com] vless-DE
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: api.v1.StreamService
+  name: 🇩🇪[openproxylist.com] vless-DE
+  network: grpc
   port: 443
-  server: 88.216.220.87
-  tls: false
-  type: vless
-  uuid: a8e3155b-ceb1-4fcb-bc0c-2e77ec005401
-- name: '🇩🇪[openproxylist.com] vless-DE #1'
-  port: 443
+  reality-opts:
+    public-key: q3kOYHdjmqWLLYj8oikvna1bTjofk45ktegGaJE611g
+    short-id: '!!str d3b394558cfe0266'
   server: 88.216.220.88
+  servername: files.noneok.com
   tls: false
   type: vless
   uuid: a8e3155b-ceb1-4fcb-bc0c-2e77ec005401
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #2'
+  name: '🇩🇪[openproxylist.com] vless-DE #1'
   network: tcp
   port: 443
   reality-opts:
@@ -126,32 +107,27 @@ proxies:
   tls: false
   type: vless
   uuid: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #3'
-  network: tcp
+- name: 🇩🇪[openproxylist.com] trojan-D...
+  password: ND91608427
   port: 443
-  reality-opts:
-    public-key: HAuFt4Q6WDEwNYO1BOTpekM2HXwTaZxXYVReYyP3NVI
-  server: 152.53.173.92
-  servername: fastsync.xyz
-  tls: false
-  type: vless
-  uuid: c28ee61d-0d43-4e69-8e6a-6397ed0ffc03
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #4'
+  server: rapid-firefly.rooster465.autos
+  sni: rapid-firefly.rooster465.autos
+  type: trojan
+- name: '🇩🇪[openproxylist.com] trojan-D... #1'
   network: tcp
+  password: ND91608427
   port: 443
-  reality-opts:
-    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
-    short-id: '!!str 8c2d9e1f'
-  server: 176.108.246.130
-  servername: 5post-gate.x5.ru
-  tls: false
-  type: vless
-  uuid: 94a5294d-1125-4139-8934-380c5de5552f
-- name: '🇩🇪[openproxylist.com] vless-DE #5'
+  server: 3.64.59.246
+  skip-cert-verify: false
+  sni: gentle-raptor.rooster465.autos
+  type: trojan
+- name: '🇩🇪[openproxylist.com] trojan-D... #2'
+  password: ND91608427
+  port: 443
+  server: next-turkey.rooster465.autos
+  sni: next-turkey.rooster465.autos
+  type: trojan
+- name: '🇩🇪[openproxylist.com] vless-DE #2'
   port: 443
   server: 185.126.67.76
   tls: false
@@ -159,7 +135,7 @@ proxies:
   uuid: b6f3b292-00c9-430e-bc4c-b1294bd895c0
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #6'
+  name: '🇩🇪[openproxylist.com] vless-DE #3'
   network: tcp
   port: 443
   reality-opts:
@@ -170,7 +146,7 @@ proxies:
   tls: false
   type: vless
   uuid: bf645ffe-a3cc-4480-8e4c-9bcd1af41052
-- name: '🇩🇪[openproxylist.com] vless-DE #7'
+- name: '🇩🇪[openproxylist.com] vless-DE #4'
   network: ws
   port: 2200
   server: 77.222.46.162
@@ -181,17 +157,3 @@ proxies:
     headers:
       Host: 77.222.46.162
     path: '%2Fv1'
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: grpc
-  name: '🇩🇪[openproxylist.com] vless-DE #8'
-  network: grpc
-  port: 7443
-  reality-opts:
-    public-key: P5eqN_q-Vq7M8YgrTIS_yZBgWLskGKQ9hAHhW__R6js
-    short-id: '!!str 89136b6e'
-  server: 193.233.74.57
-  servername: www.telekom.de
-  tls: false
-  type: vless
-  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
