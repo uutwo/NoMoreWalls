@@ -1,4 +1,17 @@
 proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 德国+V2CROSS.COM
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 4-qE0E0B5ShfnAe0KFM0qRkXJ33rRF39AlHK7MpBzAE
+    short-id: '!!str 4c5a76834671'
+  server: kzbkjum.cvewfjg.shop
+  servername: www.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 59eefc04-b831-45cf-8d68-63ca23381171
 - name: 德国
   password: 2ef4cf10-34df-4c0f-9d82-bf6ca9e45025
   port: 443
@@ -11,13 +24,6 @@ proxies:
   port: 443
   server: taga8.api3-max.ru
   sni: taga8.api3-max.ru
-  tls: false
-  type: hysteria2
-- name: '德国 #1'
-  password: 71cada65-d23e-418c-88e4-a06188d14689
-  port: 443
-  server: de-two.quiet-rogue.site
-  sni: de-two.quiet-rogue.site
   tls: false
   type: hysteria2
 - name: '德国 #2'
@@ -98,55 +104,15 @@ proxies:
   server: large-baboon.rooster465.autos
   sni: large-baboon.rooster465.autos
   type: trojan
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: grpc
-  name: '🇩🇪[openproxylist.com] vless-DE #1'
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: faEedJtYwpjrjMXXhIMs3yT6BGIAdC-UCeX6TRC2ABs
-    short-id: '!!str 312c0c39'
-  server: 139.28.241.21
-  servername: www.telekom.de
-  tls: false
-  type: vless
-  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #2'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
-    short-id: '!!str fdda9806fe5d8584'
-  server: 185.23.239.129
-  servername: ger06.skorostnet.space
-  tls: false
-  type: vless
-  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
 - name: '🇩🇪[openproxylist.com] trojan-D... #1'
-  network: tcp
   password: ND91608427
   port: 443
   server: 54.93.54.137
-  skip-cert-verify: false
-  sni: informed-alpaca.rooster465.autos
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #1'
-  network: tcp
-  port: '18003'
-  server: 91.107.157.137
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e41f1455-24f5-4d28-9588-a2cba790171c
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: api.v1.StreamService
-  name: '🇩🇪[openproxylist.com] vless-DE #3'
+  name: '🇩🇪[openproxylist.com] vless-DE #1'
   network: grpc
   port: 443
   reality-opts:
@@ -157,10 +123,10 @@ proxies:
   tls: false
   type: vless
   uuid: a8e3155b-ceb1-4fcb-bc0c-2e77ec005401
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: api.v1.StreamService
-  name: '🇩🇪[openproxylist.com] vless-DE #4'
+  name: '🇩🇪[openproxylist.com] vless-DE #2'
   network: grpc
   port: 443
   reality-opts:
@@ -173,7 +139,7 @@ proxies:
   uuid: a8e3155b-ceb1-4fcb-bc0c-2e77ec005401
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #5'
+  name: '🇩🇪[openproxylist.com] vless-DE #3'
   network: tcp
   port: 443
   reality-opts:
@@ -184,6 +150,18 @@ proxies:
   tls: false
   type: vless
   uuid: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #4'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: HAuFt4Q6WDEwNYO1BOTpekM2HXwTaZxXYVReYyP3NVI
+  server: 152.53.173.92
+  servername: fastsync.xyz
+  tls: false
+  type: vless
+  uuid: c28ee61d-0d43-4e69-8e6a-6397ed0ffc03
 - name: '🇩🇪[openproxylist.com] trojan-D... #2'
   password: ND91608427
   port: 443
@@ -197,22 +175,27 @@ proxies:
   sni: gentle-raptor.rooster465.autos
   type: trojan
 - name: '🇩🇪[openproxylist.com] trojan-D... #4'
-  network: tcp
   password: ND91608427
   port: 443
-  server: 54.93.65.133
-  skip-cert-verify: false
+  server: next-turkey.rooster465.autos
   sni: next-turkey.rooster465.autos
   type: trojan
-- name: '🇩🇪[openproxylist.com] vless-DE #6'
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #5'
+  network: tcp
   port: 443
+  reality-opts:
+    public-key: kaw2U8L2ZTcgo56qUBONfylYJpHprI_CgZfv1I4q2Sc
+    short-id: '!!str b512d49930874a31'
   server: 185.126.67.76
+  servername: cdn-de-4.ai-apiroute.cc
   tls: false
   type: vless
   uuid: b6f3b292-00c9-430e-bc4c-b1294bd895c0
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #7'
+  name: '🇩🇪[openproxylist.com] vless-DE #6'
   network: tcp
   port: 443
   reality-opts:
@@ -223,3 +206,12 @@ proxies:
   tls: false
   type: vless
   uuid: bf645ffe-a3cc-4480-8e4c-9bcd1af41052
+- name: '🇩🇪[openproxylist.com] vless-DE #7'
+  network: ws
+  port: 4100
+  server: 168.222.202.15
+  tls: false
+  type: vless
+  uuid: 2001e98b-e06e-4244-910f-7ff640746eda
+  ws-opts:
+    path: '%2Fv1'
