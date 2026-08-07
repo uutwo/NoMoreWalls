@@ -1,21 +1,22 @@
 proxies:
+- name: 美国+纽约市DigitalOcean云公司
+  port: 443
+  server: 138.68.53.88
+  tls: false
+  type: vless
+  uuid: 413a66e9-b05b-4ae6-a9eb-6d28204a28f4
+- name: 韩国
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 3.36.89.239
+  skip-cert-verify: true
+  sni: vpn-kr-003.fastervpn.world
+  tls: false
+  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 美国+V2CROSS.COM
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: HyVSZ2OyySwXT-xRhTAqoiuYflIaj_b0Jxm7S1Iq9hs
-    short-id: '!!str 7a76f3c4b9dd'
-  server: jdvymxi.cvewfjg.shop
-  servername: www.cloudflare.com
-  tls: false
-  type: vless
-  uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '美国+V2CROSS.COM #1'
-  network: tcp
+  network: raw
   port: 443
   reality-opts:
     public-key: HyVSZ2OyySwXT-xRhTAqoiuYflIaj_b0Jxm7S1Iq9hs
@@ -25,11 +26,24 @@ proxies:
   tls: false
   type: vless
   uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
-- name: '德国 #1'
-  password: 71cada65-d23e-418c-88e4-a06188d14689
+- client-fingerprint: firefox
+  name: '美国+V2CROSS.COM #1'
+  network: tcp
   port: 443
-  server: de-two.quiet-rogue.site
-  sni: de-two.quiet-rogue.site
+  reality-opts:
+    public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
+    short-id: '!!str 0b'
+  server: 45.155.52.231
+  servername: ru2.skydrgn-online.online
+  tls: false
+  type: vless
+  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
+- name: '美国+V2CROSS.COM #2'
+  password: Uq5DgLZRU6hpn7ydRcePOeOk4i1c2tJIEk3rMZMUobo
+  port: 25447
+  server: 144.31.107.101
+  skip-cert-verify: true
+  sni: devideo.h2corp.org
   tls: false
   type: hysteria2
 - name: 美国3@wxgqlfx#美国
@@ -141,7 +155,7 @@ proxies:
 - name: 🇺🇸[openproxylist.com] vless-US
   network: ws
   port: 2095
-  server: 104.18.42.98
+  server: cf.levikogjgfdd.ir
   tls: false
   type: vless
   uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
@@ -149,18 +163,6 @@ proxies:
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
     path: /
-- name: 🇺🇸[openproxylist.com] trojan-U...
-  password: ND91608427
-  port: 443
-  server: sincere-gelding.rooster465.autos
-  sni: sincere-gelding.rooster465.autos
-  type: trojan
-- name: '🇺🇸[openproxylist.com] trojan-U... #1'
-  password: ND91608427
-  port: 443
-  server: pet-ghost.rooster465.autos
-  sni: pet-ghost.rooster465.autos
-  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇺🇸[openproxylist.com] vless-US #1'
@@ -169,7 +171,7 @@ proxies:
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: '!!str c39cc7310a'
-  server: 169.40.42.133
+  server: 169.40.42.16
   servername: yahoo.com
   tls: false
   type: vless
@@ -182,30 +184,14 @@ proxies:
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: '!!str c39cc7310a'
-  server: 169.40.42.16
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- name: '🇺🇸[openproxylist.com] vless-US #3'
-  network: tcp
-  port: 38001
-  server: 191.101.130.131
-  tls: false
-  type: vless
-  uuid: d38fb586-bec2-4892-f774-7789068e32d5
-  ws-opts:
-    headers:
-      Host: varzesh3.com
-- name: '🇺🇸[openproxylist.com] vless-US #4'
-  port: 443
   server: 169.40.42.95
+  servername: yahoo.com
   tls: false
   type: vless
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #5'
+  name: '🇺🇸[openproxylist.com] vless-US #3'
   network: tcp
   port: 443
   reality-opts:
@@ -217,7 +203,7 @@ proxies:
   type: vless
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
 - client-fingerprint: chrome
-  name: '🇺🇸[openproxylist.com] vless-US #6'
+  name: '🇺🇸[openproxylist.com] vless-US #4'
   network: tcp
   port: 47588
   reality-opts:
@@ -228,48 +214,34 @@ proxies:
   tls: false
   type: vless
   uuid: 14be84e2-8b22-42c0-a1ba-3535fc8e9257
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #7'
-  network: tcp
+- name: '🇺🇸[openproxylist.com] vless-US #5'
   port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: '!!str c39cc7310a'
   server: 169.40.42.15
-  servername: yahoo.com
   tls: false
   type: vless
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- name: '🇺🇸[openproxylist.com] vless-US #8'
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #6'
   network: tcp
   port: 443
+  reality-opts:
+    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
+    short-id: '!!str fdda9806fe5d8584'
   server: 89.185.80.195
+  servername: 5us.skorostnet.space
   tls: false
   type: vless
   uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
-- name: '🇺🇸[openproxylist.com] trojan-U... #2'
+- name: 🇺🇸[openproxylist.com] trojan-U...
   password: ND91608427
   port: 443
   server: fleet-bonefish.rooster465.autos
   sni: fleet-bonefish.rooster465.autos
   type: trojan
-- name: '🇺🇸[openproxylist.com] trojan-U... #3'
+- name: '🇺🇸[openproxylist.com] trojan-U... #1'
   password: ND91608427
   port: 443
   server: devoted-tapir.rooster465.autos
   sni: devoted-tapir.rooster465.autos
   type: trojan
-- name: '🇺🇸[openproxylist.com] vless-US #9'
-  network: tcp
-  port: 443
-  server: 138.68.53.88
-  tls: false
-  type: vless
-  uuid: 413a66e9-b05b-4ae6-a9eb-6d28204a28f4
-- name: '🇺🇸[openproxylist.com] vless-US #10'
-  port: 443
-  server: 169.40.42.173
-  tls: false
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c

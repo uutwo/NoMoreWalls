@@ -1,49 +1,19 @@
 proxies:
 - name: 🇭🇰_HK_中国香港->🇲🇴_MO_中国澳门
-  network: tcp
   password: 41c406e2-12b5-41f2-a329-d0621052d675
   port: 20068
   server: oplosgru-c.catcat321.com
   skip-cert-verify: true
   sni: hk.catxstar.com
   type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #2'
-  network: tcp
-  password: 41c406e2-12b5-41f2-a329-d0621052d675
-  port: 20088
-  server: oplosgru-c.catcat321.com
-  skip-cert-verify: false
-  sni: hk.catxstar.com
-  type: trojan
-- name: 英国+V2CROSS.COM
-  network: ws
-  port: 443
-  server: 31.76.251.127.cdn-one.org
-  servername: 31.76.251.127.cdn-one.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 4f375fb4-3c95-425f-bc7b-8085487a6f3c
-  ws-opts:
-    headers:
-      Host: 31.76.251.127.cdn-one.org
-    path: '%2F10336%2F2GCOqG7bvA'
 - name: '🇯🇵[openproxylist.com] trojan-J... #1'
-  network: tcp
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20004
   server: oplosgru-c.catcat321.com
   skip-cert-verify: true
   sni: hk.catxstar.com
   type: trojan
-- name: 🇬🇧英国
-  password: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
-  port: 443
-  server: wopa10.api3-max.ru
-  sni: wopa10.api3-max.ru
-  tls: false
-  type: hysteria2
-- name: '🇬🇧英国 #2'
+- name: '🇬🇧英国 #1'
   password: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
   port: 443
   server: wopa4.api3-max.ru
@@ -51,21 +21,7 @@ proxies:
   sni: wopa4.api3-max.ru
   tls: false
   type: hysteria2
-- name: '🇷🇺俄罗斯 #2'
-  password: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
-  port: 443
-  server: wopa5.api3-max.ru
-  sni: wopa5.api3-max.ru
-  tls: false
-  type: hysteria2
-- name: '🇬🇧英国 #4'
-  password: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
-  port: 443
-  server: wopa6.api3-max.ru
-  sni: wopa6.api3-max.ru
-  tls: false
-  type: hysteria2
-- name: '🇬🇧英国 #5'
+- name: '🇬🇧英国 #2'
   password: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
   port: 443
   server: wopa8.api3-max.ru
@@ -87,7 +43,7 @@ proxies:
   sni: nl7.unlockvpn.online
   tls: false
   type: hysteria2
-- name: '🇬🇧英国 #6'
+- name: '🇬🇧英国 #3'
   password: 9abff4cd-ac3b-40ce-a3e7-f71f445d670f
   port: 443
   server: 5.183.102.113
@@ -95,9 +51,29 @@ proxies:
   sni: iosapps.itunes.apple.com
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
+- name: 🇰🇷[openproxylist.com] trojan-K...
+  password: 41c406e2-12b5-41f2-a329-d0621052d675
+  port: 20088
+  server: oplosgru-c.catcat321.com
+  skip-cert-verify: false
+  sni: hk.catxstar.com
+  type: trojan
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: 🇬🇧[openproxylist.com] vless-GB
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
+    short-id: '!!str fdda9806fe5d8584'
+  server: 185.232.117.117
+  servername: vl07.skorostnet.space
+  tls: false
+  type: vless
+  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇬🇧[openproxylist.com] vless-GB #1'
   network: tcp
   port: 443
   reality-opts:
@@ -111,7 +87,7 @@ proxies:
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: api.v1.data
-  name: '🇬🇧[openproxylist.com] vless-GB #1'
+  name: '🇬🇧[openproxylist.com] vless-GB #2'
   network: grpc
   port: 2053
   reality-opts:
