@@ -1,25 +1,12 @@
 proxies:
-- client-fingerprint: chrome
-  name: 俄罗斯+V2CROSS.COM
-  network: ws
-  port: 2096
-  server: 91.193.58.140
-  servername: free-server.techsonic.dev
-  tls: true
-  type: vless
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  ws-opts:
-    headers:
-      Host: free-server.techsonic.dev
-    path: /free-server.techsonic.dev
-- name: '🇹🇷土耳其 #1'
+- name: 🇹🇷土耳其
   password: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
   port: 443
   server: taga3.api3-max.ru
   sni: taga3.api3-max.ru
   tls: false
   type: hysteria2
-- name: '🇹🇷土耳其 #2'
+- name: '🇹🇷土耳其 #1'
   password: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
   port: 443
   server: taga4.api3-max.ru
@@ -42,28 +29,29 @@ proxies:
   sni: www.linux.com
   tls: false
   type: hysteria2
-- client-fingerprint: edge
-  grpc-opts:
-    grpc-service-name: rpc.v2.FeedService
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
   name: 🇷🇺[openproxylist.com] vless-RU
-  network: grpc
-  port: 443
+  network: tcp
+  port: 40443
   reality-opts:
-    public-key: eU2IqYoHVYNfFqNlTNEAGooWqL2WqKbbQwxAPRu_7wc
-    short-id: '!!str 93762a4ddf178703'
-  server: 83.217.192.233
-  servername: api.univesalsrv.com
+    public-key: cZF84xUCciKRXxTA39vNnh0U8CjUZiUSjLzuNTMOzV8
+    short-id: '!!str 33e48a03db900ff3'
+  server: api.kinomir.fun
+  servername: deepl.com
   tls: false
   type: vless
-  uuid: 1b92d620-add7-42bd-ac1b-93ee4dfacee0
-- name: '🇷🇺[openproxylist.com] vless-RU #1'
-  network: ws
-  port: 8880
-  server: 130.49.148.134
+  uuid: 598b823c-d3fc-4013-aae5-837f10080f7a
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #1'
+  network: tcp
+  port: 40443
+  reality-opts:
+    public-key: WRveYv8IuUyvai4jgnQ6nWCL971-wKboe8evES5arlg
+    short-id: '!!str 69d4'
+  server: status.netraidly.ru
+  servername: deepl.com
   tls: false
   type: vless
-  uuid: b1cf484e-651f-432b-b086-f148e010669e
-  ws-opts:
-    headers:
-      Host: rutube.ummapeople.online
-    path: '%2Frutube'
+  uuid: 28d0edc6-93c9-4465-bac9-720274d8b8c4

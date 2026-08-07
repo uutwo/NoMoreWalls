@@ -1,23 +1,17 @@
 proxies:
+- name: 荷兰+德龙滕LiteServer
+  password: 9d3356a0-c07e-43cc-b30e-450bd50521b8
+  port: 2056
+  server: hl1.mangshe.xyz
+  skip-cert-verify: true
+  sni: hl1.mangshe.xyz
+  tls: false
+  type: hysteria2
 - name: 德国
   password: 2ef4cf10-34df-4c0f-9d82-bf6ca9e45025
   port: 443
   server: node-degame.bangboonet.ru
   sni: node-degame.bangboonet.ru
-  tls: false
-  type: hysteria2
-- name: 🇩🇪德国
-  password: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
-  port: 443
-  server: taga8.api3-max.ru
-  sni: taga8.api3-max.ru
-  tls: false
-  type: hysteria2
-- name: '德国 #1'
-  password: 71cada65-d23e-418c-88e4-a06188d14689
-  port: 443
-  server: de-two.quiet-rogue.site
-  sni: de-two.quiet-rogue.site
   tls: false
   type: hysteria2
 - name: '德国 #2'
@@ -27,27 +21,12 @@ proxies:
   sni: cze-01.node.lumixnet.com
   tls: false
   type: hysteria2
-- name: '🇩🇪德国 #1'
-  password: 8ffbff3b-12c9-4d49-af97-93a8d6cb4edb
-  port: 443
-  server: de2.sunconnecthub.com
-  sni: de2.sunconnecthub.com
-  tls: false
-  type: hysteria2
 - name: 🇩🇪DE
   password: 9d3356a0-c07e-43cc-b30e-450bd50521b8
   port: 2056
   server: dg1.mangshe.xyz
   skip-cert-verify: true
   sni: dg1.mangshe.xyz
-  tls: false
-  type: hysteria2
-- name: '🇩🇪德国 #2'
-  password: Krab9Hyst2_Rk7pQ2xL
-  port: 36723
-  server: de2.vpn.legendaah.xyz
-  skip-cert-verify: true
-  sni: www.cloudflare.com
   tls: false
   type: hysteria2
 - name: 🇩🇪 - DE - @FreeOnlineVPN
@@ -67,13 +46,25 @@ proxies:
   sni: bel-03.node.lumixnet.com
   tls: false
   type: hysteria2
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇩🇪[openproxylist.com] vless-DE
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
+    short-id: '!!str bbc68cec8bb8d2e3'
+  server: 77.239.123.219
+  servername: node19.mxvpn.dev
+  tls: false
+  type: vless
+  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
 - alterId: 0
   cipher: auto
   name: 🇩🇪[openproxylist.com] vmess-DE
   network: ws
-  port: 2053
+  port: '2053'
   server: deapp.jisuyun.top
-  servername: ''
   tls: true
   type: vmess
   uuid: 9a1a05d9-69be-45d3-e326-c6621edf7b31
@@ -81,7 +72,7 @@ proxies:
     headers:
       Host: deapp.jisuyun.top
     path: /devm
-- name: 🇩🇪[openproxylist.com] vless-DE
+- name: '🇩🇪[openproxylist.com] vless-DE #1'
   network: ws
   port: 2087
   server: dyar3.javanrooo.ir
@@ -94,7 +85,7 @@ proxies:
     path: '%2F'
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #1'
+  name: '🇩🇪[openproxylist.com] vless-DE #2'
   network: tcp
   port: 443
   reality-opts:
@@ -107,7 +98,7 @@ proxies:
   uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #2'
+  name: '🇩🇪[openproxylist.com] vless-DE #3'
   network: tcp
   port: 443
   reality-opts:
@@ -121,7 +112,7 @@ proxies:
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: api.v1.StreamService
-  name: '🇩🇪[openproxylist.com] vless-DE #3'
+  name: '🇩🇪[openproxylist.com] vless-DE #4'
   network: grpc
   port: 443
   reality-opts:
@@ -132,26 +123,37 @@ proxies:
   tls: false
   type: vless
   uuid: a8e3155b-ceb1-4fcb-bc0c-2e77ec005401
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: api.v1.StreamService
-  name: '🇩🇪[openproxylist.com] vless-DE #4'
-  network: grpc
+- name: '🇩🇪[openproxylist.com] vless-DE #5'
   port: 443
-  reality-opts:
-    public-key: q3kOYHdjmqWLLYj8oikvna1bTjofk45ktegGaJE611g
-    short-id: '!!str d3b394558cfe0266'
   server: 88.216.220.88
-  servername: files.noneok.com
   tls: false
   type: vless
   uuid: a8e3155b-ceb1-4fcb-bc0c-2e77ec005401
-- name: '🇩🇪[openproxylist.com] vless-DE #5'
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #6'
+  network: tcp
   port: 443
+  reality-opts:
+    public-key: Vci2ab6lM0ezoLBj2LgE-ynvakjbWOqUUSZmk5vcNjE
+    short-id: '!!str 44d44d1c625a13aa'
   server: 45.145.56.163
+  servername: de2.spectrum.vu
   tls: false
   type: vless
   uuid: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #7'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: HAuFt4Q6WDEwNYO1BOTpekM2HXwTaZxXYVReYyP3NVI
+  server: 152.53.173.92
+  servername: fastsync.xyz
+  tls: false
+  type: vless
+  uuid: c28ee61d-0d43-4e69-8e6a-6397ed0ffc03
 - name: 🇩🇪[openproxylist.com] trojan-D...
   password: ND91608427
   port: 443
@@ -164,16 +166,20 @@ proxies:
   server: next-turkey.rooster465.autos
   sni: next-turkey.rooster465.autos
   type: trojan
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #6'
-  network: tcp
+- name: '🇩🇪[openproxylist.com] vless-DE #8'
   port: 443
-  reality-opts:
-    public-key: kaw2U8L2ZTcgo56qUBONfylYJpHprI_CgZfv1I4q2Sc
-    short-id: '!!str b512d49930874a31'
   server: 185.126.67.76
-  servername: cdn-de-4.ai-apiroute.cc
   tls: false
   type: vless
   uuid: b6f3b292-00c9-430e-bc4c-b1294bd895c0
+- name: '🇩🇪[openproxylist.com] vless-DE #9'
+  network: ws
+  port: 2200
+  server: 72.56.7.195
+  tls: false
+  type: vless
+  uuid: 31c2a8e8-0ab2-4f3f-8767-11f3a35d4228
+  ws-opts:
+    headers:
+      Host: rzd.ru
+    path: '%2Fv1'
