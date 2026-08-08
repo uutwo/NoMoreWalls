@@ -1,91 +1,86 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 美国+V2CROSS.COM
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: HyVSZ2OyySwXT-xRhTAqoiuYflIaj_b0Jxm7S1Iq9hs
-    short-id: '!!str 7a76f3c4b9dd'
-  server: 152.53.127.214
-  servername: www.cloudflare.com
-  tls: false
-  type: vless
-  uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '美国+V2CROSS.COM #1'
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: HyVSZ2OyySwXT-xRhTAqoiuYflIaj_b0Jxm7S1Iq9hs
-    short-id: '!!str 7a76f3c4b9dd'
-  server: 152.53.236.22
-  servername: www.cloudflare.com
-  tls: false
-  type: vless
-  uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 美国+CloudFlare节点
+- name: 美国+CloudFlare节点
   network: ws
+  password: 87961f9d-bee1-4377-826b-e169e7891c4f
   port: 443
-  server: time.is
-  servername: support.zoom.us.yxls.eu.cc.
-  tls: true
+  server: cf.090227.xyz
+  sni: yks-dd9.pages.dev
+  type: trojan
+  ws-opts:
+    path: '%2F%3Fed%3D2048'
+- name: '美国+CloudFlare节点 #1'
+  network: ws
+  port: 8880
+  server: cf2.466688.xyz
+  tls: false
   type: vless
-  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  uuid: 50c91104-c1fc-471e-914f-3ad252a0a34c
   ws-opts:
     headers:
-      Host: support.zoom.us.yxls.eu.cc.
-    path: /sg-melbi?ed=443
+      Host: quiet-snowflake-e1dd.374-ac3.workers.dev
+    path: /pyip=ProxyIP.US.CMLiussss.net@https://t.me/QiangLieTuiJian
+- name: '美国+CloudFlare节点 #2'
+  network: ws
+  port: 8080
+  server: 104.26.1.195
+  tls: false
+  type: vless
+  uuid: 4e0f4e59-3613-4f0c-b824-7348413d20e6
+  ws-opts:
+    headers:
+      Host: premium-us-ca-01-gthost.efgwf.online
+    path: /ws-6Tta3kYF
+- name: 美国+V2CROSS.COM
+  network: tcp
+  port: 47063
+  server: 209.38.167.200
+  tls: false
+  type: vless
+  uuid: d550a7cb-3a70-4b1a-8321-79347439f2a3
+  ws-opts:
+    headers:
+      Host: play.google.com
+    path: '%2F'
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国 Microsoft数据中心
+  network: ws
+  port: '36803'
+  server: cindy52.ceoiii.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
+  ws-opts:
+    headers:
+      Host: ajax.microsoft.com
+    path: /hls/cctv5phd.m3u8
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  name: 美国+乔治亚洲亚特兰大Fastly节点
+  network: ws
+  port: 443
+  server: i3.cloud--vpn.site
+  servername: ssl.fastly.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f04c31f7-cfab-4824-d167-4137d836ea82
+  ws-opts:
+    headers:
+      Host: c12.com
+    path: /
+- name: '美国+V2CROSS.COM #1'
+  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
+  port: 443
+  server: 149.104.104.58
+  type: trojan
 - name: '德国 #2'
   password: 71cada65-d23e-418c-88e4-a06188d14689
   port: 443
   server: de-two.quiet-rogue.site
   sni: de-two.quiet-rogue.site
-  tls: false
-  type: hysteria2
-- name: '德国 #1'
-  password: 71cada65-d23e-418c-88e4-a06188d14689
-  port: 443
-  server: 144.31.166.91
-  sni: de-two.quiet-rogue.site
-  tls: false
-  type: hysteria2
-- client-fingerprint: chrome
-  name: '美国+CloudFlare节点 #1'
-  network: ws
-  port: 443
-  server: 104.26.12.41
-  servername: support.zoom.us.yxls.eu.cc
-  tls: true
-  type: vless
-  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
-  ws-opts:
-    headers:
-      Host: support.zoom.us.yxls.eu.cc
-    path: /sg-melbi
-- name: '美国+CloudFlare节点 #2'
-  network: ws
-  port: 8880
-  server: cf5.466688.xyz
-  tls: false
-  type: vless
-  uuid: 612f78a0-65ca-45af-a3ff-7d0f8e9f8655
-  ws-opts:
-    headers:
-      Host: broken-star-c5ae.446.workers.dev
-    path: /pyip=ProxyIP.KR.CMLiussss.net@https://t.me/QiangLieTuiJian
-- name: 美国+内华达州拉斯维加斯Versaweb
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  port: 8443
-  server: 76.164.202.217
-  skip-cert-verify: true
-  sni: mercedes-grape.yyuyy.com
   tls: false
   type: hysteria2
 - name: 美国3@wxgqlfx#美国
@@ -142,57 +137,13 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: 🇺🇸 美国 V2CROSS.COM
-  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
+- name: 🇺🇸 美国 CloudFlare节点
+  password: 87961f9d-bee1-4377-826b-e169e7891c4f
   port: 443
-  server: 149.104.104.58
+  server: cf.090227.xyz
   skip-cert-verify: false
+  sni: yks-dd9.pages.dev
   type: trojan
-- name: 🇺🇸 美国|@ripaojiedian
-  password: d1960ba9f0f6353353994fa844cf817b
-  port: 39024
-  server: 18.166.178.12
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 🇺🇸 美国2|@ripaojiedian
-  password: d1960ba9f0f6353353994fa844cf817b
-  port: 39024
-  server: 18.163.100.58
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 🇺🇸 美国3|@ripaojiedian
-  password: BxceQaOe
-  port: 34039
-  server: 95.40.58.84
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #1'
-  password: 41c406e2-12b5-41f2-a329-d0621052d675
-  port: 20129
-  server: hkdcrtc-e.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #2'
-  password: 41c406e2-12b5-41f2-a329-d0621052d675
-  port: 20088
-  server: oplosgru-c.catcat321.com
-  skip-cert-verify: false
-  sni: hk.catxstar.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国
-  network: tcp
-  port: 443
-  server: guanwang.awsno.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
 - name: 美国|@ripaojiedian
   network: tcp
   password: 6ec301428255a78a1d826988d86cc87e
@@ -217,6 +168,33 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+- name: '🇭🇰_HK_中国香港->🇯🇵_JP_日本 #1'
+  password: 41c406e2-12b5-41f2-a329-d0621052d675
+  port: 20129
+  server: hkdcrtc-e.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  network: tcp
+  port: 30824
+  server: v24.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸_US_美国
+  network: tcp
+  port: 443
+  server: guanwang.awsno.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇺🇸[openproxylist.com] vless-US
@@ -361,10 +339,3 @@ proxies:
   server: devoted-tapir.rooster465.autos
   sni: devoted-tapir.rooster465.autos
   type: trojan
-- name: '🇺🇸[openproxylist.com] vless-US #10'
-  network: tcp
-  port: 443
-  server: 138.68.53.88
-  tls: false
-  type: vless
-  uuid: 413a66e9-b05b-4ae6-a9eb-6d28204a28f4

@@ -1,55 +1,39 @@
 proxies:
-- name: 🇺🇸 美国 V2CROSS.COM
-  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
+- name: 美国+CloudFlare节点
+  network: ws
+  password: 87961f9d-bee1-4377-826b-e169e7891c4f
   port: 443
-  server: 149.104.104.58
-  skip-cert-verify: false
+  server: cf.090227.xyz
+  sni: yks-dd9.pages.dev
   type: trojan
-- name: 🇺🇸 美国|@ripaojiedian
-  password: d1960ba9f0f6353353994fa844cf817b
-  port: 39024
-  server: 18.166.178.12
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 🇺🇸 美国2|@ripaojiedian
-  password: d1960ba9f0f6353353994fa844cf817b
-  port: 39024
-  server: 18.163.100.58
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 🇺🇸 美国3|@ripaojiedian
-  password: BxceQaOe
-  port: 34039
-  server: 95.40.58.84
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #1'
-  password: 41c406e2-12b5-41f2-a329-d0621052d675
-  port: 20129
-  server: hkdcrtc-e.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #2'
-  password: 41c406e2-12b5-41f2-a329-d0621052d675
-  port: 20088
-  server: oplosgru-c.catcat321.com
-  skip-cert-verify: false
-  sni: hk.catxstar.com
-  type: trojan
+  ws-opts:
+    path: '%2F%3Fed%3D2048'
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国
-  network: tcp
-  port: 443
-  server: guanwang.awsno.com
+  name: 🇺🇸 美国 Microsoft数据中心
+  network: ws
+  port: '36803'
+  server: cindy52.ceoiii.com
   servername: ''
   tls: false
   type: vmess
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
+  ws-opts:
+    headers:
+      Host: ajax.microsoft.com
+    path: /hls/cctv5phd.m3u8
+- name: '美国+V2CROSS.COM #1'
+  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
+  port: 443
+  server: 149.104.104.58
+  type: trojan
+- name: 🇺🇸 美国 CloudFlare节点
+  password: 87961f9d-bee1-4377-826b-e169e7891c4f
+  port: 443
+  server: cf.090227.xyz
+  skip-cert-verify: false
+  sni: yks-dd9.pages.dev
+  type: trojan
 - name: 美国|@ripaojiedian
   network: tcp
   password: 6ec301428255a78a1d826988d86cc87e
@@ -74,6 +58,33 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+- name: '🇭🇰_HK_中国香港->🇯🇵_JP_日本 #1'
+  password: 41c406e2-12b5-41f2-a329-d0621052d675
+  port: 20129
+  server: hkdcrtc-e.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  network: tcp
+  port: 30824
+  server: v24.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸_US_美国
+  network: tcp
+  port: 443
+  server: guanwang.awsno.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
 - name: 🇺🇸[openproxylist.com] trojan-U...
   password: ND91608427
   port: 443
