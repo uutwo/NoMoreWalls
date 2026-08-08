@@ -1,4 +1,12 @@
 proxies:
+- name: 美国+Merit网络公司
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  port: 443
+  server: vpn-us-002.fastervpn.world
+  skip-cert-verify: true
+  sni: vpn-us-002.fastervpn.world
+  tls: false
+  type: hysteria2
 - name: '德国 #2'
   password: 71cada65-d23e-418c-88e4-a06188d14689
   port: 443
@@ -6,13 +14,13 @@ proxies:
   sni: de-two.quiet-rogue.site
   tls: false
   type: hysteria2
-- name: '德国 #1'
-  password: 71cada65-d23e-418c-88e4-a06188d14689
+- name: '美国+V2CROSS.COM #1'
+  network: tcp
+  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
   port: 443
-  server: 144.31.166.91
-  sni: de-two.quiet-rogue.site
-  tls: false
-  type: hysteria2
+  server: 149.104.104.58
+  sni: 149.104.104.58
+  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '美国+V2CROSS.COM #2'
@@ -21,17 +29,16 @@ proxies:
   reality-opts:
     public-key: HyVSZ2OyySwXT-xRhTAqoiuYflIaj_b0Jxm7S1Iq9hs
     short-id: '!!str 7a76f3c4b9dd'
-  server: 152.53.239.182
+  server: 152.53.236.22
   servername: www.cloudflare.com
   tls: false
   type: vless
   uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
-- name: 罗马尼亚
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  port: 8443
-  server: 76.164.202.217
-  skip-cert-verify: true
-  sni: mercedes-grape.yyuyy.com
+- name: '德国 #1'
+  password: 71cada65-d23e-418c-88e4-a06188d14689
+  port: 443
+  server: 144.31.166.91
+  sni: de-two.quiet-rogue.site
   tls: false
   type: hysteria2
 - name: 美国3@wxgqlfx#美国
@@ -143,6 +150,32 @@ proxies:
   name: 🇺🇸[openproxylist.com] vmess-US
   network: ws
   port: '443'
+  server: US122207.ssgreen.org
+  tls: true
+  type: vmess
+  uuid: a784449b-074f-4fe7-9f4a-119b33d8c05d
+  ws-opts:
+    headers:
+      Host: US122207.ssgreen.org
+    path: /wes
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
+  network: ws
+  port: '443'
+  server: US032014.ssgreen.org
+  tls: true
+  type: vmess
+  uuid: 69bd12dd-03a2-4782-b4bd-46a90d17214f
+  ws-opts:
+    headers:
+      Host: US032014.ssgreen.org
+    path: /wes
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #2'
+  network: ws
+  port: '443'
   server: US032010.westmgreen.com
   tls: true
   type: vmess
@@ -153,7 +186,7 @@ proxies:
     path: /wes
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #1'
+  name: '🇺🇸[openproxylist.com] vmess-US #3'
   network: ws
   port: '443'
   server: US032017.ssgreen.org
@@ -165,16 +198,11 @@ proxies:
       Host: US032017.ssgreen.org
     path: /wes
 - name: 🇺🇸[openproxylist.com] vless-US
-  network: ws
   port: 2095
-  server: cf.levikogjgfdd.ir
+  server: 172.64.146.153
   tls: false
   type: vless
   uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  ws-opts:
-    headers:
-      Host: fuckingfangbinxing.pusytroller.cf
-    path: /
 - client-fingerprint: ios
   flow: xtls-rprx-vision
   name: '🇺🇸[openproxylist.com] vless-US #1'
@@ -208,21 +236,46 @@ proxies:
   type: vless
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
 - client-fingerprint: chrome
+  flow: xtls-rprx-vision
   name: '🇺🇸[openproxylist.com] vless-US #3'
   network: tcp
-  port: 47588
+  port: 443
   reality-opts:
-    public-key: ViI3P61PX_g1Qw5isp6C1ZaGqKQO471V9cCEJwHFpE4
-    short-id: '!!str 8b2730e4eb1313'
-  server: 179.255.148.66
-  servername: yellowpages.amazon.com
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: '!!str c39cc7310a'
+  server: 169.40.42.16
+  servername: yahoo.com
   tls: false
   type: vless
-  uuid: 14be84e2-8b22-42c0-a1ba-3535fc8e9257
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+- name: '🇺🇸[openproxylist.com] vless-US #4'
+  network: ws
+  port: 2095
+  server: 172.64.145.202
+  tls: false
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  ws-opts:
+    headers:
+      Host: fangbinxingnmsl.pusytroller.gq
+    path: /
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #5'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
+    short-id: '!!str fdda9806fe5d8584'
+  server: 89.185.80.195
+  servername: 5us.skorostnet.space
+  tls: false
+  type: vless
+  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
 - name: '🇺🇸[openproxylist.com] trojan-U... #1'
   password: ND91608427
   port: 443
-  server: 44.246.163.102
+  server: fleet-bonefish.rooster465.autos
   sni: fleet-bonefish.rooster465.autos
   type: trojan
 - name: '🇺🇸[openproxylist.com] trojan-U... #2'
