@@ -6,6 +6,20 @@ proxies:
   sni: node-degame.bangboonet.ru
   tls: false
   type: hysteria2
+- name: '德国 #1'
+  password: 71cada65-d23e-418c-88e4-a06188d14689
+  port: 443
+  server: 144.31.166.91
+  sni: de-two.quiet-rogue.site
+  tls: false
+  type: hysteria2
+- name: '德国 #2'
+  password: 71cada65-d23e-418c-88e4-a06188d14689
+  port: 443
+  server: de-two.quiet-rogue.site
+  sni: de-two.quiet-rogue.site
+  tls: false
+  type: hysteria2
 - name: '德国 #3'
   password: 8645697d-51c1-4e90-aca5-ba63a0392f11
   port: 443
@@ -45,44 +59,21 @@ proxies:
   sni: bel-03.node.lumixnet.com
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: vless-grpc-reality
-  name: 🇩🇪[openproxylist.com] vless-DE
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: ns.o11111o.club
-  servername: id.vk.com
-  tls: false
-  type: vless
-  uuid: b1b3e430-ff52-44b8-b95d-27fa580fbc4f
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #1'
-  network: tcp
-  port: 11762
-  reality-opts:
-    public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU
-  server: 157.90.165.181
-  servername: swdist.apple.com
-  tls: false
-  type: vless
-  uuid: 7c9b4360-6be9-47f2-ace9-b87297ea3d8f
-- name: '🇩🇪[openproxylist.com] vless-DE #2'
-  port: 22222
-  server: 63.183.238.8
-  tls: false
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: '🇩🇪[openproxylist.com] vless-DE #3'
-  port: 443
-  server: 77.239.123.219
-  tls: false
-  type: vless
-  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
-- name: '🇩🇪[openproxylist.com] vless-DE #4'
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪[openproxylist.com] vmess-DE
+  network: ws
+  port: '2053'
+  server: deapp.jisuyun.top
+  servername: deapp.jisuyun.top
+  tls: true
+  type: vmess
+  uuid: 9a1a05d9-69be-45d3-e326-c6621edf7b31
+  ws-opts:
+    headers:
+      Host: deapp.jisuyun.top
+    path: /devm
+- name: 🇩🇪[openproxylist.com] vless-DE
   network: ws
   port: 2087
   server: dyar3.javanrooo.ir
@@ -93,9 +84,23 @@ proxies:
     headers:
       Host: play.google.com
     path: /
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: grpc
+  name: '🇩🇪[openproxylist.com] vless-DE #1'
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: faEedJtYwpjrjMXXhIMs3yT6BGIAdC-UCeX6TRC2ABs
+    short-id: '!!str 312c0c39'
+  server: 139.28.241.21
+  servername: www.telekom.de
+  tls: false
+  type: vless
+  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #5'
+  name: '🇩🇪[openproxylist.com] vless-DE #2'
   network: tcp
   port: 443
   reality-opts:
@@ -109,7 +114,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: api.v1.StreamService
-  name: '🇩🇪[openproxylist.com] vless-DE #6'
+  name: '🇩🇪[openproxylist.com] vless-DE #3'
   network: grpc
   port: 443
   reality-opts:
@@ -123,7 +128,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: api.v1.StreamService
-  name: '🇩🇪[openproxylist.com] vless-DE #7'
+  name: '🇩🇪[openproxylist.com] vless-DE #4'
   network: grpc
   port: 443
   reality-opts:
@@ -134,9 +139,9 @@ proxies:
   tls: false
   type: vless
   uuid: a8e3155b-ceb1-4fcb-bc0c-2e77ec005401
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #8'
+  name: '🇩🇪[openproxylist.com] vless-DE #5'
   network: tcp
   port: 443
   reality-opts:
@@ -149,7 +154,7 @@ proxies:
   uuid: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
 - client-fingerprint: random
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #9'
+  name: '🇩🇪[openproxylist.com] vless-DE #6'
   network: tcp
   port: 443
   reality-opts:
@@ -165,16 +170,3 @@ proxies:
   server: gentle-raptor.rooster465.autos
   sni: gentle-raptor.rooster465.autos
   type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #10'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: kaw2U8L2ZTcgo56qUBONfylYJpHprI_CgZfv1I4q2Sc
-    short-id: '!!str b512d49930874a31'
-  server: 185.126.67.76
-  servername: cdn-de-4.ai-apiroute.cc
-  tls: false
-  type: vless
-  uuid: b6f3b292-00c9-430e-bc4c-b1294bd895c0

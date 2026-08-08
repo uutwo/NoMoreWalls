@@ -1,4 +1,12 @@
 proxies:
+- name: 英国+V2CROSS.COM
+  password: 9d3356a0-c07e-43cc-b30e-450bd50521b8
+  port: 2056
+  server: db1.mangshe.xyz
+  skip-cert-verify: true
+  sni: db1.mangshe.xyz
+  tls: false
+  type: hysteria2
 - name: 🇬🇧英国
   password: 67a1454f-5a95-4e30-9723-1ffcbe7e97f9
   port: 443
@@ -28,9 +36,36 @@ proxies:
   sni: iosapps.itunes.apple.com
   tls: false
   type: hysteria2
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: api.v1.data
+  name: 🇬🇧[openproxylist.com] vless-GB
+  network: grpc
+  port: 2053
+  reality-opts:
+    public-key: GS0dfvzX-bVKBDl2brVxsrE6T2WyXXkfgP3x-mQC7BY
+    short-id: '!!str 524efc1f88592266'
+  server: 54.37.6.119
+  servername: play.google.com
+  tls: false
+  type: vless
+  uuid: d9aa9ea3-9388-483f-a58d-a754f33ec505
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇬🇧[openproxylist.com] vless-GB #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
+    short-id: '!!str fdda9806fe5d8584'
+  server: 185.232.117.114
+  servername: vl04.skorostnet.space
+  tls: false
+  type: vless
+  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇬🇧[openproxylist.com] vless-GB
+  name: '🇬🇧[openproxylist.com] vless-GB #2'
   network: tcp
   port: 443
   reality-opts:
@@ -41,23 +76,10 @@ proxies:
   tls: false
   type: vless
   uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: ABNRlkjlonYV9TOFYgjWwz0wn1s6sg_yCErsLYkU_Sg
-    short-id: '!!str d6ff9019a77e354a'
-  server: 144.31.213.225
-  servername: www.cloudflare.com
-  tls: false
-  type: vless
-  uuid: 9e3de7f7-a595-4117-b1b6-dc41eb870ab1
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: api.v1.data
-  name: '🇬🇧[openproxylist.com] vless-GB #2'
+  name: '🇬🇧[openproxylist.com] vless-GB #3'
   network: grpc
   port: 2053
   reality-opts:
