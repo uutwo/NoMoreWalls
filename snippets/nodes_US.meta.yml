@@ -1,87 +1,45 @@
 proxies:
-- client-fingerprint: chrome
-  name: 美国+V2CROSS.COM
-  network: ws
+- name: '德国 #2'
+  password: 71cada65-d23e-418c-88e4-a06188d14689
   port: 443
-  server: www.true.th
-  servername: d1yxsk0zprgivr.cloudfront.net
-  tls: true
-  type: vless
-  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
-  ws-opts:
-    headers:
-      Host: d1yxsk0zprgivr.cloudfront.net
-    path: '%2F'
-- name: 美国+CloudFlare节点
-  network: ws
-  password: humanity
+  server: de-two.quiet-rogue.site
+  sni: de-two.quiet-rogue.site
+  tls: false
+  type: hysteria2
+- name: '德国 #1'
+  password: 71cada65-d23e-418c-88e4-a06188d14689
   port: 443
-  server: www.speedtest.org
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
+  server: 144.31.166.91
+  sni: de-two.quiet-rogue.site
+  tls: false
+  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '美国+V2CROSS.COM #1'
+  name: '美国+V2CROSS.COM #2'
   network: raw
   port: 443
   reality-opts:
     public-key: HyVSZ2OyySwXT-xRhTAqoiuYflIaj_b0Jxm7S1Iq9hs
     short-id: '!!str 7a76f3c4b9dd'
-  server: 152.53.127.214
+  server: 152.53.239.182
   servername: www.cloudflare.com
   tls: false
   type: vless
   uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
-- client-fingerprint: chrome
-  name: '美国+CloudFlare节点 #1'
-  network: ws
-  port: 443
-  server: 104.26.3.138
-  servername: vltj.qzz.io
-  tls: true
-  type: vless
-  uuid: 506e4a91-1d05-5683-b84c-2113f673cb19
-  ws-opts:
-    headers:
-      Host: vltj.qzz.io
-    path: /id-pusat
-- name: '美国+V2CROSS.COM #2'
-  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
-  port: 443
-  server: 149.104.104.58
-  type: trojan
-- client-fingerprint: chrome
-  name: 美国+麻省理工学院
-  network: ws
-  port: 443
-  server: 18.239.83.52
-  servername: d1yxsk0zprgivr.cloudfront.net
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+- name: 罗马尼亚
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  port: 8443
+  server: 76.164.202.217
+  skip-cert-verify: true
+  sni: mercedes-grape.yyuyy.com
+  tls: false
+  type: hysteria2
 - name: 美国3@wxgqlfx#美国
   password: 571e40e5-d597-4618-9204-535c94dca771
   port: 36253
   server: uswx3.wxgqlfx.vip
   skip-cert-verify: true
   sni: 144.225.187.184
-  tls: false
-  type: hysteria2
-- name: 🇺🇸美国
-  password: 6fe3a600-4bcf-4040-81eb-ccd29231db2b
-  port: 30001
-  server: 155.117.19.221
-  skip-cert-verify: true
-  tls: false
-  type: hysteria2
-- name: '🇺🇸美国 #1'
-  password: VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC
-  port: 8443
-  server: 23.95.75.151
-  sni: hopp-us.yyuyy.com
   tls: false
   type: hysteria2
 - name: 美国4@wxgqlfx#美国
@@ -129,13 +87,6 @@ proxies:
     headers:
       Host: ajax.microsoft.com
     path: /hls/cctv5phd.m3u8
-- name: 🇺🇸 美国 CloudFlare节点
-  password: 87961f9d-bee1-4377-826b-e169e7891c4f
-  port: 443
-  server: cf.090227.xyz
-  skip-cert-verify: false
-  sni: yks-dd9.pages.dev
-  type: trojan
 - name: 美国|@ripaojiedian
   network: tcp
   password: 6ec301428255a78a1d826988d86cc87e
@@ -160,30 +111,13 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '🇭🇰_HK_中国香港->🇯🇵_JP_日本 #1'
+- name: 🇺🇸 US美国(mibei77.com 米贝节点分享)
   password: 41c406e2-12b5-41f2-a329-d0621052d675
   port: 20129
   server: hkdcrtc-e.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-- name: 🇰🇷[openproxylist.com] trojan-K...
-  password: 41c406e2-12b5-41f2-a329-d0621052d675
-  port: 20088
-  server: oplosgru-c.catcat321.com
   skip-cert-verify: false
   sni: hk.catxstar.com
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  network: tcp
-  port: 30824
-  server: v24.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
   name: 🇺🇸_US_美国
@@ -194,6 +128,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  network: tcp
+  port: 30824
+  server: v24.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
@@ -220,29 +164,16 @@ proxies:
     headers:
       Host: US032017.ssgreen.org
     path: /wes
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #2'
-  network: ws
-  port: '443'
-  server: US032013.ssgreen.org
-  tls: true
-  type: vmess
-  uuid: 58968a6c-2def-4bfb-b20a-8cbc4baed978
-  ws-opts:
-    headers:
-      Host: US032013.ssgreen.org
-    path: /wes
 - name: 🇺🇸[openproxylist.com] vless-US
   network: ws
   port: 2095
-  server: 172.64.146.153
+  server: cf.levikogjgfdd.ir
   tls: false
   type: vless
   uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   ws-opts:
     headers:
-      Host: fangbinxingnmsl.pusytroller.gq
+      Host: fuckingfangbinxing.pusytroller.cf
     path: /
 - client-fingerprint: ios
   flow: xtls-rprx-vision
@@ -277,46 +208,7 @@ proxies:
   type: vless
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
   name: '🇺🇸[openproxylist.com] vless-US #3'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: '!!str c39cc7310a'
-  server: 169.40.42.16
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #4'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: '!!str c39cc7310a'
-  server: 169.40.42.95
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #5'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: '!!str c39cc7310a'
-  server: 169.40.42.121
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- client-fingerprint: chrome
-  name: '🇺🇸[openproxylist.com] vless-US #6'
   network: tcp
   port: 47588
   reality-opts:
@@ -327,36 +219,10 @@ proxies:
   tls: false
   type: vless
   uuid: 14be84e2-8b22-42c0-a1ba-3535fc8e9257
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #7'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: '!!str c39cc7310a'
-  server: 169.40.42.15
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #8'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
-    short-id: '!!str fdda9806fe5d8584'
-  server: 89.185.80.195
-  servername: 5us.skorostnet.space
-  tls: false
-  type: vless
-  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
 - name: '🇺🇸[openproxylist.com] trojan-U... #1'
   password: ND91608427
   port: 443
-  server: fleet-bonefish.rooster465.autos
+  server: 44.246.163.102
   sni: fleet-bonefish.rooster465.autos
   type: trojan
 - name: '🇺🇸[openproxylist.com] trojan-U... #2'
