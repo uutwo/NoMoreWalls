@@ -1,11 +1,4 @@
 proxies:
-- name: 🇰🇷[openproxylist.com] trojan-K...
-  password: 41c406e2-12b5-41f2-a329-d0621052d675
-  port: 20088
-  server: oplosgru-c.catcat321.com
-  skip-cert-verify: false
-  sni: hk.catxstar.com
-  type: trojan
 - name: 英国
   password: 68b4b16e-2759-47a4-8a69-33118edf5ce6
   port: 443
@@ -28,10 +21,17 @@ proxies:
   sni: iosapps.itunes.apple.com
   tls: false
   type: hysteria2
+- name: 🇬🇧[openproxylist.com] vless-GB
+  network: tcp
+  port: 20190
+  server: 169.197.113.179
+  tls: false
+  type: vless
+  uuid: ad4dd89a-2e4b-4f33-bb96-7e9c4eb85d0b
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: api.v1.data
-  name: 🇬🇧[openproxylist.com] vless-GB
+  name: '🇬🇧[openproxylist.com] vless-GB #1'
   network: grpc
   port: 2053
   reality-opts:
@@ -44,7 +44,7 @@ proxies:
   uuid: d9aa9ea3-9388-483f-a58d-a754f33ec505
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #1'
+  name: '🇬🇧[openproxylist.com] vless-GB #2'
   network: tcp
   port: 443
   reality-opts:
@@ -56,9 +56,22 @@ proxies:
   type: vless
   uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
 - client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇬🇧[openproxylist.com] vless-GB #3'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
+    short-id: '!!str fdda9806fe5d8584'
+  server: 185.232.117.116
+  servername: vl06.skorostnet.space
+  tls: false
+  type: vless
+  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
+- client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: api.v1.data
-  name: '🇬🇧[openproxylist.com] vless-GB #2'
+  name: '🇬🇧[openproxylist.com] vless-GB #4'
   network: grpc
   port: 2053
   reality-opts:

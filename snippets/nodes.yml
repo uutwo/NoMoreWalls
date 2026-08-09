@@ -96,12 +96,6 @@ proxies:
   skip-cert-verify: false
   sni: hk.catxstar.com
   type: trojan
-- name: '美国+V2CROSS.COM #1'
-  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
-  port: 443
-  server: 149.104.104.58
-  sni: ''
-  type: trojan
 - name: 🇺🇸 美国 CloudFlare节点
   password: 87961f9d-bee1-4377-826b-e169e7891c4f
   port: 443
@@ -111,10 +105,11 @@ proxies:
   type: trojan
   ws-path: h=%2F%3Fed%3D2048
 - name: 🇯🇵[openproxylist.com] trojan-J...
+  network: tcp
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20004
   server: oplosgru-c.catcat321.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: hk.catxstar.com
   type: trojan
 - cipher: aes-256-cfb
@@ -235,7 +230,7 @@ proxies:
   ws-headers:
     Host: guanwang.awsno.com
   ws-path: /
-- name: 🇮🇳[openproxylist.com] trojan-I...
+- name: 🇭🇰_HK_中国香港
   password: 41c406e2-12b5-41f2-a329-d0621052d675
   port: 20034
   server: oplosgru-c.catcat321.com
@@ -390,19 +385,6 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸[openproxylist.com] vmess-US
-  network: ws
-  port: '41963'
-  server: us.klxiaogou.com
-  tls: true
-  type: vmess
-  uuid: 7a4830df-5391-4748-b1c7-b6857ad04acb
-  ws-opts:
-    headers:
-      Host: us.klxiaogou.com
-    path: /124
 - name: 🇮🇪[openproxylist.com] trojan-I...
   network: tcp
   password: UO36402987
@@ -415,8 +397,9 @@ proxies:
   cipher: auto
   name: 🇯🇵[openproxylist.com] vmess-JP
   network: ws
-  port: '36801'
+  port: 36801
   server: cindy50.ceoiii.com
+  servername: ''
   tls: false
   type: vmess
   uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
@@ -436,6 +419,30 @@ proxies:
   server: definite-ladybird.rooster465.autos
   sni: definite-ladybird.rooster465.autos
   type: trojan
+- name: 🇫🇷[openproxylist.com] trojan-F...
+  network: ws
+  password: humanity
+  port: 443
+  server: 185.18.250.245
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: '%2Fassignment'
+- name: '🇫🇷[openproxylist.com] trojan-F... #13'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.71.213
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
 - alterId: 0
   cipher: auto
   name: 🇫🇮[openproxylist.com] vmess-FI
@@ -445,27 +452,13 @@ proxies:
   servername: ''
   tls: false
   type: vmess
-  uuid: 4ae81411-9337-4cac-a612-f5b1650c7627
+  uuid: c896406b-ccc4-4c37-8b8c-15964f32a9a2
 - name: 🇺🇸[openproxylist.com] trojan-U...
   password: ND91608427
   port: 443
   server: 44.244.3.114
   sni: pet-ghost.rooster465.autos
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #1'
-  network: ws
-  port: '2053'
-  server: deapp.jisuyun.top
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 9a1a05d9-69be-45d3-e326-c6621edf7b31
-  ws-opts:
-    headers:
-      Host: deapp.jisuyun.top
-    path: /devm
 - name: '🇮🇪[openproxylist.com] trojan-I... #2'
   network: tcp
   password: ND91608427
@@ -474,20 +467,54 @@ proxies:
   skip-cert-verify: true
   sni: willing-beagle.rooster465.autos
   type: trojan
-- name: 🇫🇷[openproxylist.com] trojan-F...
-  network: tcp
+- name: '🇫🇷[openproxylist.com] trojan-F... #3'
   password: ND91608427
   port: 443
-  server: 15.237.137.197
-  skip-cert-verify: false
+  server: fancy-skink.rooster465.autos
   sni: fancy-skink.rooster465.autos
   type: trojan
-- name: '🇫🇷[openproxylist.com] trojan-F... #1'
+- name: '🇫🇷[openproxylist.com] trojan-F... #4'
   password: ND91608427
   port: 443
   server: star-kiwi.rooster465.autos
   sni: star-kiwi.rooster465.autos
   type: trojan
+- name: '🇫🇷[openproxylist.com] trojan-F... #14'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.19.229.21
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: '%2Fassignment'
+- name: '🇫🇷[openproxylist.com] trojan-F... #6'
+  network: ws
+  password: humanity
+  port: 443
+  server: 172.64.152.23
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+- name: '🇫🇷[openproxylist.com] trojan-F... #7'
+  network: ws
+  password: humanity
+  port: 443
+  server: millionaire.levikogjgfdd.ir
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
 - name: '🇺🇸[openproxylist.com] trojan-U... #1'
   password: ND91608427
   port: 443
@@ -495,26 +522,24 @@ proxies:
   sni: fleet-bonefish.rooster465.autos
   type: trojan
 - name: 🇩🇪[openproxylist.com] trojan-D...
-  network: tcp
   password: ND91608427
   port: 443
   server: gentle-raptor.rooster465.autos
-  skip-cert-verify: true
   sni: gentle-raptor.rooster465.autos
   type: trojan
 - name: '🇭🇰[openproxylist.com] trojan-H... #1'
   password: ND91608427
   port: 443
-  server: ace-starling.rooster465.autos
+  server: 185.244.208.13
   sni: ace-starling.rooster465.autos
   type: trojan
-- name: '🇫🇷[openproxylist.com] trojan-F... #2'
+- name: '🇫🇷[openproxylist.com] trojan-F... #8'
   password: ND91608427
   port: 443
   server: classic-gator.rooster465.autos
   sni: classic-gator.rooster465.autos
   type: trojan
-- name: '🇫🇷[openproxylist.com] trojan-F... #3'
+- name: '🇫🇷[openproxylist.com] trojan-F... #9'
   password: ND91608427
   port: 443
   server: careful-tadpole.rooster465.autos
@@ -543,10 +568,21 @@ proxies:
   server: relaxing-bluebird.rooster465.autos
   sni: relaxing-bluebird.rooster465.autos
   type: trojan
+- name: '🇫🇷[openproxylist.com] trojan-F... #10'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.12.149
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: '%2Fassignment'
 - name: 🇵🇱[openproxylist.com] trojan-P...
   password: ND91608427
   port: 443
-  server: 202.78.163.248
+  server: relaxed-gull.rooster465.autos
   sni: relaxed-gull.rooster465.autos
   type: trojan
 - name: '🇵🇱[openproxylist.com] trojan-P... #1'
@@ -573,7 +609,7 @@ proxies:
   server: 18.181.164.216
   sni: upright-impala.rooster465.autos
   type: trojan
-- name: '🇫🇷[openproxylist.com] trojan-F... #4'
+- name: '🇫🇷[openproxylist.com] trojan-F... #11'
   password: QV31589740
   port: 443
   server: great-krill.rooster465.autos
@@ -640,7 +676,7 @@ proxies:
 - name: '🇰🇷[openproxylist.com] trojan-K... #13'
   password: ND91608427
   port: 443
-  server: communal-sunbird.rooster465.autos
+  server: 3.38.106.2
   sni: communal-sunbird.rooster465.autos
   type: trojan
 - name: '🇯🇵[openproxylist.com] trojan-J... #4'
@@ -767,17 +803,18 @@ proxies:
   server: casual-bee.rooster465.autos
   sni: casual-bee.rooster465.autos
   type: trojan
-- name: '🇫🇷[openproxylist.com] trojan-F... #5'
+- name: '🇫🇷[openproxylist.com] trojan-F... #12'
   network: ws
   password: humanity
   port: 443
-  server: 104.16.71.213
+  server: 165.215.250.14
+  skip-cert-verify: true
   sni: www.calmlunch.com
   type: trojan
   ws-opts:
     headers:
       Host: www.calmlunch.com
-    path: /assignment
+    path: '%2Fassignment'
 - alterId: 0
   cipher: aes-128-gcm
   name: 🇳🇱[openproxylist.com] vmess-NL
