@@ -8,6 +8,20 @@ proxies:
   tls: false
   type: hysteria2
 - name: '法国 #1'
+  password: 95e8532b-cc69-42d4-9553-e3c23292b15b
+  port: 8443
+  server: iq5ny.pleiades.codes
+  sni: iq5ny.pleiades.codes
+  tls: false
+  type: hysteria2
+- name: '法国 #2'
+  password: d1a0857bc1eb833a9edf96be4c1f999e
+  port: 55443
+  server: host-vds2-fr.kvncococ.org
+  sni: host-vds2-fr.kvncococ.org
+  tls: false
+  type: hysteria2
+- name: '法国 #3'
   obfs: salamander
   obfs-password: T@T*FP7uq=!t
   password: f64c72a1-7e1f-4dd1-8929-7e41682542e2
@@ -39,7 +53,7 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
-- name: '🇫🇷[openproxylist.com] trojan-F... #13'
+- name: '🇫🇷[openproxylist.com] trojan-F... #2'
   network: ws
   password: humanity
   port: 443
@@ -51,9 +65,24 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: /assignment
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇫🇷[openproxylist.com] vless-FR #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
+    short-id: '!!str bbc68cec8bb8d2e3'
+  server: node21.mxvpn.dev
+  servername: node21.mxvpn.dev
+  tls: false
+  type: vless
+  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
+  ws-opts:
+    path: /
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: tcp
   port: 443
   reality-opts:
@@ -64,18 +93,22 @@ proxies:
   type: vless
   uuid: c124a209-d949-4951-8234-e2d918b3e6c0
 - name: '🇫🇷[openproxylist.com] trojan-F... #3'
+  network: tcp
   password: ND91608427
   port: 443
-  server: fancy-skink.rooster465.autos
+  server: 15.237.137.197
+  skip-cert-verify: false
   sni: fancy-skink.rooster465.autos
   type: trojan
 - name: '🇫🇷[openproxylist.com] trojan-F... #4'
+  network: tcp
   password: ND91608427
   port: 443
   server: star-kiwi.rooster465.autos
+  skip-cert-verify: false
   sni: star-kiwi.rooster465.autos
   type: trojan
-- name: '🇫🇷[openproxylist.com] trojan-F... #14'
+- name: '🇫🇷[openproxylist.com] trojan-F... #5'
   network: ws
   password: humanity
   port: 443
@@ -113,7 +146,7 @@ proxies:
     path: /assignment
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #2'
+  name: '🇫🇷[openproxylist.com] vless-FR #3'
   network: tcp
   port: 443
   reality-opts:
@@ -152,15 +185,3 @@ proxies:
   server: great-krill.rooster465.autos
   sni: great-krill.rooster465.autos
   type: trojan
-- name: '🇫🇷[openproxylist.com] trojan-F... #12'
-  network: ws
-  password: humanity
-  port: 443
-  server: 165.215.250.14
-  skip-cert-verify: true
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: '%2Fassignment'
