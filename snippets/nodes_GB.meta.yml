@@ -1,4 +1,12 @@
 proxies:
+- name: 英国+V2CROSS.COM
+  password: 9d3356a0-c07e-43cc-b30e-450bd50521b8
+  port: 2056
+  server: db1.mangshe.xyz
+  skip-cert-verify: true
+  sni: db1.mangshe.xyz
+  tls: false
+  type: hysteria2
 - name: 英国
   password: 68b4b16e-2759-47a4-8a69-33118edf5ce6
   port: 443
@@ -21,12 +29,18 @@ proxies:
   sni: iosapps.itunes.apple.com
   tls: false
   type: hysteria2
-- name: 🇬🇧[openproxylist.com] vless-GB
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇬🇧[openproxylist.com] vless-GB
+  network: tcp
   port: 443
-  server: 147.45.47.28
+  reality-opts:
+    public-key: b75SrHI--As9QxOVfRIPkGmGfXjs53CGAjbws2K99Rs
+  server: 194.150.166.12
+  servername: www.avito.ru
   tls: false
   type: vless
-  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
+  uuid: f1c496bf-d2ab-45be-bc13-051d60d227b7
 - name: '🇬🇧[openproxylist.com] vless-GB #1'
   port: 443
   server: 130.78.216.194
@@ -55,11 +69,12 @@ proxies:
   type: vless
   uuid: d9aa9ea3-9388-483f-a58d-a754f33ec505
 - name: '🇬🇧[openproxylist.com] vless-GB #4'
-  port: 443
-  server: 185.232.117.114
+  network: tcp
+  port: 35412
+  server: 87.242.85.201
   tls: false
   type: vless
-  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
+  uuid: bfa91d79-049c-41e1-be94-029397377150
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: '🇬🇧[openproxylist.com] vless-GB #5'
@@ -68,8 +83,8 @@ proxies:
   reality-opts:
     public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
     short-id: '!!str fdda9806fe5d8584'
-  server: 185.232.117.116
-  servername: vl06.skorostnet.space
+  server: 185.232.117.114
+  servername: vl04.skorostnet.space
   tls: false
   type: vless
   uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8

@@ -14,14 +14,6 @@ proxies:
   sni: iq5ny.pleiades.codes
   tls: false
   type: hysteria2
-- name: 🇫🇷138894 | ⚡️Telegram = t.me/S...
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 51.44.213.137
-  skip-cert-verify: true
-  sni: speedtest.tinkoff.ru
-  tls: false
-  type: hysteria2
 - name: '法国 #2'
   password: d1a0857bc1eb833a9edf96be4c1f999e
   port: 55443
@@ -39,6 +31,19 @@ proxies:
   sni: fr2.xiaoliyu.cyou
   tls: false
   type: hysteria2
+- client-fingerprint: safari
+  grpc-opts:
+    grpc-service-name: vless-grpc-reality
+  name: 🇫🇷[openproxylist.com] vless-FR
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: ns.o11111o.club
+  servername: id.vk.com
+  tls: false
+  type: vless
+  uuid: b1b3e430-ff52-44b8-b95d-27fa580fbc4f
 - name: 🇫🇷[openproxylist.com] trojan-F...
   network: ws
   password: humanity
@@ -51,16 +56,6 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
-- name: 🇫🇷[openproxylist.com] vless-FR
-  network: tcp
-  port: 2007
-  server: melinet8.sav-savteam.ir
-  tls: false
-  type: vless
-  uuid: 832e0199-9614-4d74-a7ba-1dca5453dab5
-  ws-opts:
-    headers:
-      Host: play.google.com
 - name: '🇫🇷[openproxylist.com] trojan-F... #1'
   network: ws
   password: humanity
@@ -85,7 +80,7 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: /assignment
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: '🇫🇷[openproxylist.com] vless-FR #1'
   network: tcp
@@ -93,13 +88,11 @@ proxies:
   reality-opts:
     public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
     short-id: '!!str bbc68cec8bb8d2e3'
-  server: node21.mxvpn.dev
+  server: 81.19.137.181
   servername: node21.mxvpn.dev
   tls: false
   type: vless
   uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
-  ws-opts:
-    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇫🇷[openproxylist.com] vless-FR #2'
@@ -121,9 +114,11 @@ proxies:
   sni: fancy-skink.rooster465.autos
   type: trojan
 - name: '🇫🇷[openproxylist.com] trojan-F... #5'
+  network: tcp
   password: ND91608427
   port: 443
-  server: star-kiwi.rooster465.autos
+  server: 15.237.49.244
+  skip-cert-verify: false
   sni: star-kiwi.rooster465.autos
   type: trojan
 - name: '🇫🇷[openproxylist.com] trojan-F... #6'
@@ -162,6 +157,19 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: /assignment
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇫🇷[openproxylist.com] vless-FR #3'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
+    short-id: '!!str fdda9806fe5d8584'
+  server: 78.17.208.22
+  servername: fr05.skorostnet.space
+  tls: false
+  type: vless
+  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
 - name: '🇫🇷[openproxylist.com] trojan-F... #9'
   password: ND91608427
   port: 443
@@ -169,13 +177,6 @@ proxies:
   sni: classic-gator.rooster465.autos
   type: trojan
 - name: '🇫🇷[openproxylist.com] trojan-F... #10'
-  password: humanity
-  port: 443
-  server: 104.17.121.71
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '🇫🇷[openproxylist.com] trojan-F... #11'
   password: QV31589740
   port: 443
   server: great-krill.rooster465.autos
