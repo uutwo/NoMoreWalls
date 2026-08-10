@@ -1,4 +1,30 @@
 proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 俄罗斯+V2CROSS.COM
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: h18Rbgv9RV558p-9Pl4g_--jJjXlTZL0-jHqNK5M_n4
+    short-id: '!!str 2b8c3e90e14740d2'
+  server: 109.73.195.8
+  servername: ru7.cdn-global.pro
+  tls: false
+  type: vless
+  uuid: 02e2d68f-9982-4467-ad47-00cbeeae30e6
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '俄罗斯+V2CROSS.COM #1'
+  network: tcp
+  port: 13868
+  reality-opts:
+    public-key: sgpya-5ohMKCjzyrDe4RWz7b8O9XegDzQ88oHCV45Gk
+    short-id: '!!str e852dc'
+  server: 89.23.103.120
+  servername: booking.com
+  tls: false
+  type: vless
+  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
 - name: '荷兰 #7'
   password: gf1
   port: 443
@@ -7,20 +33,21 @@ proxies:
   sni: www.linux.com
   tls: false
   type: hysteria2
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc-tuning-stream
   name: 🇷🇺[openproxylist.com] vless-RU
-  network: tcp
-  port: 443
+  network: grpc
+  port: 9441
   reality-opts:
-    public-key: OTuJX9K_E2nHhg0mXT2uFMNIO7746G6c5rlT6OscQGk
-    short-id: '!!str 9698d67e63bc8ee0'
-  server: 157.22.193.73
-  servername: larkix.pulsio.cfd
+    public-key: xTk5dX6E0DGuQj19bWDMafx13XoUK8euqlmtwJIg8wY
+    short-id: '!!str 8a7137d4e9c49b9c'
+  server: mws-fc-1.ghost-lan.com
+  servername: max.ru
   tls: false
   type: vless
-  uuid: 1bced29a-3051-42b8-b393-005135b97616
-- client-fingerprint: chrome
+  uuid: b251ec8f-47ec-4ab4-8bd2-13ac333a4100
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: '🇷🇺[openproxylist.com] vless-RU #1'
   network: tcp
