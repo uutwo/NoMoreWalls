@@ -1,15 +1,4 @@
 proxies:
-- name: '美国+CloudFlare节点 #1'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.97
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
 - alpn:
   - http/1.1
   name: 美国+加州
@@ -21,16 +10,7 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #3'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.187
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #5'
+- name: '美国+CloudFlare节点 #1'
   network: ws
   password: humanity
   port: 443
@@ -39,37 +19,35 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #7'
+- name: '美国+CloudFlare节点 #3'
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.22
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2F%2Fassignment'
-- name: '美国+CloudFlare节点 #9'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.36
+  server: 104.17.111.4
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: /assignment
-- name: '美国+CloudFlare节点 #11'
+    path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #4'
   network: ws
   password: humanity
   port: 443
-  server: 104.18.22.63
+  server: 104.17.177.143
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #12'
+- name: '美国+CloudFlare节点 #6'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.26.15.137
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #8'
   network: ws
   password: humanity
   port: 443
@@ -77,8 +55,10 @@ proxies:
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
+    headers:
+      Host: www.ignitelimit.com
     path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #13'
+- name: '美国+CloudFlare节点 #9'
   network: ws
   password: humanity
   port: 443
@@ -219,12 +199,17 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
-  network: tcp
-  port: 9028
-  server: select-us.ddnskunlun.com
-  tls: false
+  network: ws
+  port: 41963
+  server: us.klxiaogou.com
+  servername: us.klxiaogou.com
+  tls: true
   type: vmess
-  uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
+  uuid: 7a4830df-5391-4748-b1c7-b6857ad04acb
+  ws-opts:
+    headers:
+      Host: us.klxiaogou.com
+    path: /124
 - name: 🇺🇸[openproxylist.com] trojan-U...
   password: ND91608427
   port: 443
