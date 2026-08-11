@@ -1,4 +1,17 @@
 proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 德国+V2CROSS.COM
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 4-qE0E0B5ShfnAe0KFM0qRkXJ33rRF39AlHK7MpBzAE
+    short-id: '!!str 4c5a76834671'
+  server: kzbkjum.cvewfjg.shop
+  servername: www.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 59eefc04-b831-45cf-8d68-63ca23381171
 - name: 德国
   password: 2ef4cf10-34df-4c0f-9d82-bf6ca9e45025
   port: 443
@@ -76,6 +89,13 @@ proxies:
   sni: de.jey.cc.cd
   tls: false
   type: hysteria2
+- name: 🇩🇪 DE德国(mibei77.com 米贝节点分享)
+  password: MiTiVPN
+  port: 443
+  server: 151.101.56.7
+  skip-cert-verify: false
+  sni: default.fastly.com
+  type: trojan
 - name: 🇩🇪[openproxylist.com] vless-DE
   port: 22222
   server: 3.65.145.222
@@ -163,19 +183,12 @@ proxies:
   tls: false
   type: vless
   uuid: 7c9b4360-6be9-47f2-ace9-b87297ea3d8f
-- name: '🇩🇪[openproxylist.com] vless-DE #8'
-  port: 443
-  server: 77.239.123.219
-  tls: false
-  type: vless
-  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
 - alterId: 0
   cipher: auto
   name: '🇩🇪[openproxylist.com] vmess-DE #1'
   network: ws
   port: '2053'
-  server: 104.105.28.164
-  servername: deapp.jisuyun.top
+  server: deapp.jisuyun.top
   tls: true
   type: vmess
   uuid: 9a1a05d9-69be-45d3-e326-c6621edf7b31
@@ -183,30 +196,3 @@ proxies:
     headers:
       Host: deapp.jisuyun.top
     path: /devm
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: grpc
-  name: '🇩🇪[openproxylist.com] vless-DE #9'
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: faEedJtYwpjrjMXXhIMs3yT6BGIAdC-UCeX6TRC2ABs
-    short-id: '!!str 312c0c39'
-  server: 139.28.241.21
-  servername: www.telekom.de
-  tls: false
-  type: vless
-  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #10'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: Vci2ab6lM0ezoLBj2LgE-ynvakjbWOqUUSZmk5vcNjE
-    short-id: '!!str 44d44d1c625a13aa'
-  server: 45.145.56.163
-  servername: de2.spectrum.vu
-  tls: false
-  type: vless
-  uuid: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
