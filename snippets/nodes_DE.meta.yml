@@ -90,18 +90,19 @@ proxies:
   skip-cert-verify: false
   sni: default.fastly.com
   type: trojan
-- client-fingerprint: firefox
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
   name: 🇩🇪[openproxylist.com] vless-DE
   network: tcp
-  port: 3389
+  port: 443
   reality-opts:
-    public-key: NSlhQMA6VBgHPp7RsErk3hEdKuWPO0eeLdxgssfwbmY
-    short-id: '!!str d55a6f43c645adb4'
-  server: d07719df22c9fbbf.mbcloudynias.ir
-  servername: play.google.com
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: '!!str c39cc7310a'
+  server: 82.39.171.16
+  servername: yahoo.com
   tls: false
   type: vless
-  uuid: a06119a7-4f1a-4592-86d9-e050a332b2b3
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇩🇪[openproxylist.com] vless-DE #1'
@@ -114,23 +115,15 @@ proxies:
   tls: false
   type: vless
   uuid: 7c9b4360-6be9-47f2-ace9-b87297ea3d8f
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪[openproxylist.com] vmess-DE
-  network: ws
-  port: '2053'
-  server: deapp.jisuyun.top
-  servername: deapp.jisuyun.top
-  tls: true
-  type: vmess
-  uuid: 9a1a05d9-69be-45d3-e326-c6621edf7b31
-  ws-opts:
-    headers:
-      Host: deapp.jisuyun.top
-    path: /devm
+- name: '🇩🇪[openproxylist.com] vless-DE #2'
+  port: 443
+  server: 77.239.123.219
+  tls: false
+  type: vless
+  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #2'
+  name: '🇩🇪[openproxylist.com] vless-DE #3'
   network: tcp
   port: 443
   reality-opts:
@@ -141,9 +134,16 @@ proxies:
   tls: false
   type: vless
   uuid: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
+- name: '🇩🇪[openproxylist.com] vless-DE #4'
+  network: tcp
+  port: 51822
+  server: 5.75.201.77
+  tls: false
+  type: vless
+  uuid: 200e4181-caf2-4261-bd98-b1fd9ad1fce1
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #3'
+  name: '🇩🇪[openproxylist.com] vless-DE #5'
   network: tcp
   port: 443
   reality-opts:
@@ -157,7 +157,7 @@ proxies:
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: grpc
-  name: '🇩🇪[openproxylist.com] vless-DE #4'
+  name: '🇩🇪[openproxylist.com] vless-DE #6'
   network: grpc
   port: 7443
   reality-opts:
@@ -168,42 +168,3 @@ proxies:
   tls: false
   type: vless
   uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: api.v1.StreamService
-  name: '🇩🇪[openproxylist.com] vless-DE #5'
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: S8O8R938N960cpQfIIDXsJTxeGAkbVv6PlIqP0-d30w
-    short-id: '!!str 1ea59febb8d4fc8e'
-  server: 88.216.220.87
-  servername: api.noneok.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  uuid: a8e3155b-ceb1-4fcb-bc0c-2e77ec005401
-- name: '🇩🇪[openproxylist.com] vless-DE #6'
-  network: ws
-  port: 4100
-  server: 5.129.194.34
-  tls: false
-  type: vless
-  uuid: 9b44bfb4-9d28-4870-9fc3-5154d6d462ff
-  ws-opts:
-    headers:
-      Host: live.ok.ru
-    path: '%2Fv1'
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #7'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: '!!str c39cc7310a'
-  server: 82.39.171.131
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
