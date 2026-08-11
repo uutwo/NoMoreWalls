@@ -89,50 +89,11 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 南非+V2CROSS.COM
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
-    short-id: 'c6ef72e4635d15a5'
-  server: 45.196.201.132
-  servername: storage.yandex.net
-  tls: false
-  type: vless
-  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
-- flow: xtls-rprx-vision
-  name: 德国+V2CROSS.COM
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 4-qE0E0B5ShfnAe0KFM0qRkXJ33rRF39AlHK7MpBzAE
-    short-id: '4c5a76834671'
-  server: kzbkjum.cvewfjg.shop
-  servername: www.cloudflare.com
-  tls: false
-  type: vless
-  uuid: 59eefc04-b831-45cf-8d68-63ca23381171
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 英国+V2CROSS.COM
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
-    short-id: 'bbc68cec8bb8d2e3'
-  server: node19.mxvpn.dev
-  servername: node19.mxvpn.dev
-  tls: false
-  type: vless
-  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
 - name: 美国+CloudFlare节点
   network: ws
   password: humanity
   port: 443
-  server: 104.17.111.4
-  skip-cert-verify: false
+  server: www.speedtest.org
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -141,12 +102,68 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.207
+  server: 104.18.152.219
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #2'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.144
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #2'
+- name: '美国+CloudFlare节点 #3'
+  network: ws
+  port: 8080
+  server: premium-us-az-01-hostinger.efgwf.online
+  tls: false
+  type: vless
+  uuid: 59eefc04-b831-45cf-8d68-63ca23381171
+  ws-opts:
+    headers:
+      Host: premium-us-az-01-hostinger.efgwf.online
+    path: /ws-hTopcF3L
+- flow: xtls-rprx-vision
+  name: 加拿大+V2CROSS.COM
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: UE8hUjH1WYwemxIriq5lvtFCnHTdLF817okXr-u7MGs
+    short-id: '250b5976473a'
+  server: jyvlryz.cvewfjg.shop
+  servername: www.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 4e0f4e59-3613-4f0c-b824-7348413d20e6
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '美国+CloudFlare节点 #4'
+  network: ws
+  password: humanity
+  port: 443
+  server: join-telegram-channel.tirexnet.kdns.fr
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #5'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.155
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #6'
   network: ws
   password: humanity
   port: 443
@@ -156,38 +173,98 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #8'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
-    short-id: 'bbc68cec8bb8d2e3'
-  server: 77.239.123.219
-  servername: node19.mxvpn.dev
-  tls: false
-  type: vless
-  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
-- name: '美国+CloudFlare节点 #3'
+- name: '美国+CloudFlare节点 #7'
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.46
+  server: 104.18.152.143
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #4'
+- name: '美国+CloudFlare节点 #8'
+  network: ws
+  port: 443
+  server: da.mfa.gov.ua
+  servername: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
+  tls: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  ws-opts:
+    headers:
+      Host: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
+    path: /
+- name: 美国+麻省理工学院
+  network: ws
+  port: 443
+  server: 18.239.83.52
+  servername: d1yxsk0zprgivr.cloudfront.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+  ws-opts:
+    headers:
+      Host: d1yxsk0zprgivr.cloudfront.net
+    path: '%2F'
+- name: '美国+CloudFlare节点 #9'
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.108
+  server: 104.16.174.121
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: /assignment
+- name: '美国+CloudFlare节点 #10'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.210
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
     path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #5'
+- name: '美国+CloudFlare节点 #11'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.103
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #12'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.174.71
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #13'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.17.111.3
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #14'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.174.36
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #15'
   network: ws
   password: humanity
   port: 443
@@ -196,112 +273,30 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #6'
+- name: '美国+CloudFlare节点 #16'
   network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.246
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '🇳🇱[openproxylist.com] vless-NL #5'
-  network: ws
-  port: 443
-  server: 151.101.56.7
-  servername: ssl.fastly.com
-  skip-cert-verify: true
+  port: 2087
+  server: 172.64.53.140
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   tls: true
   type: vless
-  uuid: 255f9bd5-670f-4b34-9429-9e4388594160
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   ws-opts:
     headers:
-      Host: pane3.global.ssl.fastly.net
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
-- name: '美国+CloudFlare节点 #7'
-  network: ws
-  port: 443
-  server: 172.64.150.28
-  servername: hhlfy.twiladaphne.ndjp.net
-  tls: true
-  type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  ws-opts:
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-    path: /fp
-- name: 新加坡+Amazon数据中心
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: vpn-sg-001.fastervpn.world
-  skip-cert-verify: true
-  sni: vpn-sg-001.fastervpn.world
-  tls: false
-  type: hysteria2
-- name: '美国+CloudFlare节点 #8'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.17.177.143
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #9'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.113
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
 - flow: xtls-rprx-vision
-  name: 爱尔兰+V2CROSS.COM
+  name: '加拿大+V2CROSS.COM #1'
   network: tcp
-  port: 13868
+  port: 443
   reality-opts:
-    public-key: W24D31y_1ZaASX1bq3d85DQaQd_3NcJQCvg1wmCn-Uo
-    short-id: 'e852dc'
-  server: 78.17.158.16
-  servername: www.ea.com
+    public-key: UE8hUjH1WYwemxIriq5lvtFCnHTdLF817okXr-u7MGs
+    short-id: '250b5976473a'
+  server: 167.17.68.205
+  servername: www.cloudflare.com
   tls: false
   type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-- name: '美国+CloudFlare节点 #10'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.77
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- flow: xtls-rprx-vision
-  name: '爱尔兰+V2CROSS.COM #1'
-  network: raw
-  port: 13868
-  reality-opts:
-    public-key: sgpya-5ohMKCjzyrDe4RWz7b8O9XegDzQ88oHCV45Gk
-    short-id: 'e852dc'
-  server: 78.17.126.47
-  servername: booking.com
-  tls: false
-  type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-- name: '美国+CloudFlare节点 #11'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.21.46.3
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
+  uuid: 4e0f4e59-3613-4f0c-b824-7348413d20e6
 - name: 荷兰
   password: 042a1881-44e4-4781-bd40-bf75164faf4f
   port: 443
@@ -349,7 +344,8 @@ proxies:
   sni: musicclips.videolinks.ru
   tls: false
   type: hysteria2
-- name: '波兰 #1'
+- fingerprint: chrome
+  name: 🇵🇱PL-🚀@VPNine1
   obfs: salamander
   obfs-password: 1yvnm8sv41
   password: 2b5f7fc3d38f4798a0f62d4ef8876528
@@ -557,6 +553,14 @@ proxies:
   server: 3.36.89.239
   skip-cert-verify: true
   sni: vpn-kr-003.fastervpn.world
+  tls: false
+  type: hysteria2
+- name: 🇨🇦140465 | ⚡️Telegram = t.me/S...
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 99.79.62.65
+  skip-cert-verify: true
+  sni: www.bing.com
   tls: false
   type: hysteria2
 - name: '罗马尼亚 #2'
@@ -794,20 +798,12 @@ proxies:
   sni: hopp-legend-se.roxa.org
   tls: false
   type: hysteria2
-- name: 🇺🇸140322 | ⚡️Telegram = t.me/S...
+- name: 🇸🇬140470 | ⚡️Telegram = t.me/S...
   password: qQe1z5kU8kN6SlKnDt9Ru3Qp
   port: 443
-  server: 44.251.47.95
+  server: 13.229.106.122
   skip-cert-verify: true
   sni: css.rbxcdn.com
-  tls: false
-  type: hysteria2
-- name: 🇸🇬140318 | ⚡️Telegram = t.me/S...
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: 47.129.9.33
-  skip-cert-verify: true
-  sni: vk.com
   tls: false
   type: hysteria2
 - name: 🇺🇸139909 | ⚡️Telegram = t.me/S...
@@ -856,119 +852,23 @@ proxies:
   sni: 185.47.172.226
   tls: false
   type: hysteria2
-- alpn:
-  - h3
-  fingerprint: chrome
-  name: 🇫🇮FI-🚀@VPNine1
+- name: 🇫🇮FI-🚀@VPNine1
   obfs: salamander
-  obfs-password: gu74jg3ym0e21zco
+  obfs-password: l960g2kn19nphlra
   password: 4ff4adfb8e7a4bae9c959c54fa5af52f
-  port: 52000
-  server: assets.gateway-stream.com
-  sni: ''
-  tls: false
-  type: hysteria2
-- alpn:
-  - h3
-  fingerprint: chrome
-  name: '🇫🇮FI-🚀@VPNine1 #1'
-  obfs: salamander
-  obfs-password: gu74jg3ym0e21zco
-  password: 4ff4adfb8e7a4bae9c959c54fa5af52f
-  port: 52000
-  server: assets.gateway-stream.com
-  sni: assets.gateway-stream.com
-  tls: false
-  type: hysteria2
-- alpn:
-  - h3
-  fingerprint: chrome
-  name: '🇫🇮FI-🚀@VPNine1 #2'
-  obfs: salamander
-  obfs-password: 527zd9w4nuaccd7g
-  password: 4ff4adfb8e7a4bae9c959c54fa5af52f
-  port: 52001
-  server: assets.gateway-stream.com
-  sni: ''
-  tls: false
-  type: hysteria2
-- alpn:
-  - h3
-  fingerprint: chrome
-  name: '🇫🇮FI-🚀@VPNine1 #3'
-  obfs: salamander
-  obfs-password: 527zd9w4nuaccd7g
-  password: 4ff4adfb8e7a4bae9c959c54fa5af52f
-  port: 52001
-  server: assets.gateway-stream.com
-  sni: assets.gateway-stream.com
-  tls: false
-  type: hysteria2
-- name: '🇫🇮FI-🚀@VPNine1 #4'
-  obfs: salamander
-  obfs-password: ielzukpwth087afx
-  password: 4ff4adfb8e7a4bae9c959c54fa5af52f
-  port: 52002
-  server: assets.gateway-stream.com
-  skip-cert-verify: false
-  sni: ''
-  tls: false
-  type: hysteria2
-- name: '🇫🇮FI-🚀@VPNine1 #5'
-  obfs: salamander
-  obfs-password: ielzukpwth087afx
-  password: 4ff4adfb8e7a4bae9c959c54fa5af52f
-  port: 52002
+  port: 52060
   server: assets.gateway-stream.com
   skip-cert-verify: false
   sni: assets.gateway-stream.com
   tls: false
   type: hysteria2
-- alpn:
-  - h3
-  fingerprint: chrome
-  name: '🇫🇮FI-🚀@VPNine1 #6'
+- name: '🇫🇮FI-🚀@VPNine1 #1'
   obfs: salamander
-  obfs-password: 5xo4v7u2pv8bktvb
+  obfs-password: fd3olglr2bmimgje
   password: 4ff4adfb8e7a4bae9c959c54fa5af52f
-  port: 52003
+  port: 52061
   server: assets.gateway-stream.com
-  sni: ''
-  tls: false
-  type: hysteria2
-- alpn:
-  - h3
-  fingerprint: chrome
-  name: '🇫🇮FI-🚀@VPNine1 #7'
-  obfs: salamander
-  obfs-password: 5xo4v7u2pv8bktvb
-  password: 4ff4adfb8e7a4bae9c959c54fa5af52f
-  port: 52003
-  server: assets.gateway-stream.com
-  sni: assets.gateway-stream.com
-  tls: false
-  type: hysteria2
-- alpn:
-  - h3
-  fingerprint: chrome
-  name: '🇫🇮FI-🚀@VPNine1 #8'
-  obfs: salamander
-  obfs-password: mczdcsrottar7v8t
-  password: 4ff4adfb8e7a4bae9c959c54fa5af52f
-  port: 52004
-  server: assets.gateway-stream.com
-  sni: ''
-  tls: false
-  type: hysteria2
-- alpn:
-  - h3
-  fingerprint: chrome
-  name: '🇫🇮FI-🚀@VPNine1 #9'
-  obfs: salamander
-  obfs-password: mczdcsrottar7v8t
-  password: 4ff4adfb8e7a4bae9c959c54fa5af52f
-  port: 52004
-  server: assets.gateway-stream.com
+  skip-cert-verify: false
   sni: assets.gateway-stream.com
   tls: false
   type: hysteria2
@@ -1121,51 +1021,11 @@ proxies:
   sni: assets.gateway-stream.com
   tls: false
   type: hysteria2
-- name: 'kurdconfig #1'
+- name: '@configprxy'
   obfs: salamander
   obfs-password: p61ckuavkc1s2hfl
   password: kjq3gpn1xom1ted9
   port: 52031
-  server: assets.gateway-stream.com
-  skip-cert-verify: false
-  sni: assets.gateway-stream.com
-  tls: false
-  type: hysteria2
-- name: '@FarazV2ray'
-  obfs: salamander
-  obfs-password: dscbu47eev49tv84
-  password: kjq3gpn1xom1ted9
-  port: 52086
-  server: assets.gateway-stream.com
-  skip-cert-verify: false
-  sni: assets.gateway-stream.com
-  tls: false
-  type: hysteria2
-- name: '@FarazV2ray #1'
-  obfs: salamander
-  obfs-password: bwgy7ppdoiz448uw
-  password: kjq3gpn1xom1ted9
-  port: 52087
-  server: assets.gateway-stream.com
-  skip-cert-verify: false
-  sni: assets.gateway-stream.com
-  tls: false
-  type: hysteria2
-- name: '@FarazV2ray #2'
-  obfs: salamander
-  obfs-password: qfsk2h15o2dm0msi
-  password: kjq3gpn1xom1ted9
-  port: 52088
-  server: assets.gateway-stream.com
-  skip-cert-verify: false
-  sni: assets.gateway-stream.com
-  tls: false
-  type: hysteria2
-- name: '@FarazV2ray #3'
-  obfs: salamander
-  obfs-password: hitar6eeayxd7imh
-  password: kjq3gpn1xom1ted9
-  port: 52089
   server: assets.gateway-stream.com
   skip-cert-verify: false
   sni: assets.gateway-stream.com
@@ -1179,16 +1039,6 @@ proxies:
   server: 130.49.161.70
   skip-cert-verify: false
   sni: hy2.aspidnet.xyz
-  tls: false
-  type: hysteria2
-- name: 'kurdconfig #2'
-  obfs: salamander
-  obfs-password: TelEgRam=V2RayyNGvpn
-  password: pjyFpMEKFH
-  port: 443
-  server: 185.253.117.217
-  skip-cert-verify: true
-  sni: www.intel.com
   tls: false
   type: hysteria2
 - alpn:
@@ -1475,7 +1325,7 @@ proxies:
   skip-cert-verify: false
   sni: jpefoaweho04.jptimecsgo.xyz
   type: trojan
-- name: 🏳[openproxylist.com] trojan-
+- name: '🇯🇵[openproxylist.com] trojan-J... #1'
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20004
   server: oplosgru-c.catcat321.com
@@ -1687,7 +1537,81 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🏳[openproxylist.com] vless-
+- name: 🇳🇱[openproxylist.com] vless-NL
+  network: ws
+  port: 443
+  server: 31.76.76.26
+  tls: false
+  type: vless
+  uuid: 2f956d32-8a67-4bc9-8995-e1621ad20ddc
+  ws-opts:
+    path: /
+- flow: xtls-rprx-vision
+  name: 🇬🇧[openproxylist.com] vless-GB
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: sBSNX3DhJSWOkqTmRHisayVLisCBQLb4JcpKzwCrvC0
+  server: 164.37.105.38
+  servername: gb.cdn.cachefleet.com
+  tls: false
+  type: vless
+  uuid: f4dbc770-016d-4a0f-82f0-d83ee6f45da3
+- name: 🇺🇸[openproxylist.com] vless-US
+  network: ws
+  port: 2095
+  server: cf.levikogjgfdd.ir
+  tls: false
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  ws-opts:
+    headers:
+      Host: download.pusytroller.gq
+    path: /
+- flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: '1a'
+  server: 66.175.217.170
+  servername: www.amazon.com
+  tls: false
+  type: vless
+  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
+- name: 🇩🇪[openproxylist.com] vless-DE
+  network: ws
+  port: 8443
+  server: 64.188.64.141
+  tls: false
+  type: vless
+  uuid: c83ee688-8f37-4f4c-94a2-5d6384950b5d
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪[openproxylist.com] vmess-DE
+  network: tcp
+  port: '2086'
+  server: usa.sangarvip.panal-shop-sangar-shkan.xyz
+  tls: false
+  type: vmess
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇷🇺[openproxylist.com] vless-RU
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: cNWgfJHerzIEb0RXxncP8R9Ex8-FkALOtbhneEIHpR0
+    short-id: 'a1b2c4d4a1b2c5d5'
+  server: 85.209.135.10
+  servername: www.sciencedirect.com
+  tls: false
+  type: vless
+  uuid: 9500cf8b-020a-4a70-906c-e14bb5375875
+- name: '🇷🇺[openproxylist.com] vless-RU #1'
   network: tcp
   port: 40443
   reality-opts:
@@ -1702,7 +1626,7 @@ proxies:
     path: /
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇳🇱[openproxylist.com] vless-NL
+  name: '🇳🇱[openproxylist.com] vless-NL #1'
   network: tcp
   port: 443
   reality-opts:
@@ -1727,7 +1651,7 @@ proxies:
   type: vless
   uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
 - flow: xtls-rprx-vision
-  name: '🇳🇱[openproxylist.com] vless-NL #1'
+  name: '🇳🇱[openproxylist.com] vless-NL #2'
   network: tcp
   port: 443
   reality-opts:
@@ -1738,30 +1662,7 @@ proxies:
   tls: false
   type: vless
   uuid: 06ee3130-cb1e-4d66-b61c-d221eec984ed
-- name: '🇳🇱[openproxylist.com] vless-NL #2'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: PaSevYhTNv2H4DybOmCBXmpsueeFXtJ7IMfVKyBckDQ
-    short-id: '7cefdad7acf2cb68'
-  server: 2.26.83.204
-  servername: id.vk.ru
-  tls: false
-  type: vless
-  uuid: 5d577f62-28a8-4b7e-9441-9307b6132065
-- name: 🇺🇸[openproxylist.com] vless-US
-  network: ws
-  port: 2053
-  server: www.visa.cn
-  servername: ccsus11-cdn-cdn.nekohub.xyz
-  tls: true
-  type: vless
-  uuid: 7bd30627-8487-4506-bc42-b07722b24633
-  ws-opts:
-    headers:
-      Host: ccsus11-cdn.nekohub.xyz
-    path: /vless_ws?ed=4096fp=chrome
-- name: 🇩🇪[openproxylist.com] vless-DE
+- name: '🇩🇪[openproxylist.com] vless-DE #1'
   port: 22222
   server: 3.65.145.222
   tls: false
@@ -1774,19 +1675,7 @@ proxies:
   skip-cert-verify: true
   sni: t11.qifei.app
   type: trojan
-- flow: xtls-rprx-vision
-  name: '🇳🇱[openproxylist.com] vless-NL #3'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 8EPzwlenieiAy21ktdbQITnHJHA_biE4TVbN6OcDSSY
-    short-id: '4e40ed8b114da1ae'
-  server: 89.124.116.234
-  servername: www.googletagmanager.com
-  tls: false
-  type: vless
-  uuid: 4d5fea10-c669-4cb9-91b2-9d179b844520
-- name: '🇺🇸[openproxylist.com] vless-US #1'
+- name: '🇺🇸[openproxylist.com] vless-US #2'
   port: 2095
   server: 188.114.97.6
   tls: false
@@ -1794,12 +1683,6 @@ proxies:
   uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   ws-opts:
     path: '%2F'
-- name: '🇩🇪[openproxylist.com] vless-DE #1'
-  port: 22222
-  server: 63.180.222.124
-  tls: false
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - alterId: 0
   cipher: auto
   name: 🏳[openproxylist.com] vmess-
@@ -1814,20 +1697,19 @@ proxies:
     headers:
       Host: rush-72frf.meeopp.site
     path: /video/o2nwt7/r0r2dmbb.m3u8
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: vless-grpc-reality
-  name: '🇩🇪[openproxylist.com] vless-DE #2'
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 147.45.48.139
-  servername: id.vk.com
-  tls: false
+- name: 🏳[openproxylist.com] vless-
+  network: ws
+  port: 2096
+  server: 91.193.58.140
+  servername: free-server.techsonic.dev
+  tls: true
   type: vless
-  uuid: b1b3e430-ff52-44b8-b95d-27fa580fbc4f
-- name: '🇳🇱[openproxylist.com] vless-NL #4'
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  ws-opts:
+    headers:
+      Host: free-server.techsonic.dev
+    path: /free-server.techsonic.dev
+- name: '🇳🇱[openproxylist.com] vless-NL #3'
   network: ws
   port: 443
   server: 199.232.78.159
@@ -1846,16 +1728,9 @@ proxies:
   tls: false
   type: vless
   uuid: 73435d4e-2ac1-4dba-900e-81aac3dc5913
-- grpc-opts:
-    grpc-service-name: your-custom-path
-  name: '🇺🇸[openproxylist.com] vless-US #2'
-  network: grpc
+- name: '🇺🇸[openproxylist.com] vless-US #3'
   port: 443
-  reality-opts:
-    public-key: gr7DAOBqoNiHEUhWZQh3nSqBOmg6QwmRC0HKj7TOsUk
-    short-id: '2da4299da566b7'
   server: 45.151.101.103
-  servername: maps.apple.com
   tls: false
   type: vless
   uuid: 95e8532b-cc69-42d4-9553-e3c23292b15b
@@ -1865,24 +1740,7 @@ proxies:
   tls: false
   type: vless
   uuid: 95e8532b-cc69-42d4-9553-e3c23292b15b
-- name: 🇺🇸[openproxylist.com] trojan-U...
-  password: BxceQaOe
-  port: 39024
-  server: 18.166.226.204
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪[openproxylist.com] vmess-DE
-  network: tcp
-  port: '443'
-  server: 142.132.189.247
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b1211a37-ac2b-4cd0-9f3d-732028caa184
-- name: '🇩🇪[openproxylist.com] vless-DE #3'
+- name: '🇩🇪[openproxylist.com] vless-DE #2'
   network: tcp
   port: 9999
   server: freetg.strettenvpn.com
@@ -1901,7 +1759,7 @@ proxies:
   ws-opts:
     path: /p
 - flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #4'
+  name: '🇩🇪[openproxylist.com] vless-DE #3'
   network: tcp
   port: 443
   reality-opts:
@@ -1912,21 +1770,43 @@ proxies:
   tls: false
   type: vless
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- name: 🇬🇧[openproxylist.com] vless-GB
+- name: '🇬🇧[openproxylist.com] vless-GB #1'
   network: tcp
   port: 443
   server: 191.215.37.90
   tls: false
   type: vless
   uuid: 88888888-8888-8888-8888-888888888888
-- name: '🇺🇸[openproxylist.com] trojan-U... #1'
+- alterId: 0
+  cipher: auto
+  name: 🇮🇳[openproxylist.com] vmess-IN
+  network: tcp
+  port: '11973'
+  server: board-04.ddnskunlun.com
+  tls: false
+  type: vmess
+  uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
+- name: '🏳[openproxylist.com] vless- #1'
+  network: ws
+  port: 443
+  server: 151.101.56.7
+  servername: ssl.fastly.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 255f9bd5-670f-4b34-9429-9e4388594160
+  ws-opts:
+    headers:
+      Host: pane3.global.ssl.fastly.net
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+- name: 🇺🇸[openproxylist.com] trojan-U...
   password: ND91608427
   port: 443
   server: 35.86.90.51
   sni: natural-collie.rooster465.autos
   type: trojan
 - flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #3'
+  name: '🇺🇸[openproxylist.com] vless-US #4'
   network: tcp
   port: 37262
   reality-opts:
@@ -1939,7 +1819,20 @@ proxies:
   uuid: b0804657-2bd1-4ccd-bdc8-b599b2d2f23d
 - grpc-opts:
     grpc-service-name: UpdateService
-  name: '🇳🇱[openproxylist.com] vless-NL #6'
+  name: '🇺🇸[openproxylist.com] vless-US #5'
+  network: grpc
+  port: 25565
+  reality-opts:
+    public-key: pBd5IOD_sCDpIDqgi6EtZ6DAAMGns9n2C3qPH0i3Tno
+    short-id: '52'
+  server: 77.110.115.8
+  servername: yandex.ru
+  tls: false
+  type: vless
+  uuid: 086422b2-3347-45f8-b527-d9e1be25dc56
+- grpc-opts:
+    grpc-service-name: UpdateService
+  name: '🇳🇱[openproxylist.com] vless-NL #4'
   network: grpc
   port: 25565
   reality-opts:
@@ -1950,7 +1843,79 @@ proxies:
   tls: false
   type: vless
   uuid: 086422b2-3347-45f8-b527-d9e1be25dc56
-- name: '🇧🇷[openproxylist.com] vless-BR #3'
+- name: 🇫🇮[openproxylist.com] vless-FI
+  network: tcp
+  port: 3389
+  reality-opts:
+    public-key: NSlhQMA6VBgHPp7RsErk3hEdKuWPO0eeLdxgssfwbmY
+    short-id: 'c6cbc90da6316b21'
+  server: apro.foot8all.ir
+  servername: play.google.com
+  tls: false
+  type: vless
+  uuid: a06119a7-4f1a-4592-86d9-e050a332b2b3
+- name: '🇩🇪[openproxylist.com] vless-DE #4'
+  network: tcp
+  port: 3389
+  reality-opts:
+    public-key: NSlhQMA6VBgHPp7RsErk3hEdKuWPO0eeLdxgssfwbmY
+    short-id: 'd55a6f43c645adb4'
+  server: d07719df22c9fbbf.mbcloudynias.ir
+  servername: play.google.com
+  tls: false
+  type: vless
+  uuid: a06119a7-4f1a-4592-86d9-e050a332b2b3
+- name: '🇬🇧[openproxylist.com] vless-GB #2'
+  network: tcp
+  port: 443
+  server: 185.232.117.115
+  tls: false
+  type: vless
+  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
+- name: '🇬🇧[openproxylist.com] vless-GB #3'
+  network: tcp
+  port: 443
+  server: 185.232.117.113
+  tls: false
+  type: vless
+  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
+- flow: xtls-rprx-vision
+  name: '🇳🇱[openproxylist.com] vless-NL #5'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: cNWgfJHerzIEb0RXxncP8R9Ex8-FkALOtbhneEIHpR0
+    short-id: 'a1b2c4d4a1b2c5d5'
+  server: 144.31.237.206
+  servername: www.sciencedirect.com
+  tls: false
+  type: vless
+  uuid: 9500cf8b-020a-4a70-906c-e14bb5375875
+- flow: xtls-rprx-vision
+  name: '🇬🇧[openproxylist.com] vless-GB #4'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: b75SrHI--As9QxOVfRIPkGmGfXjs53CGAjbws2K99Rs
+  server: 194.150.166.12
+  servername: www.avito.ru
+  tls: false
+  type: vless
+  uuid: 1e973bda-3a02-4431-9df8-83595f6f65d8
+- client-fingerprint: safari
+  grpc-opts:
+    grpc-service-name: vless-grpc-reality
+  name: 🇫🇷[openproxylist.com] vless-FR
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: ns.o11111o.club
+  servername: id.vk.com
+  tls: false
+  type: vless
+  uuid: b1b3e430-ff52-44b8-b95d-27fa580fbc4f
+- name: '🇧🇷[openproxylist.com] vless-BR #5'
   network: ws
   port: 443
   server: 177.3.208.169
@@ -1963,37 +1928,6 @@ proxies:
     headers:
       Host: titandarkness.mooo.com
     path: '%2F21381%2F0kO2id8FMQ'
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '🇳🇱[openproxylist.com] vless-NL #7'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: OTuJX9K_E2nHhg0mXT2uFMNIO7746G6c5rlT6OscQGk
-    short-id: '9698d67e63bc8ee0'
-  server: 157.22.193.73
-  servername: larkix.pulsio.cfd
-  tls: false
-  type: vless
-  uuid: 1bced29a-3051-42b8-b393-005135b97616
-- flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
-    short-id: 'fdda9806fe5d8584'
-  server: 185.232.117.113
-  servername: vl03.skorostnet.space
-  tls: false
-  type: vless
-  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
-- name: '🇳🇱[openproxylist.com] vless-NL #8'
-  port: 443
-  server: 144.31.237.206
-  tls: false
-  type: vless
-  uuid: 9500cf8b-020a-4a70-906c-e14bb5375875
 - name: '🇩🇪[openproxylist.com] vless-DE #5'
   network: tcp
   port: 8080
@@ -2005,7 +1939,7 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 185.255.179.166
+  server: 194.135.80.192
   skip-cert-verify: false
   sni: www.calmlunch.com
   type: trojan
@@ -2014,7 +1948,7 @@ proxies:
       Host: www.calmlunch.com
     path: '%2Fassignment'
 - flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #4'
+  name: '🇺🇸[openproxylist.com] vless-US #6'
   network: tcp
   port: 443
   reality-opts:
@@ -2025,35 +1959,40 @@ proxies:
   tls: false
   type: vless
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- name: '🇬🇧[openproxylist.com] vless-GB #2'
+- name: '🇬🇧[openproxylist.com] vless-GB #5'
   network: tcp
   port: 20190
   server: 169.197.113.179
   tls: false
   type: vless
   uuid: ad4dd89a-2e4b-4f33-bb96-7e9c4eb85d0b
-- name: '🇳🇱[openproxylist.com] vless-NL #12'
+- client-fingerprint: qq
+  name: '🇳🇱[openproxylist.com] vless-NL #6'
+  network: ws
   port: 443
   server: 188.72.103.3
-  tls: false
+  servername: cdn.tracker.yandex.net
+  skip-cert-verify: false
+  tls: true
   type: vless
   uuid: 166ef05e-8ab5-43b7-8910-d1bb0a4326a5
   ws-opts:
-    path: '%2Fapi%2Fv1%2Frooms%2F63368e3dbb%2Fsync%2F%3FTELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI%3Fed%3D512'
-- name: '🇧🇷[openproxylist.com] vless-BR #5'
-  network: ws
-  port: 443
-  server: titandarkness.mooo.com
-  servername: titandarkness.mooo.com
-  tls: true
-  type: vless
-  uuid: 4f375fb4-3c95-425f-bc7b-8085487a6f3c
-  ws-opts:
     headers:
-      Host: titandarkness.mooo.com
-    path: '%2F21381%2F0kO2id8FMQ'
+      Host: sync.watchwave.link
+    path: '%2Fapi%2Fv1%2Frooms%2F63368e3dbb%2Fsync'
 - flow: xtls-rprx-vision
-  name: '🏳[openproxylist.com] vless- #2'
+  name: 🇪🇪[openproxylist.com] vless-EE
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: g-WqfHKjac71MMtkmq5bIvTFavzXTCAnEI_17KoTNSQ
+  server: 91.235.234.186
+  servername: us7fs3.proxen.pdevinfra.com
+  tls: false
+  type: vless
+  uuid: 4593aa27-a2a1-412f-935f-3829495c0970
+- flow: xtls-rprx-vision
+  name: '🇳🇱[openproxylist.com] vless-NL #7'
   network: tcp
   port: 443
   reality-opts:
@@ -2078,26 +2017,22 @@ proxies:
     headers:
       Host: us.klxiaogou.com
     path: /124
+- name: '🇺🇸[openproxylist.com] vless-US #7'
+  network: tcp
+  port: 59216
+  server: 70.39.197.9
+  tls: false
+  type: vless
+  uuid: 0bcec952-a452-43ed-9468-4547b9f5dfc4
 - alterId: 0
   cipher: auto
-  name: 🇧🇩[openproxylist.com] vmess-BD
+  name: '🏳[openproxylist.com] vmess- #1'
   network: tcp
   port: '11885'
   server: board-02.ddnskunlun.com
   tls: false
   type: vmess
   uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
-- name: 🇸🇬[openproxylist.com] vless-SG
-  network: ws
-  port: 17658
-  server: 206.189.146.23
-  tls: false
-  type: vless
-  uuid: 7362c389-7f4b-4c41-9594-fdb847570243
-  ws-opts:
-    headers:
-      Host: zoom.us
-    path: /Free By Tharuwa (0767597317)
 - name: 🇰🇿[openproxylist.com] vless-KZ
   network: grpc
   port: 51940
@@ -2117,12 +2052,12 @@ proxies:
   port: 443
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 147.45.48.135
+  server: 147.45.48.143
   servername: id.vk.com
   tls: false
   type: vless
   uuid: b1b3e430-ff52-44b8-b95d-27fa580fbc4f
-- name: 🇫🇮[openproxylist.com] vless-FI
+- name: '🇫🇮[openproxylist.com] vless-FI #1'
   network: grpc
   port: 59631
   reality-opts:
@@ -2145,7 +2080,7 @@ proxies:
       Host: play.google.com
     path: /api/v2/xtrnwqjbkr?ed=2560
 - flow: xtls-rprx-vision
-  name: '🇳🇱[openproxylist.com] vless-NL #10'
+  name: '🇳🇱[openproxylist.com] vless-NL #8'
   network: tcp
   port: 443
   reality-opts:
@@ -2156,14 +2091,14 @@ proxies:
   tls: false
   type: vless
   uuid: d067adf8-9adc-4854-990d-f779875a855e
-- name: '🇬🇧[openproxylist.com] vless-GB #3'
+- name: '🇬🇧[openproxylist.com] vless-GB #6'
   network: tcp
   port: 35412
   server: 87.242.85.201
   tls: false
   type: vless
-  uuid: 22a0751d-4db7-4a51-ba80-d8ddf24e0b77
-- name: '🇳🇱[openproxylist.com] vless-NL #11'
+  uuid: bfa91d79-049c-41e1-be94-029397377150
+- name: '🇳🇱[openproxylist.com] vless-NL #9'
   network: ws
   port: 443
   server: 188.72.103.3
@@ -2187,14 +2122,23 @@ proxies:
   tls: false
   type: vless
   uuid: 7c9b4360-6be9-47f2-ace9-b87297ea3d8f
-- name: '🏳[openproxylist.com] vless- #3'
+- name: '🇳🇱[openproxylist.com] vless-NL #10'
+  port: 443
+  server: 188.72.103.3
+  tls: false
+  type: vless
+  uuid: 166ef05e-8ab5-43b7-8910-d1bb0a4326a5
+  ws-opts:
+    path: '%2Fapi%2Fv1%2Frooms%2F63368e3dbb%2Fsync%2F%3FTELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI%3Fed%3D512'
+- name: '🏳[openproxylist.com] vless- #2'
   port: 8443
   server: 188.225.33.206
   tls: false
   type: vless
   uuid: c124a209-d949-4951-8234-e2d918b3e6c0
-- flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #4'
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇬🇧[openproxylist.com] vless-GB #7'
   network: tcp
   port: 443
   reality-opts:
@@ -2207,7 +2151,7 @@ proxies:
   uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
 - client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: '🏳[openproxylist.com] vless- #4'
+  name: '🇺🇸[openproxylist.com] vless-US #8'
   network: tcp
   port: 443
   reality-opts:
@@ -2225,18 +2169,16 @@ proxies:
   sni: dynamic-grubworm.rooster465.autos
   type: trojan
 - name: 🇮🇪[openproxylist.com] trojan-I...
-  network: tcp
   password: UO36402987
   port: 443
-  server: 34.251.228.118
-  skip-cert-verify: false
+  server: definite-ladybird.rooster465.autos
   sni: definite-ladybird.rooster465.autos
   type: trojan
 - name: '🇫🇷[openproxylist.com] trojan-F... #1'
   network: ws
   password: humanity
-  port: 443
-  server: 185.225.68.232
+  port: 2053
+  server: 5.35.37.238
   skip-cert-verify: false
   sni: www.calmlunch.com
   type: trojan
@@ -2269,7 +2211,7 @@ proxies:
   type: vless
   uuid: b406bc51-9002-474c-beae-b194b02c91da
   ws-opts:
-    path: /
+    path: '%2f'
 - flow: xtls-rprx-vision
   name: 🇱🇹[openproxylist.com] vless-LT
   network: tcp
@@ -2281,19 +2223,34 @@ proxies:
   tls: false
   type: vless
   uuid: f1c496bf-d2ab-45be-bc13-051d60d227b7
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #2'
-  network: tcp
-  port: '443'
-  server: 165.140.216.142
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇳🇱[openproxylist.com] vless-NL #13'
+  name: '🇫🇷[openproxylist.com] vless-FR #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
+    short-id: 'bbc68cec8bb8d2e3'
+  server: 81.19.137.181
+  servername: node21.mxvpn.dev
+  tls: false
+  type: vless
+  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #8'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
+    short-id: 'bbc68cec8bb8d2e3'
+  server: 77.239.123.219
+  servername: node19.mxvpn.dev
+  tls: false
+  type: vless
+  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
+- flow: xtls-rprx-vision
+  name: '🏳[openproxylist.com] vless- #3'
   network: tcp
   port: 443
   reality-opts:
@@ -2306,7 +2263,7 @@ proxies:
   uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇳🇱[openproxylist.com] vless-NL #14'
+  name: '🇳🇱[openproxylist.com] vless-NL #11'
   network: tcp
   port: 443
   reality-opts:
@@ -2317,7 +2274,7 @@ proxies:
   tls: false
   type: vless
   uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
-- name: '🇸🇬[openproxylist.com] vless-SG #1'
+- name: '🏳[openproxylist.com] vless- #4'
   network: tcp
   port: 40480
   server: 47.236.106.241
@@ -2336,7 +2293,7 @@ proxies:
     headers:
       Host: titandarkness.mooo.com
     path: /21381/0kO2id8FMQ
-- name: '🇺🇸[openproxylist.com] trojan-U... #2'
+- name: '🇺🇸[openproxylist.com] trojan-U... #1'
   password: ND91608427
   port: 443
   server: pet-ghost.rooster465.autos
@@ -2348,6 +2305,7 @@ proxies:
   network: ws
   port: '2053'
   server: deapp.jisuyun.top
+  servername: deapp.jisuyun.top
   tls: true
   type: vmess
   uuid: 9a1a05d9-69be-45d3-e326-c6621edf7b31
@@ -2355,22 +2313,11 @@ proxies:
     headers:
       Host: deapp.jisuyun.top
     path: /devm
-- name: 🇷🇺[openproxylist.com] vless-RU
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: wdWQNp1lnaFZ3L_r9hRK5vpVgv9M7UBb5JZuYPcWDAE
-    short-id: 'e96bc8c85c3836'
-  server: 46.8.158.22
-  servername: www.icloud.com
-  tls: false
-  type: vless
-  uuid: 89755337-8050-401c-86d1-c8c34fb88d89
 - name: '🇫🇷[openproxylist.com] trojan-F... #3'
   network: ws
   password: humanity
-  port: 2053
-  server: 212.118.52.236
+  port: 443
+  server: 45.87.41.18
   skip-cert-verify: false
   sni: www.calmlunch.com
   type: trojan
@@ -2379,7 +2326,30 @@ proxies:
       Host: www.calmlunch.com
     path: '%2Fassignment'
 - flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #5'
+  name: '🇺🇸[openproxylist.com] vless-US #9'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: 'c39cc7310a'
+  server: 169.40.42.133
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+- name: 🇯🇵[openproxylist.com] vless-JP
+  network: tcp
+  port: 27407
+  reality-opts:
+    public-key: SajK6LzHBkkFlEXjIwseyqbpezgPiop5ZnSToou3G04
+    short-id: 'e6ac18b63f23'
+  server: 13.193.205.133
+  servername: bgcpartners.com
+  tls: false
+  type: vless
+  uuid: cd5cf6e7-7ce5-42c9-9316-68210fa72a32
+- flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #10'
   network: tcp
   port: 443
   reality-opts:
@@ -2391,7 +2361,7 @@ proxies:
   type: vless
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
 - flow: xtls-rprx-vision
-  name: 🇫🇷[openproxylist.com] vless-FR
+  name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: tcp
   port: 443
   reality-opts:
@@ -2404,7 +2374,7 @@ proxies:
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: grpc
-  name: '🏳[openproxylist.com] vless- #5'
+  name: '🇩🇪[openproxylist.com] vless-DE #9'
   network: grpc
   port: 443
   reality-opts:
@@ -2417,25 +2387,26 @@ proxies:
   uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇫🇮[openproxylist.com] vless-FI #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
-    short-id: 'bbc68cec8bb8d2e3'
-  server: 144.31.226.178
-  servername: node16.mxvpn.dev
-  tls: false
-  type: vless
-  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
-- flow: xtls-rprx-vision
   name: '🇫🇮[openproxylist.com] vless-FI #2'
   network: tcp
   port: 443
   reality-opts:
     public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
     short-id: 'bbc68cec8bb8d2e3'
-  server: 144.31.226.177
+  server: node16.mxvpn.dev
+  servername: node16.mxvpn.dev
+  tls: false
+  type: vless
+  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇫🇮[openproxylist.com] vless-FI #3'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
+    short-id: 'bbc68cec8bb8d2e3'
+  server: node15.mxvpn.dev
   servername: node15.mxvpn.dev
   tls: false
   type: vless
@@ -2444,21 +2415,21 @@ proxies:
   network: tcp
   password: ND91608427
   port: 443
-  server: willing-beagle.rooster465.autos
-  skip-cert-verify: true
+  server: 54.217.133.71
+  skip-cert-verify: false
   sni: willing-beagle.rooster465.autos
   type: trojan
 - name: '🇫🇷[openproxylist.com] trojan-F... #4'
   password: ND91608427
   port: 443
-  server: 15.237.137.197
+  server: fancy-skink.rooster465.autos
   sni: fancy-skink.rooster465.autos
   type: trojan
 - name: '🇫🇷[openproxylist.com] trojan-F... #5'
   network: ws
   password: humanity
   port: 8443
-  server: 93.183.89.112
+  server: 109.71.241.236
   skip-cert-verify: false
   sni: www.calmlunch.com
   type: trojan
@@ -2466,31 +2437,6 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #6'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: 'c39cc7310a'
-  server: 169.40.42.95
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #7'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: 'c39cc7310a'
-  server: 169.40.42.121
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
 - name: '🇫🇷[openproxylist.com] trojan-F... #6'
   network: ws
   password: humanity
@@ -2503,7 +2449,7 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: /assignment
-- name: '🇫🇮[openproxylist.com] vless-FI #3'
+- name: '🇫🇮[openproxylist.com] vless-FI #4'
   network: tcp
   port: 448
   server: 185.79.138.71
@@ -2512,24 +2458,30 @@ proxies:
   uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇪🇪[openproxylist.com] vless-EE
+  name: '🇪🇪[openproxylist.com] vless-EE #1'
   network: tcp
   port: 443
   reality-opts:
     public-key: P2MV0I11JvKg-G3wfg64YVGUEh0Wvy6C4MTVsMPWdyQ
     short-id: '7b1c7d9a3f2a'
-  server: 95.85.224.76
+  server: 64.188.82.57
   servername: ee-download.spectrum.vu
   tls: false
   type: vless
   uuid: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
-- name: 🇨🇿[openproxylist.com] vless-CZ
+- flow: xtls-rprx-vision
+  name: 🇨🇿[openproxylist.com] vless-CZ
+  network: tcp
   port: 443
+  reality-opts:
+    public-key: Kb0rDCu2kKhfnC6bsi0DMRxDej9S-Mu1vVza1H1l4U4
+    short-id: '0c'
   server: 188.127.247.129
+  servername: yahoo.com
   tls: false
   type: vless
   uuid: 33aa2b47-484b-49f6-8f23-fb34602d221f
-- name: '🇺🇸[openproxylist.com] vless-US #8'
+- name: '🇺🇸[openproxylist.com] vless-US #11'
   network: tcp
   port: 47588
   reality-opts:
@@ -2540,8 +2492,9 @@ proxies:
   tls: false
   type: vless
   uuid: 14be84e2-8b22-42c0-a1ba-3535fc8e9257
-- flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #9'
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #12'
   network: tcp
   port: 443
   reality-opts:
@@ -2552,15 +2505,21 @@ proxies:
   tls: false
   type: vless
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- name: '🇺🇸[openproxylist.com] vless-US #10'
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #13'
   network: tcp
   port: 443
+  reality-opts:
+    public-key: aBNWkd8CVkuimbtzgsDNsIUIENI-PQuKkpUInLncz2o
+    short-id: 'fdda9806fe5d8584'
   server: 89.185.80.195
+  servername: 5us.skorostnet.space
   tls: false
   type: vless
   uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
 - flow: xtls-rprx-vision
-  name: '🇫🇮[openproxylist.com] vless-FI #4'
+  name: '🇫🇮[openproxylist.com] vless-FI #5'
   network: tcp
   port: 57228
   reality-opts:
@@ -2571,8 +2530,21 @@ proxies:
   tls: false
   type: vless
   uuid: f319a005-6bd0-44b3-910c-a596a2573efe
+- name: 🇹🇭[openproxylist.com] vless-TH
+  network: ws
+  port: 443
+  server: www.true.th
+  servername: d1yxsk0zprgivr.cloudfront.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+  ws-opts:
+    headers:
+      Host: d1yxsk0zprgivr.cloudfront.net
+    path: '%2F'
 - flow: xtls-rprx-vision
-  name: '🏳[openproxylist.com] vless- #6'
+  name: '🇬🇧[openproxylist.com] vless-GB #8'
   network: tcp
   port: 443
   reality-opts:
@@ -2583,9 +2555,16 @@ proxies:
   tls: false
   type: vless
   uuid: 9e3de7f7-a595-4117-b1b6-dc41eb870ab1
-- name: '🏳[openproxylist.com] vless- #7'
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #10'
+  network: tcp
   port: 443
+  reality-opts:
+    public-key: Vci2ab6lM0ezoLBj2LgE-ynvakjbWOqUUSZmk5vcNjE
+    short-id: '44d44d1c625a13aa'
   server: 45.145.56.163
+  servername: de2.spectrum.vu
   tls: false
   type: vless
   uuid: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
@@ -2603,7 +2582,7 @@ proxies:
   uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: '🇪🇪[openproxylist.com] vless-EE #1'
+  name: '🇪🇪[openproxylist.com] vless-EE #2'
   network: tcp
   port: 443
   reality-opts:
@@ -2614,7 +2593,8 @@ proxies:
   tls: false
   type: vless
   uuid: 342ab7e4-5a89-0001-8809-304120d4aa83
-- name: '🇫🇮[openproxylist.com] vless-FI #5'
+- client-fingerprint: firefox
+  name: '🇫🇮[openproxylist.com] vless-FI #6'
   network: tcp
   port: 443
   reality-opts:
@@ -2626,7 +2606,7 @@ proxies:
   type: vless
   uuid: c8dcbe44-5714-4f99-8d7a-aadebea34abf
 - flow: xtls-rprx-vision
-  name: '🏳[openproxylist.com] vless- #8'
+  name: 🇦🇹[openproxylist.com] vless-AT
   network: tcp
   port: 443
   reality-opts:
@@ -2649,16 +2629,7 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
-- name: '🏳[openproxylist.com] vless- #9'
-  network: tcp
-  port: 60771
-  server: 93.119.168.215
-  tls: false
-  type: vless
-  uuid: 060a5db6-7ff9-4a64-87c1-8a27be4f11ab
-  ws-opts:
-    path: /
-- name: '🇺🇸[openproxylist.com] trojan-U... #3'
+- name: '🇺🇸[openproxylist.com] trojan-U... #2'
   password: ND91608427
   port: 443
   server: 44.246.163.102
@@ -2667,26 +2638,24 @@ proxies:
 - name: '🇭🇰[openproxylist.com] trojan-H... #1'
   password: ND91608427
   port: 443
-  server: ace-starling.rooster465.autos
+  server: 185.244.208.13
   sni: ace-starling.rooster465.autos
   type: trojan
 - name: '🇫🇷[openproxylist.com] trojan-F... #8'
   network: tcp
   password: ND91608427
   port: 443
-  server: fr1.levikogjgfdd.ir
+  server: classic-gator.rooster465.autos
+  skip-cert-verify: true
   sni: classic-gator.rooster465.autos
   type: trojan
-  ws-opts:
-    headers:
-      Host: Telegram-Leviko_v2ray
-- name: '🇺🇸[openproxylist.com] trojan-U... #4'
+- name: '🇺🇸[openproxylist.com] trojan-U... #3'
   password: ND91608427
   port: 443
   server: devoted-tapir.rooster465.autos
   sni: devoted-tapir.rooster465.autos
   type: trojan
-- name: '🏳[openproxylist.com] trojan- #1'
+- name: '🇭🇰[openproxylist.com] trojan-H... #2'
   password: ND91608427
   port: 443
   server: upright-hamster.rooster465.autos
@@ -2710,72 +2679,73 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
-- name: '🏳[openproxylist.com] trojan- #2'
+- name: 🇵🇱[openproxylist.com] trojan-P...
   password: ND91608427
   port: 443
   server: 202.78.163.248
   sni: relaxed-gull.rooster465.autos
   type: trojan
-- name: 🇵🇱[openproxylist.com] trojan-P...
+- name: '🇵🇱[openproxylist.com] trojan-P... #1'
   password: ND91608427
   port: 443
   server: discrete-basilisk.rooster465.autos
   sni: discrete-basilisk.rooster465.autos
   type: trojan
-- name: '🏳[openproxylist.com] trojan- #3'
-  password: ND91608427
-  port: 443
-  server: moved-meerkat.rooster465.autos
-  sni: moved-meerkat.rooster465.autos
-  type: trojan
 - name: '🇰🇷[openproxylist.com] trojan-K... #1'
   password: ND91608427
   port: 443
-  server: definite-malamute.rooster465.autos
-  sni: definite-malamute.rooster465.autos
+  server: 3.35.140.99
+  sni: moved-meerkat.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #1'
+- name: '🇰🇷[openproxylist.com] trojan-K... #2'
   password: ND91608427
   port: 443
-  server: upright-impala.rooster465.autos
+  server: 43.203.247.197
+  sni: definite-malamute.rooster465.autos
+  type: trojan
+- name: '🇯🇵[openproxylist.com] trojan-J... #2'
+  password: ND91608427
+  port: 443
+  server: 18.181.164.216
   sni: upright-impala.rooster465.autos
   type: trojan
 - name: '🇫🇷[openproxylist.com] trojan-F... #10'
+  network: tcp
   password: QV31589740
   port: 443
   server: great-krill.rooster465.autos
   sni: great-krill.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #2'
+- name: '🇯🇵[openproxylist.com] trojan-J... #3'
   password: ND91608427
   port: 443
   server: stunning-mite.rooster465.autos
   sni: stunning-mite.rooster465.autos
   type: trojan
-- name: '🇰🇷[openproxylist.com] trojan-K... #2'
+- name: '🇰🇷[openproxylist.com] trojan-K... #3'
   password: ND91608427
   port: 443
-  server: striking-maggot.rooster465.autos
+  server: 43.202.56.122
   sni: striking-maggot.rooster465.autos
   type: trojan
-- name: '🇰🇷[openproxylist.com] trojan-K... #3'
+- name: '🇰🇷[openproxylist.com] trojan-K... #4'
   password: ND91608427
   port: 443
   server: select-ferret.rooster465.autos
   sni: select-ferret.rooster465.autos
   type: trojan
-- name: '🇰🇷[openproxylist.com] trojan-K... #4'
+- name: '🇰🇷[openproxylist.com] trojan-K... #5'
   password: ND91608427
   port: 443
   server: exotic-chow.rooster465.autos
   sni: exotic-chow.rooster465.autos
   type: trojan
-- name: '🇰🇷[openproxylist.com] trojan-K... #5'
+- name: '🇰🇷[openproxylist.com] trojan-K... #6'
   password: ND91608427
   port: 443
   server: pure-ram.rooster465.autos
   type: trojan
-- name: '🇰🇷[openproxylist.com] trojan-K... #6'
+- name: '🇰🇷[openproxylist.com] trojan-K... #7'
   password: ND91608427
   port: 443
   server: intimate-moray.rooster465.autos
