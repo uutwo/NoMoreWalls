@@ -52,13 +52,6 @@ proxies:
   sni: de1.apexvpn.space
   tls: false
   type: hysteria2
-- name: '德国 #5'
-  password: d1224950-ffab-4b9a-8696-431b40a6cfbd
-  port: 443
-  server: bel-03.node.lumixnet.com
-  sni: bel-03.node.lumixnet.com
-  tls: false
-  type: hysteria2
 - alpn:
   - h3
   fingerprint: chrome
@@ -101,6 +94,16 @@ proxies:
   tls: false
   type: vless
   uuid: d14b7d3c-bdda-40ab-8e5e-ee1b67ef0357
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪[openproxylist.com] vmess-DE
+  network: tcp
+  port: '443'
+  server: 142.132.189.247
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b1211a37-ac2b-4cd0-9f3d-732028caa184
 - name: '🇩🇪[openproxylist.com] vless-DE #3'
   network: tcp
   port: 9999
@@ -133,22 +136,29 @@ proxies:
   tls: false
   type: vless
   uuid: b94da146-a56e-49d7-af4c-a68c9065cbfd
+- name: '🇩🇪[openproxylist.com] vless-DE #6'
+  network: tcp
+  port: 8080
+  server: 91.107.148.158
+  tls: false
+  type: vless
+  uuid: 6bfcc22f-c80f-481b-b82b-bf28ed3e9f82
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: vless-grpc-reality
-  name: '🇩🇪[openproxylist.com] vless-DE #6'
+  name: '🇩🇪[openproxylist.com] vless-DE #7'
   network: grpc
   port: 443
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 147.45.48.135
+  server: 147.45.48.143
   servername: id.vk.com
   tls: false
   type: vless
   uuid: b1b3e430-ff52-44b8-b95d-27fa580fbc4f
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #7'
+  name: '🇩🇪[openproxylist.com] vless-DE #8'
   network: tcp
   port: 11762
   reality-opts:
@@ -160,7 +170,7 @@ proxies:
   uuid: 7c9b4360-6be9-47f2-ace9-b87297ea3d8f
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #8'
+  name: '🇩🇪[openproxylist.com] vless-DE #9'
   network: tcp
   port: 443
   reality-opts:
@@ -173,7 +183,7 @@ proxies:
   uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #9'
+  name: '🇩🇪[openproxylist.com] vless-DE #10'
   network: tcp
   port: 443
   reality-opts:
@@ -184,9 +194,16 @@ proxies:
   tls: false
   type: vless
   uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
-- name: '🇩🇪[openproxylist.com] vless-DE #10'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #11'
+  network: tcp
   port: 443
+  reality-opts:
+    public-key: Vci2ab6lM0ezoLBj2LgE-ynvakjbWOqUUSZmk5vcNjE
+    short-id: '!!str 44d44d1c625a13aa'
   server: 45.145.56.163
+  servername: de2.spectrum.vu
   tls: false
   type: vless
   uuid: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
