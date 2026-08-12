@@ -1,12 +1,4 @@
 proxies:
-- name: 俄罗斯+新西伯利亚JustHost
-  password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
-  port: 2056
-  server: els1.mangshe.xyz
-  skip-cert-verify: true
-  sni: els1.mangshe.xyz
-  tls: false
-  type: hysteria2
 - name: 俄罗斯
   password: 95e8532b-cc69-42d4-9553-e3c23292b15b
   port: 8443
@@ -22,20 +14,26 @@ proxies:
   sni: www.linux.com
   tls: false
   type: hysteria2
-- name: 🇷🇺140620 | ⚡️Telegram = t.me/S...
-  obfs: salamander
-  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
-  password: cd74c0a406664a5bc0bac098220a2468
-  port: 443
-  server: ru1.sferavpn.pro
-  sni: ru1.sferavpn.pro
-  tls: false
-  type: hysteria2
 - name: 🇷🇺[openproxylist.com] trojan-R...
   password: 08QNE5JBq7kTV6b9Dd6e_w-y4WhjMLS9
   port: 8443
   server: ru.federal-usa.com
   type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '🇷🇺[openproxylist.com] trojan-R... #1'
+  network: tcp
+  password: 08QNE5JBq7kTV6b9Dd6e_w-y4WhjMLS9
+  port: 8443
+  server: ru.federal-usa.com
+  skip-cert-verify: false
+  sni: ru.federal-usa.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ru.federal-usa.com
 - client-fingerprint: qq
   flow: xtls-rprx-vision
   name: 🇷🇺[openproxylist.com] vless-RU
@@ -75,3 +73,16 @@ proxies:
   tls: false
   type: vless
   uuid: c124a209-d949-4951-8234-e2d918b3e6c0
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #3'
+  network: tcp
+  port: 40443
+  reality-opts:
+    public-key: cZF84xUCciKRXxTA39vNnh0U8CjUZiUSjLzuNTMOzV8
+    short-id: '!!str 33e48a03db900ff3'
+  server: api.kinomir.fun
+  servername: deepl.com
+  tls: false
+  type: vless
+  uuid: 598b823c-d3fc-4013-aae5-837f10080f7a
