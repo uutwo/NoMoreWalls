@@ -1,16 +1,4 @@
 proxies:
-- alpn:
-  - h3
-  fingerprint: chrome
-  name: dc-udp-🇪🇪 Estonia-Tallinn-met_...
-  obfs: salamander
-  obfs-password: iknjsvsjagi449mm
-  password: 3ff7b2e75ce84d05ae16572b60a9b707
-  port: 52025
-  server: assets.gateway-stream.com
-  sni: assets.gateway-stream.com
-  tls: false
-  type: hysteria2
 - name: 🇪🇪[openproxylist.com] vless-EE
   network: ws
   port: 443
@@ -22,3 +10,29 @@ proxies:
     headers:
       Host: estproxy2.lockdwn.com
     path: /
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇪🇪[openproxylist.com] vless-EE #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: P2MV0I11JvKg-G3wfg64YVGUEh0Wvy6C4MTVsMPWdyQ
+    short-id: '!!str 7b1c7d9a3f2a'
+  server: 95.85.224.76
+  servername: ee-download.spectrum.vu
+  tls: false
+  type: vless
+  uuid: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇪🇪[openproxylist.com] vless-EE #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: '!!str a696de84963656de'
+  server: 95.85.224.51
+  servername: max.ru
+  tls: false
+  type: vless
+  uuid: 342ab7e4-5a89-0001-8809-304120d4aa83
