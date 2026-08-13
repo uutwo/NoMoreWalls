@@ -1,27 +1,19 @@
 proxies:
 - name: 法国
-  password: 5bc8aea0-04a6-4fcf-9a04-1a51518396a8
-  port: 35000
-  server: 129.151.250.154
-  skip-cert-verify: true
-  sni: www.lamer.com.hk
-  tls: false
-  type: hysteria2
-- name: '法国 #1'
   password: 95e8532b-cc69-42d4-9553-e3c23292b15b
   port: 8443
   server: iq5ny.pleiades.codes
   sni: iq5ny.pleiades.codes
   tls: false
   type: hysteria2
-- name: '法国 #2'
+- name: '法国 #1'
   password: d1a0857bc1eb833a9edf96be4c1f999e
   port: 55443
   server: host-vds2-fr.kvncococ.org
   sni: host-vds2-fr.kvncococ.org
   tls: false
   type: hysteria2
-- name: '法国 #3'
+- name: '法国 #2'
   obfs: salamander
   obfs-password: T@T*FP7uq=!t
   password: f64c72a1-7e1f-4dd1-8929-7e41682542e2
@@ -31,6 +23,13 @@ proxies:
   sni: fr2.xiaoliyu.cyou
   tls: false
   type: hysteria2
+- name: 'US美国(mibei77.com 米贝节点分享)\r #12'
+  password: humanity
+  port: 443
+  server: 104.18.152.50
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
 - name: 'JP日本(mibei77.com 米贝节点分享)\r #3'
   password: humanity
   port: 443
@@ -38,10 +37,24 @@ proxies:
   skip-cert-verify: true
   sni: www.ignitelimit.com
   type: trojan
+- name: 'HK香港(mibei77.com 米贝节点分享)\r #10'
+  password: humanity
+  port: 443
+  server: 104.18.152.210
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
 - name: 'HK香港(mibei77.com 米贝节点分享)\r #2'
   password: humanity
   port: 443
   server: 104.18.152.187
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: 'FR法国(mibei77.com 米贝节点分享)\r #10'
+  password: humanity
+  port: 443
+  server: 104.16.73.213
   skip-cert-verify: true
   sni: www.ignitelimit.com
   type: trojan
@@ -66,17 +79,10 @@ proxies:
   skip-cert-verify: true
   sni: www.ignitelimit.com
   type: trojan
-- name: 'US美国(mibei77.com 米贝节点分享)\r #16'
+- name: 'HK香港(mibei77.com 米贝节点分享)\r #8'
   password: humanity
   port: 443
-  server: 104.18.152.175
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
-- name: 土耳其(mibei77.com 米贝节点分享)\r
-  password: humanity
-  port: 443
-  server: 86.38.214.205
+  server: 104.16.7.70
   skip-cert-verify: true
   sni: www.ignitelimit.com
   type: trojan
@@ -94,24 +100,10 @@ proxies:
   skip-cert-verify: true
   sni: www.ignitelimit.com
   type: trojan
-- name: 'FR法国(mibei77.com 米贝节点分享)\r #21'
-  password: humanity
-  port: 443
-  server: render.com
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
 - name: 'FR法国(mibei77.com 米贝节点分享)\r #22'
   password: humanity
   port: 443
   server: 216.24.57.1
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
-- name: 'US美国(mibei77.com 米贝节点分享)\r #35'
-  password: humanity
-  port: 443
-  server: 216.24.57.7
   skip-cert-verify: true
   sni: www.ignitelimit.com
   type: trojan
@@ -122,37 +114,10 @@ proxies:
   skip-cert-verify: true
   sni: gogoyy.bpmalai2026.top
   type: trojan
-- client-fingerprint: chrome
-  name: 🇫🇷[openproxylist.com] vless-FR
-  network: ws
-  port: 8443
-  server: 104.16.72.162
-  servername: ssl.zensah3g.info.
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: d98e06d3-7f42-41e8-8dad-e9f35517a992
-  ws-opts:
-    headers:
-      Host: ad-004.zensah3g.info.
-    path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: UjwVdSvY-6dV5UKCNO7ROokiSF_aLaXYyUaG6RybOmI
-    short-id: '!!str 2762604ed2e0fa2f'
-  server: xfr.saturn-cloud.net
-  servername: xfr.saturn-cloud.net
-  tls: false
-  type: vless
-  uuid: 95ae0de8-d944-4b1e-b450-d34d80f9a528
 - client-fingerprint: safari
   grpc-opts:
     grpc-service-name: vless-grpc-reality
-  name: '🇫🇷[openproxylist.com] vless-FR #2'
+  name: 🇫🇷[openproxylist.com] vless-FR
   network: grpc
   port: 443
   reality-opts:
@@ -163,17 +128,6 @@ proxies:
   type: vless
   uuid: b1b3e430-ff52-44b8-b95d-27fa580fbc4f
 - name: 🇫🇷[openproxylist.com] trojan-F...
-  network: ws
-  password: humanity
-  port: 2053
-  server: fr2.levikogjgfdd.ir
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
-- name: '🇫🇷[openproxylist.com] trojan-F... #1'
   network: ws
   password: humanity
   port: 443
@@ -187,7 +141,7 @@ proxies:
     path: /assignment
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #3'
+  name: '🇫🇷[openproxylist.com] vless-FR #1'
   network: tcp
   port: 443
   reality-opts:
@@ -202,7 +156,7 @@ proxies:
     path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #4'
+  name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: tcp
   port: 443
   reality-opts:
@@ -212,25 +166,13 @@ proxies:
   tls: false
   type: vless
   uuid: c124a209-d949-4951-8234-e2d918b3e6c0
-- name: '🇫🇷[openproxylist.com] trojan-F... #2'
+- name: '🇫🇷[openproxylist.com] trojan-F... #1'
   password: ND91608427
   port: 443
   server: fancy-skink.rooster465.autos
   sni: fancy-skink.rooster465.autos
   type: trojan
-- name: '🇫🇷[openproxylist.com] trojan-F... #3'
-  network: ws
-  password: humanity
-  port: 8443
-  server: 109.71.241.236
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: '%2Fassignment'
-- name: '🇫🇷[openproxylist.com] trojan-F... #4'
+- name: '🇫🇷[openproxylist.com] trojan-F... #2'
   network: ws
   password: humanity
   port: 443
@@ -242,33 +184,3 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: /assignment
-- name: '🇫🇷[openproxylist.com] trojan-F... #5'
-  network: ws
-  password: humanity
-  port: 443
-  server: 84.21.172.81
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: '%2Fassignment'
-- name: '🇫🇷[openproxylist.com] trojan-F... #6'
-  password: ND91608427
-  port: 443
-  server: classic-gator.rooster465.autos
-  sni: classic-gator.rooster465.autos
-  type: trojan
-- name: '🇫🇷[openproxylist.com] trojan-F... #7'
-  network: ws
-  password: humanity
-  port: 443
-  server: 45.147.228.249
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: '%2Fassignment'
