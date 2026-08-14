@@ -1,4 +1,12 @@
 proxies:
+- name: 英国+V2CROSS.COM
+  password: dbab9df7-5c0a-4726-8574-11e34972b67d
+  port: 33015
+  server: 86.53.105.117
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
 - name: 🇬🇧GB
   password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
   port: 2056
@@ -21,17 +29,16 @@ proxies:
   sni: grape-turbo-fr.roxa.org
   tls: false
   type: hysteria2
-- name: '🇯🇵[openproxylist.com] trojan-J... #7'
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20004
-  server: oplosgru-c.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-- name: 🇬🇧[openproxylist.com] vless-GB
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇬🇧[openproxylist.com] vless-GB
   network: tcp
   port: 443
+  reality-opts:
+    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
+    short-id: '!!str fd8cf7e1173f0edb'
   server: 83.147.18.3
+  servername: www.cloudflare.com
   tls: false
   type: vless
   uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
@@ -39,9 +46,9 @@ proxies:
   cipher: auto
   name: 🇬🇧[openproxylist.com] vmess-GB
   network: ws
-  port: 443
+  port: '443'
   server: rush-72frf.meeopp.site
-  servername: ''
+  servername: rush-72frf.meeopp.site
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
