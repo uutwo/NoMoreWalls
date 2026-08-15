@@ -1,34 +1,17 @@
 proxies:
-- name: 美国+CloudFlare节点
-  network: ws
-  password: humanity
-  port: 443
-  server: 198.41.223.96
+- name: 美国+V2CROSS.COM
+  password: ce24c43947331f36746c1f692c3812e0
+  port: 50160
+  server: 129-150-54-169.liao.kdns.fr
   skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  name: 美国+乔治亚洲亚特兰大Fastly节点
-  network: ws
-  port: 443
-  server: k2.cloud--vpn.site
-  servername: ssl.fastly.com
-  tls: true
-  type: vless
-  uuid: 79c9514e-aa3c-4cd0-bf0d-dd6df42039f6
-  ws-opts:
-    headers:
-      Host: c12.com
-    path: /
+  sni: 129-150-54-169.liao.kdns.fr
+  tls: false
+  type: hysteria2
 - alpn:
   - http/1.1
   client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: 美国+V2CROSS.COM
+  name: '美国+V2CROSS.COM #1'
   network: tcp
   port: 443
   reality-opts:
@@ -39,32 +22,55 @@ proxies:
   tls: false
   type: vless
   uuid: 82e209b2-97a6-4d67-a10b-72627b9f6702
-- name: '美国+CloudFlare节点 #1'
+- client-fingerprint: chrome
+  name: 美国+麻省理工学院
+  network: ws
+  port: 443
+  server: 18.244.214.27
+  servername: d1yxsk0zprgivr.cloudfront.net
+  tls: true
+  type: vless
+  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+  ws-opts:
+    headers:
+      Host: d1yxsk0zprgivr.cloudfront.net
+    path: '%2F'
+- client-fingerprint: chrome
+  flow: ''
+  name: '美国+V2CROSS.COM #2'
+  network: ws
+  port: 443
+  server: www.true.th
+  servername: d1yxsk0zprgivr.cloudfront.net
+  tls: true
+  type: vless
+  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+  ws-opts:
+    headers:
+      Host: d1yxsk0zprgivr.cloudfront.net
+    path: /
+- name: 美国+CloudFlare节点
   network: ws
   password: humanity
   port: 443
-  server: 104.26.14.137
-  skip-cert-verify: false
+  server: 104.26.15.137
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '美国+V2CROSS.COM #1'
-  network: tcp
-  port: 13868
-  reality-opts:
-    public-key: xbCFPD2Gk3HP6EwfFT_0W3D_-biFaz10wlPc2h3y6QQ
-    short-id: '!!str e852dc'
-  server: 45.155.68.164
-  servername: yoox.com
-  tls: false
+- name: '美国+V2CROSS.COM #3'
+  network: ws
+  port: 443
+  server: 199.232.78.159
+  servername: ssl.fastly.com
+  skip-cert-verify: true
+  tls: true
   type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+  uuid: be42674a-296a-43d8-bf04-b8314d65ff63
   ws-opts:
     headers:
-      Host: v2rayNplus--v2rayNplus--v2rayNplus
+      Host: pane2.global.ssl.fastly.net
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER
 - name: 🇺🇸US
   password: 553e3253-c454-431d-a7e6-42bc06ea5e14
   port: 8443
@@ -461,24 +467,51 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇺🇸[openproxylist.com] trojan-U...
-  password: AE62539071
-  port: 443
-  server: sharing-duck.rooster465.autos
-  sni: sharing-duck.rooster465.autos
-  type: trojan
 - name: 🇺🇸[openproxylist.com] vless-US
   network: ws
   port: 2095
-  server: 104.17.185.207
+  server: 172.67.202.17
   tls: false
   type: vless
   uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   ws-opts:
     headers:
-      Host: fangbinxingnmsl.pusytroller.gq
-    path: /
+      Host: fuckfangbinxing.pusytroller.gq
+    path: '%2F'
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸[openproxylist.com] vmess-US
+  network: tcp
+  port: '443'
+  server: 165.140.216.142
+  tls: false
+  type: vmess
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+- name: 🇺🇸[openproxylist.com] trojan-U...
+  network: tcp
+  password: FH72359861
+  port: 443
+  server: warm-aardvark.rooster465.autos
+  sni: warm-aardvark.rooster465.autos
+  type: trojan
 - name: '🇺🇸[openproxylist.com] vless-US #1'
+  network: ws
+  port: 2095
+  server: 104.16.148.244
+  tls: false
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  ws-opts:
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+    path: /
+- name: '🇺🇸[openproxylist.com] trojan-U... #1'
+  password: AE62539071
+  port: 443
+  server: sharing-duck.rooster465.autos
+  sni: sharing-duck.rooster465.autos
+  type: trojan
+- name: '🇺🇸[openproxylist.com] vless-US #2'
   network: ws
   port: 80
   server: 170.114.46.6
@@ -491,7 +524,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 🇺🇸[openproxylist.com] vmess-US
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
   network: ws
   port: '443'
   server: rush-6it6b.teeopp.quest
@@ -504,7 +537,7 @@ proxies:
       Host: rush-6it6b.teeopp.quest
     path: /video/kz49hf/gbin5jve.m3u8
 - client-fingerprint: chrome
-  name: '🇺🇸[openproxylist.com] vless-US #2'
+  name: '🇺🇸[openproxylist.com] vless-US #3'
   network: tcp
   port: 30906
   reality-opts:
@@ -517,11 +550,10 @@ proxies:
   uuid: 43a13764-23dd-4e01-8b79-cde8a16e13ce
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #1'
+  name: '🇺🇸[openproxylist.com] vmess-US #2'
   network: ws
   port: '443'
   server: rush-w1niu.teeopp.online
-  servername: rush-w1niu.teeopp.online
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -531,15 +563,39 @@ proxies:
     path: /video/v4sx3q/zxzrurkc.m3u8
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #2'
+  name: '🇺🇸[openproxylist.com] vmess-US #3'
   network: ws
-  port: '2054'
+  port: 2054
   server: 132.145.200.43
-  servername: ''
   tls: false
   type: vmess
   uuid: ceeaee0b-89af-40b1-aa14-577cbde03a89
   ws-opts:
-    headers:
-      Host: ''
     path: /p
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #4'
+  network: ws
+  port: 41963
+  server: us.klxiaogou.com
+  servername: us.klxiaogou.com
+  tls: true
+  type: vmess
+  uuid: 7a4830df-5391-4748-b1c7-b6857ad04acb
+  ws-opts:
+    headers:
+      Host: us.klxiaogou.com
+    path: /124
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #4'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: '!!str c39cc7310a'
+  server: 169.40.42.52
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
