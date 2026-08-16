@@ -1,18 +1,4 @@
 proxies:
-- name: 德国
-  password: 71cada65-d23e-418c-88e4-a06188d14689
-  port: 443
-  server: 144.31.166.91
-  sni: de-two.quiet-rogue.site
-  tls: false
-  type: hysteria2
-- name: '德国 #1'
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  port: 8443
-  server: 93.114.194.120
-  sni: grape-zet-ro-turbo.bumbleshrimp.com
-  tls: false
-  type: hysteria2
 - name: 🇩🇪 - DE - @FreeOnlineVPN
   obfs: salamander
   obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
@@ -23,61 +9,62 @@ proxies:
   sni: api.kermanshahi.org
   tls: false
   type: hysteria2
-- name: '德国 #2'
+- name: 德国
   password: c175d956-d1f4-4c53-b2b1-8493bf8529c6
   port: 443
   server: 87.120.84.189
   sni: de1.apexvpn.space
   tls: false
   type: hysteria2
-- name: '德国 #3'
+- name: '德国 #1'
   password: d1224950-ffab-4b9a-8696-431b40a6cfbd
   port: 443
   server: bel-03.node.lumixnet.com
   sni: bel-03.node.lumixnet.com
   tls: false
   type: hysteria2
-- name: '🇩🇪[openproxylist.com] vless-DE #1'
-  network: ws
-  port: 1324
-  server: apn.zyro-lab.com
+- name: '德国 #2'
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  port: 443
+  server: de.1.23.h2corp.org
+  skip-cert-verify: true
+  sni: germany3.h2corp.local
   tls: false
-  type: vless
-  uuid: 7d3963b5-4029-4878-a251-2437deaebcd7
-  ws-opts:
-    headers:
-      Host: api16-access-wf-sg.pangle.io
-    path: ?ed=2560
-- name: '🇩🇪[openproxylist.com] vless-DE #2'
+  type: hysteria2
+- name: 🇩🇪[openproxylist.com] vless-DE
   network: tcp
   port: 443
   server: 3.68.4.250
   tls: false
   type: vless
   uuid: 699dde7d-4a08-4dd0-b081-7a87407a23fc
-- name: '🇩🇪[openproxylist.com] vless-DE #3'
+- name: '🇩🇪[openproxylist.com] vless-DE #1'
+  port: 2200
+  server: 193.188.23.170
+  tls: false
+  type: vless
+  uuid: b3d66abd-ea82-4616-92f0-1dec8d1e4cfc
+- name: '🇩🇪[openproxylist.com] vless-DE #2'
   network: ws
   port: 4100
-  server: 147.45.253.97
+  server: 168.222.202.15
   tls: false
   type: vless
-  uuid: 9b44bfb4-9d28-4870-9fc3-5154d6d462ff
+  uuid: 2001e98b-e06e-4244-910f-7ff640746eda
   ws-opts:
-    headers:
-      Host: live.ok.ru
-    path: '%2Fv1'
-- name: '🇩🇪[openproxylist.com] vless-DE #4'
+    path: /v1
+- name: '🇩🇪[openproxylist.com] vless-DE #3'
   network: ws
-  port: 2200
-  server: 194.26.229.217
-  servername: 194.26.229.217
-  tls: false
+  port: 443
+  server: 199.232.78.159
+  servername: ssl.fastly.com
+  tls: true
   type: vless
-  uuid: e58a0802-443e-4ba3-992b-73687bb5b9f0
+  uuid: e0454af2-6fe9-4983-a55d-05e1da202602
   ws-opts:
     headers:
-      Host: rzd.ru
-    path: '%2Fv1'
+      Host: lsjaoijji.global.ssl.fastly.neT.
+    path: /
 - name: 🇩🇪[openproxylist.com] trojan-D...
   password: FH72359861
   port: 443
@@ -93,16 +80,19 @@ proxies:
   cipher: auto
   name: 🇩🇪[openproxylist.com] vmess-DE
   network: ws
-  port: 2053
-  server: deapp.jisuyun.top
+  port: '2053'
+  server: 104.105.18.214
+  servername: deapp.jisuyun.top
   tls: true
   type: vmess
   uuid: 9a1a05d9-69be-45d3-e326-c6621edf7b31
   ws-opts:
+    headers:
+      Host: deapp.jisuyun.top
     path: /devm
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #5'
+  name: '🇩🇪[openproxylist.com] vless-DE #4'
   network: tcp
   port: 443
   reality-opts:
@@ -115,7 +105,7 @@ proxies:
   uuid: 9015f0bc-2053-4ca1-9b9b-a018b97b32d2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #6'
+  name: '🇩🇪[openproxylist.com] vless-DE #5'
   network: tcp
   port: 2053
   reality-opts:
@@ -136,3 +126,37 @@ proxies:
   tls: false
   type: vmess
   uuid: 48422300-458f-4dbb-b0f5-96f45450ab9f
+- name: '🇩🇪[openproxylist.com] vless-DE #6'
+  network: tcp
+  port: 20017
+  server: 144.31.157.104
+  tls: false
+  type: vless
+  uuid: d2733ae6-44e7-4b14-8c2d-3f5bef74cdec
+  ws-opts:
+    headers:
+      Host: play.google.com
+- client-fingerprint: chrome
+  name: '🇩🇪[openproxylist.com] vless-DE #7'
+  network: grpc
+  port: 8443
+  reality-opts:
+    public-key: gOummriWvIYMJpd5oifBLqxsf_jcWHVsxVI7wnM0rRo
+    short-id: '!!str 1e943a831d22faf6'
+  server: 87.120.126.63
+  servername: vpnforppl.top
+  tls: false
+  type: vless
+  uuid: b94da146-a56e-49d7-af4c-a68c9065cbfd
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #8'
+  network: tcp
+  port: 11762
+  reality-opts:
+    public-key: R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU
+  server: 157.90.165.181
+  servername: swdist.apple.com
+  tls: false
+  type: vless
+  uuid: 7c9b4360-6be9-47f2-ace9-b87297ea3d8f
