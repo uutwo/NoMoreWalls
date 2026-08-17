@@ -1,18 +1,18 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 英国 V2CROSS.COM
-  network: ws
-  port: 16632
-  server: planb.mojcn.com.linuxlh.xin
-  servername: ''
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: 英国+V2CROSS.COM
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: '!!str ff776ff77be48b88'
+  server: lit6.helper-internet.com
+  servername: lit6.helper-internet.com
+  skip-cert-verify: true
   tls: false
-  type: vmess
-  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
-  ws-opts:
-    headers:
-      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
-    path: /
+  type: vless
+  uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
 - name: 英国
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   port: 8443
@@ -20,7 +20,33 @@ proxies:
   sni: grape-turbo-fr.roxa.org
   tls: false
   type: hysteria2
-- name: 🇬🇧[openproxylist.com] vless-GB
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇬🇧[openproxylist.com] vless-GB
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: m6RDw1b8R4lCaRUIzhHpy6TtX2Dhk6nyby8dWzeQqA0
+    short-id: '!!str dd3ff38418d29d22'
+  server: 46.226.163.243
+  servername: eu-west.cendora.ru
+  tls: false
+  type: vless
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇬🇧[openproxylist.com] vless-GB #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: m6RDw1b8R4lCaRUIzhHpy6TtX2Dhk6nyby8dWzeQqA0
+    short-id: '!!str dd3ff38418d29d22'
+  server: 144.31.213.188
+  servername: eu-west.cendora.ru
+  tls: false
+  type: vless
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+- name: '🇬🇧[openproxylist.com] vless-GB #2'
   port: 443
   server: gb1.murhost.network
   tls: false
@@ -36,16 +62,3 @@ proxies:
   tls: true
   type: vmess
   uuid: 72f2cbe4-2874-45b7-b6aa-b93077c10c72
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
-    short-id: '!!str fd8cf7e1173f0edb'
-  server: 83.147.18.3
-  servername: www.cloudflare.com
-  tls: false
-  type: vless
-  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104

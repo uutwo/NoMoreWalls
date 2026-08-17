@@ -1,45 +1,48 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 🇹🇭[openproxylist.com] vmess-TH
-  network: ws
-  port: '80'
-  server: www.true.th
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a150d554-e962-4632-829f-ee583ada3f95
-  ws-opts:
-    headers:
-      Host: d7pu5mzr9c4b0.cloudfront.net
-    path: /htun
-- name: 美国+CloudFlare节点
-  network: ws
-  port: 8880
-  server: www.glassdoor.com
-  servername: www.glassdoor.com
-  tls: false
-  type: vless
-  uuid: 220046c3-0081-4c22-a648-83a52bc3a0d5
-  ws-opts:
-    headers:
-      Host: yellow-sky-38b3.154-d73.workers.dev
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-- name: 美国+麻省理工学院
-  network: ws
-  port: 80
-  server: 18.239.134.69
-  tls: false
-  type: vless
-  uuid: de27291c-15a9-4256-9ba7-ad517569877e
-  ws-opts:
-    headers:
-      Host: d2e1v87ko56lyw.cloudfront.net%3Aassets.opensignal.com
-    path: '%2F'
-- name: 美国+V2CROSS.COM
+- client-fingerprint: chrome
+  name: 美国+麻省理工学院
   network: ws
   port: 443
-  server: 108.138.26.70
+  server: 18.238.109.28
+  servername: d1yxsk0zprgivr.cloudfront.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+  ws-opts:
+    headers:
+      Host: d1yxsk0zprgivr.cloudfront.net
+    path: '%2F'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #1'
+  network: tcp
+  port: 13443
+  reality-opts:
+    public-key: gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM
+    short-id: '!!str a7f3c91b2e6d84c0'
+  server: 144.31.76.198
+  servername: auto.cendora.ru
+  tls: false
+  type: vless
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+- client-fingerprint: chrome
+  name: '美国+V2CROSS.COM #1'
+  network: ws
+  port: 443
+  server: www.true.th
+  servername: d1yxsk0zprgivr.cloudfront.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+  ws-opts:
+    path: '%2F'
+- client-fingerprint: chrome
+  name: 美国+Amazon数据中心
+  network: ws
+  port: 443
+  server: 18.154.132.111
   servername: d1yxsk0zprgivr.cloudfront.net
   skip-cert-verify: false
   tls: true
@@ -374,27 +377,20 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 🇺🇸[openproxylist.com] vmess-US
-  network: ws
-  port: '80'
-  server: 74.48.28.190
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4ed58974-48cd-472e-c818-fb847b8c551f
-  ws-opts:
-    headers:
-      Host: ''
-    path: /cctv13.m3u8
-- name: '🇺🇸[openproxylist.com] vless-US #1'
+- name: 🇺🇸[openproxylist.com] vless-US
   port: 9873
   server: 45.151.30.127
   tls: false
   type: vless
   uuid: 2a650f3b-d95b-4bd6-aadf-16ccc0717155
 - name: 🇺🇸[openproxylist.com] trojan-U...
+  network: tcp
+  password: FH72359861
+  port: 443
+  server: warm-aardvark.rooster465.autos
+  sni: warm-aardvark.rooster465.autos
+  type: trojan
+- name: '🇺🇸[openproxylist.com] trojan-U... #1'
   password: AE62539071
   port: 443
   server: sharing-duck.rooster465.autos
@@ -402,7 +398,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #1'
+  name: 🇺🇸[openproxylist.com] vmess-US
   network: ws
   port: '443'
   server: rush-6it6b.teeopp.quest
@@ -416,7 +412,7 @@ proxies:
     path: /video/kz49hf/gbin5jve.m3u8
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #2'
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
   network: ws
   port: '443'
   server: 198.23.184.122
@@ -428,3 +424,15 @@ proxies:
     headers:
       Host: ''
     path: /837279ad9b4a
+- client-fingerprint: chrome
+  name: '🇺🇸[openproxylist.com] vless-US #1'
+  network: tcp
+  port: 30906
+  reality-opts:
+    public-key: HnQ_s7eu3XUu6upzLoe0jj5ZgsYvM7KXuMG41IwN4R0
+    short-id: '!!str 17a94dc584e3'
+  server: 204.48.20.223
+  servername: www.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 43a13764-23dd-4e01-8b79-cde8a16e13ce
