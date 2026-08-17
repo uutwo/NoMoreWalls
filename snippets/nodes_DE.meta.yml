@@ -1,4 +1,17 @@
 proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 德国+V2CROSS.COM
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+    short-id: '!!str 7755e972daf8eec8'
+  server: nl.gsupport.support
+  servername: video.intfreed.ru
+  tls: false
+  type: vless
+  uuid: 348b1b7d-fe7b-43f9-84b5-a2917925c8a8
 - name: 🇩🇪 - DE - @FreeOnlineVPN
   obfs: salamander
   obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
@@ -31,10 +44,16 @@ proxies:
   sni: germany3.h2corp.local
   tls: false
   type: hysteria2
+- name: 🇩🇪[openproxylist.com] vless-DE
+  port: 22222
+  server: 63.185.140.9
+  tls: false
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - client-fingerprint: qq
   grpc-opts:
     grpc-service-name: grpc-tunnel
-  name: 🇩🇪[openproxylist.com] vless-DE
+  name: '🇩🇪[openproxylist.com] vless-DE #1'
   network: grpc
   port: 9880
   reality-opts:
@@ -45,18 +64,26 @@ proxies:
   tls: false
   type: vless
   uuid: 14777bd9-56a5-46f6-a94f-826b4800dc05
-- name: '🇩🇪[openproxylist.com] vless-DE #1'
-  network: ws
-  port: 4100
-  server: 104.171.134.235
+- client-fingerprint: qq
+  name: '🇩🇪[openproxylist.com] vless-DE #2'
+  network: tcp
+  port: 5000
+  reality-opts:
+    public-key: lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo
+  server: germany.panelbaz.com
+  servername: play.google.com
   tls: false
   type: vless
-  uuid: bceda826-c83c-45d0-891e-15c4bfec76bc
+  uuid: 4907461d-bd34-418a-b4b9-6106f979c686
+- name: '🇩🇪[openproxylist.com] vless-DE #3'
+  port: 4100
+  server: 147.45.253.97
+  tls: false
+  type: vless
+  uuid: 9b44bfb4-9d28-4870-9fc3-5154d6d462ff
   ws-opts:
-    headers:
-      Host: live.ok.ru
     path: '%2Fv1'
-- name: '🇩🇪[openproxylist.com] vless-DE #2'
+- name: '🇩🇪[openproxylist.com] vless-DE #4'
   network: ws
   port: 4100
   server: 104.171.133.53
@@ -67,7 +94,34 @@ proxies:
     headers:
       Host: live.ok.ru
     path: '%2Fv1'
-- name: '🇩🇪[openproxylist.com] vless-DE #3'
+- name: '🇩🇪[openproxylist.com] vless-DE #5'
+  network: ws
+  port: 4100
+  server: 194.87.161.60
+  tls: false
+  type: vless
+  uuid: 9b44bfb4-9d28-4870-9fc3-5154d6d462ff
+  ws-opts:
+    path: /v1
+- name: '🇩🇪[openproxylist.com] vless-DE #6'
+  network: ws
+  port: 443
+  server: 199.232.78.159
+  servername: ssl.fastly.com
+  tls: true
+  type: vless
+  uuid: e0454af2-6fe9-4983-a55d-05e1da202602
+  ws-opts:
+    headers:
+      Host: lsjaoijji.global.ssl.fastly.neT.
+    path: /
+- name: 🇩🇪[openproxylist.com] trojan-D...
+  password: FH72359861
+  port: 443
+  server: summary-lemming.rooster465.autos
+  sni: summary-lemming.rooster465.autos
+  type: trojan
+- name: '🇩🇪[openproxylist.com] vless-DE #7'
   network: ws
   port: 443
   server: 199.232.78.159
@@ -80,24 +134,6 @@ proxies:
     headers:
       Host: lsjaoijji.global.ssl.fastly.neT
     path: '%2F'
-- name: 🇩🇪[openproxylist.com] trojan-D...
-  password: FH72359861
-  port: 443
-  server: summary-lemming.rooster465.autos
-  sni: summary-lemming.rooster465.autos
-  type: trojan
-- name: '🇩🇪[openproxylist.com] vless-DE #4'
-  network: ws
-  port: 443
-  server: 199.232.78.159
-  servername: ssl.fastly.com
-  tls: true
-  type: vless
-  uuid: e0454af2-6fe9-4983-a55d-05e1da202602
-  ws-opts:
-    headers:
-      Host: lsjaoijji.global.ssl.fastly.neT.
-    path: /
 - name: '🇩🇪[openproxylist.com] trojan-D... #1'
   password: FH72359861
   port: 443
@@ -105,10 +141,10 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 🇩🇪[openproxylist.com] vmess-DE
+  name: '🇩🇪[openproxylist.com] vmess-DE #1'
   network: ws
   port: '2053'
-  server: deapp.jisuyun.top
+  server: 104.105.18.214
   tls: true
   type: vmess
   uuid: 9a1a05d9-69be-45d3-e326-c6621edf7b31
@@ -116,39 +152,3 @@ proxies:
     headers:
       Host: deapp.jisuyun.top
     path: /devm
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #5'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: SVgtyuD9khylgHuB0treGekxVSHPOS-wPZTNHUf6zj8
-    short-id: '!!str 85c86a9863'
-  server: 144.31.125.60
-  servername: www.intel.com
-  tls: false
-  type: vless
-  uuid: 9015f0bc-2053-4ca1-9b9b-a018b97b32d2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #6'
-  network: tcp
-  port: 2053
-  reality-opts:
-    public-key: 6RshLCSAs31qGRa_tWi63KClbh2Kzj9ooXpdaPJKbjs
-    short-id: '!!str a6bbc4aecf5d961f'
-  server: de-193-58.neobo-tooth.ru
-  servername: vk.ru
-  tls: false
-  type: vless
-  uuid: b6c29ae7-4748-4049-b642-b695c0d2c776
-- alterId: 0
-  cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #1'
-  network: tcp
-  port: '38998'
-  server: 178.83.45.29
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 48422300-458f-4dbb-b0f5-96f45450ab9f
