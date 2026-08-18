@@ -1,4 +1,15 @@
 proxies:
+- name: 法国+V2CROSS.COM
+  network: ws
+  port: 8880
+  server: 94.140.0.100
+  tls: false
+  type: vless
+  uuid: 78e6619e-e82a-cd8d-b482-0973d8498305
+  ws-opts:
+    headers:
+      Host: silent-pine-a674.jfadwkglaugul.workers.dev
+    path: /sync
 - name: 法国
   password: 95e8532b-cc69-42d4-9553-e3c23292b15b
   port: 8443
@@ -56,19 +67,6 @@ proxies:
   skip-cert-verify: true
   sni: www.ignitelimit.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇫🇷 FR法国(mibei77.com 米贝节点分享)
-  network: ws
-  port: '16632'
-  server: planb.mojcn.com.linuxlh.xin
-  tls: false
-  type: vmess
-  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
-  ws-opts:
-    headers:
-      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
-    path: /
 - alterId: 0
   cipher: auto
   name: '🇫🇷 FR法国(mibei77.com 米贝节点分享) #1'
@@ -170,22 +168,11 @@ proxies:
   port: 443
   server: finite-node.rtxconfigz.com
   servername: finite-node.rtxconfigz.com
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 25f3beef-a4b6-40bc-aa74-17a0f89f683c
   ws-opts:
     headers:
       Host: telegram.us
-    path: '%2F'
-- client-fingerprint: chrome
-  name: '🇫🇷[openproxylist.com] vless-FR #2'
-  network: tcp
-  port: 2053
-  reality-opts:
-    public-key: 6j7SZO4StX_8QkHX9sATJug5nQ4X4XoTj_6B7bClEw4
-    short-id: '!!str e52e7fd8585ac5c1'
-  server: 51.77.217.70
-  servername: www.apple.com
-  tls: false
-  type: vless
-  uuid: ab00e12c-09f1-41c6-8d60-7c6a83f5ca9d
+    path: /
