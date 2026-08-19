@@ -1,12 +1,30 @@
 proxies:
-- name: 英国+V2CROSS.COM
-  password: C91FbOXGY9XRymrcEebtax9R1Nj62UizoT8S6kCb7xwey8IE
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: 英国+V2CROSS.COM
+  network: tcp
   port: 443
-  server: fast.wwwinternetvideo.click
-  skip-cert-verify: true
-  sni: fast.wwwinternetvideo.click
+  reality-opts:
+    public-key: t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik
+    short-id: '!!str 4a46213c935e2ee4'
+  server: 31.76.70.31
+  servername: baltic.cendora.ru
   tls: false
-  type: hysteria2
+  type: vless
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '英国+V2CROSS.COM #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: jgf0wWpgkEJZzu9wu45Ms33SNZpibtx507rpvzfz3mQ
+    short-id: '!!str 635a76c25a4b1820'
+  server: 2.27.40.190
+  servername: www.amd.com
+  tls: false
+  type: vless
+  uuid: 682102a3-9731-4562-ad28-04dc62bc8dee
 - name: 英国
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   port: 8443
@@ -14,13 +32,6 @@ proxies:
   sni: grape-turbo-fr.roxa.org
   tls: false
   type: hysteria2
-- name: 🇬🇧[openproxylist.com] trojan-G...
-  password: fg20mtCFHy
-  port: 5624
-  server: 104.248.167.79
-  skip-cert-verify: true
-  sni: dsgvc.southbyte.xyz
-  type: trojan
 - client-fingerprint: chrome
   name: 🇬🇧[openproxylist.com] vless-GB
   network: tcp
@@ -36,3 +47,9 @@ proxies:
   tls: false
   type: vless
   uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+- name: '🇬🇧[openproxylist.com] vless-GB #2'
+  port: 443
+  server: gb1.murhost.network
+  tls: false
+  type: vless
+  uuid: a6f6d9c9-9d43-4d0e-bf95-4b87cc5bbaac

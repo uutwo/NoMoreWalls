@@ -1,35 +1,4 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 俄罗斯+V2CROSS.COM
-  network: raw
-  port: 18443
-  server: 78.159.250.33
-  servername: disagreedebut.net
-  tls: true
-  type: vless
-  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
-- name: '俄罗斯+V2CROSS.COM #1'
-  password: 77cdeb2eb9aa61b16cda72b225b98ba1
-  port: 443
-  server: 193.124.91.226
-  skip-cert-verify: true
-  sni: www.vk.com
-  tls: false
-  type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '俄罗斯+V2CROSS.COM #2'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: EBISh6QAVskJ_nvet-Qio9jS2yqxe9de6GMScYlbjhI
-    short-id: '!!str 226509f017e4c36d'
-  server: rusl2-e.ya-proxy.com
-  servername: eda.x5.ru
-  tls: false
-  type: vless
-  uuid: 8b706aff-ca60-4632-9658-aeb5c0f48561
 - name: 俄罗斯
   password: 95e8532b-cc69-42d4-9553-e3c23292b15b
   port: 8443
@@ -45,8 +14,22 @@ proxies:
   type: ss
 - client-fingerprint: firefox
   grpc-opts:
-    grpc-service-name: neurex
+    grpc-service-name: grpc-reality
   name: 🇷🇺[openproxylist.com] vless-RU
+  network: grpc
+  port: 9001
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: '!!str 6ba85179e30d4fc2'
+  server: 185.141.227.153
+  servername: api-maps.yandex.ru
+  tls: false
+  type: vless
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: neurex
+  name: '🇷🇺[openproxylist.com] vless-RU #1'
   network: grpc
   port: 16923
   reality-opts:
