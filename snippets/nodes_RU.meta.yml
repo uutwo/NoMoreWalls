@@ -1,8 +1,33 @@
 proxies:
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  grpc-opts:
+    grpc-service-name: ''
+  name: 俄罗斯+新西伯利亚ADMAN网络
+  network: tcp
+  port: 443
+  server: s462.wagahaha.xyz
+  servername: u643766uaf472521s394.csgfw.top
+  tls: true
+  type: vless
+  uuid: 41f4cb15-5a3f-3934-89fe-b4177146adf4
+  ws-opts:
+    headers:
+      Host: af472521s394.csgfw.top
+    path: ''
+- name: 🇷🇺[openproxylist.com] vless-RU
+  port: 443
+  server: 185.178.46.50
+  tls: false
+  type: vless
+  uuid: 919eef53-e931-4928-83f7-d880ee7b9804
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: grpc-reality
-  name: '🇷🇺[openproxylist.com] vless-RU #1'
+  name: '🇷🇺[openproxylist.com] vless-RU #2'
   network: grpc
   port: 9001
   reality-opts:
