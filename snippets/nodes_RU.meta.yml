@@ -1,24 +1,32 @@
 proxies:
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  grpc-opts:
-    grpc-service-name: ''
-  name: 俄罗斯+新西伯利亚ADMAN网络
+  name: 俄罗斯+V2CROSS.COM
   network: tcp
-  port: 443
-  server: 188.119.64.109
-  servername: u643766uaf472521s394.csgfw.top
-  tls: true
+  port: 2027
+  reality-opts:
+    public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
+    short-id: '!!str dc8109baf0f607ea'
+  server: 78.159.247.253
+  servername: storage.yandex.net
+  tls: false
   type: vless
-  uuid: 41f4cb15-5a3f-3934-89fe-b4177146adf4
-  ws-opts:
-    headers:
-      Host: af472521s394.csgfw.top
-    path: ''
-- name: 🇷🇺[openproxylist.com] vless-RU
+  uuid: 851ed0d8-a37b-452d-8ef2-5b6c2d28a060
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: grpc-reality
+  name: 🇷🇺[openproxylist.com] vless-RU
+  network: grpc
+  port: 9001
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: '!!str 6ba85179e30d4fc2'
+  server: 185.141.227.153
+  servername: api-maps.yandex.ru
+  tls: false
+  type: vless
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+- name: '🇷🇺[openproxylist.com] vless-RU #1'
   port: 443
   server: 185.178.46.50
   tls: false

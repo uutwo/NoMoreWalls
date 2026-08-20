@@ -3,7 +3,7 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.208
+  server: 104.17.111.4
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -12,52 +12,26 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.12
-  skip-cert-verify: false
+  server: join-telegram-channel-tirexnet.trex.kdns.fr
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    headers:
-      Host: www.ignitelimit.com
     path: '%2Fassignment'
 - name: '美国+CloudFlare节点 #3'
   network: ws
   password: humanity
   port: 443
   server: www.ignitelimit.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- alpn:
-  - http/1.1
-  name: 美国+V2CROSS.COM
-  network: ws
-  password: MiTiVPN
-  port: 443
-  server: 140.248.185.253
-  skip-cert-verify: false
-  sni: ssl.fastly.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/s-w@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
 - name: '美国+CloudFlare节点 #4'
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.233
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #5'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.117
+  server: 104.18.152.246
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
@@ -67,7 +41,8 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.108
+  server: 104.16.174.72
+  skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -76,14 +51,11 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.22
-  skip-cert-verify: false
+  server: 104.18.152.113
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2F%2Fassignment'
+    path: '%2Fassignment'
 - name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #71'
   password: humanity
   port: 443
@@ -464,21 +436,16 @@ proxies:
   name: 🇺🇸[openproxylist.com] vmess-US
   network: tcp
   port: '443'
+  server: 165.140.216.142
+  tls: false
+  type: vmess
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
+  network: tcp
+  port: '443'
   server: 64.83.12.153
   tls: false
   type: vmess
   uuid: 9d476209-d8bd-9536-6e8d-61c97ec114db
-- alterId: 0
-  cipher: aes-128-gcm
-  name: '🇺🇸[openproxylist.com] vmess-US #1'
-  network: ws
-  port: '80'
-  server: 74.48.28.190
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4ed58974-48cd-472e-c818-fb847b8c551f
-  ws-opts:
-    headers:
-      Host: ''
-    path: /cctv13.m3u8
