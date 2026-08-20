@@ -1,18 +1,50 @@
 proxies:
-- name: '美国+CloudFlare节点 #1'
+- name: 美国+CloudFlare节点
   network: ws
   password: humanity
   port: 443
-  server: 104.17.111.4
+  server: 104.18.152.143
+  skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #1'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.174.6
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: '%2Fassignment'
+- name: 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+  network: tcp
+  password: AE62539071
+  port: 443
+  server: frank-frog.rooster465.autos
+  sni: frank-frog.rooster465.autos
+  type: trojan
+- name: 北美地区+V2CROSS.COM
+  network: ws
+  password: humanity
+  port: 443
+  server: 198.62.62.23
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
 - name: '美国+CloudFlare节点 #2'
   network: ws
   password: humanity
   port: 443
-  server: join-telegram-channel-tirexnet.trex.kdns.fr
+  server: 104.18.12.149
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -21,37 +53,7 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: www.ignitelimit.com
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #4'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.246
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #6'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.72
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #7'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.113
+  server: 104.16.174.71
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
