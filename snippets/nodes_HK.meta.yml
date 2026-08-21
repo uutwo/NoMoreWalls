@@ -1,4 +1,12 @@
 proxies:
+- name: JP
+  password: oU4tGn37oQ9JGmqnlTGkU3knrfAbclsq
+  port: 32135
+  server: vip-jp-4.hkd4fwmg.vip
+  skip-cert-verify: true
+  sni: vip-jp-4.hkd4fwmg.vip
+  tls: false
+  type: hysteria2
 - name: 香港
   password: 1427eb10-7529-4d38-a6a2-01b337868b37
   port: 4433
@@ -94,6 +102,15 @@ proxies:
   tls: false
   type: vless
   uuid: e01b5875-0b0b-4056-bbf5-0b0ecdc97937
+- name: 🇭🇰[openproxylist.com] trojan-H...
+  network: tcp
+  password: AE62539071
+  port: 443
+  server: smiling-ray.rooster465.autos
+  sni: smiling-ray.rooster465.autos
+  type: trojan
+  ws-opts:
+    path: '%2f'
 - name: '🇭🇰[openproxylist.com] vless-HK #1'
   network: tcp
   port: 11650
@@ -101,15 +118,3 @@ proxies:
   tls: false
   type: vless
   uuid: 2aa2be33-b987-461e-8d0e-2ffe15cb8e4c
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰[openproxylist.com] vmess-HK
-  network: ws
-  port: '443'
-  server: wwafj5lhl6bi8au9.v.3dns.vip
-  servername: wwafj5lhl6bi8au9.v.3dns.vip
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    path: /ws-vmess
