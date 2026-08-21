@@ -1,86 +1,41 @@
 proxies:
-- name: 美国+CloudFlare节点
+- alpn:
+  - http/1.1
+  name: 美国+CloudFlare节点
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.14
-  skip-cert-verify: false
+  server: 104.18.23.63
+  skip-cert-verify: true
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: 美国+加州
+- alpn:
+  - http/1.1
+  name: 美国+加州
   network: ws
   password: humanity
   port: 443
-  server: render.com
-  skip-cert-verify: false
+  server: 216.24.57.7
   sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- alpn:
+  - http/1.1
+  name: '美国+V2CROSS.COM #1'
+  network: ws
+  password: MiTiVPN
+  port: 443
+  server: 140.248.185.253
+  skip-cert-verify: false
+  sni: ssl.fastly.com
   type: trojan
   ws-opts:
     headers:
-      Host: www.ignitelimit.com
-    path: /assignment
-- name: '美国+CloudFlare节点 #2'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.117
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #3'
-  network: ws
-  password: humanity
-  port: 443
-  server: www.ignitelimit.com
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #5'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.17.111.3
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #6'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.22
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2F%2Fassignment'
-- name: '美国+CloudFlare节点 #8'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.143
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #10'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.219
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
+      Host: 4-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/s-w@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
 - name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #73'
   password: humanity
   port: 443
@@ -467,6 +422,48 @@ proxies:
   network: ws
   port: 443
   server: node.socks5.kdns.fr
+  servername: written-maple-inquiries-exceptional.trycloudflare.com
+  tls: true
+  type: vmess
+  uuid: ca63bc09-a7b3-47c2-8fe5-7233c38ad489
+  ws-opts:
+    headers:
+      Host: written-maple-inquiries-exceptional.trycloudflare.com
+    path: /ca63bc09-a7b3-47c2-8fe5-7233c38ad489-vm
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
+  network: ws
+  port: 443
+  server: node.socks5.kdns.fr
+  servername: ward-encourages-cleanup-notre.trycloudflare.com
+  tls: true
+  type: vmess
+  uuid: 118eba6a-21f3-45d4-af0b-2a9344f2487e
+  ws-opts:
+    headers:
+      Host: ward-encourages-cleanup-notre.trycloudflare.com
+    path: /118eba6a-21f3-45d4-af0b-2a9344f2487e-vm
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #2'
+  network: ws
+  port: 443
+  server: node.socks5.kdns.fr
+  servername: booth-moreover-framework-thereafter.trycloudflare.com
+  tls: true
+  type: vmess
+  uuid: 37db053e-cb62-45bc-8a09-d2a9c2ebbd09
+  ws-opts:
+    headers:
+      Host: booth-moreover-framework-thereafter.trycloudflare.com
+    path: /37db053e-cb62-45bc-8a09-d2a9c2ebbd09-vm
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #3'
+  network: ws
+  port: '443'
+  server: node.socks5.kdns.fr
   servername: chest-own-llp-collections.trycloudflare.com
   tls: true
   type: vmess
@@ -475,16 +472,9 @@ proxies:
     headers:
       Host: chest-own-llp-collections.trycloudflare.com
     path: /e1ed0569-bfe4-468f-aa9a-63819e8229ef-vm
-- name: '🇺🇸[openproxylist.com] trojan-U... #2'
-  password: AE62539071
-  port: 443
-  server: 35.88.120.18
-  skip-cert-verify: false
-  sni: dominant-jaguar.rooster465.autos
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #1'
+  name: '🇺🇸[openproxylist.com] vmess-US #4'
   network: ws
   port: 443
   server: node.socks5.kdns.fr
