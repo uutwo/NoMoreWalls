@@ -1,37 +1,17 @@
 proxies:
 - name: 俄罗斯+V2CROSS.COM
-  network: ws
-  port: 2200
-  server: 5.42.103.91
+  password: 1427eb10-7529-4d38-a6a2-01b337868b37
+  port: 4433
+  server: hk2.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: 127.0.0.1
   tls: false
-  type: vless
-  uuid: 7b2ce6b0-6d2b-4926-b7bf-6247eb1a0050
-  ws-opts:
-    path: /v1
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇩🇰[openproxylist.com] vless-DK
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI
-    short-id: '!!str a1b2c3d4'
-  server: 46.29.235.9
-  servername: telegraf.lv
+  type: hysteria2
+- name: 香港
+  password: 1427eb10-7529-4d38-a6a2-01b337868b37
+  port: 4433
+  server: hk2.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: hk2.xiaoliyu.cyou
   tls: false
-  type: vless
-  uuid: d67af820-f54c-48ab-862c-19086357f276
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: grpc-reality
-  name: 🇷🇺[openproxylist.com] vless-RU
-  network: grpc
-  port: 9001
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: '!!str 6ba85179e30d4fc2'
-  server: 185.141.227.153
-  servername: api-maps.yandex.ru
-  tls: false
-  type: vless
-  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+  type: hysteria2

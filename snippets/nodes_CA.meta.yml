@@ -1,43 +1,49 @@
 proxies:
-- name: 加拿大+魁北克省蒙特利尔Amazon数据中心
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: vpn-ca-001.fastervpn.world
+- name: SG
+  password: 9gWt2z3KdC9VI8kAQYVvvSvhT9e05CfI
+  port: 12645
+  server: vip-sg-1.hkd4fwmg.vip
   skip-cert-verify: true
-  sni: vpn-ca-001.fastervpn.world
+  sni: vip-sg-1.hkd4fwmg.vip
   tls: false
   type: hysteria2
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #97'
+- name: 🇨🇦CA加拿大丨yoyapai.com\r
+  password: humanity
+  port: 443
+  server: 104.18.152.140
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: '🇨🇦CA加拿大丨yoyapai.com\r #1'
   password: humanity
   port: 443
   server: 104.16.73.213
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.ignitelimit.com
   type: trojan
-- name: '🇨🇦 CA加拿大(mibei77.com 米贝节点分享) #1'
-  password: humanity
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇨🇦[openproxylist.com] vless-CA
+  network: tcp
   port: 443
-  server: 104.18.22.63
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-- name: '🇫🇷 FR法国(mibei77.com 米贝节点分享) #21'
-  password: humanity
-  port: 443
-  server: 104.18.152.73
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-- name: '🇨🇦 CA加拿大(mibei77.com 米贝节点分享) #8'
-  password: humanity
-  port: 443
-  server: 172.67.221.242
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-- name: 🇨🇦[openproxylist.com] vless-CA
-  port: 443
+  reality-opts:
+    public-key: i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500
+    short-id: '!!str b91a73752053b039'
   server: 184.107.141.174
+  servername: ca.servers.gracevpnbuy.com
   tls: false
   type: vless
   uuid: bb05f9d7-a3d1-4b81-a790-f6dba0301907
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇨🇦[openproxylist.com] vless-CA #1'
+  network: tcp
+  port: 443
+  server: lizca2.footballfantasyforum.com
+  servername: lizca2.footballfantasyforum.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
