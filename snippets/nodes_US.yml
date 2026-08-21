@@ -1,15 +1,29 @@
 proxies:
+- name: 美国+CloudFlare节点
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.26.15.137
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: '%2Fassignment'
 - name: 美国+加州
   network: ws
   password: humanity
   port: 443
-  server: 216.24.57.7
+  server: render.com
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: 美国+CloudFlare节点
+- alpn:
+  - http/1.1
+  name: '美国+CloudFlare节点 #2'
   network: ws
   password: humanity
   port: 443
@@ -21,17 +35,15 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #1'
+- name: 美国+得克萨斯州达拉斯Cloudflare+Warp节点
   network: ws
   password: humanity
   port: 443
-  server: 104.26.15.137
+  server: 8.6.112.0
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    headers:
-      Host: www.ignitelimit.com
     path: '%2Fassignment'
 - name: 🇺🇸 美国 CloudFlare节点
   password: humanity
@@ -113,7 +125,7 @@ proxies:
   skip-cert-verify: true
   sni: blackshadow.dpdns.org
   type: trojan
-- name: 🇺🇸_US_美国
+- name: 🇺🇸[openproxylist.com] trojan-U...
   password: AE62539071
   port: 443
   server: humorous-hawk.rooster465.autos
@@ -176,18 +188,17 @@ proxies:
     headers:
       Host: chest-own-llp-collections.trycloudflare.com
     path: /e1ed0569-bfe4-468f-aa9a-63819e8229ef-vm
-- name: 🇺🇸[openproxylist.com] trojan-U...
+- name: '🇺🇸[openproxylist.com] trojan-U... #1'
   password: fg20mtCFHy
   port: 5555
   server: 128.14.181.220
   skip-cert-verify: true
   sni: www.bing.com
   type: trojan
-- name: '🇺🇸[openproxylist.com] trojan-U... #1'
+- name: '🇺🇸[openproxylist.com] trojan-U... #2'
   password: AE62539071
   port: 443
   server: dear-hermit.rooster465.autos
-  skip-cert-verify: true
   type: trojan
 - alterId: 0
   cipher: auto
