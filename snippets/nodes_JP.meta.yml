@@ -1,4 +1,11 @@
 proxies:
+- name: 日本+东京Choopa数据中心
+  password: 1e3a5c5fde1da9dd1358b4adeb0c4ca1
+  port: 443
+  server: 45.32.252.144
+  sni: vps.vpsv.cc
+  tls: false
+  type: hysteria2
 - name: 日本
   password: Foc_Mcxi45rM9v3ve_N92fdrK_10_Ssc5
   port: 8443
@@ -47,20 +54,6 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #87'
-  password: humanity
-  port: 443
-  server: 104.16.174.44
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #61'
-  password: humanity
-  port: 443
-  server: 104.18.152.97
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
 - alterId: 2
   cipher: auto
   name: 🇨🇳_CN_中国->🇯🇵_JP_日本
@@ -71,10 +64,23 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇯🇵[openproxylist.com] vless-JP
+  network: tcp
+  port: 20725
+  reality-opts:
+    public-key: hceZHd9X9FSbWGXGgm3OWN-4Au26rrsriTcyHw5M3VU
+    short-id: '!!str 0102ac4e'
+  server: 154.19.187.249
+  servername: buylite.tv.apple.com
+  tls: false
+  type: vless
+  uuid: 6dcb725e-947e-4bbe-bb35-903374d57179
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: grpc
-  name: 🇯🇵[openproxylist.com] vless-JP
+  name: '🇯🇵[openproxylist.com] vless-JP #1'
   network: grpc
   port: 2087
   reality-opts:
@@ -85,9 +91,9 @@ proxies:
   tls: false
   type: vless
   uuid: 524e00ce-ed89-481d-b4a4-6d7017f884e3
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #1'
+  name: '🇯🇵[openproxylist.com] vless-JP #2'
   network: tcp
   port: 443
   reality-opts:
@@ -98,7 +104,7 @@ proxies:
   tls: false
   type: vless
   uuid: 048a61f8-b236-4082-b1c3-c22a85693c12
-- name: '🇯🇵[openproxylist.com] vless-JP #2'
+- name: '🇯🇵[openproxylist.com] vless-JP #3'
   port: 2087
   server: 31.76.91.138
   tls: false
@@ -106,7 +112,7 @@ proxies:
   uuid: 309b0ce3-09a8-4883-bfe4-bd56e215be44
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #3'
+  name: '🇯🇵[openproxylist.com] vless-JP #4'
   network: tcp
   port: 443
   reality-opts:
@@ -117,10 +123,3 @@ proxies:
   tls: false
   type: vless
   uuid: 0b772594-d6b9-4f4f-849b-8a6f92f594fe
-- name: '🇯🇵[openproxylist.com] vless-JP #4'
-  network: tcp
-  port: 52143
-  server: 139.180.198.220
-  tls: false
-  type: vless
-  uuid: 2942bae7-9dcf-4a2e-f928-933c0ab3eab0

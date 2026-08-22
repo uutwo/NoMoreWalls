@@ -1,17 +1,34 @@
 proxies:
-- client-fingerprint: chrome
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
   name: 英国+V2CROSS.COM
-  network: ws
-  port: 443
-  server: 194.154.30.154
-  servername: forfreeuse.rtqa.ru
-  tls: true
+  network: tcp
+  port: 13443
+  reality-opts:
+    public-key: gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM
+    short-id: '!!str a7f3c91b2e6d84c0'
+  server: 31.76.5.26
+  servername: auto.cendora.ru
+  tls: false
   type: vless
-  uuid: c7e9c591-2764-423a-afca-efbd010fd396
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
   ws-opts:
     headers:
-      Host: forfreeuse.rtqa.ru
-    path: /
+      Host: auto.cendora.ru
+    path: '%2F'
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #27'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: YQTixaXzPVImuRc4TUbrFAekjIiaYV-t5S-HTKlH0AU
+    short-id: '!!str 2186a755ed67b034'
+  server: 31.76.5.26
+  servername: nordic.cendora.ru
+  tls: false
+  type: vless
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
 - name: 英国
   password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
   port: 443
@@ -34,12 +51,12 @@ proxies:
   sni: hopp-legend-se.roxa.org
   tls: false
   type: hysteria2
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #78'
-  password: humanity
-  port: 443
-  server: 104.19.229.21
+- name: 🇬🇧 GB英国(mibei77.com 米贝节点分享)
+  password: fg20mtCFHy
+  port: 5448
+  server: londhtc.southbyte.xyz
   skip-cert-verify: false
-  sni: www.ignitelimit.com
+  sni: londhtc.southbyte.xyz
   type: trojan
 - name: 🇬🇧[openproxylist.com] vless-GB
   port: 443
@@ -47,14 +64,17 @@ proxies:
   tls: false
   type: vless
   uuid: e5d917f5-fc78-455e-bbb5-81d08715f3d6
-- name: '🇬🇧[openproxylist.com] vless-GB #1'
+- client-fingerprint: chrome
+  name: '🇬🇧[openproxylist.com] vless-GB #1'
+  network: ws
   port: 443
   server: gb1.wba-pn.ru
-  tls: false
+  skip-cert-verify: false
+  tls: true
   type: vless
   uuid: 4bc8ff7a-20b4-41b2-9751-dfca869f0553
   ws-opts:
-    path: '%2F'
+    path: /
 - name: '🇬🇧[openproxylist.com] vless-GB #2'
   port: 443
   server: 129.121.95.159
@@ -63,3 +83,16 @@ proxies:
   uuid: f6190ff2-864c-46cf-ac16-93908c069b75
   ws-opts:
     path: '%2Fconnect'
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇬🇧[openproxylist.com] vless-GB #3'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: m6RDw1b8R4lCaRUIzhHpy6TtX2Dhk6nyby8dWzeQqA0
+    short-id: '!!str dd3ff38418d29d22'
+  server: 144.31.213.188
+  servername: eu-west.cendora.ru
+  tls: false
+  type: vless
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
