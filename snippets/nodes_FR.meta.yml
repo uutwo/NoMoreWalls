@@ -1,12 +1,4 @@
 proxies:
-- name: 法国+ONLINE+S.A.S.数据中心
-  password: github.com/Alvin9999-newpac/fanqiang
-  port: 43115
-  server: 62.210.147.2
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  tls: false
-  type: hysteria2
 - name: 法国
   password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
   port: 443
@@ -92,14 +84,52 @@ proxies:
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
-- name: 🇫🇷[openproxylist.com] vless-FR
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇫🇷[openproxylist.com] vless-FR
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
+    short-id: '!!str bbc68cec8bb8d2e3'
+  server: 77.221.152.100
+  servername: node14.mxvpn.dev
+  tls: false
+  type: vless
+  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
+- client-fingerprint: firefox
+  name: '🇫🇷[openproxylist.com] vless-FR #1'
+  network: tcp
+  port: 32855
+  reality-opts:
+    public-key: fRtTW1zQqje-Yh1DqPAHA8nWOMsX983pZUxy58FaY10
+    short-id: '!!str deb7a9e5a6e1d41a'
+  server: 172.239.26.211
+  servername: amp-api-edge.apps.apple.com
+  tls: false
+  type: vless
+  uuid: 6a08e957-908a-4711-8e80-54e21c96c2ad
+- name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: tcp
   port: 443
   server: france.me.pingsf.ir
   tls: false
   type: vless
   uuid: d33d2dd1-04c1-4d43-b2e6-77c56297128e
-- name: '🇫🇷[openproxylist.com] vless-FR #1'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇫🇷[openproxylist.com] vless-FR #3'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
+    short-id: '!!str bbc68cec8bb8d2e3'
+  server: node21.mxvpn.dev
+  servername: node21.mxvpn.dev
+  tls: false
+  type: vless
+  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
+- name: '🇫🇷[openproxylist.com] vless-FR #4'
   network: ws
   port: 2096
   server: usejh2.neobo-tooth.ru
