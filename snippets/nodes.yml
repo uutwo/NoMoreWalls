@@ -93,19 +93,35 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.71
+  server: ip.myip2.qzz.io
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    headers:
-      Host: www.ignitelimit.com
+    path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #1'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.22.63
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: 立陶宛+V2CROSS.COM
+  network: ws
+  password: humanity
+  port: 443
+  server: 86.38.214.205
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
     path: '%2Fassignment'
 - name: '美国+CloudFlare节点 #2'
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.244
+  server: 104.18.152.108
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -114,51 +130,38 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.246
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #4'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.22.63
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #5'
-  network: ws
-  password: humanity
-  port: 443
-  server: 172.67.74.2
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #6'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.210
-  skip-cert-verify: false
+  server: 104.16.174.71
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     headers:
       Host: www.ignitelimit.com
     path: '%2Fassignment'
-- name: 美国+加州
+- alpn:
+  - http/1.1
+  name: 美国+V2CROSS.COM
+  network: ws
+  password: MiTiVPN
+  port: 443
+  server: 140.248.185.253
+  skip-cert-verify: false
+  sni: ssl.fastly.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 4x-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/s-w@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+- name: '美国+CloudFlare节点 #4'
   network: ws
   password: humanity
   port: 443
-  server: 216.24.57.7
+  server: 104.16.174.148
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
+    headers:
+      Host: www.ignitelimit.com
     path: '%2Fassignment'
 - name: '美国+CloudFlare节点 #7'
   network: ws
@@ -170,38 +173,30 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- alpn:
-  - http/1.1
-  - h2
-  - h3
-  name: '美国+CloudFlare节点 #8'
+- name: '美国+CloudFlare节点 #8'
   network: ws
   password: humanity
   port: 443
-  server: 198.41.223.96
+  server: 104.17.111.3
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    headers:
-      Host: www.ignitelimit.com
     path: '%2Fassignment'
 - name: '美国+CloudFlare节点 #9'
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.121
+  server: 198.41.223.96
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    headers:
-      Host: www.ignitelimit.com
     path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #11'
+- name: '美国+CloudFlare节点 #10'
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.187
+  server: 104.16.174.72
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
@@ -209,6 +204,27 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #12'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.140
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #13'
+  network: ws
+  password: humanity
+  port: 443
+  server: 172.67.149.60
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: /assignment
 - name: '🇭🇰 HK香港(mibei77.com 米贝节点分享) #3'
   password: humanity
   port: 443
@@ -1119,15 +1135,6 @@ proxies:
   port: 443
   server: 89.39.70.64
   type: trojan
-- name: 🇭🇰[openproxylist.com] trojan-H...
-  network: tcp
-  password: HC04361579
-  port: 443
-  server: renewing-ewe.rooster465.autos
-  sni: renewing-ewe.rooster465.autos
-  type: trojan
-  ws-opts:
-    path: /
 - name: 🇺🇸[openproxylist.com] trojan-U...
   network: tcp
   password: EQ30679154
@@ -1135,19 +1142,19 @@ proxies:
   server: absolute-teal.rooster465.autos
   sni: absolute-teal.rooster465.autos
   type: trojan
-- name: '🇭🇰[openproxylist.com] trojan-H... #1'
+- name: 🇭🇰[openproxylist.com] trojan-H...
   password: AE62539071
   port: 443
   server: humorous-parakeet.rooster465.autos
   sni: humorous-parakeet.rooster465.autos
   type: trojan
-- name: '🇭🇰[openproxylist.com] trojan-H... #2'
+- name: '🇭🇰[openproxylist.com] trojan-H... #1'
   password: AE62539071
   port: 443
   server: magical-kodiak.rooster465.autos
   sni: magical-kodiak.rooster465.autos
   type: trojan
-- name: '🇭🇰[openproxylist.com] trojan-H... #3'
+- name: '🇭🇰[openproxylist.com] trojan-H... #2'
   network: tcp
   password: PQ05174892
   port: 443
@@ -1198,10 +1205,11 @@ proxies:
   sni: dominant-jaguar.rooster465.autos
   type: trojan
 - name: '🇵🇱[openproxylist.com] trojan-P... #3'
+  network: tcp
   password: AE62539071
   port: 443
   server: enough-basilisk.rooster465.autos
-  sni: enough-basilisk.rooster465.autos
+  skip-cert-verify: false
   type: trojan
 - alterId: 0
   cipher: auto
@@ -1239,3 +1247,21 @@ proxies:
   server: pretty-mollusk.rooster465.autos
   skip-cert-verify: false
   type: trojan
+- name: '🇭🇰[openproxylist.com] trojan-H... #3'
+  network: tcp
+  password: AE62539071
+  port: 443
+  server: smiling-ray.rooster465.autos
+  sni: smiling-ray.rooster465.autos
+  type: trojan
+  ws-opts:
+    path: '%2f'
+- name: '🇳🇱[openproxylist.com] trojan-N... #1'
+  network: tcp
+  password: AE62539071
+  port: 443
+  server: present-warthog.rooster465.autos
+  sni: present-warthog.rooster465.autos
+  type: trojan
+  ws-opts:
+    path: /
