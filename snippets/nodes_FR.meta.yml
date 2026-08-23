@@ -1,19 +1,13 @@
 proxies:
-- name: 法国
-  password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+- name: 法国巴黎+CloudFlare节点
+  network: ws
+  password: humanity
   port: 443
-  server: fr194.mechvpn.online
-  sni: fr194.mechvpn.online
-  tls: false
-  type: hysteria2
-- name: '法国 #1'
-  password: Krab9Hyst2_Rk7pQ2xL
-  port: 36723
-  server: fr.vpn.legendaah.xyz
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  tls: false
-  type: hysteria2
+  server: 141.101.90.101
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
 - name: '🇭🇰 HK香港(mibei77.com 米贝节点分享) #7'
   password: humanity
   port: 443
@@ -105,16 +99,18 @@ proxies:
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
-- name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #106'
-  password: humanity
-  port: 443
-  server: 216.24.57.1
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: 🇫🇷[openproxylist.com] vless-FR
+  port: 443
+  server: 88.218.196.178
+  servername: lapa4.api3-max.ru
+  tls: true
+  type: vless
+  uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇫🇷[openproxylist.com] vless-FR #1'
   network: tcp
   port: 443
   reality-opts:
@@ -127,7 +123,7 @@ proxies:
   uuid: 0772109c-a680-4896-b005-d86513194f96
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
+  name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: tcp
   port: 443
   reality-opts:
@@ -138,7 +134,7 @@ proxies:
   tls: false
   type: vless
   uuid: 0772109c-a680-4896-b005-d86513194f96
-- name: '🇫🇷[openproxylist.com] vless-FR #2'
+- name: '🇫🇷[openproxylist.com] vless-FR #3'
   network: ws
   port: 2096
   server: usejh2.neobo-tooth.ru
@@ -153,7 +149,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: grpc-reality
-  name: '🇫🇷[openproxylist.com] vless-FR #3'
+  name: '🇫🇷[openproxylist.com] vless-FR #4'
   network: grpc
   port: 9002
   reality-opts:
