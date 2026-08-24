@@ -93,18 +93,23 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.19.229.21
+  server: 104.16.174.121
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #1'
+    headers:
+      Host: www.ignitelimit.com
+    path: /assignment
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '美国+CloudFlare节点 #1'
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.140
-  skip-cert-verify: false
+  server: join-telegram-channel-tirexnet.trex.kdns.fr
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -113,25 +118,31 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 172.67.74.2
+  server: 104.20.6.134
+  skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
+    headers:
+      Host: www.ignitelimit.com
     path: '%2Fassignment'
 - name: '美国+CloudFlare节点 #3'
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.225
+  server: 104.16.174.36
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
+    headers:
+      Host: www.ignitelimit.com
     path: '%2Fassignment'
 - name: '美国+CloudFlare节点 #4'
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.124
+  server: 104.18.152.144
+  skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -140,109 +151,43 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.16.73.213
-  skip-cert-verify: false
+  server: 104.17.111.4
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    headers:
-      Host: www.ignitelimit.com
     path: '%2Fassignment'
 - name: '美国+CloudFlare节点 #6'
   network: ws
   password: humanity
   port: 443
-  server: 104.18.23.63
-  skip-cert-verify: false
+  server: 104.26.14.137
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    headers:
-      Host: www.ignitelimit.com
     path: '%2Fassignment'
 - name: '美国+CloudFlare节点 #7'
   network: ws
   password: humanity
   port: 443
-  server: 104.26.14.137
+  server: 104.18.152.244
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     headers:
       Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '美国+CloudFlare节点 #8'
-  network: ws
-  password: humanity
-  port: 443
-  server: join-telegram-channel.tirexnet.kdns.fr
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
     path: '%2Fassignment'
 - name: '美国+CloudFlare节点 #9'
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.175
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #10'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.22.63
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #11'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.17.177.143
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #12'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.185
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #13'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.113
+  server: 104.18.152.77
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     headers:
       Host: www.ignitelimit.com
-    path: /assignment
-- name: '美国+CloudFlare节点 #14'
-  network: ws
-  password: humanity
-  port: 443
-  server: ip.myip2.qzz.io
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
     path: '%2Fassignment'
 - name: '🇺🇸 US美国(mibei77.com 米贝节点分享) #67'
   password: humanity
@@ -361,11 +306,10 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
-  name: 香港2|@ripaojiedian
+  name: 🇭🇰 香港2|@ripaojiedian
   network: ws
   port: '443'
   server: t245hvl0VMtlXR4v.v.3dns.vip
-  servername: t245hvl0VMtlXR4v.v.3dns.vip
   tls: true
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
@@ -375,11 +319,10 @@ proxies:
     path: /ws-vmess
 - alterId: 0
   cipher: auto
-  name: 香港3|@ripaojiedian
+  name: 🇭🇰 香港3|@ripaojiedian
   network: ws
   port: '443'
   server: 3j41E63Msh9TgXvR.v.3dns.vip
-  servername: 3j41E63Msh9TgXvR.v.3dns.vip
   tls: true
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
@@ -387,8 +330,7 @@ proxies:
     headers:
       Host: 3j41E63Msh9TgXvR.v.3dns.vip
     path: /ws-vmess
-- name: 日本|@ripaojiedian
-  network: tcp
+- name: 🇯🇵 日本|@ripaojiedian
   password: BxceQaOe
   port: 44002
   server: 43.199.64.95
@@ -397,11 +339,10 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 日本2|@ripaojiedian
+  name: 🇯🇵 日本2|@ripaojiedian
   network: ws
   port: '443'
   server: J3Nz0zA0r13AoVhH.v.3dns.vip
-  servername: J3Nz0zA0r13AoVhH.v.3dns.vip
   tls: true
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
@@ -409,8 +350,7 @@ proxies:
     headers:
       Host: J3Nz0zA0r13AoVhH.v.3dns.vip
     path: /ws-vmess
-- name: 香港4|@ripaojiedian
-  network: tcp
+- name: 🇭🇰 香港4|@ripaojiedian
   password: BxceQaOe
   port: 1103
   server: 35.78.187.63
@@ -419,11 +359,10 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 日本3|@ripaojiedian
+  name: 🇯🇵 日本3|@ripaojiedian
   network: ws
   port: '443'
   server: UcKniXjfd2JOKBmx.v.3dns.vip
-  servername: UcKniXjfd2JOKBmx.v.3dns.vip
   tls: true
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
@@ -433,11 +372,10 @@ proxies:
     path: /ws-vmess
 - alterId: 0
   cipher: auto
-  name: 新加坡|@ripaojiedian
+  name: 🇸🇬 新加坡|@ripaojiedian
   network: ws
   port: '443'
   server: Aim7HqTuvNOofcsx.v.3dns.vip
-  servername: Aim7HqTuvNOofcsx.v.3dns.vip
   tls: true
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
@@ -445,16 +383,14 @@ proxies:
     headers:
       Host: Aim7HqTuvNOofcsx.v.3dns.vip
     path: /ws-vmess
-- name: 新加坡3|@ripaojiedian
-  network: tcp
+- name: 🇸🇬 新加坡3|@ripaojiedian
   password: BxceQaOe
   port: 41421
   server: 35.78.187.63
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 香港5|@ripaojiedian
-  network: tcp
+- name: 🇭🇰 香港5|@ripaojiedian
   password: BxceQaOe
   port: 1103
   server: 18.163.79.248
@@ -463,11 +399,10 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 美国2|@ripaojiedian
+  name: 🇺🇸 美国2|@ripaojiedian
   network: ws
   port: '443'
   server: 3kCf86Ufi0U5xBDA.v.3dns.vip
-  servername: 3kCf86Ufi0U5xBDA.v.3dns.vip
   tls: true
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
@@ -477,11 +412,10 @@ proxies:
     path: /ws-vmess
 - alterId: 0
   cipher: auto
-  name: 美国|@ripaojiedian
+  name: 🇺🇸 美国|@ripaojiedian
   network: ws
   port: '443'
   server: lL0GIaPVZ6Zxkd94.v.3dns.vip
-  servername: lL0GIaPVZ6Zxkd94.v.3dns.vip
   tls: true
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
@@ -489,8 +423,7 @@ proxies:
     headers:
       Host: lL0GIaPVZ6Zxkd94.v.3dns.vip
     path: /ws-vmess
-- name: 美国3|@ripaojiedian
-  network: tcp
+- name: 🇺🇸 美国3|@ripaojiedian
   password: BxceQaOe
   port: 39024
   server: 54.46.3.138
@@ -647,10 +580,11 @@ proxies:
   sni: www.ignitelimit.com
   type: trojan
 - name: 🇪🇪[openproxylist.com] trojan-E...
+  network: tcp
   password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
   port: 449
   server: 109.206.241.10
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: russiapower.accesscam.org
   type: trojan
 - alterId: 0
@@ -1092,6 +1026,66 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 香港4|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 4117
+  server: 18.183.103.86
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 香港5|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 2944
+  server: 18.166.63.119
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 日本|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 3878
+  server: 13.214.209.40
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 新加坡3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 41421
+  server: 18.183.103.86
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 美国3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 34039
+  server: 54.179.227.94
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇹🇷[openproxylist.com] vmess-TR
+  network: tcp
+  port: '5384'
+  server: dashboard.aframarket.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cfd42ad2-6fc7-443f-994e-10e3d7df24d1
+- alterId: 0
+  cipher: auto
+  name: 🇫🇮[openproxylist.com] vmess-FI
+  network: tcp
+  port: '33120'
+  server: 65.109.211.136
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e951ae39-2240-40ca-be13-9f862c3de3ce
 - alterId: 0
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
@@ -1108,30 +1102,22 @@ proxies:
     path: /video/ke716z/7x219hzy.m3u8
 - alterId: 0
   cipher: auto
-  name: 🇩🇪[openproxylist.com] vmess-DE
-  network: ws
-  port: '2053'
-  server: cf.levikogjgfdd.ir
-  servername: deapp.jisuyun.top
-  tls: true
-  type: vmess
-  uuid: 9a1a05d9-69be-45d3-e326-c6621edf7b31
-  ws-opts:
-    headers:
-      Host: deapp.jisuyun.top
-    path: /devm
-- alterId: 0
-  cipher: auto
-  name: 🏳[openproxylist.com] vmess-
-  network: ws
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
+  network: tcp
   port: '443'
-  server: tokyo02.zgjok.com
-  servername: tokyo02.zgjok.com
-  tls: true
+  server: 165.140.216.142
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 3fe113f9-e564-4111-b8c7-11f597687689
-  ws-opts:
-    path: /
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+- name: 🇺🇸[openproxylist.com] trojan-U...
+  network: tcp
+  password: FH72359861
+  port: 443
+  server: 44.251.158.80
+  skip-cert-verify: false
+  sni: obliging-louse.rooster465.autos
+  type: trojan
 - alterId: 64
   cipher: auto
   name: 🇨🇳[openproxylist.com] vmess-CN
@@ -1148,27 +1134,28 @@ proxies:
   network: ws
   port: '443'
   server: wwafj5lhl6bi8au9.v.3dns.vip
-  servername: wwafj5lhl6bi8au9.v.3dns.vip
   tls: true
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
+    headers:
+      Host: wwafj5LHl6bI8aU9.v.3dns.vip
     path: /ws-vmess
 - alterId: 0
   cipher: auto
   name: 🇬🇧[openproxylist.com] vmess-GB
   network: tcp
   port: '2053'
-  server: node-uk.connectsuite.org
-  servername: ''
+  server: 51.38.71.147
+  servername: node-uk.connectsuite.org
   tls: true
   type: vmess
   uuid: 72f2cbe4-2874-45b7-b6aa-b93077c10c72
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #1'
+  name: '🇺🇸[openproxylist.com] vmess-US #2'
   network: ws
-  port: '443'
+  port: 443
   server: rush-6it6b.teeopp.quest
   servername: rush-6it6b.teeopp.quest
   tls: true
@@ -1176,47 +1163,18 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: ''
+      Host: rush-6it6b.teeopp.quest
     path: /
 - alterId: 0
   cipher: auto
   name: '🇭🇰[openproxylist.com] vmess-HK #1'
   network: ws
-  port: 35043
+  port: '35043'
   server: 156.245.232.239
-  servername: ''
   tls: false
   type: vmess
   uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
   ws-opts:
     headers:
       Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇨🇦[openproxylist.com] vmess-CA
-  network: ws
-  port: '28809'
-  server: 216.128.176.166
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ebca559c-a4a1-4062-9453-6412d8ff5255
-  ws-opts:
-    headers:
-      Host: ''
-    path: /ebca559c-a4a1-4062-9453-6412d8ff5255
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬[openproxylist.com] vmess-SG
-  network: ws
-  port: '13118'
-  server: 140.83.57.20
-  servername: sg.11160321.de5.net
-  tls: true
-  type: vmess
-  uuid: 1f01e389-fbcb-494c-e46a-210ec36329c2
-  ws-opts:
-    headers:
-      Host: sg.11160321.de5.net
     path: /

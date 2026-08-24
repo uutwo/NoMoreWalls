@@ -1,20 +1,41 @@
 proxies:
-- name: 🇷🇺[openproxylist.com] vless-RU
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: ns
+  name: 🇷🇺[openproxylist.com] vless-RU
+  network: grpc
   port: 443
+  reality-opts:
+    public-key: QZz4tjRkxYsgTZBlRALOQU4O5YnAGtSGkXF8OSX11m8
   server: 31.76.84.62
+  servername: id.pervye.ru
   tls: false
   type: vless
   uuid: 791a171e-c0af-4bd7-b8ce-43541c7585db
 - client-fingerprint: firefox
   grpc-opts:
-    grpc-service-name: grpc-reality
+    grpc-service-name: neurex
   name: '🇷🇺[openproxylist.com] vless-RU #1'
   network: grpc
-  port: 9001
+  port: 16923
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 78.159.245.75
+    public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
+    short-id: '!!str 10ffb85da1c2d986'
+  server: 201.51.1.84
   servername: api-maps.yandex.ru
   tls: false
   type: vless
-  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+  uuid: ba222add-6ac1-45f1-9a18-f91cb38e324f
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 8bkjYMx4EXdRTHTgQ6wMaeyGl-HfskzixE0Is-kMQXU
+    short-id: '!!str e3c60a1b71b462fa'
+  server: 45.91.52.125
+  servername: www.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 3ab2615c-689d-463b-8990-a95013894348

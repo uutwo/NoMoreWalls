@@ -1,4 +1,31 @@
 proxies:
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #16'
+  network: tcp
+  port: 13443
+  reality-opts:
+    public-key: gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM
+    short-id: '!!str a7f3c91b2e6d84c0'
+  server: 31.76.5.26
+  servername: auto.cendora.ru
+  tls: false
+  type: vless
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+- client-fingerprint: chrome
+  name: '英国+V2CROSS.COM #1'
+  network: ws
+  port: 8443
+  server: 91.110.174.210
+  servername: rubifen.adaspoloandco.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  ws-opts:
+    headers:
+      Host: rubifen.adaspoloandco.com
+    path: '%2FGOrbEh'
 - name: 英国
   password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
   port: 443
@@ -11,14 +38,6 @@ proxies:
   server: hy2-germany.unlimited-access.ru
   skip-cert-verify: true
   sni: hy2-germany.unlimited-access.ru
-  tls: false
-  type: hysteria2
-- name: '英国 #2'
-  password: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
-  port: 8080
-  server: 138.124.0.168
-  skip-cert-verify: true
-  sni: hopp-legend-se.roxa.org
   tls: false
   type: hysteria2
 - name: '英国 #3'
@@ -35,71 +54,59 @@ proxies:
   network: tcp
   port: 443
   reality-opts:
-    public-key: 2ATxqiR22wlo3yXOHc43LFHM5NzWCdSGZLdBay_vJgM
-    short-id: '!!str e4a1b53b03eff60d'
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: '!!str fd55b698ee8c3629'
+  server: 109.169.37.129
+  servername: foodnetwork.com
+  tls: false
+  type: vless
+  uuid: 2ed0d2a0-dbba-4cc2-95df-a197831d9978
+- name: '🇬🇧[openproxylist.com] vless-GB #1'
+  port: 443
   server: 95.154.196.61
-  servername: strapi.io
   tls: false
   type: vless
   uuid: e5d917f5-fc78-455e-bbb5-81d08715f3d6
-- name: '🇬🇧[openproxylist.com] vless-GB #1'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇬🇧[openproxylist.com] vless-GB #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: RVj8E6YuWeOq9XzIVLQCKM39qa-Cknp-GYvVAA1UPFo
+    short-id: '!!str 72cceb78'
+  server: 138.124.125.211
+  servername: www.apple.com
+  tls: false
+  type: vless
+  uuid: 1996007c-e7bc-464b-999b-cac28cec6c3e
+- name: '🇬🇧[openproxylist.com] vless-GB #3'
+  network: ws
   port: 443
   server: gb1.wba-pn.ru
-  tls: false
+  tls: true
   type: vless
   uuid: 4bc8ff7a-20b4-41b2-9751-dfca869f0553
   ws-opts:
-    path: '%2F'
-- client-fingerprint: firefox
-  name: '🇬🇧[openproxylist.com] vless-GB #2'
-  network: ws
-  port: 443
-  server: 129.121.95.159
-  servername: 129.121.95.159
-  tls: true
-  type: vless
-  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
-  ws-opts:
-    headers:
-      Host: 129.121.95.159
-    path: '%2Fconnect'
+    path: /
 - alpn:
   - http/1.1
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #3'
+  name: '🇬🇧[openproxylist.com] vless-GB #4'
   port: 443
   server: 45.87.104.185
   servername: medicine.repaironline.biz
   tls: true
   type: vless
   uuid: f463819c-5e64-458a-808b-6693afb47aa4
-- name: '🇬🇧[openproxylist.com] vless-GB #4'
-  port: 443
-  server: 144.31.213.188
-  tls: false
-  type: vless
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
 - alterId: 0
   cipher: auto
   name: 🇬🇧[openproxylist.com] vmess-GB
   network: tcp
   port: '2053'
-  server: node-uk.connectsuite.org
-  servername: ''
+  server: 51.38.71.147
+  servername: node-uk.connectsuite.org
   tls: true
   type: vmess
   uuid: 72f2cbe4-2874-45b7-b6aa-b93077c10c72
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #5'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: CTduQ5Pvex1U2D1ojmFgSF4MQ1N7Yft7EfnEEBK1l1U
-    short-id: '!!str c571c801812c'
-  server: 45.150.66.201
-  servername: www.nvidia.com
-  tls: false
-  type: vless
-  uuid: 19ac8928-fe6e-49af-a223-9ca127e4018f
