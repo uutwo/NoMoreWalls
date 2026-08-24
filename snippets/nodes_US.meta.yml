@@ -1,38 +1,49 @@
 proxies:
-- name: 美国+V2CROSS.COM
-  password: d1224950-ffab-4b9a-8696-431b40a6cfbd
-  port: 443
-  server: bel-03.node.lumixnet.com
-  sni: bel-03.node.lumixnet.com
-  tls: false
-  type: hysteria2
 - name: 美国+CloudFlare节点
   network: ws
   password: humanity
   port: 443
-  server: 104.26.14.137
+  server: www.speedtest.org
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- client-fingerprint: chrome
-  name: '美国+CloudFlare节点 #1'
+- name: '美国+CloudFlare节点 #1'
   network: ws
+  password: humanity
   port: 443
-  server: 104.17.182.11
-  servername: hhlfy.twiladaphne.ndjp.net
-  tls: true
-  type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  server: 104.18.152.208
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
   ws-opts:
     headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-    path: /
+      Host: www.ignitelimit.com
+    path: '%2Fassignment'
+- name: 美国+加州
+  network: ws
+  password: humanity
+  port: 443
+  server: 216.24.57.7
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
 - name: '美国+CloudFlare节点 #2'
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.121
+  server: 104.20.6.134
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: 美国+V2CROSS.COM
+  network: ws
+  password: humanity
+  port: 443
+  server: 45.130.125.160
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
@@ -42,28 +53,42 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.33
+  server: 104.18.152.207
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     path: '%2Fassignment'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '美国+V2CROSS.COM #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: WRK4JiKTQ6ygRHh1tRfUzuSO1-v2fKfsFoy3O9pXOi8
+    short-id: '!!str 00e32d694f37c137'
+  server: 167.104.223.66
+  servername: 167.104.223.66.sslip.io
+  tls: false
+  type: vless
+  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
+- client-fingerprint: chrome
+  name: '美国+V2CROSS.COM #2'
+  network: ws
+  port: 443
+  server: 144.225.246.111
+  servername: cf.udpid.org
+  tls: true
+  type: vless
+  uuid: 7893b302-3882-4c38-9ab6-6313f1575d1a
+  ws-opts:
+    headers:
+      Host: cf.udpid.org
+    path: /@zyzzzoao
 - name: '美国+CloudFlare节点 #4'
   network: ws
   password: humanity
   port: 443
-  server: 104.26.15.137
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: 美国+得克萨斯州达拉斯Cloudflare+Warp节点
-  network: ws
-  password: humanity
-  port: 443
-  server: 8.6.112.0
+  server: 104.18.152.149
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -72,7 +97,7 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.148
+  server: 104.16.174.109
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -81,7 +106,7 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 198.41.223.96
+  server: 104.16.7.70
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
@@ -91,7 +116,29 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.44
+  server: 104.18.152.103
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- client-fingerprint: chrome
+  name: '美国+V2CROSS.COM #3'
+  network: tcp
+  port: 8059
+  reality-opts:
+    public-key: hjJ1VN2xwcl1n7vrwvOspB2NFWrXNySUNPexutOVvAM
+    short-id: '!!str d3aea86e1949'
+  server: 45.134.38.204
+  servername: www.amd.com
+  tls: false
+  type: vless
+  uuid: a88e2744-3555-4a0a-9635-0aae23e038f8
+- name: '美国+V2CROSS.COM #4'
+  network: ws
+  password: humanity
+  port: 443
+  server: 165.215.250.14
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
@@ -101,11 +148,23 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.149
+  server: 104.18.22.63
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     path: '%2Fassignment'
+- client-fingerprint: chrome
+  name: '美国+V2CROSS.COM #5'
+  network: tcp
+  port: 8064
+  reality-opts:
+    public-key: hjJ1VN2xwcl1n7vrwvOspB2NFWrXNySUNPexutOVvAM
+    short-id: '!!str d3aea86e1949'
+  server: 45.134.38.204
+  servername: www.amd.com
+  tls: false
+  type: vless
+  uuid: a88e2744-3555-4a0a-9635-0aae23e038f8
 - alpn:
   - http/1.1
   client-fingerprint: chrome
@@ -121,40 +180,32 @@ proxies:
     headers:
       Host: 6q7ur2wcmgu9hymh-xzqg140tdp86.pages.dev
     path: /vl/Oo7KuQEty2wqQDXCPlgaK8RdPqZflNY?ed=2560
-- name: '美国+CloudFlare节点 #10'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.185
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: 美国+加州
-  network: ws
-  password: humanity
-  port: 443
-  server: 216.24.57.1
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '美国+V2CROSS.COM #1'
+  name: '美国+V2CROSS.COM #6'
   network: tcp
   port: 443
   reality-opts:
-    public-key: WRK4JiKTQ6ygRHh1tRfUzuSO1-v2fKfsFoy3O9pXOi8
-    short-id: '!!str 00e32d694f37c137'
-  server: 167.104.223.66
-  servername: 167.104.223.66.sslip.io
+    public-key: wfZ-pELwbcVrJje42KfzZ-DpYyw595x6ZBg9cyGwdGc
+    short-id: '!!str 53c8b974fe2074da'
+  server: swe-two.letsgodance.site
+  servername: swe-two.letsgodance.site
   tls: false
   type: vless
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
+  uuid: 5d36ddf8-dde5-4b2d-8213-d3255f22a0f1
+- client-fingerprint: chrome
+  name: '美国+CloudFlare节点 #10'
+  network: ws
+  port: 2087
+  server: 104.19.214.97
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  tls: true
+  type: vless
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  ws-opts:
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+    path: /
 - name: 🇺🇸US
   password: 17aVvwmiSU
   port: 10929
@@ -627,19 +678,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+- name: 🇺🇸[openproxylist.com] vless-US
+  network: ws
+  port: 2095
+  server: 104.18.43.174
+  tls: false
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  ws-opts:
+    headers:
+      Host: fuckingfangbinxing.pusytroller.cf
+    path: /
 - alterId: 0
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
-  network: tcp
-  port: '443'
-  server: 165.140.216.142
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #1'
   network: ws
   port: '443'
   server: rush-t2tvv.ceeopp.site
@@ -653,7 +705,7 @@ proxies:
     path: /video/ke716z/7x219hzy.m3u8
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: 🇺🇸[openproxylist.com] vless-US
+  name: '🇺🇸[openproxylist.com] vless-US #1'
   network: tcp
   port: 13443
   reality-opts:
@@ -661,6 +713,19 @@ proxies:
     short-id: '!!str a7f3c91b2e6d84c0'
   server: 88.218.92.164
   servername: auto.cendora.ru
+  tls: false
+  type: vless
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
+    short-id: '!!str 00bca5982f82d083'
+  server: 151.242.160.49
+  servername: eu-central.cendora.ru
   tls: false
   type: vless
   uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
@@ -674,7 +739,7 @@ proxies:
   type: trojan
 - client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #1'
+  name: '🇺🇸[openproxylist.com] vless-US #3'
   network: tcp
   port: 443
   reality-opts:
@@ -685,33 +750,3 @@ proxies:
   tls: false
   type: vless
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇺🇸[openproxylist.com] vless-US #2'
-  network: ws
-  port: 443
-  server: grimness-backlogs.cdn-content.com
-  servername: grimness-backlogs.cdn-content.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 018a6ab7-f54c-4a1c-bfc5-d6b04e6545d1
-  ws-opts:
-    headers:
-      Host: grimness-backlogs.cdn-content.com
-    path: '%2Fws'
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #2'
-  network: ws
-  port: 443
-  server: rush-6it6b.teeopp.quest
-  servername: rush-6it6b.teeopp.quest
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: rush-6it6b.teeopp.quest
-    path: /

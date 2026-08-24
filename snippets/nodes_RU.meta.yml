@@ -1,16 +1,32 @@
 proxies:
-- name: 🇷🇺151014 | ⚡️Telegram = t.me/S...
-  password: 41edb44c8e
-  port: 11592
-  server: srv-17e124.21freedom.net
-  skip-cert-verify: true
-  sni: 127.0.0.1
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: grpc-reality
+  name: '🇷🇺[openproxylist.com] vless-RU #3'
+  network: grpc
+  port: 9001
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: 78.159.245.75
+  servername: api-maps.yandex.ru
   tls: false
-  type: hysteria2
+  type: vless
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+- client-fingerprint: chrome
+  name: '🇷🇺[openproxylist.com] vless-RU #1'
+  network: ws
+  port: 8443
+  server: 194.87.143.165
+  servername: wsru1.wba-pn.ru
+  tls: true
+  type: vless
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+  ws-opts:
+    path: '%2F'
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: ns
-  name: 🇷🇺[openproxylist.com] vless-RU
+  name: '🇷🇺[openproxylist.com] vless-RU #2'
   network: grpc
   port: 443
   reality-opts:
@@ -22,27 +38,22 @@ proxies:
   uuid: 791a171e-c0af-4bd7-b8ce-43541c7585db
 - client-fingerprint: firefox
   grpc-opts:
-    grpc-service-name: grpc-reality
-  name: '🇷🇺[openproxylist.com] vless-RU #1'
+    grpc-service-name: neurex
+  name: '🇷🇺[openproxylist.com] vless-RU #4'
   network: grpc
-  port: 9001
+  port: 16923
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 78.159.245.75
+    public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
+    short-id: '!!str 10ffb85da1c2d986'
+  server: 201.51.1.84
   servername: api-maps.yandex.ru
   tls: false
   type: vless
-  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇷🇺[openproxylist.com] vless-RU #2'
+  uuid: ba222add-6ac1-45f1-9a18-f91cb38e324f
+- name: 🇷🇺[openproxylist.com] trojan-R...
   network: tcp
-  port: 443
-  reality-opts:
-    public-key: 8bkjYMx4EXdRTHTgQ6wMaeyGl-HfskzixE0Is-kMQXU
-    short-id: '!!str e3c60a1b71b462fa'
-  server: 45.91.52.125
-  servername: www.cloudflare.com
-  tls: false
-  type: vless
-  uuid: 3ab2615c-689d-463b-8990-a95013894348
+  password: 5e19b3c8-c1dc-4163-95e2-895319c15d6c
+  port: 8443
+  server: ru.techdatacloud.org
+  sni: cloud.mail.ru
+  type: trojan
