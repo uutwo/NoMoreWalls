@@ -89,60 +89,29 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- name: 巴西圣保罗+CloudFlare节点
+- name: 美国+CloudFlare节点
   network: ws
   password: humanity
   port: 443
-  server: 188.114.97.7
-  skip-cert-verify: false
+  server: 198.41.223.96
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    headers:
-      Host: www.ignitelimit.com
+    path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #1'
+  network: ws
+  password: humanity
+  port: 443
+  server: www.speedtest.org
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
     path: '%2Fassignment'
 - name: 伊朗+V2CROSS.COM
   network: ws
   password: humanity
   port: 40443
   server: 2.144.21.112
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- alpn:
-  - http/1.1
-  name: 美国+V2CROSS.COM
-  network: ws
-  password: MiTiVPN
-  port: 443
-  server: 140.248.185.253
-  skip-cert-verify: true
-  sni: ssl.fastly.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 4x-m%69tivpn--m%69tivpn------m%69tivpn.global.ssl.fastly.net
-    path: '%2F---%40M%69TiVPN---%40M%69TiVPN%2F---%40M%69TiVPN---%40M%69TiVPN%2F---%40M%69TiVPN---%40M%69TiVPN%2Fs-w%40M%69TiVPN---%40M%69TiVPN%2F---%40M%69TiVPN---%40M%69TiVPN%2F---%40M%69TiVPN---%40M%69TiVPN'
-- alterId: 0
-  cipher: auto
-  name: 美国 CloudFlare节点
-  network: ws
-  port: '443'
-  server: rush-w1niu.teeopp.online
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: rush-w1niu.teeopp.online
-    path: /video/v4sx3q/zxzrurkc.m3u8
-- name: '英国+V2CROSS.COM #2'
-  network: ws
-  password: humanity
-  port: 443
-  server: 176.97.66.175
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -181,7 +150,6 @@ proxies:
   network: ws
   port: '23388'
   server: 62.210.127.120
-  servername: ''
   tls: false
   type: vmess
   uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
@@ -215,7 +183,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #1'
+- name: 日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
   port: 16691
@@ -417,10 +385,11 @@ proxies:
   sni: www.ignitelimit.com
   type: trojan
 - name: 🇪🇪[openproxylist.com] trojan-E...
+  network: tcp
   password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
   port: 449
   server: 109.206.241.10
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: russiapower.accesscam.org
   type: trojan
 - alterId: 0
@@ -552,20 +521,13 @@ proxies:
   server: kuso30.pacemakere.com
   skip-cert-verify: true
   type: trojan
-- name: 🇲🇾[openproxylist.com] trojan-M...
-  password: 5931134d1cde66bf83a54acdfebe7ab2
-  port: 443
-  server: 47.250.84.25
-  skip-cert-verify: true
-  sni: moltbot.doctoroyy.net
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
   network: ws
-  port: 443
+  port: '443'
   server: rush-t2tvv.ceeopp.site
-  servername: ''
+  servername: rush-t2tvv.ceeopp.site
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -578,7 +540,7 @@ proxies:
   name: 🇩🇪[openproxylist.com] vmess-DE
   network: ws
   port: '2053'
-  server: 172.238.96.215
+  server: cf.levikogjgfdd.ir
   servername: deapp.jisuyun.top
   tls: true
   type: vmess
@@ -598,8 +560,9 @@ proxies:
   cipher: auto
   name: 🇭🇰[openproxylist.com] vmess-HK
   network: ws
-  port: 443
+  port: '443'
   server: wwafj5lhl6bi8au9.v.3dns.vip
+  servername: wwafj5lhl6bi8au9.v.3dns.vip
   tls: true
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888

@@ -1,36 +1,34 @@
 proxies:
-- alpn:
-  - http/1.1
-  name: 美国+V2CROSS.COM
+- name: 美国+CloudFlare节点
   network: ws
-  password: MiTiVPN
+  password: humanity
   port: 443
-  server: 140.248.185.253
-  skip-cert-verify: true
-  sni: ssl.fastly.com
+  server: 198.41.223.96
+  sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    headers:
-      Host: 4x-m%69tivpn--m%69tivpn------m%69tivpn.global.ssl.fastly.net
-    path: '%2F---%40M%69TiVPN---%40M%69TiVPN%2F---%40M%69TiVPN---%40M%69TiVPN%2F---%40M%69TiVPN---%40M%69TiVPN%2Fs-w%40M%69TiVPN---%40M%69TiVPN%2F---%40M%69TiVPN---%40M%69TiVPN%2F---%40M%69TiVPN---%40M%69TiVPN'
-- alterId: 0
-  cipher: auto
-  name: 美国 CloudFlare节点
+    path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #1'
   network: ws
-  port: '443'
-  server: rush-w1niu.teeopp.online
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  password: humanity
+  port: 443
+  server: www.speedtest.org
+  sni: www.ignitelimit.com
+  type: trojan
   ws-opts:
-    headers:
-      Host: rush-w1niu.teeopp.online
-    path: /video/v4sx3q/zxzrurkc.m3u8
+    path: '%2Fassignment'
+- name: 美国+Merit网络公司
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: vpn-us-006.fastervpn.world
+  skip-cert-verify: true
+  sni: vpn-us-006.fastervpn.world
+  tls: false
+  type: hysteria2
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '美国+V2CROSS.COM #1'
+  name: 美国+V2CROSS.COM
   network: ws
   port: 443
   server: 199.232.78.160
@@ -49,14 +47,6 @@ proxies:
   server: do.aigh.store
   skip-cert-verify: true
   sni: do.aigh.store
-  tls: false
-  type: hysteria2
-- name: '🇺🇸US #1'
-  password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
-  port: 2056
-  server: mg2.mangshe.xyz
-  skip-cert-verify: true
-  sni: mg2.mangshe.xyz
   tls: false
   type: hysteria2
 - name: 美国
@@ -229,9 +219,9 @@ proxies:
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
   network: ws
-  port: 443
+  port: '443'
   server: rush-t2tvv.ceeopp.site
-  servername: ''
+  servername: rush-t2tvv.ceeopp.site
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -260,14 +250,21 @@ proxies:
   reality-opts:
     public-key: gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM
     short-id: '!!str a7f3c91b2e6d84c0'
-  server: 88.218.92.126
+  server: 88.218.92.164
   servername: auto.cendora.ru
   tls: false
   type: vless
-  uuid: b80b392c-0cf4-42f9-ae54-9f862e3ba276
-- name: '🇺🇸[openproxylist.com] vless-US #3'
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #3'
+  network: tcp
   port: 443
+  reality-opts:
+    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
+    short-id: '!!str 00bca5982f82d083'
   server: 151.242.160.49
+  servername: eu-central.cendora.ru
   tls: false
   type: vless
   uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
