@@ -2,7 +2,7 @@ proxies:
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: grpc-reality
-  name: 🇷🇺[openproxylist.com] vless-RU
+  name: '🇷🇺[openproxylist.com] vless-RU #3'
   network: grpc
   port: 9001
   reality-opts:
@@ -12,21 +12,32 @@ proxies:
   tls: false
   type: vless
   uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
-- client-fingerprint: chrome
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
   name: '🇷🇺[openproxylist.com] vless-RU #1'
-  network: ws
   port: 8443
-  server: 194.87.143.165
-  servername: wsru1.wba-pn.ru
+  server: 66.90.90.13
+  servername: ai-6a8c51f9.noooo.win
   tls: true
   type: vless
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
-  ws-opts:
-    path: '%2F'
+  uuid: f230254f-d4cd-4d83-8a2d-e83927ef98ac
+- alpn:
+  - h2
+  client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: '🇷🇺[openproxylist.com] vless-RU #2'
+  port: 8443
+  server: 185.147.27.165
+  servername: user-6a8c51f9.noooo.win
+  tls: true
+  type: vless
+  uuid: f230254f-d4cd-4d83-8a2d-e83927ef98ac
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: ns
-  name: '🇷🇺[openproxylist.com] vless-RU #2'
+  name: '🇷🇺[openproxylist.com] vless-RU #4'
   network: grpc
   port: 443
   reality-opts:
