@@ -1,4 +1,17 @@
 proxies:
+- name: 俄罗斯+V2CROSS.COM
+  network: ws
+  port: 14443
+  server: mws.tunnelgate.org
+  servername: mws.tunnelgate.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  ws-opts:
+    headers:
+      Host: mws.tunnelgate.org
+    path: '%2Fru'
 - client-fingerprint: chrome
   name: 🇷🇺[openproxylist.com] vless-RU
   network: ws
@@ -37,16 +50,3 @@ proxies:
   tls: false
   type: vless
   uuid: ba222add-6ac1-45f1-9a18-f91cb38e324f
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '🇷🇺[openproxylist.com] vless-RU #3'
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: E_hcnZ6IvHDD2IFy8UGRvwWXHSqRrF--Ply0hJXSd30
-    short-id: '!!str 849cac6150823b'
-  server: 45.84.1.247
-  servername: rbc.ru
-  tls: false
-  type: vless
-  uuid: ad17ed00-5bb6-4fa4-8be1-a545a9fbda6e
