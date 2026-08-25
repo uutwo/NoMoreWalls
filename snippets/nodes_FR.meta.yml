@@ -1,14 +1,27 @@
 proxies:
-- name: 法国巴黎+CloudFlare节点
-  network: ws
-  password: humanity
+- name: 法国
+  password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
   port: 443
-  server: 141.101.90.101
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
+  server: fr194.mechvpn.online
+  sni: fr194.mechvpn.online
+  tls: false
+  type: hysteria2
+- name: '法国 #1'
+  password: ac7fb60f-0b7a-465d-a002-05160ec04ed6
+  port: 443
+  server: dora3.api3-max.ru
+  skip-cert-verify: true
+  sni: dora3.api3-max.ru
+  tls: false
+  type: hysteria2
+- name: '法国 #2'
+  password: ac7fb60f-0b7a-465d-a002-05160ec04ed6
+  port: 443
+  server: dora4.api3-max.ru
+  skip-cert-verify: true
+  sni: dora4.api3-max.ru
+  tls: false
+  type: hysteria2
 - alterId: 0
   cipher: auto
   name: 🇫🇷[openproxylist.com] vmess-FR
@@ -59,33 +72,8 @@ proxies:
   sni: www.ignitelimit.com
   type: trojan
 - client-fingerprint: chrome
+  flow: xtls-rprx-vision
   name: 🇫🇷[openproxylist.com] vless-FR
-  network: tcp
-  port: 17780
-  reality-opts:
-    public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
-    short-id: '!!str a0fbc54d937aaccb'
-  server: fr1.milkabebar.ir
-  servername: amp-api-edge.apps.apple.com
-  tls: false
-  type: vless
-  uuid: a06119a7-4f1a-4592-86d9-e050a332b2b3
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇵🇱[openproxylist.com] vless-PL
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 2stsLH56yUXFwc7ICrN111GveMOIrWSDFiUr6XWFhx4
-    short-id: '!!str d9622c6fea10c1'
-  server: pl1.nihaovpn.ru
-  servername: pl1.nihaovpn.ru
-  tls: false
-  type: vless
-  uuid: 00506574-3b10-4f7d-9b2f-8afdc5919b93
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: tcp
   port: 443
   reality-opts:
@@ -98,7 +86,7 @@ proxies:
   uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #3'
+  name: '🇫🇷[openproxylist.com] vless-FR #1'
   network: tcp
   port: 443
   reality-opts:
@@ -109,7 +97,7 @@ proxies:
   tls: false
   type: vless
   uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
-- name: '🇫🇷[openproxylist.com] vless-FR #4'
+- name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: ws
   port: 2096
   server: usejh2.neobo-tooth.ru

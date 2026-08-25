@@ -1,53 +1,49 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 美国+V2CROSS.COM
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
-    short-id: '!!str 88d9dc52ef39c8bd'
-  server: node-nd01.rkitman.ru
-  servername: node-nd01.rkitman.ru
-  tls: false
-  type: vless
-  uuid: 64774bd8-3116-4eaa-a046-5ea4fc230b81
-- name: 美国+CloudFlare节点
-  network: ws
-  password: humanity
-  port: 443
-  server: www.speedtest.org
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
 - alpn:
   - http/1.1
-  name: '美国+V2CROSS.COM #1'
+  name: 美国+V2CROSS.COM
   network: ws
   password: MiTiVPN
   port: 443
   server: 140.248.185.253
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: ssl.fastly.com
   type: trojan
   ws-opts:
     headers:
-      Host: 4x-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/s-w@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-- name: '美国+CloudFlare节点 #1'
+      Host: 4x-m%69tivpn--m%69tivpn------m%69tivpn.global.ssl.fastly.net
+    path: '%2F---%40M%69TiVPN---%40M%69TiVPN%2F---%40M%69TiVPN---%40M%69TiVPN%2F---%40M%69TiVPN---%40M%69TiVPN%2Fs-w%40M%69TiVPN---%40M%69TiVPN%2F---%40M%69TiVPN---%40M%69TiVPN%2F---%40M%69TiVPN---%40M%69TiVPN'
+- alterId: 0
+  cipher: auto
+  name: 美国 CloudFlare节点
   network: ws
-  password: humanity
-  port: 443
-  server: 104.26.14.137
-  sni: www.ignitelimit.com
-  type: trojan
+  port: '443'
+  server: rush-w1niu.teeopp.online
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
-    path: '%2Fassignment'
-- name: рҹҮәрҹҮёUS
+    headers:
+      Host: rush-w1niu.teeopp.online
+    path: /video/v4sx3q/zxzrurkc.m3u8
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '美国+V2CROSS.COM #1'
+  network: ws
+  port: 443
+  server: 199.232.78.160
+  servername: ssl.fastly.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+    path: /
+- name: 🇺🇸US
   password: 17aVvwmiSU
   port: 10929
   server: do.aigh.store
@@ -55,12 +51,61 @@ proxies:
   sni: do.aigh.store
   tls: false
   type: hysteria2
-- name: 'рҹҮәрҹҮёUS #1'
+- name: '🇺🇸US #1'
   password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
   port: 2056
   server: mg2.mangshe.xyz
   skip-cert-verify: true
   sni: mg2.mangshe.xyz
+  tls: false
+  type: hysteria2
+- name: 美国
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 18.226.172.222
+  skip-cert-verify: true
+  sni: vpn-us-003.fastervpn.world
+  tls: false
+  type: hysteria2
+- name: '美国 #1'
+  password: VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC
+  port: 8080
+  server: 82.39.214.98
+  sni: hopp-us.yyuyy.com
+  tls: false
+  type: hysteria2
+- name: '美国 #2'
+  obfs: salamander
+  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
+  password: cd74c0a406664a5bc0bac098220a2468
+  port: 443
+  server: nl1.sferavpn.pro
+  skip-cert-verify: true
+  sni: nl1.sferavpn.pro
+  tls: false
+  type: hysteria2
+- name: '美国 #3'
+  password: fe475179-d8a8-420d-a4ac-3e415ed8dc72
+  port: 11683
+  server: uswx4.wxgqlfx.vip
+  skip-cert-verify: true
+  sni: 144.225.187.153
+  tls: false
+  type: hysteria2
+- name: 🇺🇸139909 | ⚡️Telegram = t.me/S...
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  port: 443
+  server: 54.213.89.22
+  skip-cert-verify: true
+  sni: vk.com
+  tls: false
+  type: hysteria2
+- name: '美国 #4'
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  port: 443
+  server: faq.wwwinternetvideo.click
+  skip-cert-verify: true
+  sni: cabinet.wwwinternetvideo.click
   tls: false
   type: hysteria2
 - name: 🇺🇸 美国 CloudFlare节点
@@ -180,17 +225,6 @@ proxies:
   tls: false
   type: vless
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- name: '🇺🇸[openproxylist.com] vless-US #1'
-  network: ws
-  port: 2095
-  server: 188.114.97.6
-  tls: false
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  ws-opts:
-    headers:
-      Host: fangbinxingnmsl.pusytroller.gq
-    path: '%2F'
 - alterId: 0
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
@@ -205,19 +239,9 @@ proxies:
     headers:
       Host: rush-t2tvv.ceeopp.site
     path: /video/ke716z/7x219hzy.m3u8
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #1'
-  network: tcp
-  port: '443'
-  server: 165.140.216.142
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #2'
+  name: '🇺🇸[openproxylist.com] vless-US #1'
   network: tcp
   port: 443
   reality-opts:
@@ -230,7 +254,7 @@ proxies:
   uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #3'
+  name: '🇺🇸[openproxylist.com] vless-US #2'
   network: tcp
   port: 13443
   reality-opts:
@@ -241,9 +265,22 @@ proxies:
   tls: false
   type: vless
   uuid: b80b392c-0cf4-42f9-ae54-9f862e3ba276
-- name: '🇺🇸[openproxylist.com] vless-US #4'
+- name: '🇺🇸[openproxylist.com] vless-US #3'
   port: 443
   server: 151.242.160.49
   tls: false
   type: vless
   uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #4'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: '!!str c39cc7310a'
+  server: 169.40.42.104
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
