@@ -1,19 +1,19 @@
 proxies:
-- name: 俄罗斯+V2CROSS.COM
-  network: ws
-  port: 14443
-  server: mws.tunnelgate.org
-  servername: mws.tunnelgate.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  ws-opts:
-    headers:
-      Host: mws.tunnelgate.org
-    path: '%2Fru'
-- client-fingerprint: chrome
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: grpc-reality
   name: 🇷🇺[openproxylist.com] vless-RU
+  network: grpc
+  port: 9001
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: 78.159.245.75
+  servername: api-maps.yandex.ru
+  tls: false
+  type: vless
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+- client-fingerprint: chrome
+  name: '🇷🇺[openproxylist.com] vless-RU #1'
   network: ws
   port: 8443
   server: 194.87.143.165
@@ -26,7 +26,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: ns
-  name: '🇷🇺[openproxylist.com] vless-RU #1'
+  name: '🇷🇺[openproxylist.com] vless-RU #2'
   network: grpc
   port: 443
   reality-opts:
@@ -36,17 +36,3 @@ proxies:
   tls: false
   type: vless
   uuid: 791a171e-c0af-4bd7-b8ce-43541c7585db
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: neurex
-  name: '🇷🇺[openproxylist.com] vless-RU #2'
-  network: grpc
-  port: 16923
-  reality-opts:
-    public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
-    short-id: '!!str 10ffb85da1c2d986'
-  server: 201.51.1.84
-  servername: api-maps.yandex.ru
-  tls: false
-  type: vless
-  uuid: ba222add-6ac1-45f1-9a18-f91cb38e324f
