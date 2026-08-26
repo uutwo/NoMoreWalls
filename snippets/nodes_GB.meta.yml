@@ -1,4 +1,15 @@
 proxies:
+- name: 英国+V2CROSS.COM
+  network: ws
+  password: humanity
+  port: 443
+  server: 176.97.66.175
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: '%2Fassignment'
 - name: UK
   password: 0bacdaea-099b-462b-b625-d7d44c89aace
   port: 55000
@@ -37,43 +48,52 @@ proxies:
   sni: hopp-legend-se.roxa.org
   tls: false
   type: hysteria2
-- name: 🇬🇧[openproxylist.com] vless-GB
-  port: 22222
-  server: 13.41.214.184
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇬🇧[openproxylist.com] vless-GB
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: '!!str fd55b698ee8c3629'
+  server: 78.129.150.216
+  servername: strapi.io
   tls: false
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: 7ec31525-7ac3-4597-8f39-a2d4edc46342
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇬🇧[openproxylist.com] vless-GB #1'
   network: tcp
   port: 443
   reality-opts:
-    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
-    short-id: '!!str fd55b698ee8c3629'
-  server: 109.169.37.129
-  servername: foodnetwork.com
+    public-key: 2ATxqiR22wlo3yXOHc43LFHM5NzWCdSGZLdBay_vJgM
+    short-id: '!!str e4a1b53b03eff60d'
+  server: 95.154.196.61
+  servername: strapi.io
   tls: false
   type: vless
-  uuid: 2ed0d2a0-dbba-4cc2-95df-a197831d9978
+  uuid: e5d917f5-fc78-455e-bbb5-81d08715f3d6
+- alterId: 0
+  cipher: auto
+  name: 🇬🇧[openproxylist.com] vmess-GB
+  network: tcp
+  port: '2053'
+  server: 51.38.71.147
+  servername: node-uk.connectsuite.org
+  tls: true
+  type: vmess
+  uuid: 72f2cbe4-2874-45b7-b6aa-b93077c10c72
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇬🇧[openproxylist.com] vless-GB #2'
   network: tcp
   port: 443
   reality-opts:
-    public-key: RVj8E6YuWeOq9XzIVLQCKM39qa-Cknp-GYvVAA1UPFo
-    short-id: '!!str 72cceb78'
-  server: 138.124.125.211
-  servername: www.apple.com
+    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
+    short-id: '!!str fd8cf7e1173f0edb'
+  server: 83.147.18.3
+  servername: www.cloudflare.com
   tls: false
   type: vless
-  uuid: 1996007c-e7bc-464b-999b-cac28cec6c3e
-- name: '🇬🇧[openproxylist.com] vless-GB #3'
-  port: 443
-  server: 129.121.95.159
-  tls: false
-  type: vless
-  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
-  ws-opts:
-    path: '%2Fconnect'
+  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104

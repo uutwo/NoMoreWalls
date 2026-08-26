@@ -22,21 +22,7 @@ proxies:
   sni: dora4.api3-max.ru
   tls: false
   type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: 🇫🇷[openproxylist.com] vmess-FR
-  network: ws
-  port: 23388
-  server: 62.210.127.120
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
-  ws-opts:
-    headers:
-      Host: engage.cloudflareclient.com
-    path: /github.com/Alvin9999-newpac/fanqiang
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇫🇷[openproxylist.com] vless-FR
   network: tcp
@@ -49,7 +35,7 @@ proxies:
   tls: false
   type: vless
   uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇫🇷[openproxylist.com] vless-FR #1'
   network: tcp
@@ -57,15 +43,16 @@ proxies:
   reality-opts:
     public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
     short-id: '!!str bbc68cec8bb8d2e3'
-  server: 89.208.97.226
+  server: node21.mxvpn.dev
   servername: node21.mxvpn.dev
   tls: false
   type: vless
-  uuid: 0772109c-a680-4896-b005-d86513194f96
+  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
 - name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: ws
   port: 2096
   server: usejh2.neobo-tooth.ru
+  servername: usejh2.neobo-tooth.ru
   tls: false
   type: vless
   uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
@@ -74,10 +61,14 @@ proxies:
       Host: usejh2.neobo-tooth.ru
     path: /
 - name: '🇫🇷[openproxylist.com] vless-FR #3'
+  network: ws
   port: 443
   server: finite-node.rtxconfigz.com
-  tls: false
+  servername: finite-node.rtxconfigz.com
+  tls: true
   type: vless
   uuid: 25f3beef-a4b6-40bc-aa74-17a0f89f683c
   ws-opts:
-    path: '%2F'
+    headers:
+      Host: telegram.us
+    path: /
