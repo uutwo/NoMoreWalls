@@ -67,6 +67,19 @@ proxies:
   type: hysteria2
 - name: 🇩🇪[openproxylist.com] vless-DE
   network: ws
+  port: 443
+  server: 151.101.56.7
+  servername: ssl.fastly.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: da6ece67-aff5-4f94-94f3-08e87ca8cd51
+  ws-opts:
+    headers:
+      Host: 7wwwspeedtestnet.global.ssl.fastly.net
+    path: '%2F'
+- name: '🇩🇪[openproxylist.com] vless-DE #1'
+  network: ws
   port: 449
   server: 159.195.80.233
   tls: false
@@ -76,18 +89,6 @@ proxies:
     headers:
       Host: ''
     path: /api
-- name: '🇩🇪[openproxylist.com] vless-DE #1'
-  port: 443
-  server: 212.192.246.73
-  tls: false
-  type: vless
-  uuid: 073758f2-9669-0001-9541-b8656bde49a2
-- name: 🇨🇦[openproxylist.com] vless-CA
-  port: 443
-  server: bridge.sfproxy.fuck-rkn.dev
-  tls: false
-  type: vless
-  uuid: 8ff82100-8aad-4281-bf41-f318519d7182
 - alterId: 0
   cipher: auto
   name: 🇩🇪[openproxylist.com] vmess-DE
@@ -98,7 +99,7 @@ proxies:
   tls: true
   type: vmess
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-- name: '🇩🇪[openproxylist.com] vless-DE #3'
+- name: '🇩🇪[openproxylist.com] vless-DE #2'
   network: tcp
   port: 443
   server: 91.99.62.52
@@ -108,7 +109,7 @@ proxies:
   ws-opts:
     headers:
       Host: store.steampowered.com
-- name: '🇩🇪[openproxylist.com] vless-DE #4'
+- name: '🇩🇪[openproxylist.com] vless-DE #3'
   network: tcp
   port: 443
   server: 91.99.50.192
@@ -138,10 +139,17 @@ proxies:
   network: tcp
   port: '110'
   server: 94.156.179.138
-  servername: ''
   tls: false
   type: vmess
   uuid: 8e9687fc-a3a7-414a-8676-8e2136797cfe
+- name: '🇩🇪[openproxylist.com] vless-DE #4'
+  network: grpc
+  port: 3443
+  server: 194.31.223.87
+  servername: de.wlrus.cfd
+  tls: true
+  type: vless
+  uuid: 8fe31772-a4b7-4a70-9fa2-34124c7284ca
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇩🇪[openproxylist.com] vless-DE #5'
@@ -169,13 +177,11 @@ proxies:
   type: vless
   uuid: c6bc8627-ab12-457b-b143-0ea0de51b1ed
 - name: '🇩🇪[openproxylist.com] vless-DE #7'
-  port: 2096
-  server: derman.neobo-tooth.ru
+  port: 2083
+  server: 185.140.12.160
   tls: false
   type: vless
   uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  ws-opts:
-    path: '%2F'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇩🇪[openproxylist.com] vless-DE #8'
@@ -196,7 +202,7 @@ proxies:
   tls: false
   type: vless
   uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇩🇪[openproxylist.com] vless-DE #10'
   network: tcp
@@ -230,12 +236,12 @@ proxies:
   reality-opts:
     public-key: 6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI
     short-id: '!!str f63805c3ecc7a483'
-  server: 195.184.247.225
+  server: 195.184.247.223
   servername: savesafe.co
   tls: false
   type: vless
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇩🇪[openproxylist.com] vless-DE #13'
   network: tcp
@@ -243,7 +249,7 @@ proxies:
   reality-opts:
     public-key: 6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI
     short-id: '!!str f63805c3ecc7a483'
-  server: 195.184.247.220
+  server: 195.184.247.225
   servername: savesafe.co
   tls: false
   type: vless
@@ -274,7 +280,7 @@ proxies:
   tls: true
   type: vless
   uuid: 93dac4b8-3879-4179-abdb-9666a9e2ca8d
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   name: '🇩🇪[openproxylist.com] vless-DE #17'
   network: tcp
   port: 8443
@@ -300,20 +306,7 @@ proxies:
   type: vless
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
   name: '🇩🇪[openproxylist.com] vless-DE #19'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500
-    short-id: '!!str b91a73752053b039'
-  server: 178.162.253.64
-  servername: de.servers.gracevpnbuy.com
-  tls: false
-  type: vless
-  uuid: bb05f9d7-a3d1-4b81-a790-f6dba0301907
-- client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #20'
   network: grpc
   port: 8443
   reality-opts:
@@ -324,28 +317,21 @@ proxies:
   tls: false
   type: vless
   uuid: a04814d9-d006-4e7b-ae20-8ab304b3b429
-- client-fingerprint: qq
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #21'
+  name: '🇩🇪[openproxylist.com] vless-DE #20'
   network: tcp
-  port: 13443
-  reality-opts:
-    public-key: gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM
-    short-id: '!!str a7f3c91b2e6d84c0'
-  server: 31.76.5.26
-  servername: auto.cendora.ru
-  tls: false
-  type: vless
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-- name: '🇩🇪[openproxylist.com] vless-DE #22'
   port: 443
+  reality-opts:
+    public-key: jArfQhwueyEcn5c5OkbtFavMJbiLM9aWH3Xbxnu6EEM
   server: 77.110.99.144
+  servername: yahoo.com
   tls: false
   type: vless
   uuid: c1943f8a-11c6-402d-a439-dc0be226d916
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #23'
+  name: '🇩🇪[openproxylist.com] vless-DE #21'
   network: tcp
   port: 443
   reality-opts:
@@ -356,22 +342,9 @@ proxies:
   tls: false
   type: vless
   uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-- name: '🇩🇪[openproxylist.com] vless-DE #24'
-  port: 2200
-  server: 5.42.103.91
+- name: '🇩🇪[openproxylist.com] vless-DE #22'
+  port: 4100
+  server: 178.72.147.249
   tls: false
   type: vless
-  uuid: 7b2ce6b0-6d2b-4926-b7bf-6247eb1a0050
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #25'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: SVgtyuD9khylgHuB0treGekxVSHPOS-wPZTNHUf6zj8
-    short-id: '!!str 85c86a9863'
-  server: 144.31.125.60
-  servername: www.intel.com
-  tls: false
-  type: vless
-  uuid: 9015f0bc-2053-4ca1-9b9b-a018b97b32d2
+  uuid: 92e20947-b564-4f08-8c1a-c6f3c66f763b
