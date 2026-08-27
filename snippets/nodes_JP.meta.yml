@@ -8,6 +8,14 @@ proxies:
   tls: false
   type: hysteria2
 - name: '日本 #1'
+  password: a9081889-1949-49ba-a2aa-7054515716de
+  port: 3488
+  server: c2.bestai.beauty
+  skip-cert-verify: true
+  sni: c2.bestai.beauty
+  tls: false
+  type: hysteria2
+- name: '日本 #2'
   password: ef18d810-719c-4bf1-83c6-615d01f217eb
   port: 443
   server: jp.cryptoofarm.com
@@ -15,11 +23,30 @@ proxies:
   sni: jp.cryptoofarm.com
   tls: false
   type: hysteria2
-- name: 日本|@ripaojiedian
-  network: tcp
+- alpn:
+  - h3
+  fingerprint: chrome
+  name: dc-udp-🇯🇵 Japan-Tokyo
+  obfs: salamander
+  obfs-password: fuw2k1ddrouwxr3u
+  password: mdq80x0xv9wt7520
+  port: 52046
+  server: giftcard.gateway-stream.com
+  sni: giftcard.gateway-stream.com
+  tls: false
+  type: hysteria2
+- name: 🇯🇵 日本|@ripaojiedian
   password: BxceQaOe
   port: 49811
   server: 54.238.251.95
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 日本|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 9408
+  server: 18.163.115.126
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
@@ -34,7 +61,6 @@ proxies:
   type: vmess
   uuid: 154dbc39-0921-cf11-29bd-156c5000d763
 - name: 🇯🇵[openproxylist.com] vless-JP
-  network: tcp
   port: 443
   server: 137.220.221.179
   tls: false
@@ -47,10 +73,23 @@ proxies:
   tls: false
   type: vless
   uuid: 0ca45842-71e2-47fe-889f-9e75f93ea459
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇯🇵[openproxylist.com] vless-JP #2'
+  network: tcp
+  port: 20725
+  reality-opts:
+    public-key: hceZHd9X9FSbWGXGgm3OWN-4Au26rrsriTcyHw5M3VU
+    short-id: '!!str 0102ac4e'
+  server: 154.19.187.249
+  servername: buylite.tv.apple.com
+  tls: false
+  type: vless
+  uuid: 6dcb725e-947e-4bbe-bb35-903374d57179
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: grpc
-  name: '🇯🇵[openproxylist.com] vless-JP #2'
+  name: '🇯🇵[openproxylist.com] vless-JP #3'
   network: grpc
   port: 2087
   reality-opts:
@@ -64,7 +103,7 @@ proxies:
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: grpc
-  name: '🇯🇵[openproxylist.com] vless-JP #3'
+  name: '🇯🇵[openproxylist.com] vless-JP #4'
   network: grpc
   port: 2087
   reality-opts:
@@ -75,15 +114,3 @@ proxies:
   tls: false
   type: vless
   uuid: 309b0ce3-09a8-4883-bfe4-bd56e215be44
-- client-fingerprint: chrome
-  name: '🇯🇵[openproxylist.com] vless-JP #4'
-  network: tcp
-  port: 27407
-  reality-opts:
-    public-key: SajK6LzHBkkFlEXjIwseyqbpezgPiop5ZnSToou3G04
-    short-id: '!!str e6ac18b63f23'
-  server: 13.193.205.133
-  servername: bgcpartners.com
-  tls: false
-  type: vless
-  uuid: cd5cf6e7-7ce5-42c9-9316-68210fa72a32

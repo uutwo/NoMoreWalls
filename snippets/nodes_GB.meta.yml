@@ -1,4 +1,17 @@
 proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 英国+V2CROSS.COM
+  network: tcp
+  port: 15006
+  reality-opts:
+    public-key: g9KZONtwSL8mL772rps2nXVAuQpsgHY33K_pHpI89Rg
+    short-id: '!!str 029a6cc4'
+  server: nian.001.url111.kcloud02.top
+  servername: www.adobe.com
+  tls: false
+  type: vless
+  uuid: 399c4c9b-27e1-37f1-9dce-22ccc2727a86
 - name: UK
   password: 0bacdaea-099b-462b-b625-d7d44c89aace
   port: 55000
@@ -37,39 +50,54 @@ proxies:
   sni: hopp-legend-se.roxa.org
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: 🇬🇧[openproxylist.com] vless-GB
   network: tcp
   port: 443
   reality-opts:
-    public-key: 2ATxqiR22wlo3yXOHc43LFHM5NzWCdSGZLdBay_vJgM
-    short-id: '!!str e4a1b53b03eff60d'
-  server: 95.154.196.61
-  servername: strapi.io
+    public-key: o3OWFYnKad6q2C-eo6-rA74OCbjQoZfaUFYZsNqJJz0
+    short-id: '!!str 1e977d0b52eab755'
+  server: 95.154.196.63
+  servername: foodnetwork.com
   tls: false
   type: vless
-  uuid: e5d917f5-fc78-455e-bbb5-81d08715f3d6
+  uuid: bae47c97-9bc1-48f6-a133-a383ee71c12e
+- name: '🇬🇧[openproxylist.com] vless-GB #1'
+  port: 443
+  server: 109.169.84.94
+  tls: false
+  type: vless
+  uuid: 3bcb31ef-840e-415d-abb3-28628add98d0
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #1'
+  name: '🇬🇧[openproxylist.com] vless-GB #2'
   network: tcp
   port: 443
   reality-opts:
-    public-key: RVj8E6YuWeOq9XzIVLQCKM39qa-Cknp-GYvVAA1UPFo
-    short-id: '!!str 72cceb78'
-  server: 138.124.125.211
-  servername: www.apple.com
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: '!!str fd55b698ee8c3629'
+  server: 78.129.150.216
+  servername: strapi.io
   tls: false
   type: vless
-  uuid: 1996007c-e7bc-464b-999b-cac28cec6c3e
-- alterId: 0
-  cipher: auto
-  name: 🇬🇧[openproxylist.com] vmess-GB
-  network: tcp
-  port: '2053'
-  server: 51.38.71.147
-  servername: node-uk.connectsuite.org
+  uuid: 7ec31525-7ac3-4597-8f39-a2d4edc46342
+- name: '🇬🇧[openproxylist.com] vless-GB #3'
+  port: 443
+  server: 95.154.196.61
+  tls: false
+  type: vless
+  uuid: e5d917f5-fc78-455e-bbb5-81d08715f3d6
+- client-fingerprint: firefox
+  name: '🇬🇧[openproxylist.com] vless-GB #4'
+  network: ws
+  port: 443
+  server: 129.121.95.159
+  servername: 129.121.95.159
   tls: true
-  type: vmess
-  uuid: 72f2cbe4-2874-45b7-b6aa-b93077c10c72
+  type: vless
+  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
+  ws-opts:
+    headers:
+      Host: 129.121.95.159
+    path: '%2Fconnect'
