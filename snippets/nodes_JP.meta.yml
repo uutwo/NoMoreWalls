@@ -15,14 +15,6 @@ proxies:
   sni: jp.cryptoofarm.com
   tls: false
   type: hysteria2
-- name: 香港5|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 4117
-  server: 54.250.197.209
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
 - name: 日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -31,15 +23,18 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 新加坡3|@ripaojiedian
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵[openproxylist.com] vmess-JP
   network: tcp
-  password: BxceQaOe
-  port: 41421
-  server: 3.115.9.60
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
+  port: '55216'
+  server: 155.248.176.44
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 154dbc39-0921-cf11-29bd-156c5000d763
 - name: 🇯🇵[openproxylist.com] vless-JP
+  network: tcp
   port: 443
   server: 137.220.221.179
   tls: false
@@ -66,7 +61,7 @@ proxies:
   tls: false
   type: vless
   uuid: 524e00ce-ed89-481d-b4a4-6d7017f884e3
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: grpc
   name: '🇯🇵[openproxylist.com] vless-JP #3'
@@ -80,3 +75,15 @@ proxies:
   tls: false
   type: vless
   uuid: 309b0ce3-09a8-4883-bfe4-bd56e215be44
+- client-fingerprint: chrome
+  name: '🇯🇵[openproxylist.com] vless-JP #4'
+  network: tcp
+  port: 27407
+  reality-opts:
+    public-key: SajK6LzHBkkFlEXjIwseyqbpezgPiop5ZnSToou3G04
+    short-id: '!!str e6ac18b63f23'
+  server: 13.193.205.133
+  servername: bgcpartners.com
+  tls: false
+  type: vless
+  uuid: cd5cf6e7-7ce5-42c9-9316-68210fa72a32
