@@ -1,11 +1,4 @@
 proxies:
-- name: 🇯🇵 日本|@ripaojiedian
-  password: BxceQaOe
-  port: 49811
-  server: 54.238.251.95
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
 - name: 日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -17,6 +10,20 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 🇯🇵[openproxylist.com] vmess-JP
+  network: ws
+  port: '8080'
+  server: 156.231.116.156
+  servername: images-na.ssl-images-amazon.com
+  tls: false
+  type: vmess
+  uuid: 9ebecf5e-b160-43bd-806e-54cd994fc4c3
+  ws-opts:
+    headers:
+      Host: images-na.ssl-images-amazon.com
+    path: /image
+- alterId: 0
+  cipher: auto
+  name: '🇯🇵[openproxylist.com] vmess-JP #1'
   network: tcp
   port: '55216'
   server: 155.248.176.44
