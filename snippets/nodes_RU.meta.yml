@@ -1,4 +1,42 @@
 proxies:
+- name: 俄罗斯+V2CROSS.COM
+  password: 41f0d6d3-4a45-4635-8225-2abd2284189b
+  port: 2056
+  server: els2.mangshe.xyz
+  skip-cert-verify: true
+  sni: els2.mangshe.xyz
+  tls: false
+  type: hysteria2
+- client-fingerprint: firefox
+  name: '俄罗斯+V2CROSS.COM #1'
+  network: ws
+  port: 8443
+  server: 5.42.109.42
+  servername: run5.wba-pn.ru
+  tls: true
+  type: vless
+  uuid: 11f3e7b1-5507-46da-a268-1f70a543e40a
+  ws-opts:
+    path: '%2F'
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '俄罗斯+V2CROSS.COM #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI
+    short-id: '!!str a1b2c3d4'
+  server: 46.29.235.9
+  servername: telegraf.lv
+  tls: false
+  type: vless
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+- name: '🇷🇺[openproxylist.com] vless-RU #4'
+  port: 9001
+  server: 185.141.227.150
+  tls: false
+  type: vless
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: grpc-reality
@@ -13,16 +51,3 @@ proxies:
   tls: false
   type: vless
   uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
-- name: '🇷🇺[openproxylist.com] vless-RU #1'
-  port: 9001
-  server: 185.141.227.150
-  tls: false
-  type: vless
-  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
-- name: '🇷🇺[openproxylist.com] vless-RU #4'
-  network: tcp
-  port: 16560
-  server: 31.128.37.67
-  tls: false
-  type: vless
-  uuid: 6d60c73d-5915-4cf8-b155-e522dfd863bb

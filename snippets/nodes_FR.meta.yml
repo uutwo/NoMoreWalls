@@ -15,19 +15,12 @@ proxies:
   sni: dora4.api3-max.ru
   tls: false
   type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: 🇫🇷FR-162.19.192.89-35
-  network: ws
-  port: 16617
-  server: p4.cnb.linuxlh.xin
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 6ee2a7ba-cd92-427f-ac4f-2f8d284e316c
-  ws-headers:
-    Host: 5b22547ba5cc9b83a7a9534b4a7cf9ea.mobgslb.tbcache.com
-  ws-path: /
+- cipher: aes-256-cfb
+  name: 🇫🇷FR-95.170.13.47-34
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 95.170.13.47
+  type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇫🇷[openproxylist.com] vless-FR
@@ -42,26 +35,45 @@ proxies:
   type: vless
   uuid: b4c5a66f-1f66-4262-b72d-c6aa661abc2c
 - name: '🇫🇷[openproxylist.com] vless-FR #1'
+  network: ws
   port: 443
-  server: am8.levikogjgfdd.ir
-  tls: false
+  server: 199.232.78.159
+  servername: ssl.fastly.com
+  skip-cert-verify: false
+  tls: true
   type: vless
   uuid: 238bc88c-6f47-4622-9d6f-cab2ed76f098
   ws-opts:
+    headers:
+      Host: frenchji.global.ssl.fastly.net.
     path: '%2F'
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
+- alterId: 0
+  cipher: auto
+  name: 🇫🇷[openproxylist.com] vmess-FR
+  network: ws
+  port: '23388'
+  server: 62.210.127.120
+  tls: false
+  type: vmess
+  uuid: 3a966d20-7b9d-48cc-ba2c-8d38161b6d3a
+  ws-opts:
+    headers:
+      Host: engage.cloudflareclient.com
+    path: /github.com/Alvin9999-newpac/fanqiang
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
   name: '🇫🇷[openproxylist.com] vless-FR #2'
-  network: tcp
-  port: 443
+  network: grpc
+  port: 9880
   reality-opts:
-    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
-    short-id: '!!str bbc68cec8bb8d2e3'
-  server: 77.221.152.100
-  servername: node14.mxvpn.dev
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+    short-id: '!!str aabbccdd'
+  server: 168.222.194.138
+  servername: dl.google.com
   tls: false
   type: vless
-  uuid: 0772109c-a680-4896-b005-d86513194f96
+  uuid: 76186f1e-3062-4a2b-98c2-fab3c61a9511
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: '🇫🇷[openproxylist.com] vless-FR #3'
@@ -70,8 +82,8 @@ proxies:
   reality-opts:
     public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
     short-id: '!!str bbc68cec8bb8d2e3'
-  server: 89.208.97.226
-  servername: node21.mxvpn.dev
+  server: 77.221.152.100
+  servername: node14.mxvpn.dev
   tls: false
   type: vless
   uuid: 0772109c-a680-4896-b005-d86513194f96
