@@ -1,25 +1,36 @@
 proxies:
-- name: DE德国(mibei77.com 米贝节点分享)\r
-  password: humanity
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-63.180.254.10-16
+  password: amazonskr05
   port: 443
-  server: 104.16.174.148
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
-- name: 🇩🇪_DE_德国
-  password: '!!str 123123'
-  port: 25830
-  server: node5.quaxly.com
-  skip-cert-verify: true
-  sni: node5.quaxly.com
-  type: trojan
+  server: 63.180.254.10
+  type: ss
 - alterId: 0
   cipher: auto
   name: 🇩🇪[openproxylist.com] vmess-DE
+  network: tcp
+  port: '110'
+  server: newrelax.relaxedboy.online
+  tls: false
+  type: vmess
+  uuid: 8e9687fc-a3a7-414a-8676-8e2136797cfe
+- alterId: 0
+  cipher: auto
+  name: '🇩🇪[openproxylist.com] vmess-DE #1'
+  network: tcp
+  port: '1234'
+  server: 162.19.204.71
+  servername: supervpn.super.com
+  tls: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+- alterId: 0
+  cipher: auto
+  name: '🇩🇪[openproxylist.com] vmess-DE #2'
   network: ws
   port: '443'
   server: renderer-stream-2-62.mirra.now
-  servername: ''
+  servername: renderer-stream-2-62.mirra.now
   tls: true
   type: vmess
   uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
@@ -29,11 +40,15 @@ proxies:
     path: /api/v1/gpu-stream/socket
 - alterId: 0
   cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #1'
-  network: tcp
-  port: '110'
-  server: newrelax.relaxedboy.online
+  name: '🇩🇪[openproxylist.com] vmess-DE #3'
+  network: ws
+  port: '2053'
+  server: deapp.jisuyun.top
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: 8e9687fc-a3a7-414a-8676-8e2136797cfe
+  uuid: 9a1a05d9-69be-45d3-e326-c6621edf7b31
+  ws-opts:
+    headers:
+      Host: ''
+    path: /devm
