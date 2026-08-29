@@ -94,19 +94,20 @@ proxies:
   type: hysteria
   udp: true
   up: 500
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-63.180.254.10-13
-  password: amazonskr05
+- alpn:
+  - http/1.1
+  name: 🇩🇪[openproxylist.com] vless-DE
+  network: ws
   port: 443
-  server: 63.180.254.10
-  type: ss
-- name: 🇩🇪[openproxylist.com] vless-DE
-  network: tcp
-  port: 15001
-  server: w1.beraghsadevs.ir
-  tls: false
+  server: 216.24.57.15
+  servername: four04-rd37.onrender.com
+  tls: true
   type: vless
-  uuid: 69d8dc73-20ff-4241-bdd8-a9d6d07553b6
+  uuid: 2ee0d2aa-867e-a77e-9538-2edfc0b242aa
+  ws-opts:
+    headers:
+      Host: four04-rd37.onrender.com
+    path: /ws/2ee0d2aa-867e-a77e-9538-2edfc0b242aafp=firefox
 - alterId: 0
   cipher: auto
   name: 🇩🇪[openproxylist.com] vmess-DE
@@ -124,7 +125,7 @@ proxies:
   reality-opts:
     public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
     short-id: '!!str 88d9dc52ef39c8bd'
-  server: node-fra01.rkitman.ru
+  server: 157.173.7.55
   servername: node-fra01.rkitman.ru
   tls: false
   type: vless
@@ -139,7 +140,7 @@ proxies:
   ws-opts:
     headers:
       Host: store.steampowered.com
-    path: '%2F'
+    path: /
 - alterId: 0
   cipher: auto
   name: '🇩🇪[openproxylist.com] vmess-DE #1'
@@ -160,20 +161,6 @@ proxies:
   ws-opts:
     headers:
       Host: store.steampowered.com
-- alterId: 0
-  cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #2'
-  network: ws
-  port: '443'
-  server: renderer-stream-2-62.mirra.now
-  servername: renderer-stream-2-62.mirra.now
-  tls: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      Host: ''
-    path: /api/v1/gpu-stream/socket
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇩🇪[openproxylist.com] vless-DE #4'
@@ -182,21 +169,8 @@ proxies:
   reality-opts:
     public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
     short-id: '!!str 88d9dc52ef39c8bd'
-  server: node-fra02.rkitman.ru
+  server: 157.173.7.200
   servername: node-fra02.rkitman.ru
   tls: false
   type: vless
   uuid: 64774bd8-3116-4eaa-a046-5ea4fc230b81
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #5'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 3ei2ET7SLe8rAO3KOlUWyXy0U22zb86VNOqUCshRVl8
-    short-id: '!!str f648da8196bdb32e'
-  server: 167.233.219.201
-  servername: www.bing.com
-  tls: false
-  type: vless
-  uuid: 05bfcbaa-cba0-4bce-9103-09fe3f5f0667
