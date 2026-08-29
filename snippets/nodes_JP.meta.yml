@@ -1,12 +1,4 @@
 proxies:
-- name: 日本+V2CROSS.COM
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 160.187.100.109
-  skip-cert-verify: true
-  sni: 160.187.100.109
-  tls: false
-  type: hysteria2
 - name: 日本
   password: Foc_Mcxi45rM9v3ve_N92fdrK_10_Ssc5
   port: 8443
@@ -41,7 +33,21 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 🇯🇵[openproxylist.com] vmess-JP
+  name: 🇯🇵_JP_日本
+  network: http
+  port: 39618
+  server: 45.159.51.180
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 09d4921e-13e9-426f-8cd3-73556e8a0199
+  ws-headers:
+    Host: 45.159.51.180
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '🇯🇵_JP_日本 #1'
   network: ws
   port: 16617
   server: p4.cnb.linuxlh.xin
@@ -53,36 +59,55 @@ proxies:
     headers:
       Host: 5b22547ba5cc9b83a7a9534b4a7cf9ea.mobgslb.tbcache.com
     path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵[openproxylist.com] vless-JP
-  network: tcp
-  port: 42263
-  reality-opts:
-    public-key: lLbzgXK1hx6K2J6rDUARlzZzjWqVXMjIhHsKmgEQI0U
-    short-id: '!!str d5cd4778d2da33'
-  server: 35.77.87.249
-  servername: www.sony.com
+- name: 🇯🇵[openproxylist.com] vless-JP
+  port: 15476
+  server: 43.206.235.72
   tls: false
   type: vless
-  uuid: 37c00ed0-de07-4c7d-a4cf-049805c98713
+  uuid: fa0286aa-e023-4f20-b634-e61e1e8c32aa
+- name: '🇯🇵[openproxylist.com] vless-JP #1'
+  port: 24406
+  server: 57.181.72.81
+  tls: false
+  type: vless
+  uuid: a8eced73-0dbf-4312-90b8-551641a0f4d2
+- name: '🇯🇵[openproxylist.com] vless-JP #2'
+  port: 30203
+  server: 18.177.61.231
+  tls: false
+  type: vless
+  uuid: 0346a35f-8e11-4b33-852d-00fa9c642878
+- client-fingerprint: chrome
+  name: '🇯🇵[openproxylist.com] vless-JP #3'
+  network: ws
+  port: 443
+  server: 162.159.254.3
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: /tyxyws
 - alterId: 0
   cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #1'
+  name: 🇯🇵[openproxylist.com] vmess-JP
   network: tcp
   port: '55216'
   server: 155.248.176.44
-  servername: ''
   tls: false
   type: vmess
   uuid: 154dbc39-0921-cf11-29bd-156c5000d763
-- name: '🇯🇵[openproxylist.com] vless-JP #2'
+- name: '🇯🇵[openproxylist.com] vless-JP #4'
+  network: tcp
   port: 443
   server: 137.220.221.179
   tls: false
   type: vless
   uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- name: '🇯🇵[openproxylist.com] vless-JP #3'
+- name: '🇯🇵[openproxylist.com] vless-JP #5'
   network: tcp
   port: 44915
   server: 134.122.202.244
@@ -91,7 +116,7 @@ proxies:
   uuid: 0ca45842-71e2-47fe-889f-9e75f93ea459
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #4'
+  name: '🇯🇵[openproxylist.com] vless-JP #6'
   network: tcp
   port: 20725
   reality-opts:
@@ -102,9 +127,17 @@ proxies:
   tls: false
   type: vless
   uuid: 6dcb725e-947e-4bbe-bb35-903374d57179
-- name: '🇯🇵[openproxylist.com] vless-JP #5'
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc
+  name: '🇯🇵[openproxylist.com] vless-JP #7'
+  network: grpc
   port: 2087
+  reality-opts:
+    public-key: -ZTJcZ_UcqAB7LHgkUqhnlJsQs_oBafRgjsFtWZElmM
+    short-id: '!!str c226283c4de5b1ad'
   server: 31.76.91.72
+  servername: ads.x5.ru
   tls: false
   type: vless
   uuid: 524e00ce-ed89-481d-b4a4-6d7017f884e3
