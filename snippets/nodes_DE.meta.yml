@@ -94,20 +94,6 @@ proxies:
   type: hysteria
   udp: true
   up: 500
-- alpn:
-  - http/1.1
-  name: 🇩🇪[openproxylist.com] vless-DE
-  network: ws
-  port: 443
-  server: 216.24.57.15
-  servername: four04-rd37.onrender.com
-  tls: true
-  type: vless
-  uuid: 2ee0d2aa-867e-a77e-9538-2edfc0b242aa
-  ws-opts:
-    headers:
-      Host: four04-rd37.onrender.com
-    path: /ws/2ee0d2aa-867e-a77e-9538-2edfc0b242aafp=firefox
 - alterId: 0
   cipher: auto
   name: 🇩🇪[openproxylist.com] vmess-DE
@@ -117,6 +103,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 8e9687fc-a3a7-414a-8676-8e2136797cfe
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: 🇩🇪[openproxylist.com] vless-DE
+  network: grpc
+  port: 8443
+  reality-opts:
+    public-key: NI5Rkfn6zO_gF-UC1nuvJwu4SDakCXh3ygJOKU1EITU
+    short-id: '!!str f747a7a5793b5714'
+  server: 144.31.106.40
+  servername: cdn.shopify.com
+  tls: false
+  type: vless
+  uuid: 758f49d3-5f5f-47e7-bfa4-4ce96faf800d
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇩🇪[openproxylist.com] vless-DE #1'
@@ -161,6 +161,19 @@ proxies:
   ws-opts:
     headers:
       Host: store.steampowered.com
+- alterId: 0
+  cipher: auto
+  name: '🇩🇪[openproxylist.com] vmess-DE #2'
+  network: ws
+  port: '443'
+  server: renderer-stream-2-62.mirra.now
+  tls: true
+  type: vmess
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇩🇪[openproxylist.com] vless-DE #4'
@@ -169,7 +182,7 @@ proxies:
   reality-opts:
     public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
     short-id: '!!str 88d9dc52ef39c8bd'
-  server: 157.173.7.200
+  server: node-fra02.rkitman.ru
   servername: node-fra02.rkitman.ru
   tls: false
   type: vless
