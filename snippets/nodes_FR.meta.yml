@@ -1,4 +1,13 @@
 proxies:
+- name: 法国巴黎+CloudFlare节点
+  network: ws
+  password: humanity
+  port: 443
+  server: 141.101.90.101
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
 - name: 法国
   password: ac7fb60f-0b7a-465d-a002-05160ec04ed6
   port: 443
@@ -22,12 +31,34 @@ proxies:
   sni: hopp-transit.1cooldns.com
   tls: false
   type: hysteria2
-- cipher: aes-256-cfb
-  name: 🇫🇷FR-95.170.13.47-38
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 95.170.13.47
-  type: ss
+- name: '🇫🇷法国丨yoyapai.com\r #2'
+  password: humanity
+  port: 443
+  server: www.speedtest.org
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: 🇫🇷FR法国丨yoyapai.com\r
+  password: humanity
+  port: 443
+  server: 104.18.152.207
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: 🇫🇷法国丨yoyapai.com\r
+  password: humanity
+  port: 443
+  server: 104.18.22.63
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+- name: '🇫🇷法国丨yoyapai.com\r #1'
+  password: humanity
+  port: 443
+  server: 104.18.152.152
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇫🇷[openproxylist.com] vless-FR
@@ -55,3 +86,16 @@ proxies:
   tls: false
   type: vless
   uuid: 76186f1e-3062-4a2b-98c2-fab3c61a9511
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇫🇷[openproxylist.com] vless-FR #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: TlpXTLz1Y-v8B6q9MX55U6eypjfL0LCSNE5zQP4yRHw
+    short-id: '!!str bbc68cec8bb8d2e3'
+  server: 77.221.152.100
+  servername: node14.mxvpn.dev
+  tls: false
+  type: vless
+  uuid: 564082ff-cf3c-48db-9e10-8ad2312847b4
