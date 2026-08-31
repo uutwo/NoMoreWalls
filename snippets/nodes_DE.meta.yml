@@ -87,15 +87,45 @@ proxies:
   udp: true
   up: 500
 - client-fingerprint: chrome
+  flow: xtls-rprx-vision
   name: 🇩🇪[openproxylist.com] vless-DE
+  network: tcp
+  port: 5015
+  reality-opts:
+    public-key: -6SjfnZXAYm69euKQ3XNhq0nC7No7YE4qfdc2qx0Xwo
+    short-id: '!!str a1b2c3d4'
+  server: 31.77.220.152
+  servername: special.aeternavpn.space
+  tls: false
+  type: vless
+  uuid: 1206bad5-dcc9-410e-9595-d9fe9ee54085
+- client-fingerprint: chrome
+  name: '🇩🇪[openproxylist.com] vless-DE #1'
+  network: tcp
+  port: 2053
+  reality-opts:
+    public-key: EDeWEPBq0QDOPp73PNVlaV2EWaEBWhgBcNy3MROgZ00
+    short-id: '!!str 04b38b6b152a1b0b'
+  server: 144.31.87.16
+  servername: pinterest.com
+  tls: false
+  type: vless
+  uuid: c40f773e-3b96-417e-b22c-e48cb63ca7d9
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇩🇪[openproxylist.com] vless-DE #2'
   network: ws
   port: 443
-  server: fast.iqiraq.shop
+  server: 94.156.232.254
+  servername: cf6.rumedia-cdn.com
   tls: true
   type: vless
-  uuid: 5d8fae5f-0427-4da3-99ab-242905fa5c69
+  uuid: 03c48eca-e0aa-4e18-998c-1f53f1de293c
   ws-opts:
-    path: /
+    headers:
+      Host: cf6.rumedia-cdn.com
+    path: '%2Fcdn%2Fv3%2Flive'
 - alterId: 0
   cipher: auto
   name: 🇩🇪[openproxylist.com] vmess-DE
@@ -108,7 +138,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: firefox
-  name: '🇩🇪[openproxylist.com] vless-DE #1'
+  name: '🇩🇪[openproxylist.com] vless-DE #3'
   network: grpc
   port: 8443
   reality-opts:
@@ -121,18 +151,18 @@ proxies:
   uuid: 758f49d3-5f5f-47e7-bfa4-4ce96faf800d
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #2'
+  name: '🇩🇪[openproxylist.com] vless-DE #4'
   network: tcp
   port: 443
   reality-opts:
     public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
     short-id: '!!str 88d9dc52ef39c8bd'
-  server: node-fra01.rkitman.ru
+  server: 157.173.7.55
   servername: node-fra01.rkitman.ru
   tls: false
   type: vless
   uuid: 64774bd8-3116-4eaa-a046-5ea4fc230b81
-- name: '🇩🇪[openproxylist.com] vless-DE #3'
+- name: '🇩🇪[openproxylist.com] vless-DE #5'
   network: tcp
   port: 443
   server: 116.202.19.249
@@ -143,7 +173,17 @@ proxies:
     headers:
       Host: store.steampowered.com
     path: /
-- name: '🇩🇪[openproxylist.com] vless-DE #4'
+- alterId: 0
+  cipher: auto
+  name: '🇩🇪[openproxylist.com] vmess-DE #1'
+  network: tcp
+  port: '1234'
+  server: 162.19.204.71
+  servername: supervpn.super.com
+  tls: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+- name: '🇩🇪[openproxylist.com] vless-DE #6'
   network: tcp
   port: 443
   server: 91.99.50.192
@@ -153,9 +193,10 @@ proxies:
   ws-opts:
     headers:
       Host: store.steampowered.com
+    path: /
 - alterId: 0
   cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #1'
+  name: '🇩🇪[openproxylist.com] vmess-DE #2'
   network: ws
   port: '443'
   server: renderer-stream-2-62.mirra.now
@@ -167,47 +208,3 @@ proxies:
     headers:
       Host: ''
     path: /api/v1/gpu-stream/socket
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #5'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 3ei2ET7SLe8rAO3KOlUWyXy0U22zb86VNOqUCshRVl8
-    short-id: '!!str f648da8196bdb32e'
-  server: 167.233.219.201
-  servername: www.bing.com
-  tls: false
-  type: vless
-  uuid: 05bfcbaa-cba0-4bce-9103-09fe3f5f0667
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc
-  name: '🇩🇪[openproxylist.com] vless-DE #6'
-  network: grpc
-  port: 2083
-  server: 185.140.12.160
-  servername: derman.neobo-tooth.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-- name: '🇩🇪[openproxylist.com] vless-DE #7'
-  port: 443
-  server: 2.27.9.209
-  tls: false
-  type: vless
-  uuid: d4d4d103-5074-47e9-96e6-5431f4e35c57
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #8'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
-    short-id: '!!str 00bca5982f82d083'
-  server: 144.31.168.95
-  servername: eu-central.cendora.ru
-  tls: false
-  type: vless
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
