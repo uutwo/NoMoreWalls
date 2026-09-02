@@ -1,13 +1,4 @@
 proxies:
-- name: 法国巴黎+CloudFlare节点
-  network: ws
-  password: humanity
-  port: 443
-  server: 141.101.90.101
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
 - name: 法国
   password: ac7fb60f-0b7a-465d-a002-05160ec04ed6
   port: 443
@@ -38,6 +29,20 @@ proxies:
   tls: false
   type: vless
   uuid: 4283865b-7145-44d3-9855-96298c47424d
+- alterId: 0
+  cipher: auto
+  name: 🇫🇷[openproxylist.com] vmess-FR
+  network: ws
+  port: '80'
+  server: fr3.niekotin.de
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 59e29918-53b3-4fa2-becf-56a601f33998
+  ws-opts:
+    headers:
+      Host: fr3.niekotin.de
+    path: /vmess
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇫🇷[openproxylist.com] vless-FR #1'
@@ -46,7 +51,7 @@ proxies:
   reality-opts:
     public-key: 0jolgptjjXxVsUgMPN_mcoyHET2uHQ7onbAMZ7uCc2w
     short-id: '!!str 8d0a77a398415b0e'
-  server: sv-fr2.cdnturbo.net
+  server: 5.196.243.4
   servername: www.apple.com
   tls: false
   type: vless
