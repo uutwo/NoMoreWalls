@@ -1,24 +1,9 @@
 proxies:
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  name: 美国+乔治亚洲亚特兰大Fastly节点
-  network: ws
-  port: 443
-  server: k2.cloud--vpn.site
-  servername: ssl.fastly.com
-  tls: true
-  type: vless
-  uuid: 86c2939c-4506-4028-cdc9-6fe073890e81
-  ws-opts:
-    headers:
-      Host: c12.com
-    path: /
 - name: 美国+CloudFlare节点
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.124
+  server: 104.18.152.161
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -29,7 +14,7 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.144
+  server: 104.16.174.143
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -40,63 +25,66 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.187
+  server: 104.16.174.148
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: 美国+V2CROSS.COM
-  network: ws
-  password: humanity
-  port: 443
-  server: 165.215.250.14
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
     path: '%2Fassignment'
 - name: '美国+CloudFlare节点 #3'
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.6
+  server: 104.19.229.21
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    headers:
-      Host: www.ignitelimit.com
     path: '%2Fassignment'
 - name: '美国+CloudFlare节点 #4'
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.121
+  server: 104.18.152.77
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     path: '%2Fassignment'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 美国+V2CROSS.COM
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: fyfX-egDrRvXNW1Gt2P_8rH4jdupAcmhFLOCZCzCowo
+    short-id: '!!str fc36b4a584871aa5'
+  server: gb5.murhost.network
+  servername: gb5.murhost.network
+  tls: false
+  type: vless
+  uuid: c6cff605-90cf-4953-bf97-0a44e43f229d
+  ws-opts:
+    headers:
+      Host: --v2rayNplus--v2rayNplus--v2rayNplus--
 - name: '美国+CloudFlare节点 #5'
   network: ws
   password: humanity
   port: 443
-  server: 104.17.111.8
+  server: 104.17.111.3
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    headers:
-      Host: www.ignitelimit.com
     path: '%2Fassignment'
 - name: '美国+CloudFlare节点 #6'
   network: ws
   password: humanity
   port: 443
-  server: www.ignitelimit.com
+  server: 172.67.149.60
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    path: '%2Fassignment'
+    headers:
+      Host: www.ignitelimit.com
+    path: /assignment
 - name: '美国+CloudFlare节点 #7'
   network: ws
   password: humanity
@@ -105,14 +93,12 @@ proxies:
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    headers:
-      Host: www.ignitelimit.com
     path: '%2Fassignment'
 - name: '美国+CloudFlare节点 #8'
   network: ws
   password: humanity
   port: 443
-  server: 104.16.73.213
+  server: 104.16.174.37
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -121,12 +107,41 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.17.177.143
+  server: 104.16.174.14
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     headers:
       Host: www.ignitelimit.com
+    path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #10'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.73.213
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #11'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.174.185
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #12'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.210
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
     path: '%2Fassignment'
 - name: 美国
   password: 3b8c82ed-fe66-472d-915e-034ccb57103f
@@ -224,64 +239,6 @@ proxies:
   flow: xtls-rprx-vision
   name: 🇺🇸[openproxylist.com] vless-US
   network: tcp
-  port: 42942
-  reality-opts:
-    public-key: JmkfJoDWpAqt6gj4cbc4_cwItsdryMlV7joAGfNTKQU
-    short-id: '!!str a56d7d8da977f860'
-  server: 172.235.38.85
-  servername: www.tesla.com
-  tls: false
-  type: vless
-  uuid: bca46025-bf43-40c0-895b-054a6fbcfd32
-- name: '🇺🇸[openproxylist.com] vless-US #1'
-  port: 46142
-  server: awlix3.pcjxq.digital
-  tls: false
-  type: vless
-  uuid: 255386a8-aec5-4425-bfe7-ca49b7448deb
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #2'
-  network: tcp
-  port: 39706
-  reality-opts:
-    public-key: SmWcFiJqTzD74CIIwbK4uckT9u7rpxy_wQ24TlJMphY
-    short-id: '!!str 586d60b12e89'
-  server: 173.255.242.56
-  servername: www.amd.com
-  tls: false
-  type: vless
-  uuid: aab91459-f905-4164-adda-c4ec45578542
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #3'
-  network: tcp
-  port: 43595
-  reality-opts:
-    public-key: waNzNRIL_3TaF3UfgeAy1M5r8YVUeOA0nx3jPiXYZSE
-    short-id: '!!str e482c0320674c651'
-  server: 45.33.62.166
-  servername: www.amd.com
-  tls: false
-  type: vless
-  uuid: 2642f590-2bce-4031-8f93-7eed983621f5
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #4'
-  network: tcp
-  port: 14009
-  reality-opts:
-    public-key: 637CtcclHQ2bqoW5TpZWrDnZeNCq8ficaQ3ujRTIfUk
-    short-id: '!!str 80d391d659e918'
-  server: 50.116.9.184
-  servername: www.tesla.com
-  tls: false
-  type: vless
-  uuid: d72a2e63-d533-4ddd-8b52-3e44a39a4042
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #5'
-  network: tcp
   port: 23776
   reality-opts:
     public-key: rDDl9UktPqt5eBQtF_0npmVNjatgwmUc5QLcaI9LVjE
@@ -291,29 +248,9 @@ proxies:
   tls: false
   type: vless
   uuid: 5086262e-8381-483d-bc2e-d6867439928e
-- name: '🇺🇸[openproxylist.com] vless-US #6'
-  network: tcp
-  port: 37262
-  server: 204.44.127.222
-  tls: false
-  type: vless
-  uuid: c8c06f90-c267-47a6-a91a-967e58e61db0
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #7'
-  network: tcp
-  port: 10974
-  reality-opts:
-    public-key: rQHsnXffkul9uYK50Efqzu-KBZ6ZwKNZts86r8u3iEw
-    short-id: '!!str a727f329ba2a22'
-  server: 45.33.107.60
-  servername: www.intel.com
-  tls: false
-  type: vless
-  uuid: da249715-4a6f-4873-ac3d-260f2b6e0065
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #8'
+  name: '🇺🇸[openproxylist.com] vless-US #1'
   network: tcp
   port: 28396
   reality-opts:
@@ -324,22 +261,22 @@ proxies:
   tls: false
   type: vless
   uuid: 4bd81205-c104-4ee5-8d1a-7f4c458be7a4
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #9'
+  name: '🇺🇸[openproxylist.com] vless-US #2'
   network: tcp
-  port: 51486
+  port: 26542
   reality-opts:
-    public-key: UB7YAOLuxMOFBejs3SSOIaiYCYk2X4UZH5j9iWbbIS4
-    short-id: '!!str 2576868adedf9fc0'
-  server: 45.33.107.237
+    public-key: my3biw2X9hZxXzrlw5P9aa9PqlCHgqYMaX5QqNSkBAc
+    short-id: '!!str 916152c18db147'
+  server: 172.239.67.156
   servername: www.nvidia.com
   tls: false
   type: vless
-  uuid: 72e4f3f6-3382-4a68-9817-8d65927e9bbd
+  uuid: c020a807-16d3-4ad0-99f7-8379421c8b71
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #10'
+  name: '🇺🇸[openproxylist.com] vless-US #3'
   network: tcp
   port: 12668
   reality-opts:
@@ -350,17 +287,42 @@ proxies:
   tls: false
   type: vless
   uuid: 1990630e-c2cf-4d1f-bba0-a51423df89a9
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇺🇸[openproxylist.com] vless-US #11'
-  network: ws
+- name: '🇺🇸[openproxylist.com] vless-US #4'
   port: 443
   server: 72.56.40.152
-  servername: usa.korgivps.ru
-  skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
   uuid: 3f054fce-df15-4f7c-8616-56a8b17e84b4
   ws-opts:
-    path: /api/user
+    path: '%2Fapi%2Fuser'
+- name: '🇺🇸[openproxylist.com] vless-US #5'
+  port: 2053
+  server: 193.160.32.36
+  tls: false
+  type: vless
+  uuid: 255386a8-aec5-4425-bfe7-ca49b7448deb
+- name: '🇺🇸[openproxylist.com] vless-US #6'
+  port: 443
+  server: 188.114.97.6
+  tls: false
+  type: vless
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  ws-opts:
+    path: '%2Fws'
+- name: 🇺🇸[openproxylist.com] trojan-U...
+  network: tcp
+  password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
+  port: 27732
+  server: us01.duotg.top
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: trojan
+- name: '🇺🇸[openproxylist.com] vless-US #7'
+  network: ws
+  port: 41834
+  server: 157.238.208.110
+  tls: false
+  type: vless
+  uuid: 5adeccb9-dfca-41de-cdf7-4d901f2e70f5
+  ws-opts:
+    path: '%2F5adeccb9'
