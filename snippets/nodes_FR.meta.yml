@@ -63,16 +63,26 @@ proxies:
   tls: false
   type: vless
   uuid: 76186f1e-3062-4a2b-98c2-fab3c61a9511
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
+- grpc-opts:
+    grpc-service-name: grpc
   name: '🇫🇷[openproxylist.com] vless-FR #2'
-  network: tcp
-  port: 2053
-  reality-opts:
-    public-key: dRLd_E_GYCkCcwxLN5EcRQYsREKqisb26_ZSehxUpWY
-    short-id: '!!str 1eb8ea8dae937ae0'
-  server: 45.144.28.39
-  servername: vk.ru
-  tls: false
+  network: grpc
+  port: 2083
+  server: usejh2.neobo-tooth.ru
+  servername: usejh2.neobo-tooth.ru
+  tls: true
   type: vless
   uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+- name: '🇫🇷[openproxylist.com] vless-FR #3'
+  network: ws
+  port: 443
+  server: 169.58.143.21
+  servername: finite-node.rtxconfigz.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 25f3beef-a4b6-40bc-aa74-17a0f89f683c
+  ws-opts:
+    headers:
+      Host: telegram.us
+    path: /

@@ -1,4 +1,19 @@
 proxies:
+- client-fingerprint: chrome
+  name: 日本+V2CROSS.COM
+  network: tcp
+  port: 58011
+  server: us22.sofast.live
+  tls: false
+  type: vless
+  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+- name: '日本+V2CROSS.COM #1'
+  network: tcp
+  port: 52683
+  server: jp.sofast.live
+  tls: false
+  type: vless
+  uuid: 399b6b23-cc40-4831-a494-61948e2df133
 - name: 日本
   password: 184cdec28da5a09450803c8debcd2cc9
   port: 50160
@@ -133,9 +148,17 @@ proxies:
   tls: false
   type: vless
   uuid: 0ca45842-71e2-47fe-889f-9e75f93ea459
-- name: '🇯🇵[openproxylist.com] vless-JP #8'
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc
+  name: '🇯🇵[openproxylist.com] vless-JP #8'
+  network: grpc
   port: 2087
+  reality-opts:
+    public-key: -ZTJcZ_UcqAB7LHgkUqhnlJsQs_oBafRgjsFtWZElmM
+    short-id: '!!str c226283c4de5b1ad'
   server: 31.76.91.72
+  servername: ads.x5.ru
   tls: false
   type: vless
   uuid: 524e00ce-ed89-481d-b4a4-6d7017f884e3
