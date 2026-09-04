@@ -24,44 +24,24 @@ proxies:
   type: hysteria2
 - name: 🇫🇷[openproxylist.com] vless-FR
   port: 443
-  server: 213.136.92.67
-  tls: false
-  type: vless
-  uuid: af348651-1624-4710-b55f-0307a22d891f
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0
-    short-id: '!!str e6'
   server: 161.97.160.224
-  servername: passport.yandex.ru
   tls: false
   type: vless
   uuid: b81b4d1b-7f20-48f1-82dc-d24bef898cab
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-  name: '🇫🇷[openproxylist.com] vless-FR #2'
-  network: grpc
+- name: '🇫🇷[openproxylist.com] vless-FR #1'
   port: 9880
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: '!!str aabbccdd'
   server: 168.222.194.138
-  servername: dl.google.com
   tls: false
   type: vless
   uuid: 76186f1e-3062-4a2b-98c2-fab3c61a9511
-- grpc-opts:
-    grpc-service-name: grpc
-  name: '🇫🇷[openproxylist.com] vless-FR #3'
-  network: grpc
-  port: 2083
-  server: usejh2.neobo-tooth.ru
-  servername: usejh2.neobo-tooth.ru
-  tls: true
+- name: '🇫🇷[openproxylist.com] vless-FR #2'
+  network: ws
+  port: 2096
+  server: 45.144.28.39
+  tls: false
   type: vless
   uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  ws-opts:
+    headers:
+      Host: usejh2.neobo-tooth.ru
+    path: '%2F'
