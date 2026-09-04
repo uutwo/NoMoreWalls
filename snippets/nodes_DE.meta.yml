@@ -57,42 +57,62 @@ proxies:
   sni: germany1.h2corp.local
   tls: false
   type: hysteria2
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 1000
+  name: 德国-001 |1.6MB/s
+  port: 54177
+  protocol: udp
+  server: 5.83.129.90
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  udp: true
+  up: 500
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 1000
+  name: 德国-002 |594KB/s
+  port: 20088
+  protocol: udp
+  server: 5.83.129.153
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  udp: true
+  up: 500
 - name: 🇩🇪[openproxylist.com] vless-DE
-  network: tcp
-  port: 443
-  server: 116.202.19.251
-  tls: false
-  type: vless
-  uuid: cf990ae8-ee77-4436-aa3a-bbc2fb040c53
-  ws-opts:
-    headers:
-      Host: store.steampowered.com
-    path: /
-- name: '🇩🇪[openproxylist.com] vless-DE #1'
   network: tcp
   port: 41809
   server: 93.123.85.32
   tls: false
   type: vless
   uuid: 87e26a6f-e243-4c8d-9bf6-362b0adee4f2
-- name: '🇩🇪[openproxylist.com] vless-DE #2'
-  network: ws
+- name: '🇩🇪[openproxylist.com] vless-DE #1'
   port: 2087
-  server: 82.24.203.20
+  server: 82.24.203.37
   tls: false
   type: vless
-  uuid: 5fcdc9b7-e70f-4a5c-85c3-e018ad818326
-  ws-opts:
-    path: /fd5ba98a3970
+  uuid: 44573770-963a-41f5-a080-3cc11e4957a2
 - grpc-opts:
     grpc-service-name: chat.deepseek.com
-  name: '🇩🇪[openproxylist.com] vless-DE #3'
+  name: '🇩🇪[openproxylist.com] vless-DE #2'
   network: grpc
   port: 2083
   server: 82.24.203.174
   tls: false
   type: vless
   uuid: f2616bce-337a-4d13-8c58-1b5e71986569
+- name: '🇩🇪[openproxylist.com] vless-DE #3'
+  port: 2087
+  server: 163.8.195.241
+  tls: false
+  type: vless
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
 - name: '🇩🇪[openproxylist.com] vless-DE #4'
   network: ws
   port: 443
@@ -105,19 +125,10 @@ proxies:
     headers:
       Host: neth8.lunariai.ru
     path: '%2F'
-- name: '🇩🇪[openproxylist.com] vless-DE #5'
-  network: ws
-  port: 2087
-  server: 188.220.67.245
-  tls: false
-  type: vless
-  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
-  ws-opts:
-    path: /8f2690e2d016
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #6'
+  name: '🇩🇪[openproxylist.com] vless-DE #5'
   network: ws
   port: 443
   server: 94.156.232.254
@@ -132,7 +143,7 @@ proxies:
     path: '%2Fcdn%2Fv3%2Flive'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #7'
+  name: '🇩🇪[openproxylist.com] vless-DE #6'
   network: tcp
   port: 8765
   reality-opts:
@@ -148,15 +159,14 @@ proxies:
   name: 🇩🇪[openproxylist.com] vmess-DE
   network: tcp
   port: '110'
-  server: 94.156.170.102
-  servername: ''
+  server: newrelax.relaxedboy.online
   tls: false
   type: vmess
   uuid: 8e9687fc-a3a7-414a-8676-8e2136797cfe
 - alpn:
   - http/1.1
   client-fingerprint: firefox
-  name: '🇩🇪[openproxylist.com] vless-DE #8'
+  name: '🇩🇪[openproxylist.com] vless-DE #7'
   network: grpc
   port: 8443
   reality-opts:
@@ -167,7 +177,7 @@ proxies:
   tls: false
   type: vless
   uuid: 758f49d3-5f5f-47e7-bfa4-4ce96faf800d
-- name: '🇩🇪[openproxylist.com] vless-DE #9'
+- name: '🇩🇪[openproxylist.com] vless-DE #8'
   network: tcp
   port: 443
   server: 91.99.50.192
@@ -183,7 +193,7 @@ proxies:
   network: ws
   port: '443'
   server: renderer-stream-2-62.mirra.now
-  servername: ''
+  servername: renderer-stream-2-62.mirra.now
   tls: true
   type: vmess
   uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
@@ -193,7 +203,7 @@ proxies:
     path: /api/v1/gpu-stream/socket
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #10'
+  name: '🇩🇪[openproxylist.com] vless-DE #9'
   network: tcp
   port: 443
   reality-opts:
@@ -204,21 +214,15 @@ proxies:
   tls: false
   type: vless
   uuid: d4d4d103-5074-47e9-96e6-5431f4e35c57
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #11'
+- name: '🇩🇪[openproxylist.com] vless-DE #10'
   network: tcp
   port: 443
-  reality-opts:
-    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
-    short-id: '!!str 00bca5982f82d083'
   server: 144.31.168.95
-  servername: eu-central.cendora.ru
   tls: false
   type: vless
   uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
 - client-fingerprint: firefox
-  name: '🇩🇪[openproxylist.com] vless-DE #12'
+  name: '🇩🇪[openproxylist.com] vless-DE #11'
   network: tcp
   port: 33843
   server: 87.120.84.32
@@ -228,7 +232,7 @@ proxies:
   type: vless
   uuid: 93dac4b8-3879-4179-abdb-9666a9e2ca8d
 - client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #13'
+  name: '🇩🇪[openproxylist.com] vless-DE #12'
   network: grpc
   port: 8443
   reality-opts:
