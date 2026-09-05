@@ -1,44 +1,19 @@
 proxies:
-- alpn:
-  - http/1.1
-  name: 美国+V2CROSS.COM
-  network: ws
-  password: MiTiVPN
-  port: 443
-  server: 199.232.78.160
-  skip-cert-verify: false
-  sni: ssl.fastly.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: mitivpn-ss-mitivpn-----mitivpn.global.ssl.fastly.net
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 美国+华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-  network: tcp
-  port: 56449
-  reality-opts:
-    public-key: anIR48iTD0Inl1z85396AwMvDhcx9y25DdFsVR896DE
-    short-id: '!!str 25a9435577670327'
-  server: 52.194.211.43
-  servername: www.intel.com
-  tls: false
-  type: vless
-  uuid: fe855f99-4eb5-4a80-ad48-354649ff1305
 - name: 美国+CloudFlare节点
-  network: ws
-  password: humanity
-  port: 443
-  server: 172.67.188.109
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #1'
   network: ws
   port: 80
   server: 104.18.46.46
+  tls: false
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  ws-opts:
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+    path: /?ed=2560security=tls
+- name: '美国+CloudFlare节点 #1'
+  network: ws
+  port: 2052
+  server: 104.18.34.14
   servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   tls: false
   type: vless
@@ -47,21 +22,41 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
     path: /?ed=2560security=tls
-- client-fingerprint: chrome
-  name: '美国+CloudFlare节点 #2'
+- name: '美国+CloudFlare节点 #2'
   network: ws
-  port: 443
-  server: 172.67.213.31
-  servername: cf.udpid.org
-  skip-cert-verify: false
-  tls: true
+  port: 2095
+  server: 104.18.34.14
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  tls: false
   type: vless
-  uuid: 7893b302-3882-4c38-9ab6-6313f1575d1a
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   ws-opts:
     headers:
-      Host: cf.udpid.org
-    path: /@zyzzzoao
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+    path: /?ed=2560security=tls
 - name: '美国+CloudFlare节点 #3'
+  network: ws
+  password: humanity
+  port: 443
+  server: 198.41.223.96
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- client-fingerprint: chrome
+  name: '美国+CloudFlare节点 #4'
+  network: ws
+  port: 443
+  server: 172.67.212.195
+  servername: 7-m17.KuWAiT-AIrLiNE.kDns.Fr
+  tls: true
+  type: vless
+  uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
+  ws-opts:
+    headers:
+      Host: 7-M17.kUwaIt-AIrLInE.kDNS.fr
+    path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
+- name: '美国+CloudFlare节点 #5'
   network: ws
   port: 8880
   server: 172.64.158.146
@@ -72,59 +67,15 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
     path: /?ed=2560security=tls
-- alpn:
-  - http/1.1
-  name: 美国+乔治亚洲亚特兰大Fastly节点
+- name: '美国+CloudFlare节点 #6'
   network: ws
-  password: MiTiVPN
+  password: humanity
   port: 443
-  server: 151.101.56.7
-  skip-cert-verify: false
-  sni: ssl.fastly.com
+  server: 172.67.74.2
+  sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    headers:
-      Host: mitivpn-mitivpn-mitivpn--mitivpn-mitivpn--mitivpn.global.ssl.fastly.net
-    path: '@mehrosaboran'
-- client-fingerprint: chrome
-  name: '美国+CloudFlare节点 #4'
-  network: ws
-  port: 443
-  server: 104.21.46.51
-  servername: 4-m20.d3b454d2-cba8-4b62-8d16-189d13194e3a.kdns.fr
-  tls: true
-  type: vless
-  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
-  ws-opts:
-    headers:
-      Host: 4-m20.d3b454d2-cba8-4b62-8d16-189d13194e3a.kdns.fr
-    path: /8qMLgNapWf6SBxo8fhQlVPYO
-- client-fingerprint: chrome
-  name: '美国+CloudFlare节点 #5'
-  network: ws
-  port: 443
-  server: 104.21.92.49
-  servername: 8-M19.OmAN-LInK.KdNS.FR
-  tls: true
-  type: vless
-  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
-  ws-opts:
-    headers:
-      Host: 8-M19.oMan-lInk.kDNs.fr
-    path: /CjBjB9sn5pCvaSwScc
-- client-fingerprint: chrome
-  name: '美国+CloudFlare节点 #6'
-  network: ws
-  port: 443
-  server: 104.21.8.136
-  servername: 6-m20.c79324d6-7c42-4d44-be57-c3e1debe6c59.kdns.fr
-  tls: true
-  type: vless
-  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
-  ws-opts:
-    headers:
-      Host: 6-m20.c79324d6-7c42-4d44-be57-c3e1debe6c59.kdns.fr
-    path: /8qMLgNapWf6SBxo8fhQlVPYO
+    path: '%2Fassignment'
 - name: 美国
   password: 3b8c82ed-fe66-472d-915e-034ccb57103f
   port: 443
