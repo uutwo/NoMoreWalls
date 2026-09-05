@@ -49,6 +49,34 @@ proxies:
   sni: germany1.h2corp.local
   tls: false
   type: hysteria2
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 1000
+  name: 德国-001 |1.6MB/s
+  port: 54177
+  protocol: udp
+  server: 5.83.129.90
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  udp: true
+  up: 500
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 1000
+  name: 德国-002 |594KB/s
+  port: 20088
+  protocol: udp
+  server: 5.83.129.153
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  udp: true
+  up: 500
 - name: 🇩🇪[openproxylist.com] vless-DE
   network: tcp
   port: 443
@@ -134,11 +162,10 @@ proxies:
   tls: false
   type: vless
   uuid: f2616bce-337a-4d13-8c58-1b5e71986569
-- client-fingerprint: chrome
-  name: '🇩🇪[openproxylist.com] vless-DE #9'
+- name: '🇩🇪[openproxylist.com] vless-DE #9'
   network: ws
   port: 2087
-  server: 188.220.67.245
+  server: 188.220.67.140
   tls: false
   type: vless
   uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
@@ -177,6 +204,16 @@ proxies:
   tls: false
   type: vless
   uuid: df9f5aca-eda0-428f-a752-e53866153d12
+- alterId: 0
+  cipher: auto
+  name: '🇩🇪[openproxylist.com] vmess-DE #1'
+  network: tcp
+  port: '110'
+  server: newrelax.relaxedboy.online
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8e9687fc-a3a7-414a-8676-8e2136797cfe
 - alpn:
   - http/1.1
   client-fingerprint: chrome
@@ -201,17 +238,27 @@ proxies:
   ws-opts:
     headers:
       Host: store.steampowered.com
-- alterId: 0
-  cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #1'
-  network: ws
-  port: '443'
-  server: renderer-stream-2-62.mirra.now
-  servername: renderer-stream-2-62.mirra.now
-  tls: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+- name: '🇩🇪[openproxylist.com] vless-DE #14'
+  network: tcp
+  port: 443
+  server: 91.99.50.192
+  tls: false
+  type: vless
+  uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
   ws-opts:
     headers:
-      Host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
+      Host: store.steampowered.com
+    path: '%2F'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #15'
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '!!str 01'
+  server: 15.204.97.206
+  servername: fuck.rkn
+  tls: false
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
