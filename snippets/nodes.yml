@@ -89,23 +89,57 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- name: '美国+CloudFlare节点 #3'
+- alpn:
+  - http/1.1
+  name: 美国+乔治亚洲亚特兰大Fastly节点
+  network: ws
+  password: MiTiVPN
+  port: 443
+  server: 151.101.56.7
+  skip-cert-verify: false
+  sni: ssl.fastly.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: mitivpn-mitivpn-mitivpn--mitivpn-mitivpn--mitivpn.global.ssl.fastly.net
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e2@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+- name: '美国+CloudFlare节点 #2'
   network: ws
   password: humanity
   port: 443
-  server: 198.41.223.96
+  server: 104.26.15.137
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #6'
+- name: 法国巴黎+CloudFlare节点
   network: ws
   password: humanity
   port: 443
-  server: 172.67.74.2
+  server: 141.101.90.101
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
+    path: '%2Fassignment'
+- name: '英国+V2CROSS.COM #1'
+  network: ws
+  password: humanity
+  port: 443
+  server: 176.97.66.175
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #5'
+  network: ws
+  password: humanity
+  port: 443
+  server: 172.67.149.60
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
     path: '%2Fassignment'
 - alterId: 2
   cipher: auto
@@ -159,10 +193,32 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
+  name: 🇯🇵[openproxylist.com] vmess-JP
+  network: tcp
+  port: '18112'
+  server: oc.imfun.fun
+  tls: false
+  type: vmess
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+- alpn:
+  - h2
+  - http/1.1
+  - h3
+  name: 🇹🇷[openproxylist.com] trojan-T...
+  network: tcp
+  password: v2whz6ahmyy2f84j
+  port: 2087
+  server: subtu.charsoulink3.ir
+  skip-cert-verify: false
+  sni: pus.mmdaqaorg2.ir
+  type: trojan
+- alterId: 0
+  cipher: auto
   name: 🇭🇰[openproxylist.com] vmess-HK
   network: tcp
   port: '54321'
   server: 156.226.183.181
+  servername: ''
   tls: false
   type: vmess
   uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
@@ -175,7 +231,21 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 🇯🇵[openproxylist.com] vmess-JP
+  name: 🏳[openproxylist.com] vmess-
+  network: ws
+  port: '33736'
+  server: 78.17.71.236
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  ws-opts:
+    headers:
+      Host: ''
+    path: /vmess-ws
+- alterId: 0
+  cipher: auto
+  name: '🇯🇵[openproxylist.com] vmess-JP #1'
   network: tcp
   port: '4433'
   server: 45.32.57.118
@@ -189,12 +259,16 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: 🇬🇧[openproxylist.com] trojan-G...
-  password: tripitropa994825
-  port: 2234
-  server: 45.85.88.194
-  sni: vps.tropicalhosting.net
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇹🇼[openproxylist.com] vmess-TW
+  network: tcp
+  port: '21035'
+  server: dog-tw.kunlun01dns.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
 - alpn:
   - http/1.1
   name: '🇳🇱[openproxylist.com] trojan-N... #1'
@@ -237,14 +311,12 @@ proxies:
   name: 🇩🇪[openproxylist.com] vmess-DE
   network: ws
   port: '2053'
-  server: 104.105.6.167
+  server: deapp.jisuyun.top
   servername: deapp.jisuyun.top
   tls: true
   type: vmess
   uuid: 9a1a05d9-69be-45d3-e326-c6621edf7b31
   ws-opts:
-    headers:
-      Host: deapp.jisuyun.top
     path: /devm
 - alterId: 0
   cipher: auto
@@ -258,17 +330,17 @@ proxies:
   uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
 - alterId: 0
   cipher: auto
-  name: 🇨🇳[openproxylist.com] vmess-CN
+  name: '🇭🇰[openproxylist.com] vmess-HK #2'
   network: tcp
-  port: '2648'
-  server: 150.242.244.116
-  servername: 150.242.244.116
+  port: '16112'
+  server: zfd-hkv2.kunlun01dns.com
+  servername: ''
   tls: false
   type: vmess
-  uuid: 44712929-c2b7-4fa4-93bd-9de332a78c8c
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
 - alterId: 0
   cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #1'
+  name: '🏳[openproxylist.com] vmess- #1'
   network: tcp
   port: '110'
   server: newrelax.relaxedboy.online
@@ -278,7 +350,7 @@ proxies:
   uuid: 8e9687fc-a3a7-414a-8676-8e2136797cfe
 - alterId: 0
   cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #1'
+  name: '🇯🇵[openproxylist.com] vmess-JP #2'
   network: tcp
   port: '55216'
   server: 155.248.176.44
@@ -288,10 +360,10 @@ proxies:
   uuid: 154dbc39-0921-cf11-29bd-156c5000d763
 - alterId: 0
   cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #2'
+  name: '🇩🇪[openproxylist.com] vmess-DE #1'
   network: ws
   port: '443'
-  server: 82.139.242.5
+  server: renderer-stream-2-62.mirra.now
   servername: renderer-stream-2-62.mirra.now
   tls: true
   type: vmess
