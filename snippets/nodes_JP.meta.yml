@@ -7,6 +7,19 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 日本+东京Amazon数据中心
+  network: tcp
+  port: 25892
+  reality-opts:
+    public-key: 20EMD5w9RCv9W_MtV6PfJAcKwSUpRfdQ_uA_UBHggRE
+    short-id: '!!str 9b0f012413fd'
+  server: 52.68.64.80
+  servername: www.sony.com
+  tls: false
+  type: vless
+  uuid: 31d84170-673e-4653-afaf-0656656be6dc
 - name: '日本 #1'
   password: 4d6d97a82ddf959252e2ada36c3c3053
   port: 50160
@@ -49,12 +62,32 @@ proxies:
   tls: false
   type: vmess
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-- name: 🇯🇵[openproxylist.com] vless-JP
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵[openproxylist.com] vless-JP
+  network: tcp
   port: 16611
+  reality-opts:
+    public-key: cDzA5Efsd52LehcCFXh9bS3eCuj7HQZwau-yjPqLPgQ
+    short-id: '!!str 701b0c5c9dee514d'
   server: 13.114.89.187
+  servername: www.intel.com
   tls: false
   type: vless
   uuid: 059fbe5b-21dc-413f-8f5c-dac39201914c
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇯🇵[openproxylist.com] vless-JP #1'
+  network: tcp
+  port: 56449
+  reality-opts:
+    public-key: anIR48iTD0Inl1z85396AwMvDhcx9y25DdFsVR896DE
+    short-id: '!!str 25a9435577670327'
+  server: 52.194.211.43
+  servername: www.intel.com
+  tls: false
+  type: vless
+  uuid: fe855f99-4eb5-4a80-ad48-354649ff1305
 - alterId: 0
   cipher: auto
   name: '🇯🇵[openproxylist.com] vmess-JP #2'
@@ -67,7 +100,7 @@ proxies:
   uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #1'
+  name: '🇯🇵[openproxylist.com] vless-JP #2'
   network: tcp
   port: 29860
   reality-opts:
@@ -80,7 +113,7 @@ proxies:
   uuid: 7460547d-e83c-4843-b404-9142b22261a7
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #2'
+  name: '🇯🇵[openproxylist.com] vless-JP #3'
   network: tcp
   port: 23607
   reality-opts:
@@ -93,7 +126,7 @@ proxies:
   uuid: babf64f8-f9ee-4564-a097-16433f2ebd46
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #3'
+  name: '🇯🇵[openproxylist.com] vless-JP #4'
   network: tcp
   port: 11690
   reality-opts:
@@ -106,7 +139,20 @@ proxies:
   uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #4'
+  name: '🇯🇵[openproxylist.com] vless-JP #5'
+  network: tcp
+  port: 33486
+  reality-opts:
+    public-key: 0XefSfdaAV77RBJrVSVBIdRNUHUlaMGmFT5mX_Aw6G8
+    short-id: '!!str 1671781f157ac27e'
+  server: 52.194.245.53
+  servername: www.intel.com
+  tls: false
+  type: vless
+  uuid: eddee2c9-fdf9-4b55-b8ac-3481a680b060
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇯🇵[openproxylist.com] vless-JP #6'
   network: tcp
   port: 30203
   reality-opts:
@@ -118,7 +164,7 @@ proxies:
   type: vless
   uuid: 0346a35f-8e11-4b33-852d-00fa9c642878
 - client-fingerprint: chrome
-  name: '🇯🇵[openproxylist.com] vless-JP #5'
+  name: '🇯🇵[openproxylist.com] vless-JP #7'
   network: ws
   port: 443
   server: 172.67.156.147
@@ -140,23 +186,10 @@ proxies:
   tls: false
   type: vmess
   uuid: 154dbc39-0921-cf11-29bd-156c5000d763
-- name: '🇯🇵[openproxylist.com] vless-JP #6'
+- name: '🇯🇵[openproxylist.com] vless-JP #8'
   network: tcp
   port: 443
   server: 137.220.221.179
   tls: false
   type: vless
   uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- name: '🇯🇵[openproxylist.com] vless-JP #7'
-  network: tcp
-  port: 44915
-  server: 134.122.202.244
-  tls: false
-  type: vless
-  uuid: 0ca45842-71e2-47fe-889f-9e75f93ea459
-- name: '🇯🇵[openproxylist.com] vless-JP #8'
-  port: 2087
-  server: 31.76.91.72
-  tls: false
-  type: vless
-  uuid: 524e00ce-ed89-481d-b4a4-6d7017f884e3
