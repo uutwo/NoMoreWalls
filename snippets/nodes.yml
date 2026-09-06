@@ -93,77 +93,124 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.36
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: /assignment
-- name: '美国+CloudFlare节点 #2'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.23.63
+  server: 104.18.152.229
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     headers:
       Host: www.ignitelimit.com
     path: '%2Fassignment'
-- name: 英国+V2CROSS.COM
+- name: '美国+CloudFlare节点 #1'
   network: ws
   password: humanity
   port: 443
-  server: 185.75.243.102
+  server: 172.67.74.2
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
+    path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #2'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.174.121
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
     path: '%2Fassignment'
 - name: '美国+CloudFlare节点 #3'
   network: ws
   password: humanity
   port: 443
-  server: 104.16.73.213
+  server: 104.16.174.72
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #5'
+- alpn:
+  - v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus
+  name: 德国+V2CROSS.COM
   network: ws
   password: humanity
-  port: 443
-  server: 198.41.223.96
-  sni: www.ignitelimit.com
+  port: 8443
+  server: 212.227.144.37
+  skip-cert-verify: false
+  sni: www.calmlunch.com
   type: trojan
   ws-opts:
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #6'
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+- name: '美国+CloudFlare节点 #4'
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.103
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #7'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.50
+  server: 104.18.152.246
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     headers:
       Host: www.ignitelimit.com
     path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #5'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.187
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: '%2Fassignment'
+- name: 美国+加州
+  network: ws
+  password: humanity
+  port: 443
+  server: render.com
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- alterId: 0
+  cipher: auto
+  name: 俄罗斯 V2CROSS.COM
+  network: ws
+  port: '443'
+  server: renderer-stream-2-62.mirra.now
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    headers:
+      Host: ''
+    path: /api/v1/gpu-stream/socket
+- name: '美国+CloudFlare节点 #7'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.22.63
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: 法国巴黎+CloudFlare节点
+  network: ws
+  password: humanity
+  port: 443
+  server: 141.101.90.101
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
 - name: '美国+CloudFlare节点 #8'
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.33
+  server: 104.18.152.207
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -172,16 +219,7 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.152
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #10'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.185
+  server: 104.18.152.159
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -236,6 +274,39 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+- name: 🇹🇼[openproxylist.com] trojan-T...
+  password: i99Cef
+  port: 28101
+  server: 209.248.32.116
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸[openproxylist.com] vmess-US
+  network: tcp
+  port: '110'
+  server: newrelax.relaxedboy.online
+  tls: false
+  type: vmess
+  uuid: 8e9687fc-a3a7-414a-8676-8e2136797cfe
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
+  network: tcp
+  port: '17045'
+  server: 66.112.209.213
+  tls: false
+  type: vmess
+  uuid: 85171597-4bef-46a0-9bee-32e9c929f83f
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #2'
+  network: tcp
+  port: '21011'
+  server: dog-us.kunlun01dns.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
 - alterId: 0
   cipher: auto
   name: 🇯🇵[openproxylist.com] vmess-JP
@@ -245,18 +316,6 @@ proxies:
   tls: false
   type: vmess
   uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-- alpn:
-  - h2
-  - http/1.1
-  - h3
-  name: 🇹🇷[openproxylist.com] trojan-T...
-  network: tcp
-  password: v2whz6ahmyy2f84j
-  port: 2087
-  server: subtu.charsoulink3.ir
-  skip-cert-verify: false
-  sni: pus.mmdaqaorg2.ir
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇭🇰[openproxylist.com] vmess-HK
@@ -269,6 +328,19 @@ proxies:
   uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
 - alterId: 0
   cipher: auto
+  name: 🇳🇱[openproxylist.com] vmess-NL
+  network: ws
+  port: '33736'
+  server: 78.17.71.236
+  tls: false
+  type: vmess
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  ws-opts:
+    headers:
+      Host: ''
+    path: /vmess-ws
+- alterId: 0
+  cipher: auto
   name: '🇯🇵[openproxylist.com] vmess-JP #1'
   network: tcp
   port: '4433'
@@ -276,46 +348,48 @@ proxies:
   tls: false
   type: vmess
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-- alpn:
-  - http/1.1
-  name: 🇳🇱[openproxylist.com] trojan-N...
-  network: ws
-  password: humanity
-  port: 443
-  server: 213.182.199.137
-  skip-cert-verify: false
-  sni: www.pleadcourt.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.pleadcourt.org
-    path: /assignment
 - name: 🇬🇧[openproxylist.com] trojan-G...
   password: tripitropa994825
   port: 2234
   server: 45.85.88.194
   sni: vps.tropicalhosting.net
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #2'
-  network: tcp
-  port: '16120'
-  server: zfd-jpv2.kunlun01dns.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+- alpn:
+  - http/1.1
+  name: 🇳🇱[openproxylist.com] trojan-N...
+  network: ws
+  password: humanity
+  port: 443
+  server: 188.42.145.180
+  sni: www.volumeroot.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.volumeroot.com
+    path: /assignment
 - alterId: 0
   cipher: auto
   name: '🇭🇰[openproxylist.com] vmess-HK #1'
   network: tcp
-  port: '16115'
-  server: zfd-hkv2.kunlun01dns.com
+  port: '21020'
+  server: dog-hk.kunlun01dns.com
   servername: ''
   tls: false
   type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+- alterId: 0
+  cipher: auto
+  name: 🇿🇦[openproxylist.com] vmess-ZA
+  network: ws
+  port: '443'
+  server: za-a-zzy.glnyhlgc.com
+  tls: true
+  type: vmess
+  uuid: 5583af50-f464-4df6-e2ef-34592311e5c6
+  ws-opts:
+    headers:
+      Host: za-a-zzy.glnyhlgc.com
+    path: /about/7678
 - name: 🇮🇩[openproxylist.com] trojan-I...
   network: ws
   password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
@@ -330,24 +404,37 @@ proxies:
     path: /trojan
 - alterId: 0
   cipher: auto
-  name: 🇬🇷[openproxylist.com] vmess-GR
+  name: 🇩🇪[openproxylist.com] vmess-DE
+  network: ws
+  port: '2053'
+  server: deapp.jisuyun.top
+  servername: deapp.jisuyun.top
+  tls: true
+  type: vmess
+  uuid: 9a1a05d9-69be-45d3-e326-c6621edf7b31
+  ws-opts:
+    headers:
+      Host: deapp.jisuyun.top
+    path: /devm
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰[openproxylist.com] vmess-HK #2'
   network: tcp
-  port: '16310'
-  server: zfd-boardv2.kunlun01dns.com
+  port: '16116'
+  server: zfd-hkv2.kunlun01dns.com
   servername: ''
   tls: false
   type: vmess
   uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
 - alterId: 0
   cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #2'
+  name: 🇨🇳[openproxylist.com] vmess-CN
   network: tcp
-  port: '16113'
-  server: zfd-hkv1.kunlun01dns.com
-  servername: ''
+  port: '2648'
+  server: 150.242.244.116
   tls: false
   type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  uuid: 5d746f1e-7028-455f-bb00-1806249a5941
 - alterId: 0
   cipher: auto
   name: '🇭🇰[openproxylist.com] vmess-HK #3'
@@ -362,7 +449,7 @@ proxies:
   cipher: auto
   name: '🇭🇰[openproxylist.com] vmess-HK #4'
   network: tcp
-  port: '21019'
+  port: '21041'
   server: dog-hk.kunlun01dns.com
   servername: ''
   tls: false
@@ -370,16 +457,7 @@ proxies:
   uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
 - alterId: 0
   cipher: auto
-  name: 🇩🇪[openproxylist.com] vmess-DE
-  network: tcp
-  port: '110'
-  server: newrelax.relaxedboy.online
-  tls: false
-  type: vmess
-  uuid: 8e9687fc-a3a7-414a-8676-8e2136797cfe
-- alterId: 0
-  cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #3'
+  name: '🇯🇵[openproxylist.com] vmess-JP #2'
   network: tcp
   port: '55216'
   server: 155.248.176.44
@@ -391,12 +469,18 @@ proxies:
   name: '🇩🇪[openproxylist.com] vmess-DE #1'
   network: ws
   port: '443'
-  server: renderer-stream-2-62.mirra.now
+  server: 82.139.242.5
   servername: renderer-stream-2-62.mirra.now
   tls: true
   type: vmess
   uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
   ws-opts:
     headers:
-      Host: ''
+      Host: renderer-stream-2-62.mirra.now
     path: /api/v1/gpu-stream/socket
+- name: 🇲🇾[openproxylist.com] trojan-M...
+  password: 5931134d1cde66bf83a54acdfebe7ab2
+  port: 443
+  server: 47.250.84.25
+  sni: moltbot.doctoroyy.net
+  type: trojan
