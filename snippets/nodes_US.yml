@@ -1,9 +1,9 @@
 proxies:
-- name: 美国+CloudFlare节点
+- name: 美国+得克萨斯州达拉斯Cloudflare+Warp节点
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.117
+  server: 8.6.112.0
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -12,96 +12,43 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.18.23.63
+  server: ip.myip2.qzz.io
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    headers:
-      Host: www.ignitelimit.com
     path: '%2Fassignment'
 - name: '美国+CloudFlare节点 #2'
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.210
+  server: 104.16.174.22
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    path: '%2Fassignment'
-- alpn:
-  - http/1.1
-  name: 美国+加州
-  network: ws
-  password: humanity
-  port: 443
-  server: 216.24.57.7
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
+    path: '%2F%2Fassignment'
 - name: '美国+CloudFlare节点 #3'
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.109
+  server: 104.16.174.12
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '美国+CloudFlare节点 #4'
+- name: '美国+CloudFlare节点 #4'
   network: ws
   password: humanity
   port: 443
-  server: join-telegram-channel.tirexnet.kdns.fr
+  server: 104.16.174.37
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #5'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.108
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- alpn:
-  - http/1.1
-  name: 美国+乔治亚洲亚特兰大Fastly节点
-  network: ws
-  password: MiTiVPN
-  port: 443
-  server: 151.101.56.7
-  skip-cert-verify: false
-  sni: ssl.fastly.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: m%69tivpn-m%69tivpn-m%69tivpn--m%69tivpn-m%69tivpn--m%69tivpn.global.ssl.fastly.net
-    path: '%40mehrosaboran'
 - name: '美国+CloudFlare节点 #6'
   network: ws
   password: humanity
   port: 443
-  server: 104.16.7.70
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #7'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.19.229.21
+  server: 104.18.152.140
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -110,7 +57,7 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.16.73.213
+  server: 104.18.152.143
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -119,18 +66,18 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.14
+  server: 104.18.152.50
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     headers:
       Host: www.ignitelimit.com
     path: '%2Fassignment'
-- name: '美国+加州 #1'
+- name: '美国+CloudFlare节点 #10'
   network: ws
   password: humanity
   port: 443
-  server: 216.24.57.1
+  server: 104.18.12.149
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -143,8 +90,50 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 🇺🇸[openproxylist.com] trojan-U...
-  password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
-  port: 46292
-  server: 107.150.105.84
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸[openproxylist.com] vmess-US
+  network: tcp
+  port: '20002'
+  server: us.jcnas.vip
+  tls: false
+  type: vmess
+  uuid: 81b28b96-e14a-4610-a82e-3f5361be5ffc
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
+  network: tcp
+  port: '20002'
+  server: uscloud2.jcnas.vip
+  tls: false
+  type: vmess
+  uuid: aeea3376-683d-4b64-9ed7-06239e483acc
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #2'
+  network: tcp
+  port: '38808'
+  server: 104.160.45.35
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e619d224-0842-4576-a361-3ad2bf0c468c
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪[openproxylist.com] vmess-DE
+  network: tcp
+  port: '110'
+  server: newrelax.relaxedboy.online
+  tls: false
+  type: vmess
+  uuid: 8e9687fc-a3a7-414a-8676-8e2136797cfe
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #4'
+  network: tcp
+  port: '21011'
+  server: dog-us.kunlun01dns.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
