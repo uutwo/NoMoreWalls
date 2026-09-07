@@ -1,5 +1,15 @@
 proxies:
 - name: 日本
+  obfs: salamander
+  obfs-password: d0dd99b2b4da604123ce17b6d17072a2
+  password: 07a4fcf5553a80cf300374d325386038
+  port: 443
+  server: 141.147.151.58
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: '日本 #1'
   password: 184cdec28da5a09450803c8debcd2cc9
   port: 50160
   server: 138.3.208.26
@@ -7,7 +17,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: '日本 #1'
+- name: '日本 #2'
   password: 4d6d97a82ddf959252e2ada36c3c3053
   port: 50160
   server: 138.2.8.249
@@ -15,7 +25,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: '日本 #2'
+- name: '日本 #3'
   password: a9081889-1949-49ba-a2aa-7054515716de
   port: 3488
   server: c2.bestai.beauty
@@ -31,28 +41,33 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
+- client-fingerprint: chrome
+  name: 🇯🇵[openproxylist.com] vless-JP
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  server: freshjuniper.download
+  servername: localhost
+  tls: false
+  type: vless
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇯🇵[openproxylist.com] vless-JP #1'
+  network: tcp
+  port: 25892
+  reality-opts:
+    public-key: 20EMD5w9RCv9W_MtV6PfJAcKwSUpRfdQ_uA_UBHggRE
+    short-id: '!!str 9b0f012413fd'
+  server: 52.68.64.80
+  servername: www.sony.com
+  tls: false
+  type: vless
+  uuid: 31d84170-673e-4653-afaf-0656656be6dc
 - alterId: 0
   cipher: auto
   name: 🇯🇵[openproxylist.com] vmess-JP
-  network: tcp
-  port: '21016'
-  server: dog-jp.kunlun01dns.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-- alterId: 0
-  cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #1'
-  network: tcp
-  port: '18112'
-  server: oc.imfun.fun
-  tls: false
-  type: vmess
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-- alterId: 0
-  cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #2'
   network: tcp
   port: '4433'
   server: 45.32.57.118
@@ -61,7 +76,20 @@ proxies:
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇯🇵[openproxylist.com] vless-JP
+  name: '🇯🇵[openproxylist.com] vless-JP #2'
+  network: tcp
+  port: 16611
+  reality-opts:
+    public-key: cDzA5Efsd52LehcCFXh9bS3eCuj7HQZwau-yjPqLPgQ
+    short-id: '!!str 701b0c5c9dee514d'
+  server: 13.114.89.187
+  servername: www.intel.com
+  tls: false
+  type: vless
+  uuid: 059fbe5b-21dc-413f-8f5c-dac39201914c
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇯🇵[openproxylist.com] vless-JP #3'
   network: tcp
   port: 56449
   reality-opts:
@@ -72,19 +100,9 @@ proxies:
   tls: false
   type: vless
   uuid: fe855f99-4eb5-4a80-ad48-354649ff1305
-- alterId: 0
-  cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #3'
-  network: tcp
-  port: '16120'
-  server: zfd-jpv2.kunlun01dns.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #1'
+  name: '🇯🇵[openproxylist.com] vless-JP #4'
   network: tcp
   port: 29860
   reality-opts:
@@ -97,7 +115,21 @@ proxies:
   uuid: 7460547d-e83c-4843-b404-9142b22261a7
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #2'
+  name: '🇯🇵[openproxylist.com] vless-JP #5'
+  network: tcp
+  port: 24620
+  reality-opts:
+    public-key: eZthMfn0kQJFNr_srk502fr8yUHMoHQ7Oh3v4_HfTBI
+    short-id: '!!str db2cb3b3c2dbb711'
+  server: 13.231.7.104
+  servername: www.amd.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  uuid: b969ef8f-7bdb-474f-9481-d8f3c5686fb8
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇯🇵[openproxylist.com] vless-JP #6'
   network: tcp
   port: 32913
   reality-opts:
@@ -112,7 +144,7 @@ proxies:
     path: '%2f'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #3'
+  name: '🇯🇵[openproxylist.com] vless-JP #7'
   network: tcp
   port: 23607
   reality-opts:
@@ -123,9 +155,9 @@ proxies:
   tls: false
   type: vless
   uuid: babf64f8-f9ee-4564-a097-16433f2ebd46
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #4'
+  name: '🇯🇵[openproxylist.com] vless-JP #8'
   network: tcp
   port: 11690
   reality-opts:
@@ -138,7 +170,7 @@ proxies:
   uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #5'
+  name: '🇯🇵[openproxylist.com] vless-JP #9'
   network: tcp
   port: 33486
   reality-opts:
@@ -151,7 +183,7 @@ proxies:
   uuid: eddee2c9-fdf9-4b55-b8ac-3481a680b060
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #6'
+  name: '🇯🇵[openproxylist.com] vless-JP #10'
   network: tcp
   port: 30203
   reality-opts:
@@ -162,9 +194,23 @@ proxies:
   tls: false
   type: vless
   uuid: 0346a35f-8e11-4b33-852d-00fa9c642878
+- client-fingerprint: chrome
+  name: '🇯🇵[openproxylist.com] vless-JP #11'
+  network: ws
+  port: 443
+  server: 172.67.156.147
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
 - alterId: 0
   cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #4'
+  name: '🇯🇵[openproxylist.com] vmess-JP #1'
   network: tcp
   port: '55216'
   server: 155.248.176.44
