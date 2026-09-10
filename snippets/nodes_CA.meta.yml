@@ -1,23 +1,24 @@
 proxies:
-- name: 🇨🇦[openproxylist.com] vless-CA
-  network: ws
+- client-fingerprint: chrome
+  flow: ''
+  name: 加拿大+安大略省研究网络
+  network: tcp
   port: 443
-  server: 104.21.238.93
-  servername: afzoybehu2ws.vtzv4xe1un6s.workers.dev
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+    short-id: '!!str '
+  server: 130.12.102.125
+  servername: localhost
+  tls: false
+  type: vless
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+- client-fingerprint: chrome
+  name: 🇨🇦[openproxylist.com] vless-CA
+  network: tcp
+  port: 443
+  server: 184.107.106.68
+  servername: lizca2.footballfantasyforum.com
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 50414e45-4c5f-5a45-5553-44890b90d17e
-  ws-opts:
-    headers:
-      Host: afzoybehu2ws.vtzv4xe1un6s.workers.dev
-    path: '%2Fstream%2FPANEL_ZEUS%2F44890b90d17e%2Floc-0'
-- grpc-opts:
-    grpc-service-name: vless
-  name: '🇨🇦[openproxylist.com] vless-CA #1'
-  network: grpc
-  port: 2085
-  server: 37.221.110.245
-  tls: false
-  type: vless
-  uuid: 02c05088-fcb4-4366-b8d3-98d68c7bdb98
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
