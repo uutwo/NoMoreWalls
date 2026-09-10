@@ -37,6 +37,17 @@ proxies:
   name: 🇯🇵[openproxylist.com] vless-JP
   network: tcp
   port: 443
+  server: 38.175.203.11
+  servername: oulucloud.706666.xyz
+  tls: true
+  type: vless
+  uuid: 1b8ec962-6e6f-4fc3-a9a4-c8a6fc907796
+  ws-opts:
+    path: /
+- client-fingerprint: chrome
+  name: '🇯🇵[openproxylist.com] vless-JP #1'
+  network: tcp
+  port: 443
   reality-opts:
     public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
   server: freshjuniper.download
@@ -64,19 +75,6 @@ proxies:
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #1'
-  network: tcp
-  port: 16611
-  reality-opts:
-    public-key: cDzA5Efsd52LehcCFXh9bS3eCuj7HQZwau-yjPqLPgQ
-    short-id: '!!str 701b0c5c9dee514d'
-  server: 13.114.89.187
-  servername: www.intel.com
-  tls: false
-  type: vless
-  uuid: 059fbe5b-21dc-413f-8f5c-dac39201914c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
   name: '🇯🇵[openproxylist.com] vless-JP #2'
   network: tcp
   port: 29860
@@ -98,10 +96,11 @@ proxies:
     short-id: '!!str db2cb3b3c2dbb711'
   server: 13.231.7.104
   servername: www.amd.com
-  skip-cert-verify: true
   tls: false
   type: vless
   uuid: b969ef8f-7bdb-474f-9481-d8f3c5686fb8
+  ws-opts:
+    path: '%2F'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇯🇵[openproxylist.com] vless-JP #4'
@@ -115,6 +114,8 @@ proxies:
   tls: false
   type: vless
   uuid: 15836880-212b-4690-b29c-1889a749bf72
+  ws-opts:
+    path: '%2f'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇯🇵[openproxylist.com] vless-JP #5'
@@ -128,7 +129,7 @@ proxies:
   tls: false
   type: vless
   uuid: babf64f8-f9ee-4564-a097-16433f2ebd46
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: '🇯🇵[openproxylist.com] vless-JP #6'
   network: tcp
@@ -141,7 +142,7 @@ proxies:
   tls: false
   type: vless
   uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: '🇯🇵[openproxylist.com] vless-JP #7'
   network: tcp
@@ -154,20 +155,19 @@ proxies:
   tls: false
   type: vless
   uuid: 0346a35f-8e11-4b33-852d-00fa9c642878
-- client-fingerprint: chrome
+- client-fingerprint: unsafe
   name: '🇯🇵[openproxylist.com] vless-JP #8'
   network: ws
   port: 443
-  server: 172.67.156.147
+  server: 172.67.217.240
   servername: jp3.yohototo.top
-  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   ws-opts:
     headers:
       Host: jp3.yohototo.top
-    path: /tyxyws
+    path: '%2Ftyxyws'
 - alterId: 0
   cipher: auto
   name: '🇯🇵[openproxylist.com] vmess-JP #2'
@@ -177,3 +177,10 @@ proxies:
   tls: false
   type: vmess
   uuid: 154dbc39-0921-cf11-29bd-156c5000d763
+- name: '🇯🇵[openproxylist.com] vless-JP #9'
+  network: tcp
+  port: 443
+  server: 137.220.221.179
+  tls: false
+  type: vless
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
