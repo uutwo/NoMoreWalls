@@ -1,37 +1,20 @@
 proxies:
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇷🇺[openproxylist.com] vless-RU
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 45.131.212.30
-  servername: sellflow.org
-  tls: false
+- client-fingerprint: chrome
+  name: 俄罗斯+V2CROSS.COM
+  network: ws
+  port: 14443
+  server: 95.163.232.171
+  servername: pr-media.pepro.site
+  tls: true
   type: vless
-  uuid: db9da8fb-c528-42ec-9b9e-e578cf934c04
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '🇷🇺[openproxylist.com] vless-RU #1'
-  network: tcp
+  uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
+  ws-opts:
+    path: '%2Fws'
+- name: 俄罗斯
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
   port: 443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 193.233.255.50
-  servername: sellflow.org
+  server: gta.internet-card.sbs
+  skip-cert-verify: true
+  sni: gta.internet-card.sbs
   tls: false
-  type: vless
-  uuid: db9da8fb-c528-42ec-9b9e-e578cf934c04
-- name: '🇷🇺[openproxylist.com] vless-RU #2'
-  port: 443
-  server: 45.131.212.37
-  tls: false
-  type: vless
-  uuid: db9da8fb-c528-42ec-9b9e-e578cf934c04
-- name: '🇷🇺[openproxylist.com] vless-RU #3'
-  port: 443
-  server: 103.91.147.17
-  tls: false
-  type: vless
-  uuid: db9da8fb-c528-42ec-9b9e-e578cf934c04
+  type: hysteria2

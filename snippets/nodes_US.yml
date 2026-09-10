@@ -1,14 +1,73 @@
 proxies:
-- name: 美国+V2CROSS.COM
+- alpn:
+  - http/1.1
+  name: 美国+V2CROSS.COM
+  network: ws
+  password: MiTiVPN
+  port: 443
+  server: 167.82.76.27
+  skip-cert-verify: false
+  sni: ssl.fastly.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: mitivpn---ss--s---mitivpn-3.global.ssl.fastly.net
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: 美国+CloudFlare节点
   network: ws
   password: humanity
   port: 443
-  server: 45.130.125.158
+  server: 104.21.46.3
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    path: /assignment
+    path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #1'
+  network: ws
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
+  port: 443
+  server: edu.ruangguru.com
+  skip-cert-verify: true
+  sni: id1.nathaya.web.id
+  type: trojan
+  ws-opts:
+    path: '%2Ftrojan'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '美国+CloudFlare节点 #2'
+  network: ws
+  password: humanity
+  port: 443
+  server: 172.67.221.242
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: '%2Fassignment'
 - name: '美国+CloudFlare节点 #3'
+  network: ws
+  password: humanity
+  port: 443
+  server: 172.67.149.60
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: /assignment
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '美国+CloudFlare节点 #5'
   network: ws
   password: humanity
   port: 443
@@ -16,39 +75,35 @@ proxies:
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    path: /assignment
-- name: 美国+加州
-  network: ws
-  password: humanity
-  port: 443
-  server: render.com
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
     path: '%2Fassignment'
 - name: '美国+CloudFlare节点 #6'
   network: ws
   password: humanity
   port: 443
-  server: 104.26.15.137
+  server: 104.18.22.63
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- alpn:
-  - http/1.1
-  name: '美国+CloudFlare节点 #9'
+- name: '美国+CloudFlare节点 #8'
   network: ws
-  password: Telegram_healer_config
+  password: humanity
   port: 443
-  server: 172.67.130.246
-  sni: 3OQxS5h6kCscecND.ZMh9KCGos2cq55uh6qDYaa938a5UgB.wOrkERS.dEV
+  server: 104.20.6.134
+  sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    path: '%2Ftr%2FzMUJnc0O87fJR02xzGNed%3Fed%3D2560'
-- name: 🇺🇸[openproxylist.com] trojan-U...
+    path: '%2Fassignment'
+- alterId: 0
+  cipher: auto
+  name: 美国-001
+  network: tcp
+  port: 443
+  server: 165.140.217.2
+  skip-cert-verify: true
+  type: vmess
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+- name: 美国3|@ripaojiedian
   network: tcp
   password: BxceQaOe
   port: 443
@@ -56,11 +111,10 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '🇺🇸[openproxylist.com] trojan-U... #1'
+- name: 🇺🇸[openproxylist.com] trojan-U...
   network: tcp
-  password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
-  port: 27732
-  server: us01.duotg.top
-  skip-cert-verify: true
-  sni: www.microsoft.com
+  password: M7v%w11Se*
+  port: 443
+  server: 34.94.125.227
+  sni: mxlo.wsone.icu
   type: trojan
