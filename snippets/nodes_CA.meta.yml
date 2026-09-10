@@ -1,10 +1,19 @@
 proxies:
-- grpc-opts:
-    grpc-service-name: vless
-  name: 🇨🇦[openproxylist.com] vless-CA
-  network: grpc
-  port: 2085
-  server: 37.221.110.245
+- client-fingerprint: firefox
+  flow: ''
+  name: 🇯🇵[openproxylist.com] vless-JP
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  server: freshjuniper.download
+  servername: localhost
   tls: false
   type: vless
-  uuid: 02c05088-fcb4-4366-b8d3-98d68c7bdb98
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+- name: 🇨🇦[openproxylist.com] vless-CA
+  port: 443
+  server: 184.107.106.68
+  tls: true
+  type: vless
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d

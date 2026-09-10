@@ -1,17 +1,12 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 英国+V2CROSS.COM
-  network: tcp
+- name: 阿联酋
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
   port: 443
-  reality-opts:
-    public-key: '%2DqLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04'
-    short-id: '!!str abcd1234'
-  server: 31.76.55.181
-  servername: ee2.yservice.help
+  server: news.gazette.help
+  skip-cert-verify: true
+  sni: news.gazette.help
   tls: false
-  type: vless
-  uuid: c09cfd91-b234-4998-9bed-a0211b7f5c3c
+  type: hysteria2
 - name: 英国
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
@@ -36,9 +31,30 @@ proxies:
   sni: hopp-legend-se.roxa.org
   tls: false
   type: hysteria2
+- grpc-opts:
+    grpc-service-name: vless
+  name: 🇬🇧[openproxylist.com] vless-GB
+  network: grpc
+  port: 2083
+  server: 66.90.105.210
+  tls: false
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+- client-fingerprint: random
+  name: '🇬🇧[openproxylist.com] vless-GB #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
+    short-id: '!!str 98fa0b00d09419f7'
+  server: 51.38.70.192
+  servername: play.google.com
+  tls: false
+  type: vless
+  uuid: 9343f183-7a16-4bdd-9c65-b0c21feca40b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇬🇧[openproxylist.com] vless-GB
+  name: '🇬🇧[openproxylist.com] vless-GB #2'
   network: tcp
   port: 51847
   reality-opts:
@@ -51,7 +67,7 @@ proxies:
   uuid: 391a01e9-b664-407b-9158-610fab3f5920
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #1'
+  name: '🇬🇧[openproxylist.com] vless-GB #3'
   network: tcp
   port: 443
   reality-opts:
@@ -64,14 +80,14 @@ proxies:
   uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #2'
+  name: '🇬🇧[openproxylist.com] vless-GB #4'
   network: tcp
   port: 443
   reality-opts:
-    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
-    short-id: '!!str fd55b698ee8c3629'
-  server: 87.117.234.19
-  servername: strapi.io
+    public-key: RVj8E6YuWeOq9XzIVLQCKM39qa-Cknp-GYvVAA1UPFo
+    short-id: '!!str 72cceb78'
+  server: 138.124.125.211
+  servername: www.apple.com
   tls: false
   type: vless
-  uuid: 4d583b2c-2f5a-47d0-8181-e95217fe8cd9
+  uuid: 1996007c-e7bc-464b-999b-cac28cec6c3e
