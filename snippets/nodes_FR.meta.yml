@@ -20,25 +20,26 @@ proxies:
   tls: false
   type: vless
   uuid: af348651-1624-4710-b55f-0307a22d891f
-- grpc-opts:
-    grpc-service-name: grpc
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
-  network: grpc
-  port: 2083
-  server: usejh2.neobo-tooth.ru
-  servername: usejh2.neobo-tooth.ru
-  tls: true
-  type: vless
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-- client-fingerprint: chrome
-  name: '🇫🇷[openproxylist.com] vless-FR #2'
-  network: tcp
-  port: 2053
-  reality-opts:
-    public-key: UKvonm_uE7TSwksQIVQuNYgYwmcidr_g4lDIE2JW_Ag
-    short-id: '!!str 4868e772d098f0af'
-  server: 51.77.217.70
-  servername: www.google.com
+- name: '🇫🇷[openproxylist.com] vless-FR #1'
+  network: ws
+  port: 2096
+  server: 45.144.28.39
   tls: false
   type: vless
-  uuid: c543f005-59f7-40c1-9ae6-37505691d5be
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  ws-opts:
+    headers:
+      Host: usejh2.neobo-tooth.ru
+    path: '%2F'
+- name: 🇫🇷[openproxylist.com] trojan-F...
+  network: ws
+  password: humanity
+  port: 443
+  server: 185.255.179.166
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: '%2Fassignment'
