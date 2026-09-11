@@ -25,6 +25,15 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: 日本-001
+  network: http
+  port: 49432
+  server: 38.47.121.14
+  skip-cert-verify: true
+  type: vmess
+  uuid: ce94f204-ffa6-4fa8-a1dc-ecfccfd463cb
 - name: 日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -79,15 +88,13 @@ proxies:
   tls: false
   type: vless
   uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
-  ws-opts:
-    path: '%2f'
 - client-fingerprint: chrome
   name: '🇯🇵[openproxylist.com] vless-JP #2'
   network: ws
   port: 443
   server: 172.67.156.147
   servername: jp3.yohototo.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vless
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
@@ -95,17 +102,7 @@ proxies:
     headers:
       Host: jp3.yohototo.top
     path: /tyxyws
-- alterId: 0
-  cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #2'
-  network: tcp
-  port: '55216'
-  server: 155.248.176.44
-  tls: false
-  type: vmess
-  uuid: 154dbc39-0921-cf11-29bd-156c5000d763
 - name: '🇯🇵[openproxylist.com] vless-JP #3'
-  network: tcp
   port: 443
   server: 137.220.221.179
   tls: false
