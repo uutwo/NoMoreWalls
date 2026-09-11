@@ -23,32 +23,18 @@ proxies:
   sni: hopp-legend-se.roxa.org
   tls: false
   type: hysteria2
-- alpn:
-  - h2
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
+- grpc-opts:
+    grpc-service-name: vless
   name: 🇬🇧[openproxylist.com] vless-GB
-  port: 443
-  server: en-new.moriarty-web.com
-  servername: en-new.moriarty-web.com
-  tls: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-- client-fingerprint: random
-  name: '🇬🇧[openproxylist.com] vless-GB #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
-    short-id: '!!str 98fa0b00d09419f7'
-  server: 51.38.70.192
-  servername: play.google.com
+  network: grpc
+  port: 2083
+  server: 66.90.104.42
   tls: false
   type: vless
-  uuid: 9343f183-7a16-4bdd-9c65-b0c21feca40b
-- client-fingerprint: chrome
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #2'
+  name: '🇬🇧[openproxylist.com] vless-GB #1'
   network: tcp
   port: 51847
   reality-opts:
@@ -61,7 +47,7 @@ proxies:
   uuid: 391a01e9-b664-407b-9158-610fab3f5920
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #3'
+  name: '🇬🇧[openproxylist.com] vless-GB #2'
   network: tcp
   port: 443
   reality-opts:
@@ -74,7 +60,7 @@ proxies:
   uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #4'
+  name: '🇬🇧[openproxylist.com] vless-GB #3'
   network: tcp
   port: 443
   reality-opts:
@@ -87,7 +73,7 @@ proxies:
   uuid: 4d583b2c-2f5a-47d0-8181-e95217fe8cd9
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #5'
+  name: '🇬🇧[openproxylist.com] vless-GB #4'
   network: tcp
   port: 443
   reality-opts:
@@ -98,3 +84,16 @@ proxies:
   tls: false
   type: vless
   uuid: e5d917f5-fc78-455e-bbb5-81d08715f3d6
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇬🇧[openproxylist.com] vless-GB #5'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: RVj8E6YuWeOq9XzIVLQCKM39qa-Cknp-GYvVAA1UPFo
+    short-id: '!!str 72cceb78'
+  server: 138.124.125.211
+  servername: www.apple.com
+  tls: false
+  type: vless
+  uuid: 1996007c-e7bc-464b-999b-cac28cec6c3e
