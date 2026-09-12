@@ -1,21 +1,51 @@
 proxies:
-- client-fingerprint: edge
+- alpn:
+  - http/1.1
+  - h2
+  - h3
+  name: 美国+CloudFlare节点
+  network: ws
+  password: humanity
+  port: 443
+  server: 198.41.223.96
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- client-fingerprint: chrome
+  name: '美国+CloudFlare节点 #1'
+  network: ws
+  port: 443
+  server: 172.67.71.160
+  servername: mianfei-73q.pages.dev
+  tls: true
+  type: vless
+  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
+  ws-opts:
+    headers:
+      Host: mianfei-73q.pages.dev
+    path: /proxyip=154.3.33.43
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇳🇱[openproxylist.com] vless-NL
+  name: 美国+科罗拉多州NTT(美国)通信公司
   network: tcp
   port: 443
   reality-opts:
-    public-key: USxaWDRKvJlZ-aHR-OGBT2XwVas2j4_1rhZCCfVNCBY
-  server: 153.75.89.137
-  servername: tradingview.com
+    public-key: WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0
+    short-id: '!!str f713561d'
+  server: 207.56.137.51
+  servername: www.cloudflare.com
   tls: false
   type: vless
-  uuid: 77da6e30-ad4e-11f1-94d5-525400d1d4f7
+  uuid: 01ada9fb-fa2f-45da-a0d0-bce80cdf433b
+  ws-opts:
+    headers:
+      Host: JOIN_BEDE_TELEGRAM@leviconfigs
 - client-fingerprint: chrome
-  name: 美国+CloudFlare节点
+  name: '美国+CloudFlare节点 #2'
   network: ws
-  port: 2087
-  server: 172.67.118.45
+  port: 443
+  server: 104.18.42.163
   servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
   tls: true
   type: vless
@@ -24,89 +54,27 @@ proxies:
     headers:
       Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
     path: /
-- client-fingerprint: ios
-  name: '美国+CloudFlare节点 #1'
-  network: ws
-  port: 8443
-  server: 104.21.98.146
-  servername: cgzdynepurqs.mercury061.workers.dev
-  tls: true
-  type: vless
-  uuid: 50414e45-4c5f-5a45-5553-48493148ec15
-  ws-opts:
-    headers:
-      Host: cgzdynepurqs.mercury061.workers.dev
-    path: /stream/PANEL_ZEUS/48493148ec15
-- name: '美国+CloudFlare节点 #2'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.26.15.137
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #3'
-  network: ws
-  password: humanity
-  port: 443
-  server: 172.67.188.109
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- alpn:
-  - http/1.1
-  - h2
-  - h3
-  name: '美国+CloudFlare节点 #4'
-  network: ws
-  password: humanity
-  port: 443
-  server: 198.41.223.96
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
 - client-fingerprint: chrome
-  name: '美国+CloudFlare节点 #5'
+  name: '美国+CloudFlare节点 #3'
   network: ws
   port: 443
-  server: 104.21.41.158
-  servername: 3-M19.NORTh-kOREa-parK.KDNs.fR
+  server: 172.67.150.230
+  servername: 8-M19.MEXICo-pOrt.Ccwu.Cc
   tls: true
   type: vless
   uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
   ws-opts:
     headers:
-      Host: 3-m19.nortH-koreA-Park.KDNS.fr
+      Host: 8-M19.mexIco-PoRT.CcWU.Cc
     path: /CjBjB9sn5pCvaSwScc
-- client-fingerprint: chrome
-  name: '美国+CloudFlare节点 #6'
-  network: ws
-  port: 443
-  server: fq.jp188.dpdns.org
-  servername: fq.jp188.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 42c62a5a-cd31-4551-80ef-908732370287
-  ws-opts:
-    headers:
-      Host: fq.jp188.dpdns.org
-    path: /
-- name: '美国+CloudFlare节点 #7'
+- name: '美国+CloudFlare节点 #4'
   network: ws
   password: humanity
   port: 443
-  server: 172.67.221.242
+  server: 104.20.6.134
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    headers:
-      Host: www.ignitelimit.com
     path: '%2Fassignment'
 - name: 美国
   password: 6dcb725e-947e-4bbe-bb35-903374d57179
@@ -134,49 +102,6 @@ proxies:
   sni: vk.com
   tls: false
   type: hysteria2
-- name: 美国-001
-  network: ws
-  port: 8880
-  server: 63.141.128.30
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime42.workers.dev
-    path: /
-- name: 美国-002 |3.3MB/s|TK-US|YT-US|GP...
-  port: 9002
-  server: 138.199.35.215
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 美国-003 |3.2MB/s|TK-US|YT-US|GP...
-  port: 443
-  server: 38.28.193.188
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 美国-004 |1.5MB/s|TK-US|YT-US|GP...
-  port: 8090
-  server: 209.148.53.153
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 美国-005 |1.0MB/s|TK-US|GPT⁺-US
-  port: 9002
-  server: 138.199.35.198
-  skip-cert-verify: true
-  tls: true
-  type: http
-- alterId: 0
-  cipher: auto
-  name: 美国-006
-  network: tcp
-  port: 443
-  server: 165.140.217.2
-  skip-cert-verify: true
-  type: vmess
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
 - name: 美国3|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -185,19 +110,29 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸[openproxylist.com] vmess-US
+  network: tcp
+  port: 15311
+  server: 107.173.254.27
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ad78d02b-873f-4cff-8d4a-673f53d6ce0f
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇺🇸[openproxylist.com] vless-US
   network: tcp
-  port: 13779
+  port: 443
   reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: '!!str af1bdd293097b664'
-  server: 38.180.242.205
-  servername: tesla.com
+    public-key: 5B83otQ5ZQwtBFhR7xzsGJRXflkFKRJpQguYbE5JWGI
+    short-id: '!!str c85d029f5e8eb393'
+  server: 195.123.235.177
+  servername: gateway.icloud.com
   tls: false
   type: vless
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  uuid: 729dd5f2-f5ff-4070-8c10-863eceded0b1
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇺🇸[openproxylist.com] vless-US #1'
@@ -224,16 +159,16 @@ proxies:
   tls: false
   type: vless
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #3'
-  network: tcp
+- name: '🇺🇸[openproxylist.com] vless-US #3'
+  network: ws
   port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: '!!str c39cc7310a'
-  server: 169.40.42.104
-  servername: yahoo.com
-  tls: false
+  server: 188.114.97.6
+  servername: a.cwvps.eu.org
+  skip-cert-verify: false
+  tls: true
   type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  ws-opts:
+    headers:
+      Host: a.cwvps.eu.org
+    path: '%2Fws'

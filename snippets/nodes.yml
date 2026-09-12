@@ -89,29 +89,21 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- name: '美国+CloudFlare节点 #2'
+- name: 巴西圣保罗+CloudFlare节点
   network: ws
   password: humanity
   port: 443
-  server: 104.26.15.137
+  server: 188.114.97.7
+  skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #3'
-  network: ws
-  password: humanity
-  port: 443
-  server: 172.67.188.109
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
+    path: /assignment
 - alpn:
   - http/1.1
   - h2
   - h3
-  name: '美国+CloudFlare节点 #4'
+  name: 美国+CloudFlare节点
   network: ws
   password: humanity
   port: 443
@@ -119,86 +111,16 @@ proxies:
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    headers:
-      Host: www.ignitelimit.com
     path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #7'
+- name: '美国+CloudFlare节点 #4'
   network: ws
   password: humanity
   port: 443
-  server: 172.67.221.242
+  server: 104.20.6.134
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    headers:
-      Host: www.ignitelimit.com
     path: '%2Fassignment'
-- alterId: 64
-  cipher: auto
-  name: 🇨🇳[openproxylist.com] vmess-CN
-  network: tcp
-  port: '50002'
-  server: 112.132.215.108
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 俄罗斯联邦-001
-  network: ws
-  port: 443
-  server: 194.226.142.120
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      Host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- alterId: 2
-  cipher: auto
-  name: 其他-005
-  network: tcp
-  port: 30836
-  server: v36.hdacd.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: 日本-001
-  network: http
-  port: 49432
-  server: 38.47.121.14
-  skip-cert-verify: true
-  type: vmess
-  uuid: ce94f204-ffa6-4fa8-a1dc-ecfccfd463cb
-- alterId: 0
-  cipher: auto
-  name: 美国-006
-  network: tcp
-  port: 443
-  server: 165.140.217.2
-  skip-cert-verify: true
-  type: vmess
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-- alterId: 0
-  cipher: auto
-  name: 荷兰-005
-  network: ws
-  port: 443
-  server: 212.43.156.143
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      Host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
 - alterId: 2
   cipher: auto
   name: 香港|@ripaojiedian
@@ -249,11 +171,37 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 🇩🇪[openproxylist.com] trojan-D...
-  password: BbNnpOgc1j9WOaWoslbSyeob1r47IRHV
-  port: 1080
-  server: jgzt1997.qivfelo.ir
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸[openproxylist.com] vmess-US
+  network: tcp
+  port: 15311
+  server: 107.173.254.27
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ad78d02b-873f-4cff-8d4a-673f53d6ce0f
+- alterId: 0
+  cipher: auto
+  name: 🇫🇮[openproxylist.com] vmess-FI
+  network: tcp
+  port: '2086'
+  server: 65.109.189.128
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+- name: 🇯🇵[openproxylist.com] trojan-J...
+  network: ws
+  password: 624209bb-8216-45fe-bbe0-50132ec63162
+  port: 443
+  server: ot2.hyas.space
+  sni: ot2.hyas.space
   type: trojan
+  ws-opts:
+    headers:
+      Host: ot2.hyas.space
+    path: /x7f9k2m4p8
 - alterId: 0
   cipher: auto
   name: 🇯🇵[openproxylist.com] vmess-JP
@@ -286,29 +234,33 @@ proxies:
   tls: false
   type: vmess
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-- name: 🇳🇱[openproxylist.com] trojan-N...
+- alpn:
+  - http/1.1
+  name: 🇳🇱[openproxylist.com] trojan-N...
+  network: ws
   password: humanity
   port: 443
-  server: 8.47.69.0
+  server: 213.182.199.137
+  skip-cert-verify: false
+  sni: www.pleadcourt.org
   type: trojan
   ws-opts:
+    headers:
+      Host: www.pleadcourt.org
     path: '%2Fassignment'
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰[openproxylist.com] vmess-HK
-  network: tcp
-  port: '16115'
-  server: zfd-hkv2.kunlun01dns.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-- name: 🏳[openproxylist.com] trojan-
+- alpn:
+  - http/1.1
+  name: '🇳🇱[openproxylist.com] trojan-N... #1'
+  network: ws
   password: humanity
   port: 443
   server: 188.42.145.180
+  skip-cert-verify: false
+  sni: www.volumeroot.com
   type: trojan
   ws-opts:
+    headers:
+      Host: www.volumeroot.com
     path: '%2Fassignment'
 - alterId: 0
   cipher: auto
@@ -338,14 +290,14 @@ proxies:
     path: /trojan
 - alterId: 0
   cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #1'
+  name: 🇭🇰[openproxylist.com] vmess-HK
   network: tcp
-  port: '16114'
-  server: zfd-hkv1.kunlun01dns.com
+  port: '21018'
+  server: dog-hk.kunlun01dns.com
   servername: ''
   tls: false
   type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
 - alterId: 0
   cipher: auto
   name: '🇯🇵[openproxylist.com] vmess-JP #2'
@@ -375,19 +327,27 @@ proxies:
   server: 47.250.84.25
   sni: moltbot.doctoroyy.net
   type: trojan
+- alterId: 64
+  cipher: auto
+  name: 🇨🇳[openproxylist.com] vmess-CN
+  network: tcp
+  port: '50002'
+  server: 112.132.215.108
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '🏳[openproxylist.com] vmess- #1'
+  name: '🇭🇰[openproxylist.com] vmess-HK #1'
   network: ws
   port: '443'
   server: wwafj5lhl6bi8au9.v.3dns.vip
-  servername: wwafj5LHl6bI8aU9.v.3dns.vip
+  servername: wwafj5lhl6bi8au9.v.3dns.vip
   tls: true
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
-    headers:
-      Host: wwafj5LHl6bI8aU9.v.3dns.vip
     path: /ws-vmess
 - name: 🇪🇪[openproxylist.com] trojan-E...
   password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
@@ -395,3 +355,17 @@ proxies:
   server: 109.206.241.10
   sni: russiapower.accesscam.org
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰[openproxylist.com] vmess-HK #2'
+  network: ws
+  port: '35043'
+  server: 156.245.232.239
+  servername: www.pubgmobile.com
+  tls: false
+  type: vmess
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  ws-opts:
+    headers:
+      Host: www.pubgmobile.com
+    path: /
