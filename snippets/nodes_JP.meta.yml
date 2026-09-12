@@ -42,23 +42,12 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 🇯🇵[openproxylist.com] trojan-J...
-  network: ws
-  password: 624209bb-8216-45fe-bbe0-50132ec63162
-  port: 443
-  server: ot2.hyas.space
-  sni: ot2.hyas.space
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ot2.hyas.space
-    path: /x7f9k2m4p8
 - alterId: 0
   cipher: auto
   name: 🇯🇵[openproxylist.com] vmess-JP
   network: tcp
   port: '18112'
-  server: 168.110.60.104
+  server: oc.imfun.fun
   tls: false
   type: vmess
   uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
@@ -99,8 +88,6 @@ proxies:
   tls: false
   type: vless
   uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
-  ws-opts:
-    path: '%2f'
 - alterId: 0
   cipher: auto
   name: '🇯🇵[openproxylist.com] vmess-JP #2'
@@ -111,14 +98,23 @@ proxies:
   type: vmess
   uuid: 154dbc39-0921-cf11-29bd-156c5000d763
 - name: '🇯🇵[openproxylist.com] vless-JP #2'
+  network: tcp
   port: 443
   server: 137.220.221.179
   tls: false
   type: vless
   uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- name: '🇯🇵[openproxylist.com] vless-JP #3'
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc
+  name: '🇯🇵[openproxylist.com] vless-JP #3'
+  network: grpc
   port: 2087
+  reality-opts:
+    public-key: -ZTJcZ_UcqAB7LHgkUqhnlJsQs_oBafRgjsFtWZElmM
+    short-id: '!!str c226283c4de5b1ad'
   server: 31.76.91.72
+  servername: ads.x5.ru
   tls: false
   type: vless
   uuid: 524e00ce-ed89-481d-b4a4-6d7017f884e3

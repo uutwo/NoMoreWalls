@@ -3,20 +3,48 @@ proxies:
   flow: xtls-rprx-vision
   name: 🇸🇪[openproxylist.com] vless-SE
   port: 443
-  server: austria.moritech.net
+  server: austria-2.moritech.net
   tls: true
   type: vless
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: TunService
+- alpn:
+  - v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus
+  client-fingerprint: randomized
+  flow: xtls-rprx-vision
   name: '🇸🇪[openproxylist.com] vless-SE #1'
-  network: grpc
-  port: 33743
+  network: tcp
+  port: 443
   reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  server: 79.141.174.147
-  servername: www.google.com
+    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
+  server: 143.246.193.215
+  servername: www.blocket.se
   tls: false
   type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  uuid: 77da6e30-ad4e-11f1-94d5-525400d1d4f7
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇸🇪[openproxylist.com] vless-SE #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: '!!str b28db60d77c50b4f'
+  server: 193.163.203.170
+  servername: yandex.ru
+  tls: false
+  type: vless
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇸🇪[openproxylist.com] vless-SE #3'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
+    short-id: '!!str e3daad69'
+  server: 193.148.59.178
+  servername: www.apple.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  uuid: 20d7c485-5d24-49b5-a5cc-bb7a7daf9908
