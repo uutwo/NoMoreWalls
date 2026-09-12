@@ -44,17 +44,6 @@ proxies:
   type: trojan
 - name: 🇯🇵[openproxylist.com] trojan-J...
   network: ws
-  password: 62dbcf02-0989-4441-a01a-93f9c3b93525
-  port: 443
-  server: 172.64.229.84
-  sni: ot.hyas.space
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ot.hyas.space
-    path: /x7f9k2m4p8
-- name: '🇯🇵[openproxylist.com] trojan-J... #1'
-  network: ws
   password: 624209bb-8216-45fe-bbe0-50132ec63162
   port: 443
   server: ot2.hyas.space
@@ -82,19 +71,24 @@ proxies:
   tls: false
   type: vmess
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-- alterId: 0
-  cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #2'
-  network: tcp
-  port: '16122'
-  server: zfd-jpv2.kunlun01dns.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇯🇵[openproxylist.com] vless-JP
+  network: tcp
+  port: 24620
+  reality-opts:
+    public-key: eZthMfn0kQJFNr_srk502fr8yUHMoHQ7Oh3v4_HfTBI
+    short-id: '!!str db2cb3b3c2dbb711'
+  server: 13.231.7.104
+  servername: www.amd.com
+  tls: false
+  type: vless
+  uuid: b969ef8f-7bdb-474f-9481-d8f3c5686fb8
+  ws-opts:
+    path: '%2F'
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇯🇵[openproxylist.com] vless-JP #1'
   network: tcp
   port: 11690
   reality-opts:
@@ -105,33 +99,26 @@ proxies:
   tls: false
   type: vless
   uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
+  ws-opts:
+    path: '%2f'
 - alterId: 0
   cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #3'
+  name: '🇯🇵[openproxylist.com] vmess-JP #2'
   network: tcp
   port: '55216'
   server: 155.248.176.44
   tls: false
   type: vmess
   uuid: 154dbc39-0921-cf11-29bd-156c5000d763
-- name: '🇯🇵[openproxylist.com] vless-JP #1'
-  network: tcp
+- name: '🇯🇵[openproxylist.com] vless-JP #2'
   port: 443
   server: 137.220.221.179
   tls: false
   type: vless
   uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc
-  name: '🇯🇵[openproxylist.com] vless-JP #2'
-  network: grpc
+- name: '🇯🇵[openproxylist.com] vless-JP #3'
   port: 2087
-  reality-opts:
-    public-key: -ZTJcZ_UcqAB7LHgkUqhnlJsQs_oBafRgjsFtWZElmM
-    short-id: '!!str c226283c4de5b1ad'
   server: 31.76.91.72
-  servername: ads.x5.ru
   tls: false
   type: vless
   uuid: 524e00ce-ed89-481d-b4a4-6d7017f884e3
