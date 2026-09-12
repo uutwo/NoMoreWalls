@@ -1,4 +1,13 @@
 proxies:
+- name: 法国巴黎+CloudFlare节点
+  network: ws
+  password: humanity
+  port: 443
+  server: 141.101.90.101
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: /assignment
 - name: 法国
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
@@ -15,31 +24,18 @@ proxies:
   tls: false
   type: hysteria2
 - name: 🇫🇷[openproxylist.com] vless-FR
-  port: 443
-  server: 213.136.92.67
+  port: 22222
+  server: 15.237.145.224
   tls: false
   type: vless
-  uuid: af348651-1624-4710-b55f-0307a22d891f
-- name: '🇫🇷[openproxylist.com] vless-FR #1'
-  network: ws
-  port: 2096
-  server: 45.144.28.39
-  tls: false
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- grpc-opts:
+    grpc-service-name: grpc
+  name: '🇫🇷[openproxylist.com] vless-FR #1'
+  network: grpc
+  port: 2083
+  server: usejh2.neobo-tooth.ru
+  servername: usejh2.neobo-tooth.ru
+  tls: true
   type: vless
   uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  ws-opts:
-    headers:
-      Host: usejh2.neobo-tooth.ru
-    path: '%2F'
-- name: 🇫🇷[openproxylist.com] trojan-F...
-  network: ws
-  password: humanity
-  port: 443
-  server: 185.255.179.166
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: '%2Fassignment'
