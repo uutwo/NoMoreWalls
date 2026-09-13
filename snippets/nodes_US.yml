@@ -1,25 +1,14 @@
 proxies:
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: 美国+CloudFlare节点
+- name: 美国+CloudFlare节点
   network: ws
   password: humanity
   port: 443
-  server: join-telegram-channel-tirexnet.trex.kdns.fr
+  server: 198.41.223.96
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #5'
-  network: ws
-  password: humanity
-  port: 443
-  server: 172.67.149.60
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
     path: '%2Fassignment'
 - alpn:
   - http/1.1
@@ -28,26 +17,48 @@ proxies:
   password: MiTiVPN
   port: 443
   server: 151.101.56.101
-  skip-cert-verify: false
   sni: ssl.fastly.com
   type: trojan
   ws-opts:
     headers:
       Host: mitivpn---ss--s---mitivpn-5.global.ssl.fastly.net
-    path: '@mehrosaboran'
+    path: '@bored_vpn'
 - alpn:
   - h3
   - h2
   - http/1.1
-  name: '美国+CloudFlare节点 #6'
+  name: '美国+CloudFlare节点 #1'
   network: ws
   password: humanity
   port: 443
-  server: join-telegram-channel.tirexnet.kdns.fr
+  server: 104.21.46.3
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #2'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.20.6.134
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- alpn:
+  - http/1.1
+  name: '美国+乔治亚洲亚特兰大Fastly节点 #1'
+  network: ws
+  password: MiTiVPN
+  port: 443
+  server: 151.101.56.7
+  skip-cert-verify: false
+  sni: ssl.fastly.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: mitivpn---ss--s---mitivpn-22.global.ssl.fastly.net
+    path: '---@bored_vpn'
 - alterId: 0
   cipher: auto
   name: 美国-006
@@ -65,6 +76,20 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+- alpn:
+  - http/1.1
+  name: 🇺🇸[openproxylist.com] trojan-U...
+  network: ws
+  password: MiTiVPN
+  port: 443
+  server: 151.101.56.7
+  skip-cert-verify: false
+  sni: ssl.fastly.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: mitivpn---ss--s---mitivpn-22.global.ssl.fastly.net
+    path: '---@VPNine1'
 - alterId: 0
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
