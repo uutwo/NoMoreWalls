@@ -1,65 +1,40 @@
 proxies:
-- name: 美国+CloudFlare节点
-  network: ws
-  password: humanity
-  port: 443
-  server: 198.41.223.96
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: '%2Fassignment'
 - alpn:
   - http/1.1
-  name: 美国+乔治亚洲亚特兰大Fastly节点
+  name: 美国+V2CROSS.COM
   network: ws
   password: MiTiVPN
   port: 443
-  server: 151.101.56.101
+  server: 167.82.76.7
   sni: ssl.fastly.com
   type: trojan
   ws-opts:
     headers:
-      Host: mitivpn---ss--s---mitivpn-5.global.ssl.fastly.net
+      Host: mitivpn---ss--s---mitivpn-33.global.ssl.fastly.net
     path: '@bored_vpn'
-- alpn:
-  - h3
-  - h2
-  - http/1.1
+- name: 美国+CloudFlare节点
+  network: ws
+  password: humanity
+  port: 443
+  server: 172.67.74.2
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- client-fingerprint: chrome
   name: '美国+CloudFlare节点 #1'
   network: ws
-  password: humanity
   port: 443
-  server: 104.21.46.3
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #2'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.20.6.134
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- flow: ''
-  name: '美国+CloudFlare节点 #3'
-  network: ws
-  port: 443
-  server: 172.67.169.99
-  servername: 8-m16.PHuKEt2035.KdnS.fr
-  skip-cert-verify: true
+  server: 104.21.80.194
+  servername: 9-M19.sOUTH-AFRIcA-LINK.CCWu.cC
   tls: true
   type: vless
-  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
+  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
   ws-opts:
     headers:
-      Host: 8-m16.PHuKEt2035.KdnS.fr
-    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
-- name: '美国+CloudFlare节点 #4'
+      Host: 9-m19.South-AfrIcA-liNK.CcWU.CC
+    path: /CjBjB9sn5pCvaSwScc
+- name: '美国+CloudFlare节点 #2'
   network: ws
   port: 8880
   server: 172.64.158.146
@@ -71,33 +46,32 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
     path: /?ed=2560security=tls
-- alpn:
-  - http/1.1
-  name: '美国+乔治亚洲亚特兰大Fastly节点 #1'
-  network: ws
-  password: MiTiVPN
-  port: 443
-  server: 151.101.56.7
-  skip-cert-verify: false
-  sni: ssl.fastly.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: mitivpn---ss--s---mitivpn-22.global.ssl.fastly.net
-    path: '---@bored_vpn'
 - client-fingerprint: chrome
-  name: '美国+CloudFlare节点 #5'
+  name: '美国+CloudFlare节点 #3'
   network: ws
-  port: 2053
-  server: 104.26.0.113
-  servername: mianfei-73q.pages.dev
+  port: 443
+  server: 172.67.176.60
+  servername: 3-M19.SoUtH-afRIcA.CCwu.Cc
   tls: true
   type: vless
-  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
+  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
   ws-opts:
     headers:
-      Host: mianfei-73q.pages.dev
-    path: /proxyip=154.3.33.43
+      Host: 3-m19.south-afriCa.Ccwu.Cc
+    path: /CjBjB9sn5pCvaSwScc
+- client-fingerprint: chrome
+  name: '美国+CloudFlare节点 #4'
+  network: ws
+  port: 443
+  server: 172.67.185.131
+  servername: 4-m20.20260721-a5c2-48bd-bb63-efdae93240e3.ccwu.cc
+  tls: true
+  type: vless
+  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
+  ws-opts:
+    headers:
+      Host: 4-m20.20260721-a5c2-48bd-bb63-efdae93240e3.ccwu.cc
+    path: /8qMLgNapWf6SBxo8fhQlVPYO
 - name: 美国
   password: 6dcb725e-947e-4bbe-bb35-903374d57179
   port: 443
@@ -124,49 +98,6 @@ proxies:
   sni: vk.com
   tls: false
   type: hysteria2
-- name: 美国-001
-  network: ws
-  port: 8880
-  server: 63.141.128.30
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime42.workers.dev
-    path: /
-- name: 美国-002 |3.3MB/s|TK-US|YT-US|GP...
-  port: 9002
-  server: 138.199.35.215
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 美国-003 |3.2MB/s|TK-US|YT-US|GP...
-  port: 443
-  server: 38.28.193.188
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 美国-004 |1.5MB/s|TK-US|YT-US|GP...
-  port: 8090
-  server: 209.148.53.153
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 美国-005 |1.0MB/s|TK-US|GPT⁺-US
-  port: 9002
-  server: 138.199.35.198
-  skip-cert-verify: true
-  tls: true
-  type: http
-- alterId: 0
-  cipher: auto
-  name: 美国-006
-  network: tcp
-  port: 443
-  server: 165.140.217.2
-  skip-cert-verify: true
-  type: vmess
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
 - name: 美国3|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -175,42 +106,32 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- alpn:
-  - http/1.1
-  name: 🇺🇸[openproxylist.com] trojan-U...
-  network: ws
-  password: MiTiVPN
-  port: 443
-  server: 151.101.56.7
-  skip-cert-verify: false
-  sni: ssl.fastly.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: mitivpn---ss--s---mitivpn-22.global.ssl.fastly.net
-    path: '---@VPNine1'
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: 🇺🇸[openproxylist.com] vless-US
-  network: tcp
-  port: 40443
-  reality-opts:
-    public-key: Uvj5H9pDJP0HX2bN7NN7sCQwVCrC5N2NbKf-yuy1ikE
-    short-id: '!!str ee33'
-  server: 72.56.40.97
-  servername: deepl.com
-  tls: false
-  type: vless
-  uuid: 5be7fb02-b6a5-450f-b041-3243b98e8420
 - alterId: 0
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
-  network: tcp
-  port: '12004'
-  server: 47.85.188.30
-  tls: false
+  network: ws
+  port: '443'
+  server: proxy.bingtao.xyz
+  tls: true
   type: vmess
-  uuid: 8b5552bd-4cc7-4cac-af08-81c21686fd4f
+  uuid: 6346ee2b-aefa-4a58-963a-bb851ed08f41
+  ws-opts:
+    headers:
+      Host: proxy.bingtao.xyz
+    path: /vmess
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇺🇸[openproxylist.com] vless-US
+  network: tcp
+  port: 41478
+  reality-opts:
+    public-key: XImbM2wWs5wGcIB2ooFmtancJkhnWJZmsBPlM76gWG0
+    short-id: '!!str 285be4ed203a22fd'
+  server: 216.167.27.227
+  servername: www.intel.com
+  tls: false
+  type: vless
+  uuid: a5c9b82e-b971-4502-bce4-693f1eb97229
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇺🇸[openproxylist.com] vless-US #1'
@@ -228,6 +149,32 @@ proxies:
   flow: xtls-rprx-vision
   name: '🇺🇸[openproxylist.com] vless-US #2'
   network: tcp
+  port: 53957
+  reality-opts:
+    public-key: XUHlbk5VH5z4E2wxZBhlpLZ33qevyQgqU7dheRDgoGQ
+    short-id: '!!str 44e82fd7b97b14'
+  server: 172.235.43.210
+  servername: www.nvidia.com
+  tls: false
+  type: vless
+  uuid: 7ab29f89-6eef-4171-b232-fc4f580ad31b
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #3'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0
+    short-id: '!!str 4477382ff6d3d41c'
+  server: 51.81.203.63
+  servername: www.icloud.com
+  tls: false
+  type: vless
+  uuid: cb2dbb6a-a1ea-4023-9ace-6466cee57241
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #4'
+  network: tcp
   port: 443
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
@@ -237,11 +184,16 @@ proxies:
   tls: false
   type: vless
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- name: '🇺🇸[openproxylist.com] vless-US #3'
+- client-fingerprint: unsafe
+  name: '🇺🇸[openproxylist.com] vless-US #5'
+  network: ws
   port: 443
   server: 188.114.97.6
-  tls: false
+  servername: a.cwvps.eu.org
+  tls: true
   type: vless
   uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
   ws-opts:
+    headers:
+      Host: a.cwvps.eu.org
     path: '%2Fws'
