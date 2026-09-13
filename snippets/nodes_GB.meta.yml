@@ -3,7 +3,6 @@ proxies:
   password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
   port: 443
   server: news.gazette.help
-  skip-cert-verify: true
   sni: news.gazette.help
   tls: false
   type: hysteria2
@@ -61,7 +60,7 @@ proxies:
   tls: false
   type: vless
   uuid: 9343f183-7a16-4bdd-9c65-b0c21feca40b
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: '🇬🇧[openproxylist.com] vless-GB #3'
   network: tcp
@@ -126,30 +125,16 @@ proxies:
   tls: false
   type: vless
   uuid: 1996007c-e7bc-464b-999b-cac28cec6c3e
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   name: '🇬🇧[openproxylist.com] vless-GB #8'
   network: ws
   port: 443
   server: 129.121.95.159
   servername: 129.121.95.159
-  skip-cert-verify: false
   tls: true
   type: vless
   uuid: f6190ff2-864c-46cf-ac16-93908c069b75
   ws-opts:
     headers:
       Host: 129.121.95.159
-    path: /connect
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #9'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
-    short-id: '!!str fd8cf7e1173f0edb'
-  server: 83.147.18.3
-  servername: www.cloudflare.com
-  tls: false
-  type: vless
-  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
+    path: '%2Fconnect'
