@@ -29,23 +29,14 @@ proxies:
   tls: false
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- alterId: 0
-  cipher: auto
-  name: 🇫🇷[openproxylist.com] vmess-FR
-  network: tcp
-  port: '54555'
-  server: 51.103.28.247
-  servername: ''
+- name: '🇫🇷[openproxylist.com] vless-FR #1'
+  network: ws
+  port: 2096
+  server: 45.144.28.39
   tls: false
-  type: vmess
-  uuid: e57e9bb4-a442-44dd-a4bb-2aac72cfd1f2
-- grpc-opts:
-    grpc-service-name: grpc
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
-  network: grpc
-  port: 2083
-  server: usejh2.neobo-tooth.ru
-  servername: usejh2.neobo-tooth.ru
-  tls: true
   type: vless
   uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  ws-opts:
+    headers:
+      Host: usejh2.neobo-tooth.ru
+    path: '%2F'

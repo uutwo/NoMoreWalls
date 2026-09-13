@@ -1,77 +1,52 @@
 proxies:
-- alpn:
-  - http/1.1
-  name: 美国+V2CROSS.COM
-  network: ws
-  password: MiTiVPN
-  port: 443
-  server: 167.82.76.7
-  sni: ssl.fastly.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: mitivpn---ss--s---mitivpn-33.global.ssl.fastly.net
-    path: '@bored_vpn'
 - name: 美国+CloudFlare节点
   network: ws
   password: humanity
   port: 443
-  server: 172.67.74.2
+  server: 104.26.14.137
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '美国+CloudFlare节点 #1'
+  network: ws
+  password: humanity
+  port: 443
+  server: join-telegram-channel-tirexnet.trex.kdns.fr
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '美国+CloudFlare节点 #2'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.21.8.107
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     path: '%2Fassignment'
 - client-fingerprint: chrome
-  name: '美国+CloudFlare节点 #1'
-  network: ws
-  port: 443
-  server: 104.21.80.194
-  servername: 9-M19.sOUTH-AFRIcA-LINK.CCWu.cC
-  tls: true
-  type: vless
-  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
-  ws-opts:
-    headers:
-      Host: 9-m19.South-AfrIcA-liNK.CcWU.CC
-    path: /CjBjB9sn5pCvaSwScc
-- name: '美国+CloudFlare节点 #2'
-  network: ws
-  port: 8880
-  server: 172.64.158.146
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  tls: false
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  ws-opts:
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-    path: /?ed=2560security=tls
-- client-fingerprint: chrome
   name: '美国+CloudFlare节点 #3'
   network: ws
-  port: 443
-  server: 172.67.176.60
-  servername: 3-M19.SoUtH-afRIcA.CCwu.Cc
+  port: 2087
+  server: 104.18.38.47
+  servername: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
   tls: true
   type: vless
-  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   ws-opts:
     headers:
-      Host: 3-m19.south-afriCa.Ccwu.Cc
-    path: /CjBjB9sn5pCvaSwScc
-- client-fingerprint: chrome
-  name: '美国+CloudFlare节点 #4'
-  network: ws
-  port: 443
-  server: 172.67.185.131
-  servername: 4-m20.20260721-a5c2-48bd-bb63-efdae93240e3.ccwu.cc
-  tls: true
-  type: vless
-  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
-  ws-opts:
-    headers:
-      Host: 4-m20.20260721-a5c2-48bd-bb63-efdae93240e3.ccwu.cc
-    path: /8qMLgNapWf6SBxo8fhQlVPYO
+      Host: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
+    path: /
 - name: 美国
   password: 6dcb725e-947e-4bbe-bb35-903374d57179
   port: 443
@@ -98,6 +73,49 @@ proxies:
   sni: vk.com
   tls: false
   type: hysteria2
+- name: 美国-001
+  network: ws
+  port: 8880
+  server: 63.141.128.30
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime42.workers.dev
+    path: /
+- name: 美国-002 |3.3MB/s|TK-US|YT-US|GP...
+  port: 9002
+  server: 138.199.35.215
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 美国-003 |3.2MB/s|TK-US|YT-US|GP...
+  port: 443
+  server: 38.28.193.188
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 美国-004 |1.5MB/s|TK-US|YT-US|GP...
+  port: 8090
+  server: 209.148.53.153
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 美国-005 |1.0MB/s|TK-US|GPT⁺-US
+  port: 9002
+  server: 138.199.35.198
+  skip-cert-verify: true
+  tls: true
+  type: http
+- alterId: 0
+  cipher: auto
+  name: 美国-006
+  network: tcp
+  port: 443
+  server: 165.140.217.2
+  skip-cert-verify: true
+  type: vmess
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
 - name: 美国3|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -106,6 +124,17 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+- name: 🇺🇸[openproxylist.com] vless-US
+  network: ws
+  port: 80
+  server: 3h-unitedstates1.09vpn.com
+  tls: false
+  type: vless
+  uuid: 18cf8db1-9f86-43f7-baa0-382efb7f2dfa
+  ws-opts:
+    headers:
+      Host: 3h-unitedstates1.09vpn.com
+    path: /vless/
 - alterId: 0
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
@@ -121,7 +150,7 @@ proxies:
     path: /vmess
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇺🇸[openproxylist.com] vless-US
+  name: '🇺🇸[openproxylist.com] vless-US #1'
   network: tcp
   port: 41478
   reality-opts:
@@ -132,9 +161,35 @@ proxies:
   tls: false
   type: vless
   uuid: a5c9b82e-b971-4502-bce4-693f1eb97229
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #2'
+  network: tcp
+  port: 40443
+  reality-opts:
+    public-key: Uvj5H9pDJP0HX2bN7NN7sCQwVCrC5N2NbKf-yuy1ikE
+    short-id: '!!str ee33'
+  server: 72.56.40.97
+  servername: deepl.com
+  tls: false
+  type: vless
+  uuid: 5be7fb02-b6a5-450f-b041-3243b98e8420
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #1'
+  name: '🇺🇸[openproxylist.com] vless-US #3'
+  network: tcp
+  port: 13779
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: '!!str af1bdd293097b664'
+  server: 38.180.242.205
+  servername: tesla.com
+  tls: false
+  type: vless
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #4'
   network: tcp
   port: 443
   reality-opts:
@@ -147,7 +202,7 @@ proxies:
   uuid: 729dd5f2-f5ff-4070-8c10-863eceded0b1
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #2'
+  name: '🇺🇸[openproxylist.com] vless-US #5'
   network: tcp
   port: 53957
   reality-opts:
@@ -160,20 +215,7 @@ proxies:
   uuid: 7ab29f89-6eef-4171-b232-fc4f580ad31b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #3'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0
-    short-id: '!!str 4477382ff6d3d41c'
-  server: 51.81.203.63
-  servername: www.icloud.com
-  tls: false
-  type: vless
-  uuid: cb2dbb6a-a1ea-4023-9ace-6466cee57241
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #4'
+  name: '🇺🇸[openproxylist.com] vless-US #6'
   network: tcp
   port: 443
   reality-opts:
@@ -185,10 +227,10 @@ proxies:
   type: vless
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
 - client-fingerprint: unsafe
-  name: '🇺🇸[openproxylist.com] vless-US #5'
+  name: '🇺🇸[openproxylist.com] vless-US #7'
   network: ws
   port: 443
-  server: 188.114.97.6
+  server: 104.21.70.21
   servername: a.cwvps.eu.org
   tls: true
   type: vless
@@ -196,4 +238,4 @@ proxies:
   ws-opts:
     headers:
       Host: a.cwvps.eu.org
-    path: '%2Fws'
+    path: /ws
