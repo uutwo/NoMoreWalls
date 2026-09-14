@@ -1,20 +1,14 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 英国+V2CROSS.COM
-  network: tcp
+- name: 英国+V2CROSS.COM
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
   port: 443
-  reality-opts:
-    public-key: V3uMWEfDQAPFP6o5ED8Jtk0rJBPs7IlOLf_Wh8w_jXc
-    short-id: '!!str 76132b3b39704c44'
-  server: 31.76.7.238
-  servername: cz2.hat.onl
+  server: 31.76.71.252
+  sni: gta.internet-card.sbs
   tls: false
-  type: vless
-  uuid: d6b59299-2f48-4e9b-9130-b9e9cb5d0a51
+  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '英国+V2CROSS.COM #2'
+  name: '英国+V2CROSS.COM #1'
   network: tcp
   port: 443
   reality-opts:
@@ -69,7 +63,10 @@ proxies:
   tls: false
   type: vless
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-- name: '🇬🇧[openproxylist.com] vless-GB #3'
+- grpc-opts:
+    grpc-service-name: vless
+  name: '🇬🇧[openproxylist.com] vless-GB #3'
+  network: grpc
   port: 2083
   server: 66.90.105.210
   tls: false
@@ -139,29 +136,3 @@ proxies:
   tls: false
   type: vless
   uuid: e5d917f5-fc78-455e-bbb5-81d08715f3d6
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #9'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: RVj8E6YuWeOq9XzIVLQCKM39qa-Cknp-GYvVAA1UPFo
-    short-id: '!!str 72cceb78'
-  server: 138.124.125.211
-  servername: www.apple.com
-  tls: false
-  type: vless
-  uuid: 1996007c-e7bc-464b-999b-cac28cec6c3e
-- client-fingerprint: firefox
-  name: '🇬🇧[openproxylist.com] vless-GB #10'
-  network: ws
-  port: 443
-  server: 129.121.95.159
-  servername: 129.121.95.159
-  tls: true
-  type: vless
-  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
-  ws-opts:
-    headers:
-      Host: 129.121.95.159
-    path: '%2Fconnect'
