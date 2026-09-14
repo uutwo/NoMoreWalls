@@ -1,18 +1,18 @@
 proxies:
-- name: '日本 #1'
-  password: 184cdec28da5a09450803c8debcd2cc9
-  port: 50160
-  server: 138.3.208.26
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
 - name: 日本
   obfs: salamander
   obfs-password: d0dd99b2b4da604123ce17b6d17072a2
   password: 07a4fcf5553a80cf300374d325386038
   port: 443
   server: 141.147.151.58
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: '日本 #1'
+  password: 184cdec28da5a09450803c8debcd2cc9
+  port: 50160
+  server: 138.3.208.26
   skip-cert-verify: true
   sni: www.bing.com
   tls: false
@@ -46,8 +46,9 @@ proxies:
   cipher: auto
   name: 🇯🇵[openproxylist.com] vmess-JP
   network: tcp
-  port: '18112'
+  port: 18112
   server: oc.imfun.fun
+  servername: null
   tls: false
   type: vmess
   uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
@@ -55,8 +56,9 @@ proxies:
   cipher: auto
   name: '🇯🇵[openproxylist.com] vmess-JP #1'
   network: tcp
-  port: '4433'
+  port: 4433
   server: 45.32.57.118
+  servername: null
   tls: false
   type: vmess
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
@@ -74,7 +76,7 @@ proxies:
   type: vless
   uuid: b969ef8f-7bdb-474f-9481-d8f3c5686fb8
   ws-opts:
-    path: '%2f'
+    path: '%2F'
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: '🇯🇵[openproxylist.com] vless-JP #1'
@@ -90,31 +92,16 @@ proxies:
   uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
   ws-opts:
     path: '%2f'
-- client-fingerprint: chrome
-  name: '🇯🇵[openproxylist.com] vless-JP #2'
-  network: ws
-  port: 443
-  server: 162.159.254.3
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  ws-opts:
-    headers:
-      Host: jp3.yohototo.top
-    path: '%2Ftyxyws'
 - alterId: 0
   cipher: auto
   name: '🇯🇵[openproxylist.com] vmess-JP #2'
   network: tcp
   port: '55216'
   server: 155.248.176.44
-  servername: ''
   tls: false
   type: vmess
   uuid: 154dbc39-0921-cf11-29bd-156c5000d763
-- name: '🇯🇵[openproxylist.com] vless-JP #3'
+- name: '🇯🇵[openproxylist.com] vless-JP #2'
   port: 443
   server: 137.220.221.179
   tls: false
@@ -123,7 +110,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: grpc
-  name: '🇯🇵[openproxylist.com] vless-JP #4'
+  name: '🇯🇵[openproxylist.com] vless-JP #3'
   network: grpc
   port: 2087
   reality-opts:

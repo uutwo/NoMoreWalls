@@ -1,35 +1,52 @@
 proxies:
+- alpn:
+  - http/1.1
+  name: 美国+V2CROSS.COM
+  network: ws
+  password: MiTiVPN
+  port: 443
+  server: 199.232.78.160
+  skip-cert-verify: false
+  sni: ssl.fastly.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: mitivpn---ss--s---mitivpn-44.global.ssl.fastly.net
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e1i@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
 - name: 美国+CloudFlare节点
   network: ws
   password: humanity
   port: 443
-  server: 104.26.14.137
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '美国+CloudFlare节点 #1'
-  network: ws
-  password: humanity
-  port: 443
-  server: join-telegram-channel-tirexnet.trex.kdns.fr
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '美国+CloudFlare节点 #2'
-  network: ws
-  password: humanity
-  port: 443
   server: 104.21.8.107
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #2'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.20.6.134
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: /assignment
+- name: '美国+CloudFlare节点 #3'
+  network: ws
+  password: humanity
+  port: 443
+  server: www.speedtest.org
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #5'
+  network: ws
+  password: humanity
+  port: 443
+  server: 198.41.223.96
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -54,13 +71,26 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
-  network: ws
-  port: '443'
-  server: proxy.bingtao.xyz
-  tls: true
+  network: tcp
+  port: '12004'
+  server: 47.85.188.30
+  tls: false
   type: vmess
-  uuid: 6346ee2b-aefa-4a58-963a-bb851ed08f41
+  uuid: 8b5552bd-4cc7-4cac-af08-81c21686fd4f
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
+  network: tcp
+  port: 15311
+  server: 107.173.254.27
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ad78d02b-873f-4cff-8d4a-673f53d6ce0f
+- name: 🇺🇸[openproxylist.com] trojan-U...
+  password: MiTiVPN
+  port: 443
+  server: 199.232.78.160
+  type: trojan
   ws-opts:
-    headers:
-      Host: proxy.bingtao.xyz
-    path: /vmess
+    path: '%2F---%40MiTiVPN---%40MiTiVPN%2F---%40MiTiVPN---%40MiTiVPN%2F---%40MiTiVPN---%40MiTiVPN%2FD-e1i%40MiTiVPN---%40MiTiVPN%2F---%40MiTiVPN---%40MiTiVPN%2F---%40MiTiVPN---%40MiTiVPN'
