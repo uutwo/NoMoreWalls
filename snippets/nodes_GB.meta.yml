@@ -1,20 +1,4 @@
 proxies:
-- name: 俄罗斯
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  port: 443
-  server: gta.internet-card.sbs
-  skip-cert-verify: true
-  sni: gta.internet-card.sbs
-  tls: false
-  type: hysteria2
-- name: '英国+V2CROSS.COM #1'
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  port: 443
-  server: 31.76.71.252
-  skip-cert-verify: true
-  sni: gta.internet-card.sbs
-  tls: false
-  type: hysteria2
 - name: 英国
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
@@ -87,9 +71,22 @@ proxies:
   tls: false
   type: vless
   uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇬🇧[openproxylist.com] vless-GB #5'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: '!!str fd55b698ee8c3629'
+  server: 87.117.234.19
+  servername: strapi.io
+  tls: false
+  type: vless
+  uuid: 4d583b2c-2f5a-47d0-8181-e95217fe8cd9
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇬🇧[openproxylist.com] vless-GB #6'
   network: tcp
   port: 443
   reality-opts:
@@ -102,7 +99,7 @@ proxies:
   uuid: e5d917f5-fc78-455e-bbb5-81d08715f3d6
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #6'
+  name: '🇬🇧[openproxylist.com] vless-GB #7'
   network: tcp
   port: 443
   reality-opts:
@@ -114,7 +111,7 @@ proxies:
   type: vless
   uuid: 1996007c-e7bc-464b-999b-cac28cec6c3e
 - client-fingerprint: chrome
-  name: '🇬🇧[openproxylist.com] vless-GB #7'
+  name: '🇬🇧[openproxylist.com] vless-GB #8'
   network: ws
   port: 443
   server: 129.121.95.159
@@ -127,3 +124,16 @@ proxies:
     headers:
       Host: 129.121.95.159
     path: '%2Fconnect'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇬🇧[openproxylist.com] vless-GB #9'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
+    short-id: '!!str fd8cf7e1173f0edb'
+  server: 83.147.18.3
+  servername: www.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
