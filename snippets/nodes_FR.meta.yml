@@ -8,7 +8,21 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
   name: 🇫🇷[openproxylist.com] vless-FR
+  network: grpc
+  port: 9894
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+    short-id: '!!str aa'
+  server: 212.92.101.117
+  servername: dl.google.com
+  tls: false
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+- client-fingerprint: chrome
+  name: '🇫🇷[openproxylist.com] vless-FR #1'
   network: tcp
   port: 40443
   reality-opts:
@@ -19,15 +33,15 @@ proxies:
   tls: false
   type: vless
   uuid: e4371581-c418-4770-b09a-d630f18290a6
-- client-fingerprint: chrome
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
-  network: tcp
-  port: 2053
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-    short-id: '!!str bfe58beb41f1d09f'
-  server: 51.77.217.70
-  servername: www.apple.com
-  tls: false
-  type: vless
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+- name: 🇫🇷[openproxylist.com] trojan-F...
+  network: ws
+  password: humanity
+  port: 443
+  server: 185.255.179.166
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: '%2Fassignment'

@@ -26,20 +26,25 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇩🇪[openproxylist.com] vless-DE
-  network: tcp
-  port: 52006
-  reality-opts:
-    public-key: o_ZQuEx_ealt_YkqgtYRqFhee0pzFkg9ObUhODLTAB8
-    short-id: '!!str 08'
-  server: w7tjfftjdt.vk-maps.net
-  servername: api5.vk-maps.net
+- name: 🇩🇪[openproxylist.com] vless-DE
+  network: ws
+  port: 80
+  server: 91.98.96.59
   tls: false
   type: vless
-  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
+  uuid: 35a6c37b-5df7-4d7f-b338-f9092d3be2e9
+  ws-opts:
+    path: '%2F'
 - name: '🇩🇪[openproxylist.com] vless-DE #1'
+  network: ws
+  port: 80
+  server: 91.98.102.240
+  tls: false
+  type: vless
+  uuid: 8ee5577f-9dd0-4a10-a4ec-6293a24b61df
+  ws-opts:
+    path: '%2F'
+- name: '🇩🇪[openproxylist.com] vless-DE #2'
   network: ws
   port: 80
   server: 88.99.125.243
@@ -50,7 +55,7 @@ proxies:
     path: '%2F'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #2'
+  name: '🇩🇪[openproxylist.com] vless-DE #3'
   network: tcp
   port: 443
   reality-opts:
@@ -63,7 +68,7 @@ proxies:
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #3'
+  name: '🇩🇪[openproxylist.com] vless-DE #4'
   network: tcp
   port: 443
   reality-opts:
@@ -76,7 +81,7 @@ proxies:
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #4'
+  name: '🇩🇪[openproxylist.com] vless-DE #5'
   network: tcp
   port: 2083
   reality-opts:
@@ -87,7 +92,7 @@ proxies:
   tls: false
   type: vless
   uuid: cb077bf2-70b7-457b-af42-27cdc3e0e544
-- name: '🇩🇪[openproxylist.com] vless-DE #5'
+- name: '🇩🇪[openproxylist.com] vless-DE #6'
   network: tcp
   port: 443
   server: 46.224.170.213
@@ -98,7 +103,7 @@ proxies:
     headers:
       Host: store.steampowered.com
     path: /
-- name: '🇩🇪[openproxylist.com] vless-DE #6'
+- name: '🇩🇪[openproxylist.com] vless-DE #7'
   network: tcp
   port: 443
   server: 91.99.58.195
@@ -109,16 +114,6 @@ proxies:
     headers:
       Host: store.steampowered.com
     path: /
-- name: '🇩🇪[openproxylist.com] vless-DE #7'
-  network: tcp
-  port: 443
-  server: 91.99.58.134
-  tls: false
-  type: vless
-  uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
-  ws-opts:
-    headers:
-      Host: store.steampowered.com
 - name: '🇩🇪[openproxylist.com] vless-DE #8'
   network: ws
   port: 2087
@@ -130,27 +125,16 @@ proxies:
     path: /fd5ba98a3970
 - name: '🇩🇪[openproxylist.com] vless-DE #9'
   network: ws
-  port: 2087
-  server: 163.8.195.241
-  tls: false
-  type: vless
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-  ws-opts:
-    path: /29c8fed7ca22
-- name: '🇩🇪[openproxylist.com] vless-DE #10'
-  network: ws
   port: 443
   server: 2.27.205.59
   tls: false
   type: vless
   uuid: c21631d5-36c9-4664-b575-97eca17456be
   ws-opts:
-    headers:
-      Host: neth8.lunariai.ru
-    path: /
+    path: '%2F'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #11'
+  name: '🇩🇪[openproxylist.com] vless-DE #10'
   network: tcp
   port: 8765
   reality-opts:
@@ -161,6 +145,16 @@ proxies:
   tls: false
   type: vless
   uuid: df9f5aca-eda0-428f-a752-e53866153d12
+- name: '🇩🇪[openproxylist.com] vless-DE #11'
+  network: tcp
+  port: 443
+  server: ww6.levikogjgfdd.ir
+  tls: false
+  type: vless
+  uuid: cf990ae8-ee77-4436-aa3a-bbc2fb040c53
+  ws-opts:
+    headers:
+      Host: store.steampowered.com
 - name: '🇩🇪[openproxylist.com] vless-DE #12'
   network: tcp
   port: 443
@@ -177,30 +171,18 @@ proxies:
   name: 🇩🇪[openproxylist.com] vmess-DE
   network: ws
   port: '443'
-  server: 5.188.26.85
+  server: renderer-stream-2-62.mirra.now
   servername: renderer-stream-2-62.mirra.now
   tls: true
   type: vmess
   uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
   ws-opts:
     headers:
-      Host: renderer-stream-2-62.mirra.now
+      Host: ''
     path: /api/v1/gpu-stream/socket
-- name: '🇩🇪[openproxylist.com] vless-DE #13'
-  network: ws
-  port: 2052
-  server: undef.network
-  servername: uwu.blueknightnet.qzz.io
-  tls: false
-  type: vless
-  uuid: f5267873-5379-409e-b67a-145ea54deb70
-  ws-opts:
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-    path: /@BlueKnight_net--@BlueKnight_net
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #14'
+  name: '🇩🇪[openproxylist.com] vless-DE #13'
   network: tcp
   port: 443
   reality-opts:
@@ -225,7 +207,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: grpc-tunnel
-  name: '🇩🇪[openproxylist.com] vless-DE #15'
+  name: '🇩🇪[openproxylist.com] vless-DE #14'
   network: grpc
   port: 9892
   reality-opts:
@@ -236,3 +218,16 @@ proxies:
   tls: false
   type: vless
   uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #15'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: SVgtyuD9khylgHuB0treGekxVSHPOS-wPZTNHUf6zj8
+    short-id: '!!str 85c86a9863'
+  server: 144.31.125.60
+  servername: www.intel.com
+  tls: false
+  type: vless
+  uuid: 9015f0bc-2053-4ca1-9b9b-a018b97b32d2
