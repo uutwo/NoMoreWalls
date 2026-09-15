@@ -1,4 +1,14 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 英国 V2CROSS.COM
+  network: tcp
+  port: '110'
+  server: 31.77.8.97
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e8758bf0-c234-4809-89f7-25fd868316d0
 - name: 英国
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
@@ -24,10 +34,7 @@ proxies:
   tls: false
   type: vless
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-- grpc-opts:
-    grpc-service-name: vless
-  name: '🇬🇧[openproxylist.com] vless-GB #1'
-  network: grpc
+- name: '🇬🇧[openproxylist.com] vless-GB #1'
   port: 2083
   server: 66.90.105.210
   tls: false
@@ -123,17 +130,4 @@ proxies:
   ws-opts:
     headers:
       Host: 129.121.95.159
-    path: '%2Fconnect'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #9'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
-    short-id: '!!str fd8cf7e1173f0edb'
-  server: 83.147.18.3
-  servername: www.cloudflare.com
-  tls: false
-  type: vless
-  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
+    path: /connect
