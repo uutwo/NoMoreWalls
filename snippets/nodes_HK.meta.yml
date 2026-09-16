@@ -1,4 +1,11 @@
 proxies:
+- name: 香港+腾讯云
+  password: HysTeria2026!Proxy
+  port: 8443
+  server: mz.hkychina.com
+  sni: mz.hkychina.com
+  tls: false
+  type: hysteria2
 - alterId: 2
   cipher: auto
   name: 香港|@ripaojiedian
@@ -25,8 +32,24 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- client-fingerprint: chrome
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
   name: 🇭🇰[openproxylist.com] vless-HK
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: O8Av8GXWVqj7FOxUyStmrTLWv5EtvQ1ZnMOVVLb1V3s
+    short-id: '!!str 1bc2c1ef1c'
+  server: 212.192.13.233
+  servername: www.cathaypacific.com
+  tls: false
+  type: vless
+  uuid: d742752c-4231-4695-801e-f06d77f0f277
+- client-fingerprint: chrome
+  name: '🇭🇰[openproxylist.com] vless-HK #1'
   network: tcp
   port: 13779
   reality-opts:
@@ -37,9 +60,19 @@ proxies:
   tls: false
   type: vless
   uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰[openproxylist.com] vmess-HK
+  network: tcp
+  port: '16115'
+  server: zfd-hkv2.kunlun01dns.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇭🇰[openproxylist.com] vless-HK #1'
+  name: '🇭🇰[openproxylist.com] vless-HK #2'
   network: tcp
   port: 443
   reality-opts:
@@ -52,49 +85,11 @@ proxies:
   uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
 - alterId: 0
   cipher: auto
-  name: 🇭🇰[openproxylist.com] vmess-HK
-  network: tcp
-  port: '21041'
-  server: dog-hk.kunlun01dns.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-- alterId: 0
-  cipher: auto
   name: '🇭🇰[openproxylist.com] vmess-HK #1'
-  network: ws
-  port: '443'
-  server: wwafj5lhl6bi8au9.v.3dns.vip
-  servername: wwafj5lhl6bi8au9.v.3dns.vip
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  grpc-opts:
-    grpc-service-name: '12306'
-  name: '🇭🇰[openproxylist.com] vmess-HK #2'
-  network: grpc
-  port: '443'
-  server: hk01.653ebeeb-5f60-4be5-958d-7bf4839cdccd.ef6616fd-5b06-482f-9d64-183745659cbf.byteprivatelink.com
-  servername: www.12306.cn
-  tls: true
-  type: vmess
-  uuid: f018361c-3d66-4635-80c9-22be36b70ac4
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰[openproxylist.com] vmess-HK #3'
-  network: ws
-  port: 35043
-  server: 156.245.232.239
+  network: tcp
+  port: '16112'
+  server: zfd-hkv2.kunlun01dns.com
   servername: ''
   tls: false
   type: vmess
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1

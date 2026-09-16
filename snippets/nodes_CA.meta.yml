@@ -1,10 +1,37 @@
 proxies:
-- name: 🇨🇦[openproxylist.com] vless-CA
-  network: tcp
+- alpn:
+  - http/1.1
+  name: 🇨🇦[openproxylist.com] vless-CA
+  network: ws
   port: 443
-  server: 184.107.106.68
-  servername: lizca2.footballfantasyforum.com
+  server: 104.21.70.21
+  servername: bodyshine.help
   skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: efe19c5a-0ea1-4666-8a4c-4a33f4670775
+  ws-opts:
+    headers:
+      Host: bodyshine.help
+    path: /raccoonwsvless
+- alpn:
+  - http/1.1
+  client-fingerprint: unsafe
+  name: '🇨🇦[openproxylist.com] vless-CA #1'
+  network: ws
+  port: 443
+  server: 104.21.70.21
+  servername: playlux.homes
+  tls: true
+  type: vless
+  uuid: efe19c5a-0ea1-4666-8a4c-4a33f4670775
+  ws-opts:
+    headers:
+      Host: playlux.homes
+    path: /raccoonwsvless
+- name: '🇨🇦[openproxylist.com] vless-CA #2'
+  port: 443
+  server: lizca2.footballfantasyforum.com
   tls: true
   type: vless
   uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
