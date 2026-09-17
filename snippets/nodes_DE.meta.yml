@@ -19,40 +19,85 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
+- client-fingerprint: chrome
+  name: 德国-001
+  network: ws
+  port: 2096
+  server: 64.226.95.244
+  servername: cf3.schzyc.cc.cd
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  ws-opts:
+    headers:
+      Host: cf3.schzyc.cc.cd
+    path: /proxyip=ProxyIP.CMLiussss.net
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 1000
+  name: 德国-002 |1.6MB/s
+  port: 54177
+  protocol: udp
+  server: 5.83.129.90
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  udp: true
+  up: 500
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 1000
+  name: 德国-003 |594KB/s
+  port: 20088
+  protocol: udp
+  server: 5.83.129.153
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  udp: true
+  up: 500
+- name: 🇩🇪[openproxylist.com] vless-DE
+  network: tcp
+  port: 443
+  server: 91.99.59.248
+  tls: false
+  type: vless
+  uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
+  ws-opts:
+    headers:
+      Host: store.steampowered.com
+    path: /
+- name: '🇩🇪[openproxylist.com] vless-DE #1'
+  network: tcp
+  port: 440
+  server: 134.122.86.165
+  tls: false
+  type: vless
+  uuid: 59906cb2-a61b-4cf3-b77b-5762ef61d2b0
+  ws-opts:
+    headers:
+      Host: store.steampowered.com
 - alterId: 0
   cipher: auto
   name: 🇩🇪[openproxylist.com] vmess-DE
   network: tcp
   port: '2086'
-  server: 91.107.146.97
+  server: 94.249.187.46
   servername: ''
   tls: false
   type: vmess
   uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
-- name: 🇩🇪[openproxylist.com] vless-DE
-  network: tcp
-  port: 440
-  server: 167.71.45.85
-  tls: false
-  type: vless
-  uuid: 59906cb2-a61b-4cf3-b77b-5762ef61d2b0
-  ws-opts:
-    headers:
-      Host: store.steampowered.com
-- name: '🇩🇪[openproxylist.com] vless-DE #1'
-  network: tcp
-  port: 440
-  server: 164.92.252.15
-  tls: false
-  type: vless
-  uuid: 59906cb2-a61b-4cf3-b77b-5762ef61d2b0
-  ws-opts:
-    headers:
-      Host: store.steampowered.com
 - name: '🇩🇪[openproxylist.com] vless-DE #2'
   network: tcp
   port: 440
-  server: 46.101.105.34
+  server: 167.71.45.85
   tls: false
   type: vless
   uuid: 59906cb2-a61b-4cf3-b77b-5762ef61d2b0
@@ -80,13 +125,26 @@ proxies:
     headers:
       Host: store.steampowered.com
 - name: '🇩🇪[openproxylist.com] vless-DE #5'
+  port: 2053
+  server: new2.smart-cats.ru
+  tls: false
+  type: vless
+  uuid: 60a361f9-3c45-4954-9e4c-92a85bda243d
+- name: '🇩🇪[openproxylist.com] vless-DE #6'
   network: tcp
   port: 39244
   server: 192.248.182.183
   tls: false
   type: vless
   uuid: 5fc7563b-552d-417f-9409-08ef92284599
-- name: '🇩🇪[openproxylist.com] vless-DE #6'
+- name: '🇩🇪[openproxylist.com] vless-DE #7'
+  network: tcp
+  port: 53224
+  server: 95.179.169.44
+  tls: false
+  type: vless
+  uuid: 5f00ca4e-3f26-473e-ad1c-414112abb0a3
+- name: '🇩🇪[openproxylist.com] vless-DE #8'
   port: 2053
   server: new3.smart-cats.ru
   tls: false
@@ -94,7 +152,7 @@ proxies:
   uuid: 60a361f9-3c45-4954-9e4c-92a85bda243d
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #7'
+  name: '🇩🇪[openproxylist.com] vless-DE #9'
   network: tcp
   port: 40443
   reality-opts:
@@ -105,9 +163,23 @@ proxies:
   tls: false
   type: vless
   uuid: bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: snob-grpc-de
+  name: '🇩🇪[openproxylist.com] vless-DE #10'
+  network: grpc
+  port: 4443
+  reality-opts:
+    public-key: nhvyI4KrKDUSgw9Fa63SDeNATaTsAu9bRZ4qaraydRM
+    short-id: '!!str e5f6a1b2'
+  server: 5.35.81.60
+  servername: maps.apple.com
+  tls: false
+  type: vless
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
 - client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #8'
+  name: '🇩🇪[openproxylist.com] vless-DE #11'
   network: tcp
   port: 443
   reality-opts:
@@ -118,20 +190,7 @@ proxies:
   tls: false
   type: vless
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #9'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: '!!str c39cc7310a'
-  server: 82.39.171.142
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- name: '🇩🇪[openproxylist.com] vless-DE #10'
+- name: '🇩🇪[openproxylist.com] vless-DE #12'
   network: tcp
   port: 443
   server: 91.99.57.24
@@ -142,18 +201,20 @@ proxies:
     headers:
       Host: store.steampowered.com
     path: '%2F'
-- name: '🇩🇪[openproxylist.com] vless-DE #11'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #13'
   network: tcp
-  port: 443
-  server: 46.224.170.213
+  port: 2083
+  reality-opts:
+    public-key: H0nCazQFHVhSObfqSUhGLhK7KRwKzTMggIBPjnMMqhk
+    short-id: '!!str af04ff8094115e93'
+  server: 178.105.61.61
+  servername: 178.105.61.61
   tls: false
   type: vless
-  uuid: cf990ae8-ee77-4436-aa3a-bbc2fb040c53
-  ws-opts:
-    headers:
-      Host: store.steampowered.com
-    path: /
-- name: '🇩🇪[openproxylist.com] vless-DE #12'
+  uuid: cb077bf2-70b7-457b-af42-27cdc3e0e544
+- name: '🇩🇪[openproxylist.com] vless-DE #14'
   network: tcp
   port: 443
   server: 91.99.58.134
@@ -163,7 +224,7 @@ proxies:
   ws-opts:
     headers:
       Host: store.steampowered.com
-- name: '🇩🇪[openproxylist.com] vless-DE #13'
+- name: '🇩🇪[openproxylist.com] vless-DE #15'
   network: ws
   port: 2087
   server: 82.24.203.20
@@ -172,17 +233,13 @@ proxies:
   uuid: 5fcdc9b7-e70f-4a5c-85c3-e018ad818326
   ws-opts:
     path: '%2Ffd5ba98a3970'
-- name: '🇩🇪[openproxylist.com] vless-DE #14'
-  network: ws
+- name: '🇩🇪[openproxylist.com] vless-DE #16'
   port: 2087
   server: 163.8.195.241
   tls: false
   type: vless
   uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-  ws-opts:
-    path: /29c8fed7ca22
-- name: '🇩🇪[openproxylist.com] vless-DE #15'
-  network: ws
+- name: '🇩🇪[openproxylist.com] vless-DE #17'
   port: 443
   server: 2.27.205.59
   tls: false
@@ -190,35 +247,33 @@ proxies:
   uuid: c21631d5-36c9-4664-b575-97eca17456be
   ws-opts:
     path: '%2F'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #16'
+- name: '🇩🇪[openproxylist.com] vless-DE #18'
   network: tcp
-  port: 8765
-  reality-opts:
-    public-key: M08l5tDmJUYELykZCNYQyFgtR9Zc-A4ZGlUSLcUeS2c
-    short-id: '!!str 1bcc9177f3124b25'
-  server: 31.56.189.27
-  servername: srv-21bac9.vless.monster
+  port: 443
+  server: 116.202.19.249
   tls: false
   type: vless
-  uuid: df9f5aca-eda0-428f-a752-e53866153d12
+  uuid: cf990ae8-ee77-4436-aa3a-bbc2fb040c53
+  ws-opts:
+    headers:
+      Host: store.steampowered.com
+- name: '🇩🇪[openproxylist.com] vless-DE #19'
+  network: tcp
+  port: 443
+  server: 91.99.50.192
+  tls: false
+  type: vless
+  uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
+  ws-opts:
+    headers:
+      Host: store.steampowered.com
+    path: /
 - alterId: 0
   cipher: auto
   name: '🇩🇪[openproxylist.com] vmess-DE #1'
-  network: tcp
-  port: '1234'
-  server: 162.19.204.71
-  servername: supervpn.super.com
-  tls: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-- alterId: 0
-  cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #2'
   network: ws
   port: '443'
-  server: 195.19.20.80
+  server: 85.215.41.19
   servername: renderer-stream-2-62.mirra.now
   tls: true
   type: vmess
@@ -229,7 +284,7 @@ proxies:
     path: /api/v1/gpu-stream/socket
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #17'
+  name: '🇩🇪[openproxylist.com] vless-DE #20'
   network: tcp
   port: 443
   reality-opts:
@@ -240,16 +295,3 @@ proxies:
   tls: false
   type: vless
   uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #18'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: SVgtyuD9khylgHuB0treGekxVSHPOS-wPZTNHUf6zj8
-    short-id: '!!str 85c86a9863'
-  server: 144.31.125.60
-  servername: www.intel.com
-  tls: false
-  type: vless
-  uuid: 9015f0bc-2053-4ca1-9b9b-a018b97b32d2
