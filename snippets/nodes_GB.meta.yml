@@ -7,13 +7,20 @@ proxies:
   sni: vpn-uk-001.fastervpn.world
   tls: false
   type: hysteria2
-- name: 🇬🇧[openproxylist.com] vless-GB
+- grpc-opts:
+    grpc-service-name: vless
+  name: 🇬🇧[openproxylist.com] vless-GB
+  network: grpc
   port: 2083
   server: 66.90.104.42
+  servername: /TELEGRAM_TM(@AZARBAYJAB1),TELEGRAM_TM(@AZARBAYJAB1),TELEGRAM_TM(@AZARBAYJAB1),TELEGRAM_TM(@AZARBAYJAB1),TELEGRAM_TM(@AZARBAYJAB1),TELEGRAM_TM(@AZARBAYJAB1),TELEGRAM_TM(@AZARBAYJAB1)
   tls: false
   type: vless
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-- name: '🇬🇧[openproxylist.com] vless-GB #1'
+- grpc-opts:
+    grpc-service-name: vless
+  name: '🇬🇧[openproxylist.com] vless-GB #1'
+  network: grpc
   port: 2083
   server: 66.90.105.210
   tls: false
@@ -22,32 +29,6 @@ proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇬🇧[openproxylist.com] vless-GB #2'
-  network: tcp
-  port: 421
-  reality-opts:
-    public-key: zUdAvpr07q1Yd0Om-jc4-Vu4Un5tVird8FGoN-7W9Tg
-    short-id: '!!str a1facbc8575701ae'
-  server: 78.129.208.44
-  servername: chistomat.dry.care
-  tls: false
-  type: vless
-  uuid: a3c861cb-e1e7-4ad6-8be2-7c2314ec6f18
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #3'
-  network: tcp
-  port: 51847
-  reality-opts:
-    public-key: S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc
-    short-id: '!!str 0eec442e7b34d2f2'
-  server: 3.9.135.156
-  servername: www.tesla.com
-  tls: false
-  type: vless
-  uuid: 391a01e9-b664-407b-9158-610fab3f5920
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #4'
   network: tcp
   port: 443
   reality-opts:
@@ -60,7 +41,7 @@ proxies:
   uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #5'
+  name: '🇬🇧[openproxylist.com] vless-GB #3'
   network: tcp
   port: 443
   reality-opts:
@@ -73,7 +54,7 @@ proxies:
   uuid: 4d583b2c-2f5a-47d0-8181-e95217fe8cd9
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #6'
+  name: '🇬🇧[openproxylist.com] vless-GB #4'
   network: tcp
   port: 443
   reality-opts:
@@ -86,7 +67,7 @@ proxies:
   uuid: e5d917f5-fc78-455e-bbb5-81d08715f3d6
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #7'
+  name: '🇬🇧[openproxylist.com] vless-GB #5'
   network: tcp
   port: 443
   reality-opts:
@@ -97,3 +78,23 @@ proxies:
   tls: false
   type: vless
   uuid: 1996007c-e7bc-464b-999b-cac28cec6c3e
+- client-fingerprint: chrome
+  name: '🇬🇧[openproxylist.com] vless-GB #6'
+  network: ws
+  port: 443
+  server: 129.121.95.159
+  servername: 129.121.95.159
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
+  ws-opts:
+    headers:
+      Host: 129.121.95.159
+    path: '%2Fconnect'
+- name: '🇬🇧[openproxylist.com] vless-GB #7'
+  port: 443
+  server: 83.147.18.3
+  tls: false
+  type: vless
+  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
