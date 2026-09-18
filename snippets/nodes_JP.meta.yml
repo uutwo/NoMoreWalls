@@ -9,6 +9,22 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
+- client-fingerprint: chrome
+  name: 日本-001
+  network: ws
+  port: 443
+  server: 64.204.49.68
+  servername: vp10.pages.dev
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  ws-opts:
+    headers:
+      Host: vp10.pages.dev
+    path: /
 - name: 日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -17,9 +33,16 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 🇯🇵[openproxylist.com] vless-JP
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵[openproxylist.com] vless-JP
+  network: tcp
   port: 50159
+  reality-opts:
+    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
+    short-id: '!!str 091e1c5db8451757'
   server: 154.31.114.248
+  servername: www.cloudflare.com
   tls: false
   type: vless
   uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
@@ -42,7 +65,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-- client-fingerprint: chrome
+- alterId: 0
+  cipher: auto
+  name: '🇯🇵[openproxylist.com] vmess-JP #2'
+  network: tcp
+  port: '16122'
+  server: zfd-jpv2.kunlun01dns.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: '🇯🇵[openproxylist.com] vless-JP #1'
   network: tcp
@@ -59,7 +92,7 @@ proxies:
   name: '🇯🇵[openproxylist.com] vless-JP #2'
   network: ws
   port: 443
-  server: 162.159.254.3
+  server: 172.67.156.147
   servername: jp3.yohototo.top
   skip-cert-verify: false
   tls: true
@@ -68,7 +101,7 @@ proxies:
   ws-opts:
     headers:
       Host: jp3.yohototo.top
-    path: '%2Ftyxyws'
+    path: /tyxyws
 - name: '🇯🇵[openproxylist.com] vless-JP #3'
   port: 443
   server: 137.220.221.179
