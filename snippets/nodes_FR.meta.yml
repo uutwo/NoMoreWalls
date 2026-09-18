@@ -7,25 +7,42 @@ proxies:
   sni: 35.181.169.140
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
-  name: 法国-001
-  network: ws
-  port: 2053
-  server: 141.227.137.177
-  servername: kkkk-xcd.pages.dev
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
-  ws-opts:
-    headers:
-      Host: kkkk-xcd.pages.dev
-    path: /?ed=2048
-- name: 🇫🇷[openproxylist.com] vless-FR
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇫🇷[openproxylist.com] vless-FR
+  network: tcp
   port: 40443
+  reality-opts:
+    public-key: 3cW_F0us0je_lhnl5xpwSxHyRfTQaKFELxWLr8jRzic
+    short-id: '!!str e496c7fe1cefc9ff'
   server: carina.yokkastars.com
+  servername: deepl.com
   tls: false
   type: vless
   uuid: 588456a5-f724-46a7-a08b-5d336d9f8f56
+- client-fingerprint: chrome
+  name: '🇫🇷[openproxylist.com] vless-FR #1'
+  network: tcp
+  port: 40443
+  reality-opts:
+    public-key: WFvn-RRJzpt2qV4xwj_R93gDr6dduIjkQKO3De3Y2Hc
+    short-id: '!!str 5d96'
+  server: 194.59.245.250
+  servername: deepl.com
+  tls: false
+  type: vless
+  uuid: e4371581-c418-4770-b09a-d630f18290a6
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+  name: '🇫🇷[openproxylist.com] vless-FR #2'
+  network: grpc
+  port: 9880
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+    short-id: '!!str aabb'
+  server: 176.123.162.100
+  servername: dl.google.com
+  tls: false
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef

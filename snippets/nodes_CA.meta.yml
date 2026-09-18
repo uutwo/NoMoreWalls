@@ -1,12 +1,16 @@
 proxies:
-- name: 加拿大+V2CROSS.COM
+- alpn:
+  - http/1.1
+  client-fingerprint: unsafe
+  name: 🇨🇦[openproxylist.com] vless-CA
   network: ws
-  password: humanity
   port: 443
-  server: 130.250.137.171
-  sni: www.ignitelimit.com
-  type: trojan
+  server: 104.21.70.21
+  servername: playlux.homes
+  tls: true
+  type: vless
+  uuid: efe19c5a-0ea1-4666-8a4c-4a33f4670775
   ws-opts:
     headers:
-      Host: www.ignitelimit.com
-    path: /assignment
+      Host: playlux.homes
+    path: /raccoonwsvless
