@@ -123,17 +123,17 @@ proxies:
   tls: false
   type: vless
   uuid: 60a2998c-cd85-562e-a3fd-396e4925dd3a
-- name: '🇩🇪[openproxylist.com] vless-DE #5'
-  network: tcp
+- client-fingerprint: chrome
+  name: '🇩🇪[openproxylist.com] vless-DE #5'
+  network: grpc
   port: 443
-  server: 91.99.59.248
+  reality-opts:
+    public-key: UeKjZBRFTnsqCNxXYT2pkLtdiBfYq1KDVDHW_NQN-Cg
+  server: 64.188.64.72
+  servername: p.primarymaster.online
   tls: false
   type: vless
-  uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
-  ws-opts:
-    headers:
-      Host: store.steampowered.com
-    path: /
+  uuid: e898ccd6-fa43-4740-974b-62e9f6fb9583
 - alterId: 0
   cipher: auto
   name: 🇩🇪[openproxylist.com] vmess-DE
@@ -144,22 +144,48 @@ proxies:
   tls: false
   type: vmess
   uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
-- name: '🇩🇪[openproxylist.com] vless-DE #6'
-  network: tcp
-  port: 53224
-  server: 95.179.169.44
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc
+  name: '🇩🇪[openproxylist.com] vless-DE #6'
+  network: grpc
+  port: 2053
+  reality-opts:
+    public-key: mzrVbIsEggpJfXR8M7yxki2vgv3sXWQdy1bGhXqatUY
+    short-id: '!!str 4881f8244d1b9021'
+  server: 31.184.244.162
+  servername: www.google.com
   tls: false
   type: vless
-  uuid: e4887910-bcfc-48f8-8cd4-abb592e181af
+  uuid: 60a361f9-3c45-4954-9e4c-92a85bda243d
 - name: '🇩🇪[openproxylist.com] vless-DE #7'
+  port: 2053
+  server: new3.smart-cats.ru
+  tls: false
+  type: vless
+  uuid: 60a361f9-3c45-4954-9e4c-92a85bda243d
+- name: '🇩🇪[openproxylist.com] vless-DE #8'
   port: 40443
   server: arcturus.yokkastars.com
   tls: false
   type: vless
   uuid: bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #9'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: '!!str e1f8a3b6'
+  server: 91.233.8.16
+  servername: tnt-cloud.ru
+  tls: false
+  type: vless
+  uuid: d427a02f-e0ea-4fce-9cfb-66c1866ca3ce
 - client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #8'
+  name: '🇩🇪[openproxylist.com] vless-DE #10'
   network: tcp
   port: 443
   reality-opts:
@@ -172,7 +198,7 @@ proxies:
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #9'
+  name: '🇩🇪[openproxylist.com] vless-DE #11'
   network: tcp
   port: 443
   reality-opts:
@@ -183,7 +209,7 @@ proxies:
   tls: false
   type: vless
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- name: '🇩🇪[openproxylist.com] vless-DE #10'
+- name: '🇩🇪[openproxylist.com] vless-DE #12'
   network: tcp
   port: 443
   server: 91.99.57.24
@@ -194,18 +220,7 @@ proxies:
     headers:
       Host: store.steampowered.com
     path: '%2F'
-- name: '🇩🇪[openproxylist.com] vless-DE #11'
-  network: tcp
-  port: 443
-  server: 46.224.170.213
-  tls: false
-  type: vless
-  uuid: cf990ae8-ee77-4436-aa3a-bbc2fb040c53
-  ws-opts:
-    headers:
-      Host: store.steampowered.com
-    path: /
-- name: '🇩🇪[openproxylist.com] vless-DE #12'
+- name: '🇩🇪[openproxylist.com] vless-DE #13'
   network: tcp
   port: 443
   server: 91.99.58.134
@@ -215,7 +230,7 @@ proxies:
   ws-opts:
     headers:
       Host: store.steampowered.com
-- name: '🇩🇪[openproxylist.com] vless-DE #13'
+- name: '🇩🇪[openproxylist.com] vless-DE #14'
   network: ws
   port: 2087
   server: 82.24.203.20
@@ -223,14 +238,17 @@ proxies:
   type: vless
   uuid: 5fcdc9b7-e70f-4a5c-85c3-e018ad818326
   ws-opts:
-    path: /fd5ba98a3970
-- name: '🇩🇪[openproxylist.com] vless-DE #14'
+    path: '%2Ffd5ba98a3970'
+- name: '🇩🇪[openproxylist.com] vless-DE #15'
+  network: ws
   port: 2087
   server: 163.8.195.241
   tls: false
   type: vless
   uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-- name: '🇩🇪[openproxylist.com] vless-DE #15'
+  ws-opts:
+    path: '%2F29c8fed7ca22'
+- name: '🇩🇪[openproxylist.com] vless-DE #16'
   network: ws
   port: 443
   server: 2.27.205.59
@@ -238,10 +256,10 @@ proxies:
   type: vless
   uuid: c21631d5-36c9-4664-b575-97eca17456be
   ws-opts:
-    path: '%2F'
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #16'
+  name: '🇩🇪[openproxylist.com] vless-DE #17'
   network: tcp
   port: 8765
   reality-opts:
@@ -252,7 +270,7 @@ proxies:
   tls: false
   type: vless
   uuid: df9f5aca-eda0-428f-a752-e53866153d12
-- name: '🇩🇪[openproxylist.com] vless-DE #17'
+- name: '🇩🇪[openproxylist.com] vless-DE #18'
   network: tcp
   port: 443
   server: ww6.levikogjgfdd.ir
@@ -262,8 +280,7 @@ proxies:
   ws-opts:
     headers:
       Host: store.steampowered.com
-    path: '%2F'
-- name: '🇩🇪[openproxylist.com] vless-DE #18'
+- name: '🇩🇪[openproxylist.com] vless-DE #19'
   network: tcp
   port: 443
   server: 91.99.50.192
@@ -279,7 +296,7 @@ proxies:
   name: '🇩🇪[openproxylist.com] vmess-DE #1'
   network: ws
   port: '443'
-  server: 212.95.34.195
+  server: 132.243.22.80
   servername: renderer-stream-2-62.mirra.now
   tls: true
   type: vmess
@@ -288,16 +305,15 @@ proxies:
     headers:
       Host: renderer-stream-2-62.mirra.now
     path: /api/v1/gpu-stream/socket
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #19'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
-    short-id: '!!str 00bca5982f82d083'
-  server: 144.31.168.95
-  servername: eu-central.cendora.ru
+- name: '🇩🇪[openproxylist.com] vless-DE #20'
+  network: ws
+  port: 8080
+  server: 104.21.70.21
+  servername: trex-panel-nubj0s.samifakor.workers.dev
   tls: false
   type: vless
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
+  ws-opts:
+    headers:
+      Host: trex-panel-nubj0s.samifakor.workers.dev
+    path: /stream/TrexBridge/ef859652a80e
