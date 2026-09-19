@@ -1,22 +1,53 @@
 proxies:
-- client-fingerprint: chrome
+- name: 🇸🇪SE(AzadNet.t.me)
+  network: tcp
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2053
+  server: 150.241.76.155
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+- name: 🇸🇪SE(AzadNet.t.me) (1)
+  network: tcp
+  password: Bw5Mz7QkVp
+  port: 443
+  server: 70.34.206.32
+  skip-cert-verify: true
+  sni: z-v2-077787.kailib.com
+  type: trojan
+- name: 🇸🇪SE(AzadNet.t.me) (2)
+  network: tcp
+  password: rYuChHcwQZskq9E0zdoR
+  port: 443
+  server: 193.180.209.21
+  sni: vpn5.rnmcnm.com
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 🇸🇪SE(AzadNet.t.me) (3)
+  network: tcp
+  password: e72c6ea7e61f4dcea568aa569fb9b771
+  port: 9443
+  server: 185.117.89.88
+  skip-cert-verify: true
+  sni: apple.com
+  type: trojan
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇸🇪[openproxylist.com] vless-SE
+  name: 🇸🇪SE(AzadNet.t.me) (4)
   network: tcp
   port: 443
   reality-opts:
-    public-key: CetY_ReGID1LBH275yWlxxOctI82PtgxR-fjYSRTKzM
-    short-id: '!!str 8a2b3c4d5e6f7012'
-  server: 31.76.3.34
-  servername: tradingview.com
-  skip-cert-verify: true
+    public-key: lE6w45X8Bwb0HscO6Wa5wnN0qlw7wUuaCW8-iYL5HAQ
+    short-id: '!!str bc609efa3b2d052f'
+  server: 164.37.105.2
+  servername: pnnsh.falsemirrov.com
   tls: false
   type: vless
-  uuid: 0d628b17-8ac4-49b9-a422-6b99077bfdf6
+  uuid: ff1b0b50-70dc-4bae-866e-55cff86f4d6d
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: TunService
-  name: '🇸🇪[openproxylist.com] vless-SE #1'
+  name: 🇸🇪[openproxylist.com] vless-SE
   network: grpc
   port: 33743
   reality-opts:
@@ -28,7 +59,7 @@ proxies:
   uuid: b3a11068-1a7e-4643-85de-7c82cce46943
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇸🇪[openproxylist.com] vless-SE #2'
+  name: '🇸🇪[openproxylist.com] vless-SE #1'
   network: tcp
   port: 443
   reality-opts:
@@ -39,3 +70,17 @@ proxies:
   tls: false
   type: vless
   uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+  name: '🇸🇪[openproxylist.com] vless-SE #2'
+  network: grpc
+  port: 9830
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+    short-id: '!!str aabb'
+  server: 213.171.25.178
+  servername: dl.google.com
+  tls: false
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
