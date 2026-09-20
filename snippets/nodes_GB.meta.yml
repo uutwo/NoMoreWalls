@@ -1,14 +1,33 @@
 proxies:
-- name: 阿联酋
-  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 英国+V2CROSS.COM
   port: 443
-  server: news.gazette.help
-  sni: news.gazette.help
+  reality-opts:
+    public-key: G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw
+    short-id: '!!str 4fa44664f6a566d3'
+  server: gb.superbuba.top
+  servername: gb.superbuba.top
   tls: false
-  type: hysteria2
+  type: vless
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇬🇧[openproxylist.com] vless-GB
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM
+    short-id: '!!str 9d84de9d9f7b85e9'
+  server: de1.edge-9d7c.com
+  servername: de1.edge-9d7c.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇬🇧[openproxylist.com] vless-GB #1'
   network: tcp
   port: 443
   reality-opts:
@@ -21,17 +40,39 @@ proxies:
   uuid: 6dff8e33-b201-4cbb-8f89-b9418702bff2
 - grpc-opts:
     grpc-service-name: vless
-  name: '🇬🇧[openproxylist.com] vless-GB #1'
+  name: '🇬🇧[openproxylist.com] vless-GB #2'
   network: grpc
   port: 2083
   server: 66.90.104.42
-  servername: /TELEGRAM_TM(@AZARBAYJAB1),TELEGRAM_TM(@AZARBAYJAB1),TELEGRAM_TM(@AZARBAYJAB1),TELEGRAM_TM(@AZARBAYJAB1),TELEGRAM_TM(@AZARBAYJAB1),TELEGRAM_TM(@AZARBAYJAB1),TELEGRAM_TM(@AZARBAYJAB1)
+  servername: '%2Ftelegram_tm%28%40azarbayjab1'
+  tls: false
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+- grpc-opts:
+    grpc-service-name: vless
+  name: '🇬🇧[openproxylist.com] vless-GB #3'
+  network: grpc
+  port: 2083
+  server: 66.90.105.210
   tls: false
   type: vless
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #2'
+  name: '🇬🇧[openproxylist.com] vless-GB #4'
+  network: tcp
+  port: 421
+  reality-opts:
+    public-key: zUdAvpr07q1Yd0Om-jc4-Vu4Un5tVird8FGoN-7W9Tg
+    short-id: '!!str a1facbc8575701ae'
+  server: 78.129.208.44
+  servername: chistomat.dry.care
+  tls: false
+  type: vless
+  uuid: a3c861cb-e1e7-4ad6-8be2-7c2314ec6f18
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇬🇧[openproxylist.com] vless-GB #5'
   network: tcp
   port: 51847
   reality-opts:
@@ -42,24 +83,3 @@ proxies:
   tls: false
   type: vless
   uuid: 391a01e9-b664-407b-9158-610fab3f5920
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #3'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 2ATxqiR22wlo3yXOHc43LFHM5NzWCdSGZLdBay_vJgM
-    short-id: '!!str e4a1b53b03eff60d'
-  server: 95.154.196.61
-  servername: strapi.io
-  tls: false
-  type: vless
-  uuid: e5d917f5-fc78-455e-bbb5-81d08715f3d6
-- name: '🇬🇧[openproxylist.com] vless-GB #4'
-  port: 443
-  server: 129.121.95.159
-  tls: false
-  type: vless
-  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
-  ws-opts:
-    path: '%2Fconnect'
