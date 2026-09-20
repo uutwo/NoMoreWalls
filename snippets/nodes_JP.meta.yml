@@ -1,4 +1,12 @@
 proxies:
+- name: 日本东京+technological.ro
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  port: 20561
+  server: msjp1.mangshe.xyz
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  tls: false
+  type: hysteria2
 - name: 日本
   obfs: salamander
   obfs-password: d0dd99b2b4da604123ce17b6d17072a2
@@ -9,6 +17,22 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
+- client-fingerprint: chrome
+  name: 日本-001
+  network: ws
+  port: 443
+  server: 64.204.49.68
+  servername: vp10.pages.dev
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  ws-opts:
+    headers:
+      Host: vp10.pages.dev
+    path: /
 - name: 日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -62,9 +86,3 @@ proxies:
   tls: false
   type: vless
   uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
-- name: '🇯🇵[openproxylist.com] vless-JP #2'
-  port: 443
-  server: 137.220.221.179
-  tls: false
-  type: vless
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
