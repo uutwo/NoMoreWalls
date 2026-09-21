@@ -23,15 +23,35 @@ proxies:
     headers:
       Host: kkkk-xcd.pages.dev
     path: /?ed=2048
-- client-fingerprint: chrome
-  name: 🇫🇷[openproxylist.com] vless-FR
-  network: tcp
-  port: 40443
-  reality-opts:
-    public-key: WFvn-RRJzpt2qV4xwj_R93gDr6dduIjkQKO3De3Y2Hc
-    short-id: '!!str 5d96'
-  server: 194.59.245.250
-  servername: deepl.com
+- name: 🇫🇷[openproxylist.com] vless-FR
+  port: 22222
+  server: 15.188.103.174
   tls: false
   type: vless
-  uuid: e4371581-c418-4770-b09a-d630f18290a6
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇫🇷[openproxylist.com] vless-FR #1'
+  port: 443
+  server: kama2.api3-max.ru
+  servername: kama2.api3-max.ru
+  tls: true
+  type: vless
+  uuid: cdd6bfce-781a-4454-b7d5-4778abb5c24f
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+  name: '🇫🇷[openproxylist.com] vless-FR #2'
+  network: grpc
+  port: 9880
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+    short-id: '!!str aabb'
+  server: 176.123.162.100
+  servername: dl.google.com
+  tls: false
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
