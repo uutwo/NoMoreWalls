@@ -1,12 +1,4 @@
 proxies:
-- name: 日本东京+technological.ro
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  port: 20561
-  server: msjp1.mangshe.xyz
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  tls: false
-  type: hysteria2
 - name: 日本
   obfs: salamander
   obfs-password: d0dd99b2b4da604123ce17b6d17072a2
@@ -86,12 +78,13 @@ proxies:
   tls: false
   type: vless
   uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
-- client-fingerprint: unsafe
+- client-fingerprint: chrome
   name: '🇯🇵[openproxylist.com] vless-JP #2'
   network: ws
   port: 443
-  server: 188.114.97.6
+  server: 162.159.254.3
   servername: jp3.yohototo.top
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
@@ -99,3 +92,10 @@ proxies:
     headers:
       Host: jp3.yohototo.top
     path: '%2Ftyxyws'
+- name: '🇯🇵[openproxylist.com] vless-JP #3'
+  network: tcp
+  port: 443
+  server: 137.220.221.179
+  tls: false
+  type: vless
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
