@@ -1,7 +1,20 @@
 proxies:
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇪🇪[openproxylist.com] vless-EE
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0
+    short-id: '!!str 7a3f9e2b1c8d4f6a'
+  server: 132.243.65.161
+  servername: ee.global-cdn.org
+  tls: false
+  type: vless
+  uuid: 4d08aa81-f729-4857-a2e9-06e48b8b9556
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '🇪🇪[openproxylist.com] vless-EE #1'
   network: tcp
   port: 443
   reality-opts:
@@ -14,7 +27,7 @@ proxies:
 - client-fingerprint: random
   grpc-opts:
     grpc-service-name: ee01-grpc-8e47a
-  name: '🇪🇪[openproxylist.com] vless-EE #1'
+  name: '🇪🇪[openproxylist.com] vless-EE #2'
   network: grpc
   port: 9443
   server: 185.255.179.11
