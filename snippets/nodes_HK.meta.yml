@@ -42,14 +42,33 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 🇭🇰[openproxylist.com] vless-HK
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇭🇰[openproxylist.com] vless-HK
+  network: tcp
   port: 11907
   server: 195.58.144.56
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
 - client-fingerprint: chrome
+  flow: xtls-rprx-vision
   name: '🇭🇰[openproxylist.com] vless-HK #1'
+  network: tcp
+  port: 13779
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: '!!str af1bdd293097b664'
+  server: 47.239.6.251
+  servername: tesla.com
+  tls: false
+  type: vless
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+- client-fingerprint: chrome
+  name: '🇭🇰[openproxylist.com] vless-HK #2'
   network: tcp
   port: 13779
   reality-opts:
@@ -64,8 +83,8 @@ proxies:
   cipher: auto
   name: 🇭🇰[openproxylist.com] vmess-HK
   network: tcp
-  port: '16114'
-  server: zfd-hkv1.kunlun01dns.com
+  port: '16115'
+  server: zfd-hkv2.kunlun01dns.com
   servername: ''
   tls: false
   type: vmess
@@ -74,9 +93,9 @@ proxies:
   cipher: auto
   name: '🇭🇰[openproxylist.com] vmess-HK #1'
   network: tcp
-  port: '21019'
-  server: dog-hk.kunlun01dns.com
+  port: '16113'
+  server: zfd-hkv2.kunlun01dns.com
   servername: ''
   tls: false
   type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
