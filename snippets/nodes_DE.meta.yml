@@ -9,65 +9,33 @@ proxies:
   sni: api.kermanshahi.org
   tls: false
   type: hysteria2
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 1000
-  name: 德国-001 |1.6MB/s
-  port: 54177
-  protocol: udp
-  server: 5.83.129.90
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  udp: true
-  up: 500
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 1000
-  name: 德国-002 |594KB/s
-  port: 20088
-  protocol: udp
-  server: 5.83.129.153
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  udp: true
-  up: 500
-- client-fingerprint: chrome
-  name: 德国-003
-  network: tcp
-  port: 8443
-  server: 5.230.135.136
-  servername: 1nf76rsu9r.stream-book.com
-  skip-cert-verify: false
-  tfo: false
+- grpc-opts:
+    grpc-service-name: api.v1.ApiService
+  name: 🇩🇪[openproxylist.com] vless-DE
+  network: grpc
+  port: 6215
+  server: 212.80.7.129
+  servername: cdn.astranet.ignorelist.com
   tls: true
   type: vless
-  udp: true
-  uuid: 23af657b-e7f0-4f65-85da-dc96b7f30f37
+  uuid: 2f2ae482-5a3e-455e-aad6-4ac28a82f64f
 - client-fingerprint: chrome
-  name: 德国-004
-  network: ws
-  port: 2096
-  server: 64.226.95.244
-  servername: cf3.schzyc.cc.cd
-  skip-cert-verify: false
-  tfo: false
-  tls: true
+  grpc-opts:
+    grpc-service-name: grpc_common2
+  name: '🇩🇪[openproxylist.com] vless-DE #1'
+  network: grpc
+  port: 46341
+  reality-opts:
+    public-key: AzPeaqr_BqAdCSN2X9stYwa2iPr5hXvmAcKXpDMK8T4
+    short-id: '!!str 2b819e'
+  server: 2.27.17.229
+  servername: www.sony-europe.com
+  tls: false
   type: vless
-  udp: true
-  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
-  ws-opts:
-    headers:
-      Host: cf3.schzyc.cc.cd
-    path: /proxyip=ProxyIP.CMLiussss.net
+  uuid: cfe85028-dde5-4a3d-890e-f43696a2b5f3
 - alterId: 0
   cipher: auto
-  name: 🇺🇸[openproxylist.com] vmess-US
+  name: 🇩🇪[openproxylist.com] vmess-DE
   network: ws
   port: '443'
   server: aidrivercat.org
@@ -79,6 +47,18 @@ proxies:
     headers:
       Host: aidrivercat.org
     path: /linkvws
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: ssz8kvl1tH0TUaFREVSV_X-ED0AR-eeaWpKg2jQM8D8
+  server: 150.241.71.245
+  servername: gag.fl.iki-servers.com
+  tls: false
+  type: vless
+  uuid: c795bdd5-0460-42bd-927b-fbff154d2ab5
 - alterId: 0
   cipher: auto
   name: '🇩🇪[openproxylist.com] vmess-DE #1'
@@ -89,30 +69,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- name: 🇩🇪[openproxylist.com] vless-DE
+- name: '🇩🇪[openproxylist.com] vless-DE #3'
   port: 443
   server: 31.77.161.15
   tls: false
   type: vless
   uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-- alpn:
-  - http/1.1
-  client-fingerprint: random
-  name: '🇩🇪[openproxylist.com] vless-DE #1'
-  network: ws
-  port: 9443
-  server: 185.255.179.11
-  servername: hub-de-03.hanvpn.cc
-  tls: true
-  type: vless
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
-  ws-opts:
-    headers:
-      Host: hub-de-03.hanvpn.cc
-    path: '%2Fde03-ws-8e47a'
 - grpc-opts:
     grpc-service-name: de04-grpc-8e47a
-  name: '🇩🇪[openproxylist.com] vless-DE #2'
+  name: '🇩🇪[openproxylist.com] vless-DE #4'
   network: grpc
   port: 9443
   server: 185.255.179.11
@@ -120,32 +85,20 @@ proxies:
   tls: true
   type: vless
   uuid: d9d0f208-d582-41d5-bb7b-742671402810
-- alpn:
-  - http/1.1
-  client-fingerprint: random
-  name: '🇩🇪[openproxylist.com] vless-DE #3'
-  network: ws
-  port: 9443
-  server: 185.255.179.11
-  servername: hub-de-01.hanvpn.cc
-  tls: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇩🇪[openproxylist.com] vless-DE #5'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: z_Rn0Vvq1GB39RhN6v7DhdtD-kS0XZa_je0h-no_hWs
+    short-id: '!!str 59eee550a1014198'
+  server: 103.109.234.243
+  servername: de10.delivery-4f1c.com
+  tls: false
   type: vless
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
-  ws-opts:
-    headers:
-      Host: hub-de-01.hanvpn.cc
-    path: '%2Fde01-ws-8e47a'
-- grpc-opts:
-    grpc-service-name: de05-grpc-8e47a
-  name: '🇩🇪[openproxylist.com] vless-DE #4'
-  network: grpc
-  port: 9443
-  server: 185.255.179.11
-  servername: hub-de-05.hanvpn.cc
-  tls: true
-  type: vless
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
-- name: '🇩🇪[openproxylist.com] vless-DE #5'
+  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
+- name: '🇩🇪[openproxylist.com] vless-DE #6'
   network: tcp
   port: 443
   server: 91.99.59.248
@@ -158,26 +111,13 @@ proxies:
     path: '%2F'
 - client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #6'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: '!!str c39cc7310a'
-  server: 82.39.171.12
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
   name: '🇩🇪[openproxylist.com] vless-DE #7'
   network: tcp
   port: 443
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: '!!str c39cc7310a'
-  server: 82.39.171.142
+  server: 82.39.171.12
   servername: yahoo.com
   tls: false
   type: vless
@@ -203,11 +143,13 @@ proxies:
   ws-opts:
     path: '%2Ffd5ba98a3970'
 - name: '🇩🇪[openproxylist.com] vless-DE #10'
-  port: 2087
-  server: 163.8.195.241
+  port: 443
+  server: 2.27.205.59
   tls: false
   type: vless
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  uuid: c21631d5-36c9-4664-b575-97eca17456be
+  ws-opts:
+    path: '%2F'
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: '🇩🇪[openproxylist.com] vless-DE #11'
@@ -221,39 +163,3 @@ proxies:
   tls: false
   type: vless
   uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #12'
-  network: tcp
-  port: 8765
-  reality-opts:
-    public-key: M08l5tDmJUYELykZCNYQyFgtR9Zc-A4ZGlUSLcUeS2c
-    short-id: '!!str 1bcc9177f3124b25'
-  server: 31.56.189.27
-  servername: srv-21bac9.vless.monster
-  tls: false
-  type: vless
-  uuid: df9f5aca-eda0-428f-a752-e53866153d12
-- name: '🇩🇪[openproxylist.com] vless-DE #13'
-  network: tcp
-  port: 443
-  server: 116.202.19.249
-  tls: false
-  type: vless
-  uuid: cf990ae8-ee77-4436-aa3a-bbc2fb040c53
-  ws-opts:
-    headers:
-      Host: store.steampowered.com
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: '🇩🇪[openproxylist.com] vless-DE #14'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
-    short-id: '!!str 00bca5982f82d083'
-  server: 144.31.168.95
-  servername: eu-central.cendora.ru
-  tls: false
-  type: vless
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
