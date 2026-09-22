@@ -1,21 +1,5 @@
 proxies:
 - client-fingerprint: chrome
-  name: 法国-001
-  network: ws
-  port: 2053
-  server: 141.227.137.177
-  servername: kkkk-xcd.pages.dev
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
-  ws-opts:
-    headers:
-      Host: kkkk-xcd.pages.dev
-    path: /?ed=2048
-- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇫🇷[openproxylist.com] vless-FR
   network: tcp
@@ -29,6 +13,16 @@ proxies:
   tls: false
   type: vless
   uuid: c795bdd5-0460-42bd-927b-fbff154d2ab5
+- alterId: 0
+  cipher: auto
+  name: 🇫🇷[openproxylist.com] vmess-FR
+  network: tcp
+  port: '22324'
+  server: 45.80.215.8
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: grpc-common3
@@ -43,3 +37,17 @@ proxies:
   tls: false
   type: vless
   uuid: 81dc0b61-f9fe-4ad6-8b4e-b8c067b73712
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+  name: '🇫🇷[openproxylist.com] vless-FR #2'
+  network: grpc
+  port: 9880
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+    short-id: '!!str aabb'
+  server: 176.123.162.100
+  servername: dl.google.com
+  tls: false
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
