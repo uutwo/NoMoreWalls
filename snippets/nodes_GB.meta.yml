@@ -1,20 +1,18 @@
 proxies:
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 英国+V2CROSS.COM
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
-    short-id: '!!str a1b2c3d4e5f67890'
-  server: 31.76.245.63
-  servername: dzen.ru
-  tls: false
+- grpc-opts:
+    grpc-service-name: grpc
+  name: 🇬🇧[openproxylist.com] vless-GB
+  network: grpc
+  port: 7443
+  server: greatbritain.lavivas.org
+  servername: greatbritain.lavivas.org
+  skip-cert-verify: false
+  tls: true
   type: vless
-  uuid: d72f05b0-b182-4783-a6f2-21cecc7d841a
+  uuid: 44e1105d-b46e-402f-933b-eaa136fcbb24
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇬🇧[openproxylist.com] vless-GB
+  name: '🇬🇧[openproxylist.com] vless-GB #1'
   network: tcp
   port: 9443
   reality-opts:
@@ -42,7 +40,7 @@ proxies:
     path: /linkvws
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #1'
+  name: '🇬🇧[openproxylist.com] vless-GB #2'
   network: tcp
   port: 9443
   reality-opts:
@@ -55,7 +53,7 @@ proxies:
   uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #2'
+  name: '🇬🇧[openproxylist.com] vless-GB #3'
   network: tcp
   port: 9443
   reality-opts:
@@ -66,7 +64,10 @@ proxies:
   tls: false
   type: vless
   uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
-- name: '🇬🇧[openproxylist.com] vless-GB #3'
+- grpc-opts:
+    grpc-service-name: vless
+  name: '🇬🇧[openproxylist.com] vless-GB #4'
+  network: grpc
   port: 2083
   server: 66.90.104.42
   tls: false

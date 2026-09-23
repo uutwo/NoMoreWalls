@@ -7,24 +7,26 @@ proxies:
   sni: gta.internet-card.sbs
   tls: false
   type: hysteria2
-- name: 🇷🇺[openproxylist.com] vless-RU
+- client-fingerprint: random
+  grpc-opts:
+    grpc-service-name: grpc-ru
+  name: 🇷🇺[openproxylist.com] vless-RU
+  network: grpc
   port: 443
-  server: 140.248.185.253
-  tls: false
+  server: xsru1.ddnsfree.com
+  servername: xsru1.ddnsfree.com
+  tls: true
   type: vless
-  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
-  ws-opts:
-    path: '%2F'
-- client-fingerprint: firefox
-  name: '🇷🇺[openproxylist.com] vless-RU #1'
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+- name: '🇷🇺[openproxylist.com] vless-RU #1'
   network: ws
   port: 443
   server: 46.8.200.91
   servername: cf3.rumedia-cdn.com
   tls: true
   type: vless
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
   ws-opts:
     headers:
       Host: cf3.rumedia-cdn.com
-    path: '%2Fcasc'
+    path: '%2Fcdn%2Fv3%2Flive'
