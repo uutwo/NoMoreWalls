@@ -1,16 +1,18 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
+- alpn:
+  - http/1.1
+  client-fingerprint: safari
   name: 🇪🇪[openproxylist.com] vless-EE
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  server: 95.85.224.17
-  servername: est1313.ggisopi.su
-  tls: false
+  network: ws
+  port: 8443
+  server: 93.123.39.203
+  servername: est.luxes.network
+  skip-cert-verify: false
+  tls: true
   type: vless
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  uuid: d544c858-b1ba-45b2-8868-8197daf2a6ee
+  ws-opts:
+    path: '%2Fassets'
 - client-fingerprint: random
   grpc-opts:
     grpc-service-name: ee01-grpc-8e47a
