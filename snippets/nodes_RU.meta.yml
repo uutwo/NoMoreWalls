@@ -1,4 +1,24 @@
 proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 俄罗斯+V2CROSS.COM
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 2ZUQYIhUijdJ1vRL8iR8RxjmJvRVHYp-JoWevQ2LyR4
+    short-id: '!!str 7bb730e3e6616d31'
+  server: 91.240.86.12
+  servername: yandex.ru
+  tls: false
+  type: vless
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+- name: '俄罗斯+V2CROSS.COM #1'
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  port: 4433
+  server: hk2.xiaoliyu.cyou
+  skip-cert-verify: true
+  tls: false
+  type: hysteria2
 - name: 俄罗斯
   password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
   port: 443
@@ -7,16 +27,3 @@ proxies:
   sni: gta.internet-card.sbs
   tls: false
   type: hysteria2
-- client-fingerprint: firefox
-  name: 🇷🇺[openproxylist.com] vless-RU
-  network: ws
-  port: 443
-  server: 46.8.200.91
-  servername: cf3.rumedia-cdn.com
-  tls: true
-  type: vless
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
-  ws-opts:
-    headers:
-      Host: cf3.rumedia-cdn.com
-    path: '%2Fcasc'
