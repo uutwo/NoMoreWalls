@@ -1,21 +1,17 @@
 proxies:
-- name: 日本东京+Oracle+Cloud
-  password: my_super_password_123
-  port: 5443
-  server: open.2ml.cc.cd
-  skip-cert-verify: true
-  tls: false
-  type: hysteria2
-- name: 日本
-  obfs: salamander
-  obfs-password: d0dd99b2b4da604123ce17b6d17072a2
-  password: 07a4fcf5553a80cf300374d325386038
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 日本+V2CROSS.COM
+  network: tcp
   port: 443
-  server: 141.147.151.58
-  skip-cert-verify: true
-  sni: www.bing.com
+  reality-opts:
+    public-key: sUDdxp5g9lRHlVEH6meJWXah84yhLDyVI7KuZhW-MTQ
+    short-id: '!!str b4e44a'
+  server: 103.245.229.32
+  servername: adminvps.ru
   tls: false
-  type: hysteria2
+  type: vless
+  uuid: 8bbe5178-a991-4a56-871c-553e2f8e9e70
 - name: 日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -34,32 +30,29 @@ proxies:
   tls: false
   type: vmess
   uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-- alterId: 0
-  cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #1'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵[openproxylist.com] vless-JP
   network: tcp
-  port: '4433'
-  server: 45.32.57.118
+  port: 11690
+  reality-opts:
+    public-key: Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg
+    short-id: '!!str 034885e346fd30'
+  server: 13.231.19.51
+  servername: www.tesla.com
   tls: false
-  type: vmess
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-- alterId: 0
-  cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #2'
-  network: tcp
-  port: '21014'
-  server: dog-jp.kunlun01dns.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-- alterId: 0
-  cipher: auto
-  name: '🇯🇵[openproxylist.com] vmess-JP #3'
-  network: tcp
-  port: '16122'
-  server: zfd-jpv2.kunlun01dns.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  type: vless
+  uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
+- client-fingerprint: unsafe
+  name: '🇯🇵[openproxylist.com] vless-JP #1'
+  network: ws
+  port: 443
+  server: 188.114.97.6
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'
