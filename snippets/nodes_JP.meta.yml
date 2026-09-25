@@ -1,29 +1,15 @@
 proxies:
-- name: 日本东京+Oracle+Cloud
-  password: my_super_password_123
-  port: 5443
-  server: open.2ml.cc.cd
-  skip-cert-verify: true
-  tls: false
-  type: hysteria2
-- name: 日本|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 3893
-  server: 35.73.128.210
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇯🇵[openproxylist.com] vmess-JP
-  network: tcp
-  port: 18112
-  server: oc.imfun.fun
-  servername: null
+  network: ws
+  port: 23462
+  server: 64.176.51.214
   tls: false
   type: vmess
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  uuid: 95c5abc1-018d-4628-89a7-25ab9c62ab74
+  ws-opts:
+    path: /a15206
 - alterId: 0
   cipher: auto
   name: '🇯🇵[openproxylist.com] vmess-JP #1'
@@ -33,3 +19,29 @@ proxies:
   tls: false
   type: vmess
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵[openproxylist.com] vless-JP
+  network: tcp
+  port: 11690
+  reality-opts:
+    public-key: Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg
+    short-id: '!!str 034885e346fd30'
+  server: 13.231.19.51
+  servername: www.tesla.com
+  tls: false
+  type: vless
+  uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
+- client-fingerprint: unsafe
+  name: '🇯🇵[openproxylist.com] vless-JP #1'
+  network: ws
+  port: 443
+  server: 188.114.97.6
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: '%2Ftyxyws'

@@ -1,7 +1,43 @@
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇸🇪[openproxylist.com] vless-SE
+  name: 瑞典+V2CROSS.COM
+  network: tcp
+  port: 2096
+  reality-opts:
+    public-key: DcAXpVZZ7_JtJqz9b6ax9gWWvkH_6icdC29j6keGPj8
+    short-id: '!!str c4e81a7b'
+  server: 159.194.209.203
+  servername: 5post-gate.x5.ru
+  tls: false
+  type: vless
+  uuid: 6796f262-ca34-4b8e-b86e-6c175c081f2e
+- name: 🇸🇪[openproxylist.com] vless-SE
+  network: ws
+  port: 8081
+  server: 143.246.194.60
+  tls: false
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  ws-opts:
+    path: '%2Fvless-test'
+- alpn:
+  - v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus
+  client-fingerprint: randomized
+  flow: xtls-rprx-vision
+  name: '🇸🇪[openproxylist.com] vless-SE #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
+  server: 143.246.193.215
+  servername: www.blocket.se
+  tls: false
+  type: vless
+  uuid: 77da6e30-ad4e-11f1-94d5-525400d1d4f7
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇸🇪[openproxylist.com] vless-SE #2'
   network: tcp
   port: 443
   reality-opts:
@@ -12,3 +48,16 @@ proxies:
   tls: false
   type: vless
   uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+  name: '🇸🇪[openproxylist.com] vless-SE #3'
+  network: grpc
+  port: 9830
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+  server: 176.108.246.110
+  servername: dl.google.com
+  tls: false
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
