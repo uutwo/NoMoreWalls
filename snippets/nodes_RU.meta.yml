@@ -1,17 +1,53 @@
 proxies:
-- alpn:
-  - http/1.1
-  client-fingerprint: firefox
-  name: 🇷🇺[openproxylist.com] vless-RU
-  network: ws
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 俄罗斯+V2CROSS.COM
+  network: tcp
   port: 443
-  server: fbsv6.guardora.pro
-  servername: fbsv6.guardora.pro
-  skip-cert-verify: false
+  reality-opts:
+    public-key: sS3x_ZygtA9uZ5WaYm7pHjy0_lPNUUK7kOSLz0BNhCs
+    short-id: '!!str 54ac91da'
+  server: 188.225.42.6
+  servername: app6.betust.net
+  tls: false
+  type: vless
+  uuid: 7cde4592-4758-415f-8b97-c188faa4d1c9
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '俄罗斯+V2CROSS.COM #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: XhzNlmMTdYr2pYTqiNNP6qWe7BkAgVHU-kZWXc9u9hY
+    short-id: '!!str 91c2269c'
+  server: 188.225.24.201
+  servername: app11.betust.net
+  tls: false
+  type: vless
+  uuid: 7cde4592-4758-415f-8b97-c188faa4d1c9
+- client-fingerprint: random
+  grpc-opts:
+    grpc-service-name: grpc-ru
+  name: 🇷🇺[openproxylist.com] vless-RU
+  network: grpc
+  port: 443
+  server: xsru1.ddnsfree.com
+  servername: xsru1.ddnsfree.com
   tls: true
   type: vless
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇷🇺[openproxylist.com] vless-RU #1'
+  network: ws
+  port: 443
+  server: 46.8.200.91
+  servername: cf3.rumedia-cdn.com
+  tls: true
+  type: vless
+  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
   ws-opts:
     headers:
-      Host: fbsv6.guardora.pro
-    path: '%2Fws'
+      Host: cf3.rumedia-cdn.com
+    path: '%2Fcdn%2Fv3%2Flive'
