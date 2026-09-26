@@ -3,16 +3,18 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.50
+  server: 104.16.174.34
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
+    headers:
+      Host: www.ignitelimit.com
     path: '%2Fassignment'
 - name: '美国+CloudFlare节点 #1'
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.109
+  server: 104.18.152.149
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -21,28 +23,58 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 172.67.188.109
+  server: 104.16.174.101
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #3'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '美国+CloudFlare节点 #3'
   network: ws
   password: humanity
   port: 443
-  server: 104.21.8.107
+  server: 172.67.221.242
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #4'
+  network: ws
+  password: humanity
+  port: 443
+  server: 162.159.254.191
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #5'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.152
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: 美国+加州
+  network: ws
+  password: humanity
+  port: 443
+  server: render.com
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     headers:
       Host: www.ignitelimit.com
     path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #4'
+- name: '美国+CloudFlare节点 #6'
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.37
-  skip-cert-verify: true
+  server: 104.16.174.71
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -51,17 +83,17 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.16.73.213
+  server: 172.67.149.60
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     path: /assignment
-- name: '美国+CloudFlare节点 #9'
+- name: '美国+CloudFlare节点 #8'
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.143
+  server: 104.16.174.124
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -70,7 +102,7 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.204
+  server: 104.18.152.113
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -79,7 +111,25 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.149
+  server: 104.18.152.230
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #12'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.174.117
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: '美国+CloudFlare节点 #13'
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.17.111.3
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -118,6 +168,19 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
+  network: ws
+  port: '2095'
+  server: 45.32.128.44
+  tls: false
+  type: vmess
+  uuid: 1da76fea-2360-40d7-99ce-7374971808bb
+  ws-opts:
+    headers:
+      Host: www.bing.com
+    path: 1da76fea-2360-40d7-99ce-7374971808bb-vm
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
   network: tcp
   port: '22324'
   server: 172.111.38.100
@@ -127,20 +190,10 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #2'
-  network: tcp
-  port: '22324'
-  server: 216.152.152.187
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #3'
   network: tcp
-  port: '22324'
-  server: 169.197.143.116
+  port: 22324
+  server: 216.152.152.187
   servername: ''
   tls: false
   type: vmess
@@ -150,7 +203,7 @@ proxies:
   name: '🇺🇸[openproxylist.com] vmess-US #4'
   network: tcp
   port: '22324'
-  server: 167.88.62.124
+  server: 169.197.143.116
   servername: ''
   tls: false
   type: vmess
@@ -160,8 +213,37 @@ proxies:
   name: '🇺🇸[openproxylist.com] vmess-US #5'
   network: tcp
   port: '22324'
+  server: 167.88.62.124
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #6'
+  network: tcp
+  port: '22324'
   server: 167.17.68.89
   servername: ''
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #7'
+  network: tcp
+  port: '12004'
+  server: 47.85.188.30
+  tls: false
+  type: vmess
+  uuid: 8b5552bd-4cc7-4cac-af08-81c21686fd4f
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #8'
+  network: tcp
+  port: '21011'
+  server: dog-us.kunlun01dns.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2

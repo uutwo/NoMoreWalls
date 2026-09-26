@@ -1,16 +1,20 @@
 proxies:
-- client-fingerprint: random
-  grpc-opts:
-    grpc-service-name: grpc-ru
-  name: 🇷🇺[openproxylist.com] vless-RU
-  network: grpc
+- name: 俄罗斯+V2CROSS.COM
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  port: 24443
+  server: 91.240.86.70
+  sni: hy.quattro-tech.ru
+  tls: false
+  type: hysteria2
+- name: 🇷🇺[openproxylist.com] vless-RU
   port: 443
-  server: xsru1.ddnsfree.com
-  servername: xsru1.ddnsfree.com
-  tls: true
+  server: 45.152.113.206
+  tls: false
   type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-- client-fingerprint: firefox
+  uuid: 859a537b-09cf-4bce-8da4-ecbb72950e3a
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
   name: '🇷🇺[openproxylist.com] vless-RU #1'
   network: ws
   port: 443
@@ -18,8 +22,8 @@ proxies:
   servername: cf3.rumedia-cdn.com
   tls: true
   type: vless
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
   ws-opts:
     headers:
       Host: cf3.rumedia-cdn.com
-    path: '%2Fcasc'
+    path: '%2Fcdn%2Fv3%2Flive'
