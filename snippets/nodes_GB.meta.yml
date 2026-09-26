@@ -1,15 +1,21 @@
 proxies:
-- name: 英国+V2CROSS.COM
-  password: a56619e2bed91121eabb97d20be207c3
-  port: 50160
-  server: 85.237.207.49
-  skip-cert-verify: true
-  sni: 85-237-207-49.liao.kdns.fr
+- client-fingerprint: ios
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+  name: 🇬🇧[openproxylist.com] vless-GB
+  network: grpc
+  port: 9881
+  reality-opts:
+    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
+    short-id: '!!str aa'
+  server: 176.123.167.90
+  servername: dl.google.com
   tls: false
-  type: hysteria2
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇬🇧[openproxylist.com] vless-GB
+  name: '🇬🇧[openproxylist.com] vless-GB #1'
   network: tcp
   port: 443
   reality-opts:
@@ -22,7 +28,7 @@ proxies:
   uuid: 0774160b-be44-4781-aad7-1a1745a36659
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #1'
+  name: '🇬🇧[openproxylist.com] vless-GB #2'
   network: tcp
   port: 9443
   reality-opts:
@@ -33,35 +39,9 @@ proxies:
   tls: false
   type: vless
   uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #2'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw
-    short-id: '!!str 4fa44664f6a566d3'
-  server: 31.76.39.153
-  servername: gb.superbuba.top
-  tls: false
-  type: vless
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-- client-fingerprint: firefox
+- client-fingerprint: safari
   flow: xtls-rprx-vision
   name: '🇬🇧[openproxylist.com] vless-GB #3'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw
-    short-id: '!!str 4fa44664f6a566d3'
-  server: 31.76.39.141
-  servername: gb.superbuba.top
-  tls: false
-  type: vless
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #4'
   network: tcp
   port: 9443
   reality-opts:
@@ -88,7 +68,7 @@ proxies:
     path: /linkvws
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #5'
+  name: '🇬🇧[openproxylist.com] vless-GB #4'
   network: tcp
   port: 9443
   reality-opts:
@@ -101,7 +81,7 @@ proxies:
   uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #6'
+  name: '🇬🇧[openproxylist.com] vless-GB #5'
   network: tcp
   port: 9443
   reality-opts:
@@ -112,16 +92,27 @@ proxies:
   tls: false
   type: vless
   uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
-- grpc-opts:
-    grpc-service-name: vless
-  name: '🇬🇧[openproxylist.com] vless-GB #7'
-  network: grpc
+- name: '🇬🇧[openproxylist.com] vless-GB #6'
+  network: ws
+  port: 443
+  server: 172.67.134.170
+  servername: jdzit4e4urks.xwzohsebujps.workers.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
+  ws-opts:
+    headers:
+      Host: jdzit4e4urks.xwzohsebujps.workers.dev
+    path: '%2Fstream%2FPANEL_ZEUS%2F635698a6bb9c%2Floc-0'
+- name: '🇬🇧[openproxylist.com] vless-GB #7'
   port: 2083
   server: 66.90.104.42
   tls: false
   type: vless
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-- grpc-opts:
+- client-fingerprint: ''
+  grpc-opts:
     grpc-service-name: vless
   name: '🇬🇧[openproxylist.com] vless-GB #8'
   network: grpc
