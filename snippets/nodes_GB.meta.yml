@@ -1,7 +1,33 @@
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
+  name: 英国+V2CROSS.COM
+  network: tcp
+  port: 2063
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  server: 31.77.13.19
+  servername: rusbid.de
+  tls: false
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+- client-fingerprint: random
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
   name: 🇬🇧[openproxylist.com] vless-GB
+  network: grpc
+  port: 9881
+  reality-opts:
+    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
+    short-id: '!!str aa'
+  server: 176.123.167.90
+  servername: dl.google.com
+  tls: false
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇬🇧[openproxylist.com] vless-GB #1'
   network: tcp
   port: 443
   reality-opts:
@@ -14,7 +40,7 @@ proxies:
   uuid: 0774160b-be44-4781-aad7-1a1745a36659
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #1'
+  name: '🇬🇧[openproxylist.com] vless-GB #2'
   network: tcp
   port: 9443
   reality-opts:
@@ -27,7 +53,7 @@ proxies:
   uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #2'
+  name: '🇬🇧[openproxylist.com] vless-GB #3'
   network: tcp
   port: 443
   reality-opts:
@@ -38,19 +64,6 @@ proxies:
   tls: false
   type: vless
   uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇬🇧[openproxylist.com] vless-GB #3'
-  network: tcp
-  port: 9443
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: '!!str ad20d2ba'
-  server: 194.150.166.108
-  servername: storage.yandexcloud.net
-  tls: false
-  type: vless
-  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇬🇧[openproxylist.com] vless-GB #4'
@@ -64,10 +77,7 @@ proxies:
   tls: false
   type: vless
   uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
-- grpc-opts:
-    grpc-service-name: vless
-  name: '🇬🇧[openproxylist.com] vless-GB #5'
-  network: grpc
+- name: '🇬🇧[openproxylist.com] vless-GB #5'
   port: 2083
   server: 66.90.104.42
   tls: false
