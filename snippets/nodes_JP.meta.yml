@@ -1,20 +1,27 @@
 proxies:
+- name: 日本东京+Oracle+Cloud
+  password: my_super_password_123
+  port: 5443
+  server: open.2ml.cc.cd
+  sni: open.2ml.cc.cd
+  tls: false
+  type: hysteria2
 - client-fingerprint: chrome
-  name: 日本东京+Oracle+Cloud
-  network: ws
-  port: 443
-  server: proxyip.jp.cmliussss.net
-  servername: vp10.pages.dev
-  tls: true
+  grpc-opts:
+    grpc-service-name: grpc
+  name: 🇯🇵[openproxylist.com] vless-JP
+  network: grpc
+  port: 8890
+  reality-opts:
+    public-key: DcHXqq0OOR8N-bd92fSrMjy2yrcAsG1Es7PesCOc7gc
+  server: 45.202.255.24
+  servername: addons.mozilla.org
+  tls: false
   type: vless
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  ws-opts:
-    headers:
-      Host: vp10.pages.dev
-    path: /
+  uuid: 45d87ca1-d006-44ac-b62a-cb03d04c7130
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇯🇵[openproxylist.com] vless-JP
+  name: '🇯🇵[openproxylist.com] vless-JP #1'
   network: tcp
   port: 443
   reality-opts:
@@ -47,20 +54,9 @@ proxies:
   type: vmess
   uuid: 95c5abc1-018d-4628-89a7-25ab9c62ab74
   ws-opts:
+    headers:
+      Host: 64.176.51.214
     path: /a15206
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇯🇵[openproxylist.com] vless-JP #1'
-  network: tcp
-  port: 50159
-  reality-opts:
-    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
-    short-id: '!!str 091e1c5db8451757'
-  server: 154.31.114.248
-  servername: www.cloudflare.com
-  tls: false
-  type: vless
-  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
 - alterId: 0
   cipher: auto
   name: '🇯🇵[openproxylist.com] vmess-JP #2'

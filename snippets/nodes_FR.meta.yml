@@ -1,20 +1,35 @@
 proxies:
 - name: 🇫🇷[openproxylist.com] vless-FR
-  port: 22222
+  network: tcp
+  port: 22224
   server: 13.37.167.120
   tls: false
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - name: '🇫🇷[openproxylist.com] vless-FR #1'
+  network: tcp
   port: 22222
   server: 35.180.175.72
   tls: false
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇫🇷[openproxylist.com] vless-FR #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I
+    short-id: '!!str b390e0a721d242b0'
+  server: 137.74.16.237
+  servername: www.icloud.com
+  tls: false
+  type: vless
+  uuid: aaec4e42-a095-44b6-a239-f16d234a0798
+- client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: grpc-common3
-  name: '🇫🇷[openproxylist.com] vless-FR #2'
+  name: '🇫🇷[openproxylist.com] vless-FR #3'
   network: grpc
   port: 35108
   reality-opts:
