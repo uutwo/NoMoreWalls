@@ -1,14 +1,18 @@
 proxies:
-- name: Telegram 🆔@cnetvpn 🇷🇺
-  obfs: salamander
-  obfs-password: 09p333uviv2qal0y
-  password: 617z9r1mbzbm1t5z
-  port: 52000
-  server: giftcard.gisora.ir
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇩🇪[openproxylist.com] vless-DE #5'
+  network: ws
+  port: 14443
+  server: 95.163.232.171
+  servername: media-se.compressor.work
   skip-cert-verify: false
-  sni: giftcard.gisora.ir
-  tls: false
-  type: hysteria2
+  tls: true
+  type: vless
+  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
+  ws-opts:
+    path: /ws
 - client-fingerprint: random
   grpc-opts:
     grpc-service-name: grpc-ru
