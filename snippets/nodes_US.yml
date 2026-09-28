@@ -3,25 +3,18 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 162.159.136.234
+  server: join-telegram-channel-tirexnet.trex.kdns.fr
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    path: '%2Fassignment'
-- name: 美国+加州
-  network: ws
-  password: humanity
-  port: 443
-  server: render.com
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
     path: '%2Fassignment'
 - name: '美国+CloudFlare节点 #1'
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.14
+  server: 104.18.152.175
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -30,8 +23,7 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.18.12.149
-  skip-cert-verify: false
+  server: 104.18.152.230
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -40,7 +32,7 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.20.6.134
+  server: 104.18.152.233
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -49,42 +41,25 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.185
+  server: 104.18.152.204
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    headers:
-      Host: www.ignitelimit.com
     path: '%2Fassignment'
 - name: '美国+CloudFlare节点 #5'
   network: ws
   password: humanity
   port: 443
-  server: join-telegram-channel-tirexnet.trex.kdns.fr
+  server: 104.18.152.113
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    headers:
-      Host: www.ignitelimit.com
     path: '%2Fassignment'
-- alpn:
-  - http/1.1
-  name: 美国+乔治亚洲亚特兰大Fastly节点
-  network: ws
-  password: MiTiVPN
-  port: 443
-  server: 151.101.56.9
-  sni: ssl.fastly.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: mitivpn---gb--s---mitivpn-1.global.ssl.fastly.net
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
 - name: '美国+CloudFlare节点 #6'
   network: ws
   password: humanity
   port: 443
-  server: 104.18.15.230
+  server: 104.16.174.33
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -93,7 +68,7 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.72
+  server: 104.16.174.6
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
@@ -104,30 +79,45 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.73
+  server: 104.16.174.22
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
-    path: '%2Fassignment'
+    path: '%2F%2Fassignment'
 - name: '美国+CloudFlare节点 #9'
   network: ws
   password: humanity
   port: 443
-  server: 104.26.15.137
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '美国+CloudFlare节点 #10'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.124
+  server: 104.18.152.155
   sni: www.ignitelimit.com
   type: trojan
   ws-opts:
     headers:
       Host: www.ignitelimit.com
+    path: '%2Fassignment'
+- alpn:
+  - http/1.1
+  - h2
+  - h3
+  name: '美国+CloudFlare节点 #10'
+  network: ws
+  password: humanity
+  port: 443
+  server: 198.41.223.96
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- alpn:
+  - http/1.1
+  name: 美国+加州
+  network: ws
+  password: humanity
+  port: 443
+  server: 216.24.57.7
+  sni: www.ignitelimit.com
+  type: trojan
+  ws-opts:
     path: '%2Fassignment'
 - alterId: 0
   cipher: auto
@@ -169,18 +159,28 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  name: '🇺🇸[openproxylist.com] vmess-US #2'
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
   network: ws
   port: 443
-  server: khasav.org
+  server: 66.163.115.23
   servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: khasav.org
+      Host: ''
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #2'
+  network: tcp
+  port: '22324'
+  server: 216.152.152.187
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #3'
@@ -211,3 +211,9 @@ proxies:
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- name: 🇺🇸[openproxylist.com] trojan-U...
+  password: sg-trojan-2026
+  port: 443
+  server: 43.173.90.202
+  sni: sg-proxy.local
+  type: trojan

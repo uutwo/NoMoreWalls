@@ -1,1 +1,51 @@
-proxies: []
+proxies:
+- client-fingerprint: chrome
+  name: 俄罗斯+V2CROSS.COM
+  network: ws
+  port: 14443
+  server: 95.163.232.171
+  servername: media-se.compressor.work
+  tls: true
+  type: vless
+  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
+  ws-opts:
+    headers:
+      Host: media-se.compressor.work
+    path: '%2Fws'
+- client-fingerprint: chrome
+  name: 英国-001
+  network: ws
+  port: 2096
+  server: 91.193.58.108
+  servername: free-server.techsonic.dev
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  ws-opts:
+    headers:
+      Host: free-server.techsonic.dev
+    path: /free-server.techsonic.dev
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺[openproxylist.com] vmess-RU
+  network: tcp
+  port: '11556'
+  server: 158.160.211.200
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: e2733dbc-1bc6-4835-b90a-447806f9efcd
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
+  name: 🇷🇺[openproxylist.com] vless-RU
+  network: grpc
+  port: 443
+  server: 72.4.65.116
+  servername: assets-de2.pleiades.codes
+  tls: true
+  type: vless
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
