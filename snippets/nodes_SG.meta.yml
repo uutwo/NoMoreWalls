@@ -24,20 +24,31 @@ proxies:
 - name: '🇸🇬[openproxylist.com] vless-SG #1'
   network: ws
   port: 80
+  server: 5.223.19.211
+  tls: false
+  type: vless
+  uuid: 4b8a0930-1c36-4efe-b4fe-21f9ad97905c
+  ws-opts:
+    path: /
+- name: '🇸🇬[openproxylist.com] vless-SG #2'
+  network: ws
+  port: 80
   server: 5.223.41.93
   tls: false
   type: vless
   uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
   ws-opts:
     path: /
-- name: '🇸🇬[openproxylist.com] vless-SG #2'
-  network: ws
-  port: 8880
-  server: 45.80.111.45
+- client-fingerprint: firefox
+  name: '🇸🇬[openproxylist.com] vless-SG #3'
+  network: tcp
+  port: 2053
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: '!!str 87829de0e2bb82cb'
+  server: 217.217.254.126
+  servername: www.cloudflare.com
+  skip-cert-verify: true
   tls: false
   type: vless
-  uuid: 5ffd914e-9594-4198-8327-145f096f8e4c
-  ws-opts:
-    headers:
-      Host: cnd.singapure.mygold.stream
-    path: /cdn/assets/stream
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
