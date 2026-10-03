@@ -1,4 +1,12 @@
 proxies:
+- name: 新加坡+甲骨文机房
+  password: f87376e17da040ed04c9665ce8972930
+  port: 50160
+  server: 138.2.73.238
+  skip-cert-verify: true
+  sni: 138.2.73.238
+  tls: false
+  type: hysteria2
 - name: 新加坡|@ripaojiedian
   network: tcp
   password: AA885B42-133C-3828-FB69-E45105C06092
@@ -10,24 +18,17 @@ proxies:
 - name: 🇸🇬[openproxylist.com] trojan-S...
   password: UX82473651
   port: 443
-  server: glowing-marmoset.rooster465.autos
+  server: desired-boxer.rooster465.autos
   skip-cert-verify: true
-  sni: glowing-marmoset.rooster465.autos
+  sni: desired-boxer.rooster465.autos
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬[openproxylist.com] vmess-SG
-  network: ws
+- name: '🇸🇬[openproxylist.com] trojan-S... #1'
+  password: UX82473651
   port: 443
-  server: 2nj8qyoHuZwgCP8J.v.3dns.vip
-  servername: 2nj8qyoHuZwgCP8J.v.3dns.vip
-  tls: true
-  type: vmess
-  uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
-  ws-opts:
-    headers:
-      Host: 2nj8qyoHuZwgCP8J.v.3dns.vip
-    path: /ws-vmess
+  server: real-cardinal.rooster465.autos
+  skip-cert-verify: true
+  sni: real-cardinal.rooster465.autos
+  type: trojan
 - name: 🇸🇬[openproxylist.com] vless-SG
   network: ws
   port: 8443
@@ -40,7 +41,32 @@ proxies:
     headers:
       Host: speed.dulacloud.store
     path: /dula?Telegram-WangCai2fp=chrome
-- name: '🇸🇬[openproxylist.com] vless-SG #1'
+- client-fingerprint: chrome
+  name: '🇸🇬[openproxylist.com] vless-SG #1'
+  network: ws
+  port: 443
+  server: 104.16.10.235
+  servername: u.srilankangrill.online
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  ws-opts:
+    headers:
+      Host: u.srilankangrill.online
+    path: '%2F'
+- name: '🇸🇬[openproxylist.com] vless-SG #2'
+  network: ws
+  port: 80
+  server: support.zoom.us
+  tls: false
+  type: vless
+  uuid: 9b0025a3-3a36-4915-b4e1-89c5cd65c9cb
+  ws-opts:
+    headers:
+      Host: onhit.shalana.shop
+    path: /shalana
+- name: '🇸🇬[openproxylist.com] vless-SG #3'
   network: ws
   port: 80
   server: 5.223.41.93

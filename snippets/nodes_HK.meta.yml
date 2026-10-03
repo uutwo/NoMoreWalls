@@ -1,4 +1,12 @@
 proxies:
+- name: 香港+V2CROSS.COM
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: vpn-hk-004.fastervpn.world
+  skip-cert-verify: true
+  sni: vpn-hk-004.fastervpn.world
+  tls: false
+  type: hysteria2
 - alterId: 2
   cipher: auto
   name: 香港|@ripaojiedian
@@ -41,6 +49,17 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
+- name: 🇭🇰[openproxylist.com] vless-HK
+  network: ws
+  port: 26506
+  server: 216.38.170.8
+  tls: false
+  type: vless
+  uuid: 593c2ff4-f051-4859-8449-b0130e2991df
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /04235e8c-cea8-4f16-8934-b704a89b40cb.live238.m3u8
 - alterId: 0
   cipher: auto
   name: 🇭🇰[openproxylist.com] vmess-HK
@@ -73,8 +92,8 @@ proxies:
   cipher: auto
   name: '🇭🇰[openproxylist.com] vmess-HK #2'
   network: ws
-  port: 443
-  server: aksai.org
+  port: '443'
+  server: 194.99.79.26
   servername: aksai.org
   tls: true
   type: vmess

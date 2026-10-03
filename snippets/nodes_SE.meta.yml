@@ -1,44 +1,21 @@
 proxies:
-- name: Telegram 🆔@cnetvpn 🇸🇪
-  obfs: salamander
-  obfs-password: fuw2k1ddrouwxr3u
-  password: vz86jgszv4zszchv
-  port: 52062
-  server: giftcard.gateway-stream.com
-  skip-cert-verify: false
-  sni: giftcard.gateway-stream.com
-  tls: false
-  type: hysteria2
-- client-fingerprint: ios
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
+- client-fingerprint: chrome
   name: 🇸🇪[openproxylist.com] vless-SE
-  network: grpc
-  port: 9881
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-    short-id: '!!str aabbccdd'
-  server: 176.123.165.25
-  servername: dl.google.com
-  tls: false
+  network: ws
+  port: 443
+  server: sub.merky.top
+  servername: sub.merky.top
+  skip-cert-verify: false
+  tls: true
   type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-- client-fingerprint: random
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-  name: '🇸🇪[openproxylist.com] vless-SE #1'
-  network: grpc
-  port: 9881
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-  server: 176.109.104.103
-  servername: dl.google.com
-  tls: false
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  ws-opts:
+    headers:
+      Host: sub.merky.top
+    path: '%2Fmerky-connect%2Fde6%2F'
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '🇸🇪[openproxylist.com] vless-SE #2'
+  name: '🇸🇪[openproxylist.com] vless-SE #1'
   network: tcp
   port: 443
   reality-opts:
@@ -52,7 +29,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: grpce5bb9e71
-  name: '🇸🇪[openproxylist.com] vless-SE #3'
+  name: '🇸🇪[openproxylist.com] vless-SE #2'
   network: grpc
   port: 2053
   reality-opts:
