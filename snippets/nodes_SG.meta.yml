@@ -1,4 +1,12 @@
 proxies:
+- name: 新加坡+甲骨文机房
+  password: f87376e17da040ed04c9665ce8972930
+  port: 50160
+  server: 138.2.73.238
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
 - name: 新加坡|@ripaojiedian
   network: tcp
   password: AA885B42-133C-3828-FB69-E45105C06092
@@ -7,12 +15,25 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- client-fingerprint: unsafe
-  name: 🇸🇬[openproxylist.com] vless-SG
+- name: 🇸🇬[openproxylist.com] vless-SG
+  network: ws
+  port: 8443
+  server: 89.116.250.7
+  servername: speed.dulacloud.store
+  tls: false
+  type: vless
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  ws-opts:
+    headers:
+      Host: speed.dulacloud.store
+    path: /dula?Telegram-WangCai2fp=chromesecurity=tls
+- client-fingerprint: chrome
+  name: '🇸🇬[openproxylist.com] vless-SG #1'
   network: ws
   port: 443
-  server: 104.16.10.199
+  server: 104.21.5.75
   servername: u.srilankangrill.online
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
@@ -20,7 +41,21 @@ proxies:
     headers:
       Host: u.srilankangrill.online
     path: '%2F'
-- name: '🇸🇬[openproxylist.com] vless-SG #1'
+- client-fingerprint: chrome
+  name: '🇸🇬[openproxylist.com] vless-SG #2'
+  network: ws
+  port: 2096
+  server: free-server.techsonic.dev
+  servername: free-server.techsonic.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  ws-opts:
+    headers:
+      Host: free-server.techsonic.dev
+    path: /free-server.techsonic.dev
+- name: '🇸🇬[openproxylist.com] vless-SG #3'
   network: ws
   port: 80
   server: 5.223.41.93
@@ -29,27 +64,3 @@ proxies:
   uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
   ws-opts:
     path: /
-- client-fingerprint: firefox
-  name: '🇸🇬[openproxylist.com] vless-SG #2'
-  network: tcp
-  port: 2053
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: '!!str 87829de0e2bb82cb'
-  server: 217.217.254.126
-  servername: www.cloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-- name: '🇸🇬[openproxylist.com] vless-SG #3'
-  network: ws
-  port: 8880
-  server: 45.80.111.45
-  tls: false
-  type: vless
-  uuid: 5ffd914e-9594-4198-8327-145f096f8e4c
-  ws-opts:
-    headers:
-      Host: cnd.singapure.mygold.stream
-    path: /cdn/assets/stream
