@@ -42,19 +42,23 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #1'
-  network: tcp
-  port: 22324
-  server: 216.152.152.187
-  servername: ''
-  tls: false
+  network: ws
+  port: '443'
+  server: 66.163.115.23
+  servername: aidrivercat.org
+  tls: true
   type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: aidrivercat.org
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #2'
   network: tcp
   port: '22324'
-  server: 169.197.143.116
+  server: 216.152.152.187
   servername: ''
   tls: false
   type: vmess
@@ -64,7 +68,7 @@ proxies:
   name: '🇺🇸[openproxylist.com] vmess-US #3'
   network: tcp
   port: '22324'
-  server: 167.88.62.124
+  server: 169.197.143.116
   servername: ''
   tls: false
   type: vmess
@@ -72,14 +76,26 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '🇺🇸[openproxylist.com] vmess-US #4'
-  network: ws
-  port: 443
-  server: 167.17.68.89
-  servername: null
-  tls: true
+  network: tcp
+  port: '22324'
+  server: 167.88.62.124
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: vspeedfast.org
-    path: /linkvws
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #5'
+  network: tcp
+  port: '22324'
+  server: 167.17.68.89
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- name: '🇺🇸[openproxylist.com] trojan-U... #2'
+  password: sg-trojan-2026
+  port: 443
+  server: 43.173.90.202
+  sni: sg-proxy.local
+  type: trojan

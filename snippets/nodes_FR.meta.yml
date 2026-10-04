@@ -12,31 +12,20 @@ proxies:
   type: vless
   uuid: d90087c3-54f5-4283-a13f-615260c8b0c7
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
-    short-id: '!!str 9e4eced6e98ed4d4'
-  server: 194.113.235.66
-  servername: github.com
-  tls: false
-  type: vless
-  uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
-- grpc-opts:
+  grpc-opts:
     grpc-service-name: cdn.v1.AssetService
-  name: '🇫🇷[openproxylist.com] vless-FR #2'
+  name: '🇫🇷[openproxylist.com] vless-FR #1'
   network: grpc
   port: 443
   server: 143.246.208.113
   servername: assets-fr4.pleiades.codes
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #3'
+  name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: tcp
   port: 443
   reality-opts:
@@ -47,13 +36,17 @@ proxies:
   tls: false
   type: vless
   uuid: aaec4e42-a095-44b6-a239-f16d234a0798
-- alterId: 0
-  cipher: auto
-  name: 🇫🇷[openproxylist.com] vmess-FR
-  network: tcp
-  port: '22324'
-  server: 45.80.215.8
-  servername: ''
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc-common3
+  name: '🇫🇷[openproxylist.com] vless-FR #3'
+  network: grpc
+  port: 35108
+  reality-opts:
+    public-key: X_lOw5Zz4SJBa1cRHV4dAq5msYE-ClY5-WNcBmBWRxg
+    short-id: '!!str 52add08b86a5ccea'
+  server: 152.228.139.33
+  servername: www.nvidia.com
   tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  type: vless
+  uuid: 81dc0b61-f9fe-4ad6-8b4e-b8c067b73712
