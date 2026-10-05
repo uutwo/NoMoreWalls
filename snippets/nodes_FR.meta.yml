@@ -1,7 +1,18 @@
 proxies:
+- name: 🇫🇷[openproxylist.com] vless-FR
+  network: tcp
+  port: 2045
+  server: am2d.lynch.ir
+  tls: false
+  type: vless
+  uuid: d7e99010-e7c3-4978-9d30-2e63882dcfbe
+  ws-opts:
+    headers:
+      Host: speedtest.net
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇫🇷[openproxylist.com] vless-FR
+  name: '🇫🇷[openproxylist.com] vless-FR #1'
   network: tcp
   port: 443
   reality-opts:
@@ -13,7 +24,7 @@ proxies:
   uuid: d90087c3-54f5-4283-a13f-615260c8b0c7
 - grpc-opts:
     grpc-service-name: cdn.v1.AssetService
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
+  name: '🇫🇷[openproxylist.com] vless-FR #2'
   network: grpc
   port: 443
   server: 143.246.208.113
@@ -22,16 +33,3 @@ proxies:
   tls: true
   type: vless
   uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #2'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I
-    short-id: '!!str b390e0a721d242b0'
-  server: 137.74.16.237
-  servername: www.icloud.com
-  tls: false
-  type: vless
-  uuid: aaec4e42-a095-44b6-a239-f16d234a0798
