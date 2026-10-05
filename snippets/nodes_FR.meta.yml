@@ -1,18 +1,7 @@
 proxies:
-- name: 🇫🇷[openproxylist.com] vless-FR
-  network: tcp
-  port: 2045
-  server: am2d.lynch.ir
-  tls: false
-  type: vless
-  uuid: d7e99010-e7c3-4978-9d30-2e63882dcfbe
-  ws-opts:
-    headers:
-      Host: speedtest.net
-    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇫🇷[openproxylist.com] vless-FR #1'
+  name: 🇫🇷[openproxylist.com] vless-FR
   network: tcp
   port: 443
   reality-opts:
@@ -22,9 +11,10 @@ proxies:
   tls: false
   type: vless
   uuid: d90087c3-54f5-4283-a13f-615260c8b0c7
-- grpc-opts:
+- client-fingerprint: chrome
+  grpc-opts:
     grpc-service-name: cdn.v1.AssetService
-  name: '🇫🇷[openproxylist.com] vless-FR #2'
+  name: '🇫🇷[openproxylist.com] vless-FR #1'
   network: grpc
   port: 443
   server: 143.246.208.113

@@ -1,17 +1,7 @@
 proxies:
-- name: Telegram 🆔@cnetvpn 🇸🇪
-  obfs: salamander
-  obfs-password: fuw2k1ddrouwxr3u
-  password: vz86jgszv4zszchv
-  port: 52062
-  server: giftcard.gateway-stream.com
-  skip-cert-verify: false
-  sni: giftcard.gateway-stream.com
-  tls: false
-  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇸🇪[openproxylist.com] vless-SE
+  name: '🇸🇪[openproxylist.com] vless-SE #1'
   network: tcp
   port: 443
   reality-opts:
@@ -22,17 +12,17 @@ proxies:
   tls: false
   type: vless
   uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
-- name: '🇸🇪[openproxylist.com] vless-SE #1'
+- name: '🇸🇪[openproxylist.com] vless-SE #2'
   port: 443
   server: 132.243.231.4
   tls: false
   type: vless
   uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
 - client-fingerprint: chrome
-  name: '🇸🇪[openproxylist.com] vless-SE #2'
+  name: '🇸🇪[openproxylist.com] vless-SE #3'
   network: ws
   port: 443
-  server: 94.143.231.146
+  server: sub.merky.top
   servername: sub.merky.top
   skip-cert-verify: false
   tls: true
@@ -41,10 +31,10 @@ proxies:
   ws-opts:
     headers:
       Host: sub.merky.top
-    path: /merky-connect/de6/
-- client-fingerprint: firefox
+    path: '%2Fmerky-connect%2Fde6%2F'
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇸🇪[openproxylist.com] vless-SE #3'
+  name: '🇸🇪[openproxylist.com] vless-SE #4'
   network: tcp
   port: 443
   reality-opts:
@@ -55,3 +45,17 @@ proxies:
   tls: false
   type: vless
   uuid: 2412bd96-925b-43f2-81d1-0ed4f0793699
+- client-fingerprint: safari
+  grpc-opts:
+    grpc-service-name: grpce5bb9e71
+  name: '🇸🇪[openproxylist.com] vless-SE #5'
+  network: grpc
+  port: 2053
+  reality-opts:
+    public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
+    short-id: '!!str d0ea1847066af5a6'
+  server: 62.60.159.81
+  servername: www.samsung.com
+  tls: false
+  type: vless
+  uuid: fc00adfb-232a-46ce-8b93-0c70e516aa8a
