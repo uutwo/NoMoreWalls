@@ -89,33 +89,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- alpn:
-  - http/1.1
-  name: 美国+V2CROSS.COM
-  network: ws
-  password: mitivpn
-  port: 443
-  server: 199.232.78.160
-  skip-cert-verify: false
-  sni: ssl.fastly.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: mitivpn---deb--s---mitivpn-2.global.ssl.fastly.net
-    path: '%2F---%40MetiVIP---%40MetiVIP%2F---%40MetiVIP---%40MetiVIP%2F---%40MetiVIP---%40MetiVIP%2Fdes---%40MetiVIP---%40MetiVIP%2F---%40MetiVIP---%40MetiVIP%2F---%40MetiVIP---%40MetiVIP'
-- alpn:
-  - http/1.1
-  name: '美国+V2CROSS.COM #1'
-  network: ws
-  password: mitivpn
-  port: 443
-  server: 167.82.76.7
-  skip-cert-verify: false
-  sni: ssl.fastly.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: mitivpn---deb--s---mitivpn-4.global.ssl.fastly.net
 - alterId: 64
   cipher: auto
   name: 中国-002
@@ -217,11 +190,11 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 🇧🇷[openproxylist.com] vmess-BR
+  name: 🇮🇳[openproxylist.com] vmess-IN
   network: ws
   port: 443
   server: aksai.org
-  servername: aksai.org
+  servername: null
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -246,22 +219,29 @@ proxies:
   port: 28101
   server: 209.248.32.116
   type: trojan
+- name: 🇯🇵[openproxylist.com] trojan-J...
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 45.32.52.173
+  skip-cert-verify: true
+  sni: 45.32.52.173
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇰🇷[openproxylist.com] vmess-KR
+  network: tcp
+  port: '21004'
+  server: dog-kr.kunlun01dns.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
 - name: 🇺🇸[openproxylist.com] trojan-U...
   password: UX82473651
   port: 443
   server: ultimate-jaguar.rooster465.autos
   sni: ultimate-jaguar.rooster465.autos
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸[openproxylist.com] vmess-US
-  network: tcp
-  port: '2053'
-  server: 45.39.255.99
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d49a2534-7ac4-429f-879d-de48296d19b4
 - name: 🇰🇷[openproxylist.com] trojan-K...
   password: UX82473651
   port: 443
@@ -287,7 +267,7 @@ proxies:
   server: meet-goshawk.rooster465.autos
   sni: meet-goshawk.rooster465.autos
   type: trojan
-- name: 🇯🇵[openproxylist.com] trojan-J...
+- name: '🇯🇵[openproxylist.com] trojan-J... #1'
   password: UX82473651
   port: 443
   server: prime-corgi.rooster465.autos
@@ -308,8 +288,7 @@ proxies:
   name: '🇭🇰[openproxylist.com] vmess-HK #1'
   network: ws
   port: '443'
-  server: 8.217.254.88
-  servername: 2b9hwy8ocx7q74nm.v.3dns.vip
+  server: 2b9hwy8ocx7q74nm.v.3dns.vip
   tls: true
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
@@ -331,6 +310,18 @@ proxies:
     headers:
       Host: ''
     path: ''
+- alpn:
+  - h2
+  grpc-opts:
+    grpc-service-name: ajv
+  name: '🇩🇪[openproxylist.com] trojan-D... #1'
+  network: grpc
+  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
+  port: 443
+  server: 31.77.168.35
+  skip-cert-verify: true
+  sni: d3-de2.cloud-cdn.xyz
+  type: trojan
 - name: '🇸🇬[openproxylist.com] trojan-S... #2'
   password: UX82473651
   port: 443
@@ -343,31 +334,19 @@ proxies:
   server: amazing-peacock.rooster465.autos
   sni: amazing-peacock.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #1'
+- name: '🇯🇵[openproxylist.com] trojan-J... #2'
   password: UX82473651
   port: 443
   server: accurate-frog.rooster465.autos
   sni: accurate-frog.rooster465.autos
   type: trojan
-- alpn:
-  - h2
-  grpc-opts:
-    grpc-service-name: ajv
-  name: 🏳[openproxylist.com] trojan-
-  network: grpc
-  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
-  port: 443
-  server: 31.77.168.21
-  skip-cert-verify: true
-  sni: d3-de2.cloud-cdn.xyz
-  type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #2'
+- name: '🇯🇵[openproxylist.com] trojan-J... #3'
   password: UX82473651
   port: 443
   server: dynamic-imp.rooster465.autos
   sni: dynamic-imp.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #3'
+- name: '🇯🇵[openproxylist.com] trojan-J... #4'
   password: UX82473651
   port: 443
   server: musical-terrier.rooster465.autos
@@ -379,6 +358,7 @@ proxies:
   network: ws
   port: '443'
   server: qtkdr8jxe3wefxjm.v.3dns.vip
+  servername: qtkdr8jxe3wefxjm.v.3dns.vip
   tls: true
   type: vmess
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
@@ -442,41 +422,29 @@ proxies:
   server: optimum-snapper.rooster465.autos
   sni: optimum-snapper.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #4'
+- name: '🇯🇵[openproxylist.com] trojan-J... #5'
   password: UX82473651
   port: 443
   server: obliging-louse.rooster465.autos
   sni: obliging-louse.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #5'
+- name: '🇯🇵[openproxylist.com] trojan-J... #6'
   password: UX82473651
   port: 443
   server: winning-marten.rooster465.autos
   sni: winning-marten.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #6'
+- name: '🇯🇵[openproxylist.com] trojan-J... #7'
   password: UX82473651
   port: 443
   server: concrete-aardvark.rooster465.autos
   sni: concrete-aardvark.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #7'
+- name: '🇯🇵[openproxylist.com] trojan-J... #8'
   password: UX82473651
   port: 443
   server: organic-caribou.rooster465.autos
   sni: organic-caribou.rooster465.autos
-  type: trojan
-- alpn:
-  - h2
-  grpc-opts:
-    grpc-service-name: ajv
-  name: '🇩🇪[openproxylist.com] trojan-D... #1'
-  network: grpc
-  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
-  port: 443
-  server: 31.77.168.33
-  skip-cert-verify: false
-  sni: d3-de2.cloud-cdn.xyz
   type: trojan
 - name: '🇺🇸[openproxylist.com] trojan-U... #2'
   password: UX82473651
@@ -514,49 +482,49 @@ proxies:
   server: balanced-stag.rooster465.autos
   sni: balanced-stag.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #8'
+- name: '🇯🇵[openproxylist.com] trojan-J... #9'
   password: UX82473651
   port: 443
   server: intense-sole.rooster465.autos
   sni: intense-sole.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #9'
+- name: '🇯🇵[openproxylist.com] trojan-J... #10'
   password: UX82473651
   port: 443
   server: fancy-javelin.rooster465.autos
   sni: fancy-javelin.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #10'
+- name: '🇯🇵[openproxylist.com] trojan-J... #11'
   password: UX82473651
   port: 443
   server: comic-poodle.rooster465.autos
   sni: comic-poodle.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #11'
+- name: '🇯🇵[openproxylist.com] trojan-J... #12'
   password: UX82473651
   port: 443
   server: promoted-rattler.rooster465.autos
   sni: promoted-rattler.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #12'
+- name: '🇯🇵[openproxylist.com] trojan-J... #13'
   password: UX82473651
   port: 443
   server: integral-rodent.rooster465.autos
   sni: integral-rodent.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #13'
+- name: '🇯🇵[openproxylist.com] trojan-J... #14'
   password: UX82473651
   port: 443
   server: assuring-skink.rooster465.autos
   sni: assuring-skink.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #14'
+- name: '🇯🇵[openproxylist.com] trojan-J... #15'
   password: UX82473651
   port: 443
   server: evolving-platypus.rooster465.autos
   sni: evolving-platypus.rooster465.autos
   type: trojan
-- name: '🇯🇵[openproxylist.com] trojan-J... #15'
+- name: '🇯🇵[openproxylist.com] trojan-J... #16'
   password: UX82473651
   port: 443
   server: brief-glider.rooster465.autos
@@ -576,16 +544,6 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 🏳[openproxylist.com] vmess-
-  network: tcp
-  port: '21036'
-  server: dog-tw.kunlun01dns.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-- alterId: 0
-  cipher: auto
   name: '🇭🇰[openproxylist.com] vmess-HK #3'
   network: ws
   port: 443
@@ -602,7 +560,7 @@ proxies:
   cipher: auto
   name: '🇭🇰[openproxylist.com] vmess-HK #4'
   network: ws
-  port: '443'
+  port: 443
   server: yg1.ygkkk.dpdns.org
   servername: jmp1.907737.xyz
   tls: true
@@ -612,3 +570,50 @@ proxies:
     headers:
       Host: jmp1.907737.xyz
     path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
+- alterId: 0
+  cipher: auto
+  name: 🇧🇷[openproxylist.com] vmess-BR
+  network: ws
+  port: 443
+  server: 89.39.161.157
+  servername: aksai.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: aksai.org
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '🇩🇪[openproxylist.com] vmess-DE #1'
+  network: tcp
+  port: 50551
+  server: 31.76.11.83
+  tls: false
+  type: vmess
+  uuid: 57160c16-b7db-40d8-bd06-ced30edd4df6
+- alterId: 0
+  cipher: auto
+  name: 🇨🇦[openproxylist.com] vmess-CA
+  network: tcp
+  port: 22324
+  server: 198.57.27.190
+  servername: null
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰[openproxylist.com] vmess-HK #5'
+  network: ws
+  port: 443
+  server: 194.99.79.26
+  servername: aksai.org
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: aksai.org
+    path: /linkvws
