@@ -1,4 +1,23 @@
 proxies:
+- alpn:
+  - h2
+  - http/1.1
+  name: 德国+V2CROSS.COM
+  network: tcp
+  password: WFer-5gN21nfHbVB2N8s71Z74EPUfzVj
+  port: 443
+  server: de.zhabulik.ru
+  sni: de.zhabulik.ru
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪[openproxylist.com] vmess-DE
+  network: tcp
+  port: '2110'
+  server: lucas.ehsanazizi-speed-server.com
+  tls: false
+  type: vmess
+  uuid: 06d4d001-4168-4876-9416-7caecf578f40
 - name: 🇩🇪[openproxylist.com] trojan-D...
   password: UX82473651
   port: 443
@@ -17,9 +36,21 @@ proxies:
   skip-cert-verify: true
   sni: d3-de2.cloud-cdn.xyz
   type: trojan
+- alpn:
+  - h2
+  grpc-opts:
+    grpc-service-name: ajv
+  name: '🇩🇪[openproxylist.com] trojan-D... #2'
+  network: grpc
+  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
+  port: 443
+  server: 31.77.168.21
+  skip-cert-verify: true
+  sni: d3-de2.cloud-cdn.xyz
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 🇩🇪[openproxylist.com] vmess-DE
+  name: '🇩🇪[openproxylist.com] vmess-DE #1'
   network: tcp
   port: '22324'
   server: 185.177.229.129
@@ -27,7 +58,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- name: '🇩🇪[openproxylist.com] trojan-D... #2'
+- name: '🇩🇪[openproxylist.com] trojan-D... #3'
   password: UX82473651
   port: 443
   server: pleased-albacore.rooster465.autos
@@ -35,7 +66,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: '🇩🇪[openproxylist.com] vmess-DE #1'
+  name: '🇩🇪[openproxylist.com] vmess-DE #2'
   network: tcp
   port: 50551
   server: 31.76.11.83
