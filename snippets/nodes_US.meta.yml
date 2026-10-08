@@ -1,4 +1,17 @@
 proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 美国+FDC芝加哥机房
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 8ENbaQRCWZk-wewSrdHq1_rVjJY4CrxqXUo_5vZNdi4
+    short-id: '!!str b2b44805'
+  server: 50.7.210.69
+  servername: xn--80ahcoj6a9b5d.xn----9sbekcigdcaa6cd7cafr7e.xn--p1ai
+  tls: false
+  type: vless
+  uuid: d2519b5e-495e-462e-9703-bbf68011d2f3
 - alpn:
   - h2
   - http/1.1
@@ -9,7 +22,7 @@ proxies:
   name: 美国+纽约州纽约BuyVM
   network: tcp
   port: 57233
-  server: 198.98.48.110
+  server: s554.csgfw.top
   servername: u695098u8fad5a44s552.gogocs.xyz
   tls: true
   type: vless
@@ -18,17 +31,89 @@ proxies:
     headers:
       Host: 8fad5a44s552.gogocs.xyz
     path: ''
-- alpn:
-  - http/1.1
-  name: 美国+CloudFlare节点
+- name: 美国+加利福尼亚州洛杉矶Cloudflare+Warp节点
   network: ws
-  password: humanity
-  port: 443
-  server: 104.27.21.22
-  sni: www.volumeroot.com
-  type: trojan
+  port: 2053
+  server: 8.47.69.0
+  servername: vless.api-music-fa.com
+  tls: true
+  type: vless
+  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
   ws-opts:
-    path: '%2Fassignment'
+    headers:
+      Host: fr.api-music-fa.com
+    path: '%2Fapi%2Fvoip%2Fupdates%2Fstatic%2Ffr2035'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 美国+V2CROSS.COM
+  network: tcp
+  port: 10654
+  reality-opts:
+    public-key: S-g0oP36DShii1uPOnZDSEhp_wQghX6h68PgMivOmD4
+  server: distant.sugarcanecoffee.top
+  servername: www.icloud.com
+  tls: false
+  type: vless
+  uuid: 397bdc3b-9204-48d7-9003-5360864eecff
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '美国+FDC芝加哥机房 #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 8ENbaQRCWZk-wewSrdHq1_rVjJY4CrxqXUo_5vZNdi4
+    short-id: '!!str b2b44805'
+  server: 50.7.211.242
+  servername: xn--80afqehspga.xn----9sbekcigdcaa6cd7cafr7e.xn--p1ai
+  tls: false
+  type: vless
+  uuid: d2519b5e-495e-462e-9703-bbf68011d2f3
+- name: 美国+CloudFlare节点
+  network: ws
+  port: 8880
+  server: 104.17.21.137
+  tls: false
+  type: vless
+  uuid: 3a38b35b-7b31-452c-954f-99c2f45dda19
+  ws-opts:
+    headers:
+      Host: sweet-truth-0f0c.71-fca.workers.dev
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+- name: '美国+CloudFlare节点 #1'
+  network: ws
+  port: 8880
+  server: 104.21.55.229
+  tls: false
+  type: vless
+  uuid: 3adac494-0eb1-4d89-a187-b2181691444d
+  ws-opts:
+    headers:
+      Host: tiny-lake-bbf1.369-766.workers.dev
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+- name: '美国+CloudFlare节点 #2'
+  network: ws
+  port: 2086
+  server: 104.24.65.202
+  tls: false
+  type: vless
+  uuid: 7a629a11-b75a-4889-957d-dc0987a73a19
+  ws-opts:
+    headers:
+      Host: jimifree.jimshofree1.workers.dev
+    path: /eyJqdW5rIjoieVMzbmVFWlBsd3prIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed
+- client-fingerprint: chrome
+  name: '美国+CloudFlare节点 #3'
+  network: ws
+  port: 443
+  server: nuclear.us.kg
+  servername: nuclear.us.kg
+  tls: true
+  type: vless
+  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  ws-opts:
+    headers:
+      Host: nuclear.us.kg
+    path: /free/1.226.227.169:50001
 - name: 🇺🇸139909 | ⚡️Telegram = t.me/S...
   password: qQe1z5kU8kN6SlKnDt9Ru3Qp
   port: 443
@@ -89,7 +174,7 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '🇺🇸[openproxylist.com] vless-US #1'
+  name: '🇺🇸[openproxylist.com] vless-US #4'
   network: tcp
   port: 443
   reality-opts:
@@ -113,19 +198,19 @@ proxies:
   tls: false
   type: vless
   uuid: 91344c03-b37f-42c5-90f1-cbb95c5cf256
-- name: '🇺🇸[openproxylist.com] vless-US #3'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #3'
   network: tcp
-  port: 45299
-  server: 104.243.33.154
+  port: 443
+  reality-opts:
+    public-key: zpXR6Y36C8qUCIVk2p_j8C9KGeBk5xisLw66j3WFOls
+    short-id: '!!str 9f1fc5a631ef3126'
+  server: 2.24.124.64
+  servername: www.cloudflare.com
   tls: false
   type: vless
-  uuid: 261f011c-e97a-4d72-b596-e6329b50b47b
-- name: 🇺🇸[openproxylist.com] trojan-U...
-  password: UX82473651
-  port: 443
-  server: ultimate-jaguar.rooster465.autos
-  sni: ultimate-jaguar.rooster465.autos
-  type: trojan
+  uuid: 719b9354-45e2-4718-8709-d965b64554db
 - alterId: 0
   cipher: auto
   name: 🇺🇸[openproxylist.com] vmess-US
@@ -136,9 +221,16 @@ proxies:
   tls: false
   type: vmess
   uuid: d49a2534-7ac4-429f-879d-de48296d19b4
-- name: '🇺🇸[openproxylist.com] trojan-U... #1'
-  password: UX82473651
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇺🇸[openproxylist.com] vless-US #5'
+  network: tcp
   port: 443
-  server: guided-ferret.rooster465.autos
-  sni: guided-ferret.rooster465.autos
-  type: trojan
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: '!!str c39cc7310a'
+  server: 169.40.42.182
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
