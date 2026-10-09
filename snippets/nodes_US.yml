@@ -1,4 +1,15 @@
 proxies:
+- alpn:
+  - http/1.1
+  name: 美国+CloudFlare节点
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.27.21.22
+  sni: www.volumeroot.com
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
 - name: 美国|@ripaojiedian
   network: tcp
   password: AA885B42-133C-3828-FB69-E45105C06092
@@ -15,6 +26,29 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸[openproxylist.com] vmess-US
+  network: ws
+  port: '443'
+  server: 173.249.198.111
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: ''
+    path: /tel=@user_xexevil
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸[openproxylist.com] vmess-US #1'
+  network: tcp
+  port: '27074'
+  server: 72.249.206.49
+  tls: false
+  type: vmess
+  uuid: dd37aaee-98e9-4942-ec48-17180c881942
 - name: 🇺🇸[openproxylist.com] trojan-U...
   password: UX82473651
   port: 443
@@ -23,7 +57,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 🇺🇸[openproxylist.com] vmess-US
+  name: '🇺🇸[openproxylist.com] vmess-US #2'
   network: tcp
   port: '2053'
   server: 45.39.255.99

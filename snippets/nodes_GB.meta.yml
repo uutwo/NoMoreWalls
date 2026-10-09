@@ -1,6 +1,45 @@
 proxies:
 - client-fingerprint: chrome
-  name: 🇬🇧[openproxylist.com] vless-GB
+  flow: xtls-rprx-vision
+  name: 英国+V2CROSS.COM
+  network: tcp
+  port: 2063
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  server: 2.26.231.218
+  servername: rusbid.de
+  tls: false
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '英国+V2CROSS.COM #1'
+  network: tcp
+  port: 2063
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  server: pl-waw.dontblockmepls.com
+  servername: rusbid.de
+  tls: false
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+- name: 🇬🇧[openproxylist.com] vless-GB
+  network: ws
+  port: 8443
+  server: 23.95.225.10
+  servername: ccc.010304.xyz
+  tls: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /fp=chrome
+- client-fingerprint: chrome
+  name: '🇬🇧[openproxylist.com] vless-GB #1'
   network: tcp
   port: 2053
   reality-opts:
@@ -11,3 +50,16 @@ proxies:
   tls: false
   type: vless
   uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '🇬🇧[openproxylist.com] vless-GB #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
+    short-id: '!!str b19b017d6f453873'
+  server: 23.81.34.204
+  servername: speed.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
